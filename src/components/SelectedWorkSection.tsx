@@ -26,7 +26,7 @@ const works = [
 ];
 
 const SelectedWorkSection = () => (
-  <section id="work" className="bg-bg-elevated py-24 px-6 md:px-10">
+  <section id="work" className="bg-bg-elevated py-20 px-6 md:py-24 md:px-10">
     <div className="max-w-[1200px] mx-auto">
       <div className="reveal-section mb-16">
         <span className="font-mono text-[10px] text-gold tracking-[0.2em] uppercase">Selected work</span>
@@ -42,7 +42,7 @@ const SelectedWorkSection = () => (
               key={w.num}
               {...linkProps}
               data-hover={w.link ? true : undefined}
-              className={`group grid grid-cols-[40px_1fr_auto_40px] md:grid-cols-[60px_1fr_auto_60px] items-center gap-4 py-6 px-4 border-b border-border transition-all hover:bg-bg-base relative ${w.link ? "cursor-none" : ""}`}
+              className={`group grid grid-cols-[40px_1fr_40px] md:grid-cols-[60px_1fr_auto_60px] items-center gap-4 py-6 px-4 border-b border-border transition-all hover:bg-bg-base relative ${w.link ? "cursor-none" : ""}`}
             >
               {/* Gold left border on hover */}
               <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gold scale-y-0 group-hover:scale-y-100 transition-transform origin-top" />
@@ -50,7 +50,7 @@ const SelectedWorkSection = () => (
               <div>
                 <span className="font-serif text-[20px] text-foreground">{w.name}</span>
                 <p className="font-mono text-[11px] text-body-text mt-1">{w.desc}</p>
-                <div className="flex flex-wrap gap-2 mt-2">
+                <div className="hidden md:flex flex-wrap gap-2 mt-2">
                   {w.tags.map((t) => (
                     <span key={t} className="font-mono text-[9px] text-label-text border border-border px-2 py-0.5 rounded-full">
                       {t}
@@ -58,7 +58,7 @@ const SelectedWorkSection = () => (
                   ))}
                 </div>
               </div>
-              <div>
+              <div className="hidden md:block">
                 {w.status && (
                   <span className="font-mono text-[9px] text-label-text/50">{w.status}</span>
                 )}

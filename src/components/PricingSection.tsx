@@ -3,7 +3,7 @@ const Cross = () => <span className="text-error-red mr-2">✗</span>;
 const Arrow = () => <span className="text-error-red mr-2">→</span>;
 
 const PricingSection = () => (
-  <section id="pricing" className="bg-bg-base py-24 px-6 md:px-10">
+  <section id="pricing" className="bg-bg-base py-20 px-6 md:py-24 md:px-10">
     <div className="max-w-[1200px] mx-auto">
       {/* Header */}
       <div className="reveal-section text-center mb-16">

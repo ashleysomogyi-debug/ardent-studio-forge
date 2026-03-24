@@ -15,8 +15,8 @@ const HeroSection = () => {
 
         {/* H1 */}
         <h1
-          className="font-serif font-light leading-[0.9] mb-8 animate-fade-up"
-          style={{ fontSize: "clamp(68px, 11vw, 156px)", animationDelay: "0.2s" }}
+          className="font-serif font-light leading-[0.9] mb-8 animate-fade-up text-[clamp(52px,13vw,80px)] md:text-[clamp(68px,11vw,156px)]"
+          style={{ animationDelay: "0.2s" }}
         >
           From idea<br />
           to <em className="text-gold">shipped</em><br />
@@ -51,7 +51,7 @@ const HeroSection = () => {
 
         {/* Stats */}
         <div
-          className="w-full border-t border-border pt-8 grid grid-cols-2 md:grid-cols-4 gap-6 animate-fade-up"
+          className="w-full border-t border-border pt-8 grid grid-cols-1 md:grid-cols-4 gap-6 animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
           {[
