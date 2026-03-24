@@ -51,7 +51,7 @@ const HeroSection = () => {
 
         {/* Stats */}
         <div
-          className="w-full border-t border-border pt-8 grid grid-cols-2 md:grid-cols-4 gap-6 animate-fade-up"
+          className="w-full border-t border-border pt-8 grid grid-cols-1 md:grid-cols-4 gap-6 animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
           {[

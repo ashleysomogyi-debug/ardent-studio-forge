@@ -58,7 +58,7 @@ const SelectedWorkSection = () => (
                   ))}
                 </div>
               </div>
-              <div>
+              <div className="hidden md:block">
                 {w.status && (
                   <span className="font-mono text-[9px] text-label-text/50">{w.status}</span>
                 )}
