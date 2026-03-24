@@ -21,7 +21,7 @@ const Nav = () => {
       {/* Logo */}
       <a href="#" className="flex flex-col">
         <span className="font-serif text-[18px] text-foreground tracking-wide">Ardent Studio</span>
-        <span className="font-mono text-[9px] text-gold tracking-[0.2em] uppercase">AI App Builders</span>
+        <span className="font-mono text-[15px] text-gold tracking-[0.2em] uppercase">AI App Builders</span>
       </a>
 
       {/* Centre links */}
@@ -30,7 +30,7 @@ const Nav = () => {
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
-            className="font-mono text-[11px] text-label-text hover:text-foreground transition-colors"
+            className="font-mono text-[15px] text-label-text hover:text-foreground transition-colors"
           >
             {item}
           </a>
@@ -41,7 +41,7 @@ const Nav = () => {
       <a
         href="#contact"
         data-hover
-        className="font-mono text-[11px] bg-foreground text-bg-base px-5 py-2 rounded-full hover:opacity-90 transition-opacity"
+        className="font-mono text-[15px] bg-foreground text-bg-base px-5 py-2 rounded-full hover:opacity-90 transition-opacity"
       >
         Book a scope call
       </a>

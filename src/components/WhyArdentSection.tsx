@@ -17,7 +17,7 @@ const WhyArdentSection = () => (
   <section className="bg-bg-elevated border-y border-border py-20 px-6 md:py-24 md:px-10">
     <div className="max-w-[1200px] mx-auto">
       <div className="reveal-section mb-8">
-        <span className="font-mono text-[10px] text-gold tracking-[0.2em] uppercase">Why Ardent</span>
+        <span className="font-mono text-[14px] text-gold tracking-[0.2em] uppercase">Why Ardent</span>
       </div>
       <h2 className="reveal-section font-serif text-[clamp(36px,5vw,56px)] font-light leading-[1.05] mb-16">
         We're not just<br />builders. We're<br /><em className="text-gold">problem-solvers.</em>
@@ -27,7 +27,7 @@ const WhyArdentSection = () => (
           <div key={card.title} className="bg-bg-elevated p-[48px_40px]">
             <span className="text-gold text-[20px]">◈</span>
             <h3 className="font-serif text-[22px] font-light text-foreground mt-4 mb-4">{card.title}</h3>
-            <p className="font-mono text-[11px] text-body-text leading-relaxed">{card.desc}</p>
+            <p className="font-mono text-[15px] text-body-text leading-relaxed">{card.desc}</p>
           </div>
         ))}
       </div>

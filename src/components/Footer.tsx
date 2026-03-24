@@ -4,7 +4,7 @@ const Footer = () => (
       {/* Logo */}
       <div className="flex flex-col">
         <span className="font-serif text-[18px] text-foreground">Ardent Studio</span>
-        <span className="font-mono text-[9px] text-gold tracking-[0.2em] uppercase">AI App Builders</span>
+        <span className="font-mono text-[15px] text-gold tracking-[0.2em] uppercase">AI App Builders</span>
       </div>
 
       {/* Links */}
@@ -20,7 +20,7 @@ const Footer = () => (
             key={link.label}
             href={link.href}
             {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-            className="font-mono text-[11px] text-label-text hover:text-foreground transition-colors"
+            className="font-mono text-[15px] text-label-text hover:text-foreground transition-colors"
           >
             {link.label}
           </a>
@@ -29,7 +29,7 @@ const Footer = () => (
 
       {/* Copyright */}
       <div className="md:text-right">
-        <span className="font-mono text-[11px] text-label-text">© 2026 Ardent Studio</span>
+        <span className="font-mono text-[15px] text-label-text">© 2026 Ardent Studio</span>
       </div>
     </div>
   </footer>
