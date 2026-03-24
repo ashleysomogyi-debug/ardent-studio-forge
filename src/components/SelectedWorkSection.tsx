@@ -42,7 +42,7 @@ const SelectedWorkSection = () => (
               key={w.num}
               {...linkProps}
               data-hover={w.link ? true : undefined}
-              className={`group grid grid-cols-[40px_1fr_auto_40px] md:grid-cols-[60px_1fr_auto_60px] items-center gap-4 py-6 px-4 border-b border-border transition-all hover:bg-bg-base relative ${w.link ? "cursor-none" : ""}`}
+              className={`group grid grid-cols-[40px_1fr_40px] md:grid-cols-[60px_1fr_auto_60px] items-center gap-4 py-6 px-4 border-b border-border transition-all hover:bg-bg-base relative ${w.link ? "cursor-none" : ""}`}
             >
               {/* Gold left border on hover */}
               <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gold scale-y-0 group-hover:scale-y-100 transition-transform origin-top" />
