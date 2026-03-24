@@ -20,7 +20,7 @@ const cards = [
 ];
 
 const WhatWeBuildSection = () => (
-  <section id="services" className="bg-bg-base py-24 px-6 md:px-10">
+  <section id="services" className="bg-bg-base py-20 px-6 md:py-24 md:px-10">
     <div className="max-w-[1200px] mx-auto">
       <div className="reveal-section mb-16">
         <span className="font-mono text-[10px] text-gold tracking-[0.2em] uppercase">What we build</span>

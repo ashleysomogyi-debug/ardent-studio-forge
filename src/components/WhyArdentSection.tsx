@@ -14,7 +14,7 @@ const cards = [
 ];
 
 const WhyArdentSection = () => (
-  <section className="bg-bg-elevated border-y border-border py-24 px-6 md:px-10">
+  <section className="bg-bg-elevated border-y border-border py-20 px-6 md:py-24 md:px-10">
     <div className="max-w-[1200px] mx-auto">
       <div className="reveal-section mb-8">
         <span className="font-mono text-[10px] text-gold tracking-[0.2em] uppercase">Why Ardent</span>
