@@ -4,7 +4,7 @@ const works = [
     name: "SartoriAI",
     desc: "AI-powered sales training & roleplay simulation platform for enterprise B2B",
     tags: ["Enterprise SaaS", "AI Coaching", "EU & US"],
-    link: "https://sartoriai.com",
+    link: "http://www.sartoriai.com/",
     status: null,
   },
   {

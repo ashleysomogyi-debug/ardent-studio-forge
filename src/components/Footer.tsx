@@ -14,7 +14,7 @@ const Footer = () => (
           { label: "Work", href: "#work" },
           { label: "Process", href: "#process" },
           { label: "Pricing", href: "#pricing" },
-          { label: "SartoriAI", href: "https://sartoriai.com", external: true },
+          { label: "SartoriAI", href: "http://www.sartoriai.com/", external: true },
         ].map((link) => (
           <a
             key={link.label}
