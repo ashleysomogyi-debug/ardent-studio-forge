@@ -54,6 +54,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+  p, span, a, button, li, label, input, textarea {
+    font-family: var(--font-mono);
+  }
   a, button {
     cursor: none;
   }
