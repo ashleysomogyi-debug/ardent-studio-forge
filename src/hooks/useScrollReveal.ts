@@ -2,13 +2,13 @@ import { useEffect } from "react";
 
 export function useScrollReveal() {
   useEffect(() => {
-    document.documentElement.classList.add("js-ready");
+    const elements = document.querySelectorAll(".reveal-section");
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("is-visible");
+            entry.target.classList.add("visible");
             observer.unobserve(entry.target);
           }
         });
@@ -16,7 +16,9 @@ export function useScrollReveal() {
       { threshold: 0.1 }
     );
 
-    document.querySelectorAll(".reveal-section").forEach((el) => {
+    // Add js-ready to each element (hides it), then observe
+    elements.forEach((el) => {
+      el.classList.add("js-ready");
       observer.observe(el);
     });
 
