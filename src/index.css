@@ -45,6 +45,8 @@
   html {
     cursor: none;
     scroll-behavior: smooth;
+    color-scheme: dark;
+    background: #070707 !important;
   }
   body {
     background: var(--color-bg) !important;
