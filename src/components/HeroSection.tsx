@@ -9,7 +9,7 @@ const HeroSection = () => {
         {/* Eyebrow */}
         <div className="flex items-center gap-3 mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <span className="w-8 h-px bg-gold" />
-          <span className="font-mono text-[14px] text-gold tracking-[0.3em] uppercase">AI-Powered App Development</span>
+          <span className="font-mono text-[16px] text-gold tracking-[0.3em] uppercase">AI-Powered App Development</span>
           <span className="w-8 h-px bg-gold" />
         </div>
 
@@ -25,7 +25,7 @@ const HeroSection = () => {
 
         {/* Body */}
         <p
-          className="font-mono text-[15px] text-body-text max-w-[420px] mb-10 leading-relaxed animate-fade-up"
+          className="font-mono text-[17px] text-body-text max-w-[420px] mb-10 leading-relaxed animate-fade-up"
           style={{ animationDelay: "0.4s" }}
         >
           We build production-ready apps, internal tools, and SaaS products for founders and businesses — faster than any dev team, at a fraction of the cost.
@@ -36,14 +36,14 @@ const HeroSection = () => {
           <a
             href="#contact"
             data-hover
-            className="font-mono text-[15px] bg-foreground text-bg-base px-7 py-3 rounded-full hover:opacity-90 transition-opacity"
+            className="font-mono text-[17px] bg-foreground text-bg-base px-7 py-3 rounded-full hover:opacity-90 transition-opacity"
           >
             Book a free scope call
           </a>
           <a
             href="#work"
             data-hover
-            className="font-mono text-[15px] border border-foreground/30 text-foreground px-7 py-3 rounded-full hover:border-foreground/60 transition-colors"
+            className="font-mono text-[17px] border border-foreground/30 text-foreground px-7 py-3 rounded-full hover:border-foreground/60 transition-colors"
           >
             See our work
           </a>
@@ -62,7 +62,7 @@ const HeroSection = () => {
           ].map((s) => (
             <div key={s.label} className="flex flex-col items-center">
               <span className="font-serif italic text-gold text-[36px] leading-none">{s.num}</span>
-              <span className="font-mono text-[14px] text-label-text mt-2">{s.label}</span>
+              <span className="font-mono text-[16px] text-label-text mt-2">{s.label}</span>
             </div>
           ))}
         </div>
@@ -70,7 +70,7 @@ const HeroSection = () => {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span className="font-mono text-[15px] text-label-text tracking-[0.2em]">SCROLL</span>
+        <span className="font-mono text-[17px] text-label-text tracking-[0.2em]">SCROLL</span>
         <div className="w-px h-8 bg-label-text/30 overflow-hidden">
           <div className="w-full h-full bg-foreground scroll-line" />
         </div>
