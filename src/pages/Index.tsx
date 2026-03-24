@@ -1,16 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useScrollReveal } from "@/hooks/useScrollReveal";
+import CustomCursor from "@/components/CustomCursor";
+import Nav from "@/components/Nav";
+import HeroSection from "@/components/HeroSection";
+import TickerSection from "@/components/TickerSection";
+import WhatWeBuildSection from "@/components/WhatWeBuildSection";
+import SelectedWorkSection from "@/components/SelectedWorkSection";
+import ProcessSection from "@/components/ProcessSection";
+import WhyArdentSection from "@/components/WhyArdentSection";
+import PricingSection from "@/components/PricingSection";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
-// IMPORTANT: Fully REPLACE this with your own code
-const PlaceholderIndex = () => {
-  // PLACEHOLDER: Replace this entire return statement with the user's app.
-  // The inline background color is intentionally not part of the design system.
+const Index = () => {
+  useScrollReveal();
+
   return (
-    <div className="flex min-h-screen items-center justify-center" style={{ backgroundColor: '#fcfbf8' }}>
-      <img data-lovable-blank-page-placeholder="REMOVE_THIS" src="/placeholder.svg" alt="Your app will live here!" />
-    </div>
+    <>
+      <CustomCursor />
+      <Nav />
+      <main>
+        <HeroSection />
+        <TickerSection />
+        <WhatWeBuildSection />
+        <SelectedWorkSection />
+        <ProcessSection />
+        <WhyArdentSection />
+        <PricingSection />
+        <CTASection />
+      </main>
+      <Footer />
+    </>
   );
 };
-
-const Index = PlaceholderIndex;
 
 export default Index;
