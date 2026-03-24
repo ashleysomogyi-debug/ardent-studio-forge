@@ -7,7 +7,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-[900px] mx-auto">
         {/* Eyebrow */}
-        <div className="flex items-center gap-3 mb-8 animate-fade-up" style={{ animationDelay: "0.1s" }}>
+        <div className="flex items-center gap-3 mb-10 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <span className="w-8 h-px bg-gold" />
           <span className="font-mono text-[16px] text-gold tracking-[0.3em] uppercase">AI-Powered App Development</span>
           <span className="w-8 h-px bg-gold" />
@@ -15,7 +15,7 @@ const HeroSection = () => {
 
         {/* H1 */}
         <h1
-          className="font-serif font-light leading-[0.9] mb-8 animate-fade-up text-[clamp(52px,13vw,80px)] md:text-[clamp(68px,11vw,156px)]"
+          className="font-serif font-light leading-[0.95] mb-10 animate-fade-up text-[clamp(52px,13vw,80px)] md:text-[clamp(68px,11vw,156px)]"
           style={{ animationDelay: "0.2s" }}
         >
           From idea<br />
@@ -25,25 +25,25 @@ const HeroSection = () => {
 
         {/* Body */}
         <p
-          className="font-mono text-[17px] text-body-text max-w-[420px] mb-10 leading-relaxed animate-fade-up"
+          className="font-mono text-[17px] text-body-text max-w-[460px] mb-12 leading-[1.8] animate-fade-up"
           style={{ animationDelay: "0.4s" }}
         >
           We build production-ready apps, internal tools, and SaaS products for founders and businesses — faster than any dev team, at a fraction of the cost.
         </p>
 
         {/* Buttons */}
-        <div className="flex flex-wrap items-center justify-center gap-4 mb-12 animate-fade-up" style={{ animationDelay: "0.5s" }}>
+        <div className="flex flex-wrap items-center justify-center gap-5 mb-14 animate-fade-up" style={{ animationDelay: "0.5s" }}>
           <a
             href="#contact"
             data-hover
-            className="font-mono text-[17px] bg-foreground text-bg-base px-7 py-3 rounded-full hover:opacity-90 transition-opacity"
+            className="font-mono text-[17px] bg-foreground text-bg-base px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity"
           >
             Book a free scope call
           </a>
           <a
             href="#work"
             data-hover
-            className="font-mono text-[17px] border border-foreground/30 text-foreground px-7 py-3 rounded-full hover:border-foreground/60 transition-colors"
+            className="font-mono text-[17px] border border-foreground/30 text-foreground px-8 py-3.5 rounded-full hover:border-foreground/60 transition-colors"
           >
             See our work
           </a>
@@ -51,7 +51,7 @@ const HeroSection = () => {
 
         {/* Stats */}
         <div
-          className="w-full border-t border-border pt-8 grid grid-cols-1 md:grid-cols-4 gap-6 animate-fade-up"
+          className="w-full border-t border-border pt-10 grid grid-cols-1 md:grid-cols-4 gap-8 animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
           {[
@@ -62,7 +62,7 @@ const HeroSection = () => {
           ].map((s) => (
             <div key={s.label} className="flex flex-col items-center">
               <span className="font-serif italic text-gold text-[36px] leading-none">{s.num}</span>
-              <span className="font-mono text-[16px] text-label-text mt-2">{s.label}</span>
+              <span className="font-mono text-[16px] text-label-text mt-3">{s.label}</span>
             </div>
           ))}
         </div>
