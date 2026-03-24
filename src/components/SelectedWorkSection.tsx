@@ -50,7 +50,7 @@ const SelectedWorkSection = () => (
               <div>
                 <span className="font-serif text-[20px] text-foreground">{w.name}</span>
                 <p className="font-mono text-[11px] text-body-text mt-1">{w.desc}</p>
-                <div className="flex flex-wrap gap-2 mt-2">
+                <div className="hidden md:flex flex-wrap gap-2 mt-2">
                   {w.tags.map((t) => (
                     <span key={t} className="font-mono text-[9px] text-label-text border border-border px-2 py-0.5 rounded-full">
                       {t}
