@@ -11,7 +11,7 @@ const Nav = () => {
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-6 md:px-10 py-4 transition-all duration-300"
+      className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-4 md:px-10 py-3 md:py-4 transition-all duration-300"
       style={{
         background: scrolled ? "rgba(7,7,7,0.88)" : "transparent",
         backdropFilter: scrolled ? "blur(24px)" : "none",
@@ -19,9 +19,9 @@ const Nav = () => {
       }}
     >
       {/* Logo */}
-      <a href="#" className="flex flex-col">
-        <span className="font-serif text-[18px] text-foreground tracking-wide">Ardent Studio</span>
-        <span className="font-mono text-[17px] text-gold tracking-[0.2em] uppercase">AI App Builders</span>
+      <a href="#" className="flex flex-col shrink-0">
+        <span className="font-serif text-[16px] md:text-[18px] text-foreground tracking-wide">Ardent Studio</span>
+        <span className="font-mono text-[11px] md:text-[14px] text-gold tracking-[0.15em] md:tracking-[0.2em] uppercase">AI App Builders</span>
       </a>
 
       {/* Centre links */}
@@ -41,7 +41,7 @@ const Nav = () => {
       <a
         href="#contact"
         data-hover
-        className="font-mono text-[17px] bg-foreground text-bg-base px-5 py-2 rounded-full hover:opacity-90 transition-opacity"
+        className="font-mono text-[13px] md:text-[17px] bg-foreground text-bg-base px-4 md:px-5 py-2 rounded-full hover:opacity-90 transition-opacity shrink-0"
       >
         Book a scope call
       </a>

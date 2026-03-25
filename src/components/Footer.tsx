@@ -1,14 +1,14 @@
 const Footer = () => (
-  <footer className="bg-bg-elevated border-t border-border py-16 px-6 md:px-10">
-    <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 items-start">
+  <footer className="bg-bg-elevated border-t border-border py-10 md:py-16 px-5 md:px-10">
+    <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 items-start">
       {/* Logo */}
       <div className="flex flex-col">
-        <span className="font-serif text-[18px] text-foreground">Ardent Studio</span>
-        <span className="font-mono text-[17px] text-gold tracking-[0.2em] uppercase mt-1">AI App Builders</span>
+        <span className="font-serif text-[16px] md:text-[18px] text-foreground">Ardent Studio</span>
+        <span className="font-mono text-[13px] md:text-[17px] text-gold tracking-[0.2em] uppercase mt-1">AI App Builders</span>
       </div>
 
       {/* Links */}
-      <div className="flex flex-wrap gap-7">
+      <div className="flex flex-wrap gap-4 md:gap-7">
         {[
           { label: "Services", href: "#services" },
           { label: "Work", href: "#work" },
@@ -20,7 +20,7 @@ const Footer = () => (
             key={link.label}
             href={link.href}
             {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-            className="font-mono text-[17px] text-label-text hover:text-foreground transition-colors"
+            className="font-mono text-[14px] md:text-[17px] text-label-text hover:text-foreground transition-colors"
           >
             {link.label}
           </a>
@@ -29,7 +29,7 @@ const Footer = () => (
 
       {/* Copyright */}
       <div className="md:text-right">
-        <span className="font-mono text-[17px] text-label-text">© 2026 Ardent Studio</span>
+        <span className="font-mono text-[14px] md:text-[17px] text-label-text">© 2026 Ardent Studio</span>
       </div>
     </div>
   </footer>
