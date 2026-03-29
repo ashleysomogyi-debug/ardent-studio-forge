@@ -14,20 +14,23 @@ const cards = [
 ];
 
 const WhyArdentSection = () => (
-  <section className="bg-bg-elevated border-y border-border py-16 px-5 md:py-32 md:px-10">
-    <div className="max-w-[1200px] mx-auto">
+  <section className="relative pt-[120px] pb-16 px-5 md:pb-32 md:px-10 overflow-hidden" style={{ background: "linear-gradient(135deg, #0d0d0d 0%, #141410 50%, #0d0d0d 100%)" }}>
+    {/* Diagonal gold gradient accent */}
+    <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(145deg, rgba(196,153,58,0.04) 0%, transparent 40%, rgba(196,153,58,0.03) 100%)" }} />
+
+    <div className="max-w-[1200px] mx-auto relative z-10">
       <div className="reveal-section mb-6 md:mb-10">
-        <span className="font-mono text-[14px] md:text-[16px] text-gold tracking-[0.2em] uppercase">Why Ardent</span>
+        <span className="font-mono text-[11px] md:text-[12px] text-gold tracking-[0.2em] uppercase">Why Ardent</span>
       </div>
-      <h2 className="reveal-section font-serif text-[clamp(32px,8vw,56px)] md:text-[clamp(36px,5vw,56px)] font-light leading-[1.1] mb-12 md:mb-20">
+      <h2 className="reveal-section font-serif text-[clamp(32px,8vw,56px)] md:text-[clamp(32px,4.5vw,56px)] font-light leading-[1.1] mb-12 md:mb-20">
         We're not just<br />builders. We're<br /><em className="text-gold">problem-solvers.</em>
       </h2>
-      <div className="reveal-section grid grid-cols-1 md:grid-cols-3 gap-px bg-border">
+      <div className="reveal-section grid grid-cols-1 md:grid-cols-3 gap-px bg-gold/25">
         {cards.map((card) => (
-          <div key={card.title} className="bg-bg-elevated p-8 md:p-[52px_44px]">
+          <div key={card.title} className="bg-[#0d0d0d] p-8 md:p-[52px_44px]">
             <span className="text-gold text-[18px] md:text-[20px]">◈</span>
             <h3 className="font-serif text-[22px] md:text-[24px] font-light text-foreground mt-4 md:mt-5 mb-4 md:mb-5">{card.title}</h3>
-            <p className="font-mono text-[14px] md:text-[17px] text-body-text leading-[1.7] md:leading-[1.8]">{card.desc}</p>
+            <p className="font-mono text-[14px] md:text-[14px] text-body-text leading-[1.75] md:leading-[1.75]">{card.desc}</p>
           </div>
         ))}
       </div>
