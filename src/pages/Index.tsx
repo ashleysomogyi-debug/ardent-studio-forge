@@ -8,6 +8,7 @@ import SelectedWorkSection from "@/components/SelectedWorkSection";
 import ProcessSection from "@/components/ProcessSection";
 import WhyArdentSection from "@/components/WhyArdentSection";
 import PricingSection from "@/components/PricingSection";
+import CaseStudiesSection from "@/components/CaseStudiesSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 
@@ -26,6 +27,7 @@ const Index = () => {
         <ProcessSection />
         <WhyArdentSection />
         <PricingSection />
+        <CaseStudiesSection />
         <CTASection />
       </main>
       <Footer />
