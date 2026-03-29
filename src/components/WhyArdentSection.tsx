@@ -14,25 +14,37 @@ const cards = [
 ];
 
 const WhyArdentSection = () => (
-  <section className="relative pt-[120px] pb-16 px-5 md:pb-32 md:px-10 overflow-hidden" style={{ background: "linear-gradient(135deg, #0d0d0d 0%, #141410 50%, #0d0d0d 100%)" }}>
-    {/* Diagonal gold gradient accent */}
+  <section className="relative py-[112px] px-5 md:px-10 overflow-hidden" style={{ background: "#111108" }}>
     <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(145deg, rgba(196,153,58,0.04) 0%, transparent 40%, rgba(196,153,58,0.03) 100%)" }} />
 
     <div className="max-w-[1200px] mx-auto relative z-10">
       <div className="reveal-section mb-6 md:mb-10">
-        <span className="font-mono text-[11px] md:text-[12px] text-gold tracking-[0.2em] uppercase">Why Ardent</span>
+        <span className="font-mono text-[11px] text-gold tracking-[0.2em] uppercase">Why Ardent</span>
       </div>
-      <h2 className="reveal-section font-serif text-[clamp(32px,8vw,56px)] md:text-[clamp(32px,4.5vw,56px)] font-light leading-[1.1] mb-12 md:mb-20">
-        We're not just<br />builders. We're<br /><em className="text-gold">problem-solvers.</em>
-      </h2>
-      <div className="reveal-section grid grid-cols-1 md:grid-cols-3 gap-px bg-gold/25">
-        {cards.map((card) => (
-          <div key={card.title} className="bg-[#0d0d0d] p-8 md:p-[52px_44px]">
-            <span className="text-gold text-[18px] md:text-[20px]">◈</span>
-            <h3 className="font-serif text-[22px] md:text-[24px] font-light text-foreground mt-4 md:mt-5 mb-4 md:mb-5">{card.title}</h3>
-            <p className="font-mono text-[14px] md:text-[14px] text-body-text leading-[1.75] md:leading-[1.75]">{card.desc}</p>
+
+      {/* 2-column layout: pull quote left, differentiators right */}
+      <div className="reveal-section grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
+        {/* Left — large italic pull quote */}
+        <div className="flex items-start">
+          <div className="border-l-2 border-gold/40 pl-8 md:pl-10">
+            <h2 className="font-serif italic text-[clamp(32px,8vw,56px)] md:text-[clamp(32px,4.5vw,56px)] font-light leading-[1.15] text-foreground">
+              We're not just builders. We're <span className="text-gold">problem-solvers.</span>
+            </h2>
           </div>
-        ))}
+        </div>
+
+        {/* Right — stacked differentiators with gold diamond bullets */}
+        <div className="flex flex-col gap-10 md:gap-12">
+          {cards.map((card) => (
+            <div key={card.title} className="flex gap-4">
+              <span className="text-gold text-[16px] mt-1 shrink-0">◈</span>
+              <div>
+                <h3 className="font-serif text-[22px] font-light text-foreground mb-3">{card.title}</h3>
+                <p className="font-mono text-[14px] text-body-text leading-[1.75]">{card.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   </section>

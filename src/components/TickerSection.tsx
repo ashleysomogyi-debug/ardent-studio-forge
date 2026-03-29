@@ -1,29 +1,23 @@
-const items = [
-  "MVP Builds", "Internal Tools", "SaaS Products", "Client Portals",
-  "AI Integrations", "Dashboards", "Proposal Tools", "Rescue & Finish", "Workflow Automation",
+const stats = [
+  { num: "50+", label: "Apps Shipped" },
+  { num: "1–3 wks", label: "Avg. Build Time" },
+  { num: "100%", label: "Code Ownership" },
 ];
 
-const TickerSection = () => {
-  const track = [...items, ...items];
-
-  return (
-    <>
-      {/* Gold divider top */}
-      <div className="h-px bg-gold/25" />
-      <section className="bg-[#0E0E0E] py-4 overflow-hidden">
-        <div className="ticker-track flex whitespace-nowrap">
-          {track.map((item, i) => (
-            <span key={i} className="flex items-center">
-              <span className="font-mono text-[14px] text-label-text px-4">{item}</span>
-              <span className="w-1 h-1 rounded-full bg-gold flex-shrink-0" />
-            </span>
-          ))}
+const TickerSection = () => (
+  <section className="py-5 px-5 md:px-10" style={{ background: "#C4993A" }}>
+    <div className="max-w-[1200px] mx-auto flex items-center justify-center gap-8 md:gap-16">
+      {stats.map((s, i) => (
+        <div key={s.label} className="flex items-center gap-8 md:gap-16">
+          {i > 0 && <span className="w-px h-6 bg-black/20" />}
+          <div className="flex items-center gap-3">
+            <span className="font-serif italic text-[22px] md:text-[26px] text-[#0A0A08] leading-none font-light">{s.num}</span>
+            <span className="font-mono text-[11px] text-[#0A0A08]/70 tracking-[0.1em] uppercase">{s.label}</span>
+          </div>
         </div>
-      </section>
-      {/* Gold divider bottom */}
-      <div className="h-px bg-gold/25" />
-    </>
-  );
-};
+      ))}
+    </div>
+  </section>
+);
 
 export default TickerSection;

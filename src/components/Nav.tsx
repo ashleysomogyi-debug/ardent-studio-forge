@@ -18,26 +18,23 @@ const Nav = () => {
         WebkitBackdropFilter: scrolled ? "blur(24px)" : "none",
       }}
     >
-      {/* Logo */}
       <a href="#" className="flex flex-col shrink-0">
         <span className="font-serif text-[16px] md:text-[18px] text-foreground tracking-wide">Ardent Studio</span>
-        <span className="font-mono text-[11px] md:text-[12px] text-gold tracking-[0.15em] md:tracking-[0.2em] uppercase">AI App Builders</span>
+        <span className="font-mono text-[11px] md:text-[11px] text-gold tracking-[0.15em] md:tracking-[0.2em] uppercase">AI App Builders</span>
       </a>
 
-      {/* Centre links */}
       <div className="hidden md:flex items-center gap-8">
         {["Work", "Process", "Pricing", "Contact"].map((item) => (
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
-            className="font-mono text-[14px] text-label-text hover:text-foreground transition-colors"
+            className="font-mono text-[15px] text-label-text hover:text-foreground transition-colors"
           >
             {item}
           </a>
         ))}
       </div>
 
-      {/* CTA */}
       <a
         href="#contact"
         data-hover
