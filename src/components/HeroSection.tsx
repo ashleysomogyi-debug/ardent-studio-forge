@@ -21,7 +21,7 @@ const HeroSection = () => {
 
         {/* H1 */}
         <h1
-          className="font-serif font-light leading-[0.95] mb-6 md:mb-10 animate-fade-up text-[clamp(42px,10vw,72px)] md:text-[clamp(42px,6vw,72px)]"
+          className="font-serif font-light leading-[0.95] mb-6 md:mb-10 animate-fade-up text-[clamp(52px,12vw,96px)] md:text-[clamp(56px,8vw,96px)]"
           style={{ animationDelay: "0.2s" }}
         >
           From idea<br />
