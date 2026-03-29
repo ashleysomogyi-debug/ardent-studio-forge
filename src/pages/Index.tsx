@@ -27,6 +27,7 @@ const Index = () => {
         <ProcessSection />
         <WhyArdentSection />
         <PricingSection />
+        <CaseStudiesSection />
         <CTASection />
       </main>
       <Footer />
