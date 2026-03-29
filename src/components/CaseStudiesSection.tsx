@@ -366,7 +366,8 @@ export default function CaseStudiesSection() {
           color: brand.cream,
           fontFamily: "'DM Sans', sans-serif",
           fontWeight: 300,
-          padding: "96px 0 80px",
+        paddingTop: "120px",
+        paddingBottom: "80px",
           position: "relative",
           overflow: "hidden",
         }}
