@@ -366,10 +366,11 @@ export default function CaseStudiesSection() {
           color: brand.cream,
           fontFamily: "'DM Sans', sans-serif",
           fontWeight: 300,
-        paddingTop: "120px",
-        paddingBottom: "80px",
+          paddingTop: "112px",
+          paddingBottom: "112px",
           position: "relative",
           overflow: "hidden",
+          borderTop: `2px solid ${brand.gold}`,
         }}
       >
         {/* Background glow */}
