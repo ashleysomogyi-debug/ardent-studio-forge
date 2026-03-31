@@ -1,5 +1,5 @@
 const stats = [
-  { num: "50+", label: "Apps Shipped" },
+  { num: "24/7", label: "Async Support" },
   { num: "1–3 wks", label: "Avg. Build Time" },
   { num: "100%", label: "Code Ownership" },
 ];
