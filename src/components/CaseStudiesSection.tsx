@@ -17,16 +17,16 @@ const brand = {
 // ─── Data ───────────────────────────────────────────────────────────────────
 
 const heroStory = {
-  name: "Echo Janitorial Services",
-  person: "Rick Chorney, Founder & CEO",
-  headline: "From $242K to $1M in a single year — using AI automation.",
+  label: "Featured Study · McKinsey & Company · 2025",
+  headline: "78% of companies use AI. Only 6% are seeing transformative results.",
   body:
-    "After years of 19-hour days handling every call, quote, and email himself, Rick spent four hours researching AI tools and automated his intake, installed an AI receptionist handling 15 calls/hour, and wired up automated follow-ups. Revenue tripled. He now works 8-hour days and takes vacations.",
-  quote: "I realized I don't have to be doing all the things I'm doing.",
-  result: "$1.3M projected this year · 16 staff · 1 AI receptionist",
-  source: "Fortune, March 28, 2026",
+    "McKinsey's 2025 global study of nearly 2,000 executives found that AI adoption is now near-universal — but meaningful impact belongs to a small group. High performers who built AI into their business with a clear, structured strategy are 3.6× more likely to report significant bottom-line results. The gap between companies using AI and companies truly benefiting from it has never been wider.",
+  quote: "High performers are 3.6× more likely to report meaningful impact from AI — the differentiator is strategic implementation.",
+  result: "1,993 executives surveyed · 105 countries · Only 6% qualify as high performers",
+  source: "McKinsey & Company, State of AI in 2025",
   sourceUrl:
-    "https://fortune.com/2026/03/28/ai-small-business-entrepreneur-1-million-blue-collar/",
+    "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+  buttonText: "Read the Study ↗",
 };
 
 const industries = [
@@ -122,6 +122,37 @@ const industries = [
       "A Texas HVAC shop installed an AI agent to handle after-hours calls. In a single month, it captured 15 emergency repair jobs that would have gone to a competitor. The owner estimated a single lost Saturday lead costs tens of thousands in lifetime value.",
     storySource: "OpenAI / Podium, 2024",
     storyUrl: "https://openai.com/index/podium/",
+  },
+  {
+    id: "profservices",
+    label: "Professional Services",
+    icon: "◆",
+    color: "#C4993A",
+    tagline: "Your competitors have AI tools. The ones pulling ahead have a strategy.",
+    stats: [
+      {
+        number: "$32B",
+        desc: "Annual efficiency value AI unlocks for U.S. legal and tax professionals alone — at current adoption rates, projected to grow sharply",
+        source: "Thomson Reuters Future of Professionals, 2025",
+        url: "https://www.floridabar.org/the-florida-bar-news/thomson-reuters-survey-generative-ai-could-save-legal-professionals-12-hours-weekly-by-2029/",
+      },
+      {
+        number: "2×",
+        desc: "Firms with a defined AI strategy are twice as likely to report direct revenue growth — yet only 22% of firms have one",
+        source: "Thomson Reuters Future of Professionals, 2025",
+        url: "https://www.lawnext.com/2025/06/the-ai-strategy-divide-in-law-thomson-reuters-survey-says-strategic-ai-adoption-is-the-key-to-ai-success.html",
+      },
+      {
+        number: "41%",
+        desc: "Of accounting firms now use AI — up from just 9% in 2024. Early movers report up to 5× productivity gains with ~99% reconciliation accuracy",
+        source: "Karbon State of AI in Accounting, 2025",
+        url: "https://karbonhq.com/resources/state-of-ai-accounting-report-2025/",
+      },
+    ],
+    story:
+      "At one law firm, an AI-assisted workflow cut complaint response drafting time from 16 hours to under 4 minutes. At accounting firms deploying AI for reconciliation, accuracy hit 99% while staff shifted from manual entry to high-value review work. The tools already exist — the firms pulling ahead are the ones with a partner who knows how to implement them.",
+    storySource: "Best Law Firms AI ROI Report / Karbon AI in Accounting, 2025",
+    storyUrl: "https://www.bestlawfirms.com/articles/law-firm-ai-roi-what-finally-worked-and-why-in-2025/7229",
   },
   {
     id: "seniorcare",
@@ -483,7 +514,7 @@ export default function CaseStudiesSection() {
                   marginBottom: "10px",
                 }}
               >
-                Featured · Fortune Magazine · March 2026
+                {heroStory.label}
               </div>
               <h3
                 style={{
@@ -555,7 +586,7 @@ export default function CaseStudiesSection() {
                   whiteSpace: "nowrap",
                 }}
               >
-                Read the Story ↗
+                {heroStory.buttonText}
               </a>
               <div
                 style={{
