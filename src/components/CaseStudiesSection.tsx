@@ -17,16 +17,16 @@ const brand = {
 // ─── Data ───────────────────────────────────────────────────────────────────
 
 const heroStory = {
-  name: "Echo Janitorial Services",
-  person: "Rick Chorney, Founder & CEO",
-  headline: "From $242K to $1M in a single year — using AI automation.",
+  label: "Featured Study · McKinsey & Company · 2025",
+  headline: "78% of companies use AI. Only 6% are seeing transformative results.",
   body:
-    "After years of 19-hour days handling every call, quote, and email himself, Rick spent four hours researching AI tools and automated his intake, installed an AI receptionist handling 15 calls/hour, and wired up automated follow-ups. Revenue tripled. He now works 8-hour days and takes vacations.",
-  quote: "I realized I don't have to be doing all the things I'm doing.",
-  result: "$1.3M projected this year · 16 staff · 1 AI receptionist",
-  source: "Fortune, March 28, 2026",
+    "McKinsey's 2025 global study of nearly 2,000 executives found that AI adoption is now near-universal — but meaningful impact belongs to a small group. High performers who built AI into their business with a clear, structured strategy are 3.6× more likely to report significant bottom-line results. The gap between companies using AI and companies truly benefiting from it has never been wider.",
+  quote: "High performers are 3.6× more likely to report meaningful impact from AI — the differentiator is strategic implementation.",
+  result: "1,993 executives surveyed · 105 countries · Only 6% qualify as high performers",
+  source: "McKinsey & Company, State of AI in 2025",
   sourceUrl:
-    "https://fortune.com/2026/03/28/ai-small-business-entrepreneur-1-million-blue-collar/",
+    "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai",
+  buttonText: "Read the Study ↗",
 };
 
 const industries = [
