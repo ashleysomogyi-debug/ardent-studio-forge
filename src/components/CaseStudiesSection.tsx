@@ -514,7 +514,7 @@ export default function CaseStudiesSection() {
                   marginBottom: "10px",
                 }}
               >
-                Featured · Fortune Magazine · March 2026
+                {heroStory.label}
               </div>
               <h3
                 style={{
