@@ -586,7 +586,7 @@ export default function CaseStudiesSection() {
                   whiteSpace: "nowrap",
                 }}
               >
-                Read the Story ↗
+                {heroStory.buttonText}
               </a>
               <div
                 style={{
