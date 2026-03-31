@@ -124,6 +124,37 @@ const industries = [
     storyUrl: "https://openai.com/index/podium/",
   },
   {
+    id: "profservices",
+    label: "Professional Services",
+    icon: "◆",
+    color: "#C4993A",
+    tagline: "Your competitors have AI tools. The ones pulling ahead have a strategy.",
+    stats: [
+      {
+        number: "$32B",
+        desc: "Annual efficiency value AI unlocks for U.S. legal and tax professionals alone — at current adoption rates, projected to grow sharply",
+        source: "Thomson Reuters Future of Professionals, 2025",
+        url: "https://www.floridabar.org/the-florida-bar-news/thomson-reuters-survey-generative-ai-could-save-legal-professionals-12-hours-weekly-by-2029/",
+      },
+      {
+        number: "2×",
+        desc: "Firms with a defined AI strategy are twice as likely to report direct revenue growth — yet only 22% of firms have one",
+        source: "Thomson Reuters Future of Professionals, 2025",
+        url: "https://www.lawnext.com/2025/06/the-ai-strategy-divide-in-law-thomson-reuters-survey-says-strategic-ai-adoption-is-the-key-to-ai-success.html",
+      },
+      {
+        number: "41%",
+        desc: "Of accounting firms now use AI — up from just 9% in 2024. Early movers report up to 5× productivity gains with ~99% reconciliation accuracy",
+        source: "Karbon State of AI in Accounting, 2025",
+        url: "https://karbonhq.com/resources/state-of-ai-accounting-report-2025/",
+      },
+    ],
+    story:
+      "At one law firm, an AI-assisted workflow cut complaint response drafting time from 16 hours to under 4 minutes. At accounting firms deploying AI for reconciliation, accuracy hit 99% while staff shifted from manual entry to high-value review work. The tools already exist — the firms pulling ahead are the ones with a partner who knows how to implement them.",
+    storySource: "Best Law Firms AI ROI Report / Karbon AI in Accounting, 2025",
+    storyUrl: "https://www.bestlawfirms.com/articles/law-firm-ai-roi-what-finally-worked-and-why-in-2025/7229",
+  },
+  {
     id: "seniorcare",
     label: "Senior Care",
     icon: "◉",
