@@ -37,29 +37,12 @@ const industries = [
     color: "#C4993A",
     tagline: "Stop losing bookings to slow response times.",
     stats: [
-      {
-        number: "+50%",
-        desc: "Revenue increase reported by clinics using AI-powered booking & patient engagement",
-        source: "Prospyr Platform Study, 2024",
-        url: "https://www.prospyrmed.com/blog/post/top-ai-features-for-patient-support-in-med-spas",
-      },
-      {
-        number: "60%",
-        desc: "Of after-hours DMs go unanswered for 12+ hours without automation — costing you bookings",
-        source: "Spa Voices, 2025",
-        url: "https://spavoices.com/med-spa-ai-marketing-use-cases/",
-      },
-      {
-        number: "2 min",
-        desc: "AI response time vs. 2+ hour human average — the gap that decides who gets the booking",
-        source: "Podium / OpenAI Case Study, 2024",
-        url: "https://openai.com/index/podium/",
-      },
+      { number: "+50%", desc: "Revenue increase reported by clinics using AI-powered booking & patient engagement", source: "Prospyr Platform Study, 2024", url: "https://www.prospyrmed.com/blog/post/top-ai-features-for-patient-support-in-med-spas" },
+      { number: "60%", desc: "Of after-hours DMs go unanswered for 12+ hours without automation — costing you bookings", source: "Spa Voices, 2025", url: "https://spavoices.com/med-spa-ai-marketing-use-cases/" },
+      { number: "2 min", desc: "AI response time vs. 2+ hour human average — the gap that decides who gets the booking", source: "Podium / OpenAI Case Study, 2024", url: "https://openai.com/index/podium/" },
     ],
-    story:
-      "A Utah med spa using Podium's AI agent reported 100% of inquiries answered instantly — up from 60% going unanswered for hours. One owner kept her phone in the shower to avoid missing high-value leads. After AI, she doesn't have to.",
-    storySource: "OpenAI / Podium, 2024",
-    storyUrl: "https://openai.com/index/podium/",
+    story: "A Utah med spa using Podium's AI agent reported 100% of inquiries answered instantly — up from 60% going unanswered for hours. One owner kept her phone in the shower to avoid missing high-value leads. After AI, she doesn't have to.",
+    storySource: "OpenAI / Podium, 2024", storyUrl: "https://openai.com/index/podium/",
   },
   {
     id: "realestate",
@@ -68,29 +51,12 @@ const industries = [
     color: "#C4993A",
     tagline: "Most agents use AI for listings. Almost none use it for leads.",
     stats: [
-      {
-        number: "$34B",
-        desc: "Projected efficiency gains for the real estate industry from AI automation by 2030",
-        source: "Morgan Stanley Research, 2025",
-        url: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025",
-      },
-      {
-        number: "37%",
-        desc: "Of real estate tasks can be automated — especially sales, admin & client management",
-        source: "Morgan Stanley Analysis of 162 REIT/CRE firms, 2025",
-        url: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025",
-      },
-      {
-        number: "82%",
-        desc: "Of agents use AI for property descriptions — but 60% don't leverage it for lead conversion",
-        source: "V7 Labs Real Estate AI Report, 2025",
-        url: "https://www.v7labs.com/blog/ai-in-real-estate",
-      },
+      { number: "$34B", desc: "Projected efficiency gains for the real estate industry from AI automation by 2030", source: "Morgan Stanley Research, 2025", url: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025" },
+      { number: "37%", desc: "Of real estate tasks can be automated — especially sales, admin & client management", source: "Morgan Stanley Analysis of 162 REIT/CRE firms, 2025", url: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025" },
+      { number: "82%", desc: "Of agents use AI for property descriptions — but 60% don't leverage it for lead conversion", source: "V7 Labs Real Estate AI Report, 2025", url: "https://www.v7labs.com/blog/ai-in-real-estate" },
     ],
-    story:
-      "Brokers and services firms show the highest automation potential of any real estate sub-sector — with a possible 34% increase in operating cash flow from AI adoption. The agents winning in Palm Beach right now are the ones who respond in minutes, not hours.",
-    storySource: "Morgan Stanley Research, 2025",
-    storyUrl: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025",
+    story: "Brokers and services firms show the highest automation potential of any real estate sub-sector — with a possible 34% increase in operating cash flow from AI adoption. The agents winning in Palm Beach right now are the ones who respond in minutes, not hours.",
+    storySource: "Morgan Stanley Research, 2025", storyUrl: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025",
   },
   {
     id: "hvac",
@@ -99,60 +65,26 @@ const industries = [
     color: "#C4993A",
     tagline: "The job goes to whoever answers first.",
     stats: [
-      {
-        number: "4.3×",
-        desc: "Average ROI in year one for service businesses using AI in at least one workflow",
-        source: "Deloitte, 2025 · via Mediagistic HVAC AI Guide",
-        url: "https://www.mediagistic.com/winning-with-ai",
-      },
-      {
-        number: "78%",
-        desc: "Of leads go to the first responder — and 40% of HVAC inquiries arrive after hours",
-        source: "LeadConnect, 2024 · Podium/OpenAI Case Study",
-        url: "https://openai.com/index/podium/",
-      },
-      {
-        number: "+15",
-        desc: "Extra emergency repairs booked in one month by a Texas HVAC shop using after-hours AI",
-        source: "Podium / OpenAI Case Study, 2024",
-        url: "https://openai.com/index/podium/",
-      },
+      { number: "4.3×", desc: "Average ROI in year one for service businesses using AI in at least one workflow", source: "Deloitte, 2025 · via Mediagistic HVAC AI Guide", url: "https://www.mediagistic.com/winning-with-ai" },
+      { number: "78%", desc: "Of leads go to the first responder — and 40% of HVAC inquiries arrive after hours", source: "LeadConnect, 2024 · Podium/OpenAI Case Study", url: "https://openai.com/index/podium/" },
+      { number: "+15", desc: "Extra emergency repairs booked in one month by a Texas HVAC shop using after-hours AI", source: "Podium / OpenAI Case Study, 2024", url: "https://openai.com/index/podium/" },
     ],
-    story:
-      "A Texas HVAC shop installed an AI agent to handle after-hours calls. In a single month, it captured 15 emergency repair jobs that would have gone to a competitor. The owner estimated a single lost Saturday lead costs tens of thousands in lifetime value.",
-    storySource: "OpenAI / Podium, 2024",
-    storyUrl: "https://openai.com/index/podium/",
+    story: "A Texas HVAC shop installed an AI agent to handle after-hours calls. In a single month, it captured 15 emergency repair jobs that would have gone to a competitor. The owner estimated a single lost Saturday lead costs tens of thousands in lifetime value.",
+    storySource: "OpenAI / Podium, 2024", storyUrl: "https://openai.com/index/podium/",
   },
   {
-    id: "profservices",
+    id: "professionalservices",
     label: "Professional Services",
-    icon: "◆",
+    icon: "⊙",
     color: "#C4993A",
     tagline: "Your competitors have AI tools. The ones pulling ahead have a strategy.",
     stats: [
-      {
-        number: "$32B",
-        desc: "Annual efficiency value AI unlocks for U.S. legal and tax professionals alone — at current adoption rates, projected to grow sharply",
-        source: "Thomson Reuters Future of Professionals, 2025",
-        url: "https://www.floridabar.org/the-florida-bar-news/thomson-reuters-survey-generative-ai-could-save-legal-professionals-12-hours-weekly-by-2029/",
-      },
-      {
-        number: "2×",
-        desc: "Firms with a defined AI strategy are twice as likely to report direct revenue growth — yet only 22% of firms have one",
-        source: "Thomson Reuters Future of Professionals, 2025",
-        url: "https://www.lawnext.com/2025/06/the-ai-strategy-divide-in-law-thomson-reuters-survey-says-strategic-ai-adoption-is-the-key-to-ai-success.html",
-      },
-      {
-        number: "41%",
-        desc: "Of accounting firms now use AI — up from just 9% in 2024. Early movers report up to 5× productivity gains with ~99% reconciliation accuracy",
-        source: "Karbon State of AI in Accounting, 2025",
-        url: "https://karbonhq.com/resources/state-of-ai-accounting-report-2025/",
-      },
+      { number: "$32B", desc: "Annual efficiency value AI unlocks for U.S. legal and tax professionals alone — at current adoption rates, projected to grow sharply", source: "Thomson Reuters Future of Professionals, 2025", url: "https://www.floridabar.org/the-florida-bar-news/thomson-reuters-survey-generative-ai-could-save-legal-professionals-12-hours-weekly-by-2029/" },
+      { number: "2×", desc: "Firms with a defined AI strategy are twice as likely to report direct revenue growth — yet only 22% of firms have one", source: "Thomson Reuters Future of Professionals, 2025", url: "https://www.lawnext.com/2025/06/the-ai-strategy-divide-in-law-thomson-reuters-survey-says-strategic-ai-adoption-is-the-key-to-ai-success.html" },
+      { number: "41%", desc: "Of accounting firms now use AI — up from just 9% in 2024. Early movers report up to 5× productivity gains with ~99% reconciliation accuracy", source: "Karbon State of AI in Accounting, 2025", url: "https://karbonhq.com/resources/state-of-ai-accounting-report-2025/" },
     ],
-    story:
-      "At one law firm, an AI-assisted workflow cut complaint response drafting time from 16 hours to under 4 minutes. At accounting firms deploying AI for reconciliation, accuracy hit 99% while staff shifted from manual entry to high-value review work. The tools already exist — the firms pulling ahead are the ones with a partner who knows how to implement them.",
-    storySource: "Best Law Firms AI ROI Report / Karbon AI in Accounting, 2025",
-    storyUrl: "https://www.bestlawfirms.com/articles/law-firm-ai-roi-what-finally-worked-and-why-in-2025/7229",
+    story: "At one law firm, an AI-assisted workflow cut complaint response drafting time from 16 hours to under 4 minutes. At accounting firms deploying AI for reconciliation, accuracy hit 99% while staff shifted from manual entry to high-value review work. The tools already exist — the firms pulling ahead are the ones with a partner who knows how to implement them.",
+    storySource: "Best Law Firms AI ROI Report / Karbon AI in Accounting, 2025", storyUrl: "https://www.bestlawfirms.com/articles/law-firm-ai-roi-what-finally-worked-and-why-in-2025/7229",
   },
   {
     id: "seniorcare",
@@ -161,33 +93,56 @@ const industries = [
     color: "#C4993A",
     tagline: "Less than 3% of home care agencies use AI. That's your advantage.",
     stats: [
-      {
-        number: "170+",
-        desc: "Automated workflows running daily at Cypress Living — saving hours of staff time every day",
-        source: "HealthTech Magazine, 2025",
-        url: "https://healthtechmagazine.net/article/2025/05/how-can-ai-support-senior-care-workforce",
-      },
-      {
-        number: "<3%",
-        desc: "Current AI adoption in home care — first movers in Palm Beach County have a wide-open window",
-        source: "AutomationEdge Home Care Report, 2025",
-        url: "https://automationedge.com/home-health-care-automation/blogs/ai-and-automation-in-home-care/",
-      },
-      {
-        number: "90%+",
-        desc: "Accuracy of Cypress Living's AI fall-prediction model, built on data the facility already collected",
-        source: "HealthTech Magazine, 2025",
-        url: "https://healthtechmagazine.net/article/2025/05/how-can-ai-support-senior-care-workforce",
-      },
+      { number: "170+", desc: "Automated workflows running daily at Cypress Living — saving hours of staff time every day", source: "HealthTech Magazine, 2025", url: "https://healthtechmagazine.net/article/2025/05/how-can-ai-support-senior-care-workforce" },
+      { number: "<3%", desc: "Current AI adoption in home care — first movers in Palm Beach County have a wide-open window", source: "AutomationEdge Home Care Report, 2025", url: "https://automationedge.com/home-health-care-automation/blogs/ai-and-automation-in-home-care/" },
+      { number: "90%+", desc: "Accuracy of Cypress Living's AI fall-prediction model, built on data the facility already collected", source: "HealthTech Magazine, 2025", url: "https://healthtechmagazine.net/article/2025/05/how-can-ai-support-senior-care-workforce" },
     ],
-    story:
-      "Cypress Living runs 170+ daily automations through Microsoft Power Automate — from paper form digitization to email routing — saving hours every day. Their data scientist also built an AI model predicting resident falls with 90%+ accuracy, using data they were already collecting.",
-    storySource: "HealthTech Magazine, 2025",
-    storyUrl:
-      "https://healthtechmagazine.net/article/2025/05/how-can-ai-support-senior-care-workforce",
+    story: "Cypress Living runs 170+ daily automations through Microsoft Power Automate — from paper form digitization to email routing — saving hours every day. Their data scientist also built an AI model predicting resident falls with 90%+ accuracy, using data they were already collecting.",
+    storySource: "HealthTech Magazine, 2025", storyUrl: "https://healthtechmagazine.net/article/2025/05/how-can-ai-support-senior-care-workforce",
+  },
+  {
+    id: "plumbing",
+    label: "Plumbing",
+    icon: "◆",
+    color: "#C4993A",
+    tagline: "You're losing jobs at 2am that your competitor is booking at 2am.",
+    stats: [
+      { number: "13%", desc: "Revenue growth achieved by My Plumber Plus after deploying Avoca AI — on a $129M revenue base", source: "Avoca AI Case Study · avoca.ai", url: "https://www.avoca.ai/" },
+      { number: "90%", desc: "Booking rate achieved by Aire Serv after deploying AI — after-hours bookings jumped from 58 to 208 per month", source: "Avoca AI / Aire Serv Case Study · avoca.ai", url: "https://www.avoca.ai/" },
+      { number: "−40%", desc: "Reduction in response times at a local plumbing business after implementing AI-powered scheduling and dispatch", source: "SwiftCloud AI Home Services Report, 2025", url: "https://swiftcloud.ai/ai-powered-workflow-automation-home-service-2025/" },
+    ],
+    story: "My Plumber Plus — a $129M plumbing business — deployed Avoca AI to handle overflow calls and after-hours bookings and grew revenue by 13%. Aire Serv, a national franchise, saw after-hours bookings jump from 58 to 208 per month after replacing their live answering service with AI, achieving a 90% booking rate.",
+    storySource: "Avoca AI Case Studies · avoca.ai", storyUrl: "https://www.avoca.ai/",
+  },
+  {
+    id: "boutiques",
+    label: "Boutiques",
+    icon: "◑",
+    color: "#C4993A",
+    tagline: "Your best customers are shopping online at midnight. Is anyone there?",
+    stats: [
+      { number: "87%", desc: "Of retailers report AI had a positive impact on revenue — and 94% say it reduced operating costs", source: "Shopify / Bain Retail AI Report, 2025", url: "https://www.shopify.com/enterprise/blog/ai-in-retail" },
+      { number: "+27%", desc: "Average order value increase from AI-curated product recommendations and personalized bundles", source: "Jellyfish Technologies / Target GenAI Study, 2025", url: "https://www.jellyfishtechnologies.com/generative-ai-in-retail-use-cases-with-real-life-examples/" },
+      { number: "73%", desc: "Of online shopping carts are abandoned — poor fit info and lack of personalization are the top causes", source: "Baymard Institute · Bold Metrics Retail Report, 2025", url: "https://blog.boldmetrics.com/strategic-ai-investments-in-retail-2025-balancing-innovation-and-roi" },
+    ],
+    story: "A boutique owner told industry researchers: \"My AI assistant takes customer inquiries 24/7, writes my email newsletters, and helps plan inventory orders. It's like having three employees for the price of a streaming subscription.\" A sportswear retailer using AI personalization saw a 297% conversion increase and 28% fewer returns in the same period.",
+    storySource: "Jellyfish Technologies Retail GenAI Report, 2025", storyUrl: "https://www.jellyfishtechnologies.com/generative-ai-in-retail-use-cases-with-real-life-examples/",
+  },
+  {
+    id: "insurance",
+    label: "Insurance",
+    icon: "▣",
+    color: "#C4993A",
+    tagline: "Renewals are still the #1 most inefficient task for insurance agencies.",
+    stats: [
+      { number: "75%", desc: "Reduction in claims resolution time — from 30 days to 7.5 days — achieved through AI automation", source: "Datagrid AI Insurance Statistics Report, 2025", url: "https://datagrid.com/blog/ai-agent-for-insurance-statistics" },
+      { number: "+6%", desc: "Revenue gains reported by 90% of financial services firms implementing generative AI, per Google's study", source: "Google ROI of Gen AI in Financial Services · Vonage Insurance Report, 2025", url: "https://www.vonage.com/resources/articles/ai-in-insurance/" },
+      { number: "+30%", desc: "Productivity gains reported by insurers that equipped service and operations teams with AI tools", source: "BCG Insurance AI Productivity Study · Creatio, 2025", url: "https://www.creatio.com/glossary/ai-in-insurance" },
+    ],
+    story: "UK insurer Aviva deployed AI across its claims domain — cutting liability assessment time for complex cases by 23 days, improving claims routing accuracy by 30%, and reducing customer complaints by 65%. The transformation saved the company more than £60 million in 2024. For independent agencies, the same automation principles apply at a fraction of the cost.",
+    storySource: "McKinsey · The Future of AI in Insurance, 2025", storyUrl: "https://www.mckinsey.com/industries/financial-services/our-insights/the-future-of-ai-in-the-insurance-industry",
   },
 ];
-
 // ─── Sub-components ──────────────────────────────────────────────────────────
 
 function StatCard({ stat, index, visible }) {
