@@ -568,6 +568,7 @@ export default function CaseStudiesSection() {
           >
             {/* Tab bar */}
             <div
+              className="ardent-tab-scroll"
               style={{
                 display: "flex",
                 gap: "0",
