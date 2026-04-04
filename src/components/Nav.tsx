@@ -20,7 +20,7 @@ const Nav = () => {
     >
       <a href="#" className="flex flex-col shrink-0">
         <span className="font-serif text-[16px] md:text-[18px] text-foreground tracking-wide">Ardent Studio</span>
-        <span className="font-mono text-[11px] md:text-[11px] text-gold tracking-[0.15em] md:tracking-[0.2em] uppercase">AI App Builders</span>
+        <span className="font-mono text-[11px] md:text-[11px] text-gold tracking-[0.15em] md:tracking-[0.2em] uppercase">AI Digital Products</span>
       </a>
 
       <div className="hidden md:flex items-center gap-8">
