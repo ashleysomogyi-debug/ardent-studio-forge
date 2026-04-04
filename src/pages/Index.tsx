@@ -45,6 +45,8 @@ const Index = () => {
         <Divider />
         <TestimonialsSection />
         <Divider />
+        <AboutSection />
+        <Divider />
         <CTASection />
         <Divider />
         <ContactFormSection />
