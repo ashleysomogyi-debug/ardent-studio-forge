@@ -6,6 +6,14 @@ const TeamSection = () => {
   ];
 
   const ashleyTags = ["web development", "AI automation", "small business", "Palm Beach County", "solo founder"];
+
+  const wesleyDetails = [
+    { label: "Based in", value: "Palm Beach County, FL" },
+    { label: "Focus", value: "Client strategy, project operations, and business development" },
+    { label: "Approach", value: "Clear communication, structured timelines, no surprises." },
+  ];
+  const wesleyTags = ["strategy", "operations", "client success", "business development", "project management"];
+
   const dogTags = ["beach days", "desk co-pilots", "treat negotiations", "nap optimization", "client charm"];
 
   const dogStats = [
