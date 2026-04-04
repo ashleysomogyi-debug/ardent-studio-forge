@@ -343,6 +343,8 @@ export default function CaseStudiesSection() {
         .ardent-tab-btn:hover .ardent-tab-inner { color: #E8C96A !important; border-bottom-color: rgba(196,153,58,0.5) !important; }
         .ardent-hero-link:hover { color: #E8C96A !important; }
         .ardent-cta-btn:hover { background: #E8C96A !important; }
+        .ardent-tab-scroll::-webkit-scrollbar { display: none; }
+        .ardent-tab-scroll { -ms-overflow-style: none; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
       `}</style>
 
       <section
