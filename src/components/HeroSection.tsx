@@ -21,7 +21,7 @@ const HeroSection = () => {
 
         {/* H1 */}
         <h1
-          className="font-sans font-light leading-[0.95] mb-6 md:mb-8 animate-fade-up text-[clamp(48px,11vw,96px)] md:text-[clamp(56px,8vw,96px)]"
+          className="font-sans font-light leading-[0.95] mb-6 md:mb-8 animate-fade-up text-[clamp(36px,9vw,96px)] md:text-[clamp(56px,8vw,96px)]"
           style={{ animationDelay: "0.2s" }}
         >
           Your competitors are automated.<br />
@@ -48,8 +48,8 @@ const HeroSection = () => {
           <div className="w-[22px] h-[22px] rounded-full bg-primary flex items-center justify-center flex-shrink-0">
             <span className="text-[11px] font-bold text-primary-foreground leading-none">A</span>
           </div>
-          <span className="font-mono text-[11px] text-muted-foreground whitespace-nowrap">
-            Ashley Somogyi · Founder, based in Palm Beach County
+          <span className="font-mono text-[10px] md:text-[11px] text-muted-foreground whitespace-normal md:whitespace-nowrap text-left">
+            Dr Ashley Somogyi · Founder, based in Palm Beach County
           </span>
         </div>
 
@@ -85,7 +85,7 @@ const HeroSection = () => {
             { num: "0 hrs", label: "Wasted in standups" },
           ].map((s) => (
             <div key={s.label} className="flex flex-col items-center">
-              <span className="font-sans italic text-gold text-[28px] md:text-[36px] leading-none">{s.num}</span>
+              <span className="font-sans italic text-gold text-[24px] md:text-[36px] leading-none">{s.num}</span>
               <span className="font-mono text-[11px] text-label-text mt-2 md:mt-3">{s.label}</span>
             </div>
           ))}
