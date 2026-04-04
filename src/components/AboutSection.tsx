@@ -49,7 +49,7 @@ const AboutSection = () => (
       </div>
 
       {/* Team cards grid */}
-      <div className="reveal-section grid grid-cols-1 sm:grid-cols-3 gap-6">
+      <div className="reveal-section grid grid-cols-1 sm:grid-cols-2 gap-6">
         {[
           {
             name: "Wesley Price",
@@ -57,14 +57,9 @@ const AboutSection = () => (
             desc: "Keeps everything running on time and on budget. If there's a bottleneck, Wesley already fixed it.",
           },
           {
-            name: "Loki",
-            role: "Studio Dog · Head of Morale",
-            desc: "Supervises every Zoom call. Has never missed a deadline — mostly because he sleeps through them.",
-          },
-          {
-            name: "Willow",
-            role: "Studio Dog · Junior Associate",
-            desc: "Specializes in moral support and aggressive napping. Currently under review for chewing a USB cable.",
+            name: "Loki & Willow",
+            role: "Chief of Snuggles and Snacks",
+            desc: "Studio dogs. Supervise every Zoom call, specialise in moral support, and ensure no deadline ever feels too serious.",
           },
         ].map((member) => (
           <div
