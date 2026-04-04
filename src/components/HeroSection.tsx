@@ -33,7 +33,7 @@ const HeroSection = () => {
           className="font-sans text-[16px] md:text-[18px] text-body-text max-w-[460px] mb-6 md:mb-8 leading-[1.75] animate-fade-up"
           style={{ animationDelay: "0.4s" }}
         >
-          Stop losing jobs to businesses who respond faster. I build AI-powered websites, automations, and digital products for South Florida businesses — in days, not months.
+          Stop losing jobs to businesses who respond faster.
         </p>
 
         {/* Founder badge */}
