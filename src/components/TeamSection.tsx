@@ -80,7 +80,7 @@ const TeamSection = () => {
                 </span>
 
                 <h3 className="font-serif text-[42px] font-bold text-white leading-tight">
-                  Ashley Somogyi
+                  Dr Ashley Somogyi
                 </h3>
                 <p className="font-mono text-sm mb-6" style={{ color: "rgba(244,244,246,0.52)" }}>
                   Founder &amp; Builder · <span style={{ color: "#c9a96e" }}>Ardent Studio</span>
