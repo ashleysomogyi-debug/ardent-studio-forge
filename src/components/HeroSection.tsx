@@ -85,7 +85,7 @@ const HeroSection = () => {
             { num: "0 hrs", label: "Wasted in standups" },
           ].map((s) => (
             <div key={s.label} className="flex flex-col items-center">
-              <span className="font-sans italic text-gold text-[28px] md:text-[36px] leading-none">{s.num}</span>
+              <span className="font-sans italic text-gold text-[24px] md:text-[36px] leading-none">{s.num}</span>
               <span className="font-mono text-[11px] text-label-text mt-2 md:mt-3">{s.label}</span>
             </div>
           ))}
