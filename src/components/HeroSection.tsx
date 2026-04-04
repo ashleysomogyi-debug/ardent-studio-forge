@@ -30,11 +30,28 @@ const HeroSection = () => {
 
         {/* Supporting line */}
         <p
-          className="font-sans text-[16px] md:text-[18px] text-body-text max-w-[460px] mb-8 md:mb-12 leading-[1.75] animate-fade-up"
+          className="font-sans text-[16px] md:text-[18px] text-body-text max-w-[460px] mb-6 md:mb-8 leading-[1.75] animate-fade-up"
           style={{ animationDelay: "0.4s" }}
         >
           Stop losing jobs to businesses who respond faster.
         </p>
+
+        {/* Founder badge */}
+        <div
+          className="flex items-center gap-2.5 rounded-full border px-3.5 py-2 mb-8 md:mb-12 animate-fade-up"
+          style={{
+            background: "rgba(255,255,255,0.04)",
+            borderColor: "rgba(255,255,255,0.08)",
+            animationDelay: "0.45s",
+          }}
+        >
+          <div className="w-[22px] h-[22px] rounded-full bg-primary flex items-center justify-center flex-shrink-0">
+            <span className="text-[11px] font-bold text-primary-foreground leading-none">A</span>
+          </div>
+          <span className="font-mono text-[11px] text-muted-foreground whitespace-nowrap">
+            Ashley Somogyi · Founder, based in Palm Beach County
+          </span>
+        </div>
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-5 mb-10 md:mb-14 w-full animate-fade-up" style={{ animationDelay: "0.5s" }}>
