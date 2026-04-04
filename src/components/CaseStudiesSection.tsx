@@ -449,16 +449,16 @@ export default function CaseStudiesSection() {
               border: `1px solid ${brand.goldRule}`,
               borderTop: `2px solid ${brand.gold}`,
               borderRadius: "4px",
-              padding: "28px 32px",
+              padding: "24px 20px",
               marginBottom: "52px",
-              display: "grid",
-              gridTemplateColumns: "1fr auto",
+              display: "flex",
+              flexDirection: "column",
               gap: "24px",
-              alignItems: "center",
               opacity: sectionVisible ? 1 : 0,
               transform: sectionVisible ? "translateY(0)" : "translateY(20px)",
               transition: "opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s",
             }}
+            className="md:!grid md:!grid-cols-[1fr_auto] md:!items-center md:!p-[28px_32px]"
           >
             <div>
               <div
