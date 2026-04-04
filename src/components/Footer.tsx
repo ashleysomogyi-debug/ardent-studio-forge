@@ -26,7 +26,8 @@ const Footer = () => (
       </div>
 
       <div className="md:text-right">
-        <span className="font-mono text-[11px] text-label-text">© 2026 Ardent Studio</span>
+        <span className="font-mono text-[11px] text-label-text block">Palm Beach County, Florida</span>
+        <span className="font-mono text-[11px] text-label-text block mt-1">© 2026 Ardent Studio</span>
       </div>
     </div>
   </footer>

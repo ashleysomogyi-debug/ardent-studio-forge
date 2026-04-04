@@ -36,11 +36,13 @@ const Nav = () => {
       </div>
 
       <a
-        href="#contact"
+        href="https://calendly.com/hello-ardentstudio/30min"
+        target="_blank"
+        rel="noopener noreferrer"
         data-hover
         className="font-sans text-[13px] bg-foreground text-bg-base px-4 md:px-5 py-2 rounded-full hover:opacity-90 transition-opacity shrink-0"
       >
-        Book a scope call
+        Book a free consultation
       </a>
     </nav>
   );
