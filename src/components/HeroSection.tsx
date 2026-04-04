@@ -12,39 +12,40 @@ const HeroSection = () => {
       <div className="absolute bottom-16 right-6 md:right-10 w-10 h-10 border-b-2 border-r-2 border-teal/30" />
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-[900px] mx-auto">
-        {/* Eyebrow */}
+        {/* Tagline */}
         <div className="flex items-center gap-2 md:gap-3 mb-6 md:mb-10 animate-fade-up" style={{ animationDelay: "0.1s" }}>
           <span className="w-5 md:w-8 h-px bg-teal" />
-          <span className="font-mono text-[11px] text-teal tracking-[0.2em] md:tracking-[0.3em] uppercase">AI-Powered App Development</span>
+          <span className="font-mono text-[11px] text-teal tracking-[0.2em] md:tracking-[0.3em] uppercase">From idea to live in days.</span>
           <span className="w-5 md:w-8 h-px bg-teal" />
         </div>
 
         {/* H1 */}
         <h1
-          className="font-sans font-light leading-[0.95] mb-6 md:mb-10 animate-fade-up text-[clamp(52px,12vw,96px)] md:text-[clamp(56px,8vw,96px)]"
+          className="font-sans font-light leading-[0.95] mb-6 md:mb-8 animate-fade-up text-[clamp(48px,11vw,96px)] md:text-[clamp(56px,8vw,96px)]"
           style={{ animationDelay: "0.2s" }}
         >
-          From idea<br />
-          to <em className="text-teal not-italic">shipped</em><br />
-          in days.
+          Your competitors are automated.<br />
+          <span className="text-teal hero-pulse">Are you?</span>
         </h1>
 
-        {/* Body */}
+        {/* Supporting line */}
         <p
-          className="font-sans text-[16px] text-body-text max-w-[400px] md:max-w-[460px] mb-8 md:mb-12 leading-[1.75] animate-fade-up"
+          className="font-sans text-[16px] md:text-[18px] text-body-text max-w-[460px] mb-8 md:mb-12 leading-[1.75] animate-fade-up"
           style={{ animationDelay: "0.4s" }}
         >
-          We build production-ready apps, internal tools, and SaaS products for founders and businesses — faster than any dev team, at a fraction of the cost.
+          Stop losing jobs to businesses who respond faster.
         </p>
 
         {/* Buttons */}
         <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-5 mb-10 md:mb-14 w-full animate-fade-up" style={{ animationDelay: "0.5s" }}>
           <a
-            href="#contact"
+            href="https://calendly.com/hello-ardentstudio/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             data-hover
             className="font-sans text-[13px] bg-foreground text-bg-base px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity w-full md:w-auto text-center"
           >
-            Book a free scope call
+            Book a free consultation
           </a>
           <a
             href="#work"
