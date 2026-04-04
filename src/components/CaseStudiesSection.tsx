@@ -343,6 +343,8 @@ export default function CaseStudiesSection() {
         .ardent-tab-btn:hover .ardent-tab-inner { color: #E8C96A !important; border-bottom-color: rgba(196,153,58,0.5) !important; }
         .ardent-hero-link:hover { color: #E8C96A !important; }
         .ardent-cta-btn:hover { background: #E8C96A !important; }
+        .ardent-tab-scroll::-webkit-scrollbar { display: none; }
+        .ardent-tab-scroll { -ms-overflow-style: none; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
       `}</style>
 
       <section
@@ -447,16 +449,16 @@ export default function CaseStudiesSection() {
               border: `1px solid ${brand.goldRule}`,
               borderTop: `2px solid ${brand.gold}`,
               borderRadius: "4px",
-              padding: "28px 32px",
+              padding: "24px 20px",
               marginBottom: "52px",
-              display: "grid",
-              gridTemplateColumns: "1fr auto",
+              display: "flex",
+              flexDirection: "column",
               gap: "24px",
-              alignItems: "center",
               opacity: sectionVisible ? 1 : 0,
               transform: sectionVisible ? "translateY(0)" : "translateY(20px)",
               transition: "opacity 0.6s ease 0.15s, transform 0.6s ease 0.15s",
             }}
+            className="md:!grid md:!grid-cols-[1fr_auto] md:!items-center md:!p-[28px_32px]"
           >
             <div>
               <div
@@ -566,6 +568,7 @@ export default function CaseStudiesSection() {
           >
             {/* Tab bar */}
             <div
+              className="ardent-tab-scroll"
               style={{
                 display: "flex",
                 gap: "0",
