@@ -21,7 +21,7 @@ const HeroSection = () => {
 
         {/* H1 */}
         <h1
-          className="font-sans font-light leading-[0.95] mb-6 md:mb-8 animate-fade-up text-[clamp(48px,11vw,96px)] md:text-[clamp(56px,8vw,96px)]"
+          className="font-sans font-light leading-[0.95] mb-6 md:mb-8 animate-fade-up text-[clamp(36px,9vw,96px)] md:text-[clamp(56px,8vw,96px)]"
           style={{ animationDelay: "0.2s" }}
         >
           Your competitors are automated.<br />
