@@ -4,37 +4,42 @@
 
 @layer base {
   :root {
-    --background: 0 0% 2.7%;
-    --foreground: 240 14% 95.7%;
-    --card: 0 0% 5.1%;
-    --card-foreground: 240 14% 95.7%;
-    --popover: 0 0% 5.1%;
-    --popover-foreground: 240 14% 95.7%;
-    --primary: 39 42% 55%;
-    --primary-foreground: 0 0% 2.7%;
-    --secondary: 0 0% 5.1%;
-    --secondary-foreground: 240 14% 95.7%;
-    --muted: 0 0% 8%;
-    --muted-foreground: 240 7% 62%;
-    --accent: 39 42% 55%;
-    --accent-foreground: 0 0% 2.7%;
+    --background: 0 0% 5.1%;
+    --foreground: 60 4% 95.3%;
+    --card: 0 0% 7.8%;
+    --card-foreground: 60 4% 95.3%;
+    --popover: 0 0% 7.8%;
+    --popover-foreground: 60 4% 95.3%;
+    --primary: 179 87% 40%;
+    --primary-foreground: 0 0% 5.1%;
+    --secondary: 33 50% 53%;
+    --secondary-foreground: 0 0% 5.1%;
+    --muted: 0 0% 10.2%;
+    --muted-foreground: 60 4% 55%;
+    --accent: 179 87% 40%;
+    --accent-foreground: 0 0% 5.1%;
     --destructive: 0 55% 66%;
-    --destructive-foreground: 240 14% 95.7%;
-    --border: 0 0% 14%;
-    --input: 0 0% 14%;
-    --ring: 39 42% 55%;
+    --destructive-foreground: 60 4% 95.3%;
+    --border: 0 0% 100% / 0.08;
+    --input: 0 0% 100% / 0.08;
+    --ring: 179 87% 40%;
     --radius: 0.5rem;
 
-    --color-gold: #c9a96e;
-    --color-bg: #070707;
-    --color-bg-elevated: #0d0d0d;
-    --color-bg-hover: #141414;
-    --color-body: rgba(244,244,246,0.78);
-    --color-label: rgba(244,244,246,0.52);
+    --color-teal: #0DBFBC;
+    --color-gold: #C4924A;
+    --color-bg: #0D0D0D;
+    --color-surface: #141414;
+    --color-surface-2: #1A1A1A;
+    --color-surface-3: #222222;
+    --color-body: rgba(245,245,240,0.78);
+    --color-label: rgba(245,245,240,0.55);
+    --color-dim: rgba(245,245,240,0.3);
     --color-error: #e07070;
+    --color-border: rgba(255,255,255,0.08);
+    --color-border-subtle: rgba(255,255,255,0.05);
 
-    --font-serif: 'Cormorant Garamond', Georgia, serif;
-    --font-mono: 'DM Mono', 'Courier New', monospace;
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
   }
 }
 
@@ -46,21 +51,22 @@
     cursor: none;
     scroll-behavior: smooth;
     color-scheme: dark;
-    background: #070707 !important;
+    background: #0D0D0D !important;
   }
   body {
     background: var(--color-bg) !important;
-    color: #f4f4f6 !important;
-    font-family: var(--font-mono);
+    color: #F5F5F0 !important;
+    font-family: var(--font-sans);
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-serif);
+    font-family: var(--font-sans);
+    font-weight: 600;
   }
   p, span, a, button, li, label, input, textarea {
-    font-family: var(--font-mono);
+    font-family: var(--font-sans);
   }
   a, button {
     cursor: none;
