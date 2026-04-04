@@ -1,45 +1,63 @@
-const BeforeAfterSection = () => (
-  <section id="before-after" className="py-20 md:py-28 px-5 md:px-10 bg-surface">
-    <div className="max-w-[1200px] mx-auto reveal-section">
-      <span className="block font-mono text-[11px] text-primary tracking-[0.2em] uppercase mb-4">
-        Before &amp; After
-      </span>
-      <h2 className="font-sans text-[clamp(28px,5vw,44px)] font-light text-foreground leading-[1.15] mb-6">
-        See the <em className="text-primary not-italic">transformation.</em>
-      </h2>
-      <p className="font-sans text-[15px] text-muted-foreground max-w-[520px] leading-[1.75] mb-12">
-        Real results from real clients — outdated workflows replaced with modern, automated systems.
-      </p>
+import { X, Check } from "lucide-react";
 
-      <div className="grid md:grid-cols-2 gap-6">
-        {[
-          {
-            before: "Manual quoting via email chains — 48hr response time",
-            after: "Instant AI-powered quotes — under 60 seconds",
-            client: "Roofing contractor",
-          },
-          {
-            before: "Paper intake forms and missed follow-ups",
-            after: "Automated booking, reminders & review requests",
-            client: "Med-spa clinic",
-          },
-        ].map((item) => (
-          <div key={item.client} className="rounded-xl border border-border overflow-hidden bg-surface-2">
-            <div className="grid grid-cols-2">
-              <div className="p-6 border-r border-border">
-                <span className="block font-mono text-[10px] text-destructive tracking-[0.15em] uppercase mb-3">Before</span>
-                <p className="font-sans text-[14px] text-muted-foreground leading-[1.7]">{item.before}</p>
-              </div>
-              <div className="p-6">
-                <span className="block font-mono text-[10px] text-primary tracking-[0.15em] uppercase mb-3">After</span>
-                <p className="font-sans text-[14px] text-foreground leading-[1.7]">{item.after}</p>
-              </div>
-            </div>
-            <div className="px-6 py-3 border-t border-border">
-              <span className="font-mono text-[10px] text-muted-foreground tracking-[0.1em] uppercase">{item.client}</span>
-            </div>
+const leftItems = [
+  "Missed calls become missed jobs",
+  "Leads go cold while you're on-site",
+  "Your competitor responded. You didn't.",
+  "Generic website no one can find",
+  "Admin work eats your evenings",
+];
+
+const rightItems = [
+  "AI answers instantly, 24/7",
+  "Leads are captured and followed up automatically",
+  "You're first to respond, every time",
+  "Website built to convert local traffic",
+  "Automation handles the repetitive stuff",
+];
+
+const BeforeAfterSection = () => (
+  <section className="py-[72px] px-5 md:px-10 bg-background">
+    <div className="max-w-[1000px] mx-auto reveal-section">
+      <div className="grid grid-cols-1 md:grid-cols-2 rounded-xl overflow-hidden border border-border">
+        {/* Left column */}
+        <div className="bg-[#141414]">
+          <div className="px-6 py-5 border-b border-border">
+            <span className="font-mono text-[11px] text-foreground tracking-[0.2em] uppercase">
+              Without Ardent
+            </span>
           </div>
-        ))}
+          {leftItems.map((item, i) => (
+            <div
+              key={i}
+              className={`flex items-start gap-3 px-6 py-4 ${i < leftItems.length - 1 ? "border-b border-border" : ""}`}
+            >
+              <X size={16} className="text-destructive mt-0.5 shrink-0" />
+              <span className="font-sans text-[14px] text-muted-foreground leading-[1.6]">{item}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Center divider (visible on md+) */}
+        <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-[2px] bg-border" style={{ display: "none" }} />
+
+        {/* Right column */}
+        <div className="bg-surface-2 md:border-l-2 border-border border-t md:border-t-0">
+          <div className="px-6 py-5 border-b border-border">
+            <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase">
+              With Ardent
+            </span>
+          </div>
+          {rightItems.map((item, i) => (
+            <div
+              key={i}
+              className={`flex items-start gap-3 px-6 py-4 ${i < rightItems.length - 1 ? "border-b border-border" : ""}`}
+            >
+              <Check size={16} className="text-primary mt-0.5 shrink-0" />
+              <span className="font-sans text-[14px] text-foreground leading-[1.6]">{item}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   </section>
