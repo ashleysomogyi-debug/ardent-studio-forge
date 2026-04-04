@@ -38,7 +38,7 @@ const ParticleCanvas = ({ className = "" }: { className?: string }) => {
         if (p.y < 0 || p.y > h) p.vy *= -1;
         ctx.beginPath();
         ctx.arc(p.x, p.y, 1.5, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(201,169,110,${p.o})`;
+        ctx.fillStyle = `rgba(13,191,188,${p.o})`;
         ctx.fill();
       }
 
@@ -51,7 +51,7 @@ const ParticleCanvas = ({ className = "" }: { className?: string }) => {
             ctx.beginPath();
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
-            ctx.strokeStyle = `rgba(201,169,110,${0.15 * (1 - dist / 110)})`;
+            ctx.strokeStyle = `rgba(13,191,188,${0.15 * (1 - dist / 110)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }

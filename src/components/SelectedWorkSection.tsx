@@ -26,10 +26,10 @@ const works = [
 ];
 
 const SelectedWorkSection = () => (
-  <section id="work" className="relative py-[112px] px-5 md:px-10 overflow-hidden" style={{ background: "#131310" }}>
+  <section id="work" className="relative py-[112px] px-5 md:px-10 overflow-hidden" style={{ background: "#0D0D0D" }}>
     <div className="max-w-[1200px] mx-auto">
       <div className="reveal-section mb-8 md:mb-12">
-        <span className="font-mono text-[11px] text-gold tracking-[0.2em] uppercase">Selected Work</span>
+        <span className="font-mono text-[11px] text-teal tracking-[0.2em] uppercase">Selected Work</span>
       </div>
       <div className="reveal-section">
         {works.map((w) => {
@@ -44,11 +44,11 @@ const SelectedWorkSection = () => (
               data-hover={w.link ? true : undefined}
               className={`group grid grid-cols-[32px_1fr_28px] md:grid-cols-[60px_1fr_auto_60px] items-center gap-3 md:gap-4 py-6 md:py-8 px-3 md:px-4 border-b border-border transition-all hover:bg-bg-base relative ${w.link ? "cursor-none" : ""}`}
             >
-              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gold scale-y-0 group-hover:scale-y-100 transition-transform origin-top" />
+              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-teal scale-y-0 group-hover:scale-y-100 transition-transform origin-top" />
               <span className="font-mono text-[11px] text-label-text">{w.num}</span>
               <div>
-                <span className="font-serif text-[22px] text-foreground">{w.name}</span>
-                <p className="font-mono text-[16px] text-body-text mt-1 md:mt-2 leading-[1.75]">{w.desc}</p>
+                <span className="font-sans text-[22px] text-foreground font-semibold">{w.name}</span>
+                <p className="font-sans text-[16px] text-body-text mt-1 md:mt-2 leading-[1.75]">{w.desc}</p>
                 <div className="hidden md:flex flex-wrap gap-2 mt-3">
                   {w.tags.map((t) => (
                     <span key={t} className="font-mono text-[11px] text-label-text border border-border px-3 py-1 rounded-full">
@@ -59,10 +59,10 @@ const SelectedWorkSection = () => (
               </div>
               <div className="hidden md:block">
                 {w.status && (
-                  <span className="font-mono text-[14px] text-label-text/50">{w.status}</span>
+                  <span className="font-sans text-[14px] text-label-text/50">{w.status}</span>
                 )}
               </div>
-              <span className="font-serif text-[16px] md:text-[18px] text-label-text group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
+              <span className="font-sans text-[16px] md:text-[18px] text-label-text group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
                 {w.link ? "↗" : ""}
               </span>
             </Tag>

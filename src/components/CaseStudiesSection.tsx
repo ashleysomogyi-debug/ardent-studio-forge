@@ -1,17 +1,18 @@
 import { useState, useEffect, useRef } from "react";
 
-// ─── Brand tokens (match your Ardent Studio site palette) ───────────────────
+// ─── Brand tokens ───────────────────────────────────────────
 const brand = {
-  ink: "#0E0E0E",
-  inkSoft: "#171714",
-  cream: "#F5F0E8",
-  creamMid: "rgba(245,240,232,0.72)",
-  creamDim: "rgba(245,240,232,0.40)",
-  gold: "#C4993A",
-  goldLight: "#E8C96A",
-  goldFaint: "rgba(196,153,58,0.12)",
-  goldRule: "rgba(196,153,58,0.28)",
-  rust: "#8B3A2A",
+  ink: "#0D0D0D",
+  inkSoft: "#141414",
+  cream: "#F5F5F0",
+  creamMid: "rgba(245,245,240,0.72)",
+  creamDim: "rgba(245,245,240,0.40)",
+  teal: "#0DBFBC",
+  tealLight: "#3DD4D1",
+  tealFaint: "rgba(13,191,188,0.12)",
+  tealRule: "rgba(13,191,188,0.28)",
+  gold: "#C4924A",
+  goldLight: "#D4A85E",
 };
 
 // ─── Data ───────────────────────────────────────────────────────────────────
@@ -34,7 +35,7 @@ const industries = [
     id: "medspa",
     label: "Med Spas",
     icon: "✦",
-    color: "#C4993A",
+    color: "#0DBFBC",
     tagline: "Stop losing bookings to slow response times.",
     stats: [
       { number: "+50%", desc: "Revenue increase reported by clinics using AI-powered booking & patient engagement", source: "Prospyr Platform Study, 2024", url: "https://www.prospyrmed.com/blog/post/top-ai-features-for-patient-support-in-med-spas" },
@@ -48,7 +49,7 @@ const industries = [
     id: "realestate",
     label: "Real Estate",
     icon: "◈",
-    color: "#C4993A",
+    color: "#0DBFBC",
     tagline: "Most agents use AI for listings. Almost none use it for leads.",
     stats: [
       { number: "$34B", desc: "Projected efficiency gains for the real estate industry from AI automation by 2030", source: "Morgan Stanley Research, 2025", url: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025" },
@@ -62,7 +63,7 @@ const industries = [
     id: "hvac",
     label: "HVAC",
     icon: "◇",
-    color: "#C4993A",
+    color: "#0DBFBC",
     tagline: "The job goes to whoever answers first.",
     stats: [
       { number: "4.3×", desc: "Average ROI in year one for service businesses using AI in at least one workflow", source: "Deloitte, 2025 · via Mediagistic HVAC AI Guide", url: "https://www.mediagistic.com/winning-with-ai" },
@@ -76,7 +77,7 @@ const industries = [
     id: "professionalservices",
     label: "Professional Services",
     icon: "⊙",
-    color: "#C4993A",
+    color: "#0DBFBC",
     tagline: "Your competitors have AI tools. The ones pulling ahead have a strategy.",
     stats: [
       { number: "$32B", desc: "Annual efficiency value AI unlocks for U.S. legal and tax professionals alone — at current adoption rates, projected to grow sharply", source: "Thomson Reuters Future of Professionals, 2025", url: "https://www.floridabar.org/the-florida-bar-news/thomson-reuters-survey-generative-ai-could-save-legal-professionals-12-hours-weekly-by-2029/" },
@@ -90,7 +91,7 @@ const industries = [
     id: "seniorcare",
     label: "Senior Care",
     icon: "◉",
-    color: "#C4993A",
+    color: "#0DBFBC",
     tagline: "Less than 3% of home care agencies use AI. That's your advantage.",
     stats: [
       { number: "170+", desc: "Automated workflows running daily at Cypress Living — saving hours of staff time every day", source: "HealthTech Magazine, 2025", url: "https://healthtechmagazine.net/article/2025/05/how-can-ai-support-senior-care-workforce" },
@@ -104,7 +105,7 @@ const industries = [
     id: "plumbing",
     label: "Plumbing",
     icon: "◆",
-    color: "#C4993A",
+    color: "#0DBFBC",
     tagline: "You're losing jobs at 2am that your competitor is booking at 2am.",
     stats: [
       { number: "13%", desc: "Revenue growth achieved by My Plumber Plus after deploying Avoca AI — on a $129M revenue base", source: "Avoca AI Case Study · avoca.ai", url: "https://www.avoca.ai/" },
@@ -118,7 +119,7 @@ const industries = [
     id: "boutiques",
     label: "Boutiques",
     icon: "◑",
-    color: "#C4993A",
+    color: "#0DBFBC",
     tagline: "Your best customers are shopping online at midnight. Is anyone there?",
     stats: [
       { number: "87%", desc: "Of retailers report AI had a positive impact on revenue — and 94% say it reduced operating costs", source: "Shopify / Bain Retail AI Report, 2025", url: "https://www.shopify.com/enterprise/blog/ai-in-retail" },
@@ -132,7 +133,7 @@ const industries = [
     id: "insurance",
     label: "Insurance",
     icon: "▣",
-    color: "#C4993A",
+    color: "#0DBFBC",
     tagline: "Renewals are still the #1 most inefficient task for insurance agencies.",
     stats: [
       { number: "75%", desc: "Reduction in claims resolution time — from 30 days to 7.5 days — achieved through AI automation", source: "Datagrid AI Insurance Statistics Report, 2025", url: "https://datagrid.com/blog/ai-agent-for-insurance-statistics" },
@@ -149,8 +150,8 @@ function StatCard({ stat, index, visible }) {
   return (
     <div
       style={{
-        background: brand.goldFaint,
-        border: `1px solid ${brand.goldRule}`,
+        background: brand.tealFaint,
+        border: `1px solid ${brand.tealRule}`,
         borderRadius: "3px",
         padding: "24px 22px 20px",
         display: "flex",
@@ -163,10 +164,10 @@ function StatCard({ stat, index, visible }) {
     >
       <div
         style={{
-          fontFamily: "'Cormorant Garamond', 'Georgia', serif",
+          fontFamily: "'Inter', system-ui, sans-serif",
           fontSize: "42px",
           fontWeight: 600,
-          color: brand.gold,
+          color: brand.teal,
           lineHeight: 1,
           letterSpacing: "-0.01em",
         }}
@@ -193,16 +194,16 @@ function StatCard({ stat, index, visible }) {
           textDecoration: "none",
           marginTop: "auto",
           paddingTop: "10px",
-          borderTop: `1px solid ${brand.goldRule}`,
+          borderTop: `1px solid ${brand.tealRule}`,
           display: "flex",
           alignItems: "center",
           gap: "5px",
           transition: "color 0.2s",
         }}
-        onMouseEnter={(e) => (e.currentTarget.style.color = brand.goldLight)}
+        onMouseEnter={(e) => (e.currentTarget.style.color = brand.tealLight)}
         onMouseLeave={(e) => (e.currentTarget.style.color = brand.creamDim)}
       >
-        <span style={{ color: brand.gold, fontSize: "8px" }}>↗</span>
+        <span style={{ color: brand.teal, fontSize: "8px" }}>↗</span>
         {stat.source}
       </a>
     </div>
@@ -215,10 +216,10 @@ function IndustryPanel({ industry, visible }) {
       {/* Tagline */}
       <div
         style={{
-          fontFamily: "'Cormorant Garamond', 'Georgia', serif",
+          fontFamily: "'Inter', system-ui, sans-serif",
           fontStyle: "italic",
           fontSize: "20px",
-          color: brand.goldLight,
+          color: brand.tealLight,
           marginBottom: "28px",
           opacity: visible ? 1 : 0,
           transform: visible ? "translateY(0)" : "translateY(10px)",
@@ -246,8 +247,8 @@ function IndustryPanel({ industry, visible }) {
       <div
         style={{
           background: "rgba(255,255,255,0.03)",
-          border: `1px solid ${brand.goldRule}`,
-          borderLeft: `3px solid ${brand.gold}`,
+          border: `1px solid ${brand.tealRule}`,
+          borderLeft: `3px solid ${brand.teal}`,
           borderRadius: "3px",
           padding: "20px 24px",
           opacity: visible ? 1 : 0,
@@ -260,7 +261,7 @@ function IndustryPanel({ industry, visible }) {
             fontSize: "8.5px",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
-            color: brand.gold,
+            color: brand.teal,
             marginBottom: "10px",
             fontWeight: 500,
           }}
@@ -292,10 +293,10 @@ function IndustryPanel({ industry, visible }) {
             textDecoration: "none",
             transition: "color 0.2s",
           }}
-          onMouseEnter={(e) => (e.currentTarget.style.color = brand.goldLight)}
+          onMouseEnter={(e) => (e.currentTarget.style.color = brand.tealLight)}
           onMouseLeave={(e) => (e.currentTarget.style.color = brand.creamDim)}
         >
-          <span style={{ color: brand.gold }}>↗</span> {industry.storySource}
+          <span style={{ color: brand.teal }}>↗</span> {industry.storySource}
         </a>
       </div>
     </div>
@@ -338,11 +339,11 @@ export default function CaseStudiesSection() {
     <>
       {/* Google Fonts */}
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap');
         .ardent-tab-btn { cursor: pointer; }
-        .ardent-tab-btn:hover .ardent-tab-inner { color: #E8C96A !important; border-bottom-color: rgba(196,153,58,0.5) !important; }
-        .ardent-hero-link:hover { color: #E8C96A !important; }
-        .ardent-cta-btn:hover { background: #E8C96A !important; }
+        .ardent-tab-btn:hover .ardent-tab-inner { color: #3DD4D1 !important; border-bottom-color: rgba(13,191,188,0.5) !important; }
+        .ardent-hero-link:hover { color: #3DD4D1 !important; }
+        .ardent-cta-btn:hover { background: #3DD4D1 !important; }
         .ardent-tab-scroll::-webkit-scrollbar { display: none; }
         .ardent-tab-scroll { -ms-overflow-style: none; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
       `}</style>
@@ -352,13 +353,13 @@ export default function CaseStudiesSection() {
         style={{
           background: brand.ink,
           color: brand.cream,
-          fontFamily: "'DM Sans', sans-serif",
+          fontFamily: "'Inter', system-ui, sans-serif",
           fontWeight: 300,
           paddingTop: "112px",
           paddingBottom: "112px",
           position: "relative",
           overflow: "hidden",
-          borderTop: `2px solid ${brand.gold}`,
+          borderTop: `2px solid ${brand.teal}`,
         }}
       >
         {/* Background glow */}
@@ -366,8 +367,8 @@ export default function CaseStudiesSection() {
           style={{
             position: "absolute",
             inset: 0,
-            background: `radial-gradient(ellipse 60% 40% at 80% 20%, rgba(196,153,58,0.06) 0%, transparent 65%),
-                          radial-gradient(ellipse 40% 50% at 15% 80%, rgba(139,58,42,0.07) 0%, transparent 60%)`,
+            background: `radial-gradient(ellipse 60% 40% at 80% 20%, rgba(13,191,188,0.06) 0%, transparent 65%),
+                          radial-gradient(ellipse 40% 50% at 15% 80%, rgba(13,191,188,0.04) 0%, transparent 60%)`,
             pointerEvents: "none",
           }}
         />
@@ -395,7 +396,7 @@ export default function CaseStudiesSection() {
                 fontSize: "9px",
                 letterSpacing: "0.26em",
                 textTransform: "uppercase",
-                color: brand.gold,
+                color: brand.teal,
                 fontWeight: 500,
                 marginBottom: "14px",
                 display: "flex",
@@ -409,13 +410,13 @@ export default function CaseStudiesSection() {
                   flex: 1,
                   maxWidth: "80px",
                   height: "1px",
-                  background: brand.goldRule,
+                  background: brand.tealRule,
                 }}
               />
             </div>
             <h2
               style={{
-                fontFamily: "'Cormorant Garamond', 'Georgia', serif",
+                fontFamily: "'Inter', system-ui, sans-serif",
                 fontWeight: 600,
                 fontSize: "clamp(32px, 4vw, 52px)",
                 lineHeight: 1.12,
@@ -425,7 +426,7 @@ export default function CaseStudiesSection() {
               }}
             >
               What AI automation actually does{" "}
-              <em style={{ color: brand.gold }}>for businesses like yours.</em>
+              <em style={{ color: brand.teal, fontStyle: "normal" }}>for businesses like yours.</em>
             </h2>
             <p
               style={{
@@ -442,12 +443,12 @@ export default function CaseStudiesSection() {
             </p>
           </div>
 
-          {/* ── Hero anchor: Fortune / Echo Janitorial ── */}
+          {/* ── Hero anchor ── */}
           <div
             style={{
-              background: `linear-gradient(135deg, rgba(196,153,58,0.10) 0%, rgba(196,153,58,0.04) 100%)`,
-              border: `1px solid ${brand.goldRule}`,
-              borderTop: `2px solid ${brand.gold}`,
+              background: `linear-gradient(135deg, rgba(13,191,188,0.10) 0%, rgba(13,191,188,0.04) 100%)`,
+              border: `1px solid ${brand.tealRule}`,
+              borderTop: `2px solid ${brand.teal}`,
               borderRadius: "4px",
               padding: "24px 20px",
               marginBottom: "52px",
@@ -466,7 +467,7 @@ export default function CaseStudiesSection() {
                   fontSize: "9px",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: brand.gold,
+                  color: brand.teal,
                   fontWeight: 500,
                   marginBottom: "10px",
                 }}
@@ -475,7 +476,7 @@ export default function CaseStudiesSection() {
               </div>
               <h3
                 style={{
-                  fontFamily: "'Cormorant Garamond', 'Georgia', serif",
+                  fontFamily: "'Inter', system-ui, sans-serif",
                   fontSize: "22px",
                   fontWeight: 600,
                   color: brand.cream,
@@ -498,13 +499,13 @@ export default function CaseStudiesSection() {
               </p>
               <blockquote
                 style={{
-                  borderLeft: `2px solid ${brand.gold}`,
+                  borderLeft: `2px solid ${brand.teal}`,
                   paddingLeft: "14px",
                   margin: "0 0 14px",
-                  fontFamily: "'Cormorant Garamond', 'Georgia', serif",
+                  fontFamily: "'Inter', system-ui, sans-serif",
                   fontStyle: "italic",
                   fontSize: "15px",
-                  color: brand.goldLight,
+                  color: brand.tealLight,
                 }}
               >
                 "{heroStory.quote}"
@@ -530,13 +531,13 @@ export default function CaseStudiesSection() {
                   alignItems: "center",
                   gap: "8px",
                   background: "transparent",
-                  border: `1px solid ${brand.goldRule}`,
+                  border: `1px solid ${brand.tealRule}`,
                   borderRadius: "2px",
                   padding: "10px 18px",
                   fontSize: "11px",
                   letterSpacing: "0.12em",
                   textTransform: "uppercase",
-                  color: brand.gold,
+                  color: brand.teal,
                   textDecoration: "none",
                   fontWeight: 500,
                   transition: "color 0.2s, border-color 0.2s",
@@ -572,7 +573,7 @@ export default function CaseStudiesSection() {
               style={{
                 display: "flex",
                 gap: "0",
-                borderBottom: `1px solid ${brand.goldRule}`,
+                borderBottom: `1px solid ${brand.tealRule}`,
                 marginBottom: "36px",
                 overflowX: "auto",
               }}
@@ -601,19 +602,19 @@ export default function CaseStudiesSection() {
                         gap: "8px",
                         padding: "12px 0",
                         borderBottom: isActive
-                          ? `2px solid ${brand.gold}`
+                          ? `2px solid ${brand.teal}`
                           : "2px solid transparent",
                         color: isActive ? brand.cream : brand.creamDim,
                         fontSize: "13px",
                         fontWeight: isActive ? 500 : 300,
                         letterSpacing: "0.04em",
                         transition: "color 0.2s, border-bottom-color 0.2s",
-                        fontFamily: "'DM Sans', sans-serif",
+                        fontFamily: "'Inter', system-ui, sans-serif",
                       }}
                     >
                       <span
                         style={{
-                          color: isActive ? brand.gold : brand.creamDim,
+                          color: isActive ? brand.teal : brand.creamDim,
                           fontSize: "10px",
                           transition: "color 0.2s",
                         }}
@@ -646,7 +647,7 @@ export default function CaseStudiesSection() {
             style={{
               marginTop: "64px",
               paddingTop: "40px",
-              borderTop: `1px solid ${brand.goldRule}`,
+              borderTop: `1px solid ${brand.tealRule}`,
               display: "flex",
               alignItems: "center",
               justifyContent: "space-between",
@@ -659,7 +660,7 @@ export default function CaseStudiesSection() {
             <div>
               <div
                 style={{
-                  fontFamily: "'Cormorant Garamond', 'Georgia', serif",
+                  fontFamily: "'Inter', system-ui, sans-serif",
                   fontSize: "22px",
                   fontWeight: 600,
                   color: brand.cream,
@@ -667,7 +668,7 @@ export default function CaseStudiesSection() {
                 }}
               >
                 Ready to see what this looks like for{" "}
-                <em style={{ color: brand.gold }}>your</em> business?
+                <em style={{ color: brand.teal, fontStyle: "normal" }}>your</em> business?
               </div>
               <div style={{ fontSize: "13px", color: brand.creamDim }}>
                 Free discovery call · No obligation · Palm Beach County, FL
@@ -677,7 +678,7 @@ export default function CaseStudiesSection() {
               href="#contact"
               className="ardent-cta-btn"
               style={{
-                background: brand.gold,
+                background: brand.teal,
                 color: brand.ink,
                 fontSize: "11px",
                 fontWeight: 500,

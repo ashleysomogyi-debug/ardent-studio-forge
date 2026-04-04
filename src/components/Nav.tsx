@@ -13,14 +13,14 @@ const Nav = () => {
     <nav
       className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-4 md:px-10 h-[80px] transition-all duration-300"
       style={{
-        background: scrolled ? "rgba(7,7,7,0.88)" : "transparent",
+        background: scrolled ? "rgba(13,13,13,0.88)" : "transparent",
         backdropFilter: scrolled ? "blur(24px)" : "none",
         WebkitBackdropFilter: scrolled ? "blur(24px)" : "none",
       }}
     >
       <a href="#" className="flex flex-col shrink-0">
-        <span className="font-serif text-[16px] md:text-[18px] text-foreground tracking-wide">Ardent Studio</span>
-        <span className="font-mono text-[11px] md:text-[11px] text-gold tracking-[0.15em] md:tracking-[0.2em] uppercase">AI Digital Products</span>
+        <span className="font-sans text-[16px] md:text-[18px] text-foreground tracking-wide font-semibold">Ardent Studio</span>
+        <span className="font-mono text-[11px] md:text-[11px] text-teal tracking-[0.15em] md:tracking-[0.2em] uppercase">AI Digital Products</span>
       </a>
 
       <div className="hidden md:flex items-center gap-8">
@@ -28,7 +28,7 @@ const Nav = () => {
           <a
             key={item}
             href={`#${item.toLowerCase()}`}
-            className="font-mono text-[15px] text-label-text hover:text-foreground transition-colors"
+            className="font-sans text-[15px] text-label-text hover:text-foreground transition-colors"
           >
             {item}
           </a>
@@ -38,7 +38,7 @@ const Nav = () => {
       <a
         href="#contact"
         data-hover
-        className="font-mono text-[13px] bg-foreground text-bg-base px-4 md:px-5 py-2 rounded-full hover:opacity-90 transition-opacity shrink-0"
+        className="font-sans text-[13px] bg-foreground text-bg-base px-4 md:px-5 py-2 rounded-full hover:opacity-90 transition-opacity shrink-0"
       >
         Book a scope call
       </a>
