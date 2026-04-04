@@ -6,6 +6,14 @@ const TeamSection = () => {
   ];
 
   const ashleyTags = ["web development", "AI automation", "small business", "Palm Beach County", "solo founder"];
+
+  const wesleyDetails = [
+    { label: "Based in", value: "Palm Beach County, FL" },
+    { label: "Focus", value: "Client strategy, project operations, and business development" },
+    { label: "Approach", value: "Clear communication, structured timelines, no surprises." },
+  ];
+  const wesleyTags = ["strategy", "operations", "client success", "business development", "project management"];
+
   const dogTags = ["beach days", "desk co-pilots", "treat negotiations", "nap optimization", "client charm"];
 
   const dogStats = [
@@ -29,6 +37,7 @@ const TeamSection = () => {
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Top row: Ashley + Wesley side by side on lg */}
           {/* CARD 1 — Ashley */}
           <div
             className="rounded-xl p-8 transition-colors duration-300"
@@ -157,9 +166,126 @@ const TeamSection = () => {
             </div>
           </div>
 
-          {/* CARD 2 — Loki & Willow */}
+          {/* CARD 2 — Wesley */}
           <div
             className="rounded-xl p-8 transition-colors duration-300"
+            style={{
+              background: "#0d0d0d",
+              border: "1px solid rgba(244,244,246,0.08)",
+            }}
+            onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(201,169,110,0.25)")}
+            onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(244,244,246,0.08)")}
+          >
+            <div className="grid grid-cols-1 md:grid-cols-[260px_1fr] gap-8">
+              {/* Photo column */}
+              <div
+                className="relative rounded-xl overflow-hidden"
+                style={{ border: "1px solid rgba(244,244,246,0.08)" }}
+              >
+                <img
+                  src="/wesley-profile.jpg"
+                  alt="Wesley Price"
+                  className="w-full h-auto object-cover transition-transform duration-500 ease-out hover:scale-[1.03]"
+                />
+              </div>
+
+              {/* Info column */}
+              <div>
+                {/* Role badge */}
+                <span
+                  className="inline-block rounded-full px-4 py-1.5 font-mono uppercase mb-4"
+                  style={{
+                    fontSize: "11px",
+                    letterSpacing: "2px",
+                    background: "rgba(201,169,110,0.08)",
+                    border: "1px solid rgba(201,169,110,0.25)",
+                    color: "#c9a96e",
+                  }}
+                >
+                  Co-Founder
+                </span>
+
+                <h3 className="font-serif text-[42px] font-bold text-white leading-tight">
+                  Wesley Price
+                </h3>
+                <p className="font-mono text-sm mb-6" style={{ color: "rgba(244,244,246,0.52)" }}>
+                  Strategy &amp; Operations · <span style={{ color: "#c9a96e" }}>Ardent Studio</span>
+                </p>
+
+                <p
+                  className="font-mono mb-7"
+                  style={{
+                    fontSize: "13px",
+                    lineHeight: 1.85,
+                    color: "rgba(244,244,246,0.78)",
+                  }}
+                >
+                  Wesley keeps the machine running. While Ashley builds,{" "}
+                  <span className="font-medium" style={{ color: "#c9a96e" }}>
+                    Wesley makes sure the right things get built
+                  </span>
+                  —in the right order, for the right reasons. He handles the strategy, client
+                  operations, and the business side so that every project stays on track and every
+                  client knows exactly where things stand. No black boxes, no radio silence.
+                </p>
+
+                {/* Details block */}
+                <div
+                  className="py-5 mb-6"
+                  style={{
+                    borderTop: "1px solid rgba(244,244,246,0.08)",
+                    borderBottom: "1px solid rgba(244,244,246,0.08)",
+                  }}
+                >
+                  <div className="flex flex-col gap-3.5">
+                    {wesleyDetails.map((d) => (
+                      <div key={d.label} className="flex">
+                        <span
+                          className="font-mono uppercase shrink-0"
+                          style={{
+                            fontSize: "10px",
+                            letterSpacing: "1.5px",
+                            color: "rgba(244,244,246,0.35)",
+                            width: "90px",
+                          }}
+                        >
+                          {d.label}
+                        </span>
+                        <span
+                          className="font-mono"
+                          style={{ fontSize: "13px", color: "rgba(244,244,246,0.78)" }}
+                        >
+                          {d.value}
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Tags */}
+                <div className="flex flex-wrap gap-2">
+                  {wesleyTags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="rounded-md px-3.5 py-1.5 font-mono"
+                      style={{
+                        fontSize: "11px",
+                        background: "rgba(244,244,246,0.04)",
+                        border: "1px solid rgba(244,244,246,0.08)",
+                        color: "rgba(244,244,246,0.52)",
+                      }}
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CARD 3 — Loki & Willow */}
+          <div
+            className="rounded-xl p-8 transition-colors duration-300 lg:col-span-2"
             style={{
               background: "#0d0d0d",
               border: "1px solid rgba(244,244,246,0.08)",
