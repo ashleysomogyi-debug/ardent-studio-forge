@@ -48,8 +48,8 @@ const HeroSection = () => {
           <div className="w-[22px] h-[22px] rounded-full bg-primary flex items-center justify-center flex-shrink-0">
             <span className="text-[11px] font-bold text-primary-foreground leading-none">A</span>
           </div>
-          <span className="font-mono text-[11px] text-muted-foreground whitespace-nowrap">
-            Ashley Somogyi · Founder, based in Palm Beach County
+          <span className="font-mono text-[10px] md:text-[11px] text-muted-foreground whitespace-normal md:whitespace-nowrap text-left">
+            Dr Ashley Somogyi · Founder, based in Palm Beach County
           </span>
         </div>
 
