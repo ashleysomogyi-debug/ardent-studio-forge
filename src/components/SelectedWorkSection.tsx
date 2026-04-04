@@ -1,71 +1,106 @@
-const works = [
+import { ArrowUpRight } from "lucide-react";
+
+interface WorkCard {
+  tag: string;
+  title: string;
+  description: string;
+  meta: string[];
+  link?: string;
+}
+
+const works: WorkCard[] = [
   {
-    num: "01",
-    name: "SartoriAI",
-    desc: "AI-powered sales training & roleplay simulation platform for enterprise B2B",
-    tags: ["Enterprise SaaS", "AI Coaching", "EU & US"],
-    link: "http://www.sartoriai.com/",
-    status: null,
+    tag: "SaaS · AI · Sales Coaching",
+    title: "SartoriAI",
+    description:
+      "An AI-powered sales coaching platform that scores every call, coaches every rep, and gives managers the objective data they need. Built by Ardent Studio. Now its own company.",
+    meta: ["AI SaaS Platform", "6 weeks", "React · AI · Stripe"],
+    link: "https://sartoriai.com",
   },
   {
-    num: "02",
-    name: "ProposeKit",
-    desc: "AI proposal generator for consultants, coaches, and sales reps",
-    tags: ["Micro-SaaS", "AI Output", "SMB"],
-    link: null,
-    status: "In Build",
+    tag: "AI Automation · Med Spa · Palm Beach",
+    title: "AI Booking Agent",
+    description:
+      "24/7 AI-powered booking and inquiry agent for a Palm Beach area wellness clinic. DMs answered instantly, appointments booked automatically — including after hours.",
+    meta: ["Delivered: 6 days", "Result: +40% bookings"],
   },
   {
-    num: "03",
-    name: "Sales Readiness Tool",
-    desc: "Team competency assessment & training recommendation engine",
-    tags: ["Assessment", "L&D", "MEDDIC"],
-    link: null,
-    status: "Coming Soon",
+    tag: "AI Automation · Home Services · South Florida",
+    title: "After-Hours Lead Capture",
+    description:
+      "AI call handling and scheduling for a South Florida HVAC company. Emergency jobs booked overnight — without a single employee on the phone.",
+    meta: ["Delivered: 8 days", "Result: +14 jobs/month"],
   },
 ];
 
 const SelectedWorkSection = () => (
-  <section id="work" className="relative py-[112px] px-5 md:px-10 overflow-hidden" style={{ background: "#0D0D0D" }}>
+  <section id="work" className="relative py-[112px] px-5 md:px-10 bg-background">
     <div className="max-w-[1200px] mx-auto">
       <div className="reveal-section mb-8 md:mb-12">
-        <span className="font-mono text-[11px] text-teal tracking-[0.2em] uppercase">Selected Work</span>
+        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase">Featured Work</span>
       </div>
-      <div className="reveal-section">
+
+      <div className="reveal-section flex flex-col gap-5 md:gap-6">
         {works.map((w) => {
-          const Tag = w.link ? "a" : "div";
-          const linkProps = w.link
+          const isLive = !!w.link;
+          const Wrapper = isLive ? "a" : "div";
+          const wrapperProps = isLive
             ? { href: w.link, target: "_blank" as const, rel: "noopener noreferrer" }
             : {};
+
           return (
-            <Tag
-              key={w.num}
-              {...linkProps}
-              data-hover={w.link ? true : undefined}
-              className={`group grid grid-cols-[32px_1fr_28px] md:grid-cols-[60px_1fr_auto_60px] items-center gap-3 md:gap-4 py-6 md:py-8 px-3 md:px-4 border-b border-border transition-all hover:bg-bg-base relative ${w.link ? "cursor-none" : ""}`}
+            <Wrapper
+              key={w.title}
+              {...wrapperProps}
+              data-hover={isLive ? true : undefined}
+              className={`group relative rounded-xl border overflow-hidden transition-colors ${
+                isLive
+                  ? "border-primary/30 bg-gradient-to-br from-primary/[0.06] to-surface-2 hover:border-primary/50"
+                  : "border-border bg-surface-2"
+              }`}
             >
-              <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-teal scale-y-0 group-hover:scale-y-100 transition-transform origin-top" />
-              <span className="font-mono text-[11px] text-label-text">{w.num}</span>
-              <div>
-                <span className="font-sans text-[22px] text-foreground font-semibold">{w.name}</span>
-                <p className="font-sans text-[16px] text-body-text mt-1 md:mt-2 leading-[1.75]">{w.desc}</p>
-                <div className="hidden md:flex flex-wrap gap-2 mt-3">
-                  {w.tags.map((t) => (
-                    <span key={t} className="font-mono text-[11px] text-label-text border border-border px-3 py-1 rounded-full">
-                      {t}
+              {/* Teal left accent for live card */}
+              {isLive && (
+                <div className="absolute top-0 left-0 bottom-0 w-[3px] bg-primary" />
+              )}
+
+              <div className="p-6 md:p-10">
+                {/* Tag */}
+                <span className="font-mono text-[10px] text-muted-foreground tracking-[0.15em] uppercase">
+                  {w.tag}
+                </span>
+
+                {/* Title row */}
+                <div className="flex items-center gap-3 mt-3 mb-3">
+                  <h3 className="font-sans text-[22px] md:text-[26px] font-semibold text-foreground">
+                    {w.title}
+                  </h3>
+                  {isLive && (
+                    <ArrowUpRight
+                      size={20}
+                      className="text-primary group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"
+                    />
+                  )}
+                </div>
+
+                {/* Description */}
+                <p className="font-sans text-[14px] md:text-[15px] text-muted-foreground leading-[1.75] max-w-[640px] mb-5">
+                  {w.description}
+                </p>
+
+                {/* Meta pills */}
+                <div className="flex flex-wrap gap-2">
+                  {w.meta.map((m) => (
+                    <span
+                      key={m}
+                      className="font-mono text-[10px] text-muted-foreground/70 border border-border px-3 py-1 rounded-full"
+                    >
+                      {m}
                     </span>
                   ))}
                 </div>
               </div>
-              <div className="hidden md:block">
-                {w.status && (
-                  <span className="font-sans text-[14px] text-label-text/50">{w.status}</span>
-                )}
-              </div>
-              <span className="font-sans text-[16px] md:text-[18px] text-label-text group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform">
-                {w.link ? "↗" : ""}
-              </span>
-            </Tag>
+            </Wrapper>
           );
         })}
       </div>
