@@ -3,7 +3,7 @@ const Footer = () => (
     <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 items-start">
       <div className="flex flex-col">
         <span className="font-serif text-[16px] md:text-[18px] text-foreground">Ardent Studio</span>
-        <span className="font-mono text-[11px] text-gold tracking-[0.2em] uppercase mt-1">AI App Builders</span>
+        <span className="font-mono text-[11px] text-gold tracking-[0.2em] uppercase mt-1">AI Digital Products</span>
       </div>
 
       <div className="flex flex-wrap gap-4 md:gap-7">
