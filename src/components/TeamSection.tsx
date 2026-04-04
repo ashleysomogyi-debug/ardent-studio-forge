@@ -37,6 +37,7 @@ const TeamSection = () => {
         </p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Top row: Ashley + Wesley side by side on lg */}
           {/* CARD 1 — Ashley */}
           <div
             className="rounded-xl p-8 transition-colors duration-300"
