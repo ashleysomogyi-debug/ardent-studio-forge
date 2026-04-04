@@ -3,14 +3,20 @@ import CustomCursor from "@/components/CustomCursor";
 import Nav from "@/components/Nav";
 import HeroSection from "@/components/HeroSection";
 import TickerSection from "@/components/TickerSection";
-import WhatWeBuildSection from "@/components/WhatWeBuildSection";
+import BeforeAfterSection from "@/components/BeforeAfterSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
+import WhatWeBuildSection from "@/components/WhatWeBuildSection";
 import SelectedWorkSection from "@/components/SelectedWorkSection";
 import ProcessSection from "@/components/ProcessSection";
-import WhyArdentSection from "@/components/WhyArdentSection";
 import PricingSection from "@/components/PricingSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import CTASection from "@/components/CTASection";
+import ContactFormSection from "@/components/ContactFormSection";
 import Footer from "@/components/Footer";
+
+const Divider = () => (
+  <div className="h-px bg-border" />
+);
 
 const Index = () => {
   useScrollReveal();
@@ -21,23 +27,27 @@ const Index = () => {
       <Nav />
       <main>
         <HeroSection />
-        <div className="h-px" style={{ background: "rgba(196,153,58,0.2)" }} />
+        <Divider />
         <TickerSection />
-        <div className="h-px" style={{ background: "rgba(196,153,58,0.2)" }} />
-        <WhatWeBuildSection />
-        <div className="h-px" style={{ background: "rgba(196,153,58,0.2)" }} />
+        <Divider />
+        <BeforeAfterSection />
+        <Divider />
         <CaseStudiesSection />
-        <div className="h-px" style={{ background: "rgba(196,153,58,0.2)" }} />
+        <Divider />
+        <WhatWeBuildSection />
+        <Divider />
         <SelectedWorkSection />
-        <div className="h-px" style={{ background: "rgba(196,153,58,0.2)" }} />
+        <Divider />
         <ProcessSection />
-        <div className="h-px" style={{ background: "rgba(196,153,58,0.2)" }} />
-        <WhyArdentSection />
-        <div className="h-px" style={{ background: "rgba(196,153,58,0.2)" }} />
+        <Divider />
         <PricingSection />
-        <div className="h-px" style={{ background: "rgba(196,153,58,0.2)" }} />
+        <Divider />
+        <TestimonialsSection />
+        <Divider />
         <CTASection />
-        <div className="h-px" style={{ background: "rgba(196,153,58,0.2)" }} />
+        <Divider />
+        <ContactFormSection />
+        <Divider />
       </main>
       <Footer />
     </>
