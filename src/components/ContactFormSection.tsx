@@ -2,11 +2,34 @@ import { useState } from "react";
 
 const ContactFormSection = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
+  const [submitting, setSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // TODO: wire up form submission
-    console.log("Contact form submitted:", form);
+    setSubmitting(true);
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          // Replace with your Web3Forms access key from https://web3forms.com
+          access_key: 'YOUR_ACCESS_KEY_HERE',
+          name: form.name,
+          email: form.email,
+          message: form.message,
+          from_name: 'Ardent Studio Contact Form',
+        }),
+      });
+      if (response.ok) {
+        setSubmitted(true);
+        setForm({ name: '', email: '', message: '' });
+      }
+    } catch (err) {
+      console.error(err);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -22,57 +45,64 @@ const ContactFormSection = () => {
           Have a project in mind? Drop us a line and we'll get back to you within 24 hours.
         </p>
 
-        <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
-            <label htmlFor="name" className="block font-mono text-[11px] text-muted-foreground tracking-[0.1em] uppercase mb-2">
-              Name
-            </label>
-            <input
-              id="name"
-              type="text"
-              required
-              value={form.name}
-              onChange={(e) => setForm({ ...form, name: e.target.value })}
-              className="w-full bg-surface-2 border border-border rounded-lg px-4 py-3 font-sans text-[14px] text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-primary/50 transition-colors"
-              placeholder="Your name"
-            />
-          </div>
-          <div>
-            <label htmlFor="email" className="block font-mono text-[11px] text-muted-foreground tracking-[0.1em] uppercase mb-2">
-              Email
-            </label>
-            <input
-              id="email"
-              type="email"
-              required
-              value={form.email}
-              onChange={(e) => setForm({ ...form, email: e.target.value })}
-              className="w-full bg-surface-2 border border-border rounded-lg px-4 py-3 font-sans text-[14px] text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-primary/50 transition-colors"
-              placeholder="you@company.com"
-            />
-          </div>
-          <div>
-            <label htmlFor="message" className="block font-mono text-[11px] text-muted-foreground tracking-[0.1em] uppercase mb-2">
-              Message
-            </label>
-            <textarea
-              id="message"
-              required
-              rows={5}
-              value={form.message}
-              onChange={(e) => setForm({ ...form, message: e.target.value })}
-              className="w-full bg-surface-2 border border-border rounded-lg px-4 py-3 font-sans text-[14px] text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-primary/50 transition-colors resize-none"
-              placeholder="Tell us about your project…"
-            />
-          </div>
-          <button
-            type="submit"
-            data-hover
-            className="w-full font-sans text-[13px] bg-primary text-primary-foreground px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity"
-          >
-            Send message
-          </button>
-        </form>
+        {submitted ? (
+          <p className="text-primary font-sans text-center text-lg">
+            Thanks! We will be in touch within 24 hours.
+          </p>
+        ) : (
+          <form onSubmit={handleSubmit} className="space-y-5">
+            <div>
+              <label htmlFor="name" className="block font-mono text-[11px] text-muted-foreground tracking-[0.1em] uppercase mb-2">
+                Name
+              </label>
+              <input
+                id="name"
+                type="text"
+                required
+                value={form.name}
+                onChange={(e) => setForm({ ...form, name: e.target.value })}
+                className="w-full bg-surface-2 border border-border rounded-lg px-4 py-3 font-sans text-[14px] text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-primary/50 transition-colors"
+                placeholder="Your name"
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block font-mono text-[11px] text-muted-foreground tracking-[0.1em] uppercase mb-2">
+                Email
+              </label>
+              <input
+                id="email"
+                type="email"
+                required
+                value={form.email}
+                onChange={(e) => setForm({ ...form, email: e.target.value })}
+                className="w-full bg-surface-2 border border-border rounded-lg px-4 py-3 font-sans text-[14px] text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-primary/50 transition-colors"
+                placeholder="you@company.com"
+              />
+            </div>
+            <div>
+              <label htmlFor="message" className="block font-mono text-[11px] text-muted-foreground tracking-[0.1em] uppercase mb-2">
+                Message
+              </label>
+              <textarea
+                id="message"
+                required
+                rows={5}
+                value={form.message}
+                onChange={(e) => setForm({ ...form, message: e.target.value })}
+                className="w-full bg-surface-2 border border-border rounded-lg px-4 py-3 font-sans text-[14px] text-foreground placeholder:text-muted-foreground/50 focus:outline-none focus:ring-1 focus:ring-primary/50 transition-colors resize-none"
+                placeholder="Tell us about your project…"
+              />
+            </div>
+            <button
+              type="submit"
+              data-hover
+              disabled={submitting}
+              className="w-full font-sans text-[13px] bg-primary text-primary-foreground px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              {submitting ? 'Sending...' : 'Send message'}
+            </button>
+          </form>
+        )}
       </div>
     </section>
   );
