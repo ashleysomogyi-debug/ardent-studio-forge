@@ -15,7 +15,7 @@ const works: WorkCard[] = [
     description:
       "An AI-powered sales coaching platform that scores every call, coaches every rep, and gives managers the objective data they need. Built by Ardent Studio. Now its own company.",
     meta: ["AI SaaS Platform", "6 weeks", "React · AI · Stripe"],
-    link: "https://sartoriai.com",
+    link: "https://www.sartoriai.com",
   },
   {
     tag: "AI Automation · Med Spa · Palm Beach",
