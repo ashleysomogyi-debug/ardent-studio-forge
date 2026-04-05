@@ -29,7 +29,7 @@ const Index = () => {
 
   return (
     <>
-      <CustomCursor />
+      
       <Nav />
       <main>
         <HeroSection />

@@ -67,9 +67,6 @@
   p, span, a, button, li, label, input, textarea {
     font-family: var(--font-sans);
   }
-  a, button {
-    cursor: none;
-  }
 }
 
 /* Scroll reveal */
