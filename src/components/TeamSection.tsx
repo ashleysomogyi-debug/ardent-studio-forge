@@ -36,7 +36,7 @@ const TeamSection = () => {
           The humans and hounds behind the builds
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {/* Top row: Ashley + Wesley side by side on lg */}
           {/* CARD 1 — Ashley */}
           <div
@@ -285,7 +285,7 @@ const TeamSection = () => {
 
           {/* CARD 3 — Loki & Willow */}
           <div
-            className="rounded-xl p-8 transition-colors duration-300 lg:col-span-2"
+            className="rounded-xl p-8 transition-colors duration-300"
             style={{
               background: "#0d0d0d",
               border: "1px solid rgba(244,244,246,0.08)",
