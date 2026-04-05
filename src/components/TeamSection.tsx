@@ -36,7 +36,7 @@ const TeamSection = () => {
           The humans and hounds behind the builds
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {/* Top row: Ashley + Wesley side by side on lg */}
           {/* CARD 1 — Ashley */}
           <div
