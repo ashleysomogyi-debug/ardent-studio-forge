@@ -1,5 +1,5 @@
 import { useScrollReveal } from "@/hooks/useScrollReveal";
-import CustomCursor from "@/components/CustomCursor";
+
 import Nav from "@/components/Nav";
 import HeroSection from "@/components/HeroSection";
 import TickerSection from "@/components/TickerSection";
@@ -29,7 +29,7 @@ const Index = () => {
 
   return (
     <>
-      <CustomCursor />
+      
       <Nav />
       <main>
         <HeroSection />
