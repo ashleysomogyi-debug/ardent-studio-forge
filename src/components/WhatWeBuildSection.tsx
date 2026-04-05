@@ -41,7 +41,7 @@ const WhatWeBuildSection = () => (
     <div className="absolute top-8 left-1/2 -translate-x-1/2 text-primary/40 text-[24px]">◈</div>
     <div className="max-w-[1200px] mx-auto">
       <div className="reveal-section mb-8 md:mb-12">
-        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase">What We Build</span>
+        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase">What We Do For You</span>
       </div>
       <div className="reveal-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {cards.map((card, i) => (
