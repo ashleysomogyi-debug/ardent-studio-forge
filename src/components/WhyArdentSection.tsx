@@ -1,7 +1,7 @@
 const cards = [
   {
-    title: "Domain expertise baked in",
-    desc: "Our founders bring 15+ years across enterprise sales, L&D, and EdTech. We understand your business problem before we write a single prompt. That gap between 'what the AI built' and 'what you actually need' disappears.",
+    title: "Built for businesses like yours",
+    desc: "We work with med spas, roofers, HVAC companies, attorneys, and service businesses across South Florida. We understand your clients, your workflows, and the problems that keep you up at night. That means less explaining on your end and faster results on ours.",
   },
   {
     title: "Fixed price. Always.",
