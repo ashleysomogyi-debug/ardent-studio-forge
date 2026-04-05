@@ -37,20 +37,20 @@ const Index = () => {
         <TickerSection />
         <Divider />
         <BeforeAfterSection />
-        <Divider />
+        <GoldDivider />
+        <TeamSection />
+        <GoldDivider />
         <CaseStudiesSection />
+        <Divider />
+        <TestimonialsSection />
         <Divider />
         <WhatWeBuildSection />
         <Divider />
         <SelectedWorkSection />
         <Divider />
         <ProcessSection />
-        <GoldDivider />
-        <TeamSection />
-        <GoldDivider />
-        <PricingSection />
         <Divider />
-        <TestimonialsSection />
+        <PricingSection />
         <Divider />
         <CTASection />
         <Divider />
