@@ -10,7 +10,7 @@ import SelectedWorkSection from "@/components/SelectedWorkSection";
 import ProcessSection from "@/components/ProcessSection";
 import TeamSection from "@/components/TeamSection";
 import PricingSection from "@/components/PricingSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+
 
 import CTASection from "@/components/CTASection";
 import ContactFormSection from "@/components/ContactFormSection";
