@@ -13,8 +13,7 @@ const ContactFormSection = () => {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          // Replace with your Web3Forms access key from https://web3forms.com
-          access_key: 'YOUR_ACCESS_KEY_HERE',
+          access_key: '16c134d0-e5ea-4bc1-8a3a-66fd8e73d73d',
           name: form.name,
           email: form.email,
           message: form.message,
