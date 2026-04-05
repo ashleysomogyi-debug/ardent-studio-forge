@@ -1,42 +1,41 @@
 const cards = [
   {
     num: "01",
-    title: "AI Automation & Integration",
+    title: "Never Miss a Lead Again",
     bullets: [
-      "24/7 lead capture & follow-up",
-      "CRM & tool integration",
-      "Eliminate manual admin work",
+      "AI answers calls, DMs, and emails 24/7",
+      "Leads are captured and followed up automatically",
+      "Connects to your existing tools and CRM",
     ],
   },
   {
     num: "02",
-    title: "Websites & Digital Design",
+    title: "A Website That Actually Works",
     bullets: [
-      "Mobile-first, SEO-ready builds",
+      "Built for local search and mobile visitors",
       "Delivered in days, not months",
-      "Built to convert local traffic",
+      "Designed to turn visitors into customers",
     ],
   },
   {
     num: "03",
-    title: "Apps & Custom Tools",
+    title: "Custom Tools for Your Workflow",
     bullets: [
-      "Custom portals, dashboards & tools",
-      "Payments, auth & third-party APIs",
-      "Built for your exact workflow",
+      "Client portals, booking systems, dashboards",
+      "Payments, scheduling, and notifications built in",
+      "Designed around how your business actually runs",
     ],
   },
   {
     num: "04",
-    title: "Custom Digital Products",
+    title: "Full Product Development",
     bullets: [
-      "Full SaaS & product development",
-      "AI-powered features built in",
-      "Equity or revenue-share available",
+      "Turn your idea into a real software product",
+      "AI-powered features included from day one",
+      "Equity or revenue-share models available",
     ],
   },
 ];
-
 const WhatWeBuildSection = () => (
   <section id="services" className="relative py-[72px] md:py-[112px] px-5 md:px-10 bg-surface">
     <div className="absolute top-8 left-1/2 -translate-x-1/2 text-primary/40 text-[24px]">◈</div>
