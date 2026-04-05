@@ -54,16 +54,7 @@ const HeroSection = () => {
         </div>
 
         {/* Buttons */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-5 mb-10 md:mb-14 w-full animate-fade-up" style={{ animationDelay: "0.5s" }}>
-          <a
-            href="https://calendly.com/hello-ardentstudio/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-hover
-            className="font-sans text-[13px] bg-foreground text-bg-base px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity w-full md:w-auto text-center"
-          >
-            Book a free consultation
-          </a>
+        <div className="flex items-center justify-center mb-10 md:mb-14 w-full animate-fade-up" style={{ animationDelay: "0.5s" }}>
           <a
             href="#work"
             data-hover
