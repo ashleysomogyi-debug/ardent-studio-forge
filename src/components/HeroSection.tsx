@@ -28,13 +28,15 @@ const HeroSection = () => {
           <span className="text-teal hero-pulse">Are you?</span>
         </h1>
 
+        <p className="sr-only" aria-hidden="false">Ardent Studio — AI automation, custom web design, and app development for small businesses in Boynton Beach, Palm Beach County, and South Florida.</p>
+
         {/* Supporting line */}
-        <p
-          className="font-sans text-[16px] md:text-[18px] text-body-text max-w-[460px] mb-6 md:mb-8 leading-[1.75] animate-fade-up"
+        <h2
+          className="font-sans text-[16px] md:text-[18px] text-body-text max-w-[460px] mb-6 md:mb-8 leading-[1.75] animate-fade-up font-normal"
           style={{ animationDelay: "0.4s" }}
         >
-          Stop losing jobs to businesses who respond faster.
-        </p>
+          AI automation &amp; web design for small businesses in South Florida. Stop losing jobs to businesses who respond faster.
+        </h2>
 
 
         {/* Buttons */}
