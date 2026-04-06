@@ -1,33 +1,81 @@
+import { Link } from "react-router-dom";
+
+const services = [
+  { label: "AI Automation", to: "/services/ai-automation" },
+  { label: "Web Design", to: "/services/web-design" },
+  { label: "AI Chatbot", to: "/services/ai-chatbot" },
+  { label: "Custom Software", to: "/services/custom-software" },
+  { label: "Mobile Apps", to: "/services/mobile-apps" },
+];
+
+const company = [
+  { label: "Work", href: "#work" },
+  { label: "Process", href: "#process" },
+  { label: "Pricing", href: "#pricing" },
+  { label: "Contact", href: "#contact" },
+  { label: "SartoriAI", href: "https://www.sartoriai.com/", external: true },
+];
+
 const Footer = () => (
   <footer className="bg-bg-elevated py-10 md:py-16 px-5 md:px-10">
-    <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 items-start">
+    <div className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      {/* Brand */}
       <div className="flex flex-col">
-        <span className="font-sans text-[16px] md:text-[18px] text-foreground font-semibold">Ardent Studio</span>
-        <span className="font-mono text-[11px] text-teal tracking-[0.2em] uppercase mt-1">AI Digital Products</span>
+        <Link to="/" className="inline-block">
+          <span className="font-sans text-[16px] md:text-[18px] text-foreground font-semibold">Ardent Studio</span>
+          <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase block mt-1">AI Digital Products</span>
+        </Link>
+        <span className="font-mono text-[11px] text-muted-foreground mt-4">© 2026 Ardent Studio</span>
       </div>
 
-      <div className="flex flex-wrap gap-4 md:gap-7">
-        {[
-          { label: "Services", href: "#services" },
-          { label: "Work", href: "#work" },
-          { label: "Process", href: "#process" },
-          { label: "Pricing", href: "#pricing" },
-          { label: "SartoriAI", href: "http://www.sartoriai.com/", external: true },
-        ].map((link) => (
-          <a
-            key={link.label}
-            href={link.href}
-            {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-            className="font-sans text-[14px] text-label-text hover:text-foreground transition-colors"
-          >
-            {link.label}
+      {/* Services */}
+      <div>
+        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase mb-4 block">Services</span>
+        <ul className="space-y-2.5">
+          {services.map((s) => (
+            <li key={s.to}>
+              <Link to={s.to} className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors">
+                {s.label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Company */}
+      <div>
+        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase mb-4 block">Company</span>
+        <ul className="space-y-2.5">
+          {company.map((c) => (
+            <li key={c.label}>
+              {c.external ? (
+                <a href={c.href} target="_blank" rel="noopener noreferrer" className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors">
+                  {c.label}
+                </a>
+              ) : (
+                <a href={c.href} className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors">
+                  {c.label}
+                </a>
+              )}
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      {/* Contact */}
+      <div>
+        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase mb-4 block">Contact</span>
+        <address className="not-italic space-y-2.5">
+          <p className="font-sans text-[14px] text-muted-foreground leading-[1.6]">
+            3118 Waterside Circle<br />Boynton Beach, FL 33435
+          </p>
+          <a href="tel:+17282010192" className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors block">
+            (728) 201-0192
           </a>
-        ))}
-      </div>
-
-      <div className="md:text-right">
-        <span className="font-mono text-[11px] text-label-text block">Palm Beach County, Florida</span>
-        <span className="font-mono text-[11px] text-label-text block mt-1">© 2026 Ardent Studio</span>
+          <a href="mailto:hello@ardentstudio.io" className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors block">
+            hello@ardentstudio.io
+          </a>
+        </address>
       </div>
     </div>
   </footer>
