@@ -33,6 +33,11 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/index.html" element={<Navigate to="/" replace />} />
+          <Route path="/services/ai-automation" element={<AIAutomation />} />
+          <Route path="/services/web-design" element={<WebDesign />} />
+          <Route path="/services/ai-chatbot" element={<AIChatbot />} />
+          <Route path="/services/custom-software" element={<CustomSoftware />} />
+          <Route path="/services/mobile-apps" element={<MobileApps />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
