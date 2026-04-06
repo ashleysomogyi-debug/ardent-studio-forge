@@ -2,18 +2,18 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 const MobileApps = () => (
   <ServicePageLayout
-    metaTitle="Mobile App Development | Boynton Beach, FL — Ardent Studio"
-    metaDescription="Custom mobile app development for small businesses in Boynton Beach, Palm Beach County & South Florida. iOS, Android, and cross-platform — fast delivery, fixed pricing."
+    metaTitle="Mobile App Development | iOS & Android — Ardent Studio"
+    metaDescription="Custom iOS and Android app development for small businesses in Florida. Cross-platform mobile apps built fast with fixed pricing."
     headline="Mobile App Development"
-    subheadline="Your business in your customer's pocket."
+    subheadline="Your business in your customers' pockets."
     introText="We build custom mobile apps — iOS, Android, and cross-platform — designed to deepen customer engagement, streamline operations, and open new revenue channels."
     features={[
-      { title: "Cross-Platform Apps", description: "One codebase, every device. We build apps that run natively on iOS and Android — faster to develop, easier to maintain." },
-      { title: "Customer-Facing Apps", description: "Booking apps, loyalty programs, and service portals that keep your customers engaged and coming back." },
-      { title: "Internal Team Apps", description: "Field service apps, inventory trackers, and communication tools that help your team work smarter in the field." },
+      { title: "Cross-Platform (iOS + Android)", description: "One codebase, every device. We build apps that run natively on iOS and Android — faster to develop, easier to maintain." },
       { title: "Push Notifications", description: "Re-engage customers with targeted push notifications — promotions, reminders, updates — delivered right to their lock screen." },
-      { title: "Offline Functionality", description: "Apps that work without internet so your field teams can log data, take photos, and sync when they're back online." },
-      { title: "App Store Deployment", description: "We handle the entire submission process for Apple App Store and Google Play — including assets, descriptions, and compliance." },
+      { title: "Offline Support", description: "Apps that work without internet so your field teams can log data, take photos, and sync when they're back online." },
+      { title: "App Store Submission", description: "We handle the entire submission process for Apple App Store and Google Play — including assets, descriptions, and compliance." },
+      { title: "Backend & API Development", description: "We build the server-side infrastructure your app needs — APIs, databases, authentication, and third-party integrations." },
+      { title: "Maintenance & Updates", description: "Post-launch support to keep your app running smoothly — bug fixes, OS updates, and feature additions as your business grows." },
     ]}
     industries={["HVAC", "Medical / Dental", "Legal", "Real Estate", "Restaurants", "Fitness / Wellness", "eCommerce", "Construction", "Auto Repair", "Property Management"]}
     whyArdent={[
@@ -24,7 +24,7 @@ const MobileApps = () => (
       "You own the source code from day one. No lock-in, full portability.",
       "We understand South Florida small businesses and build apps people actually use.",
     ]}
-    ctaText="Ready to put your business in your customer's pocket?"
+    ctaText="Ready to put your business in your customers' pockets?"
   />
 );
 
