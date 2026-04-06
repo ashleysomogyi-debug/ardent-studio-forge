@@ -5,6 +5,11 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import AIAutomation from "./pages/services/AIAutomation.tsx";
+import WebDesign from "./pages/services/WebDesign.tsx";
+import AIChatbot from "./pages/services/AIChatbot.tsx";
+import CustomSoftware from "./pages/services/CustomSoftware.tsx";
+import MobileApps from "./pages/services/MobileApps.tsx";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
