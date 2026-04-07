@@ -12,6 +12,7 @@ import CustomSoftware from "./pages/services/CustomSoftware.tsx";
 import MobileApps from "./pages/services/MobileApps.tsx";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import ChatbotWidget from "./components/ChatbotWidget";
 
 const TrailingSlashRedirect = () => {
   const location = useLocation();
@@ -46,6 +47,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+        <ChatbotWidget />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
