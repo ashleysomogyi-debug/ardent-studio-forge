@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ardent Studio — Live Auction | Pooches, Pearls &amp; Prosecco</title>
+  <meta name="description" content="Win two custom AI automations for your business — valued at $1,000. 100% of proceeds benefit local shelter animals.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0E0E11;
+      --bg-card: #161619;
+      --teal: #2EC4B6;
+      --teal-dim: #1F8A80;
+      --gold: #D4A843;
+      --gold-light: #E8C876;
+      --white: #FFFFFF;
+      --white-90: #E8E8E8;
+      --white-60: #999999;
+      --white-40: #666666;
+      --white-20: #333333;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--white-90);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .top-bar {
+      height: 3px;
+      background: linear-gradient(90deg, var(--gold), var(--teal), var(--gold));
+    }
+    .header {
+      padding: 2rem 1.5rem 1rem;
+      text-align: center;
+    }
+    .header .brand {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--white);
+    }
+    .header .brand span { color: var(--teal); }
+    .header .location {
+      font-size: 0.7rem;
+      color: var(--white-40);
+      letter-spacing: 0.08em;
+      margin-top: 0.25rem;
+    }
+    .event-banner {
+      text-align: center;
+      padding: 1.5rem 1.5rem 0.5rem;
+    }
+    .event-banner .event-label {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+      border: 1px solid rgba(212, 168, 67, 0.3);
+      padding: 0.35rem 1rem;
+      border-radius: 100px;
+    }
+    .event-banner .event-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-top: 0.75rem;
+    }
+    .event-banner .event-host {
+      font-size: 0.75rem;
+      color: var(--white-60);
+      margin-top: 0.3rem;
+    }
+    .event-banner .event-host a {
+      color: var(--teal);
+      text-decoration: none;
+    }
+    .event-banner .event-host a:hover { text-decoration: underline; }
+    .hero {
+      text-align: center;
+      padding: 2.5rem 1.5rem 2rem;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(46, 196, 182, 0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.2;
+    }
+    .hero .subtitle {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--teal);
+      margin-top: 0.5rem;
+    }
+    .hero .value-badge {
+      display: inline-block;
+      margin-top: 1.25rem;
+      padding: 0.6rem 2rem;
+      border: 1.5px solid var(--gold);
+      border-radius: 8px;
+      background: rgba(22, 22, 25, 0.8);
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+      color: var(--gold-light);
+    }
+    .hero .charity-note {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: var(--gold);
+      font-weight: 500;
+    }
+    .hero .charity-note span { color: var(--white-60); font-weight: 400; }
+    .divider {
+      height: 1px;
+      margin: 0 2rem;
+      background: linear-gradient(90deg, transparent, var(--white-20), transparent);
+    }
+    .how-it-works {
+      text-align: center;
+      padding: 2.5rem 1.5rem 1rem;
+    }
+    .how-it-works h2 {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--teal);
+    }
+    .how-it-works p {
+      font-size: 0.9rem;
+      color: var(--white-60);
+      margin-top: 0.5rem;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .services {
+      padding: 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    @media (min-width: 640px) {
+      .services { grid-template-columns: 1fr 1fr; }
+    }
+    .service-card {
+      background: var(--bg-card);
+      border: 1px solid var(--white-20);
+      border-radius: 12px;
+      padding: 1.5rem;
+      position: relative;
+      overflow: hidden;
+      transition: border-color 0.3s;
+    }
+    .service-card:hover { border-color: rgba(46, 196, 182, 0.3); }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--teal), var(--teal-dim));
+    }
+    .service-card .num {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .service-card h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--white);
+      margin-top: 0.5rem;
+    }
+    .service-card .desc {
+      font-size: 0.85rem;
+      color: var(--white-60);
+      margin-top: 0.75rem;
+      line-height: 1.6;
+    }
+    .service-card .benefit {
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--teal);
+    }
+    .cta-section {
+      text-align: center;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+    .cta-section .learn-more {
+      display: inline-block;
+      padding: 0.85rem 2.5rem;
+      background: var(--gold);
+      color: var(--bg);
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    .cta-section .learn-more:hover { background: var(--gold-light); }
+    .cta-section .subtext {
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: var(--white-40);
+    }
+    .cta-section .subtext a {
+      color: var(--teal);
+      text-decoration: none;
+    }
+    .cta-section .subtext a:hover { text-decoration: underline; }
+    .footer {
+      border-top: 1px solid var(--white-20);
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .footer .contact {
+      font-size: 0.75rem;
+      color: var(--white-40);
+      line-height: 1.8;
+    }
+    .footer .contact a { color: var(--teal); text-decoration: none; }
+    .footer .contact a:hover { text-decoration: underline; }
+    .footer .brand-link {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.7rem;
+      color: var(--white-40);
+      letter-spacing: 0.08em;
+    }
+    .footer .brand-link a { color: var(--white-60); text-decoration: none; }
+    .footer .brand-link a:hover { color: var(--teal); }
+    .footer .disclaimer {
+      margin-top: 1.25rem;
+      font-size: 0.65rem;
+      color: var(--white-40);
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+    .footer .bottom-brand {
+      margin-top: 1rem;
+      font-size: 0.65rem;
+      color: var(--white-20);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar"></div>
+
+  <header class="header">
+    <div class="brand">ARDENT <span>STUDIO</span></div>
+    <div class="location">Palm Beach County, FL</div>
+  </header>
+
+  <section class="event-banner">
+    <div class="event-label">Live Auction Item</div>
+    <div class="event-name">Pooches, Pearls &amp; Prosecco</div>
+    <div class="event-host">
+      Hosted by <a href="https://www.womenofwellington.com" target="_blank" rel="noopener">Women of Wellington</a>
+       &bull;  Wellington Chamber of Commerce
+    </div>
+  </section>
+
+  <section class="hero">
+    <h1>Automate Your Business.</h1>
+    <div class="subtitle">You Pick Two. We Build Them.</div>
+    <div class="value-badge">Valued at $1,000</div>
+    <div class="charity-note">
+      100% of proceeds benefit shelter animals
+      <span> — helping local pooches find their forever homes</span>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="how-it-works">
+    <h2>How It Works</h2>
+    <p>Win this auction item and choose any two of the four automations below. We'll build them for your business from scratch — no tech skills needed on your end.</p>
+  </section>
+
+  <div class="services">
+
+    <div class="service-card">
+      <div class="num">01</div>
+      <h3>Workflow Automation</h3>
+      <div class="desc">Those repetitive tasks you do every day — scheduling, invoicing, data entry, sending reminders — we set up systems that handle them automatically so you don't have to.</div>
+      <div class="benefit">&rarr; Get hours back every week without hiring anyone.</div>
+    </div>
+
+    <div class="service-card">
+      <div class="num">02</div>
+      <h3>Lead Generation Engine</h3>
+      <div class="desc">We build a system that captures potential customers from your website, social media, or ads. It collects their info and sends them straight to you — automatically.</div>
+      <div class="benefit">&rarr; New leads come to you on autopilot, 24/7.</div>
+    </div>
+
+    <div class="service-card">
+      <div class="num">03</div>
+      <h3>Marketing Automation</h3>
+      <div class="desc">Email campaigns, social media posts, and targeted messages that go out on their own — based on what your customers actually do. No more spending hours on manual marketing.</div>
+      <div class="benefit">&rarr; Consistent marketing that runs while you sleep.</div>
+    </div>
+
+    <div class="service-card">
+      <div class="num">04</div>
+      <h3>24/7 Automated Follow-Ups</h3>
+      <div class="desc">After someone reaches out or books with you, your system automatically sends a series of emails or texts — reminders, check-ins, and thank-yous — without you lifting a finger.</div>
+      <div class="benefit">&rarr; Never lose a lead because you forgot to follow up.</div>
+    </div>
+
+  </div>
+
+  <section class="cta-section">
+    <a href="https://ardentstudio.io" class="learn-more" target="_blank" rel="noopener">Visit Ardent Studio</a>
+    <div class="subtext">
+      Questions? Email <a href="mailto:hello@ardentstudio.io">hello@ardentstudio.io</a>
+       or call <a href="tel:+17282010192">(728) 201-0192</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="contact">
+      Dr. Ashley Somogyi &nbsp;&bull;&nbsp; Ardent Studio<br>
+      <a href="https://ardentstudio.io" target="_blank" rel="noopener">ardentstudio.io</a>
+       &bull; 
+      <a href="mailto:hello@ardentstudio.io">hello@ardentstudio.io</a>
+       &bull; 
+      <a href="tel:+17282010192">(728) 201-0192</a>
+    </div>
+
+    <div class="disclaimer">
+      * Some automations may require small monthly subscription fees to third-party platforms (e.g., email services, scheduling tools, CRM software). These costs are not included in the auction item value and will be the responsibility of the business.
+    </div>
+
+    <div class="bottom-brand">ARDENT STUDIO &nbsp;&bull;&nbsp; Palm Beach County, FL</div>
+  </footer>
+
+</body>
+</html>
