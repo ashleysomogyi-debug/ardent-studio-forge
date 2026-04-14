@@ -67,7 +67,7 @@ const Footer = () => (
         <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase mb-4 block">Contact</span>
         <address className="not-italic space-y-2.5">
           <p className="font-sans text-[14px] text-muted-foreground leading-[1.6]">
-            3118 Waterside Circle<br />Boynton Beach, FL 33435
+            The Greet STE A<br />Dover, DE 19901
           </p>
           <a href="tel:+17282010192" className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors block">
             (728) 201-0192
