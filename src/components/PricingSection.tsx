@@ -2,13 +2,13 @@ import { Check } from "lucide-react";
 
 const tiers = [
   {
-    label: "Launch",
-    title: "Website & Brand",
+    label: "Automate",
+    title: "Automation Stack",
     price: "$3,500",
-    note: "Flat fee · Delivered in 5–7 days from approved design",
+    note: "Flat fee · Delivered in 10–14 days from audit",
     bullets: [
-      "Up to 6 pages, mobile-first & SEO-ready",
-      "Contact forms & booking integration",
+      "Audit of your core business processes & tools",
+      "Up to 5 custom automations built & integrated",
       "30-day post-launch support",
     ],
     cta: "Get started",
@@ -22,7 +22,7 @@ const tiers = [
     price: "$8,500",
     note: "Flat fee · Delivered in 10–14 days",
     bullets: [
-      "Everything in Launch",
+      "Everything in Automation Stack",
       "AI lead capture, follow-up & CRM automation",
       "60-day post-launch support",
     ],
