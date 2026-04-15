@@ -10,6 +10,7 @@ import WebDesign from "./pages/services/WebDesign.tsx";
 import AIChatbot from "./pages/services/AIChatbot.tsx";
 import CustomSoftware from "./pages/services/CustomSoftware.tsx";
 import MobileApps from "./pages/services/MobileApps.tsx";
+import PoochesPearlsProsecco from "./pages/events/PoochesPearlsProsecco.tsx";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import ChatbotWidget from "./components/ChatbotWidget";
@@ -44,6 +45,7 @@ const App = () => (
           <Route path="/services/ai-chatbot" element={<AIChatbot />} />
           <Route path="/services/custom-software" element={<CustomSoftware />} />
           <Route path="/services/mobile-apps" element={<MobileApps />} />
+          <Route path="/events/pooches-pearls-prosecco" element={<PoochesPearlsProsecco />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
