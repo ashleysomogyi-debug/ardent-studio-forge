@@ -284,7 +284,7 @@ const PoochesPearlsProsecco = () => {
         </div>
 
         <div className="event-banner">
-          <span className="event-label">Live Auction Item</span>
+          <span className="event-label">Live Auction Item Valid Only for Pooches, Pearls and Prosecco Event</span>
           <div className="event-name">Pooches, Pearls &amp; Prosecco</div>
           <div className="event-host">
             Hosted by{" "}
