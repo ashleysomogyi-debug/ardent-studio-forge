@@ -13,16 +13,6 @@ const cards = [
   },
   {
     num: "02",
-    title: "A Website That Actually Works",
-    bullets: [
-      "Built for local search and mobile visitors",
-      "Delivered in days, not months",
-      "Designed to turn visitors into customers",
-    ],
-    to: "/services/web-design",
-  },
-  {
-    num: "03",
     title: "AI Chatbot Development",
     bullets: [
       "Client portals, booking systems, dashboards",
@@ -32,7 +22,7 @@ const cards = [
     to: "/services/ai-chatbot",
   },
   {
-    num: "04",
+    num: "03",
     title: "Full Product Development",
     bullets: [
       "Turn your idea into a real software product",

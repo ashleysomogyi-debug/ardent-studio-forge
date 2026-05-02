@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const services = [
   { label: "AI Automation", to: "/services/ai-automation" },
-  { label: "Web Design", to: "/services/web-design" },
+  
   { label: "AI Chatbot", to: "/services/ai-chatbot" },
   { label: "Custom Software", to: "/services/custom-software" },
   { label: "Mobile Apps", to: "/services/mobile-apps" },
