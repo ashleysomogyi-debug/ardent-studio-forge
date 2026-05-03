@@ -312,6 +312,14 @@ const Index = () => {
             <p className="text-[15px] text-ardent-paper/70">
               Every tool above runs on Anthropic Claude and Make.com. That's what we build with, and what your team will work in.
             </p>
+            <div className="mt-5">
+              <Link
+                to="/services/ai-automation"
+                className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-lime hover:opacity-70"
+              >
+                More about AI automation →
+              </Link>
+            </div>
           </div>
         </section>
 
