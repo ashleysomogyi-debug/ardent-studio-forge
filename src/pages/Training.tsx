@@ -100,6 +100,25 @@ const Training = () => {
         </section>
 
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#171311" }}>
+          <div className="max-w-[1100px] mx-auto mb-16">
+            <div className="border-[1.5px] border-ardent-mint p-12 md:px-12 md:py-16" style={{ background: "#0D0D0D" }}>
+              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-5">Signature workshop</span>
+              <h2 className="text-[clamp(36px,5vw,56px)] leading-[1.05] mb-6 text-ardent-paper" style={{ fontFamily: serif }}>
+                Build your first agent.
+              </h2>
+              <p className="text-[17px] leading-[1.65] text-ardent-paper/80 max-w-[68ch] mb-8">
+                A 4-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem — we build the tool together, in the room, and you leave with it running.
+              </p>
+              <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-paper/70 mb-8">
+                4 Hours · Up to 15 People · In Person or Virtual · $3,750
+              </p>
+              <a href="/#book-a-call" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
+                Book the agent workshop
+              </a>
+            </div>
+          </div>
+
+        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#171311" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">What we cover</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-ardent-paper" style={{ fontFamily: serif }}>
