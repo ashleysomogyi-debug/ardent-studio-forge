@@ -30,7 +30,7 @@ const Apps = () => {
             <a
               href="/#book-a-call"
               className="inline-block px-8 py-4 text-[14px] rounded-full"
-              style={{ background: "#B8862A", color: "#0D0D0D" }}
+              style={{ background: "#FF6B6B", color: "#0D0D0D" }}
             >
               Book a free 20-minute call
             </a>
@@ -57,7 +57,7 @@ const Apps = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-8 py-4 text-[14px] rounded-full"
-                style={{ background: "#B8862A", color: "#F7F3EC" }}
+                style={{ background: "#FF6B6B", color: "#0D0D0D" }}
               >
                 Visit sartoriai.com →
               </a>

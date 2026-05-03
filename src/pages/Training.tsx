@@ -52,7 +52,7 @@ const Training = () => {
             <p className="text-[18px] leading-[1.65] max-w-[640px] text-ardent-paper/75 mb-10">
               In-person and virtual workshops for small teams in South Florida. We build something real together — your team leaves with a tool, not a slide deck.
             </p>
-            <a href="/#book-a-call" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#B8862A", color: "#0D0D0D" }}>
+            <a href="/#book-a-call" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
               Book a free discovery call
             </a>
           </div>
