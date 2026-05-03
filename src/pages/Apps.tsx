@@ -45,7 +45,7 @@ const Apps = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="border border-ardent-lime/40 p-10 md:p-14 bg-white/40 flex flex-col">
                 <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
-                  AI Search · SEO
+                  AI Sales Training
                 </span>
                 <h2 className="text-[clamp(32px,4vw,48px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
                   Sartori AI
@@ -54,7 +54,7 @@ const Apps = () => {
                   The operating layer for AI search.
                 </p>
                 <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
-                  A full product we designed, built, and ship — helping companies show up correctly in the new generation of AI search engines.
+                  An AI-powered sales training platform that puts reps through scored roleplay conversations with realistic buyer personas — so teams build real skill through practice, not theory. Built by Ardent Studio. Now its own company.
                 </p>
                 <div className="mt-auto">
                   <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
