@@ -40,27 +40,57 @@ const Apps = () => {
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F7F3EC" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">
-              Featured product
+              Featured products
             </span>
-            <div className="border border-ardent-lime/40 p-10 md:p-14 bg-white/40">
-              <h2 className="text-[clamp(32px,5vw,56px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
-                Sartori AI
-              </h2>
-              <p className="italic mb-6" style={{ fontFamily: serif, color: "#B8862A" }}>
-                The operating layer for AI search.
-              </p>
-              <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8 max-w-[640px]">
-                A full product we designed, built, and ship — helping companies show up correctly in the new generation of AI search engines.
-              </p>
-              <a
-                href="https://sartoriai.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-4 text-[14px] rounded-full"
-                style={{ background: "#FF6B6B", color: "#0D0D0D" }}
-              >
-                Visit sartoriai.com →
-              </a>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="border border-ardent-lime/40 p-10 md:p-14 bg-white/40 flex flex-col">
+                <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+                  AI Search · SEO
+                </span>
+                <h2 className="text-[clamp(32px,4vw,48px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
+                  Sartori AI
+                </h2>
+                <p className="italic mb-6" style={{ fontFamily: serif, color: "#B8862A" }}>
+                  The operating layer for AI search.
+                </p>
+                <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
+                  A full product we designed, built, and ship — helping companies show up correctly in the new generation of AI search engines.
+                </p>
+                <div className="mt-auto">
+                  <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+                    Status · Live
+                  </span>
+                  <a
+                    href="https://sartoriai.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-4 text-[14px] rounded-full"
+                    style={{ background: "#FF6B6B", color: "#0D0D0D" }}
+                  >
+                    Visit sartoriai.com →
+                  </a>
+                </div>
+              </div>
+
+              <div className="border border-ardent-lime/40 p-10 md:p-14 bg-white/40 flex flex-col">
+                <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+                  Sports Tech · AI Coaching
+                </span>
+                <h2 className="text-[clamp(32px,4vw,48px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
+                  Tryline Coach
+                </h2>
+                <p className="italic mb-6" style={{ fontFamily: serif, color: "#B8862A" }}>
+                  Democratising access to elite coaching intelligence.
+                </p>
+                <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
+                  AI-powered coaching platform for rugby, delivering personalised training analysis and performance insights to players and coaches at every level — from grassroots clubs to elite academies.
+                </p>
+                <div className="mt-auto">
+                  <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+                    Status · Live
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
