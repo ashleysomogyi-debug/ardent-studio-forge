@@ -132,12 +132,6 @@ const builds = [
   },
 ];
 
-const fieldNotes = [
-  { tag: "PLAYBOOK", title: "Where AI actually saves a service business hours", date: "Coming soon" },
-  { tag: "ESSAY", title: "Why I scope tighter than most builders", date: "Coming soon" },
-  { tag: "FIELD NOTE", title: "Three replies a week that don't need you anymore", date: "Coming soon" },
-];
-
 const Section = ({ bg, children, id }: { bg: string; children: React.ReactNode; id?: string }) => (
   <section id={id} className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: bg }}>
     <div className="max-w-[1200px] mx-auto">{children}</div>
