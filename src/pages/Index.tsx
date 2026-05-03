@@ -165,7 +165,7 @@ const Index = () => {
 
         {/* 2. OFFERINGS — cream */}
         <Section bg="#F7F3EC">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">
             How we serve businesses
           </span>
           <h2
