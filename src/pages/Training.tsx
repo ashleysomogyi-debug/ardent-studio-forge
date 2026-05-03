@@ -11,7 +11,7 @@ const format = [
 ];
 
 const tracks = [
-  { t: "Automation and agents", d: "How to wire AI into the work that's actually leaking hours.", featured: true },
+  { t: "Build your first agent", d: "Pick a workflow that's leaking hours. Leave with a working tool that handles it for you.", featured: true },
   { t: "Writing with AI", d: "Replies, proposals, and posts in your voice — not the default voice." },
   { t: "Research and analysis", d: "Use AI to read documents and pull out what matters." },
   { t: "Customer conversations", d: "Inbound triage, FAQ answers, and respectful follow-up." },
