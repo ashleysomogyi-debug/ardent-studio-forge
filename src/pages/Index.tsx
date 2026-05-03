@@ -342,7 +342,7 @@ const Index = () => {
             className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-14 max-w-[20ch] text-ardent-paper"
             style={{ fontFamily: serif }}
           >
-            A studio, not an agency.
+            I help local businesses get a few hours of their week back.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-12 items-start mb-24">
             <img
@@ -354,6 +354,9 @@ const Index = () => {
               className="w-full max-w-[320px] aspect-square object-cover"
             />
             <div className="space-y-5 text-[16px] leading-[1.75] text-ardent-paper/80">
+              <p>
+                I'm Ashley. I run Ardent Studio out of Palm Beach County. I figure out where small AI tools fit in your day, and I build them.
+              </p>
               <p>
                 I started Ardent because I watched too many local business owners get stuck between agencies that overpromise and tools that don't quite fit. They didn't need a transformation. They needed someone to sit at the table and figure out what would actually save them a few hours a week.
               </p>
