@@ -87,7 +87,7 @@ const Apps = () => {
                 </p>
                 <div className="mt-auto">
                   <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
-                    Status · Live
+                    Status · In Build
                   </span>
                 </div>
               </div>
