@@ -1,83 +1,46 @@
-import ParticleCanvas from "./ParticleCanvas";
-
-const HeroSection = () => {
-  return (
-    <section className="relative flex flex-col items-center justify-center px-5 md:px-6 overflow-hidden bg-bg-base pt-[140px] pb-[112px]" style={{ minHeight: "100svh" }}>
-      <ParticleCanvas />
-
-      {/* Corner bracket accents */}
-      <div className="absolute top-[100px] left-6 md:left-10 w-10 h-10 border-t-2 border-l-2 border-teal/30" />
-      <div className="absolute top-[100px] right-6 md:right-10 w-10 h-10 border-t-2 border-r-2 border-teal/30" />
-      <div className="absolute bottom-16 left-6 md:left-10 w-10 h-10 border-b-2 border-l-2 border-teal/30" />
-      <div className="absolute bottom-16 right-6 md:right-10 w-10 h-10 border-b-2 border-r-2 border-teal/30" />
-
-      <div className="relative z-10 flex flex-col items-center text-center max-w-[900px] mx-auto">
-        {/* Tagline */}
-        <div className="flex items-center gap-2 md:gap-3 mb-6 md:mb-10 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <span className="w-5 md:w-8 h-px bg-teal" />
-          <span className="font-mono text-[11px] text-teal tracking-[0.2em] md:tracking-[0.3em] uppercase">From idea to live in days.</span>
-          <span className="w-5 md:w-8 h-px bg-teal" />
-        </div>
-
-        {/* H1 */}
-        <h1
-          className="font-sans font-light leading-[0.95] mb-6 md:mb-8 animate-fade-up text-[clamp(36px,9vw,96px)] md:text-[clamp(56px,8vw,96px)]"
-          style={{ animationDelay: "0.2s" }}
-        >
-          Your competitors are automated.<br />
-          <span className="text-teal hero-pulse">Are you?</span>
-        </h1>
-
-        <p className="sr-only" aria-hidden="false">Ardent Studio — AI automation, custom web design, and app development for small businesses in Boynton Beach, Palm Beach County, and South Florida.</p>
-
-        {/* Supporting line */}
-        <h2
-          className="font-sans text-[16px] md:text-[18px] text-body-text max-w-[460px] mb-6 md:mb-8 leading-[1.75] animate-fade-up font-normal"
-          style={{ animationDelay: "0.4s" }}
-        >
-          AI automation &amp; web design for small businesses in South Florida. Stop losing jobs to businesses who respond faster.
-        </h2>
-
-
-        {/* Buttons */}
-        <div className="flex items-center justify-center mb-10 md:mb-14 w-full animate-fade-up" style={{ animationDelay: "0.5s" }}>
-          <a
-            href="#work"
-            data-hover
-            className="font-sans text-[13px] border border-foreground/30 text-foreground px-8 py-3.5 rounded-full hover:border-foreground/60 transition-colors w-full md:w-auto text-center"
-          >
-            See our work
-          </a>
-        </div>
-
-        {/* Stats */}
-        <div
-          className="w-full border-t pt-8 md:pt-10 grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 animate-fade-up"
-          style={{ borderColor: "rgba(196,146,74,0.2)", animationDelay: "0.6s" }}
-        >
-          {[
-            { num: "1–3 wks", label: "Typical build time" },
-            { num: "Fixed", label: "Price, always" },
-            { num: "100%", label: "Code you own" },
-            { num: "0 hrs", label: "Wasted in standups" },
-          ].map((s) => (
-            <div key={s.label} className="flex flex-col items-center">
-              <span className="font-sans italic text-gold text-[24px] md:text-[36px] leading-none">{s.num}</span>
-              <span className="font-mono text-[11px] text-label-text mt-2 md:mt-3">{s.label}</span>
-            </div>
-          ))}
-        </div>
+const HeroSection = () => (
+  <section className="relative min-h-screen flex items-center bg-ardent-studio overflow-hidden">
+    <div
+      className="absolute inset-0 opacity-[0.04] pointer-events-none"
+      style={{
+        backgroundImage:
+          'linear-gradient(to right, #C3F73A 1px, transparent 1px), linear-gradient(to bottom, #C3F73A 1px, transparent 1px)',
+        backgroundSize: '60px 60px',
+      }}
+    />
+    <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full py-32">
+      <div className="flex items-center gap-4 mb-12">
+        <span className="block w-12 h-px bg-ardent-lime" />
+        <span className="font-mono text-xs tracking-[0.2em] text-ardent-lime uppercase">
+          AI tools for the way local business already works
+        </span>
       </div>
-
-      {/* Scroll indicator */}
-      <div className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-        <span className="font-mono text-[11px] text-label-text tracking-[0.2em]">SCROLL</span>
-        <div className="w-px h-8 bg-label-text/30 overflow-hidden">
-          <div className="w-full h-full bg-foreground scroll-line" />
-        </div>
+      <h1 className="font-sans font-black text-[clamp(4rem,12vw,12rem)] leading-[0.95] tracking-tight">
+        <span className="text-ardent-lime">Listen.</span>{' '}
+        <span className="text-ardent-cyan">Build.</span>
+        <br />
+        <span className="text-ardent-coral">Train.</span>{' '}
+        <span className="text-ardent-mint">Repeat.</span>
+      </h1>
+      <p className="mt-12 max-w-2xl font-sans text-lg lg:text-xl text-ardent-paper/80 leading-relaxed">
+        From "is this just ChatGPT?" to a tool that runs on its own. Built with you, in person across South Florida.
+      </p>
+      <div className="mt-12 flex flex-wrap gap-4">
+        <a
+          href="#book-a-call"
+          className="inline-flex items-center gap-2 px-8 py-4 bg-ardent-lime text-ardent-studio font-sans font-semibold rounded-full hover:bg-ardent-lime/90 transition-colors"
+        >
+          Book a free call →
+        </a>
+        <a
+          href="#work"
+          className="inline-flex items-center gap-2 px-8 py-4 border border-ardent-paper/30 text-ardent-paper font-sans font-semibold rounded-full hover:border-ardent-paper transition-colors"
+        >
+          See recent builds
+        </a>
       </div>
-    </section>
-  );
-};
+    </div>
+  </section>
+);
 
 export default HeroSection;

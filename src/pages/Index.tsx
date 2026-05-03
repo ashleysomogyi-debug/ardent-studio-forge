@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
 import { Link } from "react-router-dom";
 
 const serif = "'Georgia', 'Cormorant Garamond', serif";
@@ -111,18 +112,18 @@ const Section = ({ bg, children, id }: { bg: string; children: React.ReactNode; 
 );
 
 const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
-  <div className="border border-ardent-gold/25 bg-white/40 p-7 md:p-9 flex flex-col">
+  <div className="border border-ardent-lime/25 bg-white/40 p-7 md:p-9 flex flex-col">
     <h3 className="italic text-[26px] md:text-[30px] leading-[1.15] mb-4" style={{ fontFamily: serif, color: "#B8862A" }}>
       {o.title}
     </h3>
     <p className="text-[15px] leading-[1.7] text-ardent-studio/80 mb-6">{o.body}</p>
     <div className="space-y-4 mb-6">
       <div>
-        <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-gold">Included</span>
+        <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime">Included</span>
         <ul className="mt-2 space-y-1.5">
           {o.included.map((i) => (
             <li key={i} className="text-[14px] text-ardent-studio/85 flex gap-2">
-              <span className="text-ardent-gold">+</span>
+              <span className="text-ardent-lime">+</span>
               <span>{i}</span>
             </li>
           ))}
@@ -142,11 +143,11 @@ const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
     </div>
     <div className="mt-auto pt-2">
       {o.cta.isLink ? (
-        <Link to={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-gold hover:opacity-70">
+        <Link to={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-lime hover:opacity-70">
           {o.cta.label} →
         </Link>
       ) : (
-        <a href={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-gold hover:opacity-70">
+        <a href={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-lime hover:opacity-70">
           {o.cta.label} →
         </a>
       )}
@@ -159,37 +160,12 @@ const Index = () => {
     <>
       <Nav />
       <main>
-        {/* 1. HERO — dark */}
-        <section
-          className="relative px-5 md:px-10 pt-[160px] pb-[120px] md:pt-[200px] md:pb-[160px]"
-          style={{ background: "#0D0D0D" }}
-        >
-          <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold-lt block mb-8">
-              Ardent Studio · Palm Beach County
-            </span>
-            <h1
-              className="text-[clamp(40px,7vw,84px)] leading-[1.05] font-normal max-w-[18ch] mb-8"
-              style={{ fontFamily: serif, color: "#F7F3EC" }}
-            >
-              I help local businesses get a few hours of their week back.
-            </h1>
-            <p className="text-[18px] md:text-[20px] leading-[1.65] max-w-[640px] text-ardent-paper/75 mb-10">
-              I'm Ashley. I run Ardent Studio out of Palm Beach County. I figure out where small AI tools fit in your day, and I build them.
-            </p>
-            <a
-              href="#book-a-call"
-              className="inline-block px-8 py-4 text-[14px] font-medium tracking-wide rounded-full transition-opacity hover:opacity-90"
-              style={{ background: "#B8862A", color: "#0D0D0D" }}
-            >
-              Book a free 20-minute call
-            </a>
-          </div>
-        </section>
+        {/* 1. HERO */}
+        <HeroSection />
 
         {/* 2. OFFERINGS — cream */}
         <Section bg="#F7F3EC">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold block mb-6">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
             How we serve businesses
           </span>
           <h2
@@ -207,7 +183,7 @@ const Index = () => {
 
         {/* 3. PROCESS — dark */}
         <Section bg="#0D0D0D" id="process">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold-lt block mb-6">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
             What working with us looks like
           </span>
           <h2
@@ -232,11 +208,11 @@ const Index = () => {
                   </h3>
                 </div>
                 <div>
-                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-gold-lt block mb-2">You do</span>
+                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime block mb-2">You do</span>
                   <p className="text-[15px] leading-[1.6] text-ardent-paper/75">{s.you}</p>
                 </div>
                 <div>
-                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-gold-lt block mb-2">I do</span>
+                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime block mb-2">I do</span>
                   <p className="text-[15px] leading-[1.6] text-ardent-paper/75">{s.me}</p>
                 </div>
               </div>
@@ -246,7 +222,7 @@ const Index = () => {
 
         {/* 4. SPACES + RECENT BUILDS — charcoal */}
         <Section bg="#171311" id="work">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold-lt block mb-6">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
             Building in spaces that matter
           </span>
           <h2
@@ -258,7 +234,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10 mb-24">
             {spaces.map((s) => (
               <div key={s.name} className="p-8 min-h-[200px] flex flex-col justify-between" style={{ background: "#1A1614" }}>
-                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-gold-lt">Focus</span>
+                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime">Focus</span>
                 <div>
                   <h3 className="text-[22px] leading-[1.2] mb-2 text-ardent-paper" style={{ fontFamily: serif }}>
                     {s.name}
@@ -269,7 +245,7 @@ const Index = () => {
             ))}
           </div>
 
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold-lt block mb-6">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
             Recent builds
           </span>
           <h3
@@ -282,14 +258,14 @@ const Index = () => {
             {builds.map((b) => (
               <div
                 key={b.name}
-                className={`p-7 border ${b.featured ? "border-ardent-gold/60" : "border-ardent-paper/10"} flex flex-col`}
+                className={`p-7 border ${b.featured ? "border-ardent-coral/70" : "border-ardent-paper/10"} flex flex-col`}
                 style={{ background: "#1A1614" }}
               >
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-gold-lt">
+                  <span className={`font-mono text-[10px] tracking-[0.2em] uppercase ${b.featured ? "text-ardent-coral" : "text-ardent-lime"}`}>
                     {b.featured ? "Featured" : "Build"}
                   </span>
-                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase px-2 py-1 border border-ardent-gold/40 text-ardent-gold-lt">
+                  <span className={`font-mono text-[10px] tracking-[0.2em] uppercase px-2 py-1 border ${b.featured ? "border-ardent-coral/50 text-ardent-coral" : "border-ardent-lime/40 text-ardent-lime"}`}>
                     Status Live
                   </span>
                 </div>
@@ -305,7 +281,7 @@ const Index = () => {
 
         {/* 5. FIELD NOTES — cream */}
         <Section bg="#F7F3EC">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold block mb-6">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
             Field notes
           </span>
           <h2
@@ -317,7 +293,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {fieldNotes.map((p) => (
               <div key={p.title} className="border border-ardent-studio/15 p-7 bg-white/30">
-                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-gold mb-4 block">{p.tag}</span>
+                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime mb-4 block">{p.tag}</span>
                 <h3 className="text-[22px] leading-[1.25] text-ardent-studio mb-6" style={{ fontFamily: serif }}>
                   {p.title}
                 </h3>
@@ -327,7 +303,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-ardent-studio/15 pt-12">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold block mb-3">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-3">
               Build it yourself toolkit
             </span>
             <h3 className="text-[clamp(24px,3vw,32px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
@@ -344,7 +320,7 @@ const Index = () => {
                 type="email"
                 required
                 placeholder="you@yourbusiness.com"
-                className="flex-1 px-4 py-3 border border-ardent-studio/25 bg-white text-ardent-studio text-[14px] focus:outline-none focus:border-ardent-gold"
+                className="flex-1 px-4 py-3 border border-ardent-studio/25 bg-white text-ardent-studio text-[14px] focus:outline-none focus:border-ardent-lime"
               />
               <button
                 type="submit"
@@ -359,14 +335,14 @@ const Index = () => {
 
         {/* 6. WHY I BUILT THIS — dark */}
         <Section bg="#0D0D0D">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold-lt block mb-6">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
             Why I built this
           </span>
           <h2
             className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-14 max-w-[20ch] text-ardent-paper"
             style={{ fontFamily: serif }}
           >
-            A studio, not an agency.
+            I help local businesses get a few hours of their week back.
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-12 items-start mb-24">
             <img
@@ -378,6 +354,9 @@ const Index = () => {
               className="w-full max-w-[320px] aspect-square object-cover"
             />
             <div className="space-y-5 text-[16px] leading-[1.75] text-ardent-paper/80">
+              <p>
+                I'm Ashley. I run Ardent Studio out of Palm Beach County. I figure out where small AI tools fit in your day, and I build them.
+              </p>
               <p>
                 I started Ardent because I watched too many local business owners get stuck between agencies that overpromise and tools that don't quite fit. They didn't need a transformation. They needed someone to sit at the table and figure out what would actually save them a few hours a week.
               </p>
@@ -391,7 +370,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-ardent-paper/10 pt-14">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold-lt block mb-10">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-10">
               Behind Ardent
             </span>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-[600px]">
@@ -406,10 +385,10 @@ const Index = () => {
                     width={400}
                     height={400}
                     loading="lazy"
-                    className="w-40 h-40 rounded-full object-cover mb-4 border-2 border-ardent-gold/30"
+                    className="w-40 h-40 rounded-full object-cover mb-4 border-2 border-ardent-lime/30"
                   />
                   <h3 className="text-[20px] text-ardent-paper" style={{ fontFamily: serif }}>{m.name}</h3>
-                  <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-ardent-gold-lt mt-1">
+                  <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-ardent-lime mt-1">
                     {m.role}
                   </span>
                 </div>
