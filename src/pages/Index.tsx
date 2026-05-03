@@ -375,8 +375,8 @@ const Index = () => {
             </span>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-[600px]">
               {[
-                { src: "/images/wesley.jpg", name: "Wesley Price", role: "Strategy and Ops" },
-                { src: "/images/dogs.jpg", name: "The dogs", role: "Studio mascots" },
+              { src: "/wesley-profile.jpg", name: "Wesley Price", role: "Strategy and Ops" },
+              { src: "/loki-willow-chairs.jpg", name: "Loki & Willow", role: "Studio mascots" },
               ].map((m) => (
                 <div key={m.name} className="flex flex-col items-center text-center">
                   <img
