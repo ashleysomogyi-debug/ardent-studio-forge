@@ -33,6 +33,12 @@ export default {
         "label-text": "rgba(245,245,240,0.55)",
         "dim-text": "rgba(245,245,240,0.3)",
         "error-red": "#e07070",
+        "ardent-studio": "#0D0D0D",
+        "ardent-charcoal": "#171311",
+        "ardent-ink": "#1A1614",
+        "ardent-paper": "#F7F3EC",
+        "ardent-gold": "#B8862A",
+        "ardent-gold-lt": "#C8A24D",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

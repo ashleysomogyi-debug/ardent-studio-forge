@@ -2,22 +2,20 @@ import { Link } from "react-router-dom";
 
 const services = [
   { label: "AI Automation", to: "/services/ai-automation" },
-  
   { label: "AI Chatbot", to: "/services/ai-chatbot" },
-  { label: "Custom Software", to: "/services/custom-software" },
-  { label: "Mobile Apps", to: "/services/mobile-apps" },
+  { label: "Apps", to: "/apps" },
+  { label: "Training", to: "/training" },
 ];
 
 const company = [
-  { label: "Work", href: "#work" },
-  { label: "Process", href: "#process" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", href: "/#work" },
+  { label: "Process", href: "/#process" },
+  { label: "Book a call", href: "/#book-a-call" },
   { label: "SartoriAI", href: "https://www.sartoriai.com/", external: true },
 ];
 
 const Footer = () => (
-  <footer className="bg-bg-elevated py-10 md:py-16 px-5 md:px-10">
+  <footer id="book-a-call" className="bg-bg-elevated py-10 md:py-16 px-5 md:px-10">
     <div className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       {/* Brand */}
       <div className="flex flex-col">

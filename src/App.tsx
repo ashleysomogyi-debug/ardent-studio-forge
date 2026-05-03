@@ -6,10 +6,9 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import AIAutomation from "./pages/services/AIAutomation.tsx";
-
 import AIChatbot from "./pages/services/AIChatbot.tsx";
-import CustomSoftware from "./pages/services/CustomSoftware.tsx";
-import MobileApps from "./pages/services/MobileApps.tsx";
+import Apps from "./pages/Apps.tsx";
+import Training from "./pages/Training.tsx";
 import PoochesPearlsProsecco from "./pages/events/PoochesPearlsProsecco.tsx";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -41,10 +40,12 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/index.html" element={<Navigate to="/" replace />} />
           <Route path="/services/ai-automation" element={<AIAutomation />} />
-          
           <Route path="/services/ai-chatbot" element={<AIChatbot />} />
-          <Route path="/services/custom-software" element={<CustomSoftware />} />
-          <Route path="/services/mobile-apps" element={<MobileApps />} />
+          <Route path="/services/custom-software" element={<Navigate to="/apps" replace />} />
+          <Route path="/services/mobile-apps" element={<Navigate to="/apps" replace />} />
+          <Route path="/services/web-design" element={<Navigate to="/" replace />} />
+          <Route path="/apps" element={<Apps />} />
+          <Route path="/training" element={<Training />} />
           <Route path="/events/pooches-pearls-prosecco" element={<PoochesPearlsProsecco />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<Navigate to="/" replace />} />
