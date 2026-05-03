@@ -64,8 +64,8 @@ const Training = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { src: "/images/ef-shanghai-2024.jpg", caption: "EF Keynote · Shanghai" },
-                { src: "/images/shrm23-audience.jpg", caption: "SHRM23 · Las Vegas" },
-                { src: "/images/shrm23-stage.jpg", caption: "SHRM23 · Las Vegas" },
+                { src: "/images/shrm23-audience.jpg", caption: "SHRM · Las Vegas" },
+                { src: "/images/ashley-lederne-speaking.jpg", caption: "Training · Denmark" },
               ].map((p) => (
                 <figure key={p.src}>
                   <div className="aspect-[16/10] overflow-hidden rounded-xl bg-ardent-ink">
