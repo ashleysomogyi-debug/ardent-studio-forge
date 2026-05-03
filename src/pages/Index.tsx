@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
 import { Link } from "react-router-dom";
 
 const serif = "'Georgia', 'Cormorant Garamond', serif";
@@ -159,33 +160,8 @@ const Index = () => {
     <>
       <Nav />
       <main>
-        {/* 1. HERO — dark */}
-        <section
-          className="relative px-5 md:px-10 pt-[160px] pb-[120px] md:pt-[200px] md:pb-[160px]"
-          style={{ background: "#0D0D0D" }}
-        >
-          <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-8">
-              Ardent Studio · Palm Beach County
-            </span>
-            <h1
-              className="text-[clamp(40px,7vw,84px)] leading-[1.05] font-normal max-w-[18ch] mb-8"
-              style={{ fontFamily: serif, color: "#F7F3EC" }}
-            >
-              I help local businesses get a few hours of their week back.
-            </h1>
-            <p className="text-[18px] md:text-[20px] leading-[1.65] max-w-[640px] text-ardent-paper/75 mb-10">
-              I'm Ashley. I run Ardent Studio out of Palm Beach County. I figure out where small AI tools fit in your day, and I build them.
-            </p>
-            <a
-              href="#book-a-call"
-              className="inline-block px-8 py-4 text-[14px] font-medium tracking-wide rounded-full transition-opacity hover:opacity-90"
-              style={{ background: "#B8862A", color: "#0D0D0D" }}
-            >
-              Book a free 20-minute call
-            </a>
-          </div>
-        </section>
+        {/* 1. HERO */}
+        <HeroSection />
 
         {/* 2. OFFERINGS — cream */}
         <Section bg="#F7F3EC">
@@ -282,14 +258,14 @@ const Index = () => {
             {builds.map((b) => (
               <div
                 key={b.name}
-                className={`p-7 border ${b.featured ? "border-ardent-lime/60" : "border-ardent-paper/10"} flex flex-col`}
+                className={`p-7 border ${b.featured ? "border-ardent-coral/70" : "border-ardent-paper/10"} flex flex-col`}
                 style={{ background: "#1A1614" }}
               >
                 <div className="flex items-center justify-between mb-4">
-                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime">
+                  <span className={`font-mono text-[10px] tracking-[0.2em] uppercase ${b.featured ? "text-ardent-coral" : "text-ardent-lime"}`}>
                     {b.featured ? "Featured" : "Build"}
                   </span>
-                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase px-2 py-1 border border-ardent-lime/40 text-ardent-lime">
+                  <span className={`font-mono text-[10px] tracking-[0.2em] uppercase px-2 py-1 border ${b.featured ? "border-ardent-coral/50 text-ardent-coral" : "border-ardent-lime/40 text-ardent-lime"}`}>
                     Status Live
                   </span>
                 </div>
