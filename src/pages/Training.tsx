@@ -118,7 +118,7 @@ const Training = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {tiers.map((tier) => (
-                <div key={tier.name} className={`p-8 border ${tier.featured ? "border-ardent-lime" : "border-ardent-paper/15"}`} style={{ background: "#171311" }}>
+                <div key={tier.name} className={`p-8 border ${tier.featured ? "border-ardent-mint" : "border-ardent-paper/15"}`} style={{ background: "#171311" }}>
                   <h3 className="text-[22px] mb-2 text-ardent-paper" style={{ fontFamily: serif }}>{tier.name}</h3>
                   <p className="text-[36px] mb-4" style={{ fontFamily: serif, color: "#C8A24D" }}>{tier.price}</p>
                   <p className="text-[14px] text-ardent-paper/70 mb-6">{tier.body}</p>
@@ -129,7 +129,7 @@ const Training = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href="/#book-a-call" className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#B8862A" : "transparent", color: tier.featured ? "#0D0D0D" : "#F7F3EC", border: tier.featured ? "none" : "1px solid rgba(247,243,236,0.3)" }}>
+                  <a href="/#book-a-call" className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A" : "transparent", color: tier.featured ? "#0D0D0D" : "#F7F3EC", border: tier.featured ? "none" : "1px solid rgba(247,243,236,0.3)" }}>
                     Start here
                   </a>
                 </div>
