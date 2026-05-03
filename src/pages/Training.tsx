@@ -58,6 +58,28 @@ const Training = () => {
           </div>
         </section>
 
+        <section className="px-5 md:px-10 py-16" style={{ background: "#171311" }}>
+          <div className="max-w-[1100px] mx-auto">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-8">Past workshops</span>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                { src: "/images/ef-shanghai-2024.jpg", caption: "EF Keynote · Shanghai" },
+                { src: "/images/shrm23-audience.jpg", caption: "SHRM23 · Las Vegas" },
+                { src: "/images/shrm23-stage.jpg", caption: "SHRM23 · Las Vegas" },
+              ].map((p) => (
+                <figure key={p.src}>
+                  <div className="aspect-[16/10] overflow-hidden rounded-xl bg-ardent-ink">
+                    <img src={p.src} alt={p.caption} className="w-full h-full object-cover" loading="lazy" />
+                  </div>
+                  <figcaption className="font-mono text-[10px] tracking-[0.25em] uppercase text-ardent-paper/60 mt-3">
+                    {p.caption}
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F7F3EC" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">Format</span>
