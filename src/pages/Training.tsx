@@ -47,7 +47,7 @@ const Training = () => {
           <div className="max-w-[1100px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">Training</span>
             <h1 className="text-[clamp(40px,6vw,72px)] leading-[1.05] mb-6 max-w-[20ch] text-ardent-paper" style={{ fontFamily: serif }}>
-              Hands-on AI training for the people who actually do the work.
+              Skip the AI 101. Build something today.
             </h1>
             <p className="text-[18px] leading-[1.65] max-w-[640px] text-ardent-paper/75 mb-10">
               In-person and virtual workshops for small teams in South Florida. We build something real together — your team leaves with a tool, not a slide deck.

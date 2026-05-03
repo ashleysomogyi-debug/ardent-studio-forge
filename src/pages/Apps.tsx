@@ -22,7 +22,7 @@ const Apps = () => {
               Apps & custom software
             </span>
             <h1 className="text-[clamp(40px,6vw,72px)] leading-[1.05] mb-6 max-w-[18ch] text-ardent-paper" style={{ fontFamily: serif }}>
-              Custom apps for teams that have outgrown the off-the-shelf tools.
+              Real apps. Real businesses. Real fast.
             </h1>
             <p className="text-[18px] leading-[1.65] max-w-[640px] text-ardent-paper/75 mb-10">
               Web apps, mobile apps, and internal tools built end to end. Fixed scope, fixed price, you own the code.
