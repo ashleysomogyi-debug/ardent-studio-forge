@@ -226,12 +226,8 @@ const Index = () => {
             From first call to handoff in four steps.
           </h2>
           <div className="space-y-px bg-ardent-paper/10">
-            {processSteps.map((s) => (
-              <div
-                key={s.num}
-                className="grid grid-cols-1 md:grid-cols-[120px_1fr_1fr_1fr] gap-6 md:gap-10 py-8 md:py-10 px-2 md:px-4"
-                style={{ background: "#0D0D0D" }}
-              >
+            {processSteps.map((s, i) => (
+              <ProcessStep key={s.num} s={s} i={i}>
                 <div className="text-[40px] md:text-[48px] font-light leading-none" style={{ fontFamily: serif, color: "#C8A24D" }}>
                   {s.num}
                 </div>
@@ -248,7 +244,7 @@ const Index = () => {
                   <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime block mb-2">I do</span>
                   <p className="text-[15px] leading-[1.6] text-ardent-paper/75">{s.me}</p>
                 </div>
-              </div>
+              </ProcessStep>
             ))}
           </div>
         </Section>
