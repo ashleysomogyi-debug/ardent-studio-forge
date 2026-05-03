@@ -16,7 +16,7 @@ const tracks = [
   { t: "Research and analysis", d: "Use AI to read documents and pull out what matters." },
   { t: "Customer conversations", d: "Inbound triage, FAQ answers, and respectful follow-up." },
   { t: "Operations and admin", d: "Cleanups, summaries, and the small jobs nobody wants." },
-  { t: "Safety and judgment", d: "When to trust the model, when to override, and how to log it." },
+  { t: "Lead generation with AI", d: "Find the right contacts, write the openers, and follow up without going cold." },
 ];
 
 const quotes = [
