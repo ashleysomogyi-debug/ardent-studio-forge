@@ -305,77 +305,67 @@ const Index = () => {
         {/* 5. WHY I BUILT THIS — dark */}
         <Section bg="#0D0D0D">
           <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
-            Why I built this
+            Why we built Ardent
           </span>
           <h2
-            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-14 max-w-[20ch] text-ardent-paper"
+            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-10 max-w-[24ch] text-ardent-paper"
             style={{ fontFamily: serif }}
           >
-            I help local businesses get a few hours of their week back.
+            We help local businesses get a few hours of their week back.
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-12 items-start mb-24">
-            <img
-              src="/ashley-profile.jpg"
-              alt="Ashley Somogyi, founder of Ardent Studio"
-              width={640}
-              height={640}
-              loading="lazy"
-              className="w-full max-w-[320px] aspect-square object-cover"
-            />
-            <div className="space-y-5 text-[16px] leading-[1.75] text-ardent-paper/80">
-              <p>
-                I'm Ashley. I run Ardent Studio out of Palm Beach County. I figure out where small AI tools fit in your day, and I build them.
-              </p>
-              <p>
-                I started Ardent because I watched too many local business owners get stuck between agencies that overpromise and tools that don't quite fit. They didn't need a transformation. They needed someone to sit at the table and figure out what would actually save them a few hours a week.
-              </p>
-              <p>
-                I'm a builder. I work in person when I can, on Zoom when I can't, and I build the tool while we talk. No account managers, no slide decks, no surprise invoices.
-              </p>
-              <p>
-                If we work together, you're working with me. That's the whole pitch.
-              </p>
-            </div>
+          <p className="text-[17px] md:text-[18px] leading-[1.7] text-ardent-paper/85 max-w-[60ch] mb-14">
+            We're Ashley and Wesley. We run Ardent Studio out of Palm Beach County. We figure out where small AI tools fit in your day, and we build them.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-[760px] mb-14">
+            {[
+              { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build" },
+              { src: "/wesley-profile.jpg", name: "Wesley Price", role: "Cofounder · Strategy & Ops" },
+            ].map((m) => (
+              <div key={m.name} className="flex flex-col items-center text-center">
+                <img
+                  src={m.src}
+                  alt={m.name}
+                  width={480}
+                  height={480}
+                  loading="lazy"
+                  className="w-[200px] h-[200px] md:w-[240px] md:h-[240px] rounded-full object-cover mb-5 border-2 border-ardent-lime/30"
+                />
+                <h3 className="text-[24px] text-ardent-paper" style={{ fontFamily: serif }}>{m.name}</h3>
+                <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-ardent-lime mt-2">
+                  {m.role}
+                </span>
+              </div>
+            ))}
           </div>
 
-          <div className="border-t border-ardent-paper/10 pt-14">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-12">
-              The cofounders
+          <div className="space-y-5 text-[16px] leading-[1.75] text-ardent-paper/80 max-w-[68ch] mb-16">
+            <p>
+              We started Ardent because we watched too many local business owners get stuck between agencies that overpromise and tools that don't quite fit. They didn't need a transformation. They needed someone to sit at the table and figure out what would actually save them a few hours a week.
+            </p>
+            <p>
+              Ashley builds. Wesley handles strategy and ops. We work in person when we can, on Zoom when we can't, and we build the tool while we talk. No account managers, no slide decks, no surprise invoices.
+            </p>
+            <p>
+              If you work with Ardent, you're working with us. That's the whole pitch.
+            </p>
+          </div>
+
+          <div className="border-t border-ardent-paper/10 pt-12 flex flex-col items-center text-center">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-paper/60 mb-5">
+              And our studio mascots
             </span>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-[760px] mb-16">
-              {[
-                { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build" },
-                { src: "/wesley-profile.jpg", name: "Wesley Price", role: "Cofounder · Strategy & Ops" },
-              ].map((m) => (
-                <div key={m.name} className="flex flex-col items-center text-center">
-                  <img
-                    src={m.src}
-                    alt={m.name}
-                    width={480}
-                    height={480}
-                    loading="lazy"
-                    className="w-[240px] h-[240px] md:w-[260px] md:h-[260px] rounded-full object-cover mb-5 border-2 border-ardent-lime/30"
-                  />
-                  <h3 className="text-[24px] text-ardent-paper" style={{ fontFamily: serif }}>{m.name}</h3>
-                  <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-ardent-lime mt-2">
-                    {m.role}
-                  </span>
-                </div>
-              ))}
-            </div>
-            <div className="flex flex-col items-center text-center">
-              <img
-                src="/loki-willow-chairs.jpg"
-                alt="Loki and Willow, the studio mascots"
-                width={240}
-                height={240}
-                loading="lazy"
-                className="w-[120px] h-[120px] rounded-full object-cover mb-3 border border-ardent-paper/20"
-              />
-              <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-ardent-paper/60">
-                And our studio mascots.
-              </span>
-            </div>
+            <img
+              src="/loki-willow-chairs.jpg"
+              alt="Loki and Willow, the studio mascots"
+              width={240}
+              height={240}
+              loading="lazy"
+              className="w-[120px] h-[120px] rounded-full object-cover mb-3 border border-ardent-paper/20"
+            />
+            <p className="text-[14px] text-ardent-paper/70" style={{ fontFamily: serif, fontStyle: "italic" }}>
+              Loki and Willow. They supervise.
+            </p>
           </div>
         </Section>
       </main>
