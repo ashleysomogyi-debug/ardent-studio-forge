@@ -82,7 +82,7 @@ const Training = () => {
 
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F7F3EC" }}>
           <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">Format</span>
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">Format</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-ardent-studio" style={{ fontFamily: serif }}>
               Three steps, no fluff.
             </h2>
