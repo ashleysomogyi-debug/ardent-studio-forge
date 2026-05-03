@@ -339,29 +339,42 @@ const Index = () => {
           </div>
 
           <div className="border-t border-ardent-paper/10 pt-14">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-10">
-              Behind Ardent
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-12">
+              The cofounders
             </span>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-[600px]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-[760px] mb-16">
               {[
-              { src: "/wesley-profile.jpg", name: "Wesley Price", role: "Strategy and Ops" },
-              { src: "/loki-willow-chairs.jpg", name: "Loki & Willow", role: "Studio mascots" },
+                { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build" },
+                { src: "/wesley-profile.jpg", name: "Wesley Price", role: "Cofounder · Strategy & Ops" },
               ].map((m) => (
                 <div key={m.name} className="flex flex-col items-center text-center">
                   <img
                     src={m.src}
                     alt={m.name}
-                    width={400}
-                    height={400}
+                    width={480}
+                    height={480}
                     loading="lazy"
-                    className="w-40 h-40 rounded-full object-cover mb-4 border-2 border-ardent-lime/30"
+                    className="w-[240px] h-[240px] md:w-[260px] md:h-[260px] rounded-full object-cover mb-5 border-2 border-ardent-lime/30"
                   />
-                  <h3 className="text-[20px] text-ardent-paper" style={{ fontFamily: serif }}>{m.name}</h3>
-                  <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-ardent-lime mt-1">
+                  <h3 className="text-[24px] text-ardent-paper" style={{ fontFamily: serif }}>{m.name}</h3>
+                  <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-ardent-lime mt-2">
                     {m.role}
                   </span>
                 </div>
               ))}
+            </div>
+            <div className="flex flex-col items-center text-center">
+              <img
+                src="/loki-willow-chairs.jpg"
+                alt="Loki and Willow, the studio mascots"
+                width={240}
+                height={240}
+                loading="lazy"
+                className="w-[120px] h-[120px] rounded-full object-cover mb-3 border border-ardent-paper/20"
+              />
+              <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-ardent-paper/60">
+                And our studio mascots.
+              </span>
             </div>
           </div>
         </Section>
