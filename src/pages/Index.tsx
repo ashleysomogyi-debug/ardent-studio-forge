@@ -1,7 +1,40 @@
+import { useEffect, useRef, useState } from "react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import { Link } from "react-router-dom";
+
+const ProcessStep = ({ s, i, children }: { s: any; i: number; children: React.ReactNode }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const [reduced, setReduced] = useState(false);
+  useEffect(() => {
+    const m = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReduced(m.matches);
+    if (m.matches) { setVisible(true); return; }
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { setVisible(true); obs.disconnect(); }
+    }, { threshold: 0.2 });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+  return (
+    <div
+      ref={ref}
+      className="grid grid-cols-1 md:grid-cols-[120px_1fr_1fr_1fr] gap-6 md:gap-10 py-8 md:py-10 px-2 md:px-4"
+      style={{
+        background: "#0D0D0D",
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(24px)",
+        transition: reduced ? "none" : `opacity 600ms ease-out ${i * 120}ms, transform 600ms ease-out ${i * 120}ms`,
+      }}
+    >
+      {children}
+    </div>
+  );
+};
 
 const serif = "'Georgia', 'Cormorant Garamond', serif";
 
