@@ -281,7 +281,7 @@ const Index = () => {
 
         {/* 5. FIELD NOTES — cream */}
         <Section bg="#F7F3EC">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">
             Field notes
           </span>
           <h2
@@ -293,7 +293,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {fieldNotes.map((p) => (
               <div key={p.title} className="border border-ardent-studio/15 p-7 bg-white/30">
-                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime mb-4 block">{p.tag}</span>
+                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-ink mb-4 block">{p.tag}</span>
                 <h3 className="text-[22px] leading-[1.25] text-ardent-studio mb-6" style={{ fontFamily: serif }}>
                   {p.title}
                 </h3>
@@ -303,7 +303,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-ardent-studio/15 pt-12">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-3">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-3">
               Build it yourself toolkit
             </span>
             <h3 className="text-[clamp(24px,3vw,32px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
@@ -320,12 +320,12 @@ const Index = () => {
                 type="email"
                 required
                 placeholder="you@yourbusiness.com"
-                className="flex-1 px-4 py-3 border border-ardent-studio/25 bg-white text-ardent-studio text-[14px] focus:outline-none focus:border-ardent-lime"
+                className="flex-1 px-4 py-3 border border-ardent-studio/25 bg-white text-ardent-studio text-[14px] focus:outline-none focus:border-ardent-ink"
               />
               <button
                 type="submit"
                 className="px-6 py-3 text-[13px] font-medium rounded-none transition-opacity hover:opacity-90"
-                style={{ background: "#B8862A", color: "#F7F3EC" }}
+                style={{ background: "#C3F73A", color: "#0D0D0D" }}
               >
                 Send me the toolkit
               </button>
