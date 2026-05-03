@@ -1,7 +1,40 @@
+import { useEffect, useRef, useState } from "react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import { Link } from "react-router-dom";
+
+const ProcessStep = ({ s, i, children }: { s: any; i: number; children: React.ReactNode }) => {
+  const ref = useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = useState(false);
+  const [reduced, setReduced] = useState(false);
+  useEffect(() => {
+    const m = window.matchMedia("(prefers-reduced-motion: reduce)");
+    setReduced(m.matches);
+    if (m.matches) { setVisible(true); return; }
+    const el = ref.current;
+    if (!el) return;
+    const obs = new IntersectionObserver(([e]) => {
+      if (e.isIntersecting) { setVisible(true); obs.disconnect(); }
+    }, { threshold: 0.2 });
+    obs.observe(el);
+    return () => obs.disconnect();
+  }, []);
+  return (
+    <div
+      ref={ref}
+      className="grid grid-cols-1 md:grid-cols-[120px_1fr_1fr_1fr] gap-6 md:gap-10 py-8 md:py-10 px-2 md:px-4"
+      style={{
+        background: "#0D0D0D",
+        opacity: visible ? 1 : 0,
+        transform: visible ? "translateY(0)" : "translateY(24px)",
+        transition: reduced ? "none" : `opacity 600ms ease-out ${i * 120}ms, transform 600ms ease-out ${i * 120}ms`,
+      }}
+    >
+      {children}
+    </div>
+  );
+};
 
 const serif = "'Georgia', 'Cormorant Garamond', serif";
 
@@ -64,9 +97,9 @@ const processSteps = [
 ];
 
 const spaces = [
-  { name: "Local service businesses", note: "Cleaners, salons, studios, clinics." },
+  { name: "Professional services", note: "Attorneys, accountants, consultants." },
+  { name: "Service businesses", note: "Cleaners, salons, studios, clinics." },
   { name: "Trades and home services", note: "HVAC, plumbing, roofing, electrical." },
-  { name: "Local professional services", note: "Attorneys, accountants, advisors." },
   { name: "Founder stage AI products", note: "Early stage tools shipping fast." },
 ];
 
@@ -112,18 +145,18 @@ const Section = ({ bg, children, id }: { bg: string; children: React.ReactNode; 
 );
 
 const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
-  <div className="border border-ardent-lime/25 bg-white/40 p-7 md:p-9 flex flex-col">
+  <div className="border border-ardent-ink/15 bg-white/40 p-7 md:p-9 flex flex-col">
     <h3 className="italic text-[26px] md:text-[30px] leading-[1.15] mb-4" style={{ fontFamily: serif, color: "#B8862A" }}>
       {o.title}
     </h3>
     <p className="text-[15px] leading-[1.7] text-ardent-studio/80 mb-6">{o.body}</p>
     <div className="space-y-4 mb-6">
       <div>
-        <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime">Included</span>
+        <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-ink">Included</span>
         <ul className="mt-2 space-y-1.5">
           {o.included.map((i) => (
             <li key={i} className="text-[14px] text-ardent-studio/85 flex gap-2">
-              <span className="text-ardent-lime">+</span>
+              <span className="text-ardent-ink">+</span>
               <span>{i}</span>
             </li>
           ))}
@@ -143,11 +176,11 @@ const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
     </div>
     <div className="mt-auto pt-2">
       {o.cta.isLink ? (
-        <Link to={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-lime hover:opacity-70">
+        <Link to={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
           {o.cta.label} →
         </Link>
       ) : (
-        <a href={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-lime hover:opacity-70">
+        <a href={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
           {o.cta.label} →
         </a>
       )}
@@ -165,7 +198,7 @@ const Index = () => {
 
         {/* 2. OFFERINGS — cream */}
         <Section bg="#F7F3EC">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">
             How we serve businesses
           </span>
           <h2
@@ -193,12 +226,8 @@ const Index = () => {
             From first call to handoff in four steps.
           </h2>
           <div className="space-y-px bg-ardent-paper/10">
-            {processSteps.map((s) => (
-              <div
-                key={s.num}
-                className="grid grid-cols-1 md:grid-cols-[120px_1fr_1fr_1fr] gap-6 md:gap-10 py-8 md:py-10 px-2 md:px-4"
-                style={{ background: "#0D0D0D" }}
-              >
+            {processSteps.map((s, i) => (
+              <ProcessStep key={s.num} s={s} i={i}>
                 <div className="text-[40px] md:text-[48px] font-light leading-none" style={{ fontFamily: serif, color: "#C8A24D" }}>
                   {s.num}
                 </div>
@@ -215,7 +244,7 @@ const Index = () => {
                   <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime block mb-2">I do</span>
                   <p className="text-[15px] leading-[1.6] text-ardent-paper/75">{s.me}</p>
                 </div>
-              </div>
+              </ProcessStep>
             ))}
           </div>
         </Section>
@@ -281,7 +310,7 @@ const Index = () => {
 
         {/* 5. FIELD NOTES — cream */}
         <Section bg="#F7F3EC">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">
             Field notes
           </span>
           <h2
@@ -293,7 +322,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {fieldNotes.map((p) => (
               <div key={p.title} className="border border-ardent-studio/15 p-7 bg-white/30">
-                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime mb-4 block">{p.tag}</span>
+                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-ink mb-4 block">{p.tag}</span>
                 <h3 className="text-[22px] leading-[1.25] text-ardent-studio mb-6" style={{ fontFamily: serif }}>
                   {p.title}
                 </h3>
@@ -303,7 +332,7 @@ const Index = () => {
           </div>
 
           <div className="border-t border-ardent-studio/15 pt-12">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-3">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-3">
               Build it yourself toolkit
             </span>
             <h3 className="text-[clamp(24px,3vw,32px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
@@ -320,12 +349,12 @@ const Index = () => {
                 type="email"
                 required
                 placeholder="you@yourbusiness.com"
-                className="flex-1 px-4 py-3 border border-ardent-studio/25 bg-white text-ardent-studio text-[14px] focus:outline-none focus:border-ardent-lime"
+                className="flex-1 px-4 py-3 border border-ardent-studio/25 bg-white text-ardent-studio text-[14px] focus:outline-none focus:border-ardent-ink"
               />
               <button
                 type="submit"
                 className="px-6 py-3 text-[13px] font-medium rounded-none transition-opacity hover:opacity-90"
-                style={{ background: "#B8862A", color: "#F7F3EC" }}
+                style={{ background: "#C3F73A", color: "#0D0D0D" }}
               >
                 Send me the toolkit
               </button>
@@ -346,7 +375,7 @@ const Index = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-12 items-start mb-24">
             <img
-              src="/images/ashley.jpg"
+              src="/ashley-profile.jpg"
               alt="Ashley Somogyi, founder of Ardent Studio"
               width={640}
               height={640}
@@ -375,8 +404,8 @@ const Index = () => {
             </span>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-[600px]">
               {[
-                { src: "/images/wesley.jpg", name: "Wesley Price", role: "Strategy and Ops" },
-                { src: "/images/dogs.jpg", name: "The dogs", role: "Studio mascots" },
+              { src: "/wesley-profile.jpg", name: "Wesley Price", role: "Strategy and Ops" },
+              { src: "/loki-willow-chairs.jpg", name: "Loki & Willow", role: "Studio mascots" },
               ].map((m) => (
                 <div key={m.name} className="flex flex-col items-center text-center">
                   <img

@@ -26,9 +26,9 @@ const quotes = [
 ];
 
 const tiers = [
-  { name: "Single workshop", price: "$2,500", body: "One 2 hour live session for a small team.", items: ["Up to 10 people", "Materials handed off", "30 day Q&A window"] },
-  { name: "Half day deep dive", price: "$5,000", body: "A focused 4 hour build session on one workflow.", items: ["Up to 15 people", "We ship one tool together", "Recording + playbook"], featured: true },
-  { name: "Four session team curriculum", price: "$12,000", body: "A four week program for a whole team.", items: ["4 live sessions", "Ongoing Slack support", "Team certification packet"] },
+  { name: "Single workshop", price: "$2,250", body: "One 3 hour live session for a small team. ($750/hr)", items: ["Up to 10 people", "Materials handed off", "30 day Q&A window"] },
+  { name: "Half day deep dive", price: "$4,000", body: "A focused 5 hour build session on one workflow. ($800/hr)", items: ["Up to 15 people", "We ship one tool together", "Recording + playbook"], featured: true },
+  { name: "Four session team curriculum", price: "$9,500", body: "A four week program for a whole team.", items: ["4 live sessions", "Ongoing Slack support", "Team certification packet"] },
 ];
 
 const Training = () => {
