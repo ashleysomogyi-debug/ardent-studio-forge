@@ -99,8 +99,8 @@ const Training = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#171311" }}>
-          <div className="max-w-[1100px] mx-auto mb-16">
+        <section className="px-5 md:px-10 pt-[120px]" style={{ background: "#171311" }}>
+          <div className="max-w-[1100px] mx-auto">
             <div className="border-[1.5px] border-ardent-mint p-12 md:px-12 md:py-16" style={{ background: "#0D0D0D" }}>
               <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-5">Signature workshop</span>
               <h2 className="text-[clamp(36px,5vw,56px)] leading-[1.05] mb-6 text-ardent-paper" style={{ fontFamily: serif }}>
@@ -117,6 +117,7 @@ const Training = () => {
               </a>
             </div>
           </div>
+        </section>
 
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#171311" }}>
           <div className="max-w-[1100px] mx-auto">
