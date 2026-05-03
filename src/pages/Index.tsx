@@ -107,28 +107,28 @@ const builds = [
   {
     name: "Cold outreach engine",
     desc: "A drafting and sending system that finds the right contacts and writes openers in your voice.",
-    stack: "Clay · GPT · Instantly · custom Postgres",
+    stack: "Python · Make · Claude · Gmail",
   },
   {
     name: "Inbound reply drafter",
     desc: "Reads new emails as they hit the inbox and drafts a thoughtful reply for the owner to approve.",
-    stack: "Gmail API · GPT · Make · Notion",
+    stack: "Gmail · Claude · Make · Slack",
   },
   {
     name: "LinkedIn content drafter",
     desc: "Pulls from your week and drafts five post options every Monday in your tone.",
-    stack: "GPT · Notion · scheduled jobs",
+    stack: "Claude · Make · Google Docs · scheduled jobs",
   },
   {
     name: "Sartori AI",
     desc: "Featured. A full product we designed, built, and ship as the operating layer for AI search.",
-    stack: "Next.js · GPT · Postgres · custom infra",
+    stack: "Next.js · Claude · Supabase · custom infra",
     featured: true,
   },
   {
     name: "Sartori operations stack",
     desc: "The internal tooling that runs Sartori day to day — billing, ops alerts, and analytics.",
-    stack: "Stripe · Supabase · Slack · custom dashboards",
+    stack: "Stripe · Supabase · Slack · Make",
   },
 ];
 
