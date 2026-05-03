@@ -140,6 +140,26 @@ const Training = () => {
         </section>
 
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F7F3EC" }}>
+          <div className="max-w-[1100px] mx-auto">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">Why Claude</span>
+            <h2 className="text-[clamp(28px,4vw,44px)] mb-10 text-ardent-studio" style={{ fontFamily: serif }}>
+              We teach the stack we ship.
+            </h2>
+            <div className="max-w-3xl space-y-5">
+              <p className="text-[16px] leading-[1.75] text-ardent-studio/80">
+                Most AI training tries to cover every model. We don't. We teach Claude — Anthropic's model — because it's what we use to build production tools for our clients.
+              </p>
+              <p className="text-[16px] leading-[1.75] text-ardent-studio/80">
+                Your team leaves a workshop able to actually use what they learned, not a survey of options. We include a 30-minute landscape lesson covering when you'd reach for ChatGPT or Gemini instead — but the rest of every workshop is Claude-first, hands-on.
+              </p>
+              <p className="italic text-[14px] leading-[1.7] text-ardent-studio/65" style={{ fontFamily: serif }}>
+                Depth over breadth. That's the choice.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F7F3EC" }}>
           <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
             {quotes.map((q) => (
               <div key={q.q}>
