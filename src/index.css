@@ -120,3 +120,17 @@
 .hero-pulse {
   animation: hero-glow 3s ease-in-out infinite;
 }
+
+/* Typing cursor */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.typing-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s steps(2) infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .typing-cursor { animation: none; opacity: 1; }
+}
