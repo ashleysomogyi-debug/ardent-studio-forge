@@ -64,9 +64,9 @@ const processSteps = [
 ];
 
 const spaces = [
-  { name: "Local service businesses", note: "Cleaners, salons, studios, clinics." },
+  { name: "Professional services", note: "Attorneys, accountants, consultants." },
+  { name: "Service businesses", note: "Cleaners, salons, studios, clinics." },
   { name: "Trades and home services", note: "HVAC, plumbing, roofing, electrical." },
-  { name: "Local professional services", note: "Attorneys, accountants, advisors." },
   { name: "Founder stage AI products", note: "Early stage tools shipping fast." },
 ];
 
