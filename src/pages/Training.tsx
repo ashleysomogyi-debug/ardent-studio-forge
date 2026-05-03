@@ -11,7 +11,7 @@ const format = [
 ];
 
 const tracks = [
-  { t: "Automation and agents", d: "How to wire AI into the work that's actually leaking hours.", featured: true },
+  { t: "Build your first agent", d: "Pick a workflow that's leaking hours. Leave with a working tool that handles it for you.", featured: true },
   { t: "Writing with AI", d: "Replies, proposals, and posts in your voice — not the default voice." },
   { t: "Research and analysis", d: "Use AI to read documents and pull out what matters." },
   { t: "Customer conversations", d: "Inbound triage, FAQ answers, and respectful follow-up." },
@@ -99,6 +99,26 @@ const Training = () => {
           </div>
         </section>
 
+        <section className="px-5 md:px-10 pt-[120px]" style={{ background: "#171311" }}>
+          <div className="max-w-[1100px] mx-auto">
+            <div className="border-[1.5px] border-ardent-mint p-12 md:px-12 md:py-16" style={{ background: "#0D0D0D" }}>
+              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-5">Signature workshop</span>
+              <h2 className="text-[clamp(36px,5vw,56px)] leading-[1.05] mb-6 text-ardent-paper" style={{ fontFamily: serif }}>
+                Build your first agent.
+              </h2>
+              <p className="text-[17px] leading-[1.65] text-ardent-paper/80 max-w-[68ch] mb-8">
+                A 4-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem — we build the tool together, in the room, and you leave with it running.
+              </p>
+              <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-paper/70 mb-8">
+                4 Hours · Up to 15 People · In Person or Virtual · $3,750
+              </p>
+              <a href="/#book-a-call" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
+                Book the agent workshop
+              </a>
+            </div>
+          </div>
+        </section>
+
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#171311" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">What we cover</span>
@@ -115,6 +135,26 @@ const Training = () => {
                   <p className="text-[14px] leading-[1.6] text-ardent-paper/70">{t.d}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F7F3EC" }}>
+          <div className="max-w-[1100px] mx-auto">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">Why Claude</span>
+            <h2 className="text-[clamp(28px,4vw,44px)] mb-10 text-ardent-studio" style={{ fontFamily: serif }}>
+              We teach the stack we ship.
+            </h2>
+            <div className="max-w-3xl space-y-5">
+              <p className="text-[16px] leading-[1.75] text-ardent-studio/80">
+                Most AI training tries to cover every model. We don't. We teach Claude — Anthropic's model — because it's what we use to build production tools for our clients.
+              </p>
+              <p className="text-[16px] leading-[1.75] text-ardent-studio/80">
+                Your team leaves a workshop able to actually use what they learned, not a survey of options. We include a 30-minute landscape lesson covering when you'd reach for ChatGPT or Gemini instead — but the rest of every workshop is Claude-first, hands-on.
+              </p>
+              <p className="italic text-[14px] leading-[1.7] text-ardent-studio/65" style={{ fontFamily: serif }}>
+                Depth over breadth. That's the choice.
+              </p>
             </div>
           </div>
         </section>
