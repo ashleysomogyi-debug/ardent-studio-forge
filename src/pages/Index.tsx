@@ -346,7 +346,7 @@ const Index = () => {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-[320px_1fr] gap-12 items-start mb-24">
             <img
-              src="/images/ashley.jpg"
+              src="/ashley-profile.jpg"
               alt="Ashley Somogyi, founder of Ardent Studio"
               width={640}
               height={640}
