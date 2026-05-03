@@ -324,7 +324,7 @@ const Index = () => {
         </section>
 
         {/* 5. ABOUT US — dark */}
-        <Section bg="#0D0D0D">
+        <Section bg="#0D0D0D" id="about">
           <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
             About us
           </span>
