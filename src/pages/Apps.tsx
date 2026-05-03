@@ -6,9 +6,9 @@ const serif = "'Georgia', 'Cormorant Garamond', serif";
 
 const Apps = () => {
   useEffect(() => {
-    document.title = "Apps & Custom Software | Ardent Studio";
+    document.title = "Products | Ardent Studio";
     const meta = document.querySelector('meta[name="description"]');
-    const desc = "Custom apps and software built by Ardent Studio, including Sartori AI.";
+    const desc = "Products built by Ardent Studio — including Sartori AI and Tryline Coach. Custom apps and software for real businesses.";
     if (meta) meta.setAttribute("content", desc);
   }, []);
 
