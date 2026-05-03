@@ -13,6 +13,7 @@ import PoochesPearlsProsecco from "./pages/events/PoochesPearlsProsecco.tsx";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import ChatbotWidget from "./components/ChatbotWidget";
+import CustomCursor from "./components/CustomCursor";
 
 const TrailingSlashRedirect = () => {
   const location = useLocation();
