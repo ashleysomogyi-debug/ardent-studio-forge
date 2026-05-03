@@ -6,17 +6,17 @@ const HeroSection = () => {
       <ParticleCanvas />
 
       {/* Corner bracket accents */}
-      <div className="absolute top-[100px] left-6 md:left-10 w-10 h-10 border-t-2 border-l-2 border-teal/30" />
-      <div className="absolute top-[100px] right-6 md:right-10 w-10 h-10 border-t-2 border-r-2 border-teal/30" />
-      <div className="absolute bottom-16 left-6 md:left-10 w-10 h-10 border-b-2 border-l-2 border-teal/30" />
-      <div className="absolute bottom-16 right-6 md:right-10 w-10 h-10 border-b-2 border-r-2 border-teal/30" />
+      <div className="absolute top-[100px] left-6 md:left-10 w-10 h-10 border-t-2 border-l-2 border-ardent-cyan/30" />
+      <div className="absolute top-[100px] right-6 md:right-10 w-10 h-10 border-t-2 border-r-2 border-ardent-cyan/30" />
+      <div className="absolute bottom-16 left-6 md:left-10 w-10 h-10 border-b-2 border-l-2 border-ardent-cyan/30" />
+      <div className="absolute bottom-16 right-6 md:right-10 w-10 h-10 border-b-2 border-r-2 border-ardent-cyan/30" />
 
       <div className="relative z-10 flex flex-col items-center text-center max-w-[900px] mx-auto">
         {/* Tagline */}
         <div className="flex items-center gap-2 md:gap-3 mb-6 md:mb-10 animate-fade-up" style={{ animationDelay: "0.1s" }}>
-          <span className="w-5 md:w-8 h-px bg-teal" />
-          <span className="font-mono text-[11px] text-teal tracking-[0.2em] md:tracking-[0.3em] uppercase">From idea to live in days.</span>
-          <span className="w-5 md:w-8 h-px bg-teal" />
+          <span className="w-5 md:w-8 h-px bg-ardent-cyan" />
+          <span className="font-mono text-[11px] text-ardent-cyan tracking-[0.2em] md:tracking-[0.3em] uppercase">From idea to live in days.</span>
+          <span className="w-5 md:w-8 h-px bg-ardent-cyan" />
         </div>
 
         {/* H1 */}
@@ -25,7 +25,7 @@ const HeroSection = () => {
           style={{ animationDelay: "0.2s" }}
         >
           Your competitors are automated.<br />
-          <span className="text-teal hero-pulse">Are you?</span>
+          <span className="text-ardent-cyan hero-pulse">Are you?</span>
         </h1>
 
         <p className="sr-only" aria-hidden="false">Ardent Studio — AI automation, custom web design, and app development for small businesses in Boynton Beach, Palm Beach County, and South Florida.</p>

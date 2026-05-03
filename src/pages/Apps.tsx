@@ -18,7 +18,7 @@ const Apps = () => {
       <main>
         <section className="px-5 md:px-10 pt-[160px] pb-[120px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold-lt block mb-6">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
               Apps & custom software
             </span>
             <h1 className="text-[clamp(40px,6vw,72px)] leading-[1.05] mb-6 max-w-[18ch] text-ardent-paper" style={{ fontFamily: serif }}>
@@ -39,10 +39,10 @@ const Apps = () => {
 
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F7F3EC" }}>
           <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold block mb-6">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
               Featured product
             </span>
-            <div className="border border-ardent-gold/40 p-10 md:p-14 bg-white/40">
+            <div className="border border-ardent-lime/40 p-10 md:p-14 bg-white/40">
               <h2 className="text-[clamp(32px,5vw,56px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
                 Sartori AI
               </h2>
@@ -67,7 +67,7 @@ const Apps = () => {
 
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#171311" }}>
           <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold-lt block mb-6">What we build</span>
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">What we build</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-ardent-paper" style={{ fontFamily: serif }}>
               From internal tools to shipped products.
             </h2>

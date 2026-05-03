@@ -45,7 +45,7 @@ const Training = () => {
       <main>
         <section className="px-5 md:px-10 pt-[160px] pb-[120px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold-lt block mb-6">Training</span>
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">Training</span>
             <h1 className="text-[clamp(40px,6vw,72px)] leading-[1.05] mb-6 max-w-[20ch] text-ardent-paper" style={{ fontFamily: serif }}>
               Hands-on AI training for the people who actually do the work.
             </h1>
@@ -60,7 +60,7 @@ const Training = () => {
 
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F7F3EC" }}>
           <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold block mb-6">Format</span>
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">Format</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-ardent-studio" style={{ fontFamily: serif }}>
               Three steps, no fluff.
             </h2>
@@ -79,15 +79,15 @@ const Training = () => {
 
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#171311" }}>
           <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold-lt block mb-6">What we cover</span>
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">What we cover</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-ardent-paper" style={{ fontFamily: serif }}>
               Six tracks. Pick the ones that fit your team.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {tracks.map((t) => (
-                <div key={t.t} className={`p-7 border ${t.featured ? "border-ardent-gold/60 bg-ardent-gold/5" : "border-ardent-paper/10"}`} style={{ background: t.featured ? undefined : "#1A1614" }}>
+                <div key={t.t} className={`p-7 border ${t.featured ? "border-ardent-lime/60 bg-ardent-lime/5" : "border-ardent-paper/10"}`} style={{ background: t.featured ? undefined : "#1A1614" }}>
                   {t.featured && (
-                    <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-gold-lt block mb-3">Differentiator</span>
+                    <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime block mb-3">Differentiator</span>
                   )}
                   <h3 className="text-[22px] mb-3 text-ardent-paper" style={{ fontFamily: serif }}>{t.t}</h3>
                   <p className="text-[14px] leading-[1.6] text-ardent-paper/70">{t.d}</p>
@@ -112,20 +112,20 @@ const Training = () => {
 
         <section className="px-5 md:px-10 py-[120px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-gold-lt block mb-6">Pricing</span>
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">Pricing</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-ardent-paper" style={{ fontFamily: serif }}>
               Transparent. Fixed. No subscriptions.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {tiers.map((tier) => (
-                <div key={tier.name} className={`p-8 border ${tier.featured ? "border-ardent-gold" : "border-ardent-paper/15"}`} style={{ background: "#171311" }}>
+                <div key={tier.name} className={`p-8 border ${tier.featured ? "border-ardent-lime" : "border-ardent-paper/15"}`} style={{ background: "#171311" }}>
                   <h3 className="text-[22px] mb-2 text-ardent-paper" style={{ fontFamily: serif }}>{tier.name}</h3>
                   <p className="text-[36px] mb-4" style={{ fontFamily: serif, color: "#C8A24D" }}>{tier.price}</p>
                   <p className="text-[14px] text-ardent-paper/70 mb-6">{tier.body}</p>
                   <ul className="space-y-2 mb-8">
                     {tier.items.map((i) => (
                       <li key={i} className="text-[14px] text-ardent-paper/80 flex gap-2">
-                        <span className="text-ardent-gold-lt">+</span>{i}
+                        <span className="text-ardent-lime">+</span>{i}
                       </li>
                     ))}
                   </ul>
