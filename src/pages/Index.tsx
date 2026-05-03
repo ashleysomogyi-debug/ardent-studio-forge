@@ -112,18 +112,18 @@ const Section = ({ bg, children, id }: { bg: string; children: React.ReactNode; 
 );
 
 const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
-  <div className="border border-ardent-lime/25 bg-white/40 p-7 md:p-9 flex flex-col">
+  <div className="border border-ardent-ink/15 bg-white/40 p-7 md:p-9 flex flex-col">
     <h3 className="italic text-[26px] md:text-[30px] leading-[1.15] mb-4" style={{ fontFamily: serif, color: "#B8862A" }}>
       {o.title}
     </h3>
     <p className="text-[15px] leading-[1.7] text-ardent-studio/80 mb-6">{o.body}</p>
     <div className="space-y-4 mb-6">
       <div>
-        <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime">Included</span>
+        <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-ink">Included</span>
         <ul className="mt-2 space-y-1.5">
           {o.included.map((i) => (
             <li key={i} className="text-[14px] text-ardent-studio/85 flex gap-2">
-              <span className="text-ardent-lime">+</span>
+              <span className="text-ardent-ink">+</span>
               <span>{i}</span>
             </li>
           ))}
@@ -143,11 +143,11 @@ const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
     </div>
     <div className="mt-auto pt-2">
       {o.cta.isLink ? (
-        <Link to={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-lime hover:opacity-70">
+        <Link to={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
           {o.cta.label} →
         </Link>
       ) : (
-        <a href={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-lime hover:opacity-70">
+        <a href={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
           {o.cta.label} →
         </a>
       )}
