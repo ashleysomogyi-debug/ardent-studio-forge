@@ -51,7 +51,7 @@ const Apps = () => {
                   Sartori AI
                 </h2>
                 <p className="italic mb-6" style={{ fontFamily: serif, color: "#B8862A" }}>
-                  The operating layer for AI search.
+                  Reducing ramp time for sales teams.
                 </p>
                 <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
                   An AI-powered sales training platform that puts reps through scored roleplay conversations with realistic buyer personas — so teams build real skill through practice, not theory. Built by Ardent Studio. Now its own company.
