@@ -302,6 +302,19 @@ const Index = () => {
           </div>
         </Section>
 
+        {/* OUR STACK callout */}
+        <section className="px-5 md:px-10 py-12" style={{ background: "#0D0D0D" }}>
+          <div className="max-w-[1100px] mx-auto text-center">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-4">Our stack</span>
+            <p className="text-[clamp(22px,3vw,30px)] leading-[1.25] text-ardent-paper mb-3" style={{ fontFamily: serif }}>
+              We ship and teach what we actually use.
+            </p>
+            <p className="text-[15px] text-ardent-paper/70">
+              Every tool above runs on Anthropic Claude and Make.com. That's what we build with, and what your team will work in.
+            </p>
+          </div>
+        </section>
+
         {/* 5. ABOUT US — dark */}
         <Section bg="#0D0D0D">
           <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
