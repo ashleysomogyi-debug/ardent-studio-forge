@@ -171,7 +171,7 @@ const AIAutomation = () => {
               {method.map((m) => (
                 <div key={m.letter} className="border border-ardent-ink/15 bg-white/40 p-7">
                   <div
-                    className="text-[64px] leading-none mb-3 text-ardent-lime"
+                    className="text-[64px] leading-none mb-3 text-ardent-coral"
                     style={{ fontFamily: serif }}
                   >
                     {m.letter}
