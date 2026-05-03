@@ -302,25 +302,23 @@ const Index = () => {
           </div>
         </Section>
 
-        {/* 5. WHY I BUILT THIS — dark */}
+        {/* 5. ABOUT US — dark */}
         <Section bg="#0D0D0D">
           <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
-            Why we built Ardent
+            About us
           </span>
           <h2
-            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-10 max-w-[24ch] text-ardent-paper"
+            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-14 text-ardent-paper"
             style={{ fontFamily: serif }}
           >
-            We help local businesses get a few hours of their week back.
+            About Us
           </h2>
-          <p className="text-[17px] md:text-[18px] leading-[1.7] text-ardent-paper/85 max-w-[60ch] mb-14">
-            We're Ashley and Wesley. We run Ardent Studio out of Palm Beach County. We figure out where small AI tools fit in your day, and we build them.
-          </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 max-w-[760px] mb-14">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-16">
             {[
               { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build" },
               { src: "/wesley-profile.jpg", name: "Wesley Price", role: "Cofounder · Strategy & Ops" },
+              { src: "/loki-willow-chairs.jpg", name: "Loki & Willow", role: "Chief Officers of Snuggles and Snacks" },
             ].map((m) => (
               <div key={m.name} className="flex flex-col items-center text-center">
                 <img
@@ -329,7 +327,7 @@ const Index = () => {
                   width={480}
                   height={480}
                   loading="lazy"
-                  className="w-[200px] h-[200px] md:w-[240px] md:h-[240px] rounded-full object-cover mb-5 border-2 border-ardent-lime/30"
+                  className="w-[200px] h-[200px] md:w-[220px] md:h-[220px] rounded-full object-cover mb-5 border-2 border-ardent-lime/30"
                 />
                 <h3 className="text-[24px] text-ardent-paper" style={{ fontFamily: serif }}>{m.name}</h3>
                 <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-ardent-lime mt-2">
@@ -339,32 +337,18 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="space-y-5 text-[16px] leading-[1.75] text-ardent-paper/80 max-w-[68ch] mb-16">
+          <div className="space-y-5 text-[16px] leading-[1.75] text-ardent-paper/80 max-w-[68ch]">
+            <p>
+              We're Ashley and Wesley. We run Ardent Studio out of Palm Beach County. We figure out where small AI tools fit in your day, and we build them.
+            </p>
             <p>
               We started Ardent because we watched too many local business owners get stuck between agencies that overpromise and tools that don't quite fit. They didn't need a transformation. They needed someone to sit at the table and figure out what would actually save them a few hours a week.
             </p>
             <p>
-              Ashley builds. Wesley handles strategy and ops. We work in person when we can, on Zoom when we can't, and we build the tool while we talk. No account managers, no slide decks, no surprise invoices.
+              We're builders. We work in person when we can, on Zoom when we can't, and we build the tool while we talk. No account managers, no slide decks, no surprise invoices.
             </p>
             <p>
               If you work with Ardent, you're working with us. That's the whole pitch.
-            </p>
-          </div>
-
-          <div className="border-t border-ardent-paper/10 pt-12 flex flex-col items-center text-center">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-paper/60 mb-5">
-              And our studio mascots
-            </span>
-            <img
-              src="/loki-willow-chairs.jpg"
-              alt="Loki and Willow, the studio mascots"
-              width={240}
-              height={240}
-              loading="lazy"
-              className="w-[120px] h-[120px] rounded-full object-cover mb-3 border border-ardent-paper/20"
-            />
-            <p className="text-[14px] text-ardent-paper/70" style={{ fontFamily: serif, fontStyle: "italic" }}>
-              Loki and Willow. They supervise.
             </p>
           </div>
         </Section>
