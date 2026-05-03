@@ -84,7 +84,7 @@ const processSteps = [
   },
   {
     num: "03",
-    title: "Build over 2 to 4 weeks",
+    title: "Build from as little as 2 weeks",
     you: "Look at progress every few days and tell me what feels off.",
     me: "Build in short loops and share what I'm working on as I go.",
   },
