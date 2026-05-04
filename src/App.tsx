@@ -9,6 +9,7 @@ import AIAutomation from "./pages/services/AIAutomation.tsx";
 import AIChatbot from "./pages/services/AIChatbot.tsx";
 
 import Training from "./pages/Training.tsx";
+import Contact from "./pages/Contact.tsx";
 import PoochesPearlsProsecco from "./pages/events/PoochesPearlsProsecco.tsx";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -49,6 +50,7 @@ const App = () => (
           <Route path="/services/web-design" element={<Navigate to="/" replace />} />
           <Route path="/apps" element={<Navigate to="/services/ai-automation#featured-apps" replace />} />
           <Route path="/training" element={<Training />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/events/pooches-pearls-prosecco" element={<PoochesPearlsProsecco />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<Navigate to="/" replace />} />

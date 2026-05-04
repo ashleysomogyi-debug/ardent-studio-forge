@@ -27,9 +27,9 @@ const quotes = [
 ];
 
 const tiers = [
-  { name: "Single workshop", price: "$2,250", body: "One 3 hour live session for a small team. ($750/hr)", items: ["Up to 10 people", "Materials handed off", "30 day Q&A window"] },
-  { name: "Half day deep dive", price: "$3,750", body: "A focused 5 hour build session on one workflow. ($750/hr)", items: ["Up to 15 people", "We ship one tool together", "Recording + playbook"], featured: true },
-  { name: "Four session team curriculum", price: "$9,000", body: "A four week program for a whole team.", items: ["4 live sessions", "Ongoing Slack support", "Custom prompt + scenario library built around your team's workflows"] },
+  { name: "Single workshop", price: "$2,250", body: "One 3 hour live session for a small team. ($750/hr)", items: ["Up to 10 people", "Materials handed off", "30 day Q&A window"], interest: "single-workshop" },
+  { name: "Half day deep dive", price: "$3,750", body: "A focused 5 hour build session on one workflow. ($750/hr)", items: ["Up to 15 people", "We ship one tool together", "Recording + playbook"], featured: true, interest: "half-day-deep-dive" },
+  { name: "Four session team curriculum", price: "$9,000", body: "A four week program for a whole team.", items: ["4 live sessions", "Ongoing Slack support", "Custom prompt + scenario library built around your team's workflows"], interest: "four-session-curriculum" },
 ];
 
 const Training = () => {
@@ -54,7 +54,7 @@ const Training = () => {
             <p className="text-[18px] leading-[1.65] max-w-[640px] text-ardent-paper/75 mb-10">
               In-person and virtual workshops for small teams in South Florida. We build something real together — your team leaves with a tool, not a slide deck.
             </p>
-            <a href="/#book-a-call" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
+            <a href="/contact" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
               Book a free discovery call
             </a>
           </div>
@@ -114,7 +114,7 @@ const Training = () => {
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-paper/70 mb-8">
                 4 Hours · Up to 15 People · In Person or Virtual · $3,750
               </p>
-              <a href="/#book-a-call" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
+              <a href="/contact" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
                 Book the agent workshop
               </a>
             </div>
@@ -193,7 +193,7 @@ const Training = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href="/#book-a-call" className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A" : "transparent", color: tier.featured ? "#0D0D0D" : "#F7F3EC", border: tier.featured ? "none" : "1px solid rgba(247,243,236,0.3)" }}>
+                  <a href={`/contact?interest=${tier.interest}`} className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A" : "transparent", color: tier.featured ? "#0D0D0D" : "#F7F3EC", border: tier.featured ? "none" : "1px solid rgba(247,243,236,0.3)" }}>
                     Start here
                   </a>
                 </div>

@@ -179,7 +179,7 @@ const ChatbotWidget = () => {
     if (contactSection) {
       contactSection.scrollIntoView({ behavior: "smooth" });
     } else {
-      window.location.href = "/#contact";
+      window.location.href = "/contact";
     }
   };
 
