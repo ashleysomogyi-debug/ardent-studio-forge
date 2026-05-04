@@ -96,7 +96,7 @@ const AIAutomation = () => {
               backgroundSize: "60px 60px",
             }}
           />
-          <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full py-32">
+          <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full pt-32 pb-12 md:pb-16">
             <div className="flex items-center gap-4 mb-10">
               <span className="block w-12 h-px bg-ardent-lime" />
               <span className="font-mono text-xs tracking-[0.2em] text-ardent-lime uppercase">
@@ -127,7 +127,7 @@ const AIAutomation = () => {
         </section>
 
         {/* 2. WORKFLOWS */}
-        <section className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#0D0D0D" }}>
+        <section className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1200px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
               Workflows we automate
