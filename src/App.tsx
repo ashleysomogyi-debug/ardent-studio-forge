@@ -7,7 +7,7 @@ import Index from "./pages/Index.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import AIAutomation from "./pages/services/AIAutomation.tsx";
 import AIChatbot from "./pages/services/AIChatbot.tsx";
-import Apps from "./pages/Apps.tsx";
+
 import Training from "./pages/Training.tsx";
 import PoochesPearlsProsecco from "./pages/events/PoochesPearlsProsecco.tsx";
 import { useEffect } from "react";
