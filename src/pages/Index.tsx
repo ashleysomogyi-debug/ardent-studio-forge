@@ -44,14 +44,14 @@ const offerings = [
     body: "A free 60–90 minute AI fit call. We sit down (in person or on Zoom), I look at how you actually run your week, and I tell you honestly where AI fits and where it doesn't.",
     included: ["A 60–90 minute working session", "A short written follow-up", "Honest yes or no on whether to build"],
     notIncluded: ["A sales pitch", "A 40-page deck"],
-    cta: { label: "Book the fit call", href: "https://calendly.com/hello-ardentstudio/30min" },
+    cta: { label: "Book the fit call", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
   },
   {
     title: "Build the small thing",
     body: "We pick one specific AI tool that saves you real hours and I build it in 2–4 weeks at a fixed price. Scoped tightly so it actually ships.",
     included: ["Fixed scope and fixed price", "Built in 2–4 weeks", "You own the code and the accounts"],
     notIncluded: ["A 6 month roadmap", "Retainers you don't need"],
-    cta: { label: "Start a build", href: "https://calendly.com/hello-ardentstudio/30min" },
+    cta: { label: "Start a build", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
   },
   {
     title: "Train your team",

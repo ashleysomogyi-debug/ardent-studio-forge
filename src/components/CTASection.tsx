@@ -20,7 +20,7 @@ const CTASection = () => (
       </p>
       <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-5">
         <a
-          href="https://calendly.com/hello-ardentstudio/30min"
+          href="https://calendly.com/asomogyi-ardentstudio/30min"
           target="_blank"
           rel="noopener noreferrer"
           data-hover

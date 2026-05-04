@@ -111,7 +111,7 @@ const AIAutomation = () => {
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="https://calendly.com/hello-ardentstudio/30min"
+                href="https://calendly.com/asomogyi-ardentstudio/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-ardent-coral text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity"
@@ -311,7 +311,7 @@ const AIAutomation = () => {
               automating first.
             </p>
             <a
-              href="https://calendly.com/hello-ardentstudio/30min"
+              href="https://calendly.com/asomogyi-ardentstudio/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-10 py-5 bg-ardent-coral text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity text-[16px]"
