@@ -4,8 +4,7 @@ import { Menu, X } from "lucide-react";
 const NAV_LINKS = [
   { label: "Work", href: "/#work" },
   { label: "Process", href: "/#process" },
-  { label: "Products", href: "/apps" },
-  { label: "AI Automation", href: "/services/ai-automation" },
+  { label: "Automation & Apps", href: "/services/ai-automation" },
   { label: "Training", href: "/training" },
   { label: "Contact", href: "/#book-a-call" },
 ];

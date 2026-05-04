@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 
 const services = [
-  { label: "AI Automation", to: "/services/ai-automation" },
-  { label: "Products", to: "/apps" },
+  { label: "Automation & Apps", to: "/services/ai-automation" },
   { label: "Training", to: "/training" },
 ];
 

@@ -23,7 +23,7 @@ const HeroSection = () => (
         <span className="text-ardent-mint">Repeat.</span>
       </h1>
       <p className="mt-12 max-w-2xl font-sans text-lg lg:text-xl text-ardent-paper/80 leading-relaxed">
-        From "is this just ChatGPT?" to a tool that runs on its own. Built with you, in person across South Florida.
+        From "we keep meaning to automate that" to a tool that does it for you. Real builds. Real hours back. Real ownership.
       </p>
       <div className="mt-12 flex flex-wrap gap-4">
         <a
