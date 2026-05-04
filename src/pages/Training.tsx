@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import DotSphere from "@/components/DotSphere";
 
 const serif = "'Georgia', 'Cormorant Garamond', serif";
 
@@ -43,8 +44,9 @@ const Training = () => {
     <>
       <Nav />
       <main>
-        <section className="px-5 md:px-10 pt-[160px] pb-[120px]" style={{ background: "#0D0D0D" }}>
-          <div className="max-w-[1100px] mx-auto">
+        <section className="relative overflow-hidden px-5 md:px-10 pt-[160px] pb-[120px]" style={{ background: "#0D0D0D" }}>
+          <DotSphere />
+          <div className="relative max-w-[1100px] mx-auto" style={{ zIndex: 1 }}>
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">Training</span>
             <h1 className="text-[clamp(40px,6vw,72px)] leading-[1.05] mb-6 max-w-[20ch] text-ardent-paper" style={{ fontFamily: serif }}>
               Skip the AI 101. Build something today.
