@@ -2,8 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
-  { label: "Work", href: "/#work" },
-  { label: "Process", href: "/#process" },
+  { label: "Home", href: "/" },
   { label: "Automation & Apps", href: "/services/ai-automation" },
   { label: "Training", href: "/training" },
   { label: "Contact", href: "/#book-a-call" },
