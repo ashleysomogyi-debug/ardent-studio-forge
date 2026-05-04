@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { supabase } from "@/integrations/supabase/client";
 
 const serif = "'Georgia', 'Cormorant Garamond', serif";
 
