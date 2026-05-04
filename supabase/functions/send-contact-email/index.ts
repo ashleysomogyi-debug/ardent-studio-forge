@@ -11,8 +11,9 @@ interface Payload {
   message: string;
 }
 
-const TO = "hello@ardentstudio.io";
-// Resend default sandbox sender. Replace with verified domain when ready.
+// TODO: Once ardentstudio.io is verified at resend.com/domains,
+// change TO back to "hello@ardentstudio.io" and FROM to "Ardent Studio <hello@ardentstudio.io>".
+const TO = "ashleysomogyi@ymail.com";
 const FROM = "Ardent Studio <onboarding@resend.dev>";
 
 const escape = (s: string) =>
