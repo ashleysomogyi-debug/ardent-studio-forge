@@ -90,7 +90,7 @@ Deno.serve(async (req) => {
   const text = await res.text();
   if (!res.ok) {
     console.error("Resend error", res.status, text);
-    return new Response(JSON.stringify({ error: "send failed", detail: text }), {
+    return new Response(JSON.stringify({ error: "send failed", detail: text, from: FROM, to: TO }), {
       status: 502,
       headers: { ...corsHeaders, "Content-Type": "application/json" },
     });
