@@ -44,7 +44,7 @@ const offerings = [
     body: "A free 60–90 minute AI fit call. We sit down (in person or on Zoom), I look at how you actually run your week, and I tell you honestly where AI fits and where it doesn't.",
     included: ["A 60–90 minute working session", "A short written follow-up", "Honest yes or no on whether to build"],
     notIncluded: ["A sales pitch", "A 40-page deck"],
-    cta: { label: "Book the fit call", href: "/contact" },
+    cta: { label: "Book the fit call", href: "https://calendly.com/hello-ardentstudio/30min" },
   },
   {
     title: "Build the small thing",
