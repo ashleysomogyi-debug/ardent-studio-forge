@@ -80,8 +80,6 @@ const Nav = () => {
 
         <a
           href="/contact"
-          target="_blank"
-          rel="noopener noreferrer"
           data-hover
           className="hidden md:inline-flex font-sans text-[12px] md:text-[13px] bg-foreground text-bg-base px-3 md:px-5 py-2 rounded-full hover:opacity-90 transition-opacity shrink-0"
         >
