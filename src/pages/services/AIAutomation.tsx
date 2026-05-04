@@ -111,7 +111,7 @@ const AIAutomation = () => {
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="#book-a-call"
+                href="/contact"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-ardent-coral text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity"
               >
                 Book a free 30-min call →
@@ -309,7 +309,7 @@ const AIAutomation = () => {
               automating first.
             </p>
             <a
-              href="#book-a-call"
+              href="/contact"
               className="inline-flex items-center gap-2 px-10 py-5 bg-ardent-coral text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity text-[16px]"
             >
               Book a free 30-min call →

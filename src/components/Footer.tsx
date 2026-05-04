@@ -7,7 +7,7 @@ const services = [
 
 const company = [
   { label: "Home", href: "/" },
-  { label: "Book a call", href: "/#book-a-call" },
+  { label: "Book a call", href: "/contact" },
   { label: "SartoriAI", href: "https://www.sartoriai.com/", external: true },
 ];
 
