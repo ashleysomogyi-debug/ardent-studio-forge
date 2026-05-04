@@ -193,7 +193,7 @@ const Training = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href="/contact" className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A" : "transparent", color: tier.featured ? "#0D0D0D" : "#F7F3EC", border: tier.featured ? "none" : "1px solid rgba(247,243,236,0.3)" }}>
+                  <a href={`/contact?interest=${tier.interest}`} className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A" : "transparent", color: tier.featured ? "#0D0D0D" : "#F7F3EC", border: tier.featured ? "none" : "1px solid rgba(247,243,236,0.3)" }}>
                     Start here
                   </a>
                 </div>
