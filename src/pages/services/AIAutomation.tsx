@@ -152,7 +152,7 @@ const AIAutomation = () => {
         </section>
 
         {/* 2.5 FEATURED APPS */}
-        <section id="featured-apps" className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#F7F3EC" }}>
+        <section id="featured-apps" className="px-5 md:px-10 pt-[88px] md:pt-[140px] pb-[48px] md:pb-[64px]" style={{ background: "#F7F3EC" }}>
           <div className="max-w-[1200px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-coral block mb-6">
               Featured Apps
@@ -170,16 +170,16 @@ const AIAutomation = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="border border-ardent-lime/40 p-10 md:p-14 bg-white/40 flex flex-col">
                 <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
-                  AI Sales Training
+                  Sales Enablement · AI Role-Play
                 </span>
                 <h3 className="text-[clamp(28px,3.5vw,42px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
                   Sartori AI
                 </h3>
                 <p className="italic mb-6" style={{ fontFamily: serif, color: "#B8862A" }}>
-                  Reducing ramp time for sales teams.
+                  Train smarter. Close faster.
                 </p>
                 <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
-                  An AI-powered sales training platform that puts reps through scored roleplay conversations with realistic buyer personas — so teams build real skill through practice, not theory. Built by Ardent Studio. Now its own company.
+                  Custom-built AI role-play avatars and bite-sized lessons that ramp new sales reps faster and lift close rates for the whole team.
                 </p>
                 <div className="mt-auto">
                   <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
@@ -212,7 +212,7 @@ const AIAutomation = () => {
                 </p>
                 <div className="mt-auto">
                   <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
-                    Status · Live
+                    Status · In Build
                   </span>
                 </div>
               </div>
@@ -244,7 +244,7 @@ const AIAutomation = () => {
         </section>
 
         {/* 3. ARDENT METHOD */}
-        <section className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#F7F3EC" }}>
+        <section className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#F7F3EC" }}>
           <div className="max-w-[1200px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">
               How we work
