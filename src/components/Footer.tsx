@@ -7,6 +7,7 @@ const services = [
 
 const company = [
   { label: "Home", href: "/" },
+  { label: "Contact", href: "/contact" },
   { label: "Book a call", href: "https://calendly.com/hello-ardentstudio/30min", external: true },
   { label: "SartoriAI", href: "https://www.sartoriai.com/", external: true },
 ];
