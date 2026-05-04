@@ -51,7 +51,7 @@ const offerings = [
     body: "We pick one specific AI tool that saves you real hours and I build it in 2–4 weeks at a fixed price. Scoped tightly so it actually ships.",
     included: ["Fixed scope and fixed price", "Built in 2–4 weeks", "You own the code and the accounts"],
     notIncluded: ["A 6 month roadmap", "Retainers you don't need"],
-    cta: { label: "Start a build", href: "/contact" },
+    cta: { label: "Start a build", href: "https://calendly.com/hello-ardentstudio/30min" },
   },
   {
     title: "Train your team",
