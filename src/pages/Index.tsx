@@ -121,7 +121,7 @@ const builds = [
   },
   {
     name: "Sartori AI",
-    desc: "Featured. A full product we designed, built, and ship as the operating layer for AI search.",
+    desc: "Featured. Custom-built AI role-play avatars and bite-sized lessons that ramp new sales reps faster and lift close rates for the whole team.",
     stack: "Next.js · Claude · Supabase · custom infra",
     featured: true,
   },

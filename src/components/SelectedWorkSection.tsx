@@ -10,10 +10,10 @@ interface WorkCard {
 
 const works: WorkCard[] = [
   {
-    tag: "SaaS · AI · Sales Training",
+    tag: "Sales Enablement · AI Role-Play",
     title: "SartoriAI",
     description:
-      "An AI-powered sales training platform that puts reps through scored roleplay conversations with realistic buyer personas — so teams build real skill through practice, not theory. Built by Ardent Studio. Now its own company.",
+      "Custom-built AI role-play avatars and bite-sized lessons that ramp new sales reps faster and lift close rates for the whole team.",
     meta: ["AI SaaS Platform", "6 weeks", "React · AI · Stripe"],
     link: "https://www.sartoriai.com",
   },
