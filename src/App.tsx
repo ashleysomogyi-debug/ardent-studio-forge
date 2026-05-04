@@ -9,6 +9,7 @@ import AIAutomation from "./pages/services/AIAutomation.tsx";
 import AIChatbot from "./pages/services/AIChatbot.tsx";
 
 import Training from "./pages/Training.tsx";
+import Contact from "./pages/Contact.tsx";
 import PoochesPearlsProsecco from "./pages/events/PoochesPearlsProsecco.tsx";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
