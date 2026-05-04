@@ -13,14 +13,9 @@ const INTEREST_OPTIONS: { value: string; label: string }[] = [
   { value: "general-inquiry", label: "General inquiry" },
 ];
 
-// Email delivery: submissions are sent via Web3Forms to hello@ardentstudio.io
-// (same provider already used by ContactFormSection.tsx — no extra setup needed).
-// TODO (optional upgrade path): If you'd rather route via Supabase + Resend,
-//   1) enable Lovable Cloud
-//   2) add RESEND_API_KEY to secrets
-//   3) create an Edge Function `send-contact-email` that POSTs to Resend
-//   4) swap the fetch URL below to supabase.functions.invoke('send-contact-email').
-const WEB3FORMS_KEY = "16c134d0-e5ea-4bc1-8a3a-66fd8e73d73d";
+// Contact submissions are sent via the `send-contact-email` Edge Function,
+// which uses Resend to deliver to hello@ardentstudio.io.
+// RESEND_API_KEY is configured in Lovable Cloud secrets.
 
 const Contact = () => {
   const [params] = useSearchParams();
