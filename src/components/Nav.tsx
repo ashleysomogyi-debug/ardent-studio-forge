@@ -5,7 +5,7 @@ const NAV_LINKS = [
   { label: "Home", href: "/" },
   { label: "Automation & Apps", href: "/services/ai-automation" },
   { label: "Training", href: "/training" },
-  { label: "Contact", href: "/#book-a-call" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const Nav = () => {
