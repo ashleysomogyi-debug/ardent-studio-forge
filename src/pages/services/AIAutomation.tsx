@@ -287,7 +287,7 @@ const AIAutomation = () => {
               className="text-[clamp(20px,2.6vw,28px)] leading-[1.3] text-ardent-studio mb-3"
               style={{ fontFamily: serif }}
             >
-              Most projects: $2,000–$10,000, 2–4 weeks. Fixed price. Fixed timeline. Your team owns the result.
+              Most projects: $2,000–$10,000, 2–6 weeks. Fixed price. Fixed timeline. Your team owns the result.
             </p>
             <p className="text-[14px] text-ardent-studio/70">
               Need something bigger? We scope custom builds too.
