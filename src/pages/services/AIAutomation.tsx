@@ -151,6 +151,98 @@ const AIAutomation = () => {
           </div>
         </section>
 
+        {/* 2.5 FEATURED APPS */}
+        <section id="featured-apps" className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#F7F3EC" }}>
+          <div className="max-w-[1200px] mx-auto">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-coral block mb-6">
+              Featured Apps
+            </span>
+            <h2
+              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-4 text-ardent-studio max-w-[20ch]"
+              style={{ fontFamily: serif }}
+            >
+              Real apps. Real businesses. Real fast.
+            </h2>
+            <p className="text-[16px] md:text-[18px] text-ardent-studio/75 leading-[1.7] mb-14 max-w-[60ch]">
+              Beyond automation, we ship full products. Built fast. Built for one business at a time.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+              <div className="border border-ardent-lime/40 p-10 md:p-14 bg-white/40 flex flex-col">
+                <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+                  AI Sales Training
+                </span>
+                <h3 className="text-[clamp(28px,3.5vw,42px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
+                  Sartori AI
+                </h3>
+                <p className="italic mb-6" style={{ fontFamily: serif, color: "#B8862A" }}>
+                  Reducing ramp time for sales teams.
+                </p>
+                <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
+                  An AI-powered sales training platform that puts reps through scored roleplay conversations with realistic buyer personas — so teams build real skill through practice, not theory. Built by Ardent Studio. Now its own company.
+                </p>
+                <div className="mt-auto">
+                  <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+                    Status · Live
+                  </span>
+                  <a
+                    href="https://sartoriai.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block px-8 py-4 text-[14px] rounded-full"
+                    style={{ background: "#FF6B6B", color: "#0D0D0D" }}
+                  >
+                    Visit sartoriai.com →
+                  </a>
+                </div>
+              </div>
+
+              <div className="border border-ardent-lime/40 p-10 md:p-14 bg-white/40 flex flex-col">
+                <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+                  Sports Tech · AI Coaching
+                </span>
+                <h3 className="text-[clamp(28px,3.5vw,42px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
+                  Tryline Coach
+                </h3>
+                <p className="italic mb-6" style={{ fontFamily: serif, color: "#B8862A" }}>
+                  Democratising access to elite coaching intelligence.
+                </p>
+                <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
+                  AI-powered coaching platform for rugby, delivering personalised training analysis and performance insights to players and coaches at every level — from grassroots clubs to elite academies.
+                </p>
+                <div className="mt-auto">
+                  <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+                    Status · Live
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+              {[
+                { t: "Web apps", d: "Customer portals, dashboards, and internal tools your team actually uses." },
+                { t: "Mobile apps", d: "iOS and Android apps for field teams, customers, and operations." },
+                { t: "AI products", d: "Full products with AI at the core — like Sartori." },
+              ].map((c) => (
+                <div key={c.t} className="p-7 border border-ardent-ink/15 bg-white/40">
+                  <h4 className="text-[22px] mb-3 text-ardent-studio" style={{ fontFamily: serif }}>{c.t}</h4>
+                  <p className="text-[14px] leading-[1.6] text-ardent-studio/75">{c.d}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-12 text-center">
+              <Link
+                to="/#work"
+                className="inline-flex items-center gap-2 px-8 py-4 text-[14px] rounded-full"
+                style={{ background: "#FF6B6B", color: "#0D0D0D" }}
+              >
+                See all our work →
+              </Link>
+            </div>
+          </div>
+        </section>
+
         {/* 3. ARDENT METHOD */}
         <section className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#F7F3EC" }}>
           <div className="max-w-[1200px] mx-auto">
