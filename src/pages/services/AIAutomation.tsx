@@ -96,7 +96,7 @@ const AIAutomation = () => {
               backgroundSize: "60px 60px",
             }}
           />
-          <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full pt-32 pb-12 md:pb-16">
+          <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full py-32">
             <div className="flex items-center gap-4 mb-10">
               <span className="block w-12 h-px bg-ardent-lime" />
               <span className="font-mono text-xs tracking-[0.2em] text-ardent-lime uppercase">
