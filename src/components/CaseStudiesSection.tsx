@@ -675,7 +675,7 @@ export default function CaseStudiesSection() {
               </div>
             </div>
             <a
-              href="https://calendly.com/hello-ardentstudio/30min"
+              href="/contact"
               target="_blank"
               rel="noopener noreferrer"
               className="ardent-cta-btn"

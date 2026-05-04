@@ -79,7 +79,7 @@ const Nav = () => {
         </div>
 
         <a
-          href="https://calendly.com/hello-ardentstudio/30min"
+          href="/contact"
           target="_blank"
           rel="noopener noreferrer"
           data-hover
@@ -149,7 +149,7 @@ const Nav = () => {
             </div>
 
             <a
-              href="https://calendly.com/hello-ardentstudio/30min"
+              href="/contact"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
