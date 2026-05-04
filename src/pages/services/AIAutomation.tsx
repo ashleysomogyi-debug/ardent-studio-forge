@@ -127,7 +127,7 @@ const AIAutomation = () => {
         </section>
 
         {/* 2. WORKFLOWS */}
-        <section className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#0D0D0D" }}>
+        <section className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1200px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
               Workflows we automate
