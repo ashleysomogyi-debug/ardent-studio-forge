@@ -42,8 +42,8 @@ const tiers = [
       "Optional equity or revenue-share model",
     ],
     cta: "Let's talk",
-    href: "/contact",
-    external: false,
+    href: "https://calendly.com/hello-ardentstudio/30min",
+    external: true,
     featured: false,
   },
 ];
