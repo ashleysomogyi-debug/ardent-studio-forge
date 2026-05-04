@@ -126,50 +126,27 @@ const AIAutomation = () => {
           </div>
         </section>
 
-        {/* 2. REAL BUILDS */}
-        <section className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#171311" }}>
+        {/* 2. WORKFLOWS */}
+        <section className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1200px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
-              Built, shipped, running
+              Workflows we automate
             </span>
             <h2
-              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-12 max-w-[22ch] text-ardent-paper"
+              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-14 max-w-[26ch] text-ardent-paper"
               style={{ fontFamily: serif }}
             >
-              Things we've built that run themselves.
+              What does AI automation actually look like for a small business?
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {featuredBuilds.map((b) => (
-                <div
-                  key={b.name}
-                  className="p-7 border border-ardent-paper/10 flex flex-col"
-                  style={{ background: "#1A1614" }}
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime">
-                      Build
-                    </span>
-                    <span className="font-mono text-[10px] tracking-[0.2em] uppercase px-2 py-1 border border-ardent-lime/40 text-ardent-lime">
-                      Status Live
-                    </span>
-                  </div>
-                  <h3 className="text-[22px] mb-3 text-ardent-paper" style={{ fontFamily: serif }}>
-                    {b.name}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10">
+              {workflows.map((w) => (
+                <div key={w.title} className="p-7 min-h-[180px]" style={{ background: "#1A1614" }}>
+                  <h3 className="text-[20px] mb-3 text-ardent-paper" style={{ fontFamily: serif }}>
+                    {w.title}
                   </h3>
-                  <p className="text-[14px] leading-[1.6] text-ardent-paper/70 mb-4">{b.desc}</p>
-                  <p className="italic text-[13px] mt-auto" style={{ fontFamily: serif, color: "#C8A24D" }}>
-                    {b.stack}
-                  </p>
+                  <p className="text-[14px] leading-[1.6] text-ardent-paper/65">{w.desc}</p>
                 </div>
               ))}
-            </div>
-            <div className="mt-10">
-              <Link
-                to="/apps"
-                className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-lime hover:opacity-70"
-              >
-                See all our work →
-              </Link>
             </div>
           </div>
         </section>
@@ -202,31 +179,6 @@ const AIAutomation = () => {
                     {m.word}
                   </div>
                   <p className="text-[15px] leading-[1.7] text-ardent-studio/80">{m.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 4. WORKFLOWS */}
-        <section className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#0D0D0D" }}>
-          <div className="max-w-[1200px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
-              Workflows we automate
-            </span>
-            <h2
-              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-14 max-w-[26ch] text-ardent-paper"
-              style={{ fontFamily: serif }}
-            >
-              What does AI automation actually look like for a small business?
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10">
-              {workflows.map((w) => (
-                <div key={w.title} className="p-7 min-h-[180px]" style={{ background: "#1A1614" }}>
-                  <h3 className="text-[20px] mb-3 text-ardent-paper" style={{ fontFamily: serif }}>
-                    {w.title}
-                  </h3>
-                  <p className="text-[14px] leading-[1.6] text-ardent-paper/65">{w.desc}</p>
                 </div>
               ))}
             </div>
