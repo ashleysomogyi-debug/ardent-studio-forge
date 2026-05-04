@@ -174,7 +174,7 @@ const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
           {o.cta.label} →
         </Link>
       ) : (
-        <a href={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
+        <a href={o.cta.href} target="_blank" rel="noopener noreferrer" className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
           {o.cta.label} →
         </a>
       )}
