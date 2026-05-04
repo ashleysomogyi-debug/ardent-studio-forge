@@ -676,7 +676,6 @@ export default function CaseStudiesSection() {
             </div>
             <a
               href="/contact"
-              target="_blank"
               rel="noopener noreferrer"
               className="ardent-cta-btn"
               style={{
