@@ -244,33 +244,33 @@ const AIAutomation = () => {
         </section>
 
         {/* 3. ARDENT METHOD */}
-        <section className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#F7F3EC" }}>
+        <section className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1200px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
               How we work
             </span>
             <h2
-              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-4 text-ardent-studio"
+              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-4 text-ardent-paper"
               style={{ fontFamily: serif }}
             >
               The ARDENT method.
             </h2>
-            <p className="text-[16px] text-ardent-studio/75 leading-[1.7] mb-14 max-w-[60ch]">
+            <p className="text-[16px] text-ardent-paper/80 leading-[1.7] mb-14 max-w-[60ch]">
               Six steps from your first call to a tool your team owns.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {method.map((m) => (
-                <div key={m.letter} className="border border-ardent-ink/15 bg-white/40 p-7">
+                <div key={m.letter} className="border border-ardent-paper/10 p-7" style={{ background: "#171311" }}>
                   <div
-                    className="text-[64px] leading-none mb-3 text-ardent-coral"
+                    className="text-[64px] leading-none mb-3 text-ardent-cyan"
                     style={{ fontFamily: serif }}
                   >
                     {m.letter}
                   </div>
-                  <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink mb-3">
+                  <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime mb-3">
                     {m.word}
                   </div>
-                  <p className="text-[15px] leading-[1.7] text-ardent-studio/80">{m.desc}</p>
+                  <p className="text-[15px] leading-[1.7] text-ardent-paper">{m.desc}</p>
                 </div>
               ))}
             </div>
