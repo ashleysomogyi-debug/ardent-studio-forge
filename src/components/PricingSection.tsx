@@ -43,7 +43,7 @@ const tiers = [
     ],
     cta: "Let's talk",
     href: "/contact",
-    external: true,
+    external: false,
     featured: false,
   },
 ];
