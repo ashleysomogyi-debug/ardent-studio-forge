@@ -149,7 +149,9 @@ const Nav = () => {
             </div>
 
             <a
-              href="/contact"
+              href="https://calendly.com/hello-ardentstudio/30min"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
               className="block w-full text-center font-sans text-[15px] font-medium bg-ardent-coral text-ardent-studio px-6 py-4 rounded-full hover:opacity-90 transition-opacity"
             >
