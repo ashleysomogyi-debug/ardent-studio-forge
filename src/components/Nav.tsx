@@ -79,7 +79,9 @@ const Nav = () => {
         </div>
 
         <a
-          href="/contact"
+          href="https://calendly.com/hello-ardentstudio/30min"
+          target="_blank"
+          rel="noopener noreferrer"
           data-hover
           className="hidden md:inline-flex font-sans text-[12px] md:text-[13px] bg-foreground text-bg-base px-3 md:px-5 py-2 rounded-full hover:opacity-90 transition-opacity shrink-0"
         >
