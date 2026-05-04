@@ -54,7 +54,7 @@ const Training = () => {
             <p className="text-[18px] leading-[1.65] max-w-[640px] text-ardent-paper/75 mb-10">
               In-person and virtual workshops for small teams in South Florida. We build something real together — your team leaves with a tool, not a slide deck.
             </p>
-            <a href="https://calendly.com/hello-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
+            <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
               Book a free discovery call
             </a>
           </div>
@@ -114,7 +114,7 @@ const Training = () => {
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-paper/70 mb-8">
                 4 Hours · Up to 15 People · In Person or Virtual · $3,750
               </p>
-              <a href="https://calendly.com/hello-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
+              <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
                 Book the agent workshop
               </a>
             </div>

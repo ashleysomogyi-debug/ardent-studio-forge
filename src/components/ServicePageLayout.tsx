@@ -176,7 +176,7 @@ const ServicePageLayout = ({
             </p>
             <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-5">
               <a
-                href="https://calendly.com/ardent-studio/consultation"
+                href="https://calendly.com/asomogyi-ardentstudio/30min"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-sans text-[13px] bg-foreground text-bg-base px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity w-full md:w-auto text-center"
