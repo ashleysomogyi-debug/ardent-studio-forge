@@ -52,24 +52,17 @@ const Contact = () => {
     try {
       const interestLabel =
         INTEREST_OPTIONS.find((o) => o.value === form.interest)?.label || form.interest;
-      const subject = `[Ardent Contact] ${interestLabel} — ${form.name}${form.company ? `, ${form.company}` : ""}`;
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject,
-          from_name: "Ardent Studio Contact Form",
-          to: "hello@ardentstudio.io",
+      const { data, error: fnError } = await supabase.functions.invoke("send-contact-email", {
+        body: {
           name: form.name,
           email: form.email,
           company: form.company,
           phone: form.phone,
           interest: interestLabel,
           message: form.message,
-        }),
+        },
       });
-      if (!res.ok) throw new Error("submit failed");
+      if (fnError || !data?.ok) throw new Error(fnError?.message || "submit failed");
       setSubmitted(true);
       setForm({ name: "", email: "", company: "", phone: "", interest: "", message: "" });
     } catch (err) {
