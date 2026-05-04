@@ -11,10 +11,8 @@ interface Payload {
   message: string;
 }
 
-// TODO: Once ardentstudio.io is verified at resend.com/domains,
-// change TO back to "hello@ardentstudio.io" and FROM to "Ardent Studio <hello@ardentstudio.io>".
-const TO = "ashleysomogyi@ymail.com";
-const FROM = "Ardent Studio <onboarding@resend.dev>";
+const TO = "hello@ardentstudio.io";
+const FROM = "Ardent Studio <hello@send.ardentstudio.io>";
 
 const escape = (s: string) =>
   s.replace(/[&<>"']/g, (c) =>
