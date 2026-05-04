@@ -12,7 +12,7 @@ interface Payload {
 }
 
 const TO = "hello@ardentstudio.io";
-const FROM = "Ardent Studio <hello@send.ardentstudio.io>";
+const FROM = "Ardent Studio <hello@ardentstudio.io>";
 
 const escape = (s: string) =>
   s.replace(/[&<>"']/g, (c) =>
