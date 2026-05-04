@@ -45,7 +45,7 @@ const App = () => (
           <Route path="/services/custom-software" element={<Navigate to="/apps" replace />} />
           <Route path="/services/mobile-apps" element={<Navigate to="/apps" replace />} />
           <Route path="/services/web-design" element={<Navigate to="/" replace />} />
-          <Route path="/apps" element={<Apps />} />
+          <Route path="/apps" element={<Navigate to="/services/ai-automation#featured-apps" replace />} />
           <Route path="/training" element={<Training />} />
           <Route path="/events/pooches-pearls-prosecco" element={<PoochesPearlsProsecco />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
