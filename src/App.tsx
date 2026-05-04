@@ -14,6 +14,7 @@ import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import ChatbotWidget from "./components/ChatbotWidget";
 import CustomCursor from "./components/CustomCursor";
+import { ScrollToAnchor } from "./components/ScrollToAnchor";
 
 const TrailingSlashRedirect = () => {
   const location = useLocation();
@@ -37,6 +38,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <TrailingSlashRedirect />
+        <ScrollToAnchor />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/index.html" element={<Navigate to="/" replace />} />
