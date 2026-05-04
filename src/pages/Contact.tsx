@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { supabase } from "@/integrations/supabase/client";
 
 const serif = "'Georgia', 'Cormorant Garamond', serif";
 
@@ -13,14 +14,9 @@ const INTEREST_OPTIONS: { value: string; label: string }[] = [
   { value: "general-inquiry", label: "General inquiry" },
 ];
 
-// Email delivery: submissions are sent via Web3Forms to hello@ardentstudio.io
-// (same provider already used by ContactFormSection.tsx — no extra setup needed).
-// TODO (optional upgrade path): If you'd rather route via Supabase + Resend,
-//   1) enable Lovable Cloud
-//   2) add RESEND_API_KEY to secrets
-//   3) create an Edge Function `send-contact-email` that POSTs to Resend
-//   4) swap the fetch URL below to supabase.functions.invoke('send-contact-email').
-const WEB3FORMS_KEY = "16c134d0-e5ea-4bc1-8a3a-66fd8e73d73d";
+// Contact submissions are sent via the `send-contact-email` Edge Function,
+// which uses Resend to deliver to hello@ardentstudio.io.
+// RESEND_API_KEY is configured in Lovable Cloud secrets.
 
 const Contact = () => {
   const [params] = useSearchParams();
@@ -56,24 +52,17 @@ const Contact = () => {
     try {
       const interestLabel =
         INTEREST_OPTIONS.find((o) => o.value === form.interest)?.label || form.interest;
-      const subject = `[Ardent Contact] ${interestLabel} — ${form.name}${form.company ? `, ${form.company}` : ""}`;
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          access_key: WEB3FORMS_KEY,
-          subject,
-          from_name: "Ardent Studio Contact Form",
-          to: "hello@ardentstudio.io",
+      const { data, error: fnError } = await supabase.functions.invoke("send-contact-email", {
+        body: {
           name: form.name,
           email: form.email,
           company: form.company,
           phone: form.phone,
           interest: interestLabel,
           message: form.message,
-        }),
+        },
       });
-      if (!res.ok) throw new Error("submit failed");
+      if (fnError || !data?.ok) throw new Error(fnError?.message || "submit failed");
       setSubmitted(true);
       setForm({ name: "", email: "", company: "", phone: "", interest: "", message: "" });
     } catch (err) {
