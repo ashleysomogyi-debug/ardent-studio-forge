@@ -12,7 +12,7 @@ const HeroSection = () => (
       <div className="flex items-center gap-4 mb-12">
         <span className="block w-12 h-px bg-ardent-lime" />
         <span className="font-mono text-xs tracking-[0.2em] text-ardent-lime uppercase">
-          AI tools for the way local business already works
+          AI tools for the way business already works
         </span>
       </div>
       <h1 className="font-sans font-black text-[clamp(4rem,12vw,12rem)] leading-[0.95] tracking-tight">

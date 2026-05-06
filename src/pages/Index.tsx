@@ -363,7 +363,7 @@ const Index = () => {
               We're Ashley and Wesley. We run Ardent Studio out of Palm Beach County. We figure out where small AI tools fit in your day, and we build them.
             </p>
             <p>
-              We started Ardent because we watched too many local business owners get stuck between agencies that overpromise and tools that don't quite fit. They didn't need a transformation. They needed someone to sit at the table and figure out what would actually save them a few hours a week.
+              We started Ardent because we watched too many business owners get stuck between agencies that overpromise and tools that don't quite fit. They didn't need a transformation. They needed someone to sit at the table and figure out what would actually save them a few hours a week.
             </p>
             <p>
               We're builders. We work in person when we can, on Zoom when we can't, and we build the tool while we talk. No account managers, no slide decks, no surprise invoices.
