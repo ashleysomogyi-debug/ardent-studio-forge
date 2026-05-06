@@ -20,7 +20,7 @@ for (let y = 0; y <= H; y += 50) grid += `<line x1="0" y1="${y}" x2="${W}" y2="$
 const eyebrowText = 'ARDENT STUDIO · PALM BEACH COUNTY';
 // approx text width for mono 16px: ~9.6px per char
 const eyebrowFontSize = 16;
-const eyebrowCharW = 9.2;
+const eyebrowCharW = 13;
 const eyebrowTextW = eyebrowText.length * eyebrowCharW;
 const lineLen = 40;
 const gap = 16;
