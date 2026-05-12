@@ -1,0 +1,1 @@
+Replace `public/wesley-profile.jpg` with the uploaded photo (`Wes_profile_photo.jpeg`). The TeamSection already references `/wesley-profile.jpg`, so no code changes are needed — just overwrite the asset.
