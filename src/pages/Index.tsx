@@ -226,6 +226,38 @@ const Index = () => {
           </div>
         </Section>
 
+        {/* PROOF BAND — full-bleed workshop photo */}
+        <section className="relative w-full overflow-hidden bg-[#0D0D0D]">
+          <div className="relative h-[55vh] min-h-[380px] max-h-[640px] w-full">
+            <img
+              src={trainTeamPhoto.url}
+              alt="Ashley leading an AI Fundamentals for Teams workshop with engaged participants"
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0.25) 40%, rgba(13,13,13,0.85) 100%)",
+              }}
+            />
+            <div className="absolute inset-0 flex items-end">
+              <div className="max-w-[1200px] mx-auto w-full px-5 md:px-10 pb-10 md:pb-16">
+                <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-3">
+                  In the room
+                </span>
+                <p
+                  className="text-[clamp(24px,3.4vw,40px)] leading-[1.2] max-w-[28ch] text-ardent-paper"
+                  style={{ fontFamily: serif }}
+                >
+                  AI Fundamentals for Teams — taught the way your team actually works.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 3. PROCESS — dark */}
         <Section bg="#0D0D0D" id="process">
           <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
