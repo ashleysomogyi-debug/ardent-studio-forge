@@ -250,9 +250,9 @@ const Index = () => {
           </div>
         </section>
 
-        {/* 3. PROCESS — full-bleed look-around band as heading */}
+        {/* 3. PROCESS — full-bleed look-around band behind heading */}
         <section id="process" className="relative w-full overflow-hidden bg-[#0D0D0D]">
-          <div className="relative min-h-[60vh] md:min-h-[70vh] w-full flex items-end">
+          <div className="relative min-h-[72vh] md:min-h-[82vh] w-full flex items-center">
             <img
               src={lookAroundPhoto.url}
               alt="Ashley reviewing a workflow diagram at a laptop with a client during a scope call"
@@ -263,10 +263,10 @@ const Index = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(180deg, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0.25) 40%, rgba(13,13,13,0.95) 100%)",
+                  "linear-gradient(90deg, rgba(13,13,13,0.88) 0%, rgba(13,13,13,0.55) 42%, rgba(13,13,13,0.18) 100%), linear-gradient(180deg, rgba(13,13,13,0.2) 0%, rgba(13,13,13,0.92) 100%)",
               }}
             />
-            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-32 pb-14 md:pb-20">
+            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 py-28 md:py-36">
               <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
                 What working with us looks like
               </span>
@@ -305,9 +305,9 @@ const Index = () => {
           </div>
         </Section>
 
-        {/* 4. SPACES — full-bleed founder band as heading */}
+        {/* 4. SPACES — full-bleed podium band behind heading */}
         <section id="work" className="relative w-full overflow-hidden bg-[#171311]">
-          <div className="relative min-h-[60vh] md:min-h-[70vh] w-full flex items-end">
+          <div className="relative min-h-[72vh] md:min-h-[82vh] w-full flex items-center">
             <img
               src={heroSpeakingPhoto.url}
               alt="Ashley speaking at a podium during an AI workshop"
@@ -318,10 +318,10 @@ const Index = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(180deg, rgba(23,19,17,0.55) 0%, rgba(23,19,17,0.25) 40%, rgba(23,19,17,0.95) 100%)",
+                  "linear-gradient(90deg, rgba(23,19,17,0.9) 0%, rgba(23,19,17,0.52) 42%, rgba(23,19,17,0.15) 100%), linear-gradient(180deg, rgba(23,19,17,0.18) 0%, rgba(23,19,17,0.92) 100%)",
               }}
             />
-            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-32 pb-14 md:pb-20">
+            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 py-28 md:py-36">
               <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
                 Building in spaces that matter
               </span>
