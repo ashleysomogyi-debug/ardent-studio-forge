@@ -133,7 +133,7 @@ const AIAutomation = () => {
           <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
             <img
               src={heroSpeakingPhoto.url}
-              alt="Ashley speaking at a podium about AI automation for small business"
+              alt="Ashley leading an AI automation workshop with a small business team around a table of laptops"
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover"
             />
