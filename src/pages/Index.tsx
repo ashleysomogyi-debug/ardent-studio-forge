@@ -252,7 +252,7 @@ const Index = () => {
 
         {/* 3. PROCESS — full-bleed look-around band behind heading */}
         <section id="process" className="relative w-full overflow-hidden bg-[#0D0D0D]">
-          <div className="relative min-h-[72vh] md:min-h-[82vh] w-full flex items-center">
+          <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
             <img
               src={lookAroundPhoto.url}
               alt="Ashley reviewing a workflow diagram at a laptop with a client during a scope call"
@@ -266,7 +266,7 @@ const Index = () => {
                   "linear-gradient(90deg, rgba(13,13,13,0.88) 0%, rgba(13,13,13,0.55) 42%, rgba(13,13,13,0.18) 100%), linear-gradient(180deg, rgba(13,13,13,0.2) 0%, rgba(13,13,13,0.92) 100%)",
               }}
             />
-            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 py-28 md:py-36">
+            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
               <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
                 What working with us looks like
               </span>
@@ -307,7 +307,7 @@ const Index = () => {
 
         {/* 4. SPACES — full-bleed podium band behind heading */}
         <section id="work" className="relative w-full overflow-hidden bg-[#171311]">
-          <div className="relative min-h-[72vh] md:min-h-[82vh] w-full flex items-center">
+          <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
             <img
               src={heroSpeakingPhoto.url}
               alt="Ashley speaking at a podium during an AI workshop"
@@ -321,7 +321,7 @@ const Index = () => {
                   "linear-gradient(90deg, rgba(23,19,17,0.9) 0%, rgba(23,19,17,0.52) 42%, rgba(23,19,17,0.15) 100%), linear-gradient(180deg, rgba(23,19,17,0.18) 0%, rgba(23,19,17,0.92) 100%)",
               }}
             />
-            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 py-28 md:py-36">
+            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
               <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
                 Building in spaces that matter
               </span>
