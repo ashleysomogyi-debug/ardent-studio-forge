@@ -49,7 +49,6 @@ const offerings = [
     included: ["A 60–90 minute working session", "A short written follow-up", "Honest yes or no on whether to build"],
     notIncluded: ["A sales pitch", "A 40-page deck"],
     cta: { label: "Book the fit call", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
-    photo: { src: lookAroundPhoto.url, alt: "Ashley reviewing a workflow diagram at a laptop with a client" },
   },
   {
     title: "Build the small thing",
@@ -64,7 +63,6 @@ const offerings = [
     included: ["Hands-on practice with real tools", "Materials your team keeps", "Follow-up Q&A window"],
     notIncluded: ["Generic ChatGPT 101", "Death by PowerPoint"],
     cta: { label: "See training", href: "/training", isLink: true },
-    photo: { src: heroSpeakingPhoto.url, alt: "Ashley speaking to a room of business professionals at an AI workshop" },
   },
   {
     title: "Teach you to keep going",
