@@ -72,7 +72,6 @@ const offerings = [
     included: ["Live walkthrough recording", "A short ops guide", "30 days of email support"],
     notIncluded: ["Mandatory monthly retainer", "Handoff to a junior"],
     cta: { label: "How handoff works", href: "#process" },
-    photo: { src: trainTeamPhoto.url, alt: "Ashley leading an AI Fundamentals for Teams workshop in a brick-walled studio" },
   },
 ];
 
