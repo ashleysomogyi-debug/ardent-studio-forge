@@ -252,7 +252,7 @@ const Index = () => {
 
         {/* 3. PROCESS — full-bleed look-around band behind heading */}
         <section id="process" className="relative w-full overflow-hidden bg-[#0D0D0D]">
-          <div className="relative min-h-[72vh] md:min-h-[82vh] w-full flex items-center">
+          <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
             <img
               src={lookAroundPhoto.url}
               alt="Ashley reviewing a workflow diagram at a laptop with a client during a scope call"
