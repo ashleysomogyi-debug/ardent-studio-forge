@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import { Link } from "react-router-dom";
 import lookAroundPhoto from "@/assets/photos/look-around-corner.png.asset.json";
-import buildSmallPhoto from "@/assets/photos/build-small-thing.png.asset.json";
+
 import trainTeamPhoto from "@/assets/photos/train-team.png.asset.json";
 import aboutCafePhoto from "@/assets/photos/about-cafe.png.asset.json";
 
@@ -57,7 +57,6 @@ const offerings = [
     included: ["Fixed scope and fixed price", "Built in 2–4 weeks", "You own the code and the accounts"],
     notIncluded: ["A 6 month roadmap", "Retainers you don't need"],
     cta: { label: "Start a build", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
-    photo: { src: buildSmallPhoto.url, alt: "Ashley walking a client through a live dashboard near a sunlit window" },
   },
   {
     title: "Train your team",

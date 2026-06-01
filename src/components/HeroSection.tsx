@@ -2,20 +2,29 @@ import heroPhoto from "@/assets/photos/hero-speaking.png.asset.json";
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center bg-ardent-studio overflow-hidden">
-    {/* Background photo — Ashley speaking to a packed room */}
+    {/* Background photo — Ashley speaking to a packed room.
+        Asymmetric reveal: nearly hidden on the left where the wordmark sits,
+        legible (~0.55) on the right third so the audience is actually proof. */}
     <img
       src={heroPhoto.url}
       alt="Ashley Somogyi speaking to a packed room of business owners"
-      className="absolute inset-0 w-full h-full object-cover object-center opacity-[0.32]"
+      className="absolute inset-0 w-full h-full object-cover object-right"
       loading="eager"
       fetchPriority="high"
+      style={{
+        opacity: 0.6,
+        WebkitMaskImage:
+          "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 38%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,1) 100%)",
+        maskImage:
+          "linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 38%, rgba(0,0,0,0.55) 62%, rgba(0,0,0,1) 100%)",
+      }}
     />
-    {/* Darkening + left-fade overlay so the wordmark stays the hero */}
+    {/* Vertical darkening so type stays the hero, plus a gentle left wash */}
     <div
       className="absolute inset-0 pointer-events-none"
       style={{
         background:
-          "linear-gradient(90deg, rgba(13,13,13,0.96) 0%, rgba(13,13,13,0.82) 45%, rgba(13,13,13,0.55) 100%), linear-gradient(180deg, rgba(13,13,13,0.4) 0%, rgba(13,13,13,0.85) 100%)",
+          "linear-gradient(90deg, rgba(13,13,13,0.92) 0%, rgba(13,13,13,0.55) 50%, rgba(13,13,13,0.15) 100%), linear-gradient(180deg, rgba(13,13,13,0.35) 0%, rgba(13,13,13,0.75) 100%)",
       }}
     />
     <div
