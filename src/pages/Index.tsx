@@ -5,7 +5,7 @@ import HeroSection from "@/components/HeroSection";
 import { Link } from "react-router-dom";
 import lookAroundPhoto from "@/assets/photos/look-around-corner.png.asset.json";
 import trainTeamPhoto from "@/assets/photos/train-team.png.asset.json";
-import heroSpeakingPhoto from "@/assets/photos/hero-speaking.png.asset.json";
+
 
 
 const ProcessStep = ({ s, i, children }: { s: any; i: number; children: React.ReactNode }) => {
@@ -49,7 +49,6 @@ const offerings = [
     included: ["A 60–90 minute working session", "A short written follow-up", "Honest yes or no on whether to build"],
     notIncluded: ["A sales pitch", "A 40-page deck"],
     cta: { label: "Book the fit call", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
-    photo: { src: lookAroundPhoto.url, alt: "Ashley reviewing a workflow diagram at a laptop with a client" },
   },
   {
     title: "Build the small thing",
@@ -64,7 +63,6 @@ const offerings = [
     included: ["Hands-on practice with real tools", "Materials your team keeps", "Follow-up Q&A window"],
     notIncluded: ["Generic ChatGPT 101", "Death by PowerPoint"],
     cta: { label: "See training", href: "/training", isLink: true },
-    photo: { src: heroSpeakingPhoto.url, alt: "Ashley speaking to a room of business professionals at an AI workshop" },
   },
   {
     title: "Teach you to keep going",
@@ -146,16 +144,7 @@ const Section = ({ bg, children, id }: { bg: string; children: React.ReactNode; 
 
 const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
   <div className="border border-ardent-ink/15 bg-white/40 flex flex-col overflow-hidden">
-    {o.photo && (
-      <div className="relative aspect-[16/10] overflow-hidden bg-ardent-ink/5">
-        <img
-          src={o.photo.src}
-          alt={o.photo.alt}
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
-    )}
+
     <div className="p-7 md:p-9 flex flex-col flex-1">
       <h3 className="italic text-[26px] md:text-[30px] leading-[1.15] mb-4" style={{ fontFamily: serif, color: "#B8862A" }}>
         {o.title}
@@ -258,8 +247,41 @@ const Index = () => {
           </div>
         </section>
 
+        {/* SCOPE CALL BAND — full-bleed look-around photo */}
+        <section className="relative w-full overflow-hidden bg-[#0D0D0D]">
+          <div className="relative h-[55vh] min-h-[380px] max-h-[640px] w-full">
+            <img
+              src={lookAroundPhoto.url}
+              alt="Ashley reviewing a workflow diagram at a laptop with a client during a scope call"
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0.25) 40%, rgba(13,13,13,0.9) 100%)",
+              }}
+            />
+            <div className="absolute inset-0 flex items-end">
+              <div className="max-w-[1200px] mx-auto w-full px-5 md:px-10 pb-10 md:pb-16">
+                <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-3">
+                  At the table
+                </span>
+                <p
+                  className="text-[clamp(24px,3.4vw,40px)] leading-[1.2] max-w-[30ch] text-ardent-paper"
+                  style={{ fontFamily: serif }}
+                >
+                  What a scope call actually looks like — no decks, just your real workflow.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 3. PROCESS — dark */}
         <Section bg="#0D0D0D" id="process">
+
           <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
             What working with us looks like
           </span>
