@@ -144,16 +144,7 @@ const Section = ({ bg, children, id }: { bg: string; children: React.ReactNode; 
 
 const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
   <div className="border border-ardent-ink/15 bg-white/40 flex flex-col overflow-hidden">
-    {o.photo && (
-      <div className="relative aspect-[16/10] overflow-hidden bg-ardent-ink/5">
-        <img
-          src={o.photo.src}
-          alt={o.photo.alt}
-          loading="lazy"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </div>
-    )}
+
     <div className="p-7 md:p-9 flex flex-col flex-1">
       <h3 className="italic text-[26px] md:text-[30px] leading-[1.15] mb-4" style={{ fontFamily: serif, color: "#B8862A" }}>
         {o.title}
