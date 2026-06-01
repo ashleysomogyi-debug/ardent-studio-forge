@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import lookAroundPhoto from "@/assets/photos/look-around-corner.png.asset.json";
 import trainTeamPhoto from "@/assets/photos/train-team.png.asset.json";
 import heroSpeakingPhoto from "@/assets/photos/hero-speaking.png.asset.json";
-import buildSmallThingPhoto from "@/assets/photos/build-small-thing.png.asset.json";
+
 
 const ProcessStep = ({ s, i, children }: { s: any; i: number; children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
