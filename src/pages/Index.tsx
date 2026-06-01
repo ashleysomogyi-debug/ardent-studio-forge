@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import { Link } from "react-router-dom";
 import lookAroundPhoto from "@/assets/photos/look-around-corner.png.asset.json";
-import trainTeamPhoto from "@/assets/photos/train-team.png.asset.json";
+
 import heroSpeakingPhoto from "@/assets/photos/hero-speaking.png.asset.json";
 
 
