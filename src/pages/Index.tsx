@@ -57,7 +57,6 @@ const offerings = [
     included: ["Fixed scope and fixed price", "Built in 2–4 weeks", "You own the code and the accounts"],
     notIncluded: ["A 6 month roadmap", "Retainers you don't need"],
     cta: { label: "Start a build", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
-    photo: { src: buildSmallThingPhoto.url, alt: "Ashley pointing at a dashboard on a laptop screen with a client" },
   },
   {
     title: "Train your team",
