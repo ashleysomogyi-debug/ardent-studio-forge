@@ -321,7 +321,7 @@ const Index = () => {
                   "linear-gradient(90deg, rgba(23,19,17,0.9) 0%, rgba(23,19,17,0.52) 42%, rgba(23,19,17,0.15) 100%), linear-gradient(180deg, rgba(23,19,17,0.18) 0%, rgba(23,19,17,0.92) 100%)",
               }}
             />
-            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 py-28 md:py-36">
+            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
               <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
                 Building in spaces that matter
               </span>
