@@ -4,9 +4,9 @@ import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import { Link } from "react-router-dom";
 import lookAroundPhoto from "@/assets/photos/look-around-corner.png.asset.json";
-
 import trainTeamPhoto from "@/assets/photos/train-team.png.asset.json";
-import aboutCafePhoto from "@/assets/photos/about-cafe.png.asset.json";
+import heroSpeakingPhoto from "@/assets/photos/hero-speaking.png.asset.json";
+import buildSmallThingPhoto from "@/assets/photos/build-small-thing.png.asset.json";
 
 const ProcessStep = ({ s, i, children }: { s: any; i: number; children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -57,6 +57,7 @@ const offerings = [
     included: ["Fixed scope and fixed price", "Built in 2–4 weeks", "You own the code and the accounts"],
     notIncluded: ["A 6 month roadmap", "Retainers you don't need"],
     cta: { label: "Start a build", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
+    photo: { src: buildSmallThingPhoto.url, alt: "Ashley pointing at a dashboard on a laptop screen with a client" },
   },
   {
     title: "Train your team",
@@ -64,7 +65,7 @@ const offerings = [
     included: ["Hands-on practice with real tools", "Materials your team keeps", "Follow-up Q&A window"],
     notIncluded: ["Generic ChatGPT 101", "Death by PowerPoint"],
     cta: { label: "See training", href: "/training", isLink: true },
-    photo: { src: trainTeamPhoto.url, alt: "Ashley leading an AI Fundamentals for Teams workshop in a brick-walled studio" },
+    photo: { src: heroSpeakingPhoto.url, alt: "Ashley speaking to a room of business professionals at an AI workshop" },
   },
   {
     title: "Teach you to keep going",
@@ -72,6 +73,7 @@ const offerings = [
     included: ["Live walkthrough recording", "A short ops guide", "30 days of email support"],
     notIncluded: ["Mandatory monthly retainer", "Handoff to a junior"],
     cta: { label: "How handoff works", href: "#process" },
+    photo: { src: trainTeamPhoto.url, alt: "Ashley leading an AI Fundamentals for Teams workshop in a brick-walled studio" },
   },
 ];
 
@@ -353,37 +355,16 @@ const Index = () => {
             About Us
           </h2>
 
-          {/* Founder moment — Ashley working from a Palm Beach café */}
-          <div className="mb-16 grid grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-8 md:gap-12 items-center">
-            <div className="relative overflow-hidden border border-ardent-paper/10">
-              <img
-                src={aboutCafePhoto.url}
-                alt="Ashley Somogyi working from an outdoor café in Palm Beach County"
-                loading="lazy"
-                className="w-full h-full object-cover aspect-[4/5] md:aspect-[4/5]"
-              />
-              <div
-                className="absolute bottom-3 left-3 px-3 py-1.5 font-mono uppercase tracking-[0.2em]"
-                style={{
-                  fontSize: "10px",
-                  background: "rgba(7,7,7,0.72)",
-                  backdropFilter: "blur(10px)",
-                  color: "#C8A24D",
-                }}
-              >
-                Palm Beach County · in real life
-              </div>
-            </div>
-            <div className="space-y-5 text-[16px] leading-[1.75] text-ardent-paper/80">
-              <p style={{ fontFamily: serif }} className="italic text-[22px] md:text-[26px] leading-[1.35] text-ardent-paper">
-                "If you work with Ardent, you're working with us. That's the whole pitch."
-              </p>
-              <p>
-                No account managers, no offshore handoffs, no slide decks with someone else's logo
-                swapped out. Just the two people who'll actually build the thing — sitting at the
-                same table you're sitting at.
-              </p>
-            </div>
+          {/* Founder quote */}
+          <div className="mb-16 max-w-[60ch]">
+            <p style={{ fontFamily: serif }} className="italic text-[22px] md:text-[26px] leading-[1.35] text-ardent-paper mb-5">
+              "If you work with Ardent, you're working with us. That's the whole pitch."
+            </p>
+            <p className="text-[16px] leading-[1.75] text-ardent-paper/80">
+              No account managers, no offshore handoffs, no slide decks with someone else's logo
+              swapped out. Just the two people who'll actually build the thing — sitting at the
+              same table you're sitting at.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-16">
