@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import TypingHeadline from "@/components/TypingHeadline";
+import heroSpeakingPhoto from "@/assets/photos/hero-speaking.png.asset.json";
 
 const serif = "'Georgia', 'Cormorant Garamond', serif";
 
