@@ -305,17 +305,37 @@ const Index = () => {
           </div>
         </Section>
 
-        {/* 4. SPACES + RECENT BUILDS — charcoal */}
-        <Section bg="#171311" id="work">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
-            Building in spaces that matter
-          </span>
-          <h2
-            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-12 max-w-[22ch] text-ardent-paper"
-            style={{ fontFamily: serif }}
-          >
-            Where we focus.
-          </h2>
+        {/* 4. SPACES — full-bleed founder band as heading */}
+        <section id="work" className="relative w-full overflow-hidden bg-[#171311]">
+          <div className="relative min-h-[60vh] md:min-h-[70vh] w-full flex items-end">
+            <img
+              src={heroSpeakingPhoto.url}
+              alt="Ashley speaking at a podium during an AI workshop"
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(23,19,17,0.55) 0%, rgba(23,19,17,0.25) 40%, rgba(23,19,17,0.95) 100%)",
+              }}
+            />
+            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-32 pb-14 md:pb-20">
+              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+                Building in spaces that matter
+              </span>
+              <h2
+                className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal max-w-[22ch] text-ardent-paper"
+                style={{ fontFamily: serif }}
+              >
+                Where we focus.
+              </h2>
+            </div>
+          </div>
+        </section>
+
+        <Section bg="#171311">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10 mb-24">
             {spaces.map((s) => (
               <div key={s.name} className="p-8 min-h-[200px] flex flex-col justify-between" style={{ background: "#1A1614" }}>
