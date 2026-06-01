@@ -1,5 +1,23 @@
+import heroPhoto from "@/assets/photos/hero-speaking.png.asset.json";
+
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center bg-ardent-studio overflow-hidden">
+    {/* Background photo — Ashley speaking to a packed room */}
+    <img
+      src={heroPhoto.url}
+      alt="Ashley Somogyi speaking to a packed room of business owners"
+      className="absolute inset-0 w-full h-full object-cover object-center opacity-[0.32]"
+      loading="eager"
+      fetchPriority="high"
+    />
+    {/* Darkening + left-fade overlay so the wordmark stays the hero */}
+    <div
+      className="absolute inset-0 pointer-events-none"
+      style={{
+        background:
+          "linear-gradient(90deg, rgba(13,13,13,0.96) 0%, rgba(13,13,13,0.82) 45%, rgba(13,13,13,0.55) 100%), linear-gradient(180deg, rgba(13,13,13,0.4) 0%, rgba(13,13,13,0.85) 100%)",
+      }}
+    />
     <div
       className="absolute inset-0 opacity-[0.04] pointer-events-none"
       style={{
