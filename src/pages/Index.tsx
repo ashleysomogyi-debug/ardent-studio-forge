@@ -3,6 +3,10 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import { Link } from "react-router-dom";
+import lookAroundPhoto from "@/assets/photos/look-around-corner.png.asset.json";
+import buildSmallPhoto from "@/assets/photos/build-small-thing.png.asset.json";
+import trainTeamPhoto from "@/assets/photos/train-team.png.asset.json";
+import aboutCafePhoto from "@/assets/photos/about-cafe.png.asset.json";
 
 const ProcessStep = ({ s, i, children }: { s: any; i: number; children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -45,6 +49,7 @@ const offerings = [
     included: ["A 60–90 minute working session", "A short written follow-up", "Honest yes or no on whether to build"],
     notIncluded: ["A sales pitch", "A 40-page deck"],
     cta: { label: "Book the fit call", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
+    photo: { src: lookAroundPhoto.url, alt: "Ashley reviewing a workflow diagram at a laptop with a client" },
   },
   {
     title: "Build the small thing",
@@ -52,6 +57,7 @@ const offerings = [
     included: ["Fixed scope and fixed price", "Built in 2–4 weeks", "You own the code and the accounts"],
     notIncluded: ["A 6 month roadmap", "Retainers you don't need"],
     cta: { label: "Start a build", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
+    photo: { src: buildSmallPhoto.url, alt: "Ashley walking a client through a live dashboard near a sunlit window" },
   },
   {
     title: "Train your team",
@@ -59,6 +65,7 @@ const offerings = [
     included: ["Hands-on practice with real tools", "Materials your team keeps", "Follow-up Q&A window"],
     notIncluded: ["Generic ChatGPT 101", "Death by PowerPoint"],
     cta: { label: "See training", href: "/training", isLink: true },
+    photo: { src: trainTeamPhoto.url, alt: "Ashley leading an AI Fundamentals for Teams workshop in a brick-walled studio" },
   },
   {
     title: "Teach you to keep going",
@@ -139,45 +146,57 @@ const Section = ({ bg, children, id }: { bg: string; children: React.ReactNode; 
 );
 
 const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
-  <div className="border border-ardent-ink/15 bg-white/40 p-7 md:p-9 flex flex-col">
-    <h3 className="italic text-[26px] md:text-[30px] leading-[1.15] mb-4" style={{ fontFamily: serif, color: "#B8862A" }}>
-      {o.title}
-    </h3>
-    <p className="text-[15px] leading-[1.7] text-ardent-studio/80 mb-6">{o.body}</p>
-    <div className="space-y-4 mb-6">
-      <div>
-        <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-ink">Included</span>
-        <ul className="mt-2 space-y-1.5">
-          {o.included.map((i) => (
-            <li key={i} className="text-[14px] text-ardent-studio/85 flex gap-2">
-              <span className="text-ardent-ink">+</span>
-              <span>{i}</span>
-            </li>
-          ))}
-        </ul>
+  <div className="border border-ardent-ink/15 bg-white/40 flex flex-col overflow-hidden">
+    {o.photo && (
+      <div className="relative aspect-[16/10] overflow-hidden bg-ardent-ink/5">
+        <img
+          src={o.photo.src}
+          alt={o.photo.alt}
+          loading="lazy"
+          className="absolute inset-0 w-full h-full object-cover"
+        />
       </div>
-      <div>
-        <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-studio/50">Not included</span>
-        <ul className="mt-2 space-y-1.5">
-          {o.notIncluded.map((i) => (
-            <li key={i} className="text-[14px] text-ardent-studio/55 flex gap-2">
-              <span>—</span>
-              <span>{i}</span>
-            </li>
-          ))}
-        </ul>
+    )}
+    <div className="p-7 md:p-9 flex flex-col flex-1">
+      <h3 className="italic text-[26px] md:text-[30px] leading-[1.15] mb-4" style={{ fontFamily: serif, color: "#B8862A" }}>
+        {o.title}
+      </h3>
+      <p className="text-[15px] leading-[1.7] text-ardent-studio/80 mb-6">{o.body}</p>
+      <div className="space-y-4 mb-6">
+        <div>
+          <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-ink">Included</span>
+          <ul className="mt-2 space-y-1.5">
+            {o.included.map((i) => (
+              <li key={i} className="text-[14px] text-ardent-studio/85 flex gap-2">
+                <span className="text-ardent-ink">+</span>
+                <span>{i}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-studio/50">Not included</span>
+          <ul className="mt-2 space-y-1.5">
+            {o.notIncluded.map((i) => (
+              <li key={i} className="text-[14px] text-ardent-studio/55 flex gap-2">
+                <span>—</span>
+                <span>{i}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-    </div>
-    <div className="mt-auto pt-2">
-      {o.cta.isLink ? (
-        <Link to={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
-          {o.cta.label} →
-        </Link>
-      ) : (
-        <a href={o.cta.href} target="_blank" rel="noopener noreferrer" className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
-          {o.cta.label} →
-        </a>
-      )}
+      <div className="mt-auto pt-2">
+        {o.cta.isLink ? (
+          <Link to={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
+            {o.cta.label} →
+          </Link>
+        ) : (
+          <a href={o.cta.href} target="_blank" rel="noopener noreferrer" className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
+            {o.cta.label} →
+          </a>
+        )}
+      </div>
     </div>
   </div>
 );
