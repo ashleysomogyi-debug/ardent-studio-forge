@@ -354,6 +354,39 @@ const Index = () => {
             About Us
           </h2>
 
+          {/* Founder moment — Ashley working from a Palm Beach café */}
+          <div className="mb-16 grid grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-8 md:gap-12 items-center">
+            <div className="relative overflow-hidden border border-ardent-paper/10">
+              <img
+                src={aboutCafePhoto.url}
+                alt="Ashley Somogyi working from an outdoor café in Palm Beach County"
+                loading="lazy"
+                className="w-full h-full object-cover aspect-[4/5] md:aspect-[4/5]"
+              />
+              <div
+                className="absolute bottom-3 left-3 px-3 py-1.5 font-mono uppercase tracking-[0.2em]"
+                style={{
+                  fontSize: "10px",
+                  background: "rgba(7,7,7,0.72)",
+                  backdropFilter: "blur(10px)",
+                  color: "#C8A24D",
+                }}
+              >
+                Palm Beach County · in real life
+              </div>
+            </div>
+            <div className="space-y-5 text-[16px] leading-[1.75] text-ardent-paper/80">
+              <p style={{ fontFamily: serif }} className="italic text-[22px] md:text-[26px] leading-[1.35] text-ardent-paper">
+                "If you work with Ardent, you're working with us. That's the whole pitch."
+              </p>
+              <p>
+                No account managers, no offshore handoffs, no slide decks with someone else's logo
+                swapped out. Just the two people who'll actually build the thing — sitting at the
+                same table you're sitting at.
+              </p>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-16">
             {[
               { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build" },
