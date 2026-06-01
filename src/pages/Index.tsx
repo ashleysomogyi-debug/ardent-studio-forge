@@ -266,7 +266,7 @@ const Index = () => {
                   "linear-gradient(90deg, rgba(13,13,13,0.88) 0%, rgba(13,13,13,0.55) 42%, rgba(13,13,13,0.18) 100%), linear-gradient(180deg, rgba(13,13,13,0.2) 0%, rgba(13,13,13,0.92) 100%)",
               }}
             />
-            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 py-28 md:py-36">
+            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
               <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
                 What working with us looks like
               </span>
