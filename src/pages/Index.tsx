@@ -398,6 +398,38 @@ const Index = () => {
           </div>
         </section>
 
+        {/* FOUNDER BAND — full-bleed hero-speaking photo */}
+        <section className="relative w-full overflow-hidden bg-[#0D0D0D]">
+          <div className="relative h-[55vh] min-h-[380px] max-h-[640px] w-full">
+            <img
+              src={heroSpeakingPhoto.url}
+              alt="Ashley speaking at a podium during an AI workshop"
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(180deg, rgba(13,13,13,0.55) 0%, rgba(13,13,13,0.25) 40%, rgba(13,13,13,0.9) 100%)",
+              }}
+            />
+            <div className="absolute inset-0 flex items-end">
+              <div className="max-w-[1200px] mx-auto w-full px-5 md:px-10 pb-10 md:pb-16">
+                <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-3">
+                  On stage
+                </span>
+                <p
+                  className="text-[clamp(24px,3.4vw,40px)] leading-[1.2] max-w-[28ch] text-ardent-paper"
+                  style={{ fontFamily: serif }}
+                >
+                  If you work with Ardent, you're working with us.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 5. ABOUT US — dark */}
         <Section bg="#0D0D0D" id="about">
           <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
