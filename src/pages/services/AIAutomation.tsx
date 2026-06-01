@@ -129,18 +129,37 @@ const AIAutomation = () => {
           </div>
         </section>
 
-        {/* 2. WORKFLOWS */}
+        <section className="relative w-full overflow-hidden" style={{ background: "#0D0D0D" }}>
+          <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
+            <img
+              src={heroSpeakingPhoto.url}
+              alt="Ashley speaking at a podium about AI automation for small business"
+              loading="lazy"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{
+                background:
+                  "linear-gradient(90deg, rgba(13,13,13,0.88) 0%, rgba(13,13,13,0.55) 42%, rgba(13,13,13,0.18) 100%), linear-gradient(180deg, rgba(13,13,13,0.2) 0%, rgba(13,13,13,0.92) 100%)",
+              }}
+            />
+            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
+              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+                Workflows we automate
+              </span>
+              <h2
+                className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal max-w-[26ch] text-ardent-paper"
+                style={{ fontFamily: serif }}
+              >
+                What does AI automation actually look like for a small business?
+              </h2>
+            </div>
+          </div>
+        </section>
+
         <section className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1200px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
-              Workflows we automate
-            </span>
-            <h2
-              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-14 max-w-[26ch] text-ardent-paper"
-              style={{ fontFamily: serif }}
-            >
-              What does AI automation actually look like for a small business?
-            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10">
               {workflows.map((w) => (
                 <div key={w.title} className="p-7 min-h-[180px]" style={{ background: "#1A1614" }}>
