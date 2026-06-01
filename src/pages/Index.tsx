@@ -307,7 +307,7 @@ const Index = () => {
 
         {/* 4. SPACES — full-bleed podium band behind heading */}
         <section id="work" className="relative w-full overflow-hidden bg-[#171311]">
-          <div className="relative min-h-[72vh] md:min-h-[82vh] w-full flex items-center">
+          <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
             <img
               src={heroSpeakingPhoto.url}
               alt="Ashley speaking at a podium during an AI workshop"
