@@ -104,9 +104,9 @@ const processSteps = [
 ];
 
 const spaces = [
-  { name: "Professional services", note: "Attorneys, accountants, consultants." },
-  { name: "Service businesses & trades", note: "Cleaners, salons, clinics, HVAC, plumbing, roofing, electrical." },
-  { name: "Schools & non-profits", note: "Educational institutions and mission-driven organizations." },
+  { name: "Marketing & creative agencies", note: "Advertising, PR, content, design, and social media firms." },
+  { name: "Consulting & advisory firms", note: "Management, sales, HR, and strategy consultancies." },
+  { name: "Fractional executives", note: "Fractional CMOs, CFOs, COOs, and operational advisors." },
   { name: "Founder stage AI products", note: "Early stage tools shipping fast." },
 ];
 
