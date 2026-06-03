@@ -34,7 +34,7 @@ const tiers = [
 
 const Training = () => {
   useEffect(() => {
-    document.title = "AI Training for Small Teams | Ardent Studio";
+    document.title = "AI Training for Agencies & Consulting Teams | Ardent Studio";
     const meta = document.querySelector('meta[name="description"]');
     const desc = "In-person and virtual AI workshops for small business teams in South Florida.";
     if (meta) meta.setAttribute("content", desc);
