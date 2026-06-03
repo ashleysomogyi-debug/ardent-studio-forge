@@ -34,7 +34,7 @@ const tiers = [
 
 const Training = () => {
   useEffect(() => {
-    document.title = "AI Training for Small Teams | Ardent Studio";
+    document.title = "AI Training for Agencies & Consulting Teams | Ardent Studio";
     const meta = document.querySelector('meta[name="description"]');
     const desc = "In-person and virtual AI workshops for small business teams in South Florida.";
     if (meta) meta.setAttribute("content", desc);
@@ -52,7 +52,7 @@ const Training = () => {
               Skip the AI 101. Build something today.
             </h1>
             <p className="text-[18px] leading-[1.65] max-w-[640px] text-ardent-paper/75 mb-10">
-              In-person and virtual workshops for small teams in South Florida. We build something real together — your team leaves with a tool, not a slide deck.
+              In-person and virtual workshops for teams at agencies, consulting firms, and fractional practices. We build something real together — your team leaves with a tool, not a slide deck.
             </p>
             <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
               Book a free discovery call
