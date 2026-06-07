@@ -85,7 +85,7 @@ const Nav = () => {
           data-hover
           className="hidden md:inline-flex font-sans text-[12px] md:text-[13px] bg-foreground text-bg-base px-3 md:px-5 py-2 rounded-full hover:opacity-90 transition-opacity shrink-0"
         >
-          Book a free consultation
+          Book a free call
         </a>
 
         <button
@@ -155,7 +155,7 @@ const Nav = () => {
               onClick={() => setMenuOpen(false)}
               className="block w-full text-center font-sans text-[15px] font-medium bg-ardent-coral text-ardent-studio px-6 py-4 rounded-full hover:opacity-90 transition-opacity"
             >
-              Book a free consultation
+              Book a free call
             </a>
           </div>
         </div>
