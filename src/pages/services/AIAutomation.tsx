@@ -47,9 +47,10 @@ const workflows: { title: string; desc: string; wide?: boolean }[] = [
   { title: "No-show reduction", desc: "Confirmations and reminders before every appointment, so the calendar holds." },
   { title: "New-client onboarding", desc: "Welcome email, intake form, kickoff doc — sent the moment they say yes." },
   { title: "Reporting and alerts", desc: "Weekly summary emails of what's running, what broke, what to do next." },
+  { title: "Job-status updates", desc: "Customers told where their order or project stands without calling you." },
   { title: "CRM data entry", desc: "Emails and calls logged automatically — no one types into the CRM again." },
   { title: "Hiring intake", desc: "Applications screened against your criteria, interviews scheduled." },
-  { title: "Morning brief", desc: "One email: today's schedule, money in, money out, what needs you.", wide: true },
+  { title: "Morning brief", desc: "One email: today's schedule, money in, money out, what needs you." },
 ];
 
 const AIAutomation = () => {
