@@ -39,14 +39,14 @@ const method = [
 ];
 
 const workflows = [
+  { title: "Lead follow-up in minutes", desc: "Every inquiry gets a reply day or night — before the prospect calls the next name on the list." },
   { title: "Inbound email triage", desc: "Drafts replies as new emails arrive, routes the rest to the right person." },
-  { title: "Cold outreach", desc: "Finds the right contacts, writes personalized openers, follows up automatically." },
-  { title: "Content drafting", desc: "LinkedIn posts, newsletters, and proposals written in your voice." },
+  { title: "Invoice chasing", desc: "Reminders matched to each customer's payment history, so you get paid without the awkward email." },
   { title: "Quote and proposal generation", desc: "Pulls from past quotes and your pricing logic to draft the next one." },
-  { title: "Customer support", desc: "Matches incoming questions to past answers, escalates the rest." },
-  { title: "Scheduling and intake", desc: "Reads form submissions, books the call, sends the prep doc." },
+  { title: "Review requests", desc: "Happy customers get asked for a Google review at the right moment, automatically." },
+  { title: "No-show reduction", desc: "Confirmations and reminders before every appointment, so the calendar holds." },
+  { title: "New-client onboarding", desc: "Welcome email, intake form, kickoff doc — sent the moment they say yes." },
   { title: "Reporting and alerts", desc: "Weekly summary emails of what's running, what broke, what to do next." },
-  { title: "Document extraction", desc: "Forms, invoices, contracts → structured data in your CRM." },
 ];
 
 const AIAutomation = () => {
