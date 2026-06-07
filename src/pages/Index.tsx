@@ -7,10 +7,6 @@ import lookAroundPhoto from "@/assets/photos/look-around-corner.png.asset.json";
 
 import heroSpeakingPhoto from "@/assets/photos/hero-speaking.png.asset.json";
 
-
-
-
-
 const ProcessStep = ({ s, i, children }: { s: any; i: number; children: React.ReactNode }) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
@@ -52,6 +48,8 @@ const offerings = [
     included: ["A 60–90 minute working session", "A short written follow-up", "Honest yes or no on whether to build"],
     notIncluded: ["A sales pitch", "A 40-page deck"],
     cta: { label: "Book the fit call", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
+    accent: "#C3F73A",
+    price: "Free",
   },
   {
     title: "Build the small thing",
@@ -59,6 +57,8 @@ const offerings = [
     included: ["Fixed scope and fixed price", "Built in 2–4 weeks", "You own the code and the accounts"],
     notIncluded: ["A 6 month roadmap", "Retainers you don't need"],
     cta: { label: "Start a build", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
+    accent: "#4FC3F7",
+    price: "From $2,000",
   },
   {
     title: "Train your team",
@@ -66,6 +66,8 @@ const offerings = [
     included: ["Hands-on practice with real tools", "Materials your team keeps", "Follow-up Q&A window"],
     notIncluded: ["Generic ChatGPT 101", "Death by PowerPoint"],
     cta: { label: "See training", href: "/training", isLink: true },
+    accent: "#FF6B6B",
+    price: "Priced per workshop",
   },
   {
     title: "Teach you to keep going",
@@ -73,6 +75,8 @@ const offerings = [
     included: ["Live walkthrough recording", "A short ops guide", "30 days of email support"],
     notIncluded: ["Mandatory monthly retainer", "Handoff to a junior"],
     cta: { label: "How handoff works", href: "#process" },
+    accent: "#6EDDC4",
+    price: "Included in every build",
   },
 ];
 
@@ -146,30 +150,41 @@ const Section = ({ bg, children, id }: { bg: string; children: React.ReactNode; 
 );
 
 const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
-  <div className="border border-ardent-ink/15 bg-white/40 flex flex-col overflow-hidden">
-
+  <div
+    className="border flex flex-col overflow-hidden"
+    style={{ background: "#141414", borderColor: `${o.accent}40` }}
+  >
     <div className="p-7 md:p-9 flex flex-col flex-1">
-      <h3 className="italic text-[26px] md:text-[30px] leading-[1.15] mb-4" style={{ fontFamily: serif, color: "#B8862A" }}>
+      <div className="flex items-center justify-between gap-4 mb-6">
+        <span className="block w-10 h-px" style={{ background: o.accent }} />
+        <span
+          className="font-mono text-[10px] tracking-[0.2em] uppercase px-3 py-1 rounded-full whitespace-nowrap"
+          style={{ background: `${o.accent}33`, color: o.accent }}
+        >
+          {o.price}
+        </span>
+      </div>
+      <h3 className="italic text-[26px] md:text-[30px] leading-[1.15] mb-4 text-ardent-paper" style={{ fontFamily: serif }}>
         {o.title}
       </h3>
-      <p className="text-[15px] leading-[1.7] text-ardent-studio/80 mb-6">{o.body}</p>
-      <div className="space-y-4 mb-6">
+      <p className="text-[15px] leading-[1.7] text-ardent-paper/75 mb-6">{o.body}</p>
+      <div className="space-y-4 mb-8">
         <div>
-          <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-ink">Included</span>
+          <span className="font-mono text-[10px] tracking-[0.2em] uppercase" style={{ color: o.accent }}>Included</span>
           <ul className="mt-2 space-y-1.5">
             {o.included.map((i) => (
-              <li key={i} className="text-[14px] text-ardent-studio/85 flex gap-2">
-                <span className="text-ardent-ink">+</span>
+              <li key={i} className="text-[14px] text-ardent-paper/85 flex gap-2">
+                <span style={{ color: o.accent }}>+</span>
                 <span>{i}</span>
               </li>
             ))}
           </ul>
         </div>
         <div>
-          <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-studio/50">Not included</span>
+          <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-paper/45">Not included</span>
           <ul className="mt-2 space-y-1.5">
             {o.notIncluded.map((i) => (
-              <li key={i} className="text-[14px] text-ardent-studio/55 flex gap-2">
+              <li key={i} className="text-[14px] text-ardent-paper/50 flex gap-2">
                 <span>—</span>
                 <span>{i}</span>
               </li>
@@ -179,11 +194,21 @@ const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
       </div>
       <div className="mt-auto pt-2">
         {o.cta.isLink ? (
-          <Link to={o.cta.href} className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
+          <Link
+            to={o.cta.href}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-sans font-semibold text-[14px] hover:opacity-90 transition-opacity"
+            style={{ background: o.accent, color: "#0D0D0D" }}
+          >
             {o.cta.label} →
           </Link>
         ) : (
-          <a href={o.cta.href} target="_blank" rel="noopener noreferrer" className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-ink hover:opacity-70">
+          <a
+            href={o.cta.href}
+            target={o.cta.href.startsWith("#") ? undefined : "_blank"}
+            rel={o.cta.href.startsWith("#") ? undefined : "noopener noreferrer"}
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-sans font-semibold text-[14px] hover:opacity-90 transition-opacity"
+            style={{ background: o.accent, color: "#0D0D0D" }}
+          >
             {o.cta.label} →
           </a>
         )}
@@ -200,13 +225,13 @@ const Index = () => {
         {/* 1. HERO */}
         <HeroSection />
 
-        {/* 2. OFFERINGS — cream */}
-        <Section bg="#F7F3EC">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">
+        {/* 2. OFFERINGS — dark, matching hero */}
+        <Section bg="#0D0D0D">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
             How we serve businesses
           </span>
           <h2
-            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-14 max-w-[20ch] text-ardent-studio"
+            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-14 max-w-[20ch] text-ardent-paper"
             style={{ fontFamily: serif }}
           >
             Four ways we work together.
@@ -217,7 +242,6 @@ const Index = () => {
             ))}
           </div>
         </Section>
-
 
         {/* 3. PROCESS — full-bleed look-around band behind heading */}
         <section id="process" className="relative w-full overflow-hidden bg-[#0D0D0D]">
@@ -373,7 +397,6 @@ const Index = () => {
             </div>
           </div>
         </section>
-
 
         {/* 5. ABOUT US — dark */}
         <Section bg="#0D0D0D" id="about">
