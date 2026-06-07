@@ -181,7 +181,7 @@ const ServicePageLayout = ({
                 rel="noopener noreferrer"
                 className="font-sans text-[13px] bg-foreground text-bg-base px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity w-full md:w-auto text-center"
               >
-                Book a free consultation
+                Book a free call
               </a>
               <a
                 href="/"
