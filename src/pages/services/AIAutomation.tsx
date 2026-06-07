@@ -38,7 +38,7 @@ const method = [
   { letter: "T", word: "TRANSFER", desc: "Your team owns it. We hand off and step out." },
 ];
 
-const workflows = [
+const workflows: { title: string; desc: string; wide?: boolean }[] = [
   { title: "Lead follow-up in minutes", desc: "Every inquiry gets a reply day or night — before the prospect calls the next name on the list." },
   { title: "Inbound email triage", desc: "Drafts replies as new emails arrive, routes the rest to the right person." },
   { title: "Invoice chasing", desc: "Reminders matched to each customer's payment history, so you get paid without the awkward email." },
@@ -47,6 +47,9 @@ const workflows = [
   { title: "No-show reduction", desc: "Confirmations and reminders before every appointment, so the calendar holds." },
   { title: "New-client onboarding", desc: "Welcome email, intake form, kickoff doc — sent the moment they say yes." },
   { title: "Reporting and alerts", desc: "Weekly summary emails of what's running, what broke, what to do next." },
+  { title: "CRM data entry", desc: "Emails and calls logged automatically — no one types into the CRM again." },
+  { title: "Hiring intake", desc: "Applications screened against your criteria, interviews scheduled." },
+  { title: "Morning brief", desc: "One email: today's schedule, money in, money out, what needs you.", wide: true },
 ];
 
 const AIAutomation = () => {
@@ -162,7 +165,7 @@ const AIAutomation = () => {
           <div className="max-w-[1200px] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10">
               {workflows.map((w) => (
-                <div key={w.title} className="p-7 min-h-[180px]" style={{ background: "#1A1614" }}>
+                <div key={w.title} className={`p-7 min-h-[180px]${w.wide ? " md:col-span-2 lg:col-span-2" : ""}`} style={{ background: "#1A1614" }}>
                   <h3 className="text-[20px] mb-3 text-ardent-paper" style={{ fontFamily: serif }}>
                     {w.title}
                   </h3>
