@@ -152,7 +152,7 @@ const AIAutomation = () => {
                 className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal max-w-[26ch] text-ardent-paper"
                 style={{ fontFamily: serif }}
               >
-                What does AI automation actually look like for a small business?
+                What does AI automation actually look like for a business?
               </h2>
             </div>
           </div>
