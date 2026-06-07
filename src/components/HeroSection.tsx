@@ -38,19 +38,24 @@ const HeroSection = () => (
     <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full py-32">
       <div className="flex items-center gap-4 mb-12">
         <span className="block w-12 h-px bg-ardent-lime" />
-        <span className="font-mono text-xs tracking-[0.2em] text-ardent-lime uppercase">
-          AI tools for the way business already works
+        <span className="font-mono text-xs tracking-[0.2em] uppercase">
+          <span className="text-ardent-lime">Listen.</span>{' '}
+          <span className="text-ardent-cyan">Build.</span>{' '}
+          <span className="text-ardent-coral">Train.</span>{' '}
+          <span className="text-ardent-mint">Repeat.</span>
         </span>
       </div>
-      <h1 className="font-sans font-black text-[clamp(4rem,12vw,12rem)] leading-[0.95] tracking-tight">
-        <span className="text-ardent-lime">Listen.</span>{' '}
-        <span className="text-ardent-cyan">Build.</span>
-        <br />
-        <span className="text-ardent-coral">Train.</span>{' '}
-        <span className="text-ardent-mint">Repeat.</span>
+      <h1 className="font-sans font-black text-[clamp(2.75rem,7.5vw,7rem)] leading-[1.02] tracking-tight text-ardent-paper max-w-5xl">
+        AI tools for the way business{' '}
+        <span className="text-ardent-lime">already works</span>
       </h1>
       <p className="mt-12 max-w-2xl font-sans text-lg lg:text-xl text-ardent-paper/80 leading-relaxed">
-        From "we keep meaning to automate that" to a tool that does it for you. Real builds. Real hours back. Real ownership.
+        Small, fixed-scope builds for marketing agencies, consultancies, and
+        fractional executives. From "we keep meaning to automate that" to a
+        tool that does it for you.
+      </p>
+      <p className="mt-6 font-mono text-sm tracking-[0.15em] uppercase text-ardent-paper/60">
+        Fixed price · 2–4 weeks · You own it
       </p>
       <div className="mt-12 flex flex-wrap gap-4">
         <a
