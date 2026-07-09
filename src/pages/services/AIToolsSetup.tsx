@@ -121,7 +121,7 @@ export default function AIToolsSetup() {
         result:
           "Writing time cut by 70%. Report quality actually improved. 10 hours/week reclaimed.",
       }}
-      ctaText="Ready to get AI actually working for your business? Book a free 30-minute discovery call."
+      ctaText="Ready to get AI actually working for your business? Book a free 15-minute discovery call."
     />
   );
 }

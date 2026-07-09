@@ -94,7 +94,7 @@ const Contact = () => {
               Tell us what you're trying to build.
             </h1>
             <p className="text-[17px] leading-[1.65] text-ardent-paper/75 max-w-[560px] mx-auto">
-              We reply within one business day. Most projects start with a free 30-minute scope call.
+              We reply within one business day. Most projects start with a free 15-minute scope call.
             </p>
           </div>
         </section>
