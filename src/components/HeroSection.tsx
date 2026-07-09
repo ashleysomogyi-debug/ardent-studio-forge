@@ -50,9 +50,9 @@ const HeroSection = () => (
         <span className="text-ardent-lime">already works</span>
       </h1>
       <p className="mt-12 max-w-2xl font-sans text-lg lg:text-xl text-ardent-paper/80 leading-relaxed">
-        Small, fixed-scope builds for marketing agencies, consultancies, and
-        fractional executives. From "we keep meaning to automate that" to a
-        tool that does it for you.
+        Fixed-scope builds for businesses, consultancies, and fractional
+        executives. From "we keep meaning to automate that" to a tool that
+        does it for you.
       </p>
       <p className="mt-6 font-mono text-sm tracking-[0.15em] uppercase text-ardent-paper/60">
         Fixed price · 2–4 weeks · You own it
