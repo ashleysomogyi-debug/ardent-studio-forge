@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
+import CaseStudySection from "@/components/CaseStudySection";
+import TestimonialsSection from "@/components/TestimonialsSection";
 import { Link } from "react-router-dom";
 import lookAroundPhoto from "@/assets/photos/look-around-corner.png.asset.json";
 
@@ -44,8 +46,8 @@ const serif = "'Georgia', 'Cormorant Garamond', serif";
 const offerings = [
   {
     title: "Look around the corner with me",
-    body: "A free 60–90 minute AI fit call. We sit down (in person or on Zoom), I look at how you actually run your week, and I tell you honestly where AI fits and where it doesn't.",
-    included: ["A 60–90 minute working session", "A short written follow-up", "Honest yes or no on whether to build"],
+    body: "A free 15-minute AI fit call. We talk through where your week is leaking hours, and I tell you honestly where AI fits and where it doesn't.",
+    included: ["A focused 15-minute call", "A short written follow-up", "Honest yes or no on whether to build"],
     notIncluded: ["A sales pitch", "A 40-page deck"],
     cta: { label: "Book the fit call", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
     accent: "#C3F73A",
@@ -269,6 +271,16 @@ const Index = () => {
               >
                 From first call to handoff in four steps.
               </h2>
+              <p className="mt-6 max-w-[52ch] text-[15px] leading-[1.7] text-ardent-paper/70">
+                Steps 2 and 3 run on the ARDENT method — the six-part discipline we use to scope,
+                build, and hand off every project.{" "}
+                <Link
+                  to="/services/ai-automation#ardent-method"
+                  className="text-ardent-lime underline underline-offset-4 hover:text-ardent-lime/80 transition-colors"
+                >
+                  See the ARDENT method in detail →
+                </Link>
+              </p>
             </div>
           </div>
         </section>
@@ -397,6 +409,9 @@ const Index = () => {
             </div>
           </div>
         </section>
+
+        <CaseStudySection />
+        <TestimonialsSection />
 
         {/* 5. ABOUT US — dark */}
         <Section bg="#0D0D0D" id="about">

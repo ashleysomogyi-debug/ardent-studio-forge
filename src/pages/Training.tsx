@@ -6,7 +6,7 @@ import DotSphere from "@/components/DotSphere";
 const serif = "'Georgia', 'Cormorant Garamond', serif";
 
 const format = [
-  { num: "01", title: "1 hour discovery", price: "Free", body: "We map what your team already does and where AI fits." },
+  { num: "01", title: "15-min discovery", price: "Free", body: "We map what your team already does and where AI fits." },
   { num: "02", title: "2 hour live workshop", price: "On site or Zoom", body: "Hands-on building with the tools your team will actually use." },
   { num: "03", title: "Materials handoff", price: "Yours to keep", body: "Playbooks, prompts, and a recording your team can rewatch." },
 ];
@@ -55,7 +55,7 @@ const Training = () => {
               In-person and virtual workshops for teams at agencies, consulting firms, and fractional practices. We build something real together — your team leaves with a tool, not a slide deck.
             </p>
             <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
-              Book a free discovery call
+              Book a free 15-min call
             </a>
           </div>
         </section>

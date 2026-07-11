@@ -83,11 +83,11 @@ export default function BlogPostLayout({
               Ready to implement this for your Palm Beach County business?
             </p>
             <p className="text-sm mb-6" style={{ color: "#A3A3A3" }}>
-              We'll map out what's automatable in your business in 30 minutes —
+              We'll map out what's automatable in your business in 15 minutes —
               no pitch, just a practical conversation.
             </p>
             <a
-              href="https://calendly.com/ardentstudio"
+              href="https://calendly.com/asomogyi-ardentstudio/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm font-semibold px-5 py-3 rounded-lg transition-colors duration-150"
@@ -104,7 +104,7 @@ export default function BlogPostLayout({
                   "#2DD4BF")
               }
             >
-              Book a free 30-minute call &rarr;
+              Book a free 15-minute call &rarr;
             </a>
           </aside>
         </article>

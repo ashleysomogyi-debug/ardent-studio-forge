@@ -41,7 +41,7 @@ export default function WorkflowAutomation() {
     if (metaDesc) {
       metaDesc.setAttribute(
         "content",
-        "Custom email and workflow automation for Palm Beach County small businesses. Ardent Studio builds Make.com automations that save 5–15 hours per week. Free 30-min call."
+        "Custom email and workflow automation for Palm Beach County small businesses. Ardent Studio builds Make.com automations that save 5–15 hours per week. Free 15-min call."
       );
     }
 
@@ -63,7 +63,7 @@ export default function WorkflowAutomation() {
   return (
     <ServicePageLayout
       metaTitle="Email & Workflow Automation for Small Businesses | Ardent Studio — Palm Beach County"
-      metaDescription="Custom email and workflow automation for Palm Beach County small businesses. Ardent Studio builds Make.com automations that save 5–15 hours per week. Free 30-min call."
+      metaDescription="Custom email and workflow automation for Palm Beach County small businesses. Ardent Studio builds Make.com automations that save 5–15 hours per week. Free 15-min call."
       headline="Email & Workflow Automation"
       subheadline="Stop doing the same thing twice. Ardent Studio builds Make.com automations that connect your tools, handle your follow-ups, and process your data — so you can focus on the work that actually moves the needle."
       introText="According to McKinsey (2023), small businesses using automation effectively recover 6–8 hours per week. Most of that time comes from email follow-ups, data entry between tools, invoice reminders, and intake processing — exactly the kind of repetitive work Ardent Studio specializes in automating. Most clients are live within 2 weeks."

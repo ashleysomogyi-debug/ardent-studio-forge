@@ -4,8 +4,8 @@ const steps = [
   {
     num: "01",
     title: "Scope call",
-    desc: "30 minutes to define the problem, the core user flow, and what success looks like. We ask the questions most developers skip. You leave with a clear scope document.",
-    meta: "Free · 30 minutes",
+    desc: "15 minutes to define the problem, the core user flow, and what success looks like. We ask the questions most developers skip. You leave with a clear scope document.",
+    meta: "Free · 15 minutes",
   },
   {
     num: "02",

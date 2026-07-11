@@ -9,29 +9,29 @@ interface Message {
 
 const WELCOME_MESSAGE: Message = {
   role: "bot",
-  text: "Hey there! I'm the Ardent Studio assistant. I can help you learn about our web development and AI business solutions, pricing, timelines, and how to book a free consultation.\n\nWhat would you like to know?",
+  text: "Hey there! I'm the Ardent Studio assistant. I can help you learn about our AI automation builds, team training workshops, pricing, timelines, and how to book a free call.\n\nWhat would you like to know?",
   quickReplies: ["Services & Pricing", "How It Works", "Book a Call", "Contact Info"],
 };
 
 const RESPONSES: { keywords: string[]; text: string; quickReplies?: string[] }[] = [
   {
     keywords: ["service", "pricing", "price", "cost"],
-    text: "We offer 4 service levels:\n\n**LAUNCH ($3,500)** — Website & brand in 5–7 days. Up to 6 pages, mobile-first, SEO-ready, contact forms, booking integration, 30-day support.\n\n**GROWTH ($8,500)** — 10–14 days. Everything in Launch plus AI lead capture, automated follow-up, CRM automation, 60-day support.\n\n**BUILD ($20,000+)** — Custom product in 3–6 weeks. Full design/build/deploy, payments, auth, AI integrations. Optional equity/revenue-share.\n\n**ONGOING ($300/month)** — Continuous support and optimization.\n\nAll pricing is fixed — no surprises!",
+    text: "Two ways to work with us:\n\n**AI AUTOMATION BUILDS** — $2,000–$10,000, fixed price, 2–6 weeks depending on scope. One specific tool, scoped tightly so it ships. You own the code and accounts.\n\n**TEAM TRAINING** — Single workshop $2,250, half-day deep dive $3,750, four-session team curriculum $9,000.\n\nEvery engagement starts with a free 15-minute call to figure out which one (if either) actually fits.",
     quickReplies: ["How It Works", "Book a Call", "Timeline"],
   },
   {
     keywords: ["timeline", "how long", "days", "weeks"],
-    text: "**LAUNCH:** 5–7 days.\n**GROWTH:** 10–14 days.\n**BUILD:** 3–6 weeks.\n\nMost agencies take 6–8 weeks — we do it better and faster with agile sprints and deploys every 2–3 days.",
+    text: "**Automation builds:** 2–6 weeks depending on scope, fixed timeline, agreed upfront in the proposal.\n**Training workshops:** single live sessions, 3–5 hours each.\n\nNo padding — the timeline in your proposal is the timeline you get.",
     quickReplies: ["Services & Pricing", "How It Works", "Book a Call"],
   },
   {
     keywords: ["process", "how it works", "steps", "workflow"],
-    text: "1. **SCOPE CALL** (30 mins, free) — We learn your business and needs.\n2. **PROPOSAL** (24 hours) — Fixed pricing, clear deliverables.\n3. **BUILD** (agile sprints) — Updates every 2–3 days, constant feedback.\n4. **HANDOFF** — Deployed, documented, 30–60 days support included.",
+    text: "1. **SCOPE CALL** (15 mins, free) — We learn your business and needs.\n2. **PROPOSAL** (24 hours) — Fixed pricing, clear deliverables.\n3. **BUILD** (short sprints) — Updates every 2–3 days, constant feedback.\n4. **HANDOFF** — Deployed, documented, 30 days of email support included.",
     quickReplies: ["Services & Pricing", "Book a Call", "Timeline"],
   },
   {
     keywords: ["book", "consultation", "call", "schedule"],
-    text: "We offer a **FREE 30-minute scope call**. We'll understand your goals, discuss needs, recommend a service, and give you pricing.\n\nBook on our website or email hello@ardentstudio.io. Usually available within 24–48 hours.",
+    text: "We offer a **FREE 15-minute scope call**. We'll understand your goals, discuss needs, recommend a service, and give you pricing.\n\nBook on our website or email hello@ardentstudio.io. Usually available within 24–48 hours.",
     quickReplies: ["Services & Pricing", "Contact Info"],
   },
   {
@@ -41,17 +41,17 @@ const RESPONSES: { keywords: string[]; text: string; quickReplies?: string[] }[]
   },
   {
     keywords: ["payment", "deposit", "upfront"],
-    text: "50% upfront to start, 50% on delivery. All pricing is fixed — no surprises. Optional equity/revenue-share for larger Build projects.",
+    text: "50% upfront to start, 50% on delivery. All pricing is fixed — no surprises.",
     quickReplies: ["Services & Pricing", "Book a Call"],
   },
   {
     keywords: ["support", "maintain", "update"],
-    text: "Launch includes 30 days, Growth/Build include 60 days. After that, ongoing support from **$300/month**.",
+    text: "Every build includes 30 days of email support after handoff. Beyond that, we scope ongoing support case by case — no mandatory retainer.",
     quickReplies: ["Services & Pricing", "Book a Call"],
   },
   {
     keywords: ["team", "who", "founder", "experience"],
-    text: "**Dr. Ashley Somogyi** — Founder & Builder (web dev, AI, product strategy).\n**Wesley Price** — Strategy & Operations (business dev, client success).\n\nLean team, fast delivery, direct communication.",
+    text: "**Ashley Somogyi** — Cofounder, Build.\n**Wesley Price** — Cofounder, Strategy & Ops.\n\nLean team, direct communication, no account managers.",
     quickReplies: ["Services & Pricing", "Book a Call"],
   },
 ];
@@ -401,7 +401,7 @@ const ChatbotWidget = () => {
               onMouseEnter={(e) => { (e.target as HTMLButtonElement).style.opacity = "0.9"; }}
               onMouseLeave={(e) => { (e.target as HTMLButtonElement).style.opacity = "1"; }}
             >
-              Book a Free 30-Min Call
+              Book a Free 15-Min Call
             </button>
           )}
 

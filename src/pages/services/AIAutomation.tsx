@@ -74,7 +74,7 @@ const AIAutomation = () => {
         "@type": "FAQPage",
         "@id": "https://ardentstudio.io/services/ai-automation#faq",
         mainEntity: [
-          { "@type": "Question", name: "What does an AI automation project cost?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds run $2,000 to $10,000 over 2 to 4 weeks, fixed price and fixed timeline. Larger custom builds are scoped separately. Every project starts with a free 30-minute scope call." } },
+          { "@type": "Question", name: "What does an AI automation project cost?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds run $2,000 to $10,000 over 2 to 4 weeks, fixed price and fixed timeline. Larger custom builds are scoped separately. Every project starts with a free 15-minute scope call." } },
           { "@type": "Question", name: "How long does a typical project take?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds ship in 2 to 4 weeks. We don't take on projects we can't deliver in 4 weeks; if it's bigger, we scope it as multiple phases." } },
           { "@type": "Question", name: "What AI tools do you use?", acceptedAnswer: { "@type": "Answer", text: "We build with Anthropic Claude and Make.com as our primary stack. We chose Claude for its long context handling, reliable structured output, and voice-matching for client-facing writing." } },
           { "@type": "Question", name: "Who do you work with?", acceptedAnswer: { "@type": "Answer", text: "Local service businesses, professional services (attorneys, accountants, consultants), trades and home services, and founder-stage AI products. We focus on small businesses and small teams, not enterprise." } },
@@ -121,7 +121,7 @@ const AIAutomation = () => {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-8 py-4 bg-ardent-coral text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity"
               >
-                Book a free 30-min call →
+                Book a free 15-min call →
               </a>
               <Link
                 to="/#work"
@@ -270,7 +270,7 @@ const AIAutomation = () => {
         </section>
 
         {/* 3. ARDENT METHOD */}
-        <section className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#0D0D0D" }}>
+        <section id="ardent-method" className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1200px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
               How we work
@@ -331,7 +331,7 @@ const AIAutomation = () => {
               Ready to see where AI fits in your week?
             </h2>
             <p className="text-[16px] md:text-[18px] text-ardent-paper/75 leading-[1.7] mb-10 max-w-[60ch] mx-auto">
-              Book a free 30-minute call. We'll map your top time leaks and tell you which one is worth
+              Book a free 15-minute call. We'll map your top time leaks and tell you which one is worth
               automating first.
             </p>
             <a
@@ -340,7 +340,7 @@ const AIAutomation = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-10 py-5 bg-ardent-coral text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity text-[16px]"
             >
-              Book a free 30-min call →
+              Book a free 15-min call →
             </a>
           </div>
         </section>
