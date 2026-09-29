@@ -28,12 +28,12 @@ const locations = [
 ];
 
 const Footer = () => (
-  <footer id="book-a-call" className="bg-bg-elevated py-10 md:py-16 px-5 md:px-10">
+  <footer id="book-a-call" className="bg-ardent-studio text-[#F5F5F0] py-10 md:py-16 px-5 md:px-10">
     <div className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       {/* Brand */}
       <div className="flex flex-col">
         <Link to="/" className="inline-block">
-          <span className="font-sans text-[16px] md:text-[18px] text-foreground font-semibold">Ardent Studio</span>
+          <span className="font-sans text-[16px] md:text-[18px] text-[#F5F5F0] font-semibold">Ardent Studio</span>
           <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase block mt-1">AI Automation · Palm Beach County</span>
         </Link>
         <p className="font-sans text-[13px] text-muted-foreground mt-4 leading-[1.6]">
