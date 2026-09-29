@@ -18,6 +18,7 @@ import AIChatbot from "./pages/services/AIChatbot.tsx";
 import Training from "./pages/Training.tsx";
 import Contact from "./pages/Contact.tsx";
 import PoochesPearlsProsecco from "./pages/events/PoochesPearlsProsecco.tsx";
+import WowAttendeeOffer from "./pages/events/WowAttendeeOffer.tsx";
 
 // Lazily loaded service pages
 const WorkflowAutomation = lazy(() => import("./pages/services/WorkflowAutomation.tsx"));
@@ -86,6 +87,7 @@ const App = () => (
 
             {/* Events */}
             <Route path="/events/pooches-pearls-prosecco" element={<PoochesPearlsProsecco />} />
+            <Route path="/wow" element={<WowAttendeeOffer />} />
 
             {/* Location pages */}
             <Route path="/locations/west-palm-beach" element={<WestPalmBeach />} />
