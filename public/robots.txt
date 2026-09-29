@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /wow
 
 # AI crawlers — allow for GEO citations
 User-agent: GPTBot
