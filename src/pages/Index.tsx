@@ -30,7 +30,7 @@ const ProcessStep = ({ s, i, children }: { s: any; i: number; children: React.Re
       ref={ref}
       className="grid grid-cols-1 md:grid-cols-[120px_1fr_1fr_1fr] gap-6 md:gap-10 py-8 md:py-10 px-2 md:px-4"
       style={{
-        background: "#0D0D0D",
+        background: "#F5F5F0",
         opacity: visible ? 1 : 0,
         transform: visible ? "translateY(0)" : "translateY(24px)",
         transition: reduced ? "none" : `opacity 600ms ease-out ${i * 120}ms, transform 600ms ease-out ${i * 120}ms`,
@@ -41,7 +41,7 @@ const ProcessStep = ({ s, i, children }: { s: any; i: number; children: React.Re
   );
 };
 
-const serif = "'Georgia', 'Cormorant Garamond', serif";
+const serif = "'Inter', system-ui, sans-serif";
 
 const offerings = [
   {
@@ -50,7 +50,7 @@ const offerings = [
     included: ["A focused 15-minute call", "A short written follow-up", "Honest yes or no on whether to build"],
     notIncluded: ["A sales pitch", "A 40-page deck"],
     cta: { label: "Book the fit call", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
-    accent: "#C3F73A",
+    accent: "#0A7D7B",
     price: "Free",
   },
   {
@@ -59,7 +59,7 @@ const offerings = [
     included: ["Fixed scope and fixed price", "Built in 2–4 weeks", "You own the code and the accounts"],
     notIncluded: ["A 6 month roadmap", "Retainers you don't need"],
     cta: { label: "Start a build", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
-    accent: "#4FC3F7",
+    accent: "#0A7D7B",
     price: "From $2,000",
   },
   {
@@ -68,7 +68,7 @@ const offerings = [
     included: ["Hands-on practice with real tools", "Materials your team keeps", "Follow-up Q&A window"],
     notIncluded: ["Generic ChatGPT 101", "Death by PowerPoint"],
     cta: { label: "See training", href: "/training", isLink: true },
-    accent: "#FF6B6B",
+    accent: "#0A7D7B",
     price: "Priced per workshop",
   },
   {
@@ -77,7 +77,7 @@ const offerings = [
     included: ["Live walkthrough recording", "A short ops guide", "30 days of email support"],
     notIncluded: ["Mandatory monthly retainer", "Handoff to a junior"],
     cta: { label: "How handoff works", href: "#process" },
-    accent: "#6EDDC4",
+    accent: "#0A7D7B",
     price: "Included in every build",
   },
 ];
@@ -154,7 +154,7 @@ const Section = ({ bg, children, id }: { bg: string; children: React.ReactNode; 
 const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
   <div
     className="border flex flex-col overflow-hidden"
-    style={{ background: "#141414", borderColor: `${o.accent}40` }}
+    style={{ background: "#FFFFFF", borderColor: `${o.accent}40` }}
   >
     <div className="p-7 md:p-9 flex flex-col flex-1">
       <div className="flex items-center justify-between gap-4 mb-6">
@@ -166,7 +166,7 @@ const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
           {o.price}
         </span>
       </div>
-      <h3 className="italic text-[26px] md:text-[30px] leading-[1.15] mb-4 text-ardent-paper" style={{ fontFamily: serif }}>
+      <h3 className="font-semibold text-[26px] md:text-[30px] leading-[1.15] mb-4 text-ardent-paper" style={{ fontFamily: serif }}>
         {o.title}
       </h3>
       <p className="text-[15px] leading-[1.7] text-ardent-paper/75 mb-6">{o.body}</p>
@@ -199,7 +199,7 @@ const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
           <Link
             to={o.cta.href}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-sans font-semibold text-[14px] hover:opacity-90 transition-opacity"
-            style={{ background: o.accent, color: "#0D0D0D" }}
+            style={{ background: o.title === "Look around the corner with me" ? "#C3F73A" : "transparent", color: "#0D0D0D", border: o.title === "Look around the corner with me" ? "none" : "1px solid #0D0D0D" }}
           >
             {o.cta.label} →
           </Link>
@@ -209,7 +209,7 @@ const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
             target={o.cta.href.startsWith("#") ? undefined : "_blank"}
             rel={o.cta.href.startsWith("#") ? undefined : "noopener noreferrer"}
             className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-sans font-semibold text-[14px] hover:opacity-90 transition-opacity"
-            style={{ background: o.accent, color: "#0D0D0D" }}
+            style={{ background: o.title === "Look around the corner with me" ? "#C3F73A" : "transparent", color: "#0D0D0D", border: o.title === "Look around the corner with me" ? "none" : "1px solid #0D0D0D" }}
           >
             {o.cta.label} →
           </a>
@@ -228,12 +228,12 @@ const Index = () => {
         <HeroSection />
 
         {/* 2. OFFERINGS — dark, matching hero */}
-        <Section bg="#0D0D0D">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+        <Section bg="#F5F5F0">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
             How we serve businesses
           </span>
           <h2
-            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-14 max-w-[20ch] text-ardent-paper"
+            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-semibold mb-14 max-w-[20ch] text-ardent-paper"
             style={{ fontFamily: serif }}
           >
             Four ways we work together.
@@ -246,7 +246,7 @@ const Index = () => {
         </Section>
 
         {/* 3. PROCESS — full-bleed look-around band behind heading */}
-        <section id="process" className="relative w-full overflow-hidden bg-[#0D0D0D]">
+        <section id="process" className="relative w-full overflow-hidden bg-bg-base">
           <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
             <img
               src={lookAroundPhoto.url}
@@ -258,15 +258,15 @@ const Index = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(90deg, rgba(13,13,13,0.88) 0%, rgba(13,13,13,0.55) 42%, rgba(13,13,13,0.18) 100%), linear-gradient(180deg, rgba(13,13,13,0.2) 0%, rgba(13,13,13,0.92) 100%)",
+                  "linear-gradient(90deg, rgba(245,245,240,0.94) 0%, rgba(245,245,240,0.70) 48%, rgba(245,245,240,0.18) 100%), linear-gradient(180deg, rgba(245,245,240,0.08) 0%, rgba(245,245,240,0.94) 100%)",
               }}
             />
             <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
-              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
                 What working with us looks like
               </span>
               <h2
-                className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal max-w-[20ch] text-ardent-paper"
+                className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-semibold max-w-[20ch] text-ardent-paper"
                 style={{ fontFamily: serif }}
               >
                 From first call to handoff in four steps.
@@ -276,7 +276,7 @@ const Index = () => {
                 build, and hand off every project.{" "}
                 <Link
                   to="/services/ai-automation#ardent-method"
-                  className="text-ardent-lime underline underline-offset-4 hover:text-ardent-lime/80 transition-colors"
+                  className="text-primary underline underline-offset-4 hover:text-primary/80 transition-colors"
                 >
                   See the ARDENT method in detail →
                 </Link>
@@ -285,11 +285,11 @@ const Index = () => {
           </div>
         </section>
 
-        <Section bg="#0D0D0D">
+        <Section bg="#F5F5F0">
           <div className="space-y-px bg-ardent-paper/10">
             {processSteps.map((s, i) => (
               <ProcessStep key={s.num} s={s} i={i}>
-                <div className="text-[40px] md:text-[48px] font-light leading-none" style={{ fontFamily: serif, color: "#C8A24D" }}>
+                <div className="text-[40px] md:text-[48px] font-light leading-none" style={{ fontFamily: serif, color: "#0A7D7B" }}>
                   {s.num}
                 </div>
                 <div>
@@ -298,11 +298,11 @@ const Index = () => {
                   </h3>
                 </div>
                 <div>
-                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime block mb-2">You do</span>
+                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-primary block mb-2">You do</span>
                   <p className="text-[15px] leading-[1.6] text-ardent-paper/75">{s.you}</p>
                 </div>
                 <div>
-                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime block mb-2">I do</span>
+                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-primary block mb-2">I do</span>
                   <p className="text-[15px] leading-[1.6] text-ardent-paper/75">{s.me}</p>
                 </div>
               </ProcessStep>
@@ -311,7 +311,7 @@ const Index = () => {
         </Section>
 
         {/* 4. SPACES — full-bleed podium band behind heading */}
-        <section id="work" className="relative w-full overflow-hidden bg-[#171311]">
+        <section id="work" className="relative w-full overflow-hidden bg-bg-base">
           <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
             <img
               src={heroSpeakingPhoto.url}
@@ -323,15 +323,15 @@ const Index = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(90deg, rgba(23,19,17,0.9) 0%, rgba(23,19,17,0.52) 42%, rgba(23,19,17,0.15) 100%), linear-gradient(180deg, rgba(23,19,17,0.18) 0%, rgba(23,19,17,0.92) 100%)",
+                  "linear-gradient(90deg, rgba(245,245,240,0.94) 0%, rgba(245,245,240,0.68) 48%, rgba(245,245,240,0.16) 100%), linear-gradient(180deg, rgba(245,245,240,0.08) 0%, rgba(245,245,240,0.94) 100%)",
               }}
             />
             <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
-              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
                 Building in spaces that matter
               </span>
               <h2
-                className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal max-w-[22ch] text-ardent-paper"
+                className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-semibold max-w-[22ch] text-ardent-paper"
                 style={{ fontFamily: serif }}
               >
                 Where we focus.
@@ -340,11 +340,11 @@ const Index = () => {
           </div>
         </section>
 
-        <Section bg="#171311">
+        <Section bg="#F5F5F0">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10 mb-24">
             {spaces.map((s) => (
-              <div key={s.name} className="p-8 min-h-[200px] flex flex-col justify-between" style={{ background: "#1A1614" }}>
-                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime">Focus</span>
+              <div key={s.name} className="p-8 min-h-[200px] flex flex-col justify-between" style={{ background: "#FFFFFF" }}>
+                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-primary">Focus</span>
                 <div>
                   <h3 className="text-[22px] leading-[1.2] mb-2 text-ardent-paper" style={{ fontFamily: serif }}>
                     {s.name}
@@ -355,11 +355,11 @@ const Index = () => {
             ))}
           </div>
 
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
             Recent builds
           </span>
           <h3
-            className="text-[clamp(26px,4vw,40px)] leading-[1.15] font-normal mb-10 text-ardent-paper"
+            className="text-[clamp(26px,4vw,40px)] leading-[1.15] font-semibold mb-10 text-ardent-paper"
             style={{ fontFamily: serif }}
           >
             Real systems, shipped.
@@ -368,20 +368,20 @@ const Index = () => {
             {builds.map((b) => (
               <div
                 key={b.name}
-                className={`p-7 border ${b.featured ? "border-ardent-coral/70" : "border-ardent-paper/10"} flex flex-col`}
-                style={{ background: "#1A1614" }}
+                className={`p-7 border ${b.featured ? "border-primary/50" : "border-ardent-paper/10"} flex flex-col`}
+                style={{ background: "#FFFFFF" }}
               >
                 <div className="flex items-center justify-between mb-4">
-                  <span className={`font-mono text-[10px] tracking-[0.2em] uppercase ${b.featured ? "text-ardent-coral" : "text-ardent-lime"}`}>
+                  <span className={`font-mono text-[10px] tracking-[0.2em] uppercase ${b.featured ? "text-primary" : "text-primary"}`}>
                     {b.featured ? "Featured" : "Build"}
                   </span>
-                  <span className={`font-mono text-[10px] tracking-[0.2em] uppercase px-2 py-1 border ${b.featured ? "border-ardent-coral/50 text-ardent-coral" : "border-ardent-lime/40 text-ardent-lime"}`}>
+                  <span className={`font-mono text-[10px] tracking-[0.2em] uppercase px-2 py-1 border ${b.featured ? "border-border text-primary" : "border-border text-primary"}`}>
                     Status Live
                   </span>
                 </div>
                 <h4 className="text-[22px] mb-3 text-ardent-paper" style={{ fontFamily: serif }}>{b.name}</h4>
                 <p className="text-[14px] leading-[1.6] text-ardent-paper/70 mb-4">{b.desc}</p>
-                <p className="italic text-[13px] mt-auto" style={{ fontFamily: serif, color: "#C8A24D" }}>
+                <p className="font-mono text-[12px] mt-auto" style={{ fontFamily: serif, color: "#0A7D7B" }}>
                   {b.stack}
                 </p>
               </div>
@@ -390,9 +390,9 @@ const Index = () => {
         </Section>
 
         {/* OUR STACK callout */}
-        <section className="px-5 md:px-10 py-12" style={{ background: "#0D0D0D" }}>
+        <section className="px-5 md:px-10 py-12" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto text-center">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-4">Our stack</span>
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-4">Our stack</span>
             <p className="text-[clamp(22px,3vw,30px)] leading-[1.25] text-ardent-paper mb-3" style={{ fontFamily: serif }}>
               We ship and teach what we actually use.
             </p>
@@ -402,7 +402,7 @@ const Index = () => {
             <div className="mt-5">
               <Link
                 to="/services/ai-automation"
-                className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-lime hover:opacity-70"
+                className="font-mono text-[11px] tracking-[0.2em] uppercase text-primary hover:opacity-70"
               >
                 More about AI automation →
               </Link>
@@ -414,12 +414,12 @@ const Index = () => {
         <TestimonialsSection />
 
         {/* 5. ABOUT US — dark */}
-        <Section bg="#0D0D0D" id="about">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+        <Section bg="#F5F5F0" id="about">
+          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
             About us
           </span>
           <h2
-            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-14 text-ardent-paper"
+            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-semibold mb-14 text-ardent-paper"
             style={{ fontFamily: serif }}
           >
             About Us
@@ -427,7 +427,7 @@ const Index = () => {
 
           {/* Founder quote */}
           <div className="mb-16 max-w-[60ch]">
-            <p style={{ fontFamily: serif }} className="italic text-[22px] md:text-[26px] leading-[1.35] text-ardent-paper mb-5">
+            <p style={{ fontFamily: serif }} className="font-semibold text-[22px] md:text-[26px] leading-[1.35] text-ardent-paper mb-5">
               "If you work with Ardent, you're working with us. That's the whole pitch."
             </p>
             <p className="text-[16px] leading-[1.75] text-ardent-paper/80">
@@ -450,10 +450,10 @@ const Index = () => {
                   width={480}
                   height={480}
                   loading="lazy"
-                  className="w-[200px] h-[200px] md:w-[220px] md:h-[220px] rounded-full object-cover mb-5 border-2 border-ardent-lime/30"
+                  className="w-[200px] h-[200px] md:w-[220px] md:h-[220px] rounded-full object-cover mb-5 border-2 border-border"
                 />
                 <h3 className="text-[24px] text-ardent-paper" style={{ fontFamily: serif }}>{m.name}</h3>
-                <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-ardent-lime mt-2">
+                <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-primary mt-2">
                   {m.role}
                 </span>
               </div>

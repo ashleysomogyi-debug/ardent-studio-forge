@@ -59,19 +59,19 @@ export default function BlogIndex() {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#0D0D0D", color: "#F5F5F0" }}>
+    <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#0D0D0D", color: "#0D0D0D" }}>
       <Nav />
 
       <main className="flex-1">
         {/* Hero */}
         <section className="px-6 py-20 md:py-28 max-w-4xl mx-auto text-center">
-          <p className="text-sm font-semibold tracking-widest uppercase mb-4" style={{ color: "#2DD4BF" }}>
+          <p className="text-sm font-semibold tracking-widest uppercase mb-4" style={{ color: "#0A7D7B" }}>
             Ardent Studio
           </p>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
             AI Automation Blog
           </h1>
-          <p className="text-lg md:text-xl max-w-2xl mx-auto" style={{ color: "#A3A3A3" }}>
+          <p className="text-lg md:text-xl max-w-2xl mx-auto" style={{ color: "rgba(13,13,13,0.62)" }}>
             Practical guides for Palm Beach County small businesses. Real tools,
             real workflows, honest takes on what works.
           </p>
@@ -83,30 +83,30 @@ export default function BlogIndex() {
             {posts.map((post) => (
               <article
                 key={post.slug}
-                className="flex flex-col rounded-xl p-6 border transition-colors duration-200 hover:border-teal-400"
+                className="flex flex-col rounded-xl p-6 border transition-colors duration-200 hover:border-primary"
                 style={{
-                  backgroundColor: "#141414",
-                  borderColor: "#262626",
+                  backgroundColor: "#FFFFFF",
+                  borderColor: "rgba(13,13,13,0.08)",
                 }}
               >
-                <p className="text-xs font-medium tracking-wide uppercase mb-3" style={{ color: "#2DD4BF" }}>
+                <p className="text-xs font-medium tracking-wide uppercase mb-3" style={{ color: "#0A7D7B" }}>
                   {post.date}
                 </p>
-                <h2 className="text-base font-semibold leading-snug mb-3 flex-1" style={{ color: "#F5F5F0" }}>
+                <h2 className="text-base font-semibold leading-snug mb-3 flex-1" style={{ color: "#0D0D0D" }}>
                   {post.title}
                 </h2>
-                <p className="text-sm mb-5 leading-relaxed" style={{ color: "#A3A3A3" }}>
+                <p className="text-sm mb-5 leading-relaxed" style={{ color: "rgba(13,13,13,0.62)" }}>
                   {post.excerpt}
                 </p>
                 <Link
                   to={`/blog/${post.slug}`}
                   className="text-sm font-medium transition-colors duration-150"
-                  style={{ color: "#2DD4BF" }}
+                  style={{ color: "#0A7D7B" }}
                   onMouseEnter={(e) =>
-                    ((e.target as HTMLElement).style.color = "#5EEAD4")
+                    ((e.target as HTMLElement).style.color = "#0A7D7B")
                   }
                   onMouseLeave={(e) =>
-                    ((e.target as HTMLElement).style.color = "#2DD4BF")
+                    ((e.target as HTMLElement).style.color = "#0A7D7B")
                   }
                 >
                   Read more &rarr;
