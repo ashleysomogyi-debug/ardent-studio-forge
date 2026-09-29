@@ -225,15 +225,15 @@ const ChatbotWidget = () => {
         >
           <span style={{ color: "#F5F5F0", fontSize: 20 }}>⚡</span>
           <div style={{ flex: 1 }}>
-            <div style={{ color: "#0D0D0D", fontWeight: 600, fontSize: 15 }}>Ardent Studio</div>
-            <div style={{ color: "#0D0D0D", fontSize: 12, opacity: 0.8 }}>Online</div>
+            <div style={{ color: "#FFFFFF", fontWeight: 600, fontSize: 15 }}>Ardent Studio</div>
+            <div style={{ color: "#FFFFFF", fontSize: 12, opacity: 0.85 }}>Online</div>
           </div>
           <button
             onClick={() => setIsOpen(false)}
             style={{
               background: "none",
               border: "none",
-              color: "#0D0D0D",
+              color: "#FFFFFF",
               fontSize: 20,
               cursor: "pointer",
               padding: 4,
@@ -299,6 +299,7 @@ const ChatbotWidget = () => {
                         }
                       : {
                           background: "#0A7D7B",
+                          color: "#FFFFFF",
                         }),
                   }}
                 >
@@ -486,12 +487,12 @@ const ChatbotWidget = () => {
         onMouseLeave={(e) => { (e.currentTarget as HTMLButtonElement).style.transform = "scale(1)"; }}
       >
         {isOpen ? (
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0D0D0D" strokeWidth="2.5" strokeLinecap="round">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2.5" strokeLinecap="round">
             <line x1="18" y1="6" x2="6" y2="18" />
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
         ) : (
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0D0D0D" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
           </svg>
         )}

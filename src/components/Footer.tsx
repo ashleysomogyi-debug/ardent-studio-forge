@@ -28,18 +28,18 @@ const locations = [
 ];
 
 const Footer = () => (
-  <footer id="book-a-call" className="bg-ardent-studio text-[#F5F5F0] py-10 md:py-16 px-5 md:px-10">
+  <footer id="book-a-call" className="bg-footer-bg text-footer-text py-10 md:py-16 px-5 md:px-10">
     <div className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       {/* Brand */}
       <div className="flex flex-col">
         <Link to="/" className="inline-block">
-          <span className="font-sans text-[16px] md:text-[18px] text-[#F5F5F0] font-semibold">Ardent Studio</span>
+          <span className="font-sans text-[16px] md:text-[18px] text-footer-text font-semibold">Ardent Studio</span>
           <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase block mt-1">AI Automation · Palm Beach County</span>
         </Link>
-        <p className="font-sans text-[13px] text-muted-foreground mt-4 leading-[1.6]">
+        <p className="font-sans text-[13px] text-footer-muted mt-4 leading-[1.6]">
           AI automation for small businesses in Palm Beach County and South Florida. Based in Boynton Beach, FL.
         </p>
-        <span className="font-mono text-[11px] text-muted-foreground mt-4">© 2026 Ardent Studio</span>
+        <span className="font-mono text-[11px] text-footer-muted mt-4">© 2026 Ardent Studio</span>
       </div>
 
       {/* Services */}
@@ -48,7 +48,7 @@ const Footer = () => (
         <ul className="space-y-2.5">
           {services.map((s) => (
             <li key={s.to}>
-              <Link to={s.to} className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors">
+              <Link to={s.to} className="font-sans text-[14px] text-footer-muted hover:text-footer-text transition-colors">
                 {s.label}
               </Link>
             </li>
@@ -62,13 +62,13 @@ const Footer = () => (
         <ul className="space-y-2.5">
           {locations.map((loc) => (
             <li key={loc.to}>
-              <Link to={loc.to} className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors">
+              <Link to={loc.to} className="font-sans text-[14px] text-footer-muted hover:text-footer-text transition-colors">
                 {loc.label}
               </Link>
             </li>
           ))}
           <li>
-            <span className="font-sans text-[13px] text-muted-foreground/60">+ all of Palm Beach County, FL</span>
+            <span className="font-sans text-[13px] text-footer-muted">+ all of Palm Beach County, FL</span>
           </li>
         </ul>
       </div>
@@ -81,11 +81,11 @@ const Footer = () => (
             {company.map((c) => (
               <li key={c.label}>
                 {c.external ? (
-                  <a href={c.href} target="_blank" rel="noopener noreferrer" className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors">
+                  <a href={c.href} target="_blank" rel="noopener noreferrer" className="font-sans text-[14px] text-footer-muted hover:text-footer-text transition-colors">
                     {c.label}
                   </a>
                 ) : (
-                  <a href={c.href} className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors">
+                  <a href={c.href} className="font-sans text-[14px] text-footer-muted hover:text-footer-text transition-colors">
                     {c.label}
                   </a>
                 )}
@@ -93,13 +93,13 @@ const Footer = () => (
             ))}
           </ul>
           <address className="not-italic space-y-2 pt-2">
-            <p className="font-sans text-[13px] text-muted-foreground leading-[1.6]">
+            <p className="font-sans text-[13px] text-footer-muted leading-[1.6]">
               Boynton Beach, FL<br />Palm Beach County
             </p>
-            <a href="tel:+17282010192" className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors block">
+            <a href="tel:+17282010192" className="font-sans text-[14px] text-footer-muted hover:text-footer-text transition-colors block">
               (728) 201-0192
             </a>
-            <a href="mailto:hello@ardentstudio.io" className="font-sans text-[14px] text-muted-foreground hover:text-foreground transition-colors block">
+            <a href="mailto:hello@ardentstudio.io" className="font-sans text-[14px] text-footer-muted hover:text-footer-text transition-colors block">
               hello@ardentstudio.io
             </a>
           </address>
@@ -109,7 +109,7 @@ const Footer = () => (
 
     {/* SEO city list strip -->*/}
     <div className="max-w-[1200px] mx-auto mt-10 pt-6 border-t border-border-subtle">
-      <p className="font-sans text-[12px] text-muted-foreground/50 leading-[1.8] text-center">
+      <p className="font-sans text-[12px] text-footer-muted leading-[1.8] text-center">
         Serving small businesses across Palm Beach County, FL — West Palm Beach · Boca Raton · Delray Beach · Boynton Beach · Jupiter · Palm Beach Gardens · Wellington · Lake Worth Beach · North Palm Beach · Riviera Beach · Royal Palm Beach · Greenacres · Lantana · Tequesta · Juno Beach · Palm Beach · and all of South Florida
       </p>
     </div>
