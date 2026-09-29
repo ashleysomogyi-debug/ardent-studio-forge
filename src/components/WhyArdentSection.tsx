@@ -14,8 +14,8 @@ const cards = [
 ];
 
 const WhyArdentSection = () => (
-  <section className="relative py-[112px] px-5 md:px-10 overflow-hidden" style={{ background: "#1A1A1A" }}>
-    <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(145deg, rgba(13,191,188,0.04) 0%, transparent 40%, rgba(13,191,188,0.03) 100%)" }} />
+  <section className="relative py-[112px] px-5 md:px-10 overflow-hidden" style={{ background: "#FFFFFF" }}>
+    <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(145deg, rgba(10,125,123,0.04) 0%, transparent 40%, rgba(10,125,123,0.03) 100%)" }} />
 
     <div className="max-w-[1200px] mx-auto relative z-10">
       <div className="reveal-section mb-6 md:mb-10">
@@ -27,7 +27,7 @@ const WhyArdentSection = () => (
         {/* Left — large italic pull quote */}
         <div className="flex items-start">
           <div className="border-l-2 border-ardent-cyan/40 pl-8 md:pl-10">
-            <h2 className="font-sans italic text-[clamp(32px,8vw,56px)] md:text-[clamp(32px,4.5vw,56px)] font-light leading-[1.15] text-foreground">
+            <h2 className="font-sans text-[clamp(32px,8vw,56px)] md:text-[clamp(32px,4.5vw,56px)] font-light leading-[1.15] text-foreground">
               We're not just builders. We're <span className="text-ardent-cyan">problem-solvers.</span>
             </h2>
           </div>

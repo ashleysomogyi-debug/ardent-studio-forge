@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 
 const words = ["connects", "works", "matters"];
-const colors = ["text-ardent-cyan", "text-ardent-lime", "text-ardent-coral"];
+const colors = ["text-primary", "text-primary", "text-primary"];
 
 const TYPE_MS = 85;
 const DELETE_MS = 50;
 const HOLD_AFTER_TYPE = 1800;
 const HOLD_AFTER_DELETE = 250;
 
-const serif = "'Georgia', 'Cormorant Garamond', serif";
+const serif = "'Inter', system-ui, sans-serif";
 
 const TypingHeadline = () => {
   const [reduced, setReduced] = useState(false);

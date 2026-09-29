@@ -73,7 +73,7 @@ const CustomCursor = () => {
       ringOpacity += (targetOpacity - ringOpacity) * 0.2;
       dot.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
       ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0) translate(-50%, -50%) scale(${ringScale})`;
-      ring.style.borderColor = `rgba(195, 247, 58, ${ringOpacity})`;
+      ring.style.borderColor = `rgba(10, 125, 123, ${ringOpacity})`;
       raf = requestAnimationFrame(tick);
     };
 
@@ -112,9 +112,9 @@ const CustomCursor = () => {
           width: 36,
           height: 36,
           borderRadius: "9999px",
-          border: "1.5px solid #C3F73A",
+          border: "1.5px solid #0A7D7B",
           pointerEvents: "none",
-          mixBlendMode: "difference",
+          mixBlendMode: "normal",
           zIndex: 9998,
           opacity: 0,
           willChange: "transform, opacity",
@@ -131,9 +131,9 @@ const CustomCursor = () => {
           width: 8,
           height: 8,
           borderRadius: "9999px",
-          background: "#F7F3EC",
+          background: "#0A7D7B",
           pointerEvents: "none",
-          mixBlendMode: "difference",
+          mixBlendMode: "normal",
           zIndex: 9999,
           opacity: 0,
           willChange: "transform, opacity",

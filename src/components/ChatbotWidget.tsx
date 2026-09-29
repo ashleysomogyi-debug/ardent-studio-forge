@@ -203,8 +203,8 @@ const ChatbotWidget = () => {
           overflow: "hidden",
           display: "flex",
           flexDirection: "column",
-          background: "#0D0D0D",
-          boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
+          background: "#FFFFFF",
+          boxShadow: "0 20px 60px rgba(13,13,13,0.16)",
           opacity: isOpen ? 1 : 0,
           transform: isOpen ? "translateY(0)" : "translateY(20px)",
           pointerEvents: isOpen ? "auto" : "none",
@@ -215,7 +215,7 @@ const ChatbotWidget = () => {
         {/* Header */}
         <div
           style={{
-            background: "linear-gradient(135deg, #0DBFBC, #0a9a96)",
+            background: "#0A7D7B",
             padding: "16px 20px",
             display: "flex",
             alignItems: "center",
@@ -223,17 +223,17 @@ const ChatbotWidget = () => {
             flexShrink: 0,
           }}
         >
-          <span style={{ color: "#C8A24D", fontSize: 20 }}>⚡</span>
+          <span style={{ color: "#F5F5F0", fontSize: 20 }}>⚡</span>
           <div style={{ flex: 1 }}>
-            <div style={{ color: "#F7F3EC", fontWeight: 600, fontSize: 15 }}>Ardent Studio</div>
-            <div style={{ color: "#F7F3EC", fontSize: 12, opacity: 0.8 }}>Online</div>
+            <div style={{ color: "#0D0D0D", fontWeight: 600, fontSize: 15 }}>Ardent Studio</div>
+            <div style={{ color: "#0D0D0D", fontSize: 12, opacity: 0.8 }}>Online</div>
           </div>
           <button
             onClick={() => setIsOpen(false)}
             style={{
               background: "none",
               border: "none",
-              color: "#F7F3EC",
+              color: "#0D0D0D",
               fontSize: 20,
               cursor: "pointer",
               padding: 4,
@@ -272,7 +272,7 @@ const ChatbotWidget = () => {
                       width: 28,
                       height: 28,
                       borderRadius: "50%",
-                      background: "linear-gradient(135deg, #0DBFBC, #0a9a96)",
+                      background: "#0A7D7B",
                       display: "flex",
                       alignItems: "center",
                       justifyContent: "center",
@@ -291,14 +291,14 @@ const ChatbotWidget = () => {
                     borderRadius: 12,
                     fontSize: 14,
                     lineHeight: 1.6,
-                    color: "#F7F3EC",
+                    color: "#0D0D0D",
                     ...(msg.role === "bot"
                       ? {
-                          background: "#1a1a1a",
-                          borderLeft: "3px solid #0DBFBC",
+                          background: "#F5F5F0",
+                          borderLeft: "3px solid #0A7D7B",
                         }
                       : {
-                          background: "linear-gradient(135deg, #0DBFBC, #0a9a96)",
+                          background: "#0A7D7B",
                         }),
                   }}
                 >
@@ -316,8 +316,8 @@ const ChatbotWidget = () => {
                       className="ardent-chat-qr"
                       style={{
                         background: "transparent",
-                        border: "1px solid #0DBFBC",
-                        color: "#0DBFBC",
+                        border: "1px solid #0A7D7B",
+                        color: "#0A7D7B",
                         borderRadius: 8,
                         padding: "8px 14px",
                         fontSize: 13,
@@ -327,12 +327,12 @@ const ChatbotWidget = () => {
                         transition: "all 0.2s ease",
                       }}
                       onMouseEnter={(e) => {
-                        (e.target as HTMLButtonElement).style.background = "#0DBFBC";
+                        (e.target as HTMLButtonElement).style.background = "#0A7D7B";
                         (e.target as HTMLButtonElement).style.color = "#0D0D0D";
                       }}
                       onMouseLeave={(e) => {
                         (e.target as HTMLButtonElement).style.background = "transparent";
-                        (e.target as HTMLButtonElement).style.color = "#0DBFBC";
+                        (e.target as HTMLButtonElement).style.color = "#0A7D7B";
                       }}
                     >
                       {qr}
@@ -351,7 +351,7 @@ const ChatbotWidget = () => {
                   width: 28,
                   height: 28,
                   borderRadius: "50%",
-                  background: "linear-gradient(135deg, #0DBFBC, #0a9a96)",
+                  background: "#0A7D7B",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -361,7 +361,7 @@ const ChatbotWidget = () => {
               >
                 ⚡
               </div>
-              <div style={{ display: "flex", gap: 4, padding: "10px 14px", background: "#1a1a1a", borderRadius: 12, borderLeft: "3px solid #0DBFBC" }}>
+              <div style={{ display: "flex", gap: 4, padding: "10px 14px", background: "#F5F5F0", borderRadius: 12, borderLeft: "3px solid #0A7D7B" }}>
                 {[0, 1, 2].map((i) => (
                   <span
                     key={i}
@@ -369,7 +369,7 @@ const ChatbotWidget = () => {
                       width: 7,
                       height: 7,
                       borderRadius: "50%",
-                      background: "#0DBFBC",
+                      background: "#0A7D7B",
                       display: "inline-block",
                       animation: `ardentBounce 1.4s infinite ease-in-out`,
                       animationDelay: `${i * 0.16}s`,
@@ -385,7 +385,7 @@ const ChatbotWidget = () => {
             <button
               onClick={handleBookCall}
               style={{
-                background: "linear-gradient(135deg, #C8A24D, #B8862A)",
+                background: "#C3F73A",
                 color: "#0D0D0D",
                 border: "none",
                 borderRadius: 10,
@@ -409,7 +409,7 @@ const ChatbotWidget = () => {
         </div>
 
         {/* Input Area */}
-        <div style={{ padding: "12px 16px", borderTop: "1px solid #222", flexShrink: 0 }}>
+        <div style={{ padding: "12px 16px", borderTop: "1px solid rgba(13,13,13,0.08)", flexShrink: 0 }}>
           <div style={{ display: "flex", gap: 8, alignItems: "flex-end" }}>
             <textarea
               ref={textareaRef}
@@ -420,11 +420,11 @@ const ChatbotWidget = () => {
               rows={1}
               style={{
                 flex: 1,
-                background: "#1a1a1a",
-                border: "1px solid #333",
+                background: "#F5F5F0",
+                border: "1px solid rgba(13,13,13,0.14)",
                 borderRadius: 10,
                 padding: "10px 14px",
-                color: "#F7F3EC",
+                color: "#0D0D0D",
                 fontSize: 14,
                 fontFamily: "Inter, sans-serif",
                 resize: "none",
@@ -441,7 +441,7 @@ const ChatbotWidget = () => {
                 width: 40,
                 height: 40,
                 borderRadius: 10,
-                background: input.trim() ? "#0DBFBC" : "#333",
+                background: input.trim() ? "#0A7D7B" : "#D7D7D1",
                 border: "none",
                 cursor: input.trim() ? "pointer" : "default",
                 display: "flex",
@@ -472,14 +472,14 @@ const ChatbotWidget = () => {
           width: 60,
           height: 60,
           borderRadius: "50%",
-          background: "#0DBFBC",
+          background: "#0A7D7B",
           border: "none",
           cursor: "pointer",
           zIndex: 9998,
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          boxShadow: "0 4px 20px rgba(13,191,188,0.4)",
+          boxShadow: "0 4px 20px rgba(10,125,123,0.28)",
           transition: "transform 0.2s ease",
         }}
         onMouseEnter={(e) => { (e.currentTarget as HTMLButtonElement).style.transform = "scale(1.1)"; }}

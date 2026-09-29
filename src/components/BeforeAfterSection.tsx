@@ -21,7 +21,7 @@ const BeforeAfterSection = () => (
     <div className="max-w-[1000px] mx-auto reveal-section">
       <div className="grid grid-cols-1 md:grid-cols-2 rounded-xl overflow-hidden border border-border">
         {/* Left column */}
-        <div className="bg-[#141414]">
+        <div className="bg-card">
           <div className="px-6 py-5 border-b border-border">
             <span className="font-mono text-[11px] text-foreground tracking-[0.2em] uppercase">
               Without Ardent

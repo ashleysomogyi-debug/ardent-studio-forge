@@ -5,7 +5,7 @@ const PoochesPearlsProsecco = () => {
     // Load Google Fonts for this page
     const link = document.createElement("link");
     link.href =
-      "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap";
+      "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap";
     link.rel = "stylesheet";
     document.head.appendChild(link);
     return () => {
@@ -19,17 +19,17 @@ const PoochesPearlsProsecco = () => {
         .ppp-page *, .ppp-page *::before, .ppp-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         .ppp-page {
-          --bg: #0E0E11;
-          --bg-card: #161619;
-          --teal: #2EC4B6;
-          --teal-dim: #1F8A80;
-          --gold: #D4A843;
-          --gold-light: #E8C876;
-          --white: #FFFFFF;
-          --white-90: #E8E8E8;
-          --white-60: #999999;
-          --white-40: #666666;
-          --white-20: #333333;
+          --bg: #F5F5F0;
+          --bg-card: #FFFFFF;
+          --teal: #0A7D7B;
+          --teal-dim: #0A7D7B;
+          --gold: #0A7D7B;
+          --gold-light: #0A7D7B;
+          --white: #0D0D0D;
+          --white-90: rgba(13,13,13,0.78);
+          --white-60: rgba(13,13,13,0.62);
+          --white-40: rgba(13,13,13,0.42);
+          --white-20: rgba(13,13,13,0.08);
 
           font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
           background: var(--bg);
@@ -41,7 +41,7 @@ const PoochesPearlsProsecco = () => {
 
         .ppp-page .top-bar {
           height: 3px;
-          background: linear-gradient(90deg, var(--gold), var(--teal), var(--gold));
+          background: var(--teal);
         }
 
         .ppp-page .header {
@@ -75,12 +75,12 @@ const PoochesPearlsProsecco = () => {
           letter-spacing: 0.15em;
           text-transform: uppercase;
           color: var(--gold);
-          border: 1px solid rgba(212, 168, 67, 0.3);
+          border: 1px solid rgba(13,13,13,0.08);
           padding: 0.35rem 1rem;
           border-radius: 100px;
         }
         .ppp-page .event-banner .event-name {
-          font-family: 'Playfair Display', serif;
+          font-family: 'Inter', sans-serif;
           font-size: 1.1rem;
           color: var(--white);
           margin-top: 0.75rem;
@@ -107,19 +107,19 @@ const PoochesPearlsProsecco = () => {
           top: 0; left: 50%;
           transform: translateX(-50%);
           width: 300px; height: 300px;
-          background: radial-gradient(circle, rgba(46, 196, 182, 0.08) 0%, transparent 70%);
+          background: transparent;
           pointer-events: none;
         }
         .ppp-page .hero h1 {
-          font-family: 'Playfair Display', serif;
+          font-family: 'Inter', sans-serif;
           font-size: 2.2rem;
           font-weight: 700;
           color: var(--white);
           line-height: 1.2;
         }
         .ppp-page .hero .subtitle {
-          font-family: 'Playfair Display', serif;
-          font-style: italic;
+          font-family: 'Inter', sans-serif;
+          font-style: normal;
           font-size: 1.15rem;
           color: var(--teal);
           margin-top: 0.5rem;
@@ -128,10 +128,10 @@ const PoochesPearlsProsecco = () => {
           display: inline-block;
           margin-top: 1.25rem;
           padding: 0.6rem 2rem;
-          border: 1.5px solid var(--gold);
+          border: 1px solid rgba(13,13,13,0.08);
           border-radius: 8px;
-          background: rgba(22, 22, 25, 0.8);
-          font-family: 'Playfair Display', serif;
+          background: #FFFFFF;
+          font-family: 'Inter', sans-serif;
           font-size: 1.2rem;
           color: var(--gold-light);
         }
@@ -196,7 +196,7 @@ const PoochesPearlsProsecco = () => {
           position: absolute;
           top: 0; left: 0; right: 0;
           height: 2px;
-          background: linear-gradient(90deg, var(--teal), var(--teal-dim));
+          background: var(--teal);
         }
         .ppp-page .service-card .num {
           font-size: 1.8rem;
@@ -205,7 +205,7 @@ const PoochesPearlsProsecco = () => {
           line-height: 1;
         }
         .ppp-page .service-card h3 {
-          font-family: 'Playfair Display', serif;
+          font-family: 'Inter', sans-serif;
           font-size: 1.1rem;
           color: var(--white);
           margin-top: 0.5rem;
@@ -230,8 +230,8 @@ const PoochesPearlsProsecco = () => {
         .ppp-page .cta-section .learn-more {
           display: inline-block;
           padding: 0.85rem 2.5rem;
-          background: var(--gold);
-          color: var(--bg);
+          background: #C3F73A;
+          color: #0D0D0D;
           font-weight: 700;
           font-size: 0.85rem;
           letter-spacing: 0.06em;
@@ -240,7 +240,7 @@ const PoochesPearlsProsecco = () => {
           border-radius: 8px;
           transition: background 0.3s;
         }
-        .ppp-page .cta-section .learn-more:hover { background: var(--gold-light); }
+        .ppp-page .cta-section .learn-more:hover { background: #C3F73A; }
         .ppp-page .cta-section .subtext {
           margin-top: 1rem;
           font-size: 0.8rem;

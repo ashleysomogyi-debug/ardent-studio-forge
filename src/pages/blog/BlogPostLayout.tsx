@@ -31,7 +31,7 @@ export default function BlogPostLayout({
   return (
     <div
       className="min-h-screen flex flex-col"
-      style={{ backgroundColor: "#0D0D0D", color: "#0D0D0D" }}
+      style={{ backgroundColor: "#F5F5F0", color: "#0D0D0D" }}
     >
       <Nav />
 
@@ -92,16 +92,16 @@ export default function BlogPostLayout({
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm font-semibold px-5 py-3 rounded-lg transition-colors duration-150"
               style={{
-                backgroundColor: "#0A7D7B",
+                backgroundColor: "#C3F73A",
                 color: "#0D0D0D",
               }}
               onMouseEnter={(e) =>
                 ((e.currentTarget as HTMLElement).style.backgroundColor =
-                  "#0A7D7B")
+                  "#C3F73A")
               }
               onMouseLeave={(e) =>
                 ((e.currentTarget as HTMLElement).style.backgroundColor =
-                  "#0A7D7B")
+                  "#C3F73A")
               }
             >
               Book a free 15-minute call &rarr;
