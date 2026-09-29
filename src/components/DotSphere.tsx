@@ -8,10 +8,10 @@ interface Point {
 }
 
 const pickColor = (i: number): string => {
-  if (i % 20 === 0) return "rgba(255, 107, 107, 0.8)"; // coral 5%
-  if (i % 10 === 0) return "rgba(110, 221, 196, 0.6)"; // mint 10%
-  if (i % 4 === 0) return "rgba(79, 195, 247, 0.6)"; // cyan 25%
-  return "rgba(195, 247, 58, 0.5)"; // lime 60%
+  if (i % 20 === 0) return "rgba(10, 125, 123, 0.8)";
+  if (i % 10 === 0) return "rgba(10, 125, 123, 0.6)";
+  if (i % 4 === 0) return "rgba(13, 13, 13, 0.28)";
+  return "rgba(10, 125, 123, 0.42)";
 };
 
 const N = 280;
@@ -88,7 +88,7 @@ const DotSphere = () => {
       };
 
       // latitude rings first
-      ctx.strokeStyle = "rgba(79, 195, 247, 0.08)";
+      ctx.strokeStyle = "rgba(10, 125, 123, 0.10)";
       ctx.lineWidth = 1;
       for (const lat of latitudes) {
         const r = Math.sqrt(1 - lat * lat);

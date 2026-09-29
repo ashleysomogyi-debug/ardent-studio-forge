@@ -26,12 +26,12 @@ const TeamSection = () => {
   return (
     <section className="reveal-section py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="font-serif text-4xl md:text-5xl text-center text-white mb-3">
+        <h2 className="font-sans text-4xl md:text-5xl text-center text-foreground mb-3">
           Meet the Team
         </h2>
         <p
           className="font-mono text-sm text-center mb-16"
-          style={{ color: "rgba(244,244,246,0.52)" }}
+          style={{ color: "rgba(13,13,13,0.62)" }}
         >
           The humans and hounds behind the builds
         </p>
@@ -42,17 +42,17 @@ const TeamSection = () => {
           <div
             className="rounded-xl p-8 transition-colors duration-300"
             style={{
-              background: "#0d0d0d",
-              border: "1px solid rgba(244,244,246,0.08)",
+              background: "#FFFFFF",
+              border: "1px solid rgba(13,13,13,0.08)",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(201,169,110,0.25)")}
-            onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(244,244,246,0.08)")}
+            onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(10,125,123,0.28)")}
+            onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(13,13,13,0.08)")}
           >
             <div className="grid grid-cols-1 md:grid-cols-[260px_1fr] gap-8">
               {/* Photo column */}
               <div
                 className="relative rounded-xl overflow-hidden"
-                style={{ border: "1px solid rgba(244,244,246,0.08)" }}
+                style={{ border: "1px solid rgba(13,13,13,0.08)" }}
               >
                 <img
                   src="/ashley-profile.jpg"
@@ -65,7 +65,7 @@ const TeamSection = () => {
                     fontSize: "10px",
                     background: "rgba(7,7,7,0.72)",
                     backdropFilter: "blur(10px)",
-                    color: "#c9a96e",
+                    color: "#0A7D7B",
                   }}
                 >
                   Palm Beach County
@@ -80,19 +80,19 @@ const TeamSection = () => {
                   style={{
                     fontSize: "11px",
                     letterSpacing: "2px",
-                    background: "rgba(201,169,110,0.08)",
-                    border: "1px solid rgba(201,169,110,0.25)",
-                    color: "#c9a96e",
+                    background: "rgba(10,125,123,0.08)",
+                    border: "1px solid rgba(10,125,123,0.28)",
+                    color: "#0A7D7B",
                   }}
                 >
                   Founder
                 </span>
 
-                <h3 className="font-serif text-[42px] font-bold text-white leading-tight">
+                <h3 className="font-sans text-[42px] font-bold text-foreground leading-tight">
                   Dr Ashley Somogyi
                 </h3>
-                <p className="font-mono text-sm mb-6" style={{ color: "rgba(244,244,246,0.52)" }}>
-                  Founder &amp; Builder · <span style={{ color: "#c9a96e" }}>Ardent Studio</span>
+                <p className="font-mono text-sm mb-6" style={{ color: "rgba(13,13,13,0.62)" }}>
+                  Founder &amp; Builder · <span style={{ color: "#0A7D7B" }}>Ardent Studio</span>
                 </p>
 
                 <p
@@ -100,12 +100,12 @@ const TeamSection = () => {
                   style={{
                     fontSize: "13px",
                     lineHeight: 1.85,
-                    color: "rgba(244,244,246,0.78)",
+                    color: "rgba(13,13,13,0.78)",
                   }}
                 >
                   I build apps, automations and digital tools for small businesses that need real
                   results—not a template and a prayer. When you work with Ardent Studio,{" "}
-                  <span className="font-medium" style={{ color: "#c9a96e" }}>
+                  <span className="font-medium" style={{ color: "#0A7D7B" }}>
                     you work with me directly
                   </span>
                   . No account managers, no overseas handoffs, no wondering who's actually building
@@ -116,8 +116,8 @@ const TeamSection = () => {
                 <div
                   className="py-5 mb-6"
                   style={{
-                    borderTop: "1px solid rgba(244,244,246,0.08)",
-                    borderBottom: "1px solid rgba(244,244,246,0.08)",
+                    borderTop: "1px solid rgba(13,13,13,0.08)",
+                    borderBottom: "1px solid rgba(13,13,13,0.08)",
                   }}
                 >
                   <div className="flex flex-col gap-3.5">
@@ -128,7 +128,7 @@ const TeamSection = () => {
                           style={{
                             fontSize: "10px",
                             letterSpacing: "1.5px",
-                            color: "rgba(244,244,246,0.35)",
+                            color: "rgba(13,13,13,0.42)",
                             width: "90px",
                           }}
                         >
@@ -136,7 +136,7 @@ const TeamSection = () => {
                         </span>
                         <span
                           className="font-mono"
-                          style={{ fontSize: "13px", color: "rgba(244,244,246,0.78)" }}
+                          style={{ fontSize: "13px", color: "rgba(13,13,13,0.78)" }}
                         >
                           {d.value}
                         </span>
@@ -153,9 +153,9 @@ const TeamSection = () => {
                       className="rounded-md px-3.5 py-1.5 font-mono"
                       style={{
                         fontSize: "11px",
-                        background: "rgba(244,244,246,0.04)",
-                        border: "1px solid rgba(244,244,246,0.08)",
-                        color: "rgba(244,244,246,0.52)",
+                        background: "rgba(13,13,13,0.04)",
+                        border: "1px solid rgba(13,13,13,0.08)",
+                        color: "rgba(13,13,13,0.62)",
                       }}
                     >
                       {tag}
@@ -170,17 +170,17 @@ const TeamSection = () => {
           <div
             className="rounded-xl p-8 transition-colors duration-300"
             style={{
-              background: "#0d0d0d",
-              border: "1px solid rgba(244,244,246,0.08)",
+              background: "#FFFFFF",
+              border: "1px solid rgba(13,13,13,0.08)",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(201,169,110,0.25)")}
-            onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(244,244,246,0.08)")}
+            onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(10,125,123,0.28)")}
+            onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(13,13,13,0.08)")}
           >
             <div className="grid grid-cols-1 md:grid-cols-[260px_1fr] gap-8">
               {/* Photo column */}
               <div
                 className="relative rounded-xl overflow-hidden"
-                style={{ border: "1px solid rgba(244,244,246,0.08)" }}
+                style={{ border: "1px solid rgba(13,13,13,0.08)" }}
               >
                 <img
                   src="/wesley-profile.jpg"
@@ -197,19 +197,19 @@ const TeamSection = () => {
                   style={{
                     fontSize: "11px",
                     letterSpacing: "2px",
-                    background: "rgba(201,169,110,0.08)",
-                    border: "1px solid rgba(201,169,110,0.25)",
-                    color: "#c9a96e",
+                    background: "rgba(10,125,123,0.08)",
+                    border: "1px solid rgba(10,125,123,0.28)",
+                    color: "#0A7D7B",
                   }}
                 >
                   Co-Founder
                 </span>
 
-                <h3 className="font-serif text-[42px] font-bold text-white leading-tight">
+                <h3 className="font-sans text-[42px] font-bold text-foreground leading-tight">
                   Wesley Price
                 </h3>
-                <p className="font-mono text-sm mb-6" style={{ color: "rgba(244,244,246,0.52)" }}>
-                  Strategy &amp; Operations · <span style={{ color: "#c9a96e" }}>Ardent Studio</span>
+                <p className="font-mono text-sm mb-6" style={{ color: "rgba(13,13,13,0.62)" }}>
+                  Strategy &amp; Operations · <span style={{ color: "#0A7D7B" }}>Ardent Studio</span>
                 </p>
 
                 <p
@@ -217,11 +217,11 @@ const TeamSection = () => {
                   style={{
                     fontSize: "13px",
                     lineHeight: 1.85,
-                    color: "rgba(244,244,246,0.78)",
+                    color: "rgba(13,13,13,0.78)",
                   }}
                 >
                   Wesley keeps the machine running. While Ashley builds,{" "}
-                  <span className="font-medium" style={{ color: "#c9a96e" }}>
+                  <span className="font-medium" style={{ color: "#0A7D7B" }}>
                     Wesley makes sure the right things get built
                   </span>
                   —in the right order, for the right reasons. He handles the strategy, client
@@ -233,8 +233,8 @@ const TeamSection = () => {
                 <div
                   className="py-5 mb-6"
                   style={{
-                    borderTop: "1px solid rgba(244,244,246,0.08)",
-                    borderBottom: "1px solid rgba(244,244,246,0.08)",
+                    borderTop: "1px solid rgba(13,13,13,0.08)",
+                    borderBottom: "1px solid rgba(13,13,13,0.08)",
                   }}
                 >
                   <div className="flex flex-col gap-3.5">
@@ -245,7 +245,7 @@ const TeamSection = () => {
                           style={{
                             fontSize: "10px",
                             letterSpacing: "1.5px",
-                            color: "rgba(244,244,246,0.35)",
+                            color: "rgba(13,13,13,0.42)",
                             width: "90px",
                           }}
                         >
@@ -253,7 +253,7 @@ const TeamSection = () => {
                         </span>
                         <span
                           className="font-mono"
-                          style={{ fontSize: "13px", color: "rgba(244,244,246,0.78)" }}
+                          style={{ fontSize: "13px", color: "rgba(13,13,13,0.78)" }}
                         >
                           {d.value}
                         </span>
@@ -270,9 +270,9 @@ const TeamSection = () => {
                       className="rounded-md px-3.5 py-1.5 font-mono"
                       style={{
                         fontSize: "11px",
-                        background: "rgba(244,244,246,0.04)",
-                        border: "1px solid rgba(244,244,246,0.08)",
-                        color: "rgba(244,244,246,0.52)",
+                        background: "rgba(13,13,13,0.04)",
+                        border: "1px solid rgba(13,13,13,0.08)",
+                        color: "rgba(13,13,13,0.62)",
                       }}
                     >
                       {tag}
@@ -287,11 +287,11 @@ const TeamSection = () => {
           <div
             className="rounded-xl p-8 transition-colors duration-300"
             style={{
-              background: "#0d0d0d",
-              border: "1px solid rgba(244,244,246,0.08)",
+              background: "#FFFFFF",
+              border: "1px solid rgba(13,13,13,0.08)",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(201,169,110,0.25)")}
-            onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(244,244,246,0.08)")}
+            onMouseEnter={(e) => (e.currentTarget.style.borderColor = "rgba(10,125,123,0.28)")}
+            onMouseLeave={(e) => (e.currentTarget.style.borderColor = "rgba(13,13,13,0.08)")}
           >
             {/* Role badge */}
             <span
@@ -299,25 +299,25 @@ const TeamSection = () => {
               style={{
                 fontSize: "11px",
                 letterSpacing: "2px",
-                background: "rgba(201,169,110,0.08)",
-                border: "1px solid rgba(201,169,110,0.25)",
-                color: "#c9a96e",
+                background: "rgba(10,125,123,0.08)",
+                border: "1px solid rgba(10,125,123,0.28)",
+                color: "#0A7D7B",
               }}
             >
               🐾 Chief of Snuggles &amp; Snacks
             </span>
 
-            <h3 className="font-serif text-[42px] font-bold text-white leading-tight">
-              Loki <span className="italic font-normal" style={{ color: "#c9a96e" }}>&amp;</span> Willow
+            <h3 className="font-sans text-[42px] font-bold text-foreground leading-tight">
+              Loki <span className="font-medium" style={{ color: "#0A7D7B" }}>&amp;</span> Willow
             </h3>
-            <p className="font-mono text-sm mb-8" style={{ color: "rgba(244,244,246,0.52)" }}>
+            <p className="font-mono text-sm mb-8" style={{ color: "rgba(13,13,13,0.62)" }}>
               French Bulldogs · Palm Beach County, FL
             </p>
 
             {/* Photo collage */}
             <div className="grid grid-cols-2 gap-1.5 rounded-xl overflow-hidden mb-8">
               {/* Top row — full width */}
-              <div className="col-span-2 relative overflow-hidden h-[280px]" style={{ background: "#0d0d0d" }}>
+              <div className="col-span-2 relative overflow-hidden h-[280px]" style={{ background: "#FFFFFF" }}>
                 <img
                   src="/loki-willow-chairs.jpg"
                   alt="Loki and Willow on chairs"
@@ -329,7 +329,7 @@ const TeamSection = () => {
                     fontSize: "10px",
                     background: "rgba(7,7,7,0.72)",
                     backdropFilter: "blur(10px)",
-                    color: "#c9a96e",
+                    color: "#0A7D7B",
                   }}
                 >
                   Delray Beach
@@ -337,7 +337,7 @@ const TeamSection = () => {
               </div>
 
               {/* Bottom left */}
-              <div className="relative overflow-hidden h-[220px]" style={{ background: "#0d0d0d" }}>
+              <div className="relative overflow-hidden h-[220px]" style={{ background: "#FFFFFF" }}>
                 <img
                   src="/loki-willow-special.jpg"
                   alt="Loki and Willow"
@@ -349,7 +349,7 @@ const TeamSection = () => {
                     fontSize: "10px",
                     background: "rgba(7,7,7,0.72)",
                     backdropFilter: "blur(10px)",
-                    color: "#c9a96e",
+                    color: "#0A7D7B",
                   }}
                 >
                   Loki &amp; Willow
@@ -357,7 +357,7 @@ const TeamSection = () => {
               </div>
 
               {/* Bottom right */}
-              <div className="relative overflow-hidden h-[220px]" style={{ background: "#0d0d0d" }}>
+              <div className="relative overflow-hidden h-[220px]" style={{ background: "#FFFFFF" }}>
                 <img
                   src="/willow-beach-towel.jpg"
                   alt="Willow at the beach"
@@ -369,7 +369,7 @@ const TeamSection = () => {
                     fontSize: "10px",
                     background: "rgba(7,7,7,0.72)",
                     backdropFilter: "blur(10px)",
-                    color: "#c9a96e",
+                    color: "#0A7D7B",
                   }}
                 >
                   Beach Day
@@ -383,13 +383,13 @@ const TeamSection = () => {
               style={{
                 fontSize: "13px",
                 lineHeight: 1.8,
-                color: "rgba(244,244,246,0.78)",
+                color: "rgba(13,13,13,0.78)",
               }}
             >
               Office morale runs through these two.{" "}
-              <span className="font-medium" style={{ color: "#c9a96e" }}>Loki</span> handles quality
+              <span className="font-medium" style={{ color: "#0A7D7B" }}>Loki</span> handles quality
               assurance—if your build doesn't get a tail wag, it ships with revisions.{" "}
-              <span className="font-medium" style={{ color: "#c9a96e" }}>Willow</span> manages client
+              <span className="font-medium" style={{ color: "#0A7D7B" }}>Willow</span> manages client
               relations from whatever sunny spot she's claimed that day. Both insist on being present
               for every Zoom call and have strong opinions about lunch breaks.
             </p>
@@ -398,19 +398,19 @@ const TeamSection = () => {
             <div
               className="flex flex-wrap gap-5 md:gap-8 py-5 mb-6"
               style={{
-                borderTop: "1px solid rgba(244,244,246,0.08)",
-                borderBottom: "1px solid rgba(244,244,246,0.08)",
+                borderTop: "1px solid rgba(13,13,13,0.08)",
+                borderBottom: "1px solid rgba(13,13,13,0.08)",
               }}
             >
               {dogStats.map((s) => (
                 <div key={s.label}>
-                  <div className="font-serif text-2xl font-semibold text-white">{s.value}</div>
+                  <div className="font-sans text-2xl font-semibold text-foreground">{s.value}</div>
                   <div
                     className="font-mono uppercase"
                     style={{
                       fontSize: "10px",
                       letterSpacing: "1.5px",
-                      color: "rgba(244,244,246,0.4)",
+                      color: "rgba(13,13,13,0.42)",
                     }}
                   >
                     {s.label}
@@ -427,9 +427,9 @@ const TeamSection = () => {
                   className="rounded-md px-3.5 py-1.5 font-mono"
                   style={{
                     fontSize: "11px",
-                    background: "rgba(244,244,246,0.04)",
-                    border: "1px solid rgba(244,244,246,0.08)",
-                    color: "rgba(244,244,246,0.52)",
+                    background: "rgba(13,13,13,0.04)",
+                    border: "1px solid rgba(13,13,13,0.08)",
+                    color: "rgba(13,13,13,0.62)",
                   }}
                 >
                   {tag}

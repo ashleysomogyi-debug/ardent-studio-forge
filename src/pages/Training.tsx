@@ -3,7 +3,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import DotSphere from "@/components/DotSphere";
 
-const serif = "'Georgia', 'Cormorant Garamond', serif";
+const serif = "'Inter', system-ui, sans-serif";
 
 const format = [
   { num: "01", title: "15-min discovery", price: "Free", body: "We map what your team already does and where AI fits." },
@@ -44,25 +44,25 @@ const Training = () => {
     <>
       <Nav />
       <main>
-        <section className="relative overflow-hidden px-5 md:px-10 pt-[160px] pb-[120px]" style={{ background: "#0D0D0D" }}>
+        <section className="relative overflow-hidden px-5 md:px-10 pt-[160px] pb-[120px]" style={{ background: "#F5F5F0" }}>
           <DotSphere />
           <div className="relative max-w-[1100px] mx-auto" style={{ zIndex: 1 }}>
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">Training</span>
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">Training</span>
             <h1 className="text-[clamp(40px,6vw,72px)] leading-[1.05] mb-6 max-w-[20ch] text-ardent-paper" style={{ fontFamily: serif }}>
               Skip the AI 101. Build something today.
             </h1>
             <p className="text-[18px] leading-[1.65] max-w-[640px] text-ardent-paper/75 mb-10">
               In-person and virtual workshops for teams at agencies, consulting firms, and fractional practices. We build something real together — your team leaves with a tool, not a slide deck.
             </p>
-            <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
+            <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
               Book a free 15-min call
             </a>
           </div>
         </section>
 
-        <section className="px-5 md:px-10 py-16" style={{ background: "#171311" }}>
+        <section className="px-5 md:px-10 py-16" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-8">Past workshops</span>
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-8">Past workshops</span>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { src: "/images/ef-shanghai-2024.jpg", caption: "EF Keynote · Shanghai" },
@@ -82,7 +82,7 @@ const Training = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F7F3EC" }}>
+        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">Format</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-ardent-studio" style={{ fontFamily: serif }}>
@@ -91,9 +91,9 @@ const Training = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {format.map((f) => (
                 <div key={f.num} className="border border-ardent-studio/15 p-7 bg-white/40">
-                  <span className="text-[40px] font-light leading-none" style={{ fontFamily: serif, color: "#B8862A" }}>{f.num}</span>
+                  <span className="text-[40px] font-light leading-none" style={{ fontFamily: serif, color: "#0A7D7B" }}>{f.num}</span>
                   <h3 className="text-[22px] mt-4 text-ardent-studio" style={{ fontFamily: serif }}>{f.title}</h3>
-                  <span className="italic block mb-3" style={{ fontFamily: serif, color: "#B8862A" }}>{f.price}</span>
+                  <span className="font-mono text-[12px] block mb-3" style={{ fontFamily: serif, color: "#0A7D7B" }}>{f.price}</span>
                   <p className="text-[14px] leading-[1.6] text-ardent-studio/70">{f.body}</p>
                 </div>
               ))}
@@ -101,10 +101,10 @@ const Training = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-10 pt-[120px]" style={{ background: "#171311" }}>
+        <section className="px-5 md:px-10 pt-[120px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto">
-            <div className="border-[1.5px] border-ardent-mint p-12 md:px-12 md:py-16" style={{ background: "#0D0D0D" }}>
-              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-5">Signature workshop</span>
+            <div className="border-[1.5px] border-primary p-12 md:px-12 md:py-16" style={{ background: "#F5F5F0" }}>
+              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-5">Signature workshop</span>
               <h2 className="text-[clamp(36px,5vw,56px)] leading-[1.05] mb-6 text-ardent-paper" style={{ fontFamily: serif }}>
                 Build your first agent.
               </h2>
@@ -114,24 +114,24 @@ const Training = () => {
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-paper/70 mb-8">
                 4 Hours · Up to 15 People · In Person or Virtual · $3,750
               </p>
-              <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#FF6B6B", color: "#0D0D0D" }}>
+              <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
                 Book the agent workshop
               </a>
             </div>
           </div>
         </section>
 
-        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#171311" }}>
+        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">What we cover</span>
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">What we cover</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-ardent-paper" style={{ fontFamily: serif }}>
               Six tracks. Pick the ones that fit your team.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {tracks.map((t) => (
-                <div key={t.t} className={`p-7 border ${t.featured ? "border-ardent-lime/60 bg-ardent-lime/5" : "border-ardent-paper/10"}`} style={{ background: t.featured ? undefined : "#1A1614" }}>
+                <div key={t.t} className={`p-7 border bg-card ${t.featured ? "border-primary/40" : "border-border"}`}>
                   {t.featured && (
-                    <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-lime block mb-3">Differentiator</span>
+                    <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-primary block mb-3">Differentiator</span>
                   )}
                   <h3 className="text-[22px] mb-3 text-ardent-paper" style={{ fontFamily: serif }}>{t.t}</h3>
                   <p className="text-[14px] leading-[1.6] text-ardent-paper/70">{t.d}</p>
@@ -141,7 +141,7 @@ const Training = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F7F3EC" }}>
+        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-6">Why Claude</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-10 text-ardent-studio" style={{ fontFamily: serif }}>
@@ -154,14 +154,14 @@ const Training = () => {
               <p className="text-[16px] leading-[1.75] text-ardent-studio/80">
                 Your team leaves a workshop able to actually use what they learned, not a survey of options. We include a 30-minute landscape lesson covering when you'd reach for ChatGPT or Gemini instead — but the rest of every workshop is Claude-first, hands-on.
               </p>
-              <p className="italic text-[14px] leading-[1.7] text-ardent-studio/65" style={{ fontFamily: serif }}>
+              <p className="text-[14px] leading-[1.7] text-ardent-studio/65" style={{ fontFamily: serif }}>
                 Depth over breadth. That's the choice.
               </p>
             </div>
           </div>
         </section>
 
-        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F7F3EC" }}>
+        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
             {quotes.map((q) => (
               <div key={q.q}>
@@ -174,26 +174,26 @@ const Training = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#0D0D0D" }}>
+        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">Pricing</span>
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">Pricing</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-ardent-paper" style={{ fontFamily: serif }}>
               Transparent. Fixed.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {tiers.map((tier) => (
-                <div key={tier.name} className={`p-8 border ${tier.featured ? "border-ardent-mint" : "border-ardent-paper/15"}`} style={{ background: "#171311" }}>
+                <div key={tier.name} className={`p-8 border bg-card ${tier.featured ? "border-primary" : "border-border"}`}>
                   <h3 className="text-[22px] mb-2 text-ardent-paper" style={{ fontFamily: serif }}>{tier.name}</h3>
-                  <p className="text-[36px] mb-4" style={{ fontFamily: serif, color: "#C8A24D" }}>{tier.price}</p>
+                  <p className="text-[36px] mb-4" style={{ fontFamily: serif, color: "#0A7D7B" }}>{tier.price}</p>
                   <p className="text-[14px] text-ardent-paper/70 mb-6">{tier.body}</p>
                   <ul className="space-y-2 mb-8">
                     {tier.items.map((i) => (
                       <li key={i} className="text-[14px] text-ardent-paper/80 flex gap-2">
-                        <span className="text-ardent-lime">+</span>{i}
+                        <span className="text-primary">+</span>{i}
                       </li>
                     ))}
                   </ul>
-                  <a href={`/contact?interest=${tier.interest}`} className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A" : "transparent", color: tier.featured ? "#0D0D0D" : "#F7F3EC", border: tier.featured ? "none" : "1px solid rgba(247,243,236,0.3)" }}>
+                  <a href={`/contact?interest=${tier.interest}`} className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A" : "transparent", color: "#0D0D0D", border: tier.featured ? "none" : "1px solid #0D0D0D" }}>
                     Start here
                   </a>
                 </div>

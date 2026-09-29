@@ -31,7 +31,7 @@ export default function BlogPostLayout({
   return (
     <div
       className="min-h-screen flex flex-col"
-      style={{ backgroundColor: "#0D0D0D", color: "#F5F5F0" }}
+      style={{ backgroundColor: "#F5F5F0", color: "#0D0D0D" }}
     >
       <Nav />
 
@@ -41,11 +41,11 @@ export default function BlogPostLayout({
           <header className="mb-10">
             <h1
               className="text-3xl md:text-4xl font-bold leading-tight mb-4"
-              style={{ color: "#F5F5F0" }}
+              style={{ color: "#0D0D0D" }}
             >
               {title}
             </h1>
-            <p className="text-sm" style={{ color: "#737373" }}>
+            <p className="text-sm" style={{ color: "rgba(13,13,13,0.62)" }}>
               {date}
               <span className="mx-2" aria-hidden="true">
                 &middot;
@@ -56,7 +56,7 @@ export default function BlogPostLayout({
 
           {/* Body */}
           <div
-            className="prose prose-invert prose-p:leading-relaxed prose-p:text-[#D4D4D4] prose-headings:text-[#F5F5F0] prose-a:text-teal-400 prose-strong:text-[#F5F5F0] prose-li:text-[#D4D4D4] prose-ul:marker:text-teal-400 max-w-none"
+            className="prose prose-p:leading-relaxed prose-p:text-[rgba(13,13,13,0.78)] prose-headings:text-[#0D0D0D] prose-a:text-primary prose-strong:text-[#0D0D0D] prose-li:text-[rgba(13,13,13,0.78)] prose-ul:marker:text-primary max-w-none"
             style={{ fontSize: "1.0625rem", lineHeight: "1.75" }}
           >
             {children}
@@ -66,23 +66,23 @@ export default function BlogPostLayout({
           <aside
             className="mt-14 rounded-xl p-8 border"
             style={{
-              backgroundColor: "#141414",
-              borderColor: "#262626",
+              backgroundColor: "#FFFFFF",
+              borderColor: "rgba(13,13,13,0.08)",
             }}
           >
             <p
               className="text-xs font-semibold tracking-widest uppercase mb-3"
-              style={{ color: "#2DD4BF" }}
+              style={{ color: "#0A7D7B" }}
             >
               Ardent Studio &mdash; Boynton Beach, FL
             </p>
             <p
               className="text-lg font-semibold mb-4"
-              style={{ color: "#F5F5F0" }}
+              style={{ color: "#0D0D0D" }}
             >
               Ready to implement this for your Palm Beach County business?
             </p>
-            <p className="text-sm mb-6" style={{ color: "#A3A3A3" }}>
+            <p className="text-sm mb-6" style={{ color: "rgba(13,13,13,0.62)" }}>
               We'll map out what's automatable in your business in 15 minutes —
               no pitch, just a practical conversation.
             </p>
@@ -92,16 +92,16 @@ export default function BlogPostLayout({
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1 text-sm font-semibold px-5 py-3 rounded-lg transition-colors duration-150"
               style={{
-                backgroundColor: "#2DD4BF",
+                backgroundColor: "#C3F73A",
                 color: "#0D0D0D",
               }}
               onMouseEnter={(e) =>
                 ((e.currentTarget as HTMLElement).style.backgroundColor =
-                  "#5EEAD4")
+                  "#C3F73A")
               }
               onMouseLeave={(e) =>
                 ((e.currentTarget as HTMLElement).style.backgroundColor =
-                  "#2DD4BF")
+                  "#C3F73A")
               }
             >
               Book a free 15-minute call &rarr;

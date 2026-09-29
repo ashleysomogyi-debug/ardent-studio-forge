@@ -75,20 +75,20 @@ const caseStudies = [
 
 const CaseCard = ({ c }: { c: (typeof caseStudies)[number] }) => (
   <div
-    className={`p-7 border flex flex-col ${c.tag === "Featured" ? "border-ardent-lime/60" : "border-ardent-paper/10"}`}
-    style={{ background: "#1A1614" }}
+    className={`p-7 border flex flex-col ${c.tag === "Featured" ? "border-primary/40" : "border-border"}`}
+    style={{ background: "#FFFFFF" }}
   >
     <div className="flex items-center justify-between mb-4">
       <span
         className={`font-mono text-[10px] tracking-[0.2em] uppercase ${
-          c.tag === "Featured" ? "text-ardent-lime" : "text-ardent-cyan"
+          c.tag === "Featured" ? "text-primary" : "text-primary"
         }`}
       >
         {c.tag}
       </span>
     </div>
 
-    <h3 className="text-[22px] mb-4 text-ardent-paper" style={{ fontFamily: "'Georgia', 'Cormorant Garamond', serif" }}>
+    <h3 className="text-[22px] mb-4 text-ardent-paper" style={{ fontFamily: "'Inter', system-ui, sans-serif" }}>
       {c.name}
     </h3>
 
@@ -104,8 +104,8 @@ const CaseCard = ({ c }: { c: (typeof caseStudies)[number] }) => (
     </div>
 
     {/* Result — placeholder until real numbers are supplied */}
-    <div className="border border-dashed border-ardent-coral/50 p-4 mb-5">
-      <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-coral block mb-1">Result — needs real data</span>
+    <div className="border border-dashed border-error-red/40 p-4 mb-5">
+      <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-error-red block mb-1">Result — needs real data</span>
       <p className="text-[13px] leading-[1.6] text-ardent-paper/60 italic">{c.metric}</p>
     </div>
 
@@ -114,13 +114,13 @@ const CaseCard = ({ c }: { c: (typeof caseStudies)[number] }) => (
         "{c.quote}" <span className="not-italic text-ardent-paper/50">— {c.quoteAttribution}</span>
       </p>
     ) : (
-      <p className="text-[12px] text-ardent-paper/40 italic mb-4">
+      <p className="text-[12px] text-dim-text mb-4">
         No client quote yet — {c.quoteAttribution}
       </p>
     )}
 
-    <div className="mt-auto flex items-center justify-between pt-4 border-t border-ardent-paper/10">
-      <p className="italic text-[12px]" style={{ fontFamily: "'Georgia', 'Cormorant Garamond', serif", color: "#C8A24D" }}>
+    <div className="mt-auto flex items-center justify-between pt-4 border-t border-border">
+      <p className="font-mono text-[12px]" style={{ fontFamily: "'Inter', system-ui, sans-serif", color: "#0A7D7B" }}>
         {c.stack}
       </p>
       {c.link && (
@@ -128,7 +128,7 @@ const CaseCard = ({ c }: { c: (typeof caseStudies)[number] }) => (
           href={c.link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-mono text-[10px] tracking-[0.15em] uppercase text-ardent-lime hover:opacity-70"
+          className="font-mono text-[10px] tracking-[0.15em] uppercase text-primary hover:opacity-70"
         >
           {c.link.label} ↗
         </a>
@@ -138,14 +138,14 @@ const CaseCard = ({ c }: { c: (typeof caseStudies)[number] }) => (
 );
 
 const CaseStudySection = () => (
-  <section id="case-studies" className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#171311" }}>
+  <section id="case-studies" className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#F5F5F0" }}>
     <div className="max-w-[1200px] mx-auto">
-      <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+      <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
         Case studies
       </span>
       <h2
         className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-4 max-w-[22ch] text-ardent-paper"
-        style={{ fontFamily: "'Georgia', 'Cormorant Garamond', serif" }}
+        style={{ fontFamily: "'Inter', system-ui, sans-serif" }}
       >
         Real problems. Real builds.
       </h2>

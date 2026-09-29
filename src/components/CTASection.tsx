@@ -1,11 +1,11 @@
 import ParticleCanvas from "./ParticleCanvas";
 
 const CTASection = () => (
-  <section id="contact" className="relative py-[112px] px-5 md:px-10 overflow-hidden" style={{ background: "#0D0D0D" }}>
+  <section id="contact" className="relative py-[112px] px-5 md:px-10 overflow-hidden" style={{ background: "#F5F5F0" }}>
     <ParticleCanvas />
 
     {/* Diagonal teal gradient overlay */}
-    <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(135deg, rgba(13,191,188,0.08) 0%, transparent 50%, rgba(13,191,188,0.04) 100%)" }} />
+    <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(135deg, rgba(10,125,123,0.08) 0%, transparent 50%, rgba(10,125,123,0.04) 100%)" }} />
 
     {/* Teal top border accent */}
     <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-teal/40 to-transparent" />
@@ -24,7 +24,7 @@ const CTASection = () => (
           target="_blank"
           rel="noopener noreferrer"
           data-hover
-          className="font-sans text-[13px] bg-foreground text-bg-base px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity w-full md:w-auto text-center"
+          className="font-sans text-[13px] bg-ardent-lime text-ardent-studio px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity w-full md:w-auto text-center"
         >
           Book a free call
         </a>

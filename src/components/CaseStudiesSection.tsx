@@ -2,17 +2,17 @@ import { useState, useEffect, useRef } from "react";
 
 // ─── Brand tokens ───────────────────────────────────────────
 const brand = {
-  ink: "#0D0D0D",
-  inkSoft: "#141414",
-  cream: "#F5F5F0",
-  creamMid: "rgba(245,245,240,0.72)",
-  creamDim: "rgba(245,245,240,0.40)",
-  teal: "#0DBFBC",
-  tealLight: "#3DD4D1",
-  tealFaint: "rgba(13,191,188,0.12)",
-  tealRule: "rgba(13,191,188,0.28)",
-  gold: "#C4924A",
-  goldLight: "#D4A85E",
+  ink: "#F5F5F0",
+  inkSoft: "#FFFFFF",
+  cream: "#0D0D0D",
+  creamMid: "rgba(13,13,13,0.72)",
+  creamDim: "rgba(13,13,13,0.42)",
+  teal: "#0A7D7B",
+  tealLight: "#0A7D7B",
+  tealFaint: "rgba(10,125,123,0.08)",
+  tealRule: "rgba(10,125,123,0.24)",
+  gold: "#0A7D7B",
+  goldLight: "#0A7D7B",
 };
 
 // ─── Data ───────────────────────────────────────────────────────────────────
@@ -35,7 +35,7 @@ const industries = [
     id: "medspa",
     label: "Med Spas",
     icon: "✦",
-    color: "#0DBFBC",
+    color: "#0A7D7B",
     tagline: "Stop losing bookings to slow response times.",
     stats: [
       { number: "+50%", desc: "Revenue increase reported by clinics using AI-powered booking & patient engagement", source: "Prospyr Platform Study, 2024", url: "https://www.prospyrmed.com/blog/post/top-ai-features-for-patient-support-in-med-spas" },
@@ -49,7 +49,7 @@ const industries = [
     id: "realestate",
     label: "Real Estate",
     icon: "◈",
-    color: "#0DBFBC",
+    color: "#0A7D7B",
     tagline: "Most agents use AI for listings. Almost none use it for leads.",
     stats: [
       { number: "$34B", desc: "Projected efficiency gains for the real estate industry from AI automation by 2030", source: "Morgan Stanley Research, 2025", url: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025" },
@@ -63,7 +63,7 @@ const industries = [
     id: "hvac",
     label: "HVAC",
     icon: "◇",
-    color: "#0DBFBC",
+    color: "#0A7D7B",
     tagline: "The job goes to whoever answers first.",
     stats: [
       { number: "4.3×", desc: "Average ROI in year one for service businesses using AI in at least one workflow", source: "Deloitte, 2025 · via Mediagistic HVAC AI Guide", url: "https://www.mediagistic.com/winning-with-ai" },
@@ -77,7 +77,7 @@ const industries = [
     id: "professionalservices",
     label: "Professional Services",
     icon: "⊙",
-    color: "#0DBFBC",
+    color: "#0A7D7B",
     tagline: "Your competitors have AI tools. The ones pulling ahead have a strategy.",
     stats: [
       { number: "$32B", desc: "Annual efficiency value AI unlocks for U.S. legal and tax professionals alone — at current adoption rates, projected to grow sharply", source: "Thomson Reuters Future of Professionals, 2025", url: "https://www.floridabar.org/the-florida-bar-news/thomson-reuters-survey-generative-ai-could-save-legal-professionals-12-hours-weekly-by-2029/" },
@@ -91,7 +91,7 @@ const industries = [
     id: "seniorcare",
     label: "Senior Care",
     icon: "◉",
-    color: "#0DBFBC",
+    color: "#0A7D7B",
     tagline: "Less than 3% of home care agencies use AI. That's your advantage.",
     stats: [
       { number: "170+", desc: "Automated workflows running daily at Cypress Living — saving hours of staff time every day", source: "HealthTech Magazine, 2025", url: "https://healthtechmagazine.net/article/2025/05/how-can-ai-support-senior-care-workforce" },
@@ -105,7 +105,7 @@ const industries = [
     id: "plumbing",
     label: "Plumbing",
     icon: "◆",
-    color: "#0DBFBC",
+    color: "#0A7D7B",
     tagline: "You're losing jobs at 2am that your competitor is booking at 2am.",
     stats: [
       { number: "13%", desc: "Revenue growth achieved by My Plumber Plus after deploying Avoca AI — on a $129M revenue base", source: "Avoca AI Case Study · avoca.ai", url: "https://www.avoca.ai/" },
@@ -119,7 +119,7 @@ const industries = [
     id: "boutiques",
     label: "Boutiques",
     icon: "◑",
-    color: "#0DBFBC",
+    color: "#0A7D7B",
     tagline: "Your best customers are shopping online at midnight. Is anyone there?",
     stats: [
       { number: "87%", desc: "Of retailers report AI had a positive impact on revenue — and 94% say it reduced operating costs", source: "Shopify / Bain Retail AI Report, 2025", url: "https://www.shopify.com/enterprise/blog/ai-in-retail" },
@@ -133,7 +133,7 @@ const industries = [
     id: "insurance",
     label: "Insurance",
     icon: "▣",
-    color: "#0DBFBC",
+    color: "#0A7D7B",
     tagline: "Renewals are still the #1 most inefficient task for insurance agencies.",
     stats: [
       { number: "75%", desc: "Reduction in claims resolution time — from 30 days to 7.5 days — achieved through AI automation", source: "Datagrid AI Insurance Statistics Report, 2025", url: "https://datagrid.com/blog/ai-agent-for-insurance-statistics" },
@@ -217,7 +217,7 @@ function IndustryPanel({ industry, visible }) {
       <div
         style={{
           fontFamily: "'Inter', system-ui, sans-serif",
-          fontStyle: "italic",
+          fontStyle: "normal",
           fontSize: "20px",
           color: brand.tealLight,
           marginBottom: "28px",
@@ -246,7 +246,7 @@ function IndustryPanel({ industry, visible }) {
       {/* Story card */}
       <div
         style={{
-          background: "rgba(255,255,255,0.03)",
+          background: "rgba(255,255,255,1)",
           border: `1px solid ${brand.tealRule}`,
           borderLeft: `3px solid ${brand.teal}`,
           borderRadius: "3px",
@@ -339,11 +339,11 @@ export default function CaseStudiesSection() {
     <>
       {/* Google Fonts */}
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap');
+        
         .ardent-tab-btn { cursor: pointer; }
-        .ardent-tab-btn:hover .ardent-tab-inner { color: #3DD4D1 !important; border-bottom-color: rgba(13,191,188,0.5) !important; }
-        .ardent-hero-link:hover { color: #3DD4D1 !important; }
-        .ardent-cta-btn:hover { background: #3DD4D1 !important; }
+        .ardent-tab-btn:hover .ardent-tab-inner { color: #0A7D7B !important; border-bottom-color: rgba(10,125,123,0.5) !important; }
+        .ardent-hero-link:hover { color: #0A7D7B !important; }
+        .ardent-cta-btn:hover { background: #0A7D7B !important; }
         .ardent-tab-scroll::-webkit-scrollbar { display: none; }
         .ardent-tab-scroll { -ms-overflow-style: none; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
       `}</style>
@@ -367,8 +367,8 @@ export default function CaseStudiesSection() {
           style={{
             position: "absolute",
             inset: 0,
-            background: `radial-gradient(ellipse 60% 40% at 80% 20%, rgba(13,191,188,0.06) 0%, transparent 65%),
-                          radial-gradient(ellipse 40% 50% at 15% 80%, rgba(13,191,188,0.04) 0%, transparent 60%)`,
+            background: `radial-gradient(ellipse 60% 40% at 80% 20%, rgba(10,125,123,0.06) 0%, transparent 65%),
+                          radial-gradient(ellipse 40% 50% at 15% 80%, rgba(10,125,123,0.04) 0%, transparent 60%)`,
             pointerEvents: "none",
           }}
         />
@@ -446,7 +446,7 @@ export default function CaseStudiesSection() {
           {/* ── Hero anchor ── */}
           <div
             style={{
-              background: `linear-gradient(135deg, rgba(13,191,188,0.10) 0%, rgba(13,191,188,0.04) 100%)`,
+              background: `linear-gradient(135deg, rgba(10,125,123,0.10) 0%, rgba(10,125,123,0.04) 100%)`,
               border: `1px solid ${brand.tealRule}`,
               borderTop: `2px solid ${brand.teal}`,
               borderRadius: "4px",
@@ -503,7 +503,7 @@ export default function CaseStudiesSection() {
                   paddingLeft: "14px",
                   margin: "0 0 14px",
                   fontFamily: "'Inter', system-ui, sans-serif",
-                  fontStyle: "italic",
+                  fontStyle: "normal",
                   fontSize: "15px",
                   color: brand.tealLight,
                 }}

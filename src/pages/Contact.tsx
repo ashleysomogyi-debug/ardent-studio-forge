@@ -4,7 +4,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { supabase } from "@/integrations/supabase/client";
 
-const serif = "'Georgia', 'Cormorant Garamond', serif";
+const serif = "'Inter', system-ui, sans-serif";
 
 const INTEREST_OPTIONS: { value: string; label: string }[] = [
   { value: "custom-ai-automation", label: "Custom AI automation build" },
@@ -74,17 +74,17 @@ const Contact = () => {
   };
 
   const inputClass =
-    "w-full bg-transparent border border-ardent-paper/20 rounded-md px-4 py-3 font-sans text-[15px] text-ardent-paper placeholder:text-ardent-paper/40 focus:outline-none focus:border-ardent-lime transition-colors";
+    "w-full bg-white border border-input rounded-md px-4 py-3 font-sans text-[15px] text-foreground placeholder:text-dim-text focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors";
   const labelClass =
-    "block font-mono text-[11px] text-ardent-paper/70 tracking-[0.15em] uppercase mb-2";
+    "block font-mono text-[11px] text-label-text tracking-[0.15em] uppercase mb-2";
 
   return (
     <>
       <Nav />
       <main>
-        <section className="px-5 md:px-10 pt-[140px] pb-[40px]" style={{ background: "#0D0D0D" }}>
+        <section className="px-5 md:px-10 pt-[140px] pb-[40px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-2xl mx-auto text-center">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
               Contact
             </span>
             <h1
@@ -99,12 +99,12 @@ const Contact = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-10 pb-[120px]" style={{ background: "#0D0D0D" }}>
+        <section className="px-5 md:px-10 pb-[120px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-2xl mx-auto">
             {submitted ? (
               <div
-                className="text-center p-10 md:p-14 border border-ardent-mint/40 rounded-xl"
-                style={{ background: "#171311" }}
+                className="text-center p-10 md:p-14 border border-primary/30 rounded-xl"
+                style={{ background: "#FFFFFF" }}
               >
                 <h2
                   className="text-[clamp(26px,4vw,36px)] leading-[1.2] mb-8 text-ardent-paper"
@@ -115,7 +115,7 @@ const Contact = () => {
                 <Link
                   to="/"
                   className="inline-block px-8 py-4 text-[14px] rounded-full"
-                  style={{ background: "#FF6B6B", color: "#0D0D0D" }}
+                  style={{ background: "#C3F73A", color: "#0D0D0D" }}
                 >
                   Back to home
                 </Link>
@@ -123,8 +123,8 @@ const Contact = () => {
             ) : (
               <form
                 onSubmit={handleSubmit}
-                className="space-y-5 p-8 md:p-10 border border-ardent-paper/15 rounded-xl"
-                style={{ background: "#171311" }}
+                className="space-y-5 p-8 md:p-10 border border-border rounded-xl"
+                style={{ background: "#FFFFFF" }}
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                   <div>
@@ -185,11 +185,11 @@ const Contact = () => {
                     className={inputClass}
                     style={{ appearance: "none" }}
                   >
-                    <option value="" disabled style={{ background: "#171311" }}>
+                    <option value="" disabled style={{ background: "#FFFFFF" }}>
                       Select an option
                     </option>
                     {INTEREST_OPTIONS.map((o) => (
-                      <option key={o.value} value={o.value} style={{ background: "#171311" }}>
+                      <option key={o.value} value={o.value} style={{ background: "#FFFFFF" }}>
                         {o.label}
                       </option>
                     ))}
@@ -210,14 +210,14 @@ const Contact = () => {
                 </div>
 
                 {error && (
-                  <p className="text-[14px] text-ardent-coral">{error}</p>
+                  <p className="text-[14px] text-error-red">{error}</p>
                 )}
 
                 <button
                   type="submit"
                   disabled={submitting}
                   className="w-full px-8 py-4 text-[15px] rounded-full font-semibold disabled:opacity-50 disabled:cursor-not-allowed transition-opacity hover:opacity-90"
-                  style={{ background: "#FF6B6B", color: "#0D0D0D" }}
+                  style={{ background: "#C3F73A", color: "#0D0D0D" }}
                 >
                   {submitting ? "Sending…" : "Send message"}
                 </button>

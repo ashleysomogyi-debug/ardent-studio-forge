@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import TypingHeadline from "@/components/TypingHeadline";
 import heroSpeakingPhoto from "@/assets/photos/automation-workshop.png.asset.json";
 
-const serif = "'Georgia', 'Cormorant Garamond', serif";
+const serif = "'Inter', system-ui, sans-serif";
 
 const META_TITLE = "AI Automation for Small Business — Ardent Studio (Palm Beach County, FL)";
 const META_DESC =
@@ -92,19 +92,19 @@ const AIAutomation = () => {
       <Nav />
       <main>
         {/* 1. HERO */}
-        <section className="relative min-h-screen flex items-center bg-ardent-studio overflow-hidden">
+        <section className="relative min-h-screen flex items-center bg-bg-base overflow-hidden">
           <div
             className="absolute inset-0 opacity-[0.04] pointer-events-none"
             style={{
               backgroundImage:
-                "linear-gradient(to right, #C3F73A 1px, transparent 1px), linear-gradient(to bottom, #C3F73A 1px, transparent 1px)",
+                "linear-gradient(to right, rgba(10,125,123,0.10) 1px, transparent 1px), linear-gradient(to bottom, rgba(10,125,123,0.10) 1px, transparent 1px)",
               backgroundSize: "60px 60px",
             }}
           />
           <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full py-32">
             <div className="flex items-center gap-4 mb-10">
               <span className="block w-12 h-px bg-ardent-lime" />
-              <span className="font-mono text-xs tracking-[0.2em] text-ardent-lime uppercase">
+              <span className="font-mono text-xs tracking-[0.2em] text-primary uppercase">
                 AI Automation for Small Business
               </span>
             </div>
@@ -119,7 +119,7 @@ const AIAutomation = () => {
                 href="https://calendly.com/asomogyi-ardentstudio/30min"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-ardent-coral text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-ardent-lime text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity"
               >
                 Book a free 15-min call →
               </a>
@@ -133,7 +133,7 @@ const AIAutomation = () => {
           </div>
         </section>
 
-        <section className="relative w-full overflow-hidden" style={{ background: "#0D0D0D" }}>
+        <section className="relative w-full overflow-hidden" style={{ background: "#F5F5F0" }}>
           <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
             <img
               src={heroSpeakingPhoto.url}
@@ -145,11 +145,11 @@ const AIAutomation = () => {
               className="absolute inset-0"
               style={{
                 background:
-                  "linear-gradient(90deg, rgba(13,13,13,0.88) 0%, rgba(13,13,13,0.55) 42%, rgba(13,13,13,0.18) 100%), linear-gradient(180deg, rgba(13,13,13,0.2) 0%, rgba(13,13,13,0.92) 100%)",
+                  "linear-gradient(90deg, rgba(245,245,240,0.94) 0%, rgba(245,245,240,0.70) 48%, rgba(245,245,240,0.18) 100%), linear-gradient(180deg, rgba(245,245,240,0.08) 0%, rgba(245,245,240,0.94) 100%)",
               }}
             />
             <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
-              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
                 Workflows we automate
               </span>
               <h2
@@ -162,11 +162,11 @@ const AIAutomation = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#0D0D0D" }}>
+        <section className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1200px] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10">
               {workflows.map((w) => (
-                <div key={w.title} className={`p-7 min-h-[180px]${w.wide ? " md:col-span-2 lg:col-span-2" : ""}`} style={{ background: "#1A1614" }}>
+                <div key={w.title} className={`p-7 min-h-[180px]${w.wide ? " md:col-span-2 lg:col-span-2" : ""}`} style={{ background: "#FFFFFF" }}>
                   <h3 className="text-[20px] mb-3 text-ardent-paper" style={{ fontFamily: serif }}>
                     {w.title}
                   </h3>
@@ -178,9 +178,9 @@ const AIAutomation = () => {
         </section>
 
         {/* 2.5 FEATURED APPS */}
-        <section id="featured-apps" className="px-5 md:px-10 pt-[88px] md:pt-[140px] pb-[48px] md:pb-[64px]" style={{ background: "#F7F3EC" }}>
+        <section id="featured-apps" className="px-5 md:px-10 pt-[88px] md:pt-[140px] pb-[48px] md:pb-[64px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1200px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-coral block mb-6">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
               Featured Apps
             </span>
             <h2
@@ -194,14 +194,14 @@ const AIAutomation = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="border border-ardent-lime/40 p-10 md:p-14 bg-white/40 flex flex-col">
+              <div className="border border-border p-10 md:p-14 bg-white/40 flex flex-col">
                 <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
                   Sales Enablement · AI Role-Play
                 </span>
                 <h3 className="text-[clamp(28px,3.5vw,42px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
                   Sartori AI
                 </h3>
-                <p className="italic mb-6" style={{ fontFamily: serif, color: "#B8862A" }}>
+                <p className="italic mb-6" style={{ fontFamily: serif, color: "#0A7D7B" }}>
                   Train smarter. Close faster.
                 </p>
                 <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
@@ -216,21 +216,21 @@ const AIAutomation = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block px-8 py-4 text-[14px] rounded-full"
-                    style={{ background: "#FF6B6B", color: "#0D0D0D" }}
+                    style={{ background: "#C3F73A", color: "#0D0D0D" }}
                   >
                     Visit sartoriai.com →
                   </a>
                 </div>
               </div>
 
-              <div className="border border-ardent-lime/40 p-10 md:p-14 bg-white/40 flex flex-col">
+              <div className="border border-border p-10 md:p-14 bg-white/40 flex flex-col">
                 <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
                   Sports Tech · AI Coaching
                 </span>
                 <h3 className="text-[clamp(28px,3.5vw,42px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
                   Tryline Coach
                 </h3>
-                <p className="italic mb-6" style={{ fontFamily: serif, color: "#B8862A" }}>
+                <p className="italic mb-6" style={{ fontFamily: serif, color: "#0A7D7B" }}>
                   Democratising access to elite coaching intelligence.
                 </p>
                 <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
@@ -261,7 +261,7 @@ const AIAutomation = () => {
               <Link
                 to="/#work"
                 className="inline-flex items-center gap-2 px-8 py-4 text-[14px] rounded-full"
-                style={{ background: "#FF6B6B", color: "#0D0D0D" }}
+                style={{ background: "#C3F73A", color: "#0D0D0D" }}
               >
                 See all our work →
               </Link>
@@ -270,9 +270,9 @@ const AIAutomation = () => {
         </section>
 
         {/* 3. ARDENT METHOD */}
-        <section id="ardent-method" className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#0D0D0D" }}>
+        <section id="ardent-method" className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1200px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime block mb-6">
+            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
               How we work
             </span>
             <h2
@@ -286,14 +286,14 @@ const AIAutomation = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {method.map((m) => (
-                <div key={m.letter} className="border border-ardent-paper/10 p-7" style={{ background: "#171311" }}>
+                <div key={m.letter} className="border border-border p-7" style={{ background: "#FFFFFF" }}>
                   <div
-                    className="text-[64px] leading-none mb-3 text-ardent-cyan"
+                    className="text-[64px] leading-none mb-3 text-primary"
                     style={{ fontFamily: serif }}
                   >
                     {m.letter}
                   </div>
-                  <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-lime mb-3">
+                  <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary mb-3">
                     {m.word}
                   </div>
                   <p className="text-[15px] leading-[1.7] text-ardent-paper">{m.desc}</p>
@@ -304,7 +304,7 @@ const AIAutomation = () => {
         </section>
 
         {/* 5. PRICING SIGNAL */}
-        <section className="px-5 md:px-10 py-14" style={{ background: "#F7F3EC" }}>
+        <section className="px-5 md:px-10 py-14" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[900px] mx-auto text-center">
             <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-4">
               Investment
@@ -322,7 +322,7 @@ const AIAutomation = () => {
         </section>
 
         {/* 6. FINAL CTA */}
-        <section className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#0D0D0D" }}>
+        <section className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[800px] mx-auto text-center">
             <h2
               className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-6 text-ardent-paper"
@@ -338,7 +338,7 @@ const AIAutomation = () => {
               href="https://calendly.com/asomogyi-ardentstudio/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-10 py-5 bg-ardent-coral text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity text-[16px]"
+              className="inline-flex items-center gap-2 px-10 py-5 bg-ardent-lime text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity text-[16px]"
             >
               Book a free 15-min call →
             </a>
