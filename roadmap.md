@@ -43,4 +43,4 @@
 ## Step 9 tabbed automation examples
 - [x] Replace the six automation cards with five accessible tab groups
 - [x] Add the supplied example copy and shared booking action
-- [ ] Verify contrast, keyboard use, mobile layout, protected files, and build
+- [x] Verify contrast, keyboard use, mobile layout, protected files, and build
