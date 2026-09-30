@@ -111,7 +111,7 @@ export default function WorkflowAutomation() {
       whyArdent={[
         "We build with workflows that fit your existing tools. Every workflow we build is yours, fully documented and fully transferable.",
         "Most workflow builds ship in 1–2 weeks. We scope, build, test, and hand off, with a walkthrough so you understand exactly how it works.",
-        "We're based in Boynton Beach, FL. Every client works directly with Ashley, with no account managers, no hand-offs to junior staff.",
+        "We're based in Boynton Beach, FL. Every client works directly with Ashley, not account managers or junior staff.",
         "Every workflow automation is a fixed price, quoted after a free 15 minute call. No surprises.",
       ]}
       caseStudy={{

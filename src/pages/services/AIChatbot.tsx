@@ -12,7 +12,7 @@ const AIChatbot = () => (
       { title: "Appointment Booking", description: "Clients can book directly through the chat, synced to your calendar with automatic confirmations and reminders." },
       { title: "FAQ Automation", description: "Train your bot on your most common questions so customers get instant, accurate answers without waiting for a callback." },
       { title: "Multi-Platform", description: "Deploy on your website, SMS, Facebook Messenger, and Instagram DMs, wherever your customers reach out." },
-      { title: "CRM Integration", description: "Leads flow directly into your CRM with full conversation context, with no manual data entry and no lost opportunities." },
+      { title: "CRM Integration", description: "Leads flow directly into your CRM with full conversation context, no manual data entry, and no lost opportunities." },
       { title: "Custom Training on Your Business", description: "Your chatbot is trained on your services, pricing, FAQs, and processes so it answers like a real team member." },
     ]}
     industries={["HVAC", "Medical / Dental", "Legal", "Real Estate", "Restaurants", "Fitness / Wellness", "eCommerce", "Construction", "Auto Repair", "Property Management"]}
