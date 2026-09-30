@@ -217,7 +217,7 @@
   background-image: radial-gradient(circle, rgb(13 191 188 / 0.35) 2px, transparent 2.5px);
 }
 
-.automation-cyan-theme .border-coral {
+.automation-cyan-theme .border-dashed.border-coral {
   border-color: var(--automation-teal-bright);
 }
 
