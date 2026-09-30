@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -9,6 +10,7 @@ const NAV_LINKS = [
 ];
 
 const Nav = () => {
+  const location = useLocation();
   const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -40,6 +42,9 @@ const Nav = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, [menuOpen]);
 
+  const isActive = (href: string) =>
+    href === "/" ? location.pathname === "/" : location.pathname.startsWith(href);
+
   useEffect(() => {
     if (menuOpen) {
       const prev = document.body.style.overflow;
@@ -53,19 +58,17 @@ const Nav = () => {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-4 md:px-10 h-[80px] transition-all duration-200 border-b"
+        className="fixed top-0 left-0 right-0 z-[100] flex h-14 items-center justify-between border-b px-4 transition-transform duration-200 md:h-16 md:px-10"
         style={{
-          background: scrolled ? "rgba(245,245,240,0.92)": "rgba(245,245,240,0.72)",
-          borderColor: scrolled ? "rgba(13,13,13,0.08)": "transparent",
-          backdropFilter: "blur(24px)",
-          WebkitBackdropFilter: "blur(24px)",
+          background: "var(--site-header-bg)",
+          borderColor: "rgba(255,255,255,0.08)",
           transform: hidden ? "translateY(-100%)": "translateY(0)",
         }}
       >
         <a href="/" className="flex items-center gap-3 shrink-0">
           <img src="/ardent-logo-circle.png" alt="Ardent Studio circular logo" className="w-10 h-10 rounded-full object-cover" />
-          <span className="flex flex-col"><span className="font-sans text-[16px] md:text-[18px] text-foreground tracking-wide font-semibold">Ardent Studio</span>
-          <span className="font-mono text-[13px] text-ardent-cyan tracking-[0.1em] md:tracking-[0.15em] uppercase">Practical AI for Business</span>
+          <span className="flex flex-col"><span className="font-sans text-[16px] md:text-[18px] text-footer-text tracking-wide font-semibold">Ardent Studio</span>
+          <span className="font-mono text-[13px] text-teal-bright tracking-[0.1em] md:tracking-[0.15em] uppercase">Practical AI for Business</span>
           </span>
         </a>
 
@@ -74,7 +77,8 @@ const Nav = () => {
             <a
               key={item.label}
               href={item.href}
-              className="font-sans text-[15px] text-label-text hover:text-foreground transition-colors"
+              aria-current={isActive(item.href) ? "page" : undefined}
+              className={`flex h-16 items-center border-b-2 pt-0.5 font-sans text-[16px] text-footer-text transition-colors hover:text-ardent-lime ${isActive(item.href) ? "border-teal-bright" : "border-transparent"}`}
             >
               {item.label}
             </a>
@@ -96,7 +100,7 @@ const Nav = () => {
           aria-label="Open menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(true)}
-          className="md:hidden inline-flex items-center justify-center w-11 h-11 text-foreground"
+          className="md:hidden inline-flex items-center justify-center w-11 h-11 text-footer-text"
         >
           <Menu size={26} strokeWidth={1.5} />
         </button>
@@ -109,44 +113,41 @@ const Nav = () => {
           onClick={() => setMenuOpen(false)}
         >
           <div
-            className="absolute inset-0 bg-bg-base"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(10,125,123,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(10,125,123,0.05) 1px, transparent 1px)",
-              backgroundSize: "60px 60px",
-            }}
+            className="absolute inset-0"
+            style={{ background: "var(--site-header-bg)" }}
           />
           <div
             className="relative h-full w-full flex flex-col px-6 pt-6 pb-10"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex items-center justify-between h-[68px]">
+            <div className="flex h-14 items-center justify-between">
               <div className="flex items-center gap-3">
                 <img src="/ardent-logo-circle.png" alt="Ardent Studio circular logo" className="w-10 h-10 rounded-full object-cover" />
                 <span className="flex flex-col">
-                <span className="font-sans text-[16px] text-foreground tracking-wide font-semibold">Ardent Studio</span>
-                 <span className="font-mono text-[13px] text-ardent-cyan tracking-[0.1em] uppercase">Practical AI for Business</span>
+                <span className="font-sans text-[16px] text-footer-text tracking-wide font-semibold">Ardent Studio</span>
+                 <span className="font-mono text-[13px] text-teal-bright tracking-[0.1em] uppercase">Practical AI for Business</span>
                 </span>
               </div>
               <button
                 type="button"
                 aria-label="Close menu"
                 onClick={() => setMenuOpen(false)}
-                className="inline-flex items-center justify-center w-11 h-11 text-foreground"
+                className="inline-flex items-center justify-center w-11 h-11 text-footer-text"
               >
                 <X size={28} strokeWidth={1.5} />
               </button>
             </div>
 
             <div
-              className="flex-1 flex flex-col justify-center gap-2"
+              className="flex flex-1 flex-col justify-center gap-1"
               onClick={() => setMenuOpen(false)}
             >
               {NAV_LINKS.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
-                  className="block py-3 font-sans font-semibold text-[30px] leading-tight text-foreground hover:text-primary transition-colors"
+                  aria-current={isActive(item.href) ? "page" : undefined}
+                  className={`flex min-h-12 items-center border-b-2 font-sans text-[18px] font-semibold leading-tight text-footer-text transition-colors hover:text-ardent-lime ${isActive(item.href) ? "border-teal-bright" : "border-transparent"}`}
                 >
                   {item.label}
                 </a>

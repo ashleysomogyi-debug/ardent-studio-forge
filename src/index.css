@@ -45,6 +45,7 @@
     --color-border-subtle: rgba(13,13,13,0.08);
     --color-footer: #0D0D0D;
     --color-footer-text: #F5F5F0;
+    --site-header-bg: #0D0D0D;
 
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
