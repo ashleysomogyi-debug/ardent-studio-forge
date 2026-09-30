@@ -96,7 +96,7 @@ export default function WorkflowAutomation() {
         {
           title: "Reporting & Alerts",
           description:
-            "Automatic weekly digest emails with your key numbers: new leads, revenue, tasks due, so you always know where things stand.",
+            "Automatic weekly digest emails with your key numbers (new leads, revenue, and tasks due), so you always know where things stand.",
         },
       ]}
       industries={[
