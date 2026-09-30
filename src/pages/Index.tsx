@@ -233,7 +233,7 @@ const Index = () => (
               { src: "/loki-willow-chairs.jpg", name: "Loki & Willow", role: "Chief Officers of Snuggles and Snacks" },
             ].map((person) => (
               <div key={person.name} className={`text-center ${person.src.includes("loki") ? "col-span-2 flex items-center gap-4 text-left sm:col-span-1 sm:block sm:text-center" : ""}`}>
-                <img src={person.src} alt={person.name} loading="lazy" className="mx-auto mb-3 aspect-square w-[150px] max-w-full rounded-full md:mb-5 border border-border object-cover md:w-[220px]" />
+                <img src={person.src} alt={person.name} loading="lazy" className={`mx-auto aspect-square max-w-full shrink-0 rounded-full border border-border object-cover md:mb-5 md:w-[220px] ${person.src.includes("loki") ? "m-0 w-[88px] sm:mx-auto sm:mb-3 sm:w-[150px]" : "mb-3 w-[150px]"}`} />
                 <h3 className="text-lg md:text-xl font-semibold text-foreground">{person.name}</h3>
                 <p className="mt-1 md:mt-2 font-mono text-[13px] uppercase tracking-[0.1em] text-primary">{person.role}</p>
                 {person.detail && <p className="mt-2 md:mt-3 text-[14px] md:text-[16px] text-body-text">{person.detail}</p>}
