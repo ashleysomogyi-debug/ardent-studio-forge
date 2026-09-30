@@ -13,7 +13,7 @@ const CTASection = () => (
           Tell us what you're building.
         </h2>
         <p className="mt-4 max-w-[620px] font-sans text-[15px] leading-[1.7] text-dark-band-muted">
-          Scope call is free, takes 15 minutes, and you'll leave with a clear plan: whether you work with us or not.
+          Scope call is free, takes 15 minutes, and you'll leave with a clear plan, whether you work with us or not.
         </p>
       </div>
       <div className="flex flex-col gap-3 sm:flex-row md:flex-col lg:flex-row">

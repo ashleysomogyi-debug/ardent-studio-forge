@@ -21,14 +21,14 @@ const works: WorkCard[] = [
     tag: "AI Automation · Med Spa · Palm Beach",
     title: "AI Booking Agent",
     description:
-      "24/7 AI-powered booking and inquiry agent for a Palm Beach area wellness clinic. DMs answered instantly, appointments booked automatically: including after hours.",
+      "24/7 AI-powered booking and inquiry agent for a Palm Beach area wellness clinic. DMs answered instantly, appointments booked automatically, including after hours.",
     meta: ["Delivered: 6 days", "Result: +40% bookings"],
   },
   {
     tag: "AI Automation · Home Services · South Florida",
     title: "After-Hours Lead Capture",
     description:
-      "AI call handling and scheduling for a South Florida HVAC company. Emergency jobs booked overnight: without a single employee on the phone.",
+      "AI call handling and scheduling for a South Florida HVAC company. Emergency jobs booked overnight, without a single employee on the phone.",
     meta: ["Delivered: 8 days", "Result: +14 jobs/month"],
   },
 ];

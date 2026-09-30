@@ -14,7 +14,7 @@ const format = [
 
 const tracks = [
   { t: "Build your first agent", d: "Pick a workflow that's leaking hours. Leave with a working tool that handles it for you.", featured: true },
-  { t: "Writing with AI", d: "Replies, proposals, and posts in your voice: not the default voice." },
+  { t: "Writing with AI", d: "Replies, proposals, and posts in your voice, not the default voice." },
   { t: "Research and analysis", d: "Use AI to read documents and pull out what matters." },
   { t: "Customer conversations", d: "Inbound triage, FAQ answers, and respectful follow-up." },
   { t: "Operations and admin", d: "Cleanups, summaries, and the small jobs nobody wants." },
@@ -115,7 +115,7 @@ const Training = () => {
                 Build your first agent.
               </h2>
               <p className="text-[17px] leading-[1.65] text-body-text max-w-[68ch] mb-8">
-                A 5-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem: we build the tool together, in the room, and you leave with it running.
+                A 5-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem. We build the tool together, in the room, and you leave with it running.
               </p>
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-primary mb-8">
                 5 HOURS, UP TO 15 PEOPLE, IN PERSON OR VIRTUAL
@@ -155,10 +155,10 @@ const Training = () => {
             </h2>
             <div className="max-w-3xl space-y-5">
               <p className="text-[16px] leading-[1.75] text-ardent-studio/80">
-                Most AI training tries to cover every model. We don't. We teach Claude: Anthropic's model: because it's what we use to build production tools for our clients.
+                Most AI training tries to cover every model. We don't. We teach Claude, Anthropic's model, because it's what we use to build production tools for our clients.
               </p>
               <p className="text-[16px] leading-[1.75] text-ardent-studio/80">
-                Your team leaves a workshop able to actually use what they learned, not a survey of options. We include a 30-minute landscape lesson covering when you'd reach for ChatGPT or Gemini instead: but the rest of every workshop is Claude-first, hands-on.
+                Your team leaves a workshop able to actually use what they learned, not a survey of options. We include a 30-minute landscape lesson covering when you'd reach for ChatGPT or Gemini instead, but the rest of every workshop is Claude-first, hands-on.
               </p>
               <p className="text-[14px] leading-[1.7] text-ardent-studio/65" style={{ fontFamily: serif }}>
                 Depth over breadth. That's the choice.

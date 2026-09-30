@@ -373,7 +373,7 @@ const AIAutomation = () => {
                   Democratising access to elite coaching intelligence.
                 </p>
                 <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
-                  AI-powered coaching platform for rugby, delivering personalised training analysis and performance insights to players and coaches at every level: from grassroots clubs to elite academies.
+                  AI-powered coaching platform for rugby, delivering personalised training analysis and performance insights to players and coaches at every level, from grassroots clubs to elite academies.
                 </p>
                 <div className="mt-auto">
                   <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
@@ -387,7 +387,7 @@ const AIAutomation = () => {
               {[
                 { t: "Web apps", d: "Customer portals, dashboards, and internal tools your team actually uses." },
                 { t: "Mobile apps", d: "iOS and Android apps for field teams, customers, and operations." },
-                { t: "AI products", d: "Full products with AI at the core: like Sartori." },
+                { t: "AI products", d: "Full products with AI at the core, like Sartori." },
               ].map((c, i) => (
                 <div key={c.t} className={`workshop-card border-t-8 p-7 ${i === 0 ? "border-t-teal-bright" : i === 1 ? "border-t-ardent-lime" : "border-t-coral"}`}>
                   <h4 className="text-[22px] mb-3 text-ardent-studio" style={{ fontFamily: serif }}>{c.t}</h4>

@@ -5,7 +5,7 @@ const cards = [
   },
   {
     title: "Fixed price. Always.",
-    desc: "Our AI-assisted workflow means we build in days what traditional providers build in weeks. We pass that efficiency to you through fixed-price packages: not inflated hourly rates. Your budget is a ceiling, not a floor.",
+    desc: "Our AI-assisted workflow means we build in days what traditional providers build in weeks. We pass that efficiency to you through fixed-price packages, not inflated hourly rates. Your budget is a ceiling, not a floor.",
   },
   {
     title: "Code you own",

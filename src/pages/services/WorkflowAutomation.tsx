@@ -10,7 +10,7 @@ const faqSchema = {
       name: "How does workflow automation differ from AI?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Workflow automation handles the routing and triggering of tasks: moving data between tools, sending emails at the right time, updating records automatically. AI handles the thinking: writing, classifying, extracting meaning from text. Ardent Studio uses both together: automation to move things through your pipeline, AI to handle the steps that require judgment or language.",
+        text: "Workflow automation handles the routing and triggering of tasks, moving data between tools, sending emails at the right time, updating records automatically. AI handles the thinking, including writing, classifying, extracting meaning from text. Ardent Studio uses both together, with automation to move things through your pipeline, AI to handle the steps that require judgment or language.",
       },
     },
     {
@@ -65,18 +65,18 @@ export default function WorkflowAutomation() {
       metaTitle="Email & Workflow Automation for Small Businesses | Ardent Studio: Palm Beach County"
       metaDescription="Custom email and workflow automation for Palm Beach County small businesses. Ardent Studio builds automations that save 5–15 hours per week. Free 15-min call."
       headline="Email & Workflow Automation"
-      subheadline="Stop doing the same thing twice. Ardent Studio builds automations that connect your tools, handle your follow-ups, and process your data: so you can focus on the work that actually moves the needle."
-      introText="According to McKinsey (2023), small businesses using automation effectively recover 6–8 hours per week. Most of that time comes from email follow-ups, data entry between tools, invoice reminders, and intake processing: exactly the kind of repetitive work Ardent Studio specializes in automating. Most clients are live within 2 weeks."
+      subheadline="Stop doing the same thing twice. Ardent Studio builds automations that connect your tools, handle your follow-ups, and process your data, so you can focus on the work that actually moves the needle."
+      introText="According to McKinsey (2023), small businesses using automation effectively recover 6–8 hours per week. Most of that time comes from email follow-ups, data entry between tools, invoice reminders, and intake processing, exactly the kind of repetitive work Ardent Studio specializes in automating. Most clients are live within 2 weeks."
       features={[
         {
           title: "Lead Follow-up Sequences",
           description:
-            "Automatically send personalized follow-up emails within minutes of a form submission: no more losing prospects to slow response times. The Harvard Business Review found that 78% of leads go with the first company to respond.",
+            "Automatically send personalized follow-up emails within minutes of a form submission, so you no longer lose prospects to slow response times. The Harvard Business Review found that 78% of leads go with the first company to respond.",
         },
         {
           title: "Invoice & Payment Reminders",
           description:
-            "Automated invoice reminders sent at the right intervals, with escalating tone for late payers: without you having to manually track anything.",
+            "Automated invoice reminders sent at the right intervals, with escalating tone for late payers, without you having to manually track anything.",
         },
         {
           title: "CRM & Spreadsheet Sync",
@@ -86,7 +86,7 @@ export default function WorkflowAutomation() {
         {
           title: "Appointment & Booking Flows",
           description:
-            "New bookings trigger confirmation emails, calendar blocks, prep documents, and 24-hour reminders: automatically.",
+            "New bookings trigger confirmation emails, calendar blocks, prep documents, and 24-hour reminders automatically.",
         },
         {
           title: "Multi-tool Integrations",
@@ -96,7 +96,7 @@ export default function WorkflowAutomation() {
         {
           title: "Reporting & Alerts",
           description:
-            "Automatic weekly digest emails with your key numbers: new leads, revenue, tasks due: so you always know where things stand.",
+            "Automatic weekly digest emails with your key numbers (new leads, revenue, and tasks due), so you always know where things stand.",
         },
       ]}
       industries={[
@@ -109,15 +109,15 @@ export default function WorkflowAutomation() {
         "Businesses",
       ]}
       whyArdent={[
-        "We build with workflows that fit your existing tools. Every workflow we build is yours: fully documented, fully transferable.",
-        "Most workflow builds ship in 1–2 weeks. We scope, build, test, and hand off: with a walkthrough so you understand exactly how it works.",
-        "We're based in Boynton Beach, FL. Every client works directly with Ashley: no account managers, no hand-offs to junior staff.",
+        "We build with workflows that fit your existing tools. Every workflow we build is yours, fully documented and fully transferable.",
+        "Most workflow builds ship in 1–2 weeks. We scope, build, test, and hand off, with a walkthrough so you understand exactly how it works.",
+        "We're based in Boynton Beach, FL. Every client works directly with Ashley, not account managers or junior staff.",
         "Every workflow automation is a fixed price, quoted after a free 15 minute call. No surprises.",
       ]}
       caseStudy={{
         title: "Palm Beach County Service Business",
         description:
-          "A Palm Beach County home services company had 3 different tools for quoting, scheduling, and following up: and none of them talked to each other. Every new job required manual data entry in all three. We built a automated pipeline that connected all three automatically.",
+          "A Palm Beach County home services company had 3 different tools for quoting, scheduling, and following up, and none of them talked to each other. Every new job required manual data entry in all three. We built an automated pipeline that connected all three automatically.",
         result:
           "12 hours/week of manual data entry eliminated. Zero dropped leads from poor follow-up.",
       }}

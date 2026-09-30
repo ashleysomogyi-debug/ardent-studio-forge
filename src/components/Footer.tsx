@@ -39,11 +39,11 @@ const Footer = () => (
           <img src="/ardent-logo-circle.png" alt="Ardent Studio" className="h-12 w-12 shrink-0 rounded-full" />
           <span>
             <span className="block font-sans text-[16px] font-semibold text-dark-band-text md:text-[18px]">Ardent Studio</span>
-            <span className="mt-1 block font-mono text-[10px] uppercase tracking-[0.18em] text-footer-muted">AI Automation · Palm Beach County</span>
+            <span className="mt-1 block font-mono text-[10px] uppercase tracking-[0.18em] text-footer-muted">PRACTICAL AI FOR BUSINESS · PALM BEACH COUNTY</span>
           </span>
         </Link>
         <p className="font-sans text-[13px] text-footer-muted mt-4 leading-[1.6]">
-          AI automation for small businesses in Palm Beach County and South Florida. Based in Boynton Beach, FL.
+          AI automation for businesses in Palm Beach County and South Florida. Based in Boynton Beach, FL.
         </p>
         <span className="mt-4 flex items-center gap-2 font-mono text-[11px] text-footer-muted"><span className="h-2 w-2 rounded-full bg-coral" aria-hidden="true" />© 2026 Ardent Studio</span>
       </div>

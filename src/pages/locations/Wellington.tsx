@@ -11,12 +11,12 @@ const features = [
   {
     title: "Lead Follow-up Automation",
     description:
-      "Automatically send personalized follow-up emails to every new lead within minutes: no more lost opportunities from slow response times.",
+      "Automatically send personalized follow-up emails to every new lead within minutes, with no more lost opportunities from slow response times.",
   },
   {
     title: "AI Customer Service Chatbot",
     description:
-      "A 24/7 chatbot on your website that answers FAQs, captures lead information, and routes inquiries to you: even when you're not available.",
+      "A 24/7 chatbot on your website that answers FAQs, captures lead information, and routes inquiries to you, even when you're not available.",
   },
   {
     title: "Email & Invoice Reminders",
@@ -26,7 +26,7 @@ const features = [
   {
     title: "Appointment Booking Automation",
     description:
-      "Connect your booking form to your calendar and email: new bookings get confirmation, prep info, and reminders automatically.",
+      "Connect your booking form to your calendar and email, so new bookings get confirmation, prep info, and reminders automatically.",
   },
   {
     title: "Custom Workflow Builds",
@@ -36,14 +36,14 @@ const features = [
   {
     title: "AI Tools Setup & Training",
     description:
-      "Get your team using ChatGPT, Claude, and other AI tools effectively: with prompts and workflows built specifically for your business.",
+      "Get your team using ChatGPT, Claude, and other AI tools effectively, with prompts and workflows built specifically for your business.",
   },
 ];
 
 const whyArdent = [
-  `We're based in Boynton Beach: right here in Palm Beach County, familiar with Wellington's unique seasonal rhythms. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
-  "Most automation builds ship in 1–2 weeks. We scope, build, and hand off: you own everything we build.",
-  "We build with automation tools and Anthropic Claude: tools with transparent pricing and no vendor lock-in.",
+  `We're based in Boynton Beach, right here in Palm Beach County, familiar with Wellington's unique seasonal rhythms. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
+  "Most automation builds ship in 1–2 weeks. We scope, build, and hand off, and you own everything we build.",
+  "We build with automation tools and Anthropic Claude, tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,
 ];
 
@@ -102,8 +102,8 @@ const Wellington = () => {
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for Wellington Small Businesses"
-      subheadline="Ardent Studio helps Wellington businesses: from equestrian operations and polo-season businesses to fitness studios and family-owned companies: save time with practical AI automation."
-      introText="Wellington's unique economy: driven by the equestrian and polo community, seasonal influxes, and strong family business culture: creates very specific automation opportunities. Booking management, client communications, and seasonal scaling are all areas where AI automation delivers immediate value."
+      subheadline="Ardent Studio helps Wellington businesses, from equestrian operations and polo-season businesses to fitness studios and family-owned companies, save time with practical AI automation."
+      introText="Wellington's unique economy, driven by the equestrian and polo community, seasonal influxes, and strong family business culture, creates very specific automation opportunities. Booking management, client communications, and seasonal scaling are all areas where AI automation delivers immediate value."
       features={features}
       whyArdent={whyArdent}
       ctaText={`Ready to save 5–15 hours per week? Let's find the right automation for your ${CITY} business.`}

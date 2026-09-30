@@ -44,3 +44,8 @@
 - [x] Replace the six automation cards with five accessible tab groups
 - [x] Add the supplied example copy and shared booking action
 - [x] Verify contrast, keyboard use, mobile layout, protected files, and build
+
+## Step 10 copy clean-up
+- [x] Fix stray colon punctuation on public pages
+- [x] Update two footer lines
+- [x] Verify copy and list changed sentences

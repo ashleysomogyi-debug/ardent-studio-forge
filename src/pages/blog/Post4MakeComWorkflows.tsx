@@ -8,10 +8,10 @@ const Post4MakeComWorkflows = () => (
     date="May 2026"
     readTime="8 min read"
   >
-    <p>Workflow automation can help businesses handle lead flow, scheduling, invoicing, and communication. These five workflows are practical, proven, and worth knowing about: whether you're thinking about building them yourself or want to understand what's possible.</p>
+    <p>Workflow automation can help businesses handle lead flow, scheduling, invoicing, and communication. These five workflows are practical, proven, and worth knowing about, whether you're thinking about building them yourself or want to understand what's possible.</p>
 
     <h2>Why automate your workflows?</h2>
-    <p>Automation connects your existing tools: your CRM, your inbox, your booking software, your invoicing app: and builds logic between them. We choose tools based on the workflow and hand over documentation for what we build.</p>
+    <p>Automation connects your existing tools: your CRM, your inbox, your booking software, and your invoicing app, then builds logic between them. We choose tools based on the workflow and hand over documentation for what we build.</p>
 
     <h2>Workflow 1: Lead Form → CRM + Automated Email Sequence</h2>
     <p><strong>What it does:</strong> Someone fills out the contact form on your website. an automation catches that submission and immediately creates a new contact record in your CRM, tags them with where they came from, and kicks off an email sequence: a welcome email right away, a follow-up with more info on day two, and a check-in on day five.</p>
@@ -47,7 +47,7 @@ const Post4MakeComWorkflows = () => (
     <p><strong>Build time:</strong> 3–5 hours depending on how many platforms.</p>
 
     <h2>What These Five Have in Common</h2>
-    <p>Each of these workflows takes a task you're currently doing manually: or forgetting to do: and makes it happen automatically, every time, on schedule. They're also all built in a day or two. None require a six-month roadmap or a big-agency engagement. They're small, specific, and they work.</p>
+    <p>Each of these workflows takes a task you're currently doing manually (or forgetting to do) and makes it happen automatically, every time, on schedule. They're also all built in a day or two. None require a six-month roadmap or a big-agency engagement. They're small, specific, and they work.</p>
 
     <h2>Frequently Asked Questions</h2>
     <h3>Do you need an automation tool account for these workflows?</h3>
@@ -55,7 +55,7 @@ const Post4MakeComWorkflows = () => (
     <h3>Can these workflows connect to existing tools?</h3>
     <p>Automation tools connect to apps: Gmail, Google Sheets, Calendly, QuickBooks, HubSpot, Slack, and most tools small businesses already use. If you're not sure about a specific tool, book a call and we'll check.</p>
     <h3>What if a workflow breaks?</h3>
-    <p>Automation tools can send alerts when a workflow fails. We document everything we build, so if something needs fixing, you know exactly where to look: or you call us and we fix it quickly.</p>
+    <p>Automation tools can send alerts when a workflow fails. We document everything we build, so if something needs fixing, you know exactly where to look, or you call us and we fix it quickly.</p>
   </BlogPostLayout>
 );
 
