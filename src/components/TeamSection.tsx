@@ -24,13 +24,13 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="reveal-section py-24 px-6">
+    <section className="reveal-section py-12 md:py-[72px] px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="font-sans text-4xl md:text-5xl text-center text-foreground mb-3">
           Meet the Team
         </h2>
         <p
-          className="font-mono text-sm text-center mb-16"
+          className="font-mono text-[14px] text-center mb-16"
           style={{ color: "rgba(13,13,13,0.62)" }}
         >
           The humans and hounds behind the builds
@@ -91,7 +91,7 @@ const TeamSection = () => {
                 <h3 className="font-sans text-[42px] font-bold text-foreground leading-tight">
                   Dr Ashley Somogyi
                 </h3>
-                <p className="font-mono text-sm mb-6" style={{ color: "rgba(13,13,13,0.62)" }}>
+                <p className="font-mono text-[14px] mb-6" style={{ color: "rgba(13,13,13,0.62)" }}>
                   Founder &amp; Builder · <span style={{ color: "#0A7D7B" }}>Ardent Studio</span>
                 </p>
 
@@ -208,7 +208,7 @@ const TeamSection = () => {
                 <h3 className="font-sans text-[42px] font-bold text-foreground leading-tight">
                   Wesley Price
                 </h3>
-                <p className="font-mono text-sm mb-6" style={{ color: "rgba(13,13,13,0.62)" }}>
+                <p className="font-mono text-[14px] mb-6" style={{ color: "rgba(13,13,13,0.62)" }}>
                   Strategy &amp; Operations · <span style={{ color: "#0A7D7B" }}>Ardent Studio</span>
                 </p>
 
@@ -310,7 +310,7 @@ const TeamSection = () => {
             <h3 className="font-sans text-[42px] font-bold text-foreground leading-tight">
               Loki <span className="font-medium" style={{ color: "#0A7D7B" }}>&amp;</span> Willow
             </h3>
-            <p className="font-mono text-sm mb-8" style={{ color: "rgba(13,13,13,0.62)" }}>
+            <p className="font-mono text-[14px] mb-8" style={{ color: "rgba(13,13,13,0.62)" }}>
               French Bulldogs · Palm Beach County, FL
             </p>
 
