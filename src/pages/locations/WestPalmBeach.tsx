@@ -102,7 +102,7 @@ const WestPalmBeach = () => {
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for West Palm Beach Small Businesses"
-      subheadline="Ardent Studio provides AI automation in West Palm Beach, FL: helping local businesses save 5–15 hours per week with custom workflows, chatbots, and AI tools."
+      subheadline="Ardent Studio provides AI automation in West Palm Beach, FL, helping local businesses save 5–15 hours per week with custom workflows, chatbots, and AI tools."
       introText="From financial services firms along Okeechobee Boulevard to healthcare practices, hospitality businesses downtown, and family-run services throughout the city, West Palm Beach small businesses are finding that the right AI automation pays for itself within weeks. Most clients see measurable time savings within 30 days."
       features={features}
       whyArdent={whyArdent}
