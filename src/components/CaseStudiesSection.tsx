@@ -694,7 +694,7 @@ export default function CaseStudiesSection() {
                 flexShrink: 0,
               }}
             >
-              Book a free call
+              Book a free 15-min call
             </a>
           </div>
         </div>

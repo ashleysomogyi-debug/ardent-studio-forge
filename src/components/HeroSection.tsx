@@ -1,7 +1,7 @@
 import heroPhoto from "@/assets/photos/hero-speaking.png.asset.json";
 
 const HeroSection = () => (
-  <section className="relative min-h-[92vh] flex items-center bg-bg-base overflow-hidden pt-24">
+  <section className="relative min-h-[84vh] flex items-center bg-bg-base overflow-hidden pt-24">
     <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full py-16 md:py-24 grid lg:grid-cols-[1.08fr_0.92fr] gap-12 lg:gap-16 items-center">
       <div>
       <div className="flex items-center gap-4 mb-10">
@@ -9,16 +9,14 @@ const HeroSection = () => (
         <span className="font-mono text-xs tracking-[0.2em] uppercase text-primary">Listen. Build. Train. Repeat.</span>
       </div>
       <h1 className="font-sans font-bold text-[clamp(2.75rem,6vw,6rem)] leading-[1.02] tracking-normal text-foreground max-w-4xl">
-        AI tools for the way business{' '}
-        <span className="inline-block bg-ardent-lime text-ardent-studio px-2">already works</span>
+        Find where AI actually helps your business. Then{' '}
+        <span className="inline bg-ardent-lime text-ardent-studio px-2 box-decoration-clone">make it work</span>.
       </h1>
       <p className="mt-10 max-w-2xl font-sans text-lg lg:text-xl text-body-text leading-relaxed">
-        Fixed-scope builds for businesses, consultancies, and fractional
-        executives. From "we keep meaning to automate that" to a tool that
-        does it for you.
+        Practical AI for the way your team already works. We help you find the answer, build the tool, and teach your people to run it, at a fixed price.
       </p>
       <p className="mt-6 font-mono text-sm tracking-[0.15em] uppercase text-label-text">
-        Fixed price · 2–4 weeks · You own it
+        FIXED PRICE, 2-4 WEEKS, YOU OWN IT
       </p>
       <div className="mt-12 flex flex-wrap gap-4">
         <a
@@ -27,13 +25,13 @@ const HeroSection = () => (
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-8 py-4 bg-ardent-lime text-ardent-studio font-sans font-semibold rounded-full hover:opacity-85 transition-opacity"
         >
-          Book a free call →
+          Book a free 15-min call →
         </a>
         <a
           href="#work"
           className="inline-flex items-center gap-2 px-8 py-4 border border-foreground text-foreground font-sans font-semibold rounded-full hover:bg-foreground hover:text-background transition-colors"
         >
-          See recent builds
+          See our work
         </a>
       </div>
       </div>
