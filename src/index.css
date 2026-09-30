@@ -81,6 +81,24 @@
     background: var(--color-surface);
   }
 
+  /* Mobile only: turn a stacked card grid into a swipeable row. Desktop grid is untouched. */
+  @media (max-width: 767px) {
+    .mobile-rail {
+      display: flex !important;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+      padding: 0 1.25rem 0.5rem;
+      scroll-padding-left: 1.25rem;
+      scrollbar-width: thin;
+    }
+    .mobile-rail > * {
+      flex: 0 0 82%;
+      scroll-snap-align: start;
+    }
+  }
+
   .coral-dot-grid {
     background-image: radial-gradient(circle, rgb(255 107 107 / 0.35) 2px, transparent 2.5px);
     background-size: 18px 18px;

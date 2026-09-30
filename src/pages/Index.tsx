@@ -136,7 +136,7 @@ const Index = () => (
           <span className="section-eyebrow mb-5">Practical examples</span>
           <h2 id="examples-heading" className="max-w-[20ch] text-[clamp(32px,5vw,56px)] font-semibold leading-[1.12] text-foreground">What we could build for you</h2>
           <p className="mt-5 max-w-[62ch] text-[17px] leading-relaxed text-body-text">Examples of the chores we take off your plate. Yours will be scoped to fit.</p>
-          <div className="mt-6 md:mt-10 grid gap-3 md:gap-5 md:grid-cols-3">
+          <div className="mobile-rail mt-6 md:mt-10 grid gap-3 md:gap-5 md:grid-cols-3">
             {examples.map((example, i) => (
               <article key={example.title} className="workshop-card flex min-h-0 md:min-h-[280px] flex-col p-5 md:p-8">
                 <span className={`mb-3 md:mb-7 block h-2.5 w-2.5 rounded-full ${accentPills[i]}`} aria-hidden="true" />

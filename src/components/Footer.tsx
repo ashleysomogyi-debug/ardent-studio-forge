@@ -27,12 +27,12 @@ const locations = [
 
 const Footer = () => (
   <footer id="book-a-call" className="bg-footer-bg text-footer-text py-10 md:py-16 px-5 md:px-10">
-    <div className="mx-auto mb-9 flex max-w-[1200px] gap-2" aria-hidden="true">
+    <div className="mx-auto mb-6 md:mb-9 flex max-w-[1200px] gap-2" aria-hidden="true">
       <span className="h-2.5 w-2.5 rounded-full bg-teal-bright" /><span className="h-2.5 w-2.5 rounded-full bg-ardent-lime" /><span className="h-2.5 w-2.5 rounded-full bg-coral" /><span className="h-2.5 w-2.5 rounded-full bg-peach" />
     </div>
-    <div className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7 md:gap-10">
+    <div className="max-w-[1200px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-7 md:gap-10">
       {/* Brand */}
-      <div className="flex flex-col">
+      <div className="col-span-2 flex flex-col md:col-span-1">
         <Link to="/" className="inline-flex items-center gap-3">
           <img src="/ardent-logo-circle.png" alt="Ardent Studio" className="h-12 w-12 shrink-0 rounded-full" />
           <span>
@@ -61,7 +61,7 @@ const Footer = () => (
       </div>
 
       {/* Locations */}
-      <div>
+      <div className="col-span-2 md:col-span-1">
         <span className="font-mono text-[13px] text-dark-band-text tracking-[0.2em] uppercase mb-4 block">Service Area</span>
         <ul className="grid grid-cols-2 gap-x-4 md:block md:space-y-2.5">
           {locations.map((loc) => (
@@ -112,7 +112,7 @@ const Footer = () => (
     </div>
 
     {/* SEO city list strip -->*/}
-    <div className="max-w-[1200px] mx-auto mt-10 pt-6 border-t border-border-subtle">
+    <div className="max-w-[1200px] mx-auto mt-7 md:mt-10 pt-5 md:pt-6 border-t border-border-subtle">
       <p className="font-sans text-[13px] text-footer-muted leading-[1.8] text-center">
         Serving businesses across Palm Beach County, FL: West Palm Beach · Boca Raton · Delray Beach · Boynton Beach · Jupiter · Palm Beach Gardens · Wellington · Lake Worth Beach · North Palm Beach · Riviera Beach · Royal Palm Beach · Greenacres · Lantana · Tequesta · Juno Beach · Palm Beach · and all of South Florida
       </p>

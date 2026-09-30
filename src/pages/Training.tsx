@@ -54,10 +54,10 @@ const Training = () => {
             <h1 className="text-[clamp(40px,6vw,72px)] leading-[1.05] mb-6 max-w-[20ch] text-foreground" style={{ fontFamily: serif }}>
               Skip the AI 101. Build something today.
             </h1>
-            <p className="text-[18px] leading-[1.65] max-w-[640px] text-body-text mb-10">
+            <p className="text-[18px] leading-[1.65] max-w-[640px] text-body-text mb-6 md:mb-10">
               In-person and virtual workshops for teams of any kind. We build something real together, so your team leaves with a tool, not a slide deck.
             </p>
-            <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[16px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
+            <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center px-7 py-3 md:inline-block md:px-8 md:py-4 text-[16px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
               Book a free 15-min call
             </a>
           </div>
@@ -65,11 +65,11 @@ const Training = () => {
 
         <section className="bg-footer-bg px-5 py-12 md:px-10 md:py-[72px]" aria-labelledby="taught-heading">
           <div className="max-w-[1100px] mx-auto">
-            <div className="mb-9 flex items-center gap-3">
+            <div className="mb-5 md:mb-9 flex items-center gap-3">
               <span className="h-2.5 w-2.5 rounded-full bg-coral" aria-hidden="true" />
               <h2 id="taught-heading" className="text-[clamp(30px,4vw,44px)] font-semibold text-dark-band-text">Where we have taught</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="mobile-rail grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
               {[
                 { src: "/images/ef-shanghai-2024.jpg", caption: "EF Keynote · Shanghai" },
                 { src: "/images/shrm23-audience.jpg", caption: "SHRM · Las Vegas" },
@@ -79,7 +79,7 @@ const Training = () => {
                   <div className="aspect-[16/10] overflow-hidden rounded-xl bg-ardent-ink">
                     <img src={p.src} alt={p.caption} className="w-full h-full object-cover" loading="lazy" />
                   </div>
-                  <figcaption className={`mt-4 inline-flex w-fit items-center justify-center text-center rounded-full px-4 py-2.5 font-mono text-[13px] font-semibold uppercase tracking-[0.18em] text-ardent-studio ${workshopPills[i]}`}>
+                  <figcaption className={`mt-3 md:mt-4 inline-flex w-fit items-center justify-center text-center rounded-full px-4 py-2.5 font-mono text-[13px] font-semibold uppercase tracking-[0.18em] text-ardent-studio ${workshopPills[i]}`}>
                     {p.caption}
                   </figcaption>
                 </figure>
@@ -133,7 +133,7 @@ const Training = () => {
             <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-10" style={{ fontFamily: serif, color: "#F5F5F0" }}>
               Six tracks. Pick the ones that fit your team.
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
+            <div className="mobile-rail grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
               {tracks.map((t) => (
                 <div key={t.t} className="workshop-card p-4 md:p-7">
                   {t.featured && (
@@ -186,7 +186,7 @@ const Training = () => {
             <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-10 text-foreground" style={{ fontFamily: serif }}>
               Fixed price, quoted for your team.
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
+            <div className="mobile-rail grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
               {tiers.map((tier, i) => (
                 <div key={tier.name} className="workshop-card p-4 md:p-8">
                   <span className={`mb-3 md:mb-5 inline-flex items-center justify-center text-center rounded-full px-4 py-2 md:py-2.5 font-mono text-[13px] font-semibold uppercase tracking-[0.12em] text-ardent-studio ${accentPills[i]}`}>Quoted for your team on a free call</span>

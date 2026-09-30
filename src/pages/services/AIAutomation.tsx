@@ -275,7 +275,7 @@ const AIAutomation = () => {
 
               {workflowTabs.map((tab) => (
                 <TabsContent key={tab.value} value={tab.value} className="mt-3 md:mt-7">
-                  <div className="grid grid-cols-1 gap-3 md:gap-5 md:grid-cols-2 lg:grid-cols-3">
+                  <div className="mobile-rail grid grid-cols-1 gap-3 md:gap-5 md:grid-cols-2 lg:grid-cols-3">
                     {tab.examples.map((example) => (
                       <article key={example.title} className="rounded-3xl border border-foreground/10 bg-card p-4 md:p-8">
                         <h3 className="mb-2 md:mb-7 text-[20px] md:text-[23px] font-bold leading-tight text-foreground">
@@ -380,7 +380,7 @@ const AIAutomation = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mt-6 md:mt-10">
+            <div className="mobile-rail grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mt-6 md:mt-10">
               {[
                 { t: "Web apps", d: "Customer portals, dashboards, and internal tools your team actually uses." },
                 { t: "Mobile apps", d: "iOS and Android apps for field teams, customers, and operations." },

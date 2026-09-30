@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const CTASection = () => (
   <section id="contact" className="bg-background px-5 py-12 md:px-10 md:py-[72px]">
-    <div className="relative mx-auto grid max-w-[1200px] gap-8 overflow-hidden rounded-[28px] bg-footer-bg p-7 md:grid-cols-[170px_1fr_auto] md:items-center md:p-10 lg:p-12">
+    <div className="relative mx-auto grid max-w-[1200px] gap-5 md:gap-8 overflow-hidden rounded-[28px] bg-footer-bg p-5 md:grid-cols-[170px_1fr_auto] md:items-center md:p-10 lg:p-12">
       <div className="absolute right-6 top-6 flex gap-2" aria-hidden="true">
         <span className="h-2.5 w-2.5 rounded-full bg-coral" />
         <span className="h-2.5 w-2.5 rounded-full bg-ardent-lime" />
@@ -12,7 +12,7 @@ const CTASection = () => (
         <h2 className="font-sans text-[clamp(30px,4vw,48px)] font-semibold leading-[1.08] text-dark-band-text">
           Tell us what you're building.
         </h2>
-        <p className="mt-4 max-w-[620px] font-sans text-[16px] leading-[1.7] text-dark-band-muted">
+        <p className="mt-3 md:mt-4 max-w-[620px] font-sans text-[16px] leading-[1.7] text-dark-band-muted">
           Scope call is free, takes 15 minutes, and you'll leave with a clear plan, whether you work with us or not.
         </p>
       </div>
