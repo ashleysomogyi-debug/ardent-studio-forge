@@ -13,12 +13,12 @@ const format = [
 ];
 
 const tracks = [
-  { t: "Build your first agent", d: "Pick a workflow that's leaking hours. Leave with a working tool that handles it for you.", featured: true },
-  { t: "Writing with AI", d: "Replies, proposals, and posts in your voice, not the default voice." },
-  { t: "Research and analysis", d: "Use AI to read documents and pull out what matters." },
-  { t: "Customer conversations", d: "Inbound triage, FAQ answers, and respectful follow-up." },
-  { t: "Operations and admin", d: "Cleanups, summaries, and the small jobs nobody wants." },
-  { t: "Lead generation with AI", d: "Find the right contacts, write the openers, and follow up without going cold." },
+  { t: "Build your first agent", d: "Pick a workflow that is leaking hours. Leave with a working tool that handles it for you.", featured: true },
+  { t: "Answer customers faster", d: "Set up drafted replies, FAQ answers and follow-ups in your own voice." },
+  { t: "Turn documents into decisions", d: "Contracts, reports and spreadsheets get read and summarized so you get the point in minutes." },
+  { t: "Write proposals and quotes in an afternoon", d: "Your past work becomes reusable templates and drafts." },
+  { t: "Run the back office on autopilot", d: "Scheduling, invoice reminders, reporting and the admin nobody wants to do." },
+  { t: "Keep the pipeline moving", d: "Lead follow-up and outreach that goes out on schedule." },
 ];
 
 const quotes = [

@@ -49,3 +49,8 @@
 - [x] Fix stray colon punctuation on public pages
 - [x] Update two footer lines
 - [x] Verify copy and list changed sentences
+
+## Step 11 Training tracks
+- [x] Replace six Training track cards with supplied titles and descriptions
+- [x] Audit other pages and metadata for old track names
+- [x] Verify mobile layout, contrast, protected files, and build
