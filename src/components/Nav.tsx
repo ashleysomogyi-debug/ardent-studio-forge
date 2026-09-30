@@ -11,7 +11,6 @@ const NAV_LINKS = [
 
 const Nav = () => {
   const location = useLocation();
-  const [scrolled, setScrolled] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const lastY = useRef(0);
@@ -24,7 +23,6 @@ const Nav = () => {
       ticking.current = true;
       requestAnimationFrame(() => {
         const y = window.scrollY;
-        setScrolled(y > 40);
         if (!menuOpen) {
           if (y <= 100) {
             setHidden(false);

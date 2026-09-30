@@ -36,7 +36,7 @@ export default function BlogPostLayout({
       <Nav />
 
       <main className="flex-1">
-        <article className="px-6 py-12 md:py-[72px] max-w-2xl mx-auto">
+        <article className="px-6 pb-12 pt-20 md:pb-[72px] md:pt-24 max-w-2xl mx-auto">
           {/* Header */}
           <header className="mb-10">
             <h1

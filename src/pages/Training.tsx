@@ -47,7 +47,7 @@ const Training = () => {
     <>
       <Nav />
       <main>
-        <section className="relative overflow-hidden bg-blush px-5 pb-12 pt-24 md:px-10 md:pb-20 md:pt-28">
+        <section className="relative overflow-hidden bg-blush px-5 pb-12 pt-20 md:px-10 md:pb-20 md:pt-24">
           <DotSphere />
           <div className="relative max-w-[1100px] mx-auto" style={{ zIndex: 1 }}>
             <span className="section-eyebrow mb-6">Training</span>
