@@ -7,3 +7,8 @@
 - [ ] Convert service, training, contact, blog, location, event, and utility pages
 - [ ] Audit forbidden legacy accents, typography, contrast, and mobile layouts
 - [ ] Verify representative routes and protected WOW behavior
+
+## Step 2 homepage rewrite
+- [ ] Replace hero, offers, work, teaching, and about copy
+- [ ] Update sitewide call buttons and homepage metadata
+- [ ] Verify homepage and protected offer behavior
