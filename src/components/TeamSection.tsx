@@ -103,10 +103,10 @@ const TeamSection = () => {
                     color: "rgba(13,13,13,0.78)",
                   }}
                 >
-                  I build apps, automations and digital tools for small businesses that need real
+                  We build apps, automations and digital tools for businesses that need real
                   results:not a template and a prayer. When you work with Ardent Studio,{" "}
                   <span className="font-medium" style={{ color: "#0A7D7B" }}>
-                    you work with me directly
+                    you work with us directly
                   </span>
                   . No account managers, no overseas handoffs, no wondering who's actually building
                   your thing.

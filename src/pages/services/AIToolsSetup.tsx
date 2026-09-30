@@ -15,7 +15,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "How many sessions do I need?",
+      name: "How many sessions does a team need?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Most clients need 2–3 sessions (approximately 2 hours each). Some are fully set up and confident after one session. We go at your pace and don't upsell sessions you don't need.",
@@ -26,7 +26,7 @@ const faqSchema = {
       name: "Will AI tools work for my type of business?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. We work with service businesses, contractors, real estate professionals, healthcare providers, agencies, and more. Almost any small business has at least 5 hours per week of tasks that AI can handle: email drafting, report writing, data summarization, client communication templates, and more.",
+        text: "Yes. We work with service businesses, contractors, real estate professionals, healthcare providers, businesses, and more. Almost any small business has at least 5 hours per week of tasks that AI can handle: email drafting, report writing, data summarization, client communication templates, and more.",
       },
     },
   ],
@@ -41,7 +41,7 @@ export default function AIToolsSetup() {
     if (metaDesc) {
       metaDesc.setAttribute(
         "content",
-        "Get your small business actually using AI. Ardent Studio provides hands-on AI tools setup and training for Palm Beach County businesses: ChatGPT, Claude, Make.com, and more. Book a free call."
+        "Get your small business actually using AI. Ardent Studio provides hands-on AI tools setup and training for Palm Beach County businesses: ChatGPT, Claude, and more. Book a free 15-min call."
       );
     }
 
@@ -63,7 +63,7 @@ export default function AIToolsSetup() {
   return (
     <ServicePageLayout
       metaTitle="AI Tools Setup & Training for Small Businesses | Ardent Studio: Palm Beach County, FL"
-      metaDescription="Get your small business actually using AI. Ardent Studio provides hands-on AI tools setup and training for Palm Beach County businesses: ChatGPT, Claude, Make.com, and more. Book a free call."
+      metaDescription="Get your small business actually using AI. Ardent Studio provides hands-on AI tools setup and training for Palm Beach County businesses: ChatGPT, Claude, and more. Book a free 15-min call."
       headline="AI Tools Setup & Training"
       subheadline="Most small business owners have a ChatGPT account they use 10% of its potential. Ardent Studio sets up the right AI tools for your specific business, builds the prompts, and trains you to use them effectively."
       introText="A Salesforce survey found that 76% of small business owners who implemented AI tools reported significant time savings: but most of them needed hands-on help to get there. Generic AI courses teach you theory. This service teaches you how to use AI for your actual business: your voice, your workflows, your clients."
@@ -79,9 +79,9 @@ export default function AIToolsSetup() {
             "A library of prompts built specifically for your recurring tasks: client emails, proposals, social posts, reports: in your voice.",
         },
         {
-          title: "Make.com AI Workflows",
+          title: "AI Workflows",
           description:
-            "Combine AI (Claude or ChatGPT) with Make.com automation to create powerful workflows: auto-draft emails, classify leads, extract data from documents.",
+            "Combine AI (Claude or ChatGPT) with automation to create powerful workflows: auto-draft emails, classify leads, extract data from documents.",
         },
         {
           title: "Team Training Sessions",
@@ -103,14 +103,14 @@ export default function AIToolsSetup() {
         "Professional Services",
         "Real Estate",
         "Healthcare",
-        "Agencies & Consultants",
+        "Businesses & Teams",
         "Restaurants & Hospitality",
         "Contractors",
         "Retail",
       ]}
       whyArdent={[
         "This isn't a generic AI course: it's a personalized setup session for your specific business. We review your workflows first, then build the tools and prompts you'll actually use.",
-        "We work with ChatGPT, Claude, Perplexity, Make.com, and other leading AI tools. We recommend what's right for your use case, not what we're paid to sell.",
+        "We work with ChatGPT, Claude, Perplexity, automation tools, and other leading AI tools. We recommend what's right for your use case, not what we're paid to sell.",
         "Sessions are held over Zoom or in person across Palm Beach County. Most clients need 1–3 sessions to get fully set up and confident.",
         "We're based in Boynton Beach, FL. You work directly with Ashley: not a trainer who's never run a business.",
       ]}

@@ -5,7 +5,7 @@ const CITY = "Boca Raton";
 const SLUG = "boca-raton";
 const META_TITLE = "AI Automation for Boca Raton Businesses | Ardent Studio";
 const META_DESC =
-  "AI automation services in Boca Raton, FL. Custom AI workflows, chatbots, and email automation for Boca Raton small businesses. Palm Beach County local. Book a free call.";
+  "AI automation services in Boca Raton, FL. Custom AI workflows, chatbots, and email automation for Boca Raton small businesses. Palm Beach County local. Book a free 15-min call.";
 
 const features = [
   {
@@ -29,7 +29,7 @@ const features = [
       "Connect your booking form to your calendar and email: new bookings get confirmation, prep info, and reminders automatically.",
   },
   {
-    title: "Make.com Workflow Builds",
+    title: "Custom Workflow Builds",
     description:
       "Custom multi-step automations connecting your email, CRM, spreadsheets, and other tools into one seamless workflow.",
   },
@@ -43,7 +43,7 @@ const features = [
 const whyArdent = [
   `We're based in Boynton Beach: just minutes from Boca Raton. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
   "Most automation builds ship in 1–2 weeks. We scope, build, and hand off: you own everything we build.",
-  "We build with Make.com and Anthropic Claude: proven tools with transparent pricing and no vendor lock-in.",
+  "We build with automation tools and Anthropic Claude: tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,
 ];
 
@@ -119,7 +119,7 @@ const BocaRaton = () => {
       caseStudy={{
         title: "Boca Raton Professional Services Firm",
         description:
-          "A Boca Raton consulting firm needed their proposals auto-drafted from intake forms. We built a Claude + Make.com pipeline that pulled from their pricing doc and past proposals.",
+          "A Boca Raton consulting firm needed their proposals auto-drafted from intake forms. We built a Claude-based pipeline that pulled from their pricing doc and past proposals.",
         result: "Proposal time cut from 3 hours to 20 minutes.",
       }}
     />

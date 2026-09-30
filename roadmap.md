@@ -12,3 +12,8 @@
 - [x] Replace hero, offers, work, teaching, and about copy
 - [x] Update sitewide call buttons and homepage metadata
 - [x] Verify homepage and protected offer behavior
+
+## Step 3 page copy and audit
+- [x] Update Training, Automation and Apps, and Contact page copy and choices
+- [x] Audit sitewide voice, prohibited terms, placeholders, and call labels outside `/wow`
+- [x] Verify key pages and contact option handling

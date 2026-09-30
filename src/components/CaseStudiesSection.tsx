@@ -92,7 +92,7 @@ const industries = [
     label: "Senior Care",
     icon: "◉",
     color: "#0A7D7B",
-    tagline: "Less than 3% of home care agencies use AI. That's your advantage.",
+    tagline: "Less than 3% of home care providers use AI. That's your advantage.",
     stats: [
       { number: "170+", desc: "Automated workflows running daily at Cypress Living: saving hours of staff time every day", source: "HealthTech Magazine, 2025", url: "https://healthtechmagazine.net/article/2025/05/how-can-ai-support-senior-care-workforce" },
       { number: "<3%", desc: "Current AI adoption in home care: first movers in Palm Beach County have a wide-open window", source: "AutomationEdge Home Care Report, 2025", url: "https://automationedge.com/home-health-care-automation/blogs/ai-and-automation-in-home-care/" },
@@ -134,13 +134,13 @@ const industries = [
     label: "Insurance",
     icon: "▣",
     color: "#0A7D7B",
-    tagline: "Renewals are still the #1 most inefficient task for insurance agencies.",
+    tagline: "Renewals are still the #1 most inefficient task for insurance businesses.",
     stats: [
       { number: "75%", desc: "Reduction in claims resolution time: from 30 days to 7.5 days: achieved through AI automation", source: "Datagrid AI Insurance Statistics Report, 2025", url: "https://datagrid.com/blog/ai-agent-for-insurance-statistics" },
       { number: "+6%", desc: "Revenue gains reported by 90% of financial services firms implementing generative AI, per Google's study", source: "Google ROI of Gen AI in Financial Services · Vonage Insurance Report, 2025", url: "https://www.vonage.com/resources/articles/ai-in-insurance/" },
       { number: "+30%", desc: "Productivity gains reported by insurers that equipped service and operations teams with AI tools", source: "BCG Insurance AI Productivity Study · Creatio, 2025", url: "https://www.creatio.com/glossary/ai-in-insurance" },
     ],
-    story: "UK insurer Aviva deployed AI across its claims domain: cutting liability assessment time for complex cases by 23 days, improving claims routing accuracy by 30%, and reducing customer complaints by 65%. The transformation saved the company more than £60 million in 2024. For independent agencies, the same automation principles apply at a fraction of the cost.",
+    story: "UK insurer Aviva deployed AI across its claims domain: cutting liability assessment time for complex cases by 23 days, improving claims routing accuracy by 30%, and reducing customer complaints by 65%. The transformation saved the company more than £60 million in 2024. For independent businesses, the same automation principles apply at a fraction of the cost.",
     storySource: "McKinsey · The Future of AI in Insurance, 2025", storyUrl: "https://www.mckinsey.com/industries/financial-services/our-insights/the-future-of-ai-in-the-insurance-industry",
   },
 ];

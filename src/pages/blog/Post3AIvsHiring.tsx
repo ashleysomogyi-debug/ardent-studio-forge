@@ -37,11 +37,11 @@ const Post3AIvsHiring = () => (
     <p>Write down everything you (or your admin) does in a week. Circle the tasks that happen the same way every single time. Those are your automation candidates. Everything that requires a human to actually think or relate: that stays with a person. Most businesses find that roughly half of their admin volume falls in the "automatable" bucket.</p>
 
     <h2>Frequently Asked Questions</h2>
-    <h3>Should I hire or automate first if I don't have an admin yet?</h3>
+    <h3>Is it better to hire or automate first without an admin?</h3>
     <p>Build the automation first. Figure out what the machine can handle. Then, if you still need help, you're hiring for the judgment work: which is the interesting work, and easier to hire for than "do all the admin."</p>
     <h3>Will my clients notice they're getting automated emails?</h3>
     <p>Written well, no. We put real care into the messaging: it should sound like you, not like a form letter. The test is: would you be embarrassed if a client knew? If not, you're good.</p>
-    <h3>What tasks should I never automate?</h3>
+    <h3>Which tasks should stay with people?</h3>
     <p>Don't automate any touchpoint with your best clients where the whole point is that it's personal. Don't automate complaint resolution. Don't automate anything that requires a judgment call about whether to proceed. Those stay with humans.</p>
   </BlogPostLayout>
 );

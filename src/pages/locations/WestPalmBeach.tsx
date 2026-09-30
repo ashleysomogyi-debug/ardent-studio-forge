@@ -5,7 +5,7 @@ const CITY = "West Palm Beach";
 const SLUG = "west-palm-beach";
 const META_TITLE = "AI Automation for West Palm Beach Small Businesses | Ardent Studio";
 const META_DESC =
-  "AI automation services in West Palm Beach, FL. Ardent Studio builds custom workflows, chatbots, and email automation that save small businesses 5–15 hrs/week. Book a free call.";
+  "AI automation services in West Palm Beach, FL. Ardent Studio builds custom workflows, chatbots, and email automation that save small businesses 5–15 hrs/week. Book a free 15-min call.";
 
 const features = [
   {
@@ -29,7 +29,7 @@ const features = [
       "Connect your booking form to your calendar and email: new bookings get confirmation, prep info, and reminders automatically.",
   },
   {
-    title: "Make.com Workflow Builds",
+    title: "Custom Workflow Builds",
     description:
       "Custom multi-step automations connecting your email, CRM, spreadsheets, and other tools into one seamless workflow.",
   },
@@ -43,7 +43,7 @@ const features = [
 const whyArdent = [
   `We're based in Boynton Beach: right next door to West Palm Beach. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
   "Most automation builds ship in 1–2 weeks. We scope, build, and hand off: you own everything we build.",
-  "We build with Make.com and Anthropic Claude: proven tools with transparent pricing and no vendor lock-in.",
+  "We build with automation tools and Anthropic Claude: tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,
 ];
 
@@ -119,7 +119,7 @@ const WestPalmBeach = () => {
       caseStudy={{
         title: "West Palm Beach Service Business",
         description:
-          "A professional services firm in West Palm Beach was spending 8+ hours per week on manual follow-up emails and scheduling. We built a Make.com automation that handled their entire intake sequence.",
+          "A professional services firm in West Palm Beach was spending 8+ hours per week on manual follow-up emails and scheduling. We built a automation that handled their entire intake sequence.",
         result: "8 hours/week reclaimed. Zero missed follow-ups.",
       }}
     />
