@@ -51,6 +51,6 @@
 - [x] Verify copy and list changed sentences
 
 ## Step 11 Training tracks
-- [ ] Replace six Training track cards with supplied titles and descriptions
-- [ ] Audit other pages and metadata for old track names
-- [ ] Verify mobile layout, contrast, protected files, and build
+- [x] Replace six Training track cards with supplied titles and descriptions
+- [x] Audit other pages and metadata for old track names
+- [x] Verify mobile layout, contrast, protected files, and build
