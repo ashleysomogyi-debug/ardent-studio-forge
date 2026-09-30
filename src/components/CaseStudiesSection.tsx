@@ -122,7 +122,7 @@ const industries = [
     color: "#0A7D7B",
     tagline: "Your best customers are shopping online at midnight. Is anyone there?",
     stats: [
-      { number: "87%", desc: "Of retailers report AI had a positive impact on revenue: and 94% say it reduced operating costs", source: "Shopify / Bain Retail AI Report, 2025", url: "https://www.shopify.com/enterprise/blog/ai-in-retail" },
+      { number: "87%", desc: "Of retailers report AI had a positive impact on revenue, and 94% say it reduced operating costs", source: "Shopify / Bain Retail AI Report, 2025", url: "https://www.shopify.com/enterprise/blog/ai-in-retail" },
       { number: "+27%", desc: "Average order value increase from AI-curated product recommendations and personalized bundles", source: "Jellyfish Technologies / Target GenAI Study, 2025", url: "https://www.jellyfishtechnologies.com/generative-ai-in-retail-use-cases-with-real-life-examples/" },
       { number: "73%", desc: "Of online shopping carts are abandoned: poor fit info and lack of personalization are the top causes", source: "Baymard Institute · Bold Metrics Retail Report, 2025", url: "https://blog.boldmetrics.com/strategic-ai-investments-in-retail-2025-balancing-innovation-and-roi" },
     ],
