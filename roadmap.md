@@ -59,3 +59,8 @@
 - [x] Add homepage proof strip and simplify offer cards
 - [x] Update hero, footer, and Automation and Apps services list
 - [x] Remove custom cursor, audit image text, and verify affected pages
+
+## Site-wide typography and spacing
+- [ ] Increase small type and button targets without changing copy or colors
+- [ ] Tighten content sections and mobile hero/cards on Home, Training, Automation, Contact
+- [ ] Check desktop/mobile overflow, first screen, and preview errors
