@@ -68,8 +68,10 @@ const TypingHeadline = () => {
       Build what{" "}
       <span className="relative inline-block">
         <span className="invisible" aria-hidden="true">{longest}</span>
-        <span className={`absolute left-0 top-0 whitespace-nowrap ${colors[idx]}`}>{text}</span>
-        <span className="typing-cursor absolute top-0 text-foreground/80" style={{ left: `${text.length}ch` }} aria-hidden="true">|</span>
+        <span className={`absolute left-0 top-0 whitespace-nowrap ${colors[idx]}`}>
+          {text}
+          <span className="typing-cursor text-foreground/80" aria-hidden="true">|</span>
+        </span>
       </span>
       <span className="text-foreground">.</span>
     </h1>
