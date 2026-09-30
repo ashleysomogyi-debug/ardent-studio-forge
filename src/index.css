@@ -236,6 +236,66 @@
   text-decoration-thickness: 2px;
 }
 
+/* Contact color experiment. Remove this scoped block and its page wrapper to revert. */
+.contact-cyan-theme {
+  --contact-cyan: #E6F7F7;
+  --contact-teal: #076B69;
+  --contact-teal-bright: #0DBFBC;
+  --primary: 179 88% 22%;
+  --accent: 179 88% 22%;
+  --ring: 179 88% 22%;
+}
+
+.contact-cyan-theme .bg-blush {
+  background-color: var(--contact-cyan);
+}
+
+.contact-cyan-theme .section-eyebrow {
+  background: var(--color-surface);
+  color: var(--contact-teal);
+}
+
+.contact-cyan-theme .coral-dot-grid {
+  background-image: radial-gradient(circle, rgb(13 191 188 / 0.35) 2px, transparent 2.5px);
+}
+
+.contact-cyan-theme .border-dashed.border-coral {
+  border-color: var(--contact-teal-bright);
+}
+
+.contact-cyan-theme .text-brick,
+.contact-cyan-theme .contact-accent-link {
+  color: var(--contact-teal);
+}
+
+.contact-cyan-theme .contact-accent-link {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.contact-cyan-theme .contact-accent-link:hover {
+  text-decoration-thickness: 2px;
+}
+
+.contact-cyan-theme label {
+  color: var(--contact-teal);
+}
+
+.contact-cyan-theme :is(input, select, textarea) {
+  border-color: var(--contact-teal);
+}
+
+.contact-cyan-theme :is(input, textarea)::placeholder {
+  color: #595959;
+  opacity: 1;
+}
+
+.contact-cyan-theme :is(input, select, textarea):focus {
+  border-color: var(--contact-teal);
+  --tw-ring-color: var(--contact-teal);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .typing-cursor { animation: none; opacity: 1; }
 }
