@@ -46,6 +46,6 @@
 - [x] Verify contrast, keyboard use, mobile layout, protected files, and build
 
 ## Step 10 copy clean-up
-- [ ] Fix stray colon punctuation on public pages
+- [x] Fix stray colon punctuation on public pages
 - [x] Update two footer lines
-- [ ] Verify copy and list changed sentences
+- [x] Verify copy and list changed sentences
