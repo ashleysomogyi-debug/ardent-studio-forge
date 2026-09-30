@@ -9,23 +9,18 @@ const serif = "'Inter', system-ui, sans-serif";
 
 const META_TITLE = "AI Automation for Small Business: Ardent Studio (Palm Beach County, FL)";
 const META_DESC =
-  "Custom AI automation that fits how your small business already works. Built with Make.com and Anthropic Claude. Most clients save 5+ hours per week within 30 days. Palm Beach County, FL: and remote.";
+  "Custom AI automation that fits how your team already works. Fixed-scope builds, based in Palm Beach County and available remotely.";
 
 const featuredBuilds = [
   {
     name: "Cold outreach engine",
     desc: "A drafting and sending system that finds the right contacts and writes openers in your voice.",
-    stack: "Python · Make · Claude · Gmail",
+    stack: "Python · Claude · Gmail",
   },
   {
     name: "Inbound reply drafter",
     desc: "Reads new emails as they hit the inbox and drafts a thoughtful reply for the owner to approve.",
-    stack: "Gmail · Claude · Make · Slack",
-  },
-  {
-    name: "Sartori operations stack",
-    desc: "The internal tooling that runs Sartori day to day: billing, ops alerts, and analytics.",
-    stack: "Stripe · Supabase · Slack · Make",
+    stack: "Gmail · Claude · Slack",
   },
 ];
 
@@ -76,7 +71,7 @@ const AIAutomation = () => {
         mainEntity: [
           { "@type": "Question", name: "What does an AI automation project cost?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds run $2,000 to $10,000 over 2 to 4 weeks, fixed price and fixed timeline. Larger custom builds are scoped separately. Every project starts with a free 15-minute scope call." } },
           { "@type": "Question", name: "How long does a typical project take?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds ship in 2 to 4 weeks. We don't take on projects we can't deliver in 4 weeks; if it's bigger, we scope it as multiple phases." } },
-          { "@type": "Question", name: "What AI tools do you use?", acceptedAnswer: { "@type": "Answer", text: "We build with Anthropic Claude and Make.com as our primary stack. We chose Claude for its long context handling, reliable structured output, and voice-matching for client-facing writing." } },
+          { "@type": "Question", name: "What AI tools do you use?", acceptedAnswer: { "@type": "Answer", text: "We choose tools to fit the workflow. The build is documented and handed over with the accounts." } },
           { "@type": "Question", name: "Who do you work with?", acceptedAnswer: { "@type": "Answer", text: "Local service businesses, professional services (attorneys, accountants, consultants), trades and home services, and founder-stage AI products. We focus on small businesses and small teams, not enterprise." } },
         ],
       });
@@ -110,9 +105,7 @@ const AIAutomation = () => {
             </div>
             <TypingHeadline />
             <p className="mt-10 max-w-2xl font-sans text-lg lg:text-xl text-ardent-paper/80 leading-relaxed">
-              We build custom AI automation that fits how your team already works: using Make.com, Anthropic
-              Claude, and the tools you're already in. Most clients save 5+ hours per week within the first 30
-              days.
+              We build custom AI automation that fits how your team already works, using the tools you already have. We agree on a fixed scope before work starts.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
