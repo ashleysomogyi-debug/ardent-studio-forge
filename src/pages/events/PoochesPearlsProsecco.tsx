@@ -339,7 +339,7 @@ const PoochesPearlsProsecco = () => {
             <div className="num">03</div>
             <h3>Marketing Automation</h3>
             <p className="desc">
-              Email campaigns, social media posts, and targeted messages that go out on their own:
+              Email campaigns, social media posts, and targeted messages that go out on their own
               based on what your customers actually do. No more spending hours on manual marketing.
             </p>
             <p className="benefit">→ Consistent marketing that runs while you sleep.</p>

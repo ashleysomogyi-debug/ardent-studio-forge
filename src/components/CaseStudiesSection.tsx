@@ -98,7 +98,7 @@ const industries = [
       { number: "<3%", desc: "Current AI adoption in home care: first movers in Palm Beach County have a wide-open window", source: "AutomationEdge Home Care Report, 2025", url: "https://automationedge.com/home-health-care-automation/blogs/ai-and-automation-in-home-care/" },
       { number: "90%+", desc: "Accuracy of Cypress Living's AI fall-prediction model, built on data the facility already collected", source: "HealthTech Magazine, 2025", url: "https://healthtechmagazine.net/article/2025/05/how-can-ai-support-senior-care-workforce" },
     ],
-    story: "Cypress Living runs 170+ daily automations through Microsoft Power Automate: from paper form digitization to email routing, saving hours every day. Their data scientist also built an AI model predicting resident falls with 90%+ accuracy, using data they were already collecting.",
+    story: "Cypress Living runs 170+ daily automations through Microsoft Power Automate, from paper form digitization to email routing, saving hours every day. Their data scientist also built an AI model predicting resident falls with 90%+ accuracy, using data they were already collecting.",
     storySource: "HealthTech Magazine, 2025", storyUrl: "https://healthtechmagazine.net/article/2025/05/how-can-ai-support-senior-care-workforce",
   },
   {
@@ -437,7 +437,7 @@ export default function CaseStudiesSection() {
                 maxWidth: "560px",
               }}
             >
-              Every stat below is sourced and verifiable. We don't sell hype:
+              Every stat below is sourced and verifiable. We don't sell hype;
               we show you what's already working for businesses in your industry,
               then build it for you.
             </p>

@@ -8,7 +8,7 @@ const Post3AIvsHiring = () => (
     date="May 2026"
     readTime="6 min read"
   >
-    <p>For most small businesses, the honest answer is: both, in the right places. AI automation handles the repetitive, high-volume tasks well: lead follow-ups, reminders, data entry, FAQs. A good admin or VA handles judgment calls, real relationships, and anything messy. The question isn't which one wins. It's which tasks belong to which.</p>
+    <p>For most small businesses, the honest answer is both, in the right places. AI automation handles the repetitive, high-volume tasks well: lead follow-ups, reminders, data entry, FAQs. A good admin or VA handles judgment calls, real relationships, and anything messy. The question isn't which one wins. It's which tasks belong to which.</p>
 
     <h2>What AI Does Well</h2>
     <p>AI automation is genuinely good at tasks that are:</p>
@@ -26,7 +26,7 @@ const Post3AIvsHiring = () => (
     <h2>The Real Cost Comparison</h2>
     <p>An admin or VA is an ongoing cost, paid every week for as long as the role exists.</p>
     <p>A well-built automation for the same set of tasks is usually a one-time build at a fixed price, plus modest tool subscriptions. For tasks the automation can actually handle, the economics are clear.</p>
-    <p>But here's what most people miss: the automation doesn't replace the admin's best hours. It replaces the admin's worst hours: the repetitive stuff that eats half their day. What's left is the relationship work, the judgment calls, the things an admin actually adds value doing.</p>
+    <p>But here's what most people miss: the automation doesn't replace the admin's best hours. It replaces the admin's worst hours, the repetitive stuff that eats half their day. What's left is the relationship work, the judgment calls, the things an admin actually adds value doing.</p>
     <p>According to the McKinsey Global Institute, automation can handle 45% of activities workers are paid to perform using current technology. That's not 45% of jobs. It's 45% of tasks within jobs. The human still has a job. It's just a better one.</p>
 
     <h2>A Common Scenario in Palm Beach County</h2>

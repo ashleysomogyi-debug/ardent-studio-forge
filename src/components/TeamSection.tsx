@@ -104,7 +104,7 @@ const TeamSection = () => {
                   }}
                 >
                   We build apps, automations and digital tools for businesses that need real
-                  results:not a template and a prayer. When you work with Ardent Studio,{" "}
+                  results, not a template and a prayer. When you work with Ardent Studio,{" "}
                   <span className="font-medium" style={{ color: "#0A7D7B" }}>
                     you work with us directly
                   </span>
@@ -224,7 +224,7 @@ const TeamSection = () => {
                   <span className="font-medium" style={{ color: "#0A7D7B" }}>
                     Wesley makes sure the right things get built
                   </span>
-                 :in the right order, for the right reasons. He handles the strategy, client
+                  in the right order, for the right reasons. He handles the strategy, client
                   operations, and the business side so that every project stays on track and every
                   client knows exactly where things stand. No black boxes, no radio silence.
                 </p>
@@ -388,7 +388,7 @@ const TeamSection = () => {
             >
               Office morale runs through these two.{" "}
               <span className="font-medium" style={{ color: "#0A7D7B" }}>Loki</span> handles quality
-              assurance:if your build doesn't get a tail wag, it ships with revisions.{" "}
+              assurance; if your build doesn't get a tail wag, it ships with revisions.{" "}
               <span className="font-medium" style={{ color: "#0A7D7B" }}>Willow</span> manages client
               relations from whatever sunny spot she's claimed that day. Both insist on being present
               for every Zoom call and have strong opinions about lunch breaks.

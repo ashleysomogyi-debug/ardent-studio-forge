@@ -38,7 +38,7 @@ const Post1WhatCanAIAutomate = () => (
     <p>A workflow pulls from a simple content calendar and posts to your platforms automatically on schedule. Consistent presence without the daily friction.</p>
 
     <h3>Data entry between tools</h3>
-    <p>When someone books an appointment on Calendly, a new contact is created in your CRM, tagged on your email list, and a welcome email goes out, all in seconds, not 15 minutes of manual work.</p>
+    <p>When someone books an appointment on Calendly, a new contact is created in your CRM, tagged on your email list, and a welcome email goes out in seconds, not 15 minutes of manual work.</p>
 
     <h2>How Much Time Does This Actually Save?</h2>
     <p>According to McKinsey's 2023 report on AI in business, companies that implement AI automation recover an average of 6 to 8 hours per week. A 2024 Zapier survey found that 76% of small business owners who use automation say it's freed them up to focus on work that actually grows the business.</p>
