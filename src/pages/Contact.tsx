@@ -89,7 +89,7 @@ const Contact = () => {
   return (
     <>
       <Nav />
-      <main>
+      <main className="contact-cyan-theme">
         <section className="bg-blush px-5 pb-10 pt-24 md:px-10 md:pt-28">
           <div className="max-w-2xl mx-auto text-center">
             <span className="section-eyebrow mb-6">
