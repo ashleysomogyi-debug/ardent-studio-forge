@@ -52,11 +52,11 @@ const industries = [
     color: "#0A7D7B",
     tagline: "Most agents use AI for listings. Almost none use it for leads.",
     stats: [
-      { number: "$34B", desc: "Projected efficiency gains for the real estate industry from AI automation by 2030", source: "Morgan Stanley Research, 2025", url: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025" },
+      { number: "34%", desc: "Possible increase in operating cash flow for brokers and services firms from AI adoption", source: "Morgan Stanley Research, 2025", url: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025" },
       { number: "37%", desc: "Of real estate tasks can be automated: especially sales, admin & client management", source: "Morgan Stanley Analysis of 162 REIT/CRE firms, 2025", url: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025" },
       { number: "82%", desc: "Of agents use AI for property descriptions: but 60% don't leverage it for lead conversion", source: "V7 Labs Real Estate AI Report, 2025", url: "https://www.v7labs.com/blog/ai-in-real-estate" },
     ],
-    story: "Brokers and services firms show the highest automation potential of any real estate sub-sector: with a possible 34% increase in operating cash flow from AI adoption. The agents winning in Palm Beach right now are the ones who respond in minutes, not hours.",
+    story: "Brokers and services firms show the highest automation potential of any real estate sub-sector, according to Morgan Stanley. The agents winning in Palm Beach right now are the ones who respond in minutes, not hours.",
     storySource: "Morgan Stanley Research, 2025", storyUrl: "https://www.morganstanley.com/insights/articles/ai-in-real-estate-2025",
   },
   {
@@ -108,11 +108,11 @@ const industries = [
     color: "#0A7D7B",
     tagline: "You're losing jobs at 2am that your competitor is booking at 2am.",
     stats: [
-      { number: "13%", desc: "Revenue growth achieved by My Plumber Plus after deploying Avoca AI: on a $129M revenue base", source: "Avoca AI Case Study · avoca.ai", url: "https://www.avoca.ai/" },
+      { number: "13%", desc: "Revenue growth achieved by My Plumber Plus after deploying Avoca AI to handle overflow and after-hours calls", source: "Avoca AI Case Study · avoca.ai", url: "https://www.avoca.ai/" },
       { number: "90%", desc: "Booking rate achieved by Aire Serv after deploying AI: after-hours bookings jumped from 58 to 208 per month", source: "Avoca AI / Aire Serv Case Study · avoca.ai", url: "https://www.avoca.ai/" },
       { number: "−40%", desc: "Reduction in response times at a local plumbing business after implementing AI-powered scheduling and dispatch", source: "SwiftCloud AI Home Services Report, 2025", url: "https://swiftcloud.ai/ai-powered-workflow-automation-home-service-2025/" },
     ],
-    story: "My Plumber Plus: a $129M plumbing business: deployed Avoca AI to handle overflow calls and after-hours bookings and grew revenue by 13%. Aire Serv, a national franchise, saw after-hours bookings jump from 58 to 208 per month after replacing their live answering service with AI, achieving a 90% booking rate.",
+    story: "My Plumber Plus, a large plumbing business, deployed Avoca AI to handle overflow calls and after-hours bookings and grew revenue by 13%. Aire Serv, a national franchise, saw after-hours bookings jump from 58 to 208 per month after replacing their live answering service with AI, achieving a 90% booking rate.",
     storySource: "Avoca AI Case Studies · avoca.ai", storyUrl: "https://www.avoca.ai/",
   },
   {
