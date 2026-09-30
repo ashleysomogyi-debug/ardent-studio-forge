@@ -38,4 +38,4 @@
 - [x] Restyle the shared closing call-to-action band
 - [x] Feature the homepage Sherron story on near-black
 - [x] Restyle the Training teaching section and shared footer
-- [ ] Verify contrast, mobile layout, protected files, and build
+- [x] Verify contrast, mobile layout, protected files, and build
