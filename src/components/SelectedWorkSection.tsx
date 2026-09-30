@@ -34,10 +34,10 @@ const works: WorkCard[] = [
 ];
 
 const SelectedWorkSection = () => (
-  <section id="work" className="relative py-[112px] px-5 md:px-10 bg-background">
+  <section id="work" className="relative py-12 md:py-[72px] px-5 md:px-10 bg-background">
     <div className="max-w-[1200px] mx-auto">
       <div className="reveal-section mb-8 md:mb-12">
-        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase">Featured Work</span>
+        <span className="font-mono text-[13px] text-primary tracking-[0.2em] uppercase">Featured Work</span>
       </div>
 
       <div className="reveal-section flex flex-col gap-5 md:gap-6">
@@ -66,7 +66,7 @@ const SelectedWorkSection = () => (
 
               <div className="p-6 md:p-10">
                 {/* Tag */}
-                <span className="font-mono text-[10px] text-muted-foreground tracking-[0.15em] uppercase">
+                <span className="font-mono text-[13px] text-muted-foreground tracking-[0.15em] uppercase">
                   {w.tag}
                 </span>
 
@@ -84,7 +84,7 @@ const SelectedWorkSection = () => (
                 </div>
 
                 {/* Description */}
-                <p className="font-sans text-[14px] md:text-[15px] text-muted-foreground leading-[1.75] max-w-[640px] mb-5">
+                <p className="font-sans text-[16px] md:text-[16px] text-muted-foreground leading-[1.75] max-w-[640px] mb-5">
                   {w.description}
                 </p>
 
@@ -93,7 +93,7 @@ const SelectedWorkSection = () => (
                   {w.meta.map((m) => (
                     <span
                       key={m}
-                      className="inline-flex items-center justify-center text-center font-mono text-[10px] text-muted-foreground/70 border border-border px-3 py-1 rounded-full"
+                      className="inline-flex items-center justify-center text-center font-mono text-[13px] text-muted-foreground/70 border border-border px-3 py-1 rounded-full"
                     >
                       {m}
                     </span>

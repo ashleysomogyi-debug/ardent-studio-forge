@@ -64,8 +64,8 @@ export default function BlogIndex() {
 
       <main className="flex-1">
         {/* Hero */}
-        <section className="px-6 py-20 md:py-28 max-w-4xl mx-auto text-center">
-          <p className="text-sm font-semibold tracking-widest uppercase mb-4" style={{ color: "#0A7D7B" }}>
+        <section className="px-6 py-12 md:py-[72px] max-w-4xl mx-auto text-center">
+          <p className="text-[13px] font-semibold tracking-widest uppercase mb-4" style={{ color: "#0A7D7B" }}>
             Ardent Studio
           </p>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
@@ -78,7 +78,7 @@ export default function BlogIndex() {
         </section>
 
         {/* Post Grid */}
-        <section className="px-6 pb-24 max-w-5xl mx-auto">
+        <section className="px-6 pb-12 md:pb-[72px] max-w-5xl mx-auto">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {posts.map((post) => (
               <article
@@ -89,18 +89,18 @@ export default function BlogIndex() {
                   borderColor: "rgba(13,13,13,0.08)",
                 }}
               >
-                <p className="text-xs font-medium tracking-wide uppercase mb-3" style={{ color: "#0A7D7B" }}>
+                <p className="text-[14px] font-medium tracking-wide uppercase mb-3" style={{ color: "#0A7D7B" }}>
                   {post.date}
                 </p>
                 <h2 className="text-base font-semibold leading-snug mb-3 flex-1" style={{ color: "#0D0D0D" }}>
                   {post.title}
                 </h2>
-                <p className="text-sm mb-5 leading-relaxed" style={{ color: "rgba(13,13,13,0.62)" }}>
+                <p className="text-[16px] mb-5 leading-relaxed" style={{ color: "rgba(13,13,13,0.62)" }}>
                   {post.excerpt}
                 </p>
                 <Link
                   to={`/blog/${post.slug}`}
-                  className="text-sm font-medium transition-colors duration-150"
+                  className="inline-flex min-h-11 items-center text-[16px] font-medium transition-colors duration-150"
                   style={{ color: "#0A7D7B" }}
                   onMouseEnter={(e) =>
                     ((e.target as HTMLElement).style.color = "#0A7D7B")

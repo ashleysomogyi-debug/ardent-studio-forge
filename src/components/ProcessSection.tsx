@@ -44,37 +44,37 @@ const SpeedBars = () => {
 
   return (
     <div ref={ref} className="reveal-section max-w-[720px] mb-16 md:mb-24">
-      <span className="block font-mono text-[10px] text-muted-foreground tracking-[0.2em] uppercase mb-5">
+      <span className="block font-mono text-[13px] text-muted-foreground tracking-[0.2em] uppercase mb-5">
         Website Build: Time to Launch
       </span>
 
       {/* Agency bar */}
       <div className="mb-3">
-        <span className="block font-mono text-[11px] text-muted-foreground mb-1.5">Typical agency</span>
+        <span className="block font-mono text-[13px] text-muted-foreground mb-1.5">Typical agency</span>
         <div className="relative h-10 rounded bg-surface-3 overflow-hidden">
           <div
             className="absolute inset-y-0 left-0 bg-foreground/10 rounded transition-all duration-1000 ease-out flex items-center px-4"
             style={{ width: visible ? "100%": "0%" }}
           >
-            <span className="font-mono text-[11px] text-muted-foreground whitespace-nowrap">6 – 8 weeks</span>
+            <span className="font-mono text-[13px] text-muted-foreground whitespace-nowrap">6 – 8 weeks</span>
           </div>
         </div>
       </div>
 
       {/* Ardent bar */}
       <div className="mb-4">
-        <span className="block font-mono text-[11px] text-muted-foreground mb-1.5">Ardent Studio</span>
+        <span className="block font-mono text-[13px] text-muted-foreground mb-1.5">Ardent Studio</span>
         <div className="relative h-10 rounded bg-surface-3 overflow-hidden">
           <div
             className="absolute inset-y-0 left-0 bg-primary rounded transition-all duration-1000 ease-out delay-300 flex items-center px-4"
             style={{ width: visible ? "18%": "0%", minWidth: visible ? "120px": "0px" }}
           >
-            <span className="font-mono text-[11px] text-primary-foreground whitespace-nowrap">5 – 7 days</span>
+            <span className="font-mono text-[13px] text-primary-foreground whitespace-nowrap">5 – 7 days</span>
           </div>
         </div>
       </div>
 
-      <p className="font-mono text-[10px] text-muted-foreground/60 leading-[1.6]">
+      <p className="font-mono text-[13px] text-muted-foreground/60 leading-[1.6]">
         AI automation &amp; custom builds are scoped per project, always with a fixed timeline and zero padding.
       </p>
     </div>
@@ -82,10 +82,10 @@ const SpeedBars = () => {
 };
 
 const ProcessSection = () => (
-  <section id="process" className="relative py-[112px] px-5 md:px-10 bg-surface-2">
+  <section id="process" className="relative py-12 md:py-[72px] px-5 md:px-10 bg-surface-2">
     <div className="max-w-[1200px] mx-auto">
       <div className="reveal-section mb-8 md:mb-12">
-        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase">How We Work</span>
+        <span className="font-mono text-[13px] text-primary tracking-[0.2em] uppercase">How We Work</span>
       </div>
 
       <div className="reveal-section mb-10 md:mb-14">
@@ -102,10 +102,10 @@ const ProcessSection = () => (
             key={step.num}
             className={`border border-border p-8 md:p-[56px_40px] ${i > 0 ? "border-t-0 md:border-t lg:border-l-0": ""} ${i > 1 ? "md:border-t-0 lg:border-t": ""} ${i === 1 ? "md:border-l-0": ""} ${i === 3 ? "md:border-l-0": ""}`}
           >
-            <span className="font-mono text-[11px] text-muted-foreground">{step.num}</span>
+            <span className="font-mono text-[13px] text-muted-foreground">{step.num}</span>
             <h3 className="font-sans text-[22px] font-semibold text-foreground mt-3 md:mt-4 mb-4 md:mb-5">{step.title}</h3>
-            <p className="font-sans text-[14px] text-muted-foreground leading-[1.75] mb-6 md:mb-8">{step.desc}</p>
-            <span className="font-mono text-[11px] text-primary">{step.meta}</span>
+            <p className="font-sans text-[16px] text-muted-foreground leading-[1.75] mb-6 md:mb-8">{step.desc}</p>
+            <span className="font-mono text-[13px] text-primary">{step.meta}</span>
           </div>
         ))}
       </div>
