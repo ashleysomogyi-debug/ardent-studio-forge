@@ -193,7 +193,7 @@ const TeamSection = () => {
               <div>
                 {/* Role badge */}
                 <span
-                  className="inline-block rounded-full px-4 py-1.5 font-mono uppercase mb-4"
+                  className="inline-flex items-center justify-center text-center rounded-full px-4 py-1.5 font-mono uppercase mb-4"
                   style={{
                     fontSize: "11px",
                     letterSpacing: "2px",
@@ -295,7 +295,7 @@ const TeamSection = () => {
           >
             {/* Role badge */}
             <span
-              className="inline-block rounded-full px-4 py-1.5 font-mono uppercase mb-4"
+              className="inline-flex items-center justify-center text-center rounded-full px-4 py-1.5 font-mono uppercase mb-4"
               style={{
                 fontSize: "11px",
                 letterSpacing: "2px",
