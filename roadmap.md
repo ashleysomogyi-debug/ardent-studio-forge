@@ -30,3 +30,6 @@
 - [x] Simplify studio-tool and case-study jargon
 - [x] Audit booking links, placeholders, em dashes, and protected files
 - [x] Verify responsive rendering and build
+
+## Step 7 pricing on the call
+- [x] Remove public dollar figures, add quote language, hero reassurance row
