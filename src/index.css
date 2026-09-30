@@ -186,6 +186,56 @@
   margin-left: 2px;
   animation: blink 1s steps(2) infinite;
 }
+
+/* Automation and Apps color experiment. Remove this scoped block and its page wrapper to revert. */
+.automation-cyan-theme {
+  --automation-cyan: #E6F7F7;
+  --automation-teal: #076B69;
+  --automation-teal-bright: #0DBFBC;
+  --primary: 179 88% 22%;
+  --accent: 179 88% 22%;
+  --ring: 179 88% 22%;
+}
+
+.automation-cyan-theme .bg-blush,
+.automation-cyan-theme .automation-cyan-band {
+  background-color: var(--automation-cyan);
+}
+
+.automation-cyan-theme .section-eyebrow {
+  background: var(--color-surface);
+  color: var(--automation-teal);
+}
+
+.automation-cyan-theme .automation-photo-overlay {
+  background:
+    linear-gradient(90deg, rgb(230 247 247 / 0.96) 0%, rgb(230 247 247 / 0.74) 48%, rgb(230 247 247 / 0.18) 100%),
+    linear-gradient(180deg, rgb(230 247 247 / 0.08) 0%, rgb(230 247 247 / 0.96) 100%);
+}
+
+.automation-cyan-theme .coral-dot-grid {
+  background-image: radial-gradient(circle, rgb(13 191 188 / 0.35) 2px, transparent 2.5px);
+}
+
+.automation-cyan-theme .border-dashed.border-coral {
+  border-color: var(--automation-teal-bright);
+}
+
+.automation-cyan-theme .text-brick,
+.automation-cyan-theme .automation-accent-link {
+  color: var(--automation-teal);
+}
+
+.automation-cyan-theme .automation-accent-link {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.automation-cyan-theme .automation-accent-link:hover {
+  text-decoration-thickness: 2px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .typing-cursor { animation: none; opacity: 1; }
 }
