@@ -277,10 +277,7 @@ const AIAutomation = () => {
                 <TabsContent key={tab.value} value={tab.value} className="mt-7">
                   <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
                     {tab.examples.map((example) => (
-                      <article key={example.title} className="rounded-3xl border border-foreground/10 bg-card p-6 md:p-8">
-                        <span className="mb-5 block w-fit rounded-full bg-blush px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-brick">
-                          Example
-                        </span>
+                      <article key={example.title} className="rounded-3xl border border-foreground/10 bg-card p-6 pt-6 md:p-8 md:pt-8">
                         <h3 className="mb-7 text-[23px] font-bold leading-tight text-foreground">
                           {example.title}
                         </h3>
