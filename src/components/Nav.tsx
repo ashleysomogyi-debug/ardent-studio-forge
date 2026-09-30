@@ -65,7 +65,7 @@ const Nav = () => {
         <a href="/" className="flex items-center gap-3 shrink-0">
           <img src="/ardent-logo-circle.png" alt="Ardent Studio circular logo" className="w-10 h-10 rounded-full object-cover" />
           <span className="flex flex-col"><span className="font-sans text-[16px] md:text-[18px] text-foreground tracking-wide font-semibold">Ardent Studio</span>
-          <span className="font-mono text-[10px] md:text-[11px] text-ardent-cyan tracking-[0.1em] md:tracking-[0.15em] uppercase">Practical AI for Business</span>
+          <span className="font-mono text-[13px] text-ardent-cyan tracking-[0.1em] md:tracking-[0.15em] uppercase">Practical AI for Business</span>
           </span>
         </a>
 
@@ -86,7 +86,7 @@ const Nav = () => {
           target="_blank"
           rel="noopener noreferrer"
           data-hover
-          className="hidden md:inline-flex font-sans font-semibold text-[12px] md:text-[13px] bg-ardent-lime text-ardent-studio px-3 md:px-5 py-2 rounded-full hover:opacity-85 transition-opacity shrink-0"
+          className="hidden md:inline-flex font-sans font-semibold text-[16px] bg-ardent-lime text-ardent-studio px-4 md:px-5 py-3 rounded-full hover:opacity-85 transition-opacity shrink-0"
         >
           Book a free 15-min call
         </a>
@@ -125,7 +125,7 @@ const Nav = () => {
                 <img src="/ardent-logo-circle.png" alt="Ardent Studio circular logo" className="w-10 h-10 rounded-full object-cover" />
                 <span className="flex flex-col">
                 <span className="font-sans text-[16px] text-foreground tracking-wide font-semibold">Ardent Studio</span>
-                 <span className="font-mono text-[10px] text-ardent-cyan tracking-[0.1em] uppercase">Practical AI for Business</span>
+                 <span className="font-mono text-[13px] text-ardent-cyan tracking-[0.1em] uppercase">Practical AI for Business</span>
                 </span>
               </div>
               <button
@@ -158,7 +158,7 @@ const Nav = () => {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMenuOpen(false)}
-              className="block w-full text-center font-sans text-[15px] font-semibold bg-ardent-lime text-ardent-studio px-6 py-4 rounded-full hover:opacity-85 transition-opacity"
+              className="block w-full text-center font-sans text-[16px] font-semibold bg-ardent-lime text-ardent-studio px-6 py-4 rounded-full hover:opacity-85 transition-opacity"
             >
               Book a free 15-min call
             </a>

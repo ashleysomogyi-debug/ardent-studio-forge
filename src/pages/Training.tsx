@@ -57,13 +57,13 @@ const Training = () => {
             <p className="text-[18px] leading-[1.65] max-w-[640px] text-body-text mb-10">
               In-person and virtual workshops for teams of any kind. We build something real together, so your team leaves with a tool, not a slide deck.
             </p>
-            <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
+            <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[16px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
               Book a free 15-min call
             </a>
           </div>
         </section>
 
-        <section className="bg-footer-bg px-5 py-16 md:px-10 md:py-20" aria-labelledby="taught-heading">
+        <section className="bg-footer-bg px-5 py-12 md:px-10 md:py-[72px]" aria-labelledby="taught-heading">
           <div className="max-w-[1100px] mx-auto">
             <div className="mb-9 flex items-center gap-3">
               <span className="h-2.5 w-2.5 rounded-full bg-coral" aria-hidden="true" />
@@ -79,7 +79,7 @@ const Training = () => {
                   <div className="aspect-[16/10] overflow-hidden rounded-xl bg-ardent-ink">
                     <img src={p.src} alt={p.caption} className="w-full h-full object-cover" loading="lazy" />
                   </div>
-                  <figcaption className={`mt-4 inline-flex w-fit items-center justify-center text-center rounded-full px-4 py-2.5 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-ardent-studio ${workshopPills[i]}`}>
+                  <figcaption className={`mt-4 inline-flex w-fit items-center justify-center text-center rounded-full px-4 py-2.5 font-mono text-[13px] font-semibold uppercase tracking-[0.18em] text-ardent-studio ${workshopPills[i]}`}>
                     {p.caption}
                   </figcaption>
                 </figure>
@@ -88,28 +88,28 @@ const Training = () => {
           </div>
         </section>
 
-        <section className="bg-blush px-5 py-[120px] md:px-10">
+        <section className="bg-blush px-5 py-12 md:px-10 md:py-[72px]">
           <div className="max-w-[1100px] mx-auto">
             <span className="section-eyebrow mb-6">Format</span>
-            <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-ardent-studio" style={{ fontFamily: serif }}>
+            <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-7 md:mb-10 text-ardent-studio" style={{ fontFamily: serif }}>
               Three steps, no fluff.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {format.map((f, i) => (
-                <div key={f.num} className="workshop-card p-7">
+                <div key={f.num} className="workshop-card p-5 md:p-7">
                   <span className={`flex h-12 w-12 items-center justify-center rounded-full font-mono text-base text-ardent-studio ${accentPills[i]}`}>{f.num}</span>
                   <h3 className="text-[22px] mt-4 text-ardent-studio" style={{ fontFamily: serif }}>{f.title}</h3>
-                  <span className="font-mono text-[12px] block mb-3" style={{ fontFamily: serif, color: "#0A7D7B" }}>{f.price}</span>
-                  <p className="text-[14px] leading-[1.6] text-ardent-studio/70">{f.body}</p>
+                  <span className="font-mono text-[13px] block mb-3" style={{ fontFamily: serif, color: "#0A7D7B" }}>{f.price}</span>
+                  <p className="text-[16px] leading-[1.6] text-ardent-studio/70">{f.body}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="px-5 md:px-10 pt-[120px]" style={{ background: "#F5F5F0" }}>
+        <section className="px-5 pt-12 md:px-10 md:pt-[72px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto">
-            <div className="workshop-card p-12 md:px-12 md:py-16">
+            <div className="workshop-card p-5 md:px-12 md:py-12">
               <span className="section-eyebrow mb-5">Signature workshop</span>
               <h2 className="text-[clamp(36px,5vw,56px)] leading-[1.05] mb-6 text-foreground" style={{ fontFamily: serif }}>
                 Build your first agent.
@@ -117,40 +117,40 @@ const Training = () => {
               <p className="text-[17px] leading-[1.65] text-body-text max-w-[68ch] mb-8">
                 A 5-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem. We build the tool together, in the room, and you leave with it running.
               </p>
-              <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-primary mb-8">
+              <p className="font-mono text-[13px] tracking-[0.2em] uppercase text-primary mb-8">
                 5 HOURS, UP TO 15 PEOPLE, IN PERSON OR VIRTUAL
               </p>
-              <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
+              <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[16px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
                 Book the agent workshop
               </a>
             </div>
           </div>
         </section>
 
-        <section className="px-5 py-[120px] md:px-10" style={{ background: "#0D0D0D" }}>
+        <section className="px-5 py-12 md:px-10 md:py-[72px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="section-eyebrow mb-6">What we cover</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-12" style={{ fontFamily: serif, color: "#F5F5F0" }}>
               Six tracks. Pick the ones that fit your team.
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
               {tracks.map((t) => (
-                <div key={t.t} className="workshop-card p-7">
+                <div key={t.t} className="workshop-card p-5 md:p-7">
                   {t.featured && (
-                    <span className="mb-3 inline-flex items-center justify-center text-center rounded-full bg-ardent-lime px-3 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-ardent-studio">Differentiator</span>
+                    <span className="mb-3 inline-flex items-center justify-center text-center rounded-full bg-ardent-lime px-3 py-2 font-mono text-[13px] uppercase tracking-[0.2em] text-ardent-studio">Differentiator</span>
                   )}
                   <h3 className="text-[22px] mb-3 text-foreground" style={{ fontFamily: serif }}>{t.t}</h3>
-                  <p className="text-[14px] leading-[1.6] text-body-text">{t.d}</p>
+                  <p className="text-[16px] leading-[1.6] text-body-text">{t.d}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F5F5F0" }}>
+        <section className="px-5 py-12 md:px-10 md:py-[72px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="section-eyebrow mb-6">Why Claude</span>
-            <h2 className="text-[clamp(28px,4vw,44px)] mb-10 text-ardent-studio" style={{ fontFamily: serif }}>
+            <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-10 text-ardent-studio" style={{ fontFamily: serif }}>
               We teach the stack we ship.
             </h2>
             <div className="max-w-3xl space-y-5">
@@ -167,39 +167,39 @@ const Training = () => {
           </div>
         </section>
 
-        <section className="bg-blush px-5 py-[120px] md:px-10">
+        <section className="bg-blush px-5 py-12 md:px-10 md:py-[72px]">
           <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
             {quotes.map((q) => (
               <div key={q.q}>
                 <p className="text-[24px] leading-[1.3] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
                   "{q.q}"
                 </p>
-                <p className="text-[14px] text-ardent-studio/70 leading-[1.6]">{q.a}</p>
+                <p className="text-[16px] text-ardent-studio/70 leading-[1.6]">{q.a}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="px-5 md:px-10 py-[120px]" style={{ background: "#F5F5F0" }}>
+        <section className="px-5 py-12 md:px-10 md:py-[72px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="section-eyebrow mb-6">Pricing</span>
-            <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-foreground" style={{ fontFamily: serif }}>
+            <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-7 md:mb-10 text-foreground" style={{ fontFamily: serif }}>
               Fixed price, quoted for your team.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {tiers.map((tier, i) => (
-                <div key={tier.name} className="workshop-card p-8">
-                  <span className={`mb-5 inline-flex items-center justify-center text-center rounded-full px-4 py-2.5 font-mono text-[12px] font-semibold uppercase tracking-[0.12em] text-ardent-studio ${accentPills[i]}`}>Quoted for your team on a free call</span>
+                <div key={tier.name} className="workshop-card p-5 md:p-8">
+                  <span className={`mb-5 inline-flex items-center justify-center text-center rounded-full px-4 py-2.5 font-mono text-[13px] font-semibold uppercase tracking-[0.12em] text-ardent-studio ${accentPills[i]}`}>Quoted for your team on a free call</span>
                   <h3 className="text-[22px] mb-2 text-foreground" style={{ fontFamily: serif }}>{tier.name}</h3>
-                  <p className="text-[14px] text-body-text mb-6">{tier.body}</p>
+                  <p className="text-[16px] text-body-text mb-6">{tier.body}</p>
                   <ul className="space-y-2 mb-8">
                     {tier.items.map((i) => (
-                      <li key={i} className="text-[14px] text-body-text flex gap-2">
+                      <li key={i} className="text-[16px] text-body-text flex gap-2">
                         <span className="text-primary">+</span>{i}
                       </li>
                     ))}
                   </ul>
-                  <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A": "transparent", color: "#0D0D0D", border: tier.featured ? "none": "1px solid #0D0D0D" }}>
+                  <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 text-[16px] rounded-full" style={{ background: tier.featured ? "#C3F73A": "transparent", color: "#0D0D0D", border: tier.featured ? "none": "1px solid #0D0D0D" }}>
                     Get a quote in 15 minutes
                   </a>
                 </div>
@@ -208,11 +208,11 @@ const Training = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-10 py-16 bg-background">
+        <section className="px-5 py-12 md:px-10 md:py-[72px] bg-background">
           <div className="mx-auto max-w-[1100px] rounded-3xl border-2 border-dashed border-coral bg-card p-7 md:p-10">
             <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Keynotes and talks</h2>
             <p className="text-[16px] text-muted-foreground leading-relaxed mb-7 max-w-[60ch]">We also speak at conferences and business events. Ask us about a keynote or a talk for your group.</p>
-            <a href="/contact" className="inline-flex px-7 py-3 bg-secondary text-secondary-foreground font-semibold rounded-full">Ask about a talk</a>
+            <a href="/contact" className="inline-flex min-h-11 items-center px-7 py-3 text-[16px] bg-secondary text-secondary-foreground font-semibold rounded-full">Ask about a talk</a>
           </div>
         </section>
         <CTASection />

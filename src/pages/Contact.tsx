@@ -82,9 +82,9 @@ const Contact = () => {
   };
 
   const inputClass =
-    "w-full bg-white border border-input rounded-md px-4 py-3 font-sans text-[15px] text-foreground placeholder:text-dim-text focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors";
+    "w-full bg-white border border-input rounded-md px-4 py-3 font-sans text-[16px] text-foreground placeholder:text-dim-text focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-colors";
   const labelClass =
-    "block font-mono text-[11px] text-label-text tracking-[0.15em] uppercase mb-2";
+    "block font-mono text-[13px] text-label-text tracking-[0.15em] uppercase mb-2";
 
   return (
     <>
@@ -107,7 +107,7 @@ const Contact = () => {
           </div>
         </section>
 
-        <section className="bg-blush px-5 pb-[120px] md:px-10">
+        <section className="bg-blush px-5 pb-12 md:px-10 md:pb-[72px]">
           <div className="max-w-2xl mx-auto">
             {submitted ? (
               <div
@@ -122,7 +122,7 @@ const Contact = () => {
                 </h2>
                 <Link
                   to="/"
-                  className="inline-block px-8 py-4 text-[14px] rounded-full"
+                  className="inline-block px-8 py-4 text-[16px] rounded-full"
                   style={{ background: "#C3F73A", color: "#0D0D0D" }}
                 >
                   Back to home
@@ -131,7 +131,7 @@ const Contact = () => {
             ): (
               <form
                 onSubmit={handleSubmit}
-                className="workshop-card space-y-5 p-8 md:p-10"
+                className="workshop-card space-y-5 p-5 md:p-10"
                 style={{ background: "#FFFFFF" }}
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
@@ -217,14 +217,14 @@ const Contact = () => {
                 </div>
 
                 {error && (
-                  <p className="text-[14px] text-error-red">{error}</p>
+                  <p className="text-[16px] text-error-red">{error}</p>
                 )}
 
                 <Button
                   type="submit"
                   disabled={submitting}
                   variant="secondary"
-                  className="w-full h-auto px-8 py-4 text-[15px] rounded-full font-semibold"
+                  className="w-full h-auto px-8 py-4 text-[16px] rounded-full font-semibold"
                 >
                   {submitting ? "Sending…": "Send message"}
                 </Button>
