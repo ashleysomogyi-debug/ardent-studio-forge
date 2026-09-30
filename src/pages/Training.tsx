@@ -94,13 +94,13 @@ const Training = () => {
             <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-10 text-ardent-studio" style={{ fontFamily: serif }}>
               Three steps, no fluff.
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
               {format.map((f, i) => (
-                <div key={f.num} className="workshop-card p-5 md:p-7">
-                  <span className={`flex h-12 w-12 items-center justify-center rounded-full font-mono text-base text-ardent-studio ${accentPills[i]}`}>{f.num}</span>
-                  <h3 className="text-[22px] mt-4 text-ardent-studio" style={{ fontFamily: serif }}>{f.title}</h3>
-                  <span className="font-mono text-[13px] block mb-3" style={{ fontFamily: serif, color: "#0A7D7B" }}>{f.price}</span>
-                  <p className="text-[16px] leading-[1.6] text-ardent-studio/70">{f.body}</p>
+                <div key={f.num} className="workshop-card grid grid-cols-[32px_1fr] gap-x-3 p-4 md:block md:p-7">
+                  <span className={`row-span-3 flex h-8 w-8 md:h-12 md:w-12 items-center justify-center rounded-full font-mono text-base text-ardent-studio ${accentPills[i]}`}>{f.num}</span>
+                  <h3 className="text-[20px] md:text-[22px] md:mt-4 leading-tight text-ardent-studio" style={{ fontFamily: serif }}>{f.title}</h3>
+                  <span className="font-mono text-[13px] block mb-1 md:mb-3" style={{ fontFamily: serif, color: "#0A7D7B" }}>{f.price}</span>
+                  <p className="text-[16px] leading-[1.5] md:leading-[1.6] text-ardent-studio/70">{f.body}</p>
                 </div>
               ))}
             </div>
@@ -114,13 +114,13 @@ const Training = () => {
               <h2 className="text-[clamp(36px,5vw,56px)] leading-[1.05] mb-6 text-foreground" style={{ fontFamily: serif }}>
                 Build your first agent.
               </h2>
-              <p className="text-[17px] leading-[1.65] text-body-text max-w-[68ch] mb-8">
+              <p className="text-[17px] leading-[1.6] md:leading-[1.65] text-body-text max-w-[68ch] mb-5 md:mb-8">
                 A 5-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem. We build the tool together, in the room, and you leave with it running.
               </p>
-              <p className="font-mono text-[13px] tracking-[0.2em] uppercase text-primary mb-8">
+              <p className="font-mono text-[13px] tracking-[0.2em] uppercase text-primary mb-5 md:mb-8">
                 5 HOURS, UP TO 15 PEOPLE, IN PERSON OR VIRTUAL
               </p>
-              <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[16px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
+              <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center px-7 py-3 md:inline-block md:px-8 md:py-4 text-[16px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
                 Book the agent workshop
               </a>
             </div>
@@ -133,14 +133,14 @@ const Training = () => {
             <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-10" style={{ fontFamily: serif, color: "#F5F5F0" }}>
               Six tracks. Pick the ones that fit your team.
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
               {tracks.map((t) => (
-                <div key={t.t} className="workshop-card p-5 md:p-7">
+                <div key={t.t} className="workshop-card p-4 md:p-7">
                   {t.featured && (
-                    <span className="mb-3 inline-flex items-center justify-center text-center rounded-full bg-ardent-lime px-3 py-2 font-mono text-[13px] uppercase tracking-[0.2em] text-ardent-studio">Differentiator</span>
+                    <span className="mb-2 md:mb-3 inline-flex items-center justify-center text-center rounded-full bg-ardent-lime px-3 py-1.5 md:py-2 font-mono text-[13px] uppercase tracking-[0.2em] text-ardent-studio">Differentiator</span>
                   )}
-                  <h3 className="text-[22px] mb-3 text-foreground" style={{ fontFamily: serif }}>{t.t}</h3>
-                  <p className="text-[16px] leading-[1.6] text-body-text">{t.d}</p>
+                  <h3 className="text-[20px] md:text-[22px] mb-1 md:mb-3 leading-tight text-foreground" style={{ fontFamily: serif }}>{t.t}</h3>
+                  <p className="text-[16px] leading-[1.5] md:leading-[1.6] text-body-text">{t.d}</p>
                 </div>
               ))}
             </div>
@@ -153,7 +153,7 @@ const Training = () => {
             <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-10 text-ardent-studio" style={{ fontFamily: serif }}>
               We teach the stack we ship.
             </h2>
-            <div className="max-w-3xl space-y-5">
+            <div className="max-w-3xl space-y-3 md:space-y-5">
               <p className="text-[16px] leading-[1.75] text-ardent-studio/80">
                 Most AI training tries to cover every model. We don't. We teach Claude, Anthropic's model, because it's what we use to build production tools for our clients.
               </p>
@@ -168,10 +168,10 @@ const Training = () => {
         </section>
 
         <section className="bg-blush px-5 py-12 md:px-10 md:py-[72px]">
-          <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+          <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10">
             {quotes.map((q) => (
               <div key={q.q}>
-                <p className="text-[24px] leading-[1.3] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
+                <p className="text-[21px] md:text-[24px] leading-[1.3] mb-2 md:mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
                   "{q.q}"
                 </p>
                 <p className="text-[16px] text-ardent-studio/70 leading-[1.6]">{q.a}</p>
@@ -186,20 +186,20 @@ const Training = () => {
             <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-10 text-foreground" style={{ fontFamily: serif }}>
               Fixed price, quoted for your team.
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
               {tiers.map((tier, i) => (
-                <div key={tier.name} className="workshop-card p-5 md:p-8">
-                  <span className={`mb-5 inline-flex items-center justify-center text-center rounded-full px-4 py-2.5 font-mono text-[13px] font-semibold uppercase tracking-[0.12em] text-ardent-studio ${accentPills[i]}`}>Quoted for your team on a free call</span>
-                  <h3 className="text-[22px] mb-2 text-foreground" style={{ fontFamily: serif }}>{tier.name}</h3>
-                  <p className="text-[16px] text-body-text mb-6">{tier.body}</p>
-                  <ul className="space-y-2 mb-8">
+                <div key={tier.name} className="workshop-card p-4 md:p-8">
+                  <span className={`mb-3 md:mb-5 inline-flex items-center justify-center text-center rounded-full px-4 py-2 md:py-2.5 font-mono text-[13px] font-semibold uppercase tracking-[0.12em] text-ardent-studio ${accentPills[i]}`}>Quoted for your team on a free call</span>
+                  <h3 className="text-[20px] md:text-[22px] mb-1 md:mb-2 text-foreground" style={{ fontFamily: serif }}>{tier.name}</h3>
+                  <p className="text-[16px] text-body-text mb-3 md:mb-6">{tier.body}</p>
+                  <ul className="space-y-1 md:space-y-2 mb-4 md:mb-8">
                     {tier.items.map((i) => (
                       <li key={i} className="text-[16px] text-body-text flex gap-2">
                         <span className="text-primary">+</span>{i}
                       </li>
                     ))}
                   </ul>
-                  <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 text-[16px] rounded-full" style={{ background: tier.featured ? "#C3F73A": "transparent", color: "#0D0D0D", border: tier.featured ? "none": "1px solid #0D0D0D" }}>
+                  <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center px-6 py-2.5 md:inline-block md:py-3 text-[16px] rounded-full" style={{ background: tier.featured ? "#C3F73A": "transparent", color: "#0D0D0D", border: tier.featured ? "none": "1px solid #0D0D0D" }}>
                     Get a quote in 15 minutes
                   </a>
                 </div>
@@ -209,9 +209,9 @@ const Training = () => {
         </section>
 
         <section className="px-5 py-12 md:px-10 md:py-[72px] bg-background">
-          <div className="mx-auto max-w-[1100px] rounded-3xl border-2 border-dashed border-coral bg-card p-7 md:p-10">
-            <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Keynotes and talks</h2>
-            <p className="text-[16px] text-muted-foreground leading-relaxed mb-7 max-w-[60ch]">We also speak at conferences and business events. Ask us about a keynote or a talk for your group.</p>
+          <div className="mx-auto max-w-[1100px] rounded-3xl border-2 border-dashed border-coral bg-card p-5 md:p-10">
+            <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-3 md:mb-5">Keynotes and talks</h2>
+            <p className="text-[16px] text-muted-foreground leading-relaxed mb-5 md:mb-7 max-w-[60ch]">We also speak at conferences and business events. Ask us about a keynote or a talk for your group.</p>
             <a href="/contact" className="inline-flex min-h-11 items-center px-7 py-3 text-[16px] bg-secondary text-secondary-foreground font-semibold rounded-full">Ask about a talk</a>
           </div>
         </section>
