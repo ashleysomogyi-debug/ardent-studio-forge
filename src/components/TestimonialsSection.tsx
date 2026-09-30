@@ -1,7 +1,7 @@
 /**
  * TestimonialsSection
  * --------------------
- * ⚠️ 100% placeholder. There are no real client quotes wired in yet —
+ * ⚠️ 100% placeholder. There are no real client quotes wired in yet :
  * every card below is a slot, not a testimonial. Do not publish this
  * section until at least 2–3 slots are replaced with real, attributed
  * quotes from actual clients (get their OK to use name + title/company,
@@ -13,14 +13,14 @@
  * To fill a slot: replace `quote`, `name`, and `title` with the real
  * values, and set `filled: true`. Cards still marked `filled: false`
  * render with a visible "placeholder" treatment so they can never be
- * mistaken for real — remove any slot you don't have content for rather
+ * mistaken for real : remove any slot you don't have content for rather
  * than ship it empty.
  */
 
 const testimonials = [
   {
     filled: false,
-    quote: "[[ADD REAL QUOTE — what changed for them, in their words]]",
+    quote: "[[ADD REAL QUOTE : what changed for them, in their words]]",
     name: "[[Client name]]",
     title: "[[Title, Company]]",
   },
@@ -45,7 +45,7 @@ const TestimonialCard = ({ t }: { t: (typeof testimonials)[number] }) => (
   >
     {!t.filled && (
       <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-error-red block mb-4">
-        Placeholder — not live content
+        Placeholder : not live content
       </span>
     )}
     <p

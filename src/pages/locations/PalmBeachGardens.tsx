@@ -5,7 +5,7 @@ const CITY = "Palm Beach Gardens";
 const SLUG = "palm-beach-gardens";
 const META_TITLE = "AI Automation for Palm Beach Gardens Businesses | Ardent Studio";
 const META_DESC =
-  "AI automation services in Palm Beach Gardens, FL. Custom workflows and chatbots for medical practices, corporate offices, retail, and professional services. Book a free call.";
+  "AI automation services in Palm Beach Gardens, FL. Custom workflows and chatbots for medical practices, corporate offices, retail, and professional services. Book a free 15-min call.";
 
 const features = [
   {
@@ -29,7 +29,7 @@ const features = [
       "Connect your booking form to your calendar and email: new bookings get confirmation, prep info, and reminders automatically.",
   },
   {
-    title: "Make.com Workflow Builds",
+    title: "workflow automation Workflow Builds",
     description:
       "Custom multi-step automations connecting your email, CRM, spreadsheets, and other tools into one seamless workflow.",
   },
@@ -43,7 +43,7 @@ const features = [
 const whyArdent = [
   `We're based in Boynton Beach: right in Palm Beach County, close to Palm Beach Gardens. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
   "Most automation builds ship in 1–2 weeks. We scope, build, and hand off: you own everything we build.",
-  "We build with Make.com and Anthropic Claude: proven tools with transparent pricing and no vendor lock-in.",
+  "We build with workflow automation and Anthropic Claude: proven tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,
 ];
 

@@ -8,12 +8,12 @@
  * ⚠️ BEFORE PUBLISHING: every field marked [[ADD: ...]] below is a
  * placeholder. Replace it with a real, specific number or quote before this
  * ships. Fake or rounded-up "client results" are a fast way to lose trust
- * (and can run into FTC testimonial/endorsement rules) — leave a field
+ * (and can run into FTC testimonial/endorsement rules) : leave a field
  * blank/removed rather than guess.
  *
  * Fields to fill in per case study:
  *  - metric: one concrete, verifiable number (hours saved/week, response
- *    time, reply rate, leads booked, etc.) — pull from the actual system
+ *    time, reply rate, leads booked, etc.) : pull from the actual system
  *    logs or ask the client directly.
  *  - timeframe: over what period the metric was measured.
  *  - quote (optional): a real line from the client, attributed by name +
@@ -31,7 +31,7 @@ const caseStudies = [
       "Custom-built AI role-play avatars and bite-sized lessons reps practice against before they're ever on a real call.",
     metric: "[[ADD: e.g. ramp time cut from X weeks to Y weeks, or close-rate lift, with the measurement period]]",
     quote: null as string | null,
-    quoteAttribution: "[[ADD: name, title — or leave blank if none yet]]",
+    quoteAttribution: "[[ADD: name, title : or leave blank if none yet]]",
     stack: "Next.js · Claude · Supabase · custom infra",
     link: { label: "Visit sartoriai.com", href: "https://sartoriai.com" },
   },
@@ -103,19 +103,19 @@ const CaseCard = ({ c }: { c: (typeof caseStudies)[number] }) => (
       </div>
     </div>
 
-    {/* Result — placeholder until real numbers are supplied */}
+    {/* Result : placeholder until real numbers are supplied */}
     <div className="border border-dashed border-error-red/40 p-4 mb-5">
-      <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-error-red block mb-1">Result — needs real data</span>
+      <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-error-red block mb-1">Result : needs real data</span>
       <p className="text-[13px] leading-[1.6] text-ardent-paper/60 italic">{c.metric}</p>
     </div>
 
     {c.quote ? (
       <p className="text-[14px] italic leading-[1.6] text-ardent-paper/70 mb-4">
-        "{c.quote}" <span className="not-italic text-ardent-paper/50">— {c.quoteAttribution}</span>
+        "{c.quote}" <span className="not-italic text-ardent-paper/50">: {c.quoteAttribution}</span>
       </p>
     ) : (
       <p className="text-[12px] text-dim-text mb-4">
-        No client quote yet — {c.quoteAttribution}
+        No client quote yet : {c.quoteAttribution}
       </p>
     )}
 
@@ -150,7 +150,7 @@ const CaseStudySection = () => (
         Real problems. Real builds.
       </h2>
       <p className="text-[15px] text-ardent-paper/60 max-w-[60ch] mb-14">
-        The same projects listed above, in more detail — what the problem was, what we built, and
+        The same projects listed above, in more detail : what the problem was, what we built, and
         what it changed.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

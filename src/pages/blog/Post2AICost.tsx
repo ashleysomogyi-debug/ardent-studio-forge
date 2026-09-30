@@ -27,8 +27,8 @@ const Post2AICost = () => (
     <p>Tools change. APIs update. Some clients want a monthly retainer for updates and monitoring. Others prefer to pay for changes as needed. Both are reasonable.</p>
 
     <h2>DIY vs. Hiring Someone vs. Agency vs. Local Expert</h2>
-    <p><strong>DIY ($0–$100/month in tool costs):</strong> Make.com has a free plan. You can build basic automations yourself if you're willing to put in 10–20 hours of learning time. The honest downside: most business owners either build something brittle that breaks, or spend five hours on a logic error and give up. If your hourly rate is $75–$200, the math on DIY usually doesn't favor you.</p>
-    <p><strong>Freelancer ($30–$80/hr):</strong> Platforms like Upwork have Make.com specialists. Quality varies a lot. For straightforward automations this can be cost-effective, but if they disappear or the build isn't documented, you're stuck.</p>
+    <p><strong>DIY ($0–$100/month in tool costs):</strong> Some automation tools have free plans. You can build basic automations yourself if you're willing to put in 10–20 hours of learning time. The honest downside: most business owners either build something brittle that breaks, or spend five hours on a logic error and give up. If your hourly rate is $75–$200, the math on DIY usually doesn't favor you.</p>
+    <p><strong>Freelancer ($30–$80/hr):</strong> Platforms like Upwork have automation specialists. Quality varies a lot. For straightforward automations this can be cost-effective, but if they disappear or the build isn't documented, you're stuck.</p>
     <p><strong>Agency ($5,000–$25,000+):</strong> Big automation agencies build for enterprise clients. Their pricing reflects overhead: account managers, project managers, discovery decks: that doesn't make your automation run better. Not built for Palm Beach County small businesses.</p>
     <p><strong>Local expert (Ardent Studio):</strong> Fixed-scope projects at fixed prices. $500–$5,000 depending on what you need. No retainers unless you want them. You know exactly what you're getting before we start. Real handoff, not dependency.</p>
 
@@ -44,7 +44,7 @@ const Post2AICost = () => (
     <h3>Can I start small and expand later?</h3>
     <p>Yes, and honestly, that's the right approach. A $750 automation that solves one real problem is more valuable than a $4,000 build you don't fully understand. Start with your biggest time drain and go from there.</p>
     <h3>Are there ongoing tool subscription costs on top of the build fee?</h3>
-    <p>Usually yes: Make.com runs $9–$29/month depending on volume. Most clients spend $20–$50/month in tool subscriptions after the initial build. We factor this into our recommendations.</p>
+    <p>Usually yes: automation tool costs vary depending on volume. Most clients spend $20–$50/month in tool subscriptions after the initial build. We factor this into our recommendations.</p>
     <h3>Do prices vary based on my industry?</h3>
     <p>The build cost reflects complexity, not industry. A real estate follow-up sequence and a medical office reminder sequence of similar complexity cost about the same. What changes is the specific logic and messaging.</p>
   </BlogPostLayout>

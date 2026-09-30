@@ -5,7 +5,7 @@ const CITY = "Delray Beach";
 const SLUG = "delray-beach";
 const META_TITLE = "AI Automation for Delray Beach Businesses | Ardent Studio";
 const META_DESC =
-  "AI automation for Delray Beach, FL small businesses. Ardent Studio builds custom AI workflows and chatbots for restaurants, retail, boutiques, and service businesses. Book a free call.";
+  "AI automation for Delray Beach, FL small businesses. Ardent Studio builds custom AI workflows and chatbots for restaurants, retail, boutiques, and service businesses. Book a free 15-min call.";
 
 const features = [
   {
@@ -29,7 +29,7 @@ const features = [
       "Connect your booking form to your calendar and email: new bookings get confirmation, prep info, and reminders automatically.",
   },
   {
-    title: "Make.com Workflow Builds",
+    title: "workflow automation Workflow Builds",
     description:
       "Custom multi-step automations connecting your email, CRM, spreadsheets, and other tools into one seamless workflow.",
   },
@@ -43,7 +43,7 @@ const features = [
 const whyArdent = [
   `We're based in Boynton Beach: minutes from Delray Beach. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
   "Most automation builds ship in 1–2 weeks. We scope, build, and hand off: you own everything we build.",
-  "We build with Make.com and Anthropic Claude: proven tools with transparent pricing and no vendor lock-in.",
+  "We build with workflow automation and Anthropic Claude: proven tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,
 ];
 
@@ -103,7 +103,7 @@ const DelrayBeach = () => {
       metaDescription={META_DESC}
       headline="AI Automation for Delray Beach Small Businesses"
       subheadline="Ardent Studio helps Delray Beach restaurants, boutiques, creative businesses, and service companies save 5–15 hours per week with custom AI automation: no technical expertise required."
-      introText="Delray Beach has one of the most vibrant small business communities in Palm Beach County: Atlantic Avenue restaurants, boutique shops, wellness studios, and creative agencies all face the same challenge: not enough hours in the day. AI automation handles the repetitive work so you can focus on what makes your business special."
+      introText="Delray Beach has one of the most vibrant small business communities in Palm Beach County: Atlantic Avenue restaurants, boutique shops, wellness studios, and creative businesses all face the same challenge: not enough hours in the day. AI automation handles the repetitive work so you can focus on what makes your business special."
       features={features}
       whyArdent={whyArdent}
       ctaText={`Ready to save 5–15 hours per week? Let's find the right automation for your ${CITY} business.`}
@@ -112,7 +112,7 @@ const DelrayBeach = () => {
         "Boutique Retail",
         "Wellness & Fitness",
         "Real Estate",
-        "Creative Agencies",
+        "Creative Businesses",
         "Event Planning",
         "Professional Services",
       ]}

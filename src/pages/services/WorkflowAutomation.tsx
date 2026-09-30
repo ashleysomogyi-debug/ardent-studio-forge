@@ -41,7 +41,7 @@ export default function WorkflowAutomation() {
     if (metaDesc) {
       metaDesc.setAttribute(
         "content",
-        "Custom email and workflow automation for Palm Beach County small businesses. Ardent Studio builds Make.com automations that save 5–15 hours per week. Free 15-min call."
+        "Custom email and workflow automation for Palm Beach County small businesses. Ardent Studio builds workflow automation automations that save 5–15 hours per week. Free 15-min call."
       );
     }
 
@@ -63,9 +63,9 @@ export default function WorkflowAutomation() {
   return (
     <ServicePageLayout
       metaTitle="Email & Workflow Automation for Small Businesses | Ardent Studio: Palm Beach County"
-      metaDescription="Custom email and workflow automation for Palm Beach County small businesses. Ardent Studio builds Make.com automations that save 5–15 hours per week. Free 15-min call."
+      metaDescription="Custom email and workflow automation for Palm Beach County small businesses. Ardent Studio builds workflow automation automations that save 5–15 hours per week. Free 15-min call."
       headline="Email & Workflow Automation"
-      subheadline="Stop doing the same thing twice. Ardent Studio builds Make.com automations that connect your tools, handle your follow-ups, and process your data: so you can focus on the work that actually moves the needle."
+      subheadline="Stop doing the same thing twice. Ardent Studio builds workflow automation automations that connect your tools, handle your follow-ups, and process your data: so you can focus on the work that actually moves the needle."
       introText="According to McKinsey (2023), small businesses using automation effectively recover 6–8 hours per week. Most of that time comes from email follow-ups, data entry between tools, invoice reminders, and intake processing: exactly the kind of repetitive work Ardent Studio specializes in automating. Most clients are live within 2 weeks."
       features={[
         {
@@ -91,7 +91,7 @@ export default function WorkflowAutomation() {
         {
           title: "Multi-tool Integrations",
           description:
-            "Connect Gmail, Google Sheets, your CRM, Stripe, Calendly, Slack, and dozens of other tools into one seamless workflow using Make.com.",
+            "Connect Gmail, Google Sheets, your CRM, Stripe, Calendly, Slack, and dozens of other tools into one seamless workflow using workflow automation.",
         },
         {
           title: "Reporting & Alerts",
@@ -106,10 +106,10 @@ export default function WorkflowAutomation() {
         "Healthcare & Medical",
         "Restaurants",
         "E-commerce",
-        "Agencies",
+        "Businesses",
       ]}
       whyArdent={[
-        "We build with Make.com: the industry standard for business automation, used by 500,000+ companies. Every workflow we build is yours: fully documented, fully transferable.",
+        "We build with workflows that fit your existing tools. Every workflow we build is yours: fully documented, fully transferable.",
         "Most workflow builds ship in 1–2 weeks. We scope, build, test, and hand off: with a walkthrough so you understand exactly how it works.",
         "We're based in Boynton Beach, FL. Every client works directly with Ashley: no account managers, no hand-offs to junior staff.",
         "Pricing is transparent: most workflow automations run $750–$2,500. We quote before we build. No surprises.",
@@ -117,7 +117,7 @@ export default function WorkflowAutomation() {
       caseStudy={{
         title: "Palm Beach County Service Business",
         description:
-          "A Palm Beach County home services company had 3 different tools for quoting, scheduling, and following up: and none of them talked to each other. Every new job required manual data entry in all three. We built a Make.com pipeline that connected all three automatically.",
+          "A Palm Beach County home services company had 3 different tools for quoting, scheduling, and following up: and none of them talked to each other. Every new job required manual data entry in all three. We built a workflow automation pipeline that connected all three automatically.",
         result:
           "12 hours/week of manual data entry eliminated. Zero dropped leads from poor follow-up.",
       }}

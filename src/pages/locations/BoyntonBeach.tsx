@@ -5,7 +5,7 @@ const CITY = "Boynton Beach";
 const SLUG = "boynton-beach";
 const META_TITLE = "AI Automation in Boynton Beach, FL | Ardent Studio: Local Expert";
 const META_DESC =
-  "Ardent Studio is based in Boynton Beach, FL. AI automation for local contractors, service businesses, medical offices, and more. Book a free call with Ashley.";
+  "Ardent Studio is based in Boynton Beach, FL. AI automation for local contractors, service businesses, medical offices, and more. Book a free 15-min call with Ashley.";
 
 const features = [
   {
@@ -29,7 +29,7 @@ const features = [
       "Connect your booking form to your calendar and email: new bookings get confirmation, prep info, and reminders automatically.",
   },
   {
-    title: "Make.com Workflow Builds",
+    title: "workflow automation Workflow Builds",
     description:
       "Custom multi-step automations connecting your email, CRM, spreadsheets, and other tools into one seamless workflow.",
   },
@@ -43,7 +43,7 @@ const features = [
 const whyArdent = [
   `We're not just local: we're your neighbors. Ardent Studio is founded and based right here in Boynton Beach. When you book a call, you talk to Ashley directly. No middlemen.`,
   "Most automation builds ship in 1–2 weeks. We scope, build, and hand off: you own everything we build.",
-  "We build with Make.com and Anthropic Claude: proven tools with transparent pricing and no vendor lock-in.",
+  "We build with workflow automation and Anthropic Claude: proven tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,
 ];
 
