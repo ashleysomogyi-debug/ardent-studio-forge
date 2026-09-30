@@ -39,12 +39,6 @@ const workflows: { title: string; desc: string; wide?: boolean }[] = [
   { title: "Invoice chasing", desc: "Reminders matched to each customer's payment history, so you get paid without the awkward email." },
   { title: "Quote and proposal generation", desc: "Pulls from past quotes and your pricing logic to draft the next one." },
   { title: "Review requests", desc: "Happy customers get asked for a Google review at the right moment, automatically." },
-  { title: "No-show reduction", desc: "Confirmations and reminders before every appointment, so the calendar holds." },
-  { title: "New-client onboarding", desc: "Welcome email, intake form, kickoff doc: sent the moment they say yes." },
-  { title: "Reporting and alerts", desc: "Weekly summary emails of what's running, what broke, what to do next." },
-  { title: "Job-status updates", desc: "Customers told where their order or project stands without calling you." },
-  { title: "CRM data entry", desc: "Emails and calls logged automatically: no one types into the CRM again." },
-  { title: "Hiring intake", desc: "Applications screened against your criteria, interviews scheduled." },
   { title: "Morning brief", desc: "One email: today's schedule, money in, money out, what needs you." },
 ];
 const accentPills = ["bg-teal-bright", "bg-ardent-lime", "bg-coral", "bg-peach"];
