@@ -68,7 +68,7 @@ const LakeWorthBeach = () => {
             name: `How much does AI automation cost for a ${CITY} business?`,
             acceptedAnswer: {
               "@type": "Answer",
-              text: `AI automation projects at Ardent Studio typically run $500–$3,000 depending on complexity. Simple email automations or chatbots start around $500–$1,500. More complex multi-system builds run $1,500–$3,000. Every project starts with a free 15-minute discovery call: no commitment required.`,
+              text: `AI automation projects at Ardent Studio are a fixed price, quoted after a free 15 minute call. Cost depends on the size and complexity of the project, and you get a clear quote before any work starts.`,
             },
           },
           {

@@ -10,28 +10,28 @@ const calendly = "https://calendly.com/asomogyi-ardentstudio/30min";
 const offers = [
   {
     title: "Talk it through",
-    price: "FREE",
+    price: "FREE, 15 MINUTES",
     body: "A free 15-minute call to find where your week leaks hours. You get an honest yes or no on whether AI fits, and a short written follow-up.",
     action: "Book the free call",
     href: calendly,
   },
   {
     title: "Find the answer",
-    price: "$150 AN HOUR, SCOPED FIRST",
+    price: "SCOPED FIRST",
     body: "Bring us your data and a question. We clean it, analyze it, and give you a plain-English report with charts. You get a scoped estimate before any work starts.",
     action: "Ask about your data",
     href: "/contact",
   },
   {
     title: "Build it",
-    price: "FROM $2,000",
+    price: "FIXED PRICE",
     body: "One specific AI tool that saves real hours, built in 2 to 4 weeks at a fixed price. You own the code and the accounts.",
     action: "Start a build",
     href: "/contact",
   },
   {
     title: "Teach your team",
-    price: "FROM $2,250",
+    price: "QUOTED BY TEAM SIZE",
     body: "Hands-on workshops where your team builds something real with AI, with materials to keep and a follow-up Q and A window.",
     action: "See training",
     href: "/training",
@@ -111,6 +111,7 @@ const Index = () => (
               </article>
             ))}
           </div>
+          <p className="mt-8 text-[16px] leading-relaxed text-body-text">Every project is quoted at a fixed price before any work starts. The free call is how you get yours.</p>
            <p className="mt-9 rounded-3xl border-2 border-dashed border-coral bg-card p-6 text-[15px] italic leading-relaxed text-brick">Bigger project? Larger apps are quoted by phase after a scoping call. <Link to="/contact" className="font-semibold text-brick underline underline-offset-4">Talk about a bigger build</Link></p>
           <div className="mt-10 flex flex-col gap-2 border-t border-border pt-6 sm:flex-row sm:gap-6">
             <span className="shrink-0 font-mono text-[11px] uppercase tracking-[0.15em] text-primary">Included in every build</span>

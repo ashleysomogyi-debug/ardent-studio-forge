@@ -24,13 +24,13 @@ const Post3AIvsHiring = () => (
     <p><strong>Edge cases.</strong> Automation works beautifully when the situation fits the pattern. The moment it doesn't: a weird refund request, a complaint that needs real de-escalation: you need a person.</p>
 
     <h2>The Real Cost Comparison</h2>
-    <p>An admin or VA typically runs $50–$200 per hour. A part-time admin in Palm Beach County at 15 hours/week is $750–$3,000 per month ongoing.</p>
-    <p>A well-built automation for the same set of tasks? A one-time build of $500–$2,500, plus $20–$50/month in tool costs. For tasks the automation can actually handle, the economics are clear.</p>
+    <p>An admin or VA is an ongoing cost, paid every week for as long as the role exists.</p>
+    <p>A well-built automation for the same set of tasks is usually a one-time build at a fixed price, plus modest tool subscriptions. For tasks the automation can actually handle, the economics are clear.</p>
     <p>But here's what most people miss: the automation doesn't replace the admin's best hours. It replaces the admin's worst hours: the repetitive stuff that eats half their day. What's left is the relationship work, the judgment calls, the things an admin actually adds value doing.</p>
     <p>According to the McKinsey Global Institute, automation can handle 45% of activities workers are paid to perform using current technology. That's not 45% of jobs: it's 45% of tasks within jobs. The human still has a job. It's just a better one.</p>
 
     <h2>A Common Scenario in Palm Beach County</h2>
-    <p>A contractor or service business doing around $800K in revenue has one admin handling scheduling, invoices, follow-ups, and the inbox. She's good. They trust her. But she's spending 40% of her time on things that could be automated.</p>
+    <p>A busy contractor or service business has one admin handling scheduling, invoices, follow-ups, and the inbox. She's good. They trust her. But she's spending 40% of her time on things that could be automated.</p>
     <p>The answer isn't to fire her. The answer is to build automations that handle the repetitive stuff, so she spends her actual working hours on client calls, vendor relationships, and escalations: things she's good at and that drive retention. Two months in: the admin is less stressed, the owner has better visibility, and nobody's chasing unpaid invoices on Friday afternoon.</p>
 
     <h2>So What Should You Do?</h2>

@@ -16,7 +16,7 @@ const WELCOME_MESSAGE: Message = {
 const RESPONSES: { keywords: string[]; text: string; quickReplies?: string[] }[] = [
   {
     keywords: ["service", "pricing", "price", "cost"],
-    text: "We offer a free call, scoped data analysis at $150 an hour, fixed-price AI builds from $2,000, and hands-on team training from $2,250. We agree on scope before work starts.\n\nA free 15-minute call helps us find what fits.",
+    text: "We offer a free call, scoped data analysis, fixed-price AI builds, and hands-on team training. Every project is quoted at a fixed price after a free 15 minute call. We agree on scope before work starts.\n\nA free 15-minute call helps us find what fits.",
     quickReplies: ["How It Works", "Book a Call", "Timeline"],
   },
   {
