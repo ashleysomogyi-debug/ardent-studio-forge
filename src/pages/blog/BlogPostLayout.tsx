@@ -104,7 +104,7 @@ export default function BlogPostLayout({
                   "#C3F73A")
               }
             >
-              Book a free 15-minute call &rarr;
+               Book a free 15-min call &rarr;
             </a>
           </aside>
         </article>

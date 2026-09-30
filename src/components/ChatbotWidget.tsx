@@ -175,12 +175,7 @@ const ChatbotWidget = () => {
 
   const handleBookCall = () => {
     setIsOpen(false);
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    } else {
-      window.location.href = "/contact";
-    }
+    window.open("https://calendly.com/asomogyi-ardentstudio/30min", "_blank", "noopener,noreferrer");
   };
 
   const handleQuickReply = (text: string) => {
@@ -402,7 +397,7 @@ const ChatbotWidget = () => {
               onMouseEnter={(e) => { (e.target as HTMLButtonElement).style.opacity = "0.9"; }}
               onMouseLeave={(e) => { (e.target as HTMLButtonElement).style.opacity = "1"; }}
             >
-              Book a Free 15-Min Call
+              Book a free 15-min call
             </button>
           )}
 
