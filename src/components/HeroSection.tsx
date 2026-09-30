@@ -4,7 +4,7 @@ const HeroSection = () => (
       <div>
       <div className="flex items-center gap-4 mb-10">
         <span className="block w-12 h-px bg-primary" />
-        <span className="font-mono text-xs tracking-[0.2em] uppercase text-primary">Listen. Build. Train. Repeat.</span>
+        <span className="font-mono text-xs tracking-[0.2em] uppercase text-primary">LISTEN. BUILD. TRAIN. REPEAT.</span>
       </div>
       <h1 className="font-sans font-bold text-[clamp(2.75rem,5vw,5rem)] leading-[1.08] tracking-normal text-foreground max-w-4xl">
         Find where AI actually helps your business. Then{' '}
