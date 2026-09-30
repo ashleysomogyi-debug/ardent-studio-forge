@@ -39,7 +39,7 @@ const Footer = () => (
           <img src="/ardent-logo-circle.png" alt="Ardent Studio" className="h-12 w-12 shrink-0 rounded-full" />
           <span>
             <span className="block font-sans text-[16px] font-semibold text-dark-band-text md:text-[18px]">Ardent Studio</span>
-            <span className="mt-1 block font-mono text-[10px] uppercase tracking-[0.18em] text-footer-muted">Practical AI for Business · Palm Beach County</span>
+            <span className="mt-1 block font-mono text-[10px] uppercase tracking-[0.18em] text-footer-muted">PRACTICAL AI FOR BUSINESS · PALM BEACH COUNTY</span>
           </span>
         </Link>
         <p className="font-sans text-[13px] text-footer-muted mt-4 leading-[1.6]">
