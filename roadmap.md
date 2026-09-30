@@ -58,4 +58,4 @@
 ## Proof, navigation, and offer updates
 - [x] Add homepage proof strip and simplify offer cards
 - [x] Update hero, footer, and Automation and Apps services list
-- [ ] Remove custom cursor, audit image text, and verify affected pages
+- [x] Remove custom cursor, audit image text, and verify affected pages
