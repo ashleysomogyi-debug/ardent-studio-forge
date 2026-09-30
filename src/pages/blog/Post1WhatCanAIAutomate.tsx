@@ -55,7 +55,7 @@ const Post1WhatCanAIAutomate = () => (
     <h3>Are technical skills needed to use AI automation?</h3>
     <p>No. The tools we build are meant to run in the background without any technical knowledge on your end. We handle the setup, test everything, and walk you through what it does.</p>
     <h3>What if my business processes change?</h3>
-    <p>That's normal. Good automations are built to be adjusted. Most changes take less than an hour to update, including a new service, changing a follow-up message, routing leads differently.</p>
+    <p>That's normal. Good automations are built to be adjusted. Most changes, including adding a new service, changing a follow-up message, or routing leads differently, take less than an hour to update.</p>
     <h3>Can any small business benefit from automation?</h3>
     <p>It works across the board. We've built automations for real estate offices, restaurants, contractors, medical practices, and creative studios. If your business has any recurring communication, data entry, or follow-up, there's almost certainly something worth automating.</p>
   </BlogPostLayout>
