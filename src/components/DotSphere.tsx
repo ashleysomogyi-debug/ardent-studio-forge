@@ -8,11 +8,9 @@ interface Point {
 }
 
 const pickColor = (i: number): string => {
-  switch (i % 4) {
-    case 0: return "rgba(195, 247, 58, 0.60)";   // lime
-    case 1: return "rgba(255, 107, 107, 0.55)";  // coral
-    case 2: return "rgba(13, 191, 188, 0.50)";   // cyan
-    default: return "rgba(255, 200, 192, 0.65)"; // light pink
+  switch (i % 2) {
+    case 0: return "rgba(13, 191, 188, 0.62)";   // cyan
+    default: return "rgba(255, 107, 107, 0.62)"; // coral
   }
 };
 
