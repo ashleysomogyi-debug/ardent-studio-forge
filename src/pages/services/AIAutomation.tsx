@@ -227,7 +227,7 @@ const AIAutomation = () => {
         <section className="relative w-full overflow-hidden" style={{ background: "#F5F5F0" }}>
           <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
             <img
-              src={heroSpeakingPhoto.url}
+              src={`https://ardentstudio.io${heroSpeakingPhoto.url}`}
               alt="Ashley leading an AI automation workshop with a small business team around a table of laptops"
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover"

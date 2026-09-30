@@ -45,7 +45,7 @@ export default function BlogPostLayout({
             >
               {title}
             </h1>
-            <p className="text-sm" style={{ color: "rgba(13,13,13,0.62)" }}>
+            <p className="text-[16px]" style={{ color: "rgba(13,13,13,0.62)" }}>
               {date}
               <span className="mx-2" aria-hidden="true">
                 &middot;

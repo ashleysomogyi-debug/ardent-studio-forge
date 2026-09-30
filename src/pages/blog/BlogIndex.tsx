@@ -65,7 +65,7 @@ export default function BlogIndex() {
       <main className="flex-1">
         {/* Hero */}
         <section className="px-6 py-12 md:py-[72px] max-w-4xl mx-auto text-center">
-          <p className="text-sm font-semibold tracking-widest uppercase mb-4" style={{ color: "#0A7D7B" }}>
+          <p className="text-[13px] font-semibold tracking-widest uppercase mb-4" style={{ color: "#0A7D7B" }}>
             Ardent Studio
           </p>
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
