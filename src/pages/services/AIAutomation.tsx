@@ -314,18 +314,18 @@ const AIAutomation = () => {
         </section>
 
         {/* 2.5 FEATURED APPS */}
-        <section id="featured-apps" className="px-5 md:px-10 pt-[88px] md:pt-[140px] pb-[48px] md:pb-[64px]" style={{ background: "#F5F5F0" }}>
+        <section id="featured-apps" className="px-5 md:px-10 pt-[88px] md:pt-[140px] pb-[48px] md:pb-[64px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1200px] mx-auto">
             <span className="section-eyebrow mb-6">
               Featured Apps
             </span>
             <h2
-              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-4 text-ardent-studio max-w-[20ch]"
-              style={{ fontFamily: serif }}
+              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-4 max-w-[20ch]"
+              style={{ fontFamily: serif, color: "#F5F5F0" }}
             >
               Real apps. Real businesses. Real fast.
             </h2>
-            <p className="text-[16px] md:text-[18px] text-ardent-studio/75 leading-[1.7] mb-14 max-w-[60ch]">
+            <p className="text-[16px] md:text-[18px] leading-[1.7] mb-14 max-w-[60ch]" style={{ color: "rgba(245,245,240,0.70)" }}>
               Beyond automation, we ship full products. Built fast. Built for one business at a time.
             </p>
 
