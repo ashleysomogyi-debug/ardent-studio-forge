@@ -5,24 +5,29 @@ const HeroSection = () => (
       <div>
        <span className="section-eyebrow mb-10">LISTEN. BUILD. TRAIN. REPEAT.</span>
       <h1 className="font-sans font-bold text-[clamp(2.75rem,5vw,5rem)] leading-[1.08] tracking-normal text-foreground max-w-4xl">
-        Find where AI actually helps your business. Then{' '}
-        <span className="inline bg-ardent-lime text-ardent-studio px-2 box-decoration-clone">make it work</span>.
+        <span className="inline bg-ardent-lime text-ardent-studio px-2 box-decoration-clone">Get hours back</span>{' '}
+        every week. We find what to automate, build it, and teach your team to run it.
       </h1>
       <p className="mt-10 max-w-2xl font-sans text-lg lg:text-xl text-body-text leading-relaxed">
-        Practical AI for the way your team already works. We help you find the answer, build the tool, and teach your people to run it, at a fixed price.
+        Practical AI for the way you already work, at a fixed price. You own everything we build.
       </p>
       <p className="mt-6 font-mono text-sm tracking-[0.15em] uppercase text-label-text">
         FIXED PRICE, 2-4 WEEKS, YOU OWN IT
       </p>
-      <div className="mt-12 flex flex-wrap gap-4">
-        <a
-          href="https://calendly.com/asomogyi-ardentstudio/30min"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-8 py-4 bg-ardent-lime text-ardent-studio font-sans font-semibold rounded-full hover:opacity-85 transition-opacity"
-        >
-          Book a free 15-min call →
-        </a>
+       <div className="mt-12 flex flex-wrap items-start gap-4">
+         <div>
+           <a
+             href="https://calendly.com/asomogyi-ardentstudio/30min"
+             target="_blank"
+             rel="noopener noreferrer"
+             className="inline-flex items-center gap-2 px-8 py-4 bg-ardent-lime text-ardent-studio font-sans font-semibold rounded-full hover:opacity-85 transition-opacity"
+           >
+             Book a free 15-min call →
+           </a>
+           <p className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.12em] text-label-text">
+             No pitch. Just an honest yes or no.
+           </p>
+         </div>
         <a
           href="#work"
           className="inline-flex items-center gap-2 px-8 py-4 border border-foreground text-foreground font-sans font-semibold rounded-full hover:bg-foreground hover:text-background transition-colors"
