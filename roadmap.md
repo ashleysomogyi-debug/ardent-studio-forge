@@ -39,3 +39,8 @@
 - [x] Feature the homepage Sherron story on near-black
 - [x] Restyle the Training teaching section and shared footer
 - [x] Verify contrast, mobile layout, protected files, and build
+
+## Step 9 tabbed automation examples
+- [x] Replace the six automation cards with five accessible tab groups
+- [x] Add the supplied example copy and shared booking action
+- [ ] Verify contrast, keyboard use, mobile layout, protected files, and build
