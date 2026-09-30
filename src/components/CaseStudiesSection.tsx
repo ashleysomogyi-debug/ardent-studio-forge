@@ -80,7 +80,7 @@ const industries = [
     color: "#0A7D7B",
     tagline: "Your competitors have AI tools. The ones pulling ahead have a strategy.",
     stats: [
-      { number: "$32B", desc: "Annual efficiency value AI unlocks for U.S. legal and tax professionals alone: at current adoption rates, projected to grow sharply", source: "Thomson Reuters Future of Professionals, 2025", url: "https://www.floridabar.org/the-florida-bar-news/thomson-reuters-survey-generative-ai-could-save-legal-professionals-12-hours-weekly-by-2029/" },
+      { number: "12 hrs", desc: "Weekly time savings generative AI could save legal professionals by 2029, per Thomson Reuters", source: "Thomson Reuters Future of Professionals, 2025", url: "https://www.floridabar.org/the-florida-bar-news/thomson-reuters-survey-generative-ai-could-save-legal-professionals-12-hours-weekly-by-2029/" },
       { number: "2×", desc: "Firms with a defined AI strategy are twice as likely to report direct revenue growth: yet only 22% of firms have one", source: "Thomson Reuters Future of Professionals, 2025", url: "https://www.lawnext.com/2025/06/the-ai-strategy-divide-in-law-thomson-reuters-survey-says-strategic-ai-adoption-is-the-key-to-ai-success.html" },
       { number: "41%", desc: "Of accounting firms now use AI: up from just 9% in 2024. Early movers report up to 5× productivity gains with ~99% reconciliation accuracy", source: "Karbon State of AI in Accounting, 2025", url: "https://karbonhq.com/resources/state-of-ai-accounting-report-2025/" },
     ],
@@ -140,7 +140,7 @@ const industries = [
       { number: "+6%", desc: "Revenue gains reported by 90% of financial services firms implementing generative AI, per Google's study", source: "Google ROI of Gen AI in Financial Services · Vonage Insurance Report, 2025", url: "https://www.vonage.com/resources/articles/ai-in-insurance/" },
       { number: "+30%", desc: "Productivity gains reported by insurers that equipped service and operations teams with AI tools", source: "BCG Insurance AI Productivity Study · Creatio, 2025", url: "https://www.creatio.com/glossary/ai-in-insurance" },
     ],
-    story: "UK insurer Aviva deployed AI across its claims domain: cutting liability assessment time for complex cases by 23 days, improving claims routing accuracy by 30%, and reducing customer complaints by 65%. The transformation saved the company more than £60 million in 2024. For independent businesses, the same automation principles apply at a fraction of the cost.",
+    story: "UK insurer Aviva deployed AI across its claims domain: cutting liability assessment time for complex cases by 23 days, improving claims routing accuracy by 30%, and reducing customer complaints by 65%. For independent businesses, the same automation principles apply at a fraction of the cost.",
     storySource: "McKinsey · The Future of AI in Insurance, 2025", storyUrl: "https://www.mckinsey.com/industries/financial-services/our-insights/the-future-of-ai-in-the-insurance-industry",
   },
 ];
