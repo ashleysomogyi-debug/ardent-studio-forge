@@ -421,7 +421,7 @@ const AIAutomation = () => {
             <p className="text-[16px] text-body-text leading-[1.7] mb-7 md:mb-10 max-w-[60ch]">
               Six steps from your first call to a tool your team owns.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
+            <div className="mobile-rail grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
               {method.map((m) => (
                 <div key={m.letter} className="workshop-card grid grid-cols-[40px_1fr] gap-x-3 p-4 md:block md:p-7">
                   <div

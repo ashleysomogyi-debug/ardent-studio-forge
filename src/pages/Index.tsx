@@ -93,8 +93,8 @@ const Index = () => (
     <main>
       <HeroSection />
 
-      <section className="border-y border-border bg-card px-5 py-7 md:px-10 md:py-9" aria-label="Ardent Studio at a glance">
-        <div className="mx-auto grid max-w-[1200px] grid-cols-2 gap-x-6 gap-y-7 lg:grid-cols-4 lg:gap-8">
+      <section className="border-y border-border bg-card px-5 py-5 md:px-10 md:py-9" aria-label="Ardent Studio at a glance">
+        <div className="mx-auto grid max-w-[1200px] grid-cols-2 gap-x-4 gap-y-5 md:gap-x-6 md:gap-y-7 lg:grid-cols-4 lg:gap-8">
           {proof.map((item) => (
             <div key={item.lead} className="border-l border-border pl-4 md:pl-6">
               <strong className="block text-[clamp(22px,2.5vw,32px)] font-semibold leading-tight text-foreground">{item.lead}</strong>
@@ -163,12 +163,12 @@ const Index = () => (
         </div>
         <div className="mx-auto max-w-[1200px] px-5 py-6 md:px-10 md:py-[72px]">
            {steps.map((step, i) => (
-            <div key={step.number} className="border-b border-border py-3.5 md:grid md:grid-cols-[80px_1fr_1fr_1fr] md:gap-7 md:py-7">
+            <div key={step.number} className="border-b border-border py-3 md:grid md:grid-cols-[80px_1fr_1fr_1fr] md:gap-7 md:py-7">
               <div className="flex items-center gap-3 md:contents">
                 <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-mono text-[13px] text-ardent-studio md:h-12 md:w-12 md:text-base ${accentPills[i]}`}>{step.number}</span>
                 <h3 className="text-lg font-semibold max-md:leading-snug text-foreground md:text-xl">{step.title}</h3>
               </div>
-              <p className="mt-1.5 pl-11 text-[16px] leading-snug text-body-text md:hidden"><span className="font-mono text-[12px] uppercase tracking-[0.15em] text-primary">You do</span> {step.you} <span className="font-mono text-[12px] uppercase tracking-[0.15em] text-primary">We do</span> {step.we}</p>
+              <p className="mt-1.5 text-[16px] leading-snug text-body-text md:hidden"><span className="font-mono text-[12px] uppercase tracking-[0.15em] text-primary">You do</span> {step.you} <span className="font-mono text-[12px] uppercase tracking-[0.15em] text-primary">We do</span> {step.we}</p>
               <p className="hidden text-[16px] leading-relaxed text-body-text md:block"><span className="mb-1 block font-mono text-[12px] uppercase tracking-[0.15em] text-primary">You do</span>{step.you}</p>
               <p className="hidden text-[16px] leading-relaxed text-body-text md:block"><span className="mb-1 block font-mono text-[12px] uppercase tracking-[0.15em] text-primary">We do</span>{step.we}</p>
             </div>
@@ -179,12 +179,12 @@ const Index = () => (
       <section id="work" className="relative overflow-hidden bg-background px-5 py-12 md:px-10 md:py-[72px]" aria-labelledby="work-heading">
         <div className="coral-dot-grid pointer-events-none absolute right-6 top-16 h-28 w-28" aria-hidden="true" />
         <div className="relative mx-auto max-w-[1200px]">
-          <h2 id="work-heading" className="mb-7 md:mb-10 text-[clamp(32px,5vw,56px)] font-semibold text-foreground">Our work</h2>
+          <h2 id="work-heading" className="mb-5 md:mb-10 text-[clamp(32px,5vw,56px)] font-semibold text-foreground">Our work</h2>
           <article className="relative overflow-hidden rounded-3xl border border-dark-band-text/10 bg-footer-bg p-5 md:p-11">
             <div className="coral-dot-grid pointer-events-none absolute -right-3 -top-3 h-36 w-36" aria-hidden="true" />
             <div className="relative">
             <span className="inline-flex items-center justify-center text-center rounded-full bg-ardent-lime px-3 py-2 font-mono text-[13px] uppercase tracking-[0.2em] text-ardent-studio">In build</span>
-            <h3 className="mt-4 max-w-[24ch] text-[clamp(26px,3.5vw,40px)] font-semibold leading-tight text-dark-band-text">A spending plan in a CPA's own voice.</h3>
+            <h3 className="mt-3 md:mt-4 max-w-[24ch] text-[clamp(24px,3.5vw,40px)] font-semibold leading-tight text-dark-band-text">A spending plan in a CPA's own voice.</h3>
             <p className="mt-4 md:mt-6 max-w-[78ch] text-[16px] leading-[1.65] md:leading-[1.75] text-dark-band-muted">Sherron Permashwar, CPA, teaches a spending method in her Get Wealthy With Me course and wanted students to apply it to their own real spending. We are building an app that reads a student's recent transactions and sorts them the way she teaches, with her personality quiz and a coaching voice written from her own answers. She owns the ownership rights and the code.</p>
             <p className="mt-5 md:mt-7 border-t border-coral pt-4 md:pt-5 text-[14px] italic text-dark-band-muted">The first release is in build. Results will be added after launch.</p>
             </div>
