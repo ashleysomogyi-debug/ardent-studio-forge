@@ -81,7 +81,7 @@ const taught = ["EF keynote in Shanghai", "SHRM in Las Vegas", "Training in Denm
 const accentPills = ["bg-teal-bright", "bg-ardent-lime", "bg-coral", "bg-peach"];
 
 const proof = [
-  { lead: "15 plus", caption: "years in sales, learning and product" },
+  { lead: "15 plus", caption: "years in tech, learning and business ops" },
   { lead: "Keynotes", caption: "on three continents" },
   { lead: "SartoriAI", caption: "built by us, live today" },
   { lead: "You own", caption: "the code and the accounts" },
@@ -225,7 +225,7 @@ const Index = () => (
           <p className="mb-7 md:mb-10 max-w-[70ch] text-[18px] leading-relaxed text-body-text">We are Ashley and Wesley. We run Ardent Studio in Palm Beach County. We work directly with you to find where AI helps, build what fits, and make sure your team can use it. No account-manager handoff, just the people doing the work.</p>
           <div className="mx-auto grid max-w-[900px] items-start justify-items-center gap-9 sm:grid-cols-3">
             {[
-              { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build", detail: "PhD, 15 plus years in sales, learning and product" },
+              { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build", detail: "PhD, 15 plus years in tech, learning and business ops" },
               { src: "/wesley-profile.jpg", name: "Wesley Price", role: "Cofounder · Strategy & Ops" },
               { src: "/loki-willow-chairs.jpg", name: "Loki & Willow", role: "Chief Officers of Snuggles and Snacks" },
             ].map((person) => (
