@@ -96,7 +96,7 @@ const Nav = () => {
           aria-label="Open menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(true)}
-          className="md:hidden inline-flex items-center justify-center w-10 h-10 text-foreground"
+          className="md:hidden inline-flex items-center justify-center w-11 h-11 text-foreground"
         >
           <Menu size={26} strokeWidth={1.5} />
         </button>
@@ -132,7 +132,7 @@ const Nav = () => {
                 type="button"
                 aria-label="Close menu"
                 onClick={() => setMenuOpen(false)}
-                className="inline-flex items-center justify-center w-10 h-10 text-foreground"
+                className="inline-flex items-center justify-center w-11 h-11 text-foreground"
               >
                 <X size={28} strokeWidth={1.5} />
               </button>

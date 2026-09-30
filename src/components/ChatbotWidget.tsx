@@ -233,6 +233,8 @@ const ChatbotWidget = () => {
               cursor: "pointer",
               padding: 4,
               lineHeight: 1,
+              minWidth: 44,
+              minHeight: 44,
             }}
             aria-label="Close chat"
           >
