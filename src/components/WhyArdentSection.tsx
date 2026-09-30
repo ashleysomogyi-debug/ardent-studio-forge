@@ -5,7 +5,7 @@ const cards = [
   },
   {
     title: "Fixed price. Always.",
-    desc: "Our AI-assisted workflow means we build in days what traditional agencies build in weeks. We pass that efficiency to you through fixed-price packages — not inflated hourly rates. Your budget is a ceiling, not a floor.",
+    desc: "Our AI-assisted workflow means we build in days what traditional agencies build in weeks. We pass that efficiency to you through fixed-price packages : not inflated hourly rates. Your budget is a ceiling, not a floor.",
   },
   {
     title: "Code you own",
@@ -24,7 +24,7 @@ const WhyArdentSection = () => (
 
       {/* 2-column layout: pull quote left, differentiators right */}
       <div className="reveal-section grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20">
-        {/* Left — large italic pull quote */}
+        {/* Left : large italic pull quote */}
         <div className="flex items-start">
           <div className="border-l-2 border-ardent-cyan/40 pl-8 md:pl-10">
             <h2 className="font-sans text-[clamp(32px,8vw,56px)] md:text-[clamp(32px,4.5vw,56px)] font-light leading-[1.15] text-foreground">
@@ -33,7 +33,7 @@ const WhyArdentSection = () => (
           </div>
         </div>
 
-        {/* Right — stacked differentiators with teal diamond bullets */}
+        {/* Right : stacked differentiators with teal diamond bullets */}
         <div className="flex flex-col gap-10 md:gap-12">
           {cards.map((card) => (
             <div key={card.title} className="flex gap-4">

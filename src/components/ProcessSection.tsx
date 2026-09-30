@@ -10,7 +10,7 @@ const steps = [
   {
     num: "02",
     title: "Proposal",
-    desc: "A fixed-price proposal with deliverables, milestones, and timeline — within 24 hours. No hourly billing. No surprise invoices. 50% upfront, 50% on delivery.",
+    desc: "A fixed-price proposal with deliverables, milestones, and timeline : within 24 hours. No hourly billing. No surprise invoices. 50% upfront, 50% on delivery.",
     meta: "24 hr turnaround",
   },
   {
@@ -22,7 +22,7 @@ const steps = [
   {
     num: "04",
     title: "Handoff",
-    desc: "Deployed app, full source code, and a walkthrough recording. Everything you need to own and run it independently — plus optional ongoing support.",
+    desc: "Deployed app, full source code, and a walkthrough recording. Everything you need to own and run it independently : plus optional ongoing support.",
     meta: "Day one ownership",
   },
 ];
@@ -45,7 +45,7 @@ const SpeedBars = () => {
   return (
     <div ref={ref} className="reveal-section max-w-[720px] mb-16 md:mb-24">
       <span className="block font-mono text-[10px] text-muted-foreground tracking-[0.2em] uppercase mb-5">
-        Website Build — Time to Launch
+        Website Build : Time to Launch
       </span>
 
       {/* Agency bar */}
@@ -75,7 +75,7 @@ const SpeedBars = () => {
       </div>
 
       <p className="font-mono text-[10px] text-muted-foreground/60 leading-[1.6]">
-        AI automation &amp; custom builds are scoped per project — always a fixed timeline, zero padding.
+        AI automation &amp; custom builds are scoped per project : always a fixed timeline, zero padding.
       </p>
     </div>
   );

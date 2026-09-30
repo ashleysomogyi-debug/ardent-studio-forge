@@ -7,9 +7,9 @@ import heroSpeakingPhoto from "@/assets/photos/automation-workshop.png.asset.jso
 
 const serif = "'Inter', system-ui, sans-serif";
 
-const META_TITLE = "AI Automation for Small Business — Ardent Studio (Palm Beach County, FL)";
+const META_TITLE = "AI Automation for Small Business : Ardent Studio (Palm Beach County, FL)";
 const META_DESC =
-  "Custom AI automation that fits how your small business already works. Built with Make.com and Anthropic Claude. Most clients save 5+ hours per week within 30 days. Palm Beach County, FL — and remote.";
+  "Custom AI automation that fits how your small business already works. Built with Make.com and Anthropic Claude. Most clients save 5+ hours per week within 30 days. Palm Beach County, FL : and remote.";
 
 const featuredBuilds = [
   {
@@ -24,7 +24,7 @@ const featuredBuilds = [
   },
   {
     name: "Sartori operations stack",
-    desc: "The internal tooling that runs Sartori day to day — billing, ops alerts, and analytics.",
+    desc: "The internal tooling that runs Sartori day to day : billing, ops alerts, and analytics.",
     stack: "Stripe · Supabase · Slack · Make",
   },
 ];
@@ -39,16 +39,16 @@ const method = [
 ];
 
 const workflows: { title: string; desc: string; wide?: boolean }[] = [
-  { title: "Lead follow-up in minutes", desc: "Every inquiry gets a reply day or night — before the prospect calls the next name on the list." },
+  { title: "Lead follow-up in minutes", desc: "Every inquiry gets a reply day or night : before the prospect calls the next name on the list." },
   { title: "Inbound email triage", desc: "Drafts replies as new emails arrive, routes the rest to the right person." },
   { title: "Invoice chasing", desc: "Reminders matched to each customer's payment history, so you get paid without the awkward email." },
   { title: "Quote and proposal generation", desc: "Pulls from past quotes and your pricing logic to draft the next one." },
   { title: "Review requests", desc: "Happy customers get asked for a Google review at the right moment, automatically." },
   { title: "No-show reduction", desc: "Confirmations and reminders before every appointment, so the calendar holds." },
-  { title: "New-client onboarding", desc: "Welcome email, intake form, kickoff doc — sent the moment they say yes." },
+  { title: "New-client onboarding", desc: "Welcome email, intake form, kickoff doc : sent the moment they say yes." },
   { title: "Reporting and alerts", desc: "Weekly summary emails of what's running, what broke, what to do next." },
   { title: "Job-status updates", desc: "Customers told where their order or project stands without calling you." },
-  { title: "CRM data entry", desc: "Emails and calls logged automatically — no one types into the CRM again." },
+  { title: "CRM data entry", desc: "Emails and calls logged automatically : no one types into the CRM again." },
   { title: "Hiring intake", desc: "Applications screened against your criteria, interviews scheduled." },
   { title: "Morning brief", desc: "One email: today's schedule, money in, money out, what needs you." },
 ];
@@ -110,7 +110,7 @@ const AIAutomation = () => {
             </div>
             <TypingHeadline />
             <p className="mt-10 max-w-2xl font-sans text-lg lg:text-xl text-ardent-paper/80 leading-relaxed">
-              We build custom AI automation that fits how your team already works — using Make.com, Anthropic
+              We build custom AI automation that fits how your team already works : using Make.com, Anthropic
               Claude, and the tools you're already in. Most clients save 5+ hours per week within the first 30
               days.
             </p>
@@ -234,7 +234,7 @@ const AIAutomation = () => {
                   Democratising access to elite coaching intelligence.
                 </p>
                 <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
-                  AI-powered coaching platform for rugby, delivering personalised training analysis and performance insights to players and coaches at every level — from grassroots clubs to elite academies.
+                  AI-powered coaching platform for rugby, delivering personalised training analysis and performance insights to players and coaches at every level : from grassroots clubs to elite academies.
                 </p>
                 <div className="mt-auto">
                   <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
@@ -248,7 +248,7 @@ const AIAutomation = () => {
               {[
                 { t: "Web apps", d: "Customer portals, dashboards, and internal tools your team actually uses." },
                 { t: "Mobile apps", d: "iOS and Android apps for field teams, customers, and operations." },
-                { t: "AI products", d: "Full products with AI at the core — like Sartori." },
+                { t: "AI products", d: "Full products with AI at the core : like Sartori." },
               ].map((c) => (
                 <div key={c.t} className="p-7 border border-ardent-ink/15 bg-white/40">
                   <h4 className="text-[22px] mb-3 text-ardent-studio" style={{ fontFamily: serif }}>{c.t}</h4>

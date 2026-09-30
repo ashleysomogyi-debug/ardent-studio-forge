@@ -113,7 +113,7 @@ const PricingSection = () => (
       {/* Retainer strip */}
       <div className="reveal-section flex flex-col md:flex-row items-start md:items-center justify-between border border-border rounded-xl p-5 md:p-7 gap-3 md:gap-4">
         <p className="font-sans text-[15px] text-muted-foreground leading-[1.75]">
-          Ongoing support available — hosting oversight, minor feature updates, and priority support.
+          Ongoing support available : hosting oversight, minor feature updates, and priority support.
         </p>
         <span className="font-sans text-[14px] text-primary whitespace-nowrap">From $300 / month</span>
       </div>
