@@ -185,9 +185,8 @@ const Training = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {tiers.map((tier, i) => (
                 <div key={tier.name} className="workshop-card p-8">
-                  <span className={`mb-5 inline-flex rounded-full px-3 py-2 font-mono text-[11px] text-ardent-studio ${accentPills[i]}`}>{tier.price}</span>
+                  <span className={`mb-5 inline-flex rounded-full px-4 py-2.5 font-mono text-[clamp(24px,3vw,36px)] font-semibold text-ardent-studio ${accentPills[i]}`}>{tier.price}</span>
                   <h3 className="text-[22px] mb-2 text-foreground" style={{ fontFamily: serif }}>{tier.name}</h3>
-                  <p className={`mb-4 font-mono text-[36px] ${i === 1 ? "text-brick" : i === 2 ? "text-foreground" : "text-primary"}`}>{tier.price}</p>
                   <p className="text-[14px] text-body-text mb-6">{tier.body}</p>
                   <ul className="space-y-2 mb-8">
                     {tier.items.map((i) => (

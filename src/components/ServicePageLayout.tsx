@@ -60,11 +60,11 @@ const ServicePageLayout = ({
       <Nav />
       <main>
         {/* Hero */}
-        <section className="relative pt-[140px] pb-[80px] md:pt-[180px] md:pb-[112px] px-5 md:px-10 overflow-hidden" style={{ background: "var(--color-bg)" }}>
+        <section className="relative overflow-hidden bg-blush px-5 pb-[80px] pt-[140px] md:px-10 md:pb-[112px] md:pt-[180px]">
           <ParticleCanvas />
           <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(135deg, rgba(10,125,123,0.06) 0%, transparent 50%)" }} />
           <div className="relative z-10 max-w-[800px] mx-auto text-center reveal-section">
-            <span className="block font-mono text-[11px] text-primary tracking-[0.2em] uppercase mb-6">Ardent Studio</span>
+            <span className="section-eyebrow mb-6">Ardent Studio</span>
             <h1 className="font-sans text-[clamp(32px,8vw,56px)] md:text-[clamp(36px,4.5vw,64px)] font-light leading-[1.1] mb-6">
               {headline}
             </h1>
@@ -80,16 +80,16 @@ const ServicePageLayout = ({
         <div className="h-px bg-border" />
 
         {/* Features Grid */}
-        <section className="py-[80px] md:py-[112px] px-5 md:px-10" style={{ background: "var(--color-surface-2)" }}>
+        <section className="bg-background px-5 py-[80px] md:px-10 md:py-[112px]">
           <div className="max-w-[1200px] mx-auto">
             <div className="reveal-section mb-10 md:mb-14">
-              <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase">What's Included</span>
+              <span className="section-eyebrow">What's Included</span>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {features.map((feature) => (
                 <div
                   key={feature.title}
-                  className="reveal-section rounded-lg p-6 md:p-8 border border-border-subtle hover:border-primary/30 transition-colors"
+                  className="reveal-section workshop-card p-6 transition-colors md:p-8"
                   style={{ background: "var(--color-surface)" }}
                 >
                   <span className="text-primary text-[16px] mb-4 block">◈</span>
@@ -108,7 +108,7 @@ const ServicePageLayout = ({
           <>
             <section className="py-[64px] md:py-[80px] px-5 md:px-10" style={{ background: "var(--color-bg)" }}>
               <div className="max-w-[800px] mx-auto text-center reveal-section">
-                <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase mb-6 block">Industries We Serve</span>
+                <span className="section-eyebrow mb-6">Industries We Serve</span>
                 <div className="flex flex-wrap justify-center gap-3 mt-8">
                   {industries.map((industry) => (
                     <span
@@ -130,7 +130,7 @@ const ServicePageLayout = ({
           <>
             <section className="py-[80px] md:py-[112px] px-5 md:px-10" style={{ background: "var(--color-surface)" }}>
               <div className="max-w-[700px] mx-auto reveal-section">
-                <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase mb-6 block">Case Study</span>
+                <span className="section-eyebrow mb-6">Case Study</span>
                 <div className="border-l-2 border-primary/40 pl-8 md:pl-10">
                   <h3 className="font-sans text-[24px] md:text-[28px] font-semibold text-foreground mb-4">{caseStudy.title}</h3>
                   <p className="font-sans text-[15px] text-body-text leading-[1.75] mb-6">{caseStudy.description}</p>
@@ -146,10 +146,10 @@ const ServicePageLayout = ({
         )}
 
         {/* Why Ardent Studio */}
-        <section className="py-[80px] md:py-[112px] px-5 md:px-10" style={{ background: "var(--color-surface-2)" }}>
+        <section className="bg-blush px-5 py-[80px] md:px-10 md:py-[112px]">
           <div className="max-w-[800px] mx-auto">
             <div className="reveal-section mb-10">
-              <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase">Why Ardent Studio</span>
+              <span className="section-eyebrow">Why Ardent Studio</span>
             </div>
             <div className="flex flex-col gap-6">
               {whyArdent.map((point, i) => (

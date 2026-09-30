@@ -50,23 +50,23 @@ const TypingHeadline = () => {
   if (reduced) {
     return (
       <h1
-        className="text-[clamp(3rem,8vw,6rem)] leading-[1.05] font-normal text-ardent-paper"
+        className="text-[clamp(3rem,8vw,6rem)] leading-[1.05] font-normal text-foreground"
         style={{ fontFamily: serif }}
       >
-        Build what <span className="text-ardent-cyan">connects</span>.
+        Build what <span className="text-primary">connects</span>.
       </h1>
     );
   }
 
   return (
     <h1
-      className="text-[clamp(3rem,8vw,6rem)] leading-[1.05] font-normal text-ardent-paper"
+      className="text-[clamp(3rem,8vw,6rem)] leading-[1.05] font-normal text-foreground"
       style={{ fontFamily: serif }}
     >
       Build what{" "}
       <span className={colors[idx]}>{text}</span>
-      <span className="typing-cursor text-ardent-paper/80" aria-hidden="true">|</span>
-      <span className="text-ardent-paper">.</span>
+      <span className="typing-cursor text-foreground/80" aria-hidden="true">|</span>
+      <span className="text-foreground">.</span>
     </h1>
   );
 };

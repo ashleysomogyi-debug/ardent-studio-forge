@@ -90,24 +90,24 @@ const Contact = () => {
     <>
       <Nav />
       <main>
-        <section className="px-5 md:px-10 pt-[140px] pb-[40px]" style={{ background: "#F5F5F0" }}>
+        <section className="bg-blush px-5 pb-[40px] pt-[140px] md:px-10">
           <div className="max-w-2xl mx-auto text-center">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
+            <span className="section-eyebrow mb-6">
               Contact
             </span>
             <h1
-              className="text-[clamp(36px,5vw,56px)] leading-[1.1] mb-6 text-ardent-paper"
+               className="text-[clamp(36px,5vw,56px)] leading-[1.1] mb-6 text-foreground"
               style={{ fontFamily: serif }}
             >
               Tell us what you're trying to build.
             </h1>
-            <p className="text-[17px] leading-[1.65] text-ardent-paper/75 max-w-[560px] mx-auto">
+            <p className="text-[17px] leading-[1.65] text-body-text max-w-[560px] mx-auto">
               We reply within one business day. Most projects start with a free 15-minute scope call.
             </p>
           </div>
         </section>
 
-        <section className="px-5 md:px-10 pb-[120px]" style={{ background: "#F5F5F0" }}>
+        <section className="bg-blush px-5 pb-[120px] md:px-10">
           <div className="max-w-2xl mx-auto">
             {submitted ? (
               <div
@@ -131,7 +131,7 @@ const Contact = () => {
             ): (
               <form
                 onSubmit={handleSubmit}
-                className="space-y-5 p-8 md:p-10 border border-border rounded-xl"
+                className="workshop-card space-y-5 p-8 md:p-10"
                 style={{ background: "#FFFFFF" }}
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

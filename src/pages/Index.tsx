@@ -66,7 +66,7 @@ const Index = () => (
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {offers.map((offer, i) => (
               <article key={offer.title} className="workshop-card flex min-h-[350px] flex-col p-7">
-                <span className={`mb-8 w-fit rounded-full px-3 py-2 font-mono text-[11px] uppercase tracking-[0.1em] text-ardent-studio ${accentPills[i]}`}>{offer.price}</span>
+                <span className={`mb-8 w-fit max-w-full rounded-full px-4 py-2.5 font-mono text-[clamp(15px,1.5vw,21px)] font-semibold uppercase leading-tight text-ardent-studio ${accentPills[i]}`}>{offer.price}</span>
                 <h3 className="mb-4 text-[25px] font-semibold leading-tight text-foreground">{offer.title}</h3>
                 <p className="mb-8 text-[15px] leading-[1.7] text-body-text">{offer.body}</p>
                 {offer.href.startsWith("http") ? (

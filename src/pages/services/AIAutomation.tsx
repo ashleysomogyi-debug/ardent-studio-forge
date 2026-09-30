@@ -270,12 +270,12 @@ const AIAutomation = () => {
               How we work
             </span>
             <h2
-              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-4 text-ardent-paper"
+              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-4 text-foreground"
               style={{ fontFamily: serif }}
             >
               The ARDENT method.
             </h2>
-            <p className="text-[16px] text-ardent-paper/80 leading-[1.7] mb-14 max-w-[60ch]">
+            <p className="text-[16px] text-body-text leading-[1.7] mb-14 max-w-[60ch]">
               Six steps from your first call to a tool your team owns.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -290,7 +290,7 @@ const AIAutomation = () => {
                   <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary mb-3">
                     {m.word}
                   </div>
-                  <p className="text-[15px] leading-[1.7] text-ardent-paper">{m.desc}</p>
+                  <p className="text-[15px] leading-[1.7] text-body-text">{m.desc}</p>
                 </div>
               ))}
             </div>
@@ -306,7 +306,7 @@ const AIAutomation = () => {
             </div>
             <div className="rounded-3xl border-2 border-dashed border-coral bg-card p-7 md:p-10">
               <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Larger builds</h2>
-              <p className="text-[16px] text-muted-foreground leading-relaxed mb-7">Bigger apps that need more than 2 to 4 weeks are quoted by phase after a scoping call.</p>
+              <p className="text-[16px] italic text-brick leading-relaxed mb-7">Bigger apps that need more than 2 to 4 weeks are quoted by phase after a scoping call.</p>
               <Link to="/contact?interest=bigger-project" className="inline-flex px-7 py-3 border border-foreground text-foreground font-semibold rounded-full">Talk about a bigger build</Link>
             </div>
           </div>
@@ -331,15 +331,15 @@ const AIAutomation = () => {
         </section>
 
         {/* 6. FINAL CTA */}
-        <section className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#F5F5F0" }}>
+        <section className="bg-blush px-5 py-[88px] md:px-10 md:py-[140px]">
           <div className="max-w-[800px] mx-auto text-center">
             <h2
-              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-6 text-ardent-paper"
+              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-6 text-foreground"
               style={{ fontFamily: serif }}
             >
               Ready to see where AI fits in your week?
             </h2>
-            <p className="text-[16px] md:text-[18px] text-ardent-paper/75 leading-[1.7] mb-10 max-w-[60ch] mx-auto">
+            <p className="text-[16px] md:text-[18px] text-body-text leading-[1.7] mb-10 max-w-[60ch] mx-auto">
               Book a free 15-minute call. We'll map your top time leaks and tell you which one is worth
               automating first.
             </p>
