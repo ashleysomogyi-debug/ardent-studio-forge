@@ -47,6 +47,7 @@ const workflows: { title: string; desc: string; wide?: boolean }[] = [
   { title: "Hiring intake", desc: "Applications screened against your criteria, interviews scheduled." },
   { title: "Morning brief", desc: "One email: today's schedule, money in, money out, what needs you." },
 ];
+const accentPills = ["bg-teal-bright", "bg-ardent-lime", "bg-coral", "bg-peach"];
 
 const AIAutomation = () => {
   useEffect(() => {
@@ -87,7 +88,7 @@ const AIAutomation = () => {
       <Nav />
       <main>
         {/* 1. HERO */}
-        <section className="relative min-h-screen flex items-center bg-bg-base overflow-hidden">
+        <section className="relative min-h-screen flex items-center bg-blush overflow-hidden">
           <div
             className="absolute inset-0 opacity-[0.04] pointer-events-none"
             style={{
@@ -97,14 +98,13 @@ const AIAutomation = () => {
             }}
           />
           <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full py-32">
-            <div className="flex items-center gap-4 mb-10">
-              <span className="block w-12 h-px bg-ardent-lime" />
-              <span className="font-mono text-xs tracking-[0.2em] text-primary uppercase">
+            <div className="mb-10">
+              <span className="section-eyebrow">
                 AI Automation and Apps
               </span>
             </div>
             <TypingHeadline />
-            <p className="mt-10 max-w-2xl font-sans text-lg lg:text-xl text-ardent-paper/80 leading-relaxed">
+            <p className="mt-10 max-w-2xl font-sans text-lg lg:text-xl text-body-text leading-relaxed">
               We build custom AI automation that fits how your team already works, using the tools you already have. We agree on a fixed scope before work starts.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
@@ -118,7 +118,7 @@ const AIAutomation = () => {
               </a>
               <Link
                 to="/#work"
-                className="inline-flex items-center gap-2 px-8 py-4 border border-ardent-paper/30 text-ardent-paper font-sans font-semibold rounded-full hover:border-ardent-paper transition-colors"
+                className="inline-flex items-center gap-2 px-8 py-4 border border-foreground text-foreground font-sans font-semibold rounded-full hover:opacity-70 transition-opacity"
               >
                 See recent builds
               </Link>
@@ -142,11 +142,11 @@ const AIAutomation = () => {
               }}
             />
             <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
-              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
+              <span className="section-eyebrow mb-6">
                 Workflows we automate
               </span>
               <h2
-                className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal max-w-[26ch] text-ardent-paper"
+                className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal max-w-[26ch] text-foreground"
                 style={{ fontFamily: serif }}
               >
                 What does AI automation actually look like for a business?
@@ -155,15 +155,15 @@ const AIAutomation = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#F5F5F0" }}>
+        <section className="bg-blush px-5 pb-[88px] pt-[48px] md:px-10 md:pb-[140px] md:pt-[64px]">
           <div className="max-w-[1200px] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10">
-              {workflows.map((w) => (
-                <div key={w.title} className={`p-7 min-h-[180px]${w.wide ? " md:col-span-2 lg:col-span-2": ""}`} style={{ background: "#FFFFFF" }}>
-                  <h3 className="text-[20px] mb-3 text-ardent-paper" style={{ fontFamily: serif }}>
+              {workflows.map((w, i) => (
+                <div key={w.title} className={`workshop-card min-h-[180px] p-7${w.wide ? " md:col-span-2 lg:col-span-2": ""}`}>
+                  <h3 className={`mb-5 w-fit max-w-full rounded-full px-4 py-2 text-[16px] font-semibold leading-tight text-ardent-studio ${accentPills[i % accentPills.length]}`} style={{ fontFamily: serif }}>
                     {w.title}
                   </h3>
-                  <p className="text-[14px] leading-[1.6] text-ardent-paper/65">{w.desc}</p>
+                  <p className="text-[14px] leading-[1.6] text-body-text">{w.desc}</p>
                 </div>
               ))}
             </div>
@@ -173,7 +173,7 @@ const AIAutomation = () => {
         {/* 2.5 FEATURED APPS */}
         <section id="featured-apps" className="px-5 md:px-10 pt-[88px] md:pt-[140px] pb-[48px] md:pb-[64px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1200px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
+            <span className="section-eyebrow mb-6">
               Featured Apps
             </span>
             <h2
@@ -187,8 +187,8 @@ const AIAutomation = () => {
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-              <div className="border border-border p-10 md:p-14 bg-white/40 flex flex-col">
-                <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+              <div className="workshop-card flex flex-col p-10 md:p-14">
+                <span className="mb-4 block w-fit rounded-full bg-teal-bright px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ardent-studio">
                   Sales Enablement · AI Role-Play
                 </span>
                 <h3 className="text-[clamp(28px,3.5vw,42px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
@@ -216,8 +216,8 @@ const AIAutomation = () => {
                 </div>
               </div>
 
-              <div className="border border-border p-10 md:p-14 bg-white/40 flex flex-col">
-                <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+              <div className="workshop-card flex flex-col p-10 md:p-14">
+                <span className="mb-4 block w-fit rounded-full bg-ardent-lime px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ardent-studio">
                   Sports Tech · AI Coaching
                 </span>
                 <h3 className="text-[clamp(28px,3.5vw,42px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
@@ -242,8 +242,8 @@ const AIAutomation = () => {
                 { t: "Web apps", d: "Customer portals, dashboards, and internal tools your team actually uses." },
                 { t: "Mobile apps", d: "iOS and Android apps for field teams, customers, and operations." },
                 { t: "AI products", d: "Full products with AI at the core: like Sartori." },
-              ].map((c) => (
-                <div key={c.t} className="p-7 border border-ardent-ink/15 bg-white/40">
+              ].map((c, i) => (
+                <div key={c.t} className={`workshop-card border-t-8 p-7 ${i === 0 ? "border-t-teal-bright" : i === 1 ? "border-t-ardent-lime" : "border-t-coral"}`}>
                   <h4 className="text-[22px] mb-3 text-ardent-studio" style={{ fontFamily: serif }}>{c.t}</h4>
                   <p className="text-[14px] leading-[1.6] text-ardent-studio/75">{c.d}</p>
                 </div>
@@ -263,23 +263,23 @@ const AIAutomation = () => {
         </section>
 
         {/* 3. ARDENT METHOD */}
-        <section id="ardent-method" className="px-5 md:px-10 pt-[48px] md:pt-[64px] pb-[88px] md:pb-[140px]" style={{ background: "#F5F5F0" }}>
+        <section id="ardent-method" className="bg-blush px-5 pb-[88px] pt-[48px] md:px-10 md:pb-[140px] md:pt-[64px]">
           <div className="max-w-[1200px] mx-auto">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
+            <span className="section-eyebrow mb-6">
               How we work
             </span>
             <h2
-              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-4 text-ardent-paper"
+              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-4 text-foreground"
               style={{ fontFamily: serif }}
             >
               The ARDENT method.
             </h2>
-            <p className="text-[16px] text-ardent-paper/80 leading-[1.7] mb-14 max-w-[60ch]">
+            <p className="text-[16px] text-body-text leading-[1.7] mb-14 max-w-[60ch]">
               Six steps from your first call to a tool your team owns.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {method.map((m) => (
-                <div key={m.letter} className="border border-border p-7" style={{ background: "#FFFFFF" }}>
+                <div key={m.letter} className="workshop-card p-7">
                   <div
                     className="text-[64px] leading-none mb-3 text-primary"
                     style={{ fontFamily: serif }}
@@ -289,7 +289,7 @@ const AIAutomation = () => {
                   <div className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary mb-3">
                     {m.word}
                   </div>
-                  <p className="text-[15px] leading-[1.7] text-ardent-paper">{m.desc}</p>
+                  <p className="text-[15px] leading-[1.7] text-body-text">{m.desc}</p>
                 </div>
               ))}
             </div>
@@ -297,15 +297,15 @@ const AIAutomation = () => {
         </section>
 
         <section className="px-5 md:px-10 py-16 bg-background">
-          <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-10 md:gap-16 border-t border-border pt-12">
-            <div>
+          <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-6">
+            <div className="workshop-card border-t-8 border-t-teal-bright p-7 md:p-10">
               <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Find the answer</h2>
               <p className="text-[16px] text-muted-foreground leading-relaxed mb-7">Bring us your data and a question. We clean it, analyze it, and give you a plain-English report with charts. $150 an hour, with a scoped estimate before any work starts.</p>
               <Link to="/contact?interest=analyze-my-data" className="inline-flex px-7 py-3 bg-secondary text-secondary-foreground font-semibold rounded-full">Ask about your data</Link>
             </div>
-            <div>
+            <div className="rounded-3xl border-2 border-dashed border-coral bg-card p-7 md:p-10">
               <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Larger builds</h2>
-              <p className="text-[16px] text-muted-foreground leading-relaxed mb-7">Bigger apps that need more than 2 to 4 weeks are quoted by phase after a scoping call.</p>
+              <p className="text-[16px] italic text-brick leading-relaxed mb-7">Bigger apps that need more than 2 to 4 weeks are quoted by phase after a scoping call.</p>
               <Link to="/contact?interest=bigger-project" className="inline-flex px-7 py-3 border border-foreground text-foreground font-semibold rounded-full">Talk about a bigger build</Link>
             </div>
           </div>
@@ -314,7 +314,7 @@ const AIAutomation = () => {
         {/* 5. PRICING SIGNAL */}
         <section className="px-5 md:px-10 py-14" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[900px] mx-auto text-center">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-ink block mb-4">
+            <span className="section-eyebrow mb-4">
               Investment
             </span>
             <p
@@ -330,15 +330,15 @@ const AIAutomation = () => {
         </section>
 
         {/* 6. FINAL CTA */}
-        <section className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: "#F5F5F0" }}>
+        <section className="bg-blush px-5 py-[88px] md:px-10 md:py-[140px]">
           <div className="max-w-[800px] mx-auto text-center">
             <h2
-              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-6 text-ardent-paper"
+              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-6 text-foreground"
               style={{ fontFamily: serif }}
             >
               Ready to see where AI fits in your week?
             </h2>
-            <p className="text-[16px] md:text-[18px] text-ardent-paper/75 leading-[1.7] mb-10 max-w-[60ch] mx-auto">
+            <p className="text-[16px] md:text-[18px] text-body-text leading-[1.7] mb-10 max-w-[60ch] mx-auto">
               Book a free 15-minute call. We'll map your top time leaks and tell you which one is worth
               automating first.
             </p>
