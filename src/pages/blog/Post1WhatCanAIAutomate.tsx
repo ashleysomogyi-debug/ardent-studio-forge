@@ -52,7 +52,7 @@ const Post1WhatCanAIAutomate = () => (
     <p>At Ardent Studio, we build automations with connected tools, paired with Claude or ChatGPT for anything that needs to read, write, or respond intelligently. Most automations connect tools you already use: Gmail, Google Calendar, your CRM, your booking software: so there's nothing new for you to learn.</p>
 
     <h2>Frequently Asked Questions</h2>
-    <h3>Do I need to be technical to use AI automation?</h3>
+    <h3>Are technical skills needed to use AI automation?</h3>
     <p>No. The tools we build are meant to run in the background without any technical knowledge on your end. We handle the setup, test everything, and walk you through what it does.</p>
     <h3>What if my business processes change?</h3>
     <p>That's normal. Good automations are built to be adjusted. Most changes take less than an hour to update: adding a new service, changing a follow-up message, routing leads differently.</p>

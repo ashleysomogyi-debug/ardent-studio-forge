@@ -15,7 +15,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "How many sessions do I need?",
+      name: "How many sessions does a team need?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Most clients need 2–3 sessions (approximately 2 hours each). Some are fully set up and confident after one session. We go at your pace and don't upsell sessions you don't need.",

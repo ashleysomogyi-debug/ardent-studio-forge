@@ -41,7 +41,7 @@ const Post2AICost = () => (
     <p>Before you hire anyone: us or anyone else: make sure the quote includes: a defined scope (what exactly will be built), the tools involved, the number of revision rounds, testing, a handoff walkthrough, and documentation. Vague quotes produce vague results.</p>
 
     <h2>Frequently Asked Questions</h2>
-    <h3>Can I start small and expand later?</h3>
+    <h3>Can a project start small and expand later?</h3>
     <p>Yes, and honestly, that's the right approach. A $750 automation that solves one real problem is more valuable than a $4,000 build you don't fully understand. Start with your biggest time drain and go from there.</p>
     <h3>Are there ongoing tool subscription costs on top of the build fee?</h3>
     <p>Usually yes: automation tool costs vary depending on volume. Most clients spend $20–$50/month in tool subscriptions after the initial build. We factor this into our recommendations.</p>

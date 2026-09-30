@@ -7,7 +7,7 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What's the difference between workflow automation and AI?",
+      name: "How does workflow automation differ from AI?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "Workflow automation handles the routing and triggering of tasks: moving data between tools, sending emails at the right time, updating records automatically. AI handles the thinking: writing, classifying, extracting meaning from text. Ardent Studio uses both together: automation to move things through your pipeline, AI to handle the steps that require judgment or language.",
@@ -23,7 +23,7 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Do I need technical skills to use the automations you build?",
+      name: "Are technical skills needed to use these automations?",
       acceptedAnswer: {
         "@type": "Answer",
         text: "No. We build, test, document, and walk you through everything. You own the automation completely and can modify it yourself if you want to, or call us if something needs updating. Most clients are fully comfortable running their workflows within the first week.",

@@ -38,11 +38,11 @@ const Post5WhyAIFails = () => (
     <p>That's it. It's not complicated. The complication comes from trying to do all of it at once.</p>
 
     <h2>Frequently Asked Questions</h2>
-    <h3>How do I know if my process is ready to automate?</h3>
+    <h3>How can a team tell if a process is ready to automate?</h3>
     <p>If you can describe it clearly in a step-by-step list: what triggers it, what happens next, what the end result looks like: it's probably ready. If you find yourself writing "it depends" at every step, document the process better first.</p>
     <h3>What's the fastest way to get a working automation?</h3>
     <p>Start with one problem. Don't design the perfect system: build the minimum viable automation that solves the one problem. You can always expand it later. Done beats perfect, especially for the first build.</p>
-    <h3>How do I avoid getting locked into a vendor or consultant?</h3>
+    <h3>How can a team avoid vendor lock-in?</h3>
     <p>Demand documentation, demand a handoff walkthrough, and make sure you have access to all the accounts and tools involved. Everything Ardent Studio builds is fully yours: including the automation workflows, the connected accounts, and the documentation. We don't hold anything hostage.</p>
   </BlogPostLayout>
 );

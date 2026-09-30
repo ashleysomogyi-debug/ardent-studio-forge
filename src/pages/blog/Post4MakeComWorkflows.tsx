@@ -52,7 +52,7 @@ const Post4MakeComWorkflows = () => (
     <h2>Frequently Asked Questions</h2>
     <h3>Do you need an automation tool account for these workflows?</h3>
     <p>Some automation tools have free plans for simple workflows. Pricing depends on the tools and volume. We set up and manage the account as part of the build.</p>
-    <h3>Can these workflows work with tools I already use?</h3>
+    <h3>Can these workflows connect to existing tools?</h3>
     <p>Automation tools connect to apps: Gmail, Google Sheets, Calendly, QuickBooks, HubSpot, Slack, and most tools small businesses already use. If you're not sure about a specific tool, book a call and we'll check.</p>
     <h3>What if a workflow breaks?</h3>
     <p>Automation tools can send alerts when a workflow fails. We document everything we build, so if something needs fixing, you know exactly where to look: or you call us and we fix it quickly.</p>
