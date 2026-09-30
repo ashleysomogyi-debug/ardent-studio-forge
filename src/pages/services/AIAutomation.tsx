@@ -184,7 +184,7 @@ const AIAutomation = () => {
   return (
     <>
       <Nav />
-      <main>
+      <main className="automation-cyan-theme">
         {/* 1. HERO */}
         <section className="relative bg-blush overflow-hidden">
           <div
@@ -224,7 +224,7 @@ const AIAutomation = () => {
           </div>
         </section>
 
-        <section className="relative w-full overflow-hidden" style={{ background: "#F5F5F0" }}>
+        <section className="automation-cyan-band relative w-full overflow-hidden">
           <div className="relative min-h-[260px] md:min-h-[64vh] w-full flex items-end">
             <img
               src={`https://ardentstudio.io${heroSpeakingPhoto.url}`}
@@ -232,13 +232,7 @@ const AIAutomation = () => {
               loading="lazy"
               className="absolute inset-0 w-full h-full object-cover"
             />
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  "linear-gradient(90deg, rgba(245,245,240,0.94) 0%, rgba(245,245,240,0.70) 48%, rgba(245,245,240,0.18) 100%), linear-gradient(180deg, rgba(245,245,240,0.08) 0%, rgba(245,245,240,0.94) 100%)",
-              }}
-            />
+            <div className="automation-photo-overlay absolute inset-0" />
             <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-12 md:pt-32 pb-6 md:pb-14">
               <span className="section-eyebrow section-eyebrow--on-photo mb-4 md:mb-6">
                 Workflows we automate
@@ -450,7 +444,7 @@ const AIAutomation = () => {
             <div className="rounded-3xl border-2 border-dashed border-coral bg-card p-5 md:p-10">
               <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-3 md:mb-5">Larger builds</h2>
               <p className="text-[16px] italic text-brick leading-relaxed mb-5 md:mb-7">Bigger apps that need more than 2 to 4 weeks are quoted by phase after a scoping call.</p>
-              <Link to="/contact?interest=bigger-project" className="inline-flex min-h-11 items-center px-7 py-3 text-[16px] border border-foreground text-foreground font-semibold rounded-full">Talk about a bigger build</Link>
+              <Link to="/contact?interest=bigger-project" className="automation-accent-link inline-flex min-h-11 items-center px-7 py-3 text-[16px] font-semibold">Talk about a bigger build</Link>
             </div>
           </div>
         </section>
