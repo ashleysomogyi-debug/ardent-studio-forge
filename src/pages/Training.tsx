@@ -7,7 +7,7 @@ const serif = "'Inter', system-ui, sans-serif";
 
 const format = [
   { num: "01", title: "15-min discovery", price: "Free", body: "We map what your team already does and where AI fits." },
-  { num: "02", title: "2 hour live workshop", price: "On site or Zoom", body: "Hands-on building with the tools your team will actually use." },
+  { num: "02", title: "Live workshop", price: "3 hours or 5 hours", body: "On site or on Zoom." },
   { num: "03", title: "Materials handoff", price: "Yours to keep", body: "Playbooks, prompts, and a recording your team can rewatch." },
 ];
 
@@ -23,7 +23,7 @@ const tracks = [
 const quotes = [
   { q: "We measure outcomes, not attendance.", a: "Every workshop ends with something your team built." },
   { q: "We cover automation, not just chat.", a: "Agents and workflows, not yet another ChatGPT 101." },
-  { q: "The trainer is also the builder.", a: "I build this stuff for clients. I teach what actually works in production." },
+  { q: "We build this stuff for clients, and we teach what actually works in production.", a: "Your team learns from real builds." },
 ];
 
 const tiers = [
@@ -34,9 +34,9 @@ const tiers = [
 
 const Training = () => {
   useEffect(() => {
-    document.title = "AI Training for Agencies & Consulting Teams | Ardent Studio";
+    document.title = "AI Training for Your Team | Ardent Studio";
     const meta = document.querySelector('meta[name="description"]');
-    const desc = "In-person and virtual AI workshops for small business teams in South Florida.";
+    const desc = "In-person and virtual AI workshops for teams of any kind. Build a real tool together.";
     if (meta) meta.setAttribute("content", desc);
   }, []);
 
@@ -52,7 +52,7 @@ const Training = () => {
               Skip the AI 101. Build something today.
             </h1>
             <p className="text-[18px] leading-[1.65] max-w-[640px] text-ardent-paper/75 mb-10">
-              In-person and virtual workshops for teams at agencies, consulting firms, and fractional practices. We build something real together: your team leaves with a tool, not a slide deck.
+              In-person and virtual workshops for teams of any kind. We build something real together, so your team leaves with a tool, not a slide deck.
             </p>
             <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
               Book a free 15-min call
@@ -109,10 +109,10 @@ const Training = () => {
                 Build your first agent.
               </h2>
               <p className="text-[17px] leading-[1.65] text-ardent-paper/80 max-w-[68ch] mb-8">
-                A 4-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem: we build the tool together, in the room, and you leave with it running.
+                A 5-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem: we build the tool together, in the room, and you leave with it running.
               </p>
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-paper/70 mb-8">
-                4 Hours · Up to 15 People · In Person or Virtual · $3,750
+                5 HOURS, UP TO 15 PEOPLE, IN PERSON OR VIRTUAL, $3,750
               </p>
               <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
                 Book the agent workshop
@@ -199,6 +199,14 @@ const Training = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="px-5 md:px-10 py-16 bg-background">
+          <div className="max-w-[1100px] mx-auto border-t border-border pt-12">
+            <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Keynotes and talks</h2>
+            <p className="text-[16px] text-muted-foreground leading-relaxed mb-7 max-w-[60ch]">We also speak at conferences and business events. Ask us about a keynote or a talk for your group.</p>
+            <a href="/contact" className="inline-flex px-7 py-3 bg-secondary text-secondary-foreground font-semibold rounded-full">Ask about a talk</a>
           </div>
         </section>
       </main>

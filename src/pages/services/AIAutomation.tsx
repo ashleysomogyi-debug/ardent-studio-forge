@@ -7,7 +7,7 @@ import heroSpeakingPhoto from "@/assets/photos/automation-workshop.png.asset.jso
 
 const serif = "'Inter', system-ui, sans-serif";
 
-const META_TITLE = "AI Automation for Small Business: Ardent Studio (Palm Beach County, FL)";
+const META_TITLE = "AI Automation and Apps for Your Team | Ardent Studio";
 const META_DESC =
   "Custom AI automation that fits how your team already works. Fixed-scope builds, based in Palm Beach County and available remotely.";
 
@@ -72,7 +72,7 @@ const AIAutomation = () => {
           { "@type": "Question", name: "What does an AI automation project cost?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds run $2,000 to $10,000 over 2 to 4 weeks, fixed price and fixed timeline. Larger custom builds are scoped separately. Every project starts with a free 15-minute scope call." } },
           { "@type": "Question", name: "How long does a typical project take?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds ship in 2 to 4 weeks. We don't take on projects we can't deliver in 4 weeks; if it's bigger, we scope it as multiple phases." } },
           { "@type": "Question", name: "What AI tools do you use?", acceptedAnswer: { "@type": "Answer", text: "We choose tools to fit the workflow. The build is documented and handed over with the accounts." } },
-          { "@type": "Question", name: "Who do you work with?", acceptedAnswer: { "@type": "Answer", text: "Local service businesses, professional services (attorneys, accountants, consultants), trades and home services, and founder-stage AI products. We focus on small businesses and small teams, not enterprise." } },
+          { "@type": "Question", name: "Who do you work with?", acceptedAnswer: { "@type": "Answer", text: "We work with teams across industries. We start with one workflow and build around the way your team works." } },
         ],
       });
       document.head.appendChild(s);
@@ -100,7 +100,7 @@ const AIAutomation = () => {
             <div className="flex items-center gap-4 mb-10">
               <span className="block w-12 h-px bg-ardent-lime" />
               <span className="font-mono text-xs tracking-[0.2em] text-primary uppercase">
-                AI Automation for Small Business
+                AI Automation and Apps
               </span>
             </div>
             <TypingHeadline />
@@ -292,6 +292,21 @@ const AIAutomation = () => {
                   <p className="text-[15px] leading-[1.7] text-ardent-paper">{m.desc}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="px-5 md:px-10 py-16 bg-background">
+          <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-10 md:gap-16 border-t border-border pt-12">
+            <div>
+              <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Find the answer</h2>
+              <p className="text-[16px] text-muted-foreground leading-relaxed mb-7">Bring us your data and a question. We clean it, analyze it, and give you a plain-English report with charts. $150 an hour, with a scoped estimate before any work starts.</p>
+              <Link to="/contact?interest=analyze-my-data" className="inline-flex px-7 py-3 bg-secondary text-secondary-foreground font-semibold rounded-full">Ask about your data</Link>
+            </div>
+            <div>
+              <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Larger builds</h2>
+              <p className="text-[16px] text-muted-foreground leading-relaxed mb-7">Bigger apps that need more than 2 to 4 weeks are quoted by phase after a scoping call.</p>
+              <Link to="/contact?interest=bigger-project" className="inline-flex px-7 py-3 border border-foreground text-foreground font-semibold rounded-full">Talk about a bigger build</Link>
             </div>
           </div>
         </section>

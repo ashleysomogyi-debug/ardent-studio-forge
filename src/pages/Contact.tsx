@@ -7,12 +7,19 @@ import { supabase } from "@/integrations/supabase/client";
 const serif = "'Inter', system-ui, sans-serif";
 
 const INTEREST_OPTIONS: { value: string; label: string }[] = [
-  { value: "custom-ai-automation", label: "Custom AI automation build" },
-  { value: "single-workshop", label: "AI training: single workshop" },
-  { value: "half-day-deep-dive", label: "AI training: half-day deep dive" },
-  { value: "four-session-curriculum", label: "AI training: four-session team curriculum" },
-  { value: "general-inquiry", label: "General inquiry" },
+  { value: "free-call", label: "Free 15-min call" },
+  { value: "analyze-my-data", label: "Analyze my data" },
+  { value: "build-a-tool", label: "Build a tool" },
+  { value: "team-training", label: "Team training or a talk" },
+  { value: "bigger-project", label: "A bigger project" },
 ];
+
+const LEGACY_INTEREST: Record<string, string> = {
+  "custom-ai-automation": "build-a-tool",
+  "single-workshop": "team-training",
+  "half-day-deep-dive": "team-training",
+  "four-session-curriculum": "team-training",
+};
 
 // Contact submissions are sent via the `send-contact-email` Edge Function,
 // which uses Resend to deliver to hello@ardentstudio.io.
@@ -24,7 +31,7 @@ const Contact = () => {
     const raw = params.get("interest");
     if (!raw) return "";
     const match = INTEREST_OPTIONS.find((o) => o.value === raw);
-    return match ? match.value: "";
+    return match ? match.value : LEGACY_INTEREST[raw] || "";
   })();
 
   const [form, setForm] = useState({
@@ -176,17 +183,16 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="interest" className={labelClass}>I'm interested in: *</label>
+                  <label htmlFor="interest" className={labelClass}>What can we help with?</label>
                   <select
                     id="interest"
-                    required
                     value={form.interest}
                     onChange={(e) => setForm({ ...form, interest: e.target.value })}
                     className={inputClass}
                     style={{ appearance: "none" }}
                   >
                     <option value="" disabled style={{ background: "#FFFFFF" }}>
-                      Select an option
+                      Select an option (optional)
                     </option>
                     {INTEREST_OPTIONS.map((o) => (
                       <option key={o.value} value={o.value} style={{ background: "#FFFFFF" }}>
