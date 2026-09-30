@@ -93,7 +93,7 @@ const SelectedWorkSection = () => (
                   {w.meta.map((m) => (
                     <span
                       key={m}
-                      className="font-mono text-[10px] text-muted-foreground/70 border border-border px-3 py-1 rounded-full"
+                      className="inline-flex items-center justify-center text-center font-mono text-[10px] text-muted-foreground/70 border border-border px-3 py-1 rounded-full"
                     >
                       {m}
                     </span>
