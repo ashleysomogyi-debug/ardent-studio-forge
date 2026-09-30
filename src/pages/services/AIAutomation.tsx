@@ -3,6 +3,8 @@ import { Link } from "react-router-dom";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import TypingHeadline from "@/components/TypingHeadline";
+import { Button } from "@/components/ui/button";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import heroSpeakingPhoto from "@/assets/photos/automation-workshop.png.asset.json";
 
 const serif = "'Inter', system-ui, sans-serif";
@@ -33,15 +35,117 @@ const method = [
   { letter: "T", word: "TRANSFER", desc: "Your team owns it. We hand off and step out." },
 ];
 
-const workflows: { title: string; desc: string; wide?: boolean }[] = [
-  { title: "Lead follow-up in minutes", desc: "Every inquiry gets a reply day or night: before the prospect calls the next name on the list." },
-  { title: "Inbound email triage", desc: "Drafts replies as new emails arrive, routes the rest to the right person." },
-  { title: "Invoice chasing", desc: "Reminders matched to each customer's payment history, so you get paid without the awkward email." },
-  { title: "Quote and proposal generation", desc: "Pulls from past quotes and your pricing logic to draft the next one." },
-  { title: "Review requests", desc: "Happy customers get asked for a Google review at the right moment, automatically." },
-  { title: "Morning brief", desc: "One email: today's schedule, money in, money out, what needs you." },
+type WorkflowExample = {
+  title: string;
+  problem: string;
+  build: string;
+  changes: string;
+};
+
+const workflowTabs: { value: string; label: string; examples: WorkflowExample[] }[] = [
+  {
+    value: "sales",
+    label: "Sales",
+    examples: [
+      {
+        title: "Quote and proposal generation",
+        problem: "Quotes take an evening to write, so deals stall while you find the time.",
+        build: "A tool that pulls past quotes, your pricing logic and the client's request into a draft proposal for you to review.",
+        changes: "Proposals go out the same day in your voice, and you edit instead of starting from scratch.",
+      },
+      {
+        title: "Lead intake to booked appointment",
+        problem: "Inquiries arrive by web form, phone and text, and the ones answered late go to a competitor.",
+        build: "A system that answers each inquiry, asks the right questions, books the right calendar and updates your CRM.",
+        changes: "Every lead gets a fast, consistent reply and you start the day with appointments already booked.",
+      },
+      {
+        title: "A pipeline that chases itself",
+        problem: "Deals go quiet because follow-up depends on your memory.",
+        build: "Follow-ups tailored to each deal on a schedule, plus a weekly list of the deals worth a personal call.",
+        changes: "Nothing slips, and your calls go to the deals that matter.",
+      },
+    ],
+  },
+  {
+    value: "operations",
+    label: "Operations",
+    examples: [
+      {
+        title: "Job intake to scheduled work",
+        problem: "After a quote is accepted, someone rebuilds the same tasks, materials list and schedule by hand.",
+        build: "A signed quote creates the project, tasks, materials list, staff assignments and the customer's kickoff message.",
+        changes: "Work starts faster and nothing gets missed between sales and delivery.",
+      },
+      {
+        title: "Inventory and supplier reordering",
+        problem: "You either run out at the wrong moment or tie up money in stock you do not need.",
+        build: "Stock levels, sales and supplier lead times drive draft purchase orders for you to approve.",
+        changes: "Fewer surprises and less guesswork about what to order and when.",
+      },
+      {
+        title: "Compliance and paperwork tracking",
+        problem: "Licenses, certifications and insurance renewals live in different places and lapse without warning.",
+        build: "One tracker across people and clients with alerts and pre-filled documents before anything expires.",
+        changes: "Deadlines stop sneaking up on you.",
+      },
+    ],
+  },
+  {
+    value: "money",
+    label: "Money",
+    examples: [
+      {
+        title: "Invoicing to cash collected",
+        problem: "Invoices go out late and chasing payment is awkward and inconsistent.",
+        build: "Completed work triggers the invoice, reminders are matched to each customer's payment history, and you get a weekly view of who owes what.",
+        changes: "You get paid sooner without the awkward emails.",
+      },
+      {
+        title: "Month-end without the scramble",
+        problem: "Receipts, bank feeds and categories pile up until month-end becomes a weekend project.",
+        build: "Transactions are categorized as they arrive, exceptions are flagged for you, and a plain-English summary of the month is ready for your accountant.",
+        changes: "Books close faster and you understand your numbers.",
+      },
+    ],
+  },
+  {
+    value: "decisions",
+    label: "Decisions",
+    examples: [
+      {
+        title: "Your business answers, on demand",
+        problem: "The same questions about policies, prices and past jobs keep landing on you.",
+        build: "An assistant trained on your own documents that answers staff or customer questions and shows where each answer came from.",
+        changes: "Fewer interruptions and consistent answers.",
+      },
+      {
+        title: "A weekly owner's dashboard",
+        problem: "Sales, cash, jobs and hours sit in separate tools, so you never see the whole picture.",
+        build: "A Monday brief pulling from every tool, with the three things that need you.",
+        changes: "You spend minutes, not hours, knowing where the business stands.",
+      },
+    ],
+  },
+  {
+    value: "team",
+    label: "Team",
+    examples: [
+      {
+        title: "Hiring to onboarding",
+        problem: "Screening applicants and setting up a new hire eats days of your time.",
+        build: "Applications screened against your criteria, interviews scheduled, and a new hire gets accounts, training and a first-week plan.",
+        changes: "Hiring moves faster and new people start ready.",
+      },
+      {
+        title: "Customer feedback that acts",
+        problem: "Reviews, surveys and support messages pile up unread.",
+        build: "Feedback is read and grouped, and the recurring problems reach you with suggested fixes.",
+        changes: "You hear what customers are telling you and can act on it.",
+      },
+    ],
+  },
 ];
-const accentPills = ["bg-teal-bright", "bg-ardent-lime", "bg-coral", "bg-peach"];
 
 const AIAutomation = () => {
   useEffect(() => {
@@ -145,22 +249,70 @@ const AIAutomation = () => {
               >
                 What does AI automation actually look like for a business?
               </h2>
+              <p className="mt-5 max-w-[48ch] text-[17px] leading-relaxed text-body-text md:text-[19px]">
+                Pick the part of your business that eats your week.
+              </p>
             </div>
           </div>
         </section>
 
         <section className="bg-blush px-5 pb-[88px] pt-[48px] md:px-10 md:pb-[140px] md:pt-[64px]">
           <div className="max-w-[1200px] mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10">
-              {workflows.map((w, i) => (
-                <div key={w.title} className={`workshop-card min-h-[180px] p-7${w.wide ? " md:col-span-2 lg:col-span-2": ""}`}>
-                  <h3 className={`mb-5 w-fit max-w-full rounded-full px-4 py-2 text-[16px] font-semibold leading-tight text-ardent-studio ${accentPills[i % accentPills.length]}`} style={{ fontFamily: serif }}>
-                    {w.title}
-                  </h3>
-                  <p className="text-[14px] leading-[1.6] text-body-text">{w.desc}</p>
-                </div>
+            <Tabs defaultValue="sales">
+              <div className="overflow-x-auto pb-3 [scrollbar-width:thin]">
+                <TabsList aria-label="Automation examples by business area" className="inline-flex h-auto min-w-max justify-start gap-2 rounded-none bg-transparent p-0">
+                  {workflowTabs.map((tab) => (
+                    <TabsTrigger
+                      key={tab.value}
+                      value={tab.value}
+                      className="rounded-full border border-foreground/15 bg-card px-5 py-3 text-[15px] font-semibold text-foreground shadow-none data-[state=active]:border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-none"
+                    >
+                      {tab.label}
+                    </TabsTrigger>
+                  ))}
+                </TabsList>
+              </div>
+
+              {workflowTabs.map((tab) => (
+                <TabsContent key={tab.value} value={tab.value} className="mt-7">
+                  <div className="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    {tab.examples.map((example) => (
+                      <article key={example.title} className="rounded-3xl border border-foreground/10 bg-card p-6 md:p-8">
+                        <span className="mb-5 block w-fit rounded-full bg-blush px-3 py-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-brick">
+                          Example
+                        </span>
+                        <h3 className="mb-7 text-[23px] font-bold leading-tight text-foreground">
+                          {example.title}
+                        </h3>
+                        <dl className="space-y-5">
+                          {[
+                            ["The problem", example.problem],
+                            ["What we build", example.build],
+                            ["What changes", example.changes],
+                          ].map(([label, copy]) => (
+                            <div key={label}>
+                              <dt className="mb-1.5 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-primary">{label}</dt>
+                              <dd className="text-[14px] leading-[1.65] text-body-text">{copy}</dd>
+                            </div>
+                          ))}
+                        </dl>
+                      </article>
+                    ))}
+                  </div>
+
+                  <div className="mt-8 flex flex-col items-start gap-4 rounded-3xl border-2 border-dashed border-coral bg-card p-6 sm:flex-row sm:items-center sm:justify-between md:p-8">
+                    <p className="max-w-[50ch] text-[16px] font-semibold leading-relaxed text-foreground">
+                      Recognize this? Book a free call and tell us what is eating your week.
+                    </p>
+                    <Button asChild className="h-auto shrink-0 rounded-full bg-ardent-lime px-7 py-3.5 font-semibold text-ardent-studio hover:bg-ardent-lime/90">
+                      <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer">
+                        Book a free 15-min call
+                      </a>
+                    </Button>
+                  </div>
+                </TabsContent>
               ))}
-            </div>
+            </Tabs>
           </div>
         </section>
 
