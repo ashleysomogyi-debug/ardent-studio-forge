@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const words = ["connects", "works", "matters"];
+const words = ["connects.", "works.", "matters."];
 const colors = ["text-primary", "text-primary", "text-primary"];
 
 const TYPE_MS = 85;
@@ -53,7 +53,7 @@ const TypingHeadline = () => {
         className="text-[clamp(3rem,8vw,6rem)] leading-[1.05] font-normal text-foreground"
         style={{ fontFamily: serif }}
       >
-        Build what <span className="text-primary">connects</span>.
+        Build what <span className="text-primary">connects.</span>
       </h1>
     );
   }
@@ -73,7 +73,6 @@ const TypingHeadline = () => {
           <span className="typing-cursor text-foreground/80" aria-hidden="true">|</span>
         </span>
       </span>
-      <span className="text-foreground">.</span>
     </h1>
   );
 };
