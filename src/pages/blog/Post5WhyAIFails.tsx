@@ -15,7 +15,7 @@ const Post5WhyAIFails = () => (
     <p><strong>What to do instead:</strong> Pick one problem. The most painful thing, the one that costs you the most time every week. Build for that. Get it live. Then decide what's next. One well-built automation that actually runs beats a detailed roadmap that never launches.</p>
 
     <h2>Mistake 2: Buying Tools Without a Plan</h2>
-    <p>Automation tools, Zapier, ChatGPT, Notion AI, HubSpot, ClickUp, the tools are everywhere, and they all promise to fix your workflow. So people buy five of them, connect them poorly, and end up with a more complicated mess than they started with.</p>
+    <p>Automation tools (Zapier, ChatGPT, Notion AI, HubSpot, ClickUp) are everywhere, and they all promise to fix your workflow. So people buy five of them, connect them poorly, and end up with a more complicated mess than they started with.</p>
     <p><strong>What to do instead:</strong> Start with the process, not the tool. Map out what you're actually trying to automate: what triggers it, what happens next, what the output looks like. Then pick the minimum number of tools required to make that happen. Usually it's two, maybe three.</p>
 
     <h2>Mistake 3: Automating a Broken Process</h2>
