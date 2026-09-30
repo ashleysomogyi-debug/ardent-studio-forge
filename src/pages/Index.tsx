@@ -173,7 +173,6 @@ const Index = () => (
           </article>
             <p className="mt-14 text-[14px] leading-relaxed text-body-text">Sartori AI was built by Ardent and is now its own company. <a href="https://www.sartoriai.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline underline-offset-4">Visit Sartori AI</a></p>
           </div>
-        </div>
       </section>
 
       <section className="border-y border-border bg-blush px-5 py-9 md:px-10" aria-label="Where we have taught">
