@@ -212,7 +212,7 @@ const Index = () => (
           <span className="section-eyebrow mb-5">About us</span>
           <h2 id="about-heading" className="mb-8 text-[clamp(32px,5vw,56px)] font-semibold text-foreground">The people doing the work.</h2>
           <p className="mb-12 max-w-[70ch] text-[18px] leading-relaxed text-body-text">We are Ashley and Wesley. We run Ardent Studio in Palm Beach County. We work directly with you to find where AI helps, build what fits, and make sure your team can use it. No account-manager handoff, just the people doing the work.</p>
-          <div className="grid items-start gap-9 sm:grid-cols-3 lg:grid-cols-[1fr_1fr_1fr_190px]">
+          <div className="mx-auto grid max-w-[900px] items-start justify-items-center gap-9 sm:grid-cols-3">
             {[
               { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build", detail: "PhD, 15 plus years in sales, learning and product" },
               { src: "/wesley-profile.jpg", name: "Wesley Price", role: "Cofounder · Strategy & Ops" },
@@ -225,9 +225,6 @@ const Index = () => (
                 {person.detail && <p className="mt-3 text-[14px] text-body-text">{person.detail}</p>}
               </div>
             ))}
-            <div className="mx-auto flex h-64 w-40 items-center justify-center rounded-t-[999px] bg-teal-bright" aria-hidden="true">
-              <img src="/ardent-logo-circle.png" alt="" className="h-24 w-24 rounded-full" />
-            </div>
           </div>
           <p className="mt-12 max-w-[70ch] text-[16px] leading-relaxed text-body-text">We started Ardent to make practical tools with people, not hand them a deck and disappear. We work in person when we can and on Zoom when we cannot. From the first question to the final handoff, we stay close to the work and accountable for it.</p>
         </div>

@@ -186,7 +186,7 @@ const AIAutomation = () => {
       <Nav />
       <main>
         {/* 1. HERO */}
-        <section className="relative min-h-screen flex items-center bg-blush overflow-hidden">
+        <section className="relative bg-blush overflow-hidden">
           <div
             className="absolute inset-0 opacity-[0.04] pointer-events-none"
             style={{
@@ -195,7 +195,7 @@ const AIAutomation = () => {
               backgroundSize: "60px 60px",
             }}
           />
-          <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full py-32">
+          <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full pt-24 pb-12 md:pt-28 md:pb-20">
             <div className="mb-10">
               <span className="section-eyebrow">
                 AI Automation and Apps
