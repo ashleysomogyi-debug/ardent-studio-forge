@@ -27,12 +27,12 @@ const locations = [
 
 const Footer = () => (
   <footer id="book-a-call" className="bg-footer-bg text-footer-text py-10 md:py-16 px-5 md:px-10">
-    <div className="mx-auto mb-9 flex max-w-[1200px] gap-2" aria-hidden="true">
+    <div className="mx-auto mb-6 md:mb-9 flex max-w-[1200px] gap-2" aria-hidden="true">
       <span className="h-2.5 w-2.5 rounded-full bg-teal-bright" /><span className="h-2.5 w-2.5 rounded-full bg-ardent-lime" /><span className="h-2.5 w-2.5 rounded-full bg-coral" /><span className="h-2.5 w-2.5 rounded-full bg-peach" />
     </div>
-    <div className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+    <div className="max-w-[1200px] mx-auto grid grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-7 md:gap-10">
       {/* Brand */}
-      <div className="flex flex-col">
+      <div className="col-span-2 flex flex-col md:col-span-1">
         <Link to="/" className="inline-flex items-center gap-3">
           <img src="/ardent-logo-circle.png" alt="Ardent Studio" className="h-12 w-12 shrink-0 rounded-full" />
           <span>
@@ -49,10 +49,10 @@ const Footer = () => (
       {/* Services */}
       <div>
         <span className="font-mono text-[13px] text-dark-band-text tracking-[0.2em] uppercase mb-4 block">Services</span>
-        <ul className="space-y-2.5">
+        <ul className="md:space-y-2.5">
           {services.map((s) => (
             <li key={s.to}>
-              <Link to={s.to} className="font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors">
+              <Link to={s.to} className="max-md:inline-flex max-md:min-h-11 max-md:items-center font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors">
                 {s.label}
               </Link>
             </li>
@@ -61,17 +61,17 @@ const Footer = () => (
       </div>
 
       {/* Locations */}
-      <div>
+      <div className="col-span-2 max-md:order-last md:col-span-1">
         <span className="font-mono text-[13px] text-dark-band-text tracking-[0.2em] uppercase mb-4 block">Service Area</span>
-        <ul className="space-y-2.5">
+        <ul className="grid grid-cols-2 gap-x-4 md:block md:space-y-2.5">
           {locations.map((loc) => (
             <li key={loc.to}>
-              <Link to={loc.to} className="font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors">
+              <Link to={loc.to} className="max-md:inline-flex max-md:min-h-11 max-md:items-center font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors">
                 {loc.label}
               </Link>
             </li>
           ))}
-          <li>
+          <li className="col-span-2 max-md:py-2">
             <span className="font-sans text-[14px] text-footer-muted">+ all of Palm Beach County, FL</span>
           </li>
         </ul>
@@ -81,29 +81,29 @@ const Footer = () => (
       <div>
         <span className="font-mono text-[13px] text-dark-band-text tracking-[0.2em] uppercase mb-4 block">Contact</span>
         <div className="space-y-2.5">
-          <ul className="space-y-2">
+          <ul className="md:space-y-2">
             {company.map((c) => (
               <li key={c.label}>
                 {c.external ? (
-                  <a href={c.href} target="_blank" rel="noopener noreferrer" className="font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors">
+                  <a href={c.href} target="_blank" rel="noopener noreferrer" className="max-md:inline-flex max-md:min-h-11 max-md:items-center font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors">
                     {c.label}
                   </a>
                 ): (
-                  <a href={c.href} className="font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors">
+                  <a href={c.href} className="max-md:inline-flex max-md:min-h-11 max-md:items-center font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors">
                     {c.label}
                   </a>
                 )}
               </li>
             ))}
           </ul>
-          <address className="not-italic space-y-2 pt-2">
+          <address className="not-italic md:space-y-2 pt-2">
             <p className="font-sans text-[16px] text-footer-muted leading-[1.6]">
               Boynton Beach, FL<br />Palm Beach County
             </p>
-            <a href="tel:+17282010192" className="font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors block">
+            <a href="tel:+17282010192" className="max-md:flex max-md:min-h-11 max-md:items-center font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors md:block">
               (728) 201-0192
             </a>
-            <a href="mailto:hello@ardentstudio.io" className="font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors block">
+            <a href="mailto:hello@ardentstudio.io" className="max-md:flex max-md:min-h-11 max-md:items-center font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors md:block">
               hello@ardentstudio.io
             </a>
           </address>
@@ -112,7 +112,7 @@ const Footer = () => (
     </div>
 
     {/* SEO city list strip -->*/}
-    <div className="max-w-[1200px] mx-auto mt-10 pt-6 border-t border-border-subtle">
+    <div className="max-w-[1200px] mx-auto mt-7 md:mt-10 pt-5 md:pt-6 border-t border-border-subtle">
       <p className="font-sans text-[13px] text-footer-muted leading-[1.8] text-center">
         Serving businesses across Palm Beach County, FL: West Palm Beach · Boca Raton · Delray Beach · Boynton Beach · Jupiter · Palm Beach Gardens · Wellington · Lake Worth Beach · North Palm Beach · Riviera Beach · Royal Palm Beach · Greenacres · Lantana · Tequesta · Juno Beach · Palm Beach · and all of South Florida
       </p>

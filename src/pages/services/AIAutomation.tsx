@@ -202,10 +202,10 @@ const AIAutomation = () => {
               </span>
             </div>
             <TypingHeadline />
-            <p className="mt-10 max-w-2xl font-sans text-lg lg:text-xl text-body-text leading-relaxed">
+            <p className="mt-6 md:mt-10 max-w-2xl font-sans text-lg lg:text-xl text-body-text leading-relaxed">
               We build custom AI automation that fits how your team already works, using the tools you already have. We agree on a fixed scope before work starts.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-6 md:mt-10 flex flex-wrap gap-3 md:gap-4">
               <a
                 href="https://calendly.com/asomogyi-ardentstudio/30min"
                 target="_blank"
@@ -225,7 +225,7 @@ const AIAutomation = () => {
         </section>
 
         <section className="relative w-full overflow-hidden" style={{ background: "#F5F5F0" }}>
-          <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
+          <div className="relative min-h-[260px] md:min-h-[64vh] w-full flex items-end">
             <img
               src={`https://ardentstudio.io${heroSpeakingPhoto.url}`}
               alt="Ashley leading an AI automation workshop with a small business team around a table of laptops"
@@ -239,8 +239,8 @@ const AIAutomation = () => {
                   "linear-gradient(90deg, rgba(245,245,240,0.94) 0%, rgba(245,245,240,0.70) 48%, rgba(245,245,240,0.18) 100%), linear-gradient(180deg, rgba(245,245,240,0.08) 0%, rgba(245,245,240,0.94) 100%)",
               }}
             />
-            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
-              <span className="section-eyebrow section-eyebrow--on-photo mb-6">
+            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-12 md:pt-32 pb-6 md:pb-14">
+              <span className="section-eyebrow section-eyebrow--on-photo mb-4 md:mb-6">
                 Workflows we automate
               </span>
               <h2
@@ -249,7 +249,7 @@ const AIAutomation = () => {
               >
                 What does AI automation actually look like for a business?
               </h2>
-              <p className="mt-5 max-w-[48ch] text-[17px] leading-relaxed text-body-text md:text-[19px]">
+              <p className="mt-3 md:mt-5 max-w-[48ch] text-[17px] leading-relaxed text-body-text md:text-[19px]">
                 Pick the part of your business that eats your week.
               </p>
             </div>
@@ -259,13 +259,13 @@ const AIAutomation = () => {
         <section className="bg-blush px-5 py-12 md:px-10 md:py-[72px]">
           <div className="max-w-[1200px] mx-auto">
             <Tabs defaultValue="sales">
-              <div className="overflow-x-auto pb-3 [scrollbar-width:thin]">
+              <div className="overflow-x-auto pb-2 md:pb-3 [scrollbar-width:thin]">
                 <TabsList aria-label="Automation examples by business area" className="inline-flex h-auto min-w-max justify-start gap-2 rounded-none bg-transparent p-0">
                   {workflowTabs.map((tab) => (
                     <TabsTrigger
                       key={tab.value}
                       value={tab.value}
-                      className="min-h-11 rounded-full border border-foreground/15 bg-card px-5 py-3 text-[16px] font-semibold text-foreground shadow-none data-[state=active]:border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-none"
+                      className="min-h-11 rounded-full border border-foreground/15 bg-card px-4 md:px-5 py-2.5 md:py-3 text-[16px] font-semibold text-foreground shadow-none data-[state=active]:border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-none"
                     >
                       {tab.label}
                     </TabsTrigger>
@@ -274,22 +274,22 @@ const AIAutomation = () => {
               </div>
 
               {workflowTabs.map((tab) => (
-                <TabsContent key={tab.value} value={tab.value} className="mt-5 md:mt-7">
-                  <div className="grid grid-cols-1 gap-4 md:gap-5 md:grid-cols-2 lg:grid-cols-3">
+                <TabsContent key={tab.value} value={tab.value} className="mt-3 md:mt-7">
+                  <div className="mobile-rail grid grid-cols-1 gap-3 md:gap-5 md:grid-cols-2 lg:grid-cols-3">
                     {tab.examples.map((example) => (
-                      <article key={example.title} className="rounded-3xl border border-foreground/10 bg-card p-5 md:p-8">
-                        <h3 className="mb-4 md:mb-7 text-[23px] font-bold leading-tight text-foreground">
+                      <article key={example.title} className="rounded-3xl border border-foreground/10 bg-card p-4 md:p-8">
+                        <h3 className="mb-2 md:mb-7 text-[20px] md:text-[23px] font-bold leading-tight text-foreground">
                           {example.title}
                         </h3>
-                        <dl className="space-y-3 md:space-y-5">
+                        <dl className="space-y-2 md:space-y-5">
                           {[
                             ["The problem", example.problem],
                             ["What we build", example.build],
                             ["What changes", example.changes],
                           ].map(([label, copy]) => (
                             <div key={label}>
-                              <dt className="mb-1.5 font-mono text-[13px] font-semibold uppercase tracking-[0.14em] text-primary">{label}</dt>
-                              <dd className="text-[16px] leading-[1.65] text-body-text">{copy}</dd>
+                              <dt className="mb-0.5 md:mb-1.5 font-mono text-[13px] font-semibold uppercase tracking-[0.14em] text-primary">{label}</dt>
+                              <dd className="text-[16px] leading-[1.5] md:leading-[1.65] text-body-text">{copy}</dd>
                             </div>
                           ))}
                         </dl>
@@ -297,7 +297,7 @@ const AIAutomation = () => {
                     ))}
                   </div>
 
-                  <div className="mt-8 flex flex-col items-start gap-4 rounded-3xl border-2 border-dashed border-coral bg-card p-6 sm:flex-row sm:items-center sm:justify-between md:p-8">
+                  <div className="mt-4 md:mt-8 flex flex-col items-start gap-3 md:gap-4 rounded-3xl border-2 border-dashed border-coral bg-card p-4 sm:flex-row sm:items-center sm:justify-between md:p-8">
                     <p className="max-w-[50ch] text-[16px] font-semibold leading-relaxed text-foreground">
                       Recognize this? Book a free call and tell us what is eating your week.
                     </p>
@@ -329,7 +329,7 @@ const AIAutomation = () => {
               Beyond automation, we ship full products. Built fast. Built for one business at a time.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-6 mb-6">
               <div className="workshop-card flex flex-col p-5 md:p-10">
                 <span className="mb-4 inline-flex w-fit items-center justify-center text-center rounded-full bg-teal-bright px-3 py-2 font-mono text-[13px] uppercase tracking-[0.18em] text-ardent-studio">
                   Sales Enablement · AI Role-Play
@@ -351,7 +351,7 @@ const AIAutomation = () => {
                     href="https://sartoriai.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-8 py-4 text-[16px] rounded-full"
+                    className="inline-flex min-h-11 items-center px-7 py-3 md:inline-block md:px-8 md:py-4 text-[16px] rounded-full"
                     style={{ background: "#C3F73A", color: "#0D0D0D" }}
                   >
                     Visit sartoriai.com →
@@ -380,24 +380,24 @@ const AIAutomation = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
+            <div className="mobile-rail grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-6 mt-6 md:mt-10">
               {[
                 { t: "Web apps", d: "Customer portals, dashboards, and internal tools your team actually uses." },
                 { t: "Mobile apps", d: "iOS and Android apps for field teams, customers, and operations." },
                 { t: "Data analysis", d: "Bring us your data and a question. We clean it, analyze it and give you a plain-English report with charts." },
                 { t: "AI products", d: "Full products with AI at the core, like Sartori." },
               ].map((c, i) => (
-                <div key={c.t} className={`workshop-card border-t-8 p-5 md:p-7 ${i === 0 ? "border-t-teal-bright" : i === 1 ? "border-t-ardent-lime" : "border-t-coral"}`}>
-                  <h4 className="text-[22px] mb-3 text-ardent-studio" style={{ fontFamily: serif }}>{c.t}</h4>
-                  <p className="text-[16px] leading-[1.6] text-ardent-studio/75">{c.d}</p>
+                <div key={c.t} className={`workshop-card border-t-8 ${i === 0 ? "border-t-teal-bright" : i === 1 ? "border-t-ardent-lime" : "border-t-coral"} p-4 md:p-7`}>
+                  <h4 className="text-[20px] md:text-[22px] mb-1 md:mb-3 text-ardent-studio" style={{ fontFamily: serif }}>{c.t}</h4>
+                  <p className="text-[16px] leading-[1.5] md:leading-[1.6] text-ardent-studio/75">{c.d}</p>
                 </div>
               ))}
             </div>
 
-            <div className="mt-12 text-center">
+            <div className="mt-7 md:mt-12 text-center">
               <Link
                 to="/#work"
-                className="inline-flex items-center gap-2 px-8 py-4 text-[16px] rounded-full"
+                className="inline-flex min-h-11 items-center gap-2 px-7 md:px-8 py-3 md:py-4 text-[16px] rounded-full"
                 style={{ background: "#C3F73A", color: "#0D0D0D" }}
               >
                 See all our work →
@@ -421,19 +421,19 @@ const AIAutomation = () => {
             <p className="text-[16px] text-body-text leading-[1.7] mb-7 md:mb-10 max-w-[60ch]">
               Six steps from your first call to a tool your team owns.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="mobile-rail grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
               {method.map((m) => (
-                <div key={m.letter} className="workshop-card p-5 md:p-7">
+                <div key={m.letter} className="workshop-card grid grid-cols-[40px_1fr] gap-x-3 p-4 md:block md:p-7">
                   <div
-                    className="text-[64px] leading-none mb-3 text-primary"
+                    className="row-span-2 text-[40px] md:text-[64px] leading-none md:mb-3 text-primary"
                     style={{ fontFamily: serif }}
                   >
                     {m.letter}
                   </div>
-                  <div className="font-mono text-[13px] tracking-[0.25em] uppercase text-primary mb-3">
+                  <div className="font-mono text-[13px] tracking-[0.25em] uppercase text-primary mb-1 md:mb-3">
                     {m.word}
                   </div>
-                  <p className="text-[16px] leading-[1.7] text-body-text">{m.desc}</p>
+                  <p className="text-[16px] leading-[1.5] md:leading-[1.7] text-body-text">{m.desc}</p>
                 </div>
               ))}
             </div>
@@ -441,15 +441,15 @@ const AIAutomation = () => {
         </section>
 
         <section className="px-5 py-12 md:px-10 md:py-[72px] bg-background">
-          <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-6">
-            <div className="workshop-card border-t-8 border-t-teal-bright p-7 md:p-10">
-              <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Find the answer</h2>
-              <p className="text-[16px] text-muted-foreground leading-relaxed mb-7">Bring us your data and a question. We clean it, analyze it, and give you a plain-English report with charts. Fixed price, quoted after a free 15 minute call.</p>
+          <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-3 md:gap-6">
+            <div className="workshop-card border-t-8 border-t-teal-bright p-5 md:p-10">
+              <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-3 md:mb-5">Find the answer</h2>
+              <p className="text-[16px] text-muted-foreground leading-relaxed mb-5 md:mb-7">Bring us your data and a question. We clean it, analyze it, and give you a plain-English report with charts. Fixed price, quoted after a free 15 minute call.</p>
               <Link to="/contact?interest=analyze-my-data" className="inline-flex min-h-11 items-center px-7 py-3 text-[16px] bg-secondary text-secondary-foreground font-semibold rounded-full">Ask about your data</Link>
             </div>
-            <div className="rounded-3xl border-2 border-dashed border-coral bg-card p-7 md:p-10">
-              <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Larger builds</h2>
-              <p className="text-[16px] italic text-brick leading-relaxed mb-7">Bigger apps that need more than 2 to 4 weeks are quoted by phase after a scoping call.</p>
+            <div className="rounded-3xl border-2 border-dashed border-coral bg-card p-5 md:p-10">
+              <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-3 md:mb-5">Larger builds</h2>
+              <p className="text-[16px] italic text-brick leading-relaxed mb-5 md:mb-7">Bigger apps that need more than 2 to 4 weeks are quoted by phase after a scoping call.</p>
               <Link to="/contact?interest=bigger-project" className="inline-flex min-h-11 items-center px-7 py-3 text-[16px] border border-foreground text-foreground font-semibold rounded-full">Talk about a bigger build</Link>
             </div>
           </div>
@@ -477,12 +477,12 @@ const AIAutomation = () => {
         <section className="bg-blush px-5 py-12 md:px-10 md:py-[72px]">
           <div className="max-w-[800px] mx-auto text-center">
             <h2
-              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-6 text-foreground"
+              className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-normal mb-4 md:mb-6 text-foreground"
               style={{ fontFamily: serif }}
             >
               Ready to see where AI fits in your week?
             </h2>
-            <p className="text-[16px] md:text-[18px] text-body-text leading-[1.7] mb-10 max-w-[60ch] mx-auto">
+            <p className="text-[16px] md:text-[18px] text-body-text leading-[1.7] mb-6 md:mb-10 max-w-[60ch] mx-auto">
               Book a free 15-minute call. We'll map your top time leaks and tell you which one is worth
               automating first.
             </p>
@@ -490,7 +490,7 @@ const AIAutomation = () => {
               href="https://calendly.com/asomogyi-ardentstudio/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-10 py-5 bg-ardent-lime text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity text-[16px]"
+              className="inline-flex items-center gap-2 px-8 md:px-10 py-4 md:py-5 bg-ardent-lime text-ardent-studio font-sans font-semibold rounded-full hover:opacity-90 transition-opacity text-[16px]"
             >
               Book a free 15-min call →
             </a>

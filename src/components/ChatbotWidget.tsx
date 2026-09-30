@@ -233,6 +233,8 @@ const ChatbotWidget = () => {
               cursor: "pointer",
               padding: 4,
               lineHeight: 1,
+              minWidth: 44,
+              minHeight: 44,
             }}
             aria-label="Close chat"
           >
@@ -434,8 +436,8 @@ const ChatbotWidget = () => {
               onClick={() => sendMessage(input)}
               disabled={!input.trim()}
               style={{
-                width: 40,
-                height: 40,
+                width: 44,
+                height: 44,
                 borderRadius: 10,
                 background: input.trim() ? "#0A7D7B": "#D7D7D1",
                 border: "none",
