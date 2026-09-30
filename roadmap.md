@@ -25,8 +25,8 @@
 - [x] Verify contrast, mobile layout, protected files, and build
 
 ## Step 5 small-business copy
-- [ ] Update homepage hero and logo tagline
-- [ ] Add examples and owner FAQ sections
-- [ ] Simplify studio-tool and case-study jargon
-- [ ] Audit booking links, placeholders, em dashes, and protected files
-- [ ] Verify responsive rendering and build
+- [x] Update homepage hero and logo tagline
+- [x] Add examples and owner FAQ sections
+- [x] Simplify studio-tool and case-study jargon
+- [x] Audit booking links, placeholders, em dashes, and protected files
+- [x] Verify responsive rendering and build
