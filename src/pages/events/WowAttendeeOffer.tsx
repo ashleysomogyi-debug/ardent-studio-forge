@@ -12,7 +12,7 @@ const CALENDLY =
   "https://calendly.com/asomogyi-ardentstudio/one-task-audit-30-min?utm_source=wow&utm_medium=qr&utm_campaign=chocolate";
 const OFFER_DEADLINE = "November 30, 2026";
 
-const TEAL = "#0DBFBC";
+const TEAL = "#0A7D7B";
 
 const WowAttendeeOffer = () => {
   const [params] = useSearchParams();
@@ -44,13 +44,20 @@ const WowAttendeeOffer = () => {
   ];
 
   const button =
-    "inline-flex items-center justify-center rounded-md bg-ardent-lime px-8 py-4 font-sans text-[16px] font-semibold text-ardent-studio transition-opacity hover:opacity-90";
+    "inline-flex items-center justify-center rounded-md bg-[#C3F73A] px-8 py-4 font-sans text-[16px] font-semibold text-[#0D0D0D] transition-opacity hover:opacity-90";
 
   return (
-    <div className="flex min-h-screen flex-col bg-ardent-studio font-sans text-ardent-paper">
+    <div className="flex min-h-screen flex-col bg-[#F5F5F0] font-sans text-[#0D0D0D]">
       <header className="mx-auto w-full max-w-2xl px-6 pt-7">
-        <a href="/" className="text-[15px] font-semibold tracking-tight">
-          Ardent <span style={{ color: TEAL }}>Studio</span>
+        <a href="/" className="inline-flex items-center gap-2.5 text-[15px] font-semibold tracking-tight">
+          <img
+            src="/ardent-logo-circle.png"
+            alt="Ardent Studio logo"
+            className="h-9 w-9 shrink-0"
+          />
+          <span>
+            Ardent <span style={{ color: TEAL }}>Studio</span>
+          </span>
         </a>
       </header>
 
@@ -65,7 +72,7 @@ const WowAttendeeOffer = () => {
           <span style={{ color: TEAL }}>One Task Audit.</span>
         </h1>
 
-        <p className="mt-6 max-w-md text-[18px] leading-[1.5] text-ardent-paper/80">
+        <p className="mt-6 max-w-md text-[18px] leading-[1.5] text-[rgba(13,13,13,0.72)]">
           30 minutes with me to find the one thing you should stop doing by hand.
         </p>
 
@@ -75,11 +82,13 @@ const WowAttendeeOffer = () => {
           </a>
         </div>
 
-        <ol className="mt-16 space-y-4 border-t border-white/[0.08] pt-10">
+        <ol className="mt-16 space-y-4 border-t border-[rgba(13,13,13,0.1)] pt-10">
           {steps.map(([n, label]) => (
-            <li key={n} className="flex items-baseline gap-5">
-              <span className="w-8 shrink-0 font-mono text-[13px] font-medium text-ardent-lime">{n}</span>
-              <span className="text-[17px] text-ardent-paper/85">{label}</span>
+            <li key={n} className="flex items-center gap-4">
+              <span className="inline-flex shrink-0 items-center rounded bg-[#C3F73A] px-1.5 py-0.5 font-mono text-[13px] font-medium text-[#0D0D0D]">
+                {n}
+              </span>
+              <span className="text-[17px] text-[rgba(13,13,13,0.78)]">{label}</span>
             </li>
           ))}
         </ol>
@@ -93,12 +102,12 @@ const WowAttendeeOffer = () => {
           />
           <div className="text-[14px] leading-[1.4]">
             <div className="font-semibold">Dr. Ashley Somogyi</div>
-            <div className="text-ardent-paper/55">Founder, Ardent Studio. You get me, not an agency.</div>
+            <div className="text-[rgba(13,13,13,0.62)]">Founder, Ardent Studio. You get me, not an agency.</div>
           </div>
         </div>
       </main>
 
-      <footer className="mx-auto w-full max-w-2xl px-6 pb-8 font-mono text-[11px] uppercase tracking-[0.08em] text-ardent-paper/40">
+      <footer className="mx-auto w-full max-w-2xl px-6 pb-8 font-mono text-[11px] uppercase tracking-[0.08em] text-[rgba(13,13,13,0.55)]">
         Free for attendees · Through {OFFER_DEADLINE}
       </footer>
     </div>
