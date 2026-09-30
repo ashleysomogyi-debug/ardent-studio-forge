@@ -61,7 +61,7 @@ const Footer = () => (
       </div>
 
       {/* Locations */}
-      <div className="col-span-2 md:col-span-1">
+      <div className="col-span-2 max-md:order-last md:col-span-1">
         <span className="font-mono text-[13px] text-dark-band-text tracking-[0.2em] uppercase mb-4 block">Service Area</span>
         <ul className="grid grid-cols-2 gap-x-4 md:block md:space-y-2.5">
           {locations.map((loc) => (
