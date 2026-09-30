@@ -1,5 +1,5 @@
 const HeroSection = () => (
-  <section className="relative overflow-hidden bg-blush pt-20">
+  <section className="relative overflow-hidden bg-blush pt-14 md:pt-16">
     <div className="coral-dot-grid pointer-events-none absolute right-5 top-28 hidden h-32 w-32 opacity-100 md:block" aria-hidden="true" />
     <div className="relative max-w-7xl mx-auto px-6 lg:px-12 w-full pb-8 pt-4 md:pb-12 md:pt-6 grid lg:grid-cols-[1.08fr_0.92fr] gap-4 lg:gap-12 items-center">
       <div>

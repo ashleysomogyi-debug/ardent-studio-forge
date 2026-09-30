@@ -4,3 +4,4 @@
 - Keep the `/wow` offer page visually and behaviorally isolated from the site-wide rebrand.
 - Use the shared Radix tabs component for categorized content because it provides consistent keyboard and screen-reader behavior.
 - Scope page color experiments beneath page-level theme classes so shared site styling remains unchanged and rollback stays simple.
+- Keep the shared header color in `--site-header-bg` so its site-wide treatment can be reverted from one token.

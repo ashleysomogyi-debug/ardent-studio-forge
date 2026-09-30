@@ -60,7 +60,7 @@ const ServicePageLayout = ({
       <Nav />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden bg-blush px-5 pb-12 pt-24 md:px-10 md:pb-[72px] md:pt-28">
+        <section className="relative overflow-hidden bg-blush px-5 pb-12 pt-20 md:px-10 md:pb-[72px] md:pt-24">
           <ParticleCanvas />
           <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(135deg, rgba(10,125,123,0.06) 0%, transparent 50%)" }} />
           <div className="relative z-10 max-w-[800px] mx-auto text-center reveal-section">
