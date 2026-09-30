@@ -45,11 +45,6 @@ const steps = [
   { number: "04", title: "Handoff", you: "Join the walkthrough and start using your tool.", we: "We hand over the code, accounts, and a guide you can use." },
 ];
 
-const studioTools = [
-  { title: "Outreach drafted in our voice", detail: "Finds contacts and drafts openers in our own voice." },
-  { title: "Replies drafted for us to approve", detail: "Drafts replies for us to approve." },
-  { title: "A week of posts, drafted every Monday", detail: "Drafts five post options every Monday." },
-];
 
 const examples = [
   {
@@ -81,7 +76,7 @@ const ownerQuestions = [
   },
   {
     question: "How much will it cost?",
-    answer: "A free 15 minute call, data analysis at 150 dollars an hour scoped first, builds from 2,000 dollars at a fixed price, and workshops from 2,250 dollars. Bigger apps are quoted by phase.",
+    answer: "Prices depend on the size and complexity of the project. Book a free 15 minute call and we will give you a clear, fixed quote before any work starts.",
   },
   {
     question: "Do you only work with certain kinds of businesses?",
@@ -176,12 +171,7 @@ const Index = () => (
             <p className="mt-6 max-w-[78ch] text-[16px] leading-[1.75] text-body-text">Sherron Permashwar, CPA, teaches a spending method in her Get Wealthy With Me course and wanted students to apply it to their own real spending. We are building an app that reads a student's recent transactions and sorts them the way she teaches, with her personality quiz and a coaching voice written from her own answers. She owns the ownership rights and the code.</p>
             <p className="mt-7 border-t border-border pt-5 text-[13px] italic text-brick">The first release is in build. Results will be added after launch.</p>
           </article>
-          <div className="mt-14">
-            <h3 className="mb-5 text-xl font-semibold text-foreground">Tools we run our own studio on</h3>
-            <div className="grid gap-4 md:grid-cols-3">
-              {studioTools.map((tool) => <div key={tool.title} className="border-t border-border pt-4"><h4 className="font-semibold text-foreground">{tool.title}</h4><p className="mt-2 text-[14px] leading-relaxed text-body-text">{tool.detail}</p></div>)}
-            </div>
-            <p className="mt-9 text-[14px] leading-relaxed text-body-text">Sartori AI was built by Ardent and is now its own company. <a href="https://www.sartoriai.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline underline-offset-4">Visit Sartori AI</a></p>
+            <p className="mt-14 text-[14px] leading-relaxed text-body-text">Sartori AI was built by Ardent and is now its own company. <a href="https://www.sartoriai.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline underline-offset-4">Visit Sartori AI</a></p>
           </div>
         </div>
       </section>
