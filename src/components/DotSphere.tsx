@@ -8,10 +8,11 @@ interface Point {
 }
 
 const pickColor = (i: number): string => {
-  if (i % 20 === 0) return "rgba(10, 125, 123, 0.8)";
-  if (i % 10 === 0) return "rgba(10, 125, 123, 0.6)";
-  if (i % 4 === 0) return "rgba(13, 13, 13, 0.28)";
-  return "rgba(10, 125, 123, 0.42)";
+  if (i % 20 === 0) return "rgba(255, 107, 107, 0.55)";
+  if (i % 10 === 0) return "rgba(195, 247, 58, 0.5)";
+  if (i % 4 === 0) return "rgba(255, 107, 107, 0.38)";
+  if (i % 3 === 0) return "rgba(195, 247, 58, 0.35)";
+  return "rgba(13, 191, 188, 0.45)";
 };
 
 const N = 280;

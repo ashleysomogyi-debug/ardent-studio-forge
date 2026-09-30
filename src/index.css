@@ -55,6 +55,8 @@
   .section-eyebrow {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     width: fit-content;
     border-radius: 9999px;
     background: var(--color-blush-pill);
@@ -65,6 +67,12 @@
     line-height: 1;
     letter-spacing: 0.2em;
     text-transform: uppercase;
+  }
+
+  .section-eyebrow--on-photo {
+    background: #ffffff;
+    color: #0D0D0D;
+    box-shadow: 0 2px 10px rgba(13, 13, 13, 0.18);
   }
 
   .workshop-card {
