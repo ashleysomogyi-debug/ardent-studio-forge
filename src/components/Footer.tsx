@@ -37,7 +37,7 @@ const Footer = () => (
       <div className="flex flex-col">
         <Link to="/" className="inline-block">
           <span className="font-sans text-[16px] md:text-[18px] text-footer-text font-semibold">Ardent Studio</span>
-          <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase block mt-1">AI Automation · Palm Beach County</span>
+          <span className="font-mono text-[11px] text-footer-text tracking-[0.2em] uppercase block mt-1">AI Automation · Palm Beach County</span>
         </Link>
         <p className="font-sans text-[13px] text-footer-muted mt-4 leading-[1.6]">
           AI automation for small businesses in Palm Beach County and South Florida. Based in Boynton Beach, FL.
@@ -47,7 +47,7 @@ const Footer = () => (
 
       {/* Services */}
       <div>
-        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase mb-4 block">Services</span>
+        <span className="font-mono text-[11px] text-footer-text tracking-[0.2em] uppercase mb-4 block">Services</span>
         <ul className="space-y-2.5">
           {services.map((s) => (
             <li key={s.to}>
@@ -61,7 +61,7 @@ const Footer = () => (
 
       {/* Locations */}
       <div>
-        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase mb-4 block">Service Area</span>
+        <span className="font-mono text-[11px] text-footer-text tracking-[0.2em] uppercase mb-4 block">Service Area</span>
         <ul className="space-y-2.5">
           {locations.map((loc) => (
             <li key={loc.to}>
@@ -78,7 +78,7 @@ const Footer = () => (
 
       {/* Contact */}
       <div>
-        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase mb-4 block">Contact</span>
+        <span className="font-mono text-[11px] text-footer-text tracking-[0.2em] uppercase mb-4 block">Contact</span>
         <div className="space-y-2.5">
           <ul className="space-y-2">
             {company.map((c) => (

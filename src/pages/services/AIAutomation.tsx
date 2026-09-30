@@ -160,8 +160,7 @@ const AIAutomation = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10">
               {workflows.map((w, i) => (
                 <div key={w.title} className={`workshop-card min-h-[180px] p-7${w.wide ? " md:col-span-2 lg:col-span-2": ""}`}>
-                  <span className={`mb-5 block h-3 w-3 rounded-full ${accentPills[i % accentPills.length]}`} aria-hidden="true" />
-                  <h3 className="text-[20px] mb-3 text-foreground" style={{ fontFamily: serif }}>
+                  <h3 className={`mb-5 w-fit max-w-full rounded-full px-4 py-2 text-[16px] font-semibold leading-tight text-ardent-studio ${accentPills[i % accentPills.length]}`} style={{ fontFamily: serif }}>
                     {w.title}
                   </h3>
                   <p className="text-[14px] leading-[1.6] text-body-text">{w.desc}</p>
@@ -189,7 +188,7 @@ const AIAutomation = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="workshop-card flex flex-col p-10 md:p-14">
-                <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+                <span className="mb-4 block w-fit rounded-full bg-teal-bright px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ardent-studio">
                   Sales Enablement · AI Role-Play
                 </span>
                 <h3 className="text-[clamp(28px,3.5vw,42px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
@@ -218,7 +217,7 @@ const AIAutomation = () => {
               </div>
 
               <div className="workshop-card flex flex-col p-10 md:p-14">
-                <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
+                <span className="mb-4 block w-fit rounded-full bg-ardent-lime px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ardent-studio">
                   Sports Tech · AI Coaching
                 </span>
                 <h3 className="text-[clamp(28px,3.5vw,42px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
