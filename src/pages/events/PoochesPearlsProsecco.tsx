@@ -298,10 +298,9 @@ const PoochesPearlsProsecco = () => {
         <div className="hero">
           <h1>Automate Your Business.</h1>
           <div className="subtitle">You Pick Two. We Build Them.</div>
-          <div className="value-badge">Valued at $1,000</div>
           <div className="charity-note">
             100% of proceeds benefit shelter animals
-            <span>&nbsp;&mdash;&nbsp;helping local pooches find their forever homes</span>
+            <span>&nbsp;&middot;&nbsp;helping local pooches find their forever homes</span>
           </div>
         </div>
 

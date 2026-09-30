@@ -74,7 +74,7 @@ export default function BlogPostLayout({
               className="text-xs font-semibold tracking-widest uppercase mb-3"
               style={{ color: "#0A7D7B" }}
             >
-              Ardent Studio &mdash; Boynton Beach, FL
+              Ardent Studio &middot; Boynton Beach, FL
             </p>
             <p
               className="text-lg font-semibold mb-4"
