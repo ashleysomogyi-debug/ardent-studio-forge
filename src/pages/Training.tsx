@@ -33,6 +33,7 @@ const tiers = [
   { name: "Four session program", body: "A program over four sessions, quoted for your team.", items: ["4 live sessions", "Ongoing Slack support", "Custom prompt + scenario library built around your team's workflows"], interest: "four-session-curriculum" },
 ];
 const accentPills = ["bg-teal-bright", "bg-ardent-lime", "bg-coral", "bg-peach"];
+const workshopPills = ["bg-ardent-lime", "bg-coral", "bg-peach"];
 
 const Training = () => {
   useEffect(() => {
@@ -62,9 +63,12 @@ const Training = () => {
           </div>
         </section>
 
-        <section className="px-5 md:px-10 py-16" style={{ background: "#F5F5F0" }}>
+        <section className="bg-footer-bg px-5 py-16 md:px-10 md:py-20" aria-labelledby="taught-heading">
           <div className="max-w-[1100px] mx-auto">
-            <span className="section-eyebrow mb-8">Past workshops</span>
+            <div className="mb-9 flex items-center gap-3">
+              <span className="h-2.5 w-2.5 rounded-full bg-coral" aria-hidden="true" />
+              <h2 id="taught-heading" className="text-[clamp(30px,4vw,44px)] font-semibold text-dark-band-text">Where we have taught</h2>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 { src: "/images/ef-shanghai-2024.jpg", caption: "EF Keynote · Shanghai" },
@@ -75,7 +79,7 @@ const Training = () => {
                   <div className="aspect-[16/10] overflow-hidden rounded-xl bg-ardent-ink">
                     <img src={p.src} alt={p.caption} className="w-full h-full object-cover" loading="lazy" />
                   </div>
-                  <figcaption className={`mt-3 w-fit rounded-full px-3 py-2 font-mono text-[10px] uppercase tracking-[0.18em] text-ardent-studio ${accentPills[i]}`}>
+                  <figcaption className={`mt-4 w-fit rounded-full px-4 py-2.5 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-ardent-studio ${workshopPills[i]}`}>
                     {p.caption}
                   </figcaption>
                 </figure>

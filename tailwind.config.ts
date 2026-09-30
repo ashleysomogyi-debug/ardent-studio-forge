@@ -42,6 +42,8 @@ export default {
         "footer-bg": "#0D0D0D",
         "footer-text": "#F5F5F0",
         "footer-muted": "rgba(245,245,240,0.68)",
+        "dark-band-text": "#FFFFFF",
+        "dark-band-muted": "#B8B8B3",
         "ardent-studio": "#0D0D0D",
         "ardent-charcoal": "#F5F5F0",
         "ardent-ink": "#0D0D0D",

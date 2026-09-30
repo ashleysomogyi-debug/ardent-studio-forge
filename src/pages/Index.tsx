@@ -166,11 +166,14 @@ const Index = () => (
         <div className="coral-dot-grid pointer-events-none absolute right-6 top-16 h-28 w-28" aria-hidden="true" />
         <div className="relative mx-auto max-w-[1200px]">
           <h2 id="work-heading" className="mb-10 text-[clamp(32px,5vw,56px)] font-semibold text-foreground">Our work</h2>
-          <article className="workshop-card p-7 md:p-11">
+          <article className="relative overflow-hidden rounded-3xl border border-dark-band-text/10 bg-footer-bg p-7 md:p-11">
+            <div className="coral-dot-grid pointer-events-none absolute -right-3 -top-3 h-36 w-36" aria-hidden="true" />
+            <div className="relative">
             <span className="inline-flex rounded-full bg-ardent-lime px-3 py-2 font-mono text-[11px] uppercase tracking-[0.2em] text-ardent-studio">In build</span>
-            <h3 className="mt-4 max-w-[24ch] text-[clamp(26px,3.5vw,40px)] font-semibold leading-tight text-foreground">A spending plan in a CPA's own voice.</h3>
-            <p className="mt-6 max-w-[78ch] text-[16px] leading-[1.75] text-body-text">Sherron Permashwar, CPA, teaches a spending method in her Get Wealthy With Me course and wanted students to apply it to their own real spending. We are building an app that reads a student's recent transactions and sorts them the way she teaches, with her personality quiz and a coaching voice written from her own answers. She owns the ownership rights and the code.</p>
-            <p className="mt-7 border-t border-border pt-5 text-[13px] italic text-brick">The first release is in build. Results will be added after launch.</p>
+            <h3 className="mt-4 max-w-[24ch] text-[clamp(26px,3.5vw,40px)] font-semibold leading-tight text-dark-band-text">A spending plan in a CPA's own voice.</h3>
+            <p className="mt-6 max-w-[78ch] text-[16px] leading-[1.75] text-dark-band-muted">Sherron Permashwar, CPA, teaches a spending method in her Get Wealthy With Me course and wanted students to apply it to their own real spending. We are building an app that reads a student's recent transactions and sorts them the way she teaches, with her personality quiz and a coaching voice written from her own answers. She owns the ownership rights and the code.</p>
+            <p className="mt-7 border-t border-coral pt-5 text-[13px] italic text-dark-band-muted">The first release is in build. Results will be added after launch.</p>
+            </div>
           </article>
             <p className="mt-14 text-[14px] leading-relaxed text-body-text">Sartori AI was built by Ardent and is now its own company. <a href="https://www.sartoriai.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline underline-offset-4">Visit Sartori AI</a></p>
           </div>

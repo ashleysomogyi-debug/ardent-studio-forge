@@ -33,3 +33,9 @@
 
 ## Step 7 pricing on the call
 - [x] Remove public dollar figures, add quote language, hero reassurance row
+
+## Step 8 near-black contrast bands
+- [x] Restyle the shared closing call-to-action band
+- [x] Feature the homepage Sherron story on near-black
+- [x] Restyle the Training teaching section and shared footer
+- [ ] Verify contrast, mobile layout, protected files, and build
