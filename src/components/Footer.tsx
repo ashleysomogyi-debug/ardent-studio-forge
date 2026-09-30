@@ -40,7 +40,7 @@ const Footer = () => (
             <span className="mt-1 block font-mono text-[13px] uppercase tracking-[0.18em] text-footer-muted">PRACTICAL AI FOR BUSINESS · PALM BEACH COUNTY</span>
           </span>
         </Link>
-        <p className="font-sans text-[15px] text-footer-muted mt-4 leading-[1.6]">
+        <p className="font-sans text-[16px] text-footer-muted mt-4 leading-[1.6]">
            Practical AI for businesses in Palm Beach County and beyond. Based in Boynton Beach, FL.
         </p>
         <span className="mt-4 flex items-center gap-2 font-mono text-[13px] text-footer-muted"><span className="h-2 w-2 rounded-full bg-coral" aria-hidden="true" />© 2026 Ardent Studio</span>
@@ -97,7 +97,7 @@ const Footer = () => (
             ))}
           </ul>
           <address className="not-italic space-y-2 pt-2">
-            <p className="font-sans text-[14px] text-footer-muted leading-[1.6]">
+            <p className="font-sans text-[16px] text-footer-muted leading-[1.6]">
               Boynton Beach, FL<br />Palm Beach County
             </p>
             <a href="tel:+17282010192" className="font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors block">
