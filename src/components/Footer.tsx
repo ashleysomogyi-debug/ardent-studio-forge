@@ -29,6 +29,9 @@ const locations = [
 
 const Footer = () => (
   <footer id="book-a-call" className="bg-footer-bg text-footer-text py-10 md:py-16 px-5 md:px-10">
+    <div className="mx-auto mb-9 flex max-w-[1200px] gap-2" aria-hidden="true">
+      <span className="h-2.5 w-2.5 rounded-full bg-teal-bright" /><span className="h-2.5 w-2.5 rounded-full bg-ardent-lime" /><span className="h-2.5 w-2.5 rounded-full bg-coral" /><span className="h-2.5 w-2.5 rounded-full bg-peach" />
+    </div>
     <div className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       {/* Brand */}
       <div className="flex flex-col">
@@ -39,7 +42,7 @@ const Footer = () => (
         <p className="font-sans text-[13px] text-footer-muted mt-4 leading-[1.6]">
           AI automation for small businesses in Palm Beach County and South Florida. Based in Boynton Beach, FL.
         </p>
-        <span className="font-mono text-[11px] text-footer-muted mt-4">© 2026 Ardent Studio</span>
+        <span className="mt-4 flex items-center gap-2 font-mono text-[11px] text-footer-muted"><span className="h-2 w-2 rounded-full bg-coral" aria-hidden="true" />© 2026 Ardent Studio</span>
       </div>
 
       {/* Services */}

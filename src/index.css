@@ -26,7 +26,13 @@
     --radius: 0.5rem;
 
     --color-teal: #0A7D7B;
+    --color-teal-bright: #0DBFBC;
     --color-lime: #C3F73A;
+    --color-blush: #FDEAE6;
+    --color-blush-pill: #FFE7E3;
+    --color-coral: #FF6B6B;
+    --color-peach: #FFC8C0;
+    --color-brick: #B83232;
     --color-bg: #F5F5F0;
     --color-surface: #FFFFFF;
     --color-surface-2: #FFFFFF;
@@ -42,6 +48,34 @@
 
     --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
     --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+  }
+}
+
+@layer components {
+  .section-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    border-radius: 9999px;
+    background: var(--color-blush-pill);
+    color: var(--color-brick);
+    padding: 0.5rem 0.75rem;
+    font-family: var(--font-mono);
+    font-size: 0.6875rem;
+    line-height: 1;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+
+  .workshop-card {
+    border: 1px solid rgb(184 50 50 / 0.1);
+    border-radius: 1.5rem;
+    background: var(--color-surface);
+  }
+
+  .coral-dot-grid {
+    background-image: radial-gradient(circle, rgb(255 107 107 / 0.35) 2px, transparent 2.5px);
+    background-size: 18px 18px;
   }
 }
 
