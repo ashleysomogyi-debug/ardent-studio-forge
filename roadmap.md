@@ -14,6 +14,6 @@
 - [x] Verify homepage and protected offer behavior
 
 ## Step 3 page copy and audit
-- [ ] Update Training, Automation and Apps, and Contact page copy and choices
-- [ ] Audit sitewide voice, prohibited terms, placeholders, and call labels outside `/wow`
-- [ ] Verify key pages and contact option handling
+- [x] Update Training, Automation and Apps, and Contact page copy and choices
+- [x] Audit sitewide voice, prohibited terms, placeholders, and call labels outside `/wow`
+- [x] Verify key pages and contact option handling
