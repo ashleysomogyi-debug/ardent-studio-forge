@@ -90,7 +90,7 @@ const Contact = () => {
     <>
       <Nav />
       <main>
-        <section className="bg-blush px-5 pb-[40px] pt-[140px] md:px-10">
+        <section className="bg-blush px-5 pb-10 pt-24 md:px-10 md:pt-28">
           <div className="max-w-2xl mx-auto text-center">
             <span className="section-eyebrow mb-6">
               Contact

@@ -58,14 +58,19 @@ const TypingHeadline = () => {
     );
   }
 
+  const longest = words.reduce((a, b) => (b.length > a.length ? b : a), "");
+
   return (
     <h1
       className="text-[clamp(3rem,8vw,6rem)] leading-[1.05] font-normal text-foreground"
       style={{ fontFamily: serif }}
     >
       Build what{" "}
-      <span className={colors[idx]}>{text}</span>
-      <span className="typing-cursor text-foreground/80" aria-hidden="true">|</span>
+      <span className="relative inline-block">
+        <span className="invisible" aria-hidden="true">{longest}</span>
+        <span className={`absolute left-0 top-0 whitespace-nowrap ${colors[idx]}`}>{text}</span>
+        <span className="typing-cursor absolute top-0 text-foreground/80" style={{ left: `${text.length}ch` }} aria-hidden="true">|</span>
+      </span>
       <span className="text-foreground">.</span>
     </h1>
   );
