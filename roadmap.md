@@ -23,3 +23,10 @@
 - [x] Restyle Training and Automation cards and banners
 - [x] Update shared eyebrow, step, and footer treatments
 - [x] Verify contrast, mobile layout, protected files, and build
+
+## Step 5 small-business copy
+- [ ] Update homepage hero and logo tagline
+- [ ] Add examples and owner FAQ sections
+- [ ] Simplify studio-tool and case-study jargon
+- [ ] Audit booking links, placeholders, em dashes, and protected files
+- [ ] Verify responsive rendering and build
