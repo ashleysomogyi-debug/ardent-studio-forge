@@ -79,7 +79,7 @@ const Training = () => {
                   <div className="aspect-[16/10] overflow-hidden rounded-xl bg-ardent-ink">
                     <img src={p.src} alt={p.caption} className="w-full h-full object-cover" loading="lazy" />
                   </div>
-                  <figcaption className={`mt-4 w-fit rounded-full px-4 py-2.5 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-ardent-studio ${workshopPills[i]}`}>
+                  <figcaption className={`mt-4 inline-flex w-fit items-center justify-center text-center rounded-full px-4 py-2.5 font-mono text-[10px] font-semibold uppercase tracking-[0.18em] text-ardent-studio ${workshopPills[i]}`}>
                     {p.caption}
                   </figcaption>
                 </figure>
@@ -137,7 +137,7 @@ const Training = () => {
               {tracks.map((t) => (
                 <div key={t.t} className="workshop-card p-7">
                   {t.featured && (
-                    <span className="mb-3 inline-flex rounded-full bg-ardent-lime px-3 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-ardent-studio">Differentiator</span>
+                    <span className="mb-3 inline-flex items-center justify-center text-center rounded-full bg-ardent-lime px-3 py-2 font-mono text-[10px] uppercase tracking-[0.2em] text-ardent-studio">Differentiator</span>
                   )}
                   <h3 className="text-[22px] mb-3 text-foreground" style={{ fontFamily: serif }}>{t.t}</h3>
                   <p className="text-[14px] leading-[1.6] text-body-text">{t.d}</p>
@@ -189,7 +189,7 @@ const Training = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {tiers.map((tier, i) => (
                 <div key={tier.name} className="workshop-card p-8">
-                  <span className={`mb-5 inline-flex rounded-full px-4 py-2.5 font-mono text-[12px] font-semibold uppercase tracking-[0.12em] text-ardent-studio ${accentPills[i]}`}>Quoted for your team on a free call</span>
+                  <span className={`mb-5 inline-flex items-center justify-center text-center rounded-full px-4 py-2.5 font-mono text-[12px] font-semibold uppercase tracking-[0.12em] text-ardent-studio ${accentPills[i]}`}>Quoted for your team on a free call</span>
                   <h3 className="text-[22px] mb-2 text-foreground" style={{ fontFamily: serif }}>{tier.name}</h3>
                   <p className="text-[14px] text-body-text mb-6">{tier.body}</p>
                   <ul className="space-y-2 mb-8">
