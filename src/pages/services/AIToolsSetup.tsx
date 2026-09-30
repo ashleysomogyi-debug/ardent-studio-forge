@@ -76,12 +76,12 @@ export default function AIToolsSetup() {
         {
           title: "Custom Prompt Library",
           description:
-            "A library of prompts built specifically for your recurring tasks, including client emails, proposals, social posts, reports, in your voice.",
+            "A library of prompts built specifically for your recurring tasks, including client emails, proposals, social posts, and reports, all in your voice.",
         },
         {
           title: "AI Workflows",
           description:
-            "Combine AI (Claude or ChatGPT) with automation to create powerful workflows, such as ones that auto-draft emails, classify leads, extract data from documents.",
+            "Combine AI (Claude or ChatGPT) with automation to create powerful workflows, such as ones that auto-draft emails, classify leads, and extract data from documents.",
         },
         {
           title: "Team Training Sessions",

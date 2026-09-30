@@ -41,7 +41,7 @@ const features = [
 ];
 
 const whyArdent = [
-  `We're not just local: we're your neighbors. Ardent Studio is founded and based right here in Boynton Beach. When you book a call, you talk to Ashley directly. No middlemen.`,
+  `We're not just local. We're your neighbors. Ardent Studio is founded and based right here in Boynton Beach. When you book a call, you talk to Ashley directly. No middlemen.`,
   "Most automation builds ship in 1–2 weeks. We scope, build, and hand off, and you own everything we build.",
   "We build with automation tools and Anthropic Claude, tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,

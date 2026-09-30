@@ -41,7 +41,7 @@ const features = [
 ];
 
 const whyArdent = [
-  `We're based in Boynton Beach: right here in Palm Beach County, familiar with Wellington's unique seasonal rhythms. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
+  `We're based in Boynton Beach, right here in Palm Beach County, familiar with Wellington's unique seasonal rhythms. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
   "Most automation builds ship in 1–2 weeks. We scope, build, and hand off, and you own everything we build.",
   "We build with automation tools and Anthropic Claude, tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,
@@ -102,7 +102,7 @@ const Wellington = () => {
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for Wellington Small Businesses"
-      subheadline="Ardent Studio helps Wellington businesses, from equestrian operations and polo-season businesses to fitness studios and family-owned companies save time with practical AI automation."
+      subheadline="Ardent Studio helps Wellington businesses, from equestrian operations and polo-season businesses to fitness studios and family-owned companies, save time with practical AI automation."
       introText="Wellington's unique economy, driven by the equestrian and polo community, seasonal influxes, and strong family business culture, creates very specific automation opportunities. Booking management, client communications, and seasonal scaling are all areas where AI automation delivers immediate value."
       features={features}
       whyArdent={whyArdent}

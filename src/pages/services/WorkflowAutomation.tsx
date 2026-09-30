@@ -71,7 +71,7 @@ export default function WorkflowAutomation() {
         {
           title: "Lead Follow-up Sequences",
           description:
-            "Automatically send personalized follow-up emails within minutes of a form submission, with no more losing prospects to slow response times. The Harvard Business Review found that 78% of leads go with the first company to respond.",
+            "Automatically send personalized follow-up emails within minutes of a form submission, so you no longer lose prospects to slow response times. The Harvard Business Review found that 78% of leads go with the first company to respond.",
         },
         {
           title: "Invoice & Payment Reminders",
@@ -117,7 +117,7 @@ export default function WorkflowAutomation() {
       caseStudy={{
         title: "Palm Beach County Service Business",
         description:
-          "A Palm Beach County home services company had 3 different tools for quoting, scheduling, and following up, and none of them talked to each other. Every new job required manual data entry in all three. We built a automated pipeline that connected all three automatically.",
+          "A Palm Beach County home services company had 3 different tools for quoting, scheduling, and following up, and none of them talked to each other. Every new job required manual data entry in all three. We built an automated pipeline that connected all three automatically.",
         result:
           "12 hours/week of manual data entry eliminated. Zero dropped leads from poor follow-up.",
       }}

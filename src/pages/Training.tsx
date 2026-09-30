@@ -115,7 +115,7 @@ const Training = () => {
                 Build your first agent.
               </h2>
               <p className="text-[17px] leading-[1.65] text-body-text max-w-[68ch] mb-8">
-                A 5-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem: we build the tool together, in the room, and you leave with it running.
+                A 5-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem. We build the tool together, in the room, and you leave with it running.
               </p>
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-primary mb-8">
                 5 HOURS, UP TO 15 PEOPLE, IN PERSON OR VIRTUAL

@@ -41,7 +41,7 @@ const features = [
 ];
 
 const whyArdent = [
-  `We're based in Boynton Beach: minutes from Delray Beach. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
+  `We're based in Boynton Beach, minutes from Delray Beach. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
   "Most automation builds ship in 1–2 weeks. We scope, build, and hand off, and you own everything we build.",
   "We build with automation tools and Anthropic Claude, tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,

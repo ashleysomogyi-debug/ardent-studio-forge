@@ -39,7 +39,7 @@ const Post5WhyAIFails = () => (
 
     <h2>Frequently Asked Questions</h2>
     <h3>How can a team tell if a process is ready to automate?</h3>
-    <p>If you can describe it clearly in a step-by-step list: what triggers it, what happens next, what the end result looks like: it's probably ready. If you find yourself writing "it depends" at every step, document the process better first.</p>
+    <p>If you can describe it clearly in a step-by-step list (what triggers it, what happens next, what the end result looks like), it's probably ready. If you find yourself writing "it depends" at every step, document the process better first.</p>
     <h3>What's the fastest way to get a working automation?</h3>
     <p>Start with one problem. Don't design the perfect system. Build the minimum viable automation that solves the one problem. You can always expand it later. Done beats perfect, especially for the first build.</p>
     <h3>How can a team avoid vendor lock-in?</h3>

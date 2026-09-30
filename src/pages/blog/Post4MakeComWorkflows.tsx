@@ -11,7 +11,7 @@ const Post4MakeComWorkflows = () => (
     <p>Workflow automation can help businesses handle lead flow, scheduling, invoicing, and communication. These five workflows are practical, proven, and worth knowing about, whether you're thinking about building them yourself or want to understand what's possible.</p>
 
     <h2>Why automate your workflows?</h2>
-    <p>Automation connects your existing tools: your CRM, your inbox, your booking software, your invoicing app, and builds logic between them. We choose tools based on the workflow and hand over documentation for what we build.</p>
+    <p>Automation connects your existing tools: your CRM, your inbox, your booking software, and your invoicing app, then builds logic between them. We choose tools based on the workflow and hand over documentation for what we build.</p>
 
     <h2>Workflow 1: Lead Form → CRM + Automated Email Sequence</h2>
     <p><strong>What it does:</strong> Someone fills out the contact form on your website. an automation catches that submission and immediately creates a new contact record in your CRM, tags them with where they came from, and kicks off an email sequence: a welcome email right away, a follow-up with more info on day two, and a check-in on day five.</p>

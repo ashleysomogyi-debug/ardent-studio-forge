@@ -21,7 +21,7 @@ const Post3AIvsHiring = () => (
     <p>An admin, VA, or part-time employee earns their keep on tasks that require:</p>
     <p><strong>Judgment.</strong> Is this complaint a billing issue or a relationship issue? Should this client get the standard follow-up or a personal call? A rule-based automation can't read the room.</p>
     <p><strong>Relationships.</strong> Regulars recognize when something feels automated. For your best clients (the ones who've been with you for years), the human touch matters.</p>
-    <p><strong>Edge cases.</strong> Automation works beautifully when the situation fits the pattern. The moment it doesn't: a weird refund request, a complaint that needs real de-escalation, you need a person.</p>
+    <p><strong>Edge cases.</strong> Automation works beautifully when the situation fits the pattern. The moment it doesn't (a weird refund request or a complaint that needs real de-escalation), you need a person.</p>
 
     <h2>The Real Cost Comparison</h2>
     <p>An admin or VA is an ongoing cost, paid every week for as long as the role exists.</p>

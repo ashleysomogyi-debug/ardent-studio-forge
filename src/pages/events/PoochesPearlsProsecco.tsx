@@ -310,7 +310,7 @@ const PoochesPearlsProsecco = () => {
           <h2>How It Works</h2>
           <p>
             Win this auction item and choose any two of the four automations below. We'll build them
-            for your business from scratch: no tech skills needed on your end.
+            for your business from scratch, with no tech skills needed on your end.
           </p>
         </div>
 
@@ -320,7 +320,7 @@ const PoochesPearlsProsecco = () => {
             <h3>Workflow Automation</h3>
             <p className="desc">
               Those repetitive tasks you do every day: scheduling, invoicing, data entry, sending
-              reminders: we set up systems that handle them automatically so you don't have to.
+              reminders. We set up systems that handle them automatically so you don't have to.
             </p>
             <p className="benefit">→ Get hours back every week without hiring anyone.</p>
           </div>
@@ -330,7 +330,7 @@ const PoochesPearlsProsecco = () => {
             <h3>Lead Generation Engine</h3>
             <p className="desc">
               We build a system that captures potential customers from your website, social media, or
-              ads. It collects their info and sends them straight to you: automatically.
+              ads. It collects their info and sends them straight to you automatically.
             </p>
             <p className="benefit">→ New leads come to you on autopilot, 24/7.</p>
           </div>
@@ -350,7 +350,7 @@ const PoochesPearlsProsecco = () => {
             <h3>24/7 Automated Follow-Ups</h3>
             <p className="desc">
               After someone reaches out or books with you, your system automatically sends a series
-              of emails or texts: reminders, check-ins, and thank-yous: without you lifting a
+              of emails or texts (reminders, check-ins, and thank-yous) without you lifting a
               finger.
             </p>
             <p className="benefit">→ Never lose a lead because you forgot to follow up.</p>
