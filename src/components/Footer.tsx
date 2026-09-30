@@ -35,9 +35,12 @@ const Footer = () => (
     <div className="max-w-[1200px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
       {/* Brand */}
       <div className="flex flex-col">
-        <Link to="/" className="inline-block">
-          <span className="font-sans text-[16px] md:text-[18px] text-footer-text font-semibold">Ardent Studio</span>
-          <span className="font-mono text-[11px] text-footer-text tracking-[0.2em] uppercase block mt-1">AI Automation · Palm Beach County</span>
+        <Link to="/" className="inline-flex items-center gap-3">
+          <img src="/ardent-logo-circle.png" alt="Ardent Studio" className="h-12 w-12 shrink-0 rounded-full" />
+          <span>
+            <span className="block font-sans text-[16px] font-semibold text-dark-band-text md:text-[18px]">Ardent Studio</span>
+            <span className="mt-1 block font-mono text-[10px] uppercase tracking-[0.18em] text-footer-muted">AI Automation · Palm Beach County</span>
+          </span>
         </Link>
         <p className="font-sans text-[13px] text-footer-muted mt-4 leading-[1.6]">
           AI automation for small businesses in Palm Beach County and South Florida. Based in Boynton Beach, FL.
@@ -47,7 +50,7 @@ const Footer = () => (
 
       {/* Services */}
       <div>
-        <span className="font-mono text-[11px] text-footer-text tracking-[0.2em] uppercase mb-4 block">Services</span>
+        <span className="font-mono text-[11px] text-dark-band-text tracking-[0.2em] uppercase mb-4 block">Services</span>
         <ul className="space-y-2.5">
           {services.map((s) => (
             <li key={s.to}>
@@ -61,7 +64,7 @@ const Footer = () => (
 
       {/* Locations */}
       <div>
-        <span className="font-mono text-[11px] text-footer-text tracking-[0.2em] uppercase mb-4 block">Service Area</span>
+        <span className="font-mono text-[11px] text-dark-band-text tracking-[0.2em] uppercase mb-4 block">Service Area</span>
         <ul className="space-y-2.5">
           {locations.map((loc) => (
             <li key={loc.to}>
@@ -78,7 +81,7 @@ const Footer = () => (
 
       {/* Contact */}
       <div>
-        <span className="font-mono text-[11px] text-footer-text tracking-[0.2em] uppercase mb-4 block">Contact</span>
+        <span className="font-mono text-[11px] text-dark-band-text tracking-[0.2em] uppercase mb-4 block">Contact</span>
         <div className="space-y-2.5">
           <ul className="space-y-2">
             {company.map((c) => (
