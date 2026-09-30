@@ -28,7 +28,6 @@ const CTASection = () => (
           See our work
         </a>
       </div>
-      </div>
     </div>
   </section>
 );

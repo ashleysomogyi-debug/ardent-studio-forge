@@ -152,9 +152,9 @@ const Index = () => (
                 {person.detail && <p className="mt-3 text-[14px] text-body-text">{person.detail}</p>}
               </div>
             ))}
-          </div>
-          <div className="mx-auto mt-10 flex h-64 w-40 items-center justify-center rounded-t-[999px] bg-teal-bright lg:mt-0" aria-hidden="true">
-            <img src="/ardent-logo-circle.png" alt="" className="h-24 w-24 rounded-full" />
+            <div className="mx-auto flex h-64 w-40 items-center justify-center rounded-t-[999px] bg-teal-bright" aria-hidden="true">
+              <img src="/ardent-logo-circle.png" alt="" className="h-24 w-24 rounded-full" />
+            </div>
           </div>
           <p className="mt-12 max-w-[70ch] text-[16px] leading-relaxed text-body-text">We started Ardent to make practical tools with people, not hand them a deck and disappear. We work in person when we can and on Zoom when we cannot. From the first question to the final handoff, we stay close to the work and accountable for it.</p>
         </div>
