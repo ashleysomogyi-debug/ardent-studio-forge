@@ -17,3 +17,9 @@
 - [x] Update Training, Automation and Apps, and Contact page copy and choices
 - [x] Audit sitewide voice, prohibited terms, placeholders, and call labels outside `/wow`
 - [x] Verify key pages and contact option handling
+## Step 4 accent refresh
+- [ ] Add workshop-deck color tokens and reusable decorative styles
+- [ ] Restyle homepage accents without changing copy or layout
+- [ ] Restyle Training and Automation cards and banners
+- [ ] Update shared eyebrow, step, and footer treatments
+- [ ] Verify contrast, mobile layout, protected files, and build
