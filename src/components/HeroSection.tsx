@@ -24,9 +24,6 @@ const HeroSection = () => (
            >
              Book a free 15-min call →
            </a>
-           <p className="mt-3 text-center font-mono text-[10px] uppercase tracking-[0.12em] text-label-text">
-             No pitch. Just an honest yes or no.
-           </p>
          </div>
         <a
           href="#work"
@@ -35,6 +32,11 @@ const HeroSection = () => (
           See our work
         </a>
       </div>
+      <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[11px] uppercase tracking-[0.12em] text-label-text" aria-label="What to expect">
+        {["No pitch", "Fixed price, no surprises", "You own what we build"].map((t) => (
+          <li key={t} className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-coral" aria-hidden="true" />{t}</li>
+        ))}
+      </ul>
       </div>
        <div className="relative mx-auto w-full max-w-[520px] pb-5 pr-5 pt-5">
          <div className="absolute bottom-0 right-0 top-10 w-[92%] rounded-t-[999px] bg-teal-bright" aria-hidden="true" />

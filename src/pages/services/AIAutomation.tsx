@@ -64,7 +64,7 @@ const AIAutomation = () => {
         "@type": "FAQPage",
         "@id": "https://ardentstudio.io/services/ai-automation#faq",
         mainEntity: [
-          { "@type": "Question", name: "What does an AI automation project cost?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds run $2,000 to $10,000 over 2 to 4 weeks, fixed price and fixed timeline. Larger custom builds are scoped separately. Every project starts with a free 15-minute scope call." } },
+          { "@type": "Question", name: "What does an AI automation project cost?", acceptedAnswer: { "@type": "Answer", text: "Every build is a fixed price, quoted after a free 15 minute call. Larger custom builds are scoped separately. Every project starts with a free 15-minute scope call." } },
           { "@type": "Question", name: "How long does a typical project take?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds ship in 2 to 4 weeks. We don't take on projects we can't deliver in 4 weeks; if it's bigger, we scope it as multiple phases." } },
           { "@type": "Question", name: "What AI tools do you use?", acceptedAnswer: { "@type": "Answer", text: "We choose tools to fit the workflow. The build is documented and handed over with the accounts." } },
           { "@type": "Question", name: "Who do you work with?", acceptedAnswer: { "@type": "Answer", text: "We work with teams across industries. We start with one workflow and build around the way your team works." } },
@@ -294,7 +294,7 @@ const AIAutomation = () => {
           <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-6">
             <div className="workshop-card border-t-8 border-t-teal-bright p-7 md:p-10">
               <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Find the answer</h2>
-              <p className="text-[16px] text-muted-foreground leading-relaxed mb-7">Bring us your data and a question. We clean it, analyze it, and give you a plain-English report with charts. $150 an hour, with a scoped estimate before any work starts.</p>
+              <p className="text-[16px] text-muted-foreground leading-relaxed mb-7">Bring us your data and a question. We clean it, analyze it, and give you a plain-English report with charts. Fixed price, quoted after a free 15 minute call.</p>
               <Link to="/contact?interest=analyze-my-data" className="inline-flex px-7 py-3 bg-secondary text-secondary-foreground font-semibold rounded-full">Ask about your data</Link>
             </div>
             <div className="rounded-3xl border-2 border-dashed border-coral bg-card p-7 md:p-10">
@@ -315,7 +315,7 @@ const AIAutomation = () => {
               className="text-[clamp(20px,2.6vw,28px)] leading-[1.3] text-ardent-studio mb-3"
               style={{ fontFamily: serif }}
             >
-              Most projects: $2,000–$10,000, 2–6 weeks. Fixed price. Fixed timeline. Your team owns the result.
+              Fixed price, quoted after a free 15 minute call. Your team owns the result.
             </p>
             <p className="text-[14px] text-ardent-studio/70">
               Need something bigger? We scope custom builds too.

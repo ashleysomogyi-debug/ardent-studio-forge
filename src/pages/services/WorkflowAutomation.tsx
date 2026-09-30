@@ -112,7 +112,7 @@ export default function WorkflowAutomation() {
         "We build with workflows that fit your existing tools. Every workflow we build is yours: fully documented, fully transferable.",
         "Most workflow builds ship in 1–2 weeks. We scope, build, test, and hand off: with a walkthrough so you understand exactly how it works.",
         "We're based in Boynton Beach, FL. Every client works directly with Ashley: no account managers, no hand-offs to junior staff.",
-        "Pricing is transparent: most workflow automations run $750–$2,500. We quote before we build. No surprises.",
+        "Every workflow automation is a fixed price, quoted after a free 15 minute call. No surprises.",
       ]}
       caseStudy={{
         title: "Palm Beach County Service Business",

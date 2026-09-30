@@ -28,9 +28,9 @@ const quotes = [
 ];
 
 const tiers = [
-  { name: "Single workshop", price: "$2,250", body: "One 3 hour live session for a small team. ($750/hr)", items: ["Up to 10 people", "Materials handed off", "30 day Q&A window"], interest: "single-workshop" },
-  { name: "Half day deep dive", price: "$3,750", body: "A focused 5 hour build session on one workflow. ($750/hr)", items: ["Up to 15 people", "We ship one tool together", "Recording + playbook"], featured: true, interest: "half-day-deep-dive" },
-  { name: "Four session team curriculum", price: "$9,000", body: "A four week program for a whole team.", items: ["4 live sessions", "Ongoing Slack support", "Custom prompt + scenario library built around your team's workflows"], interest: "four-session-curriculum" },
+  { name: "3 hour workshop", body: "One live session for a small team.", items: ["Up to 10 people", "Materials handed off", "30 day Q&A window"], interest: "single-workshop" },
+  { name: "5 hour half day", body: "A focused build session on one workflow.", items: ["Up to 15 people", "We ship one tool together", "Recording + playbook"], featured: true, interest: "half-day-deep-dive" },
+  { name: "Four session program", body: "A program over four sessions, quoted for your team.", items: ["4 live sessions", "Ongoing Slack support", "Custom prompt + scenario library built around your team's workflows"], interest: "four-session-curriculum" },
 ];
 const accentPills = ["bg-teal-bright", "bg-ardent-lime", "bg-coral", "bg-peach"];
 
@@ -114,7 +114,7 @@ const Training = () => {
                 A 5-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem: we build the tool together, in the room, and you leave with it running.
               </p>
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-primary mb-8">
-                5 HOURS, UP TO 15 PEOPLE, IN PERSON OR VIRTUAL, $3,750
+                5 HOURS, UP TO 15 PEOPLE, IN PERSON OR VIRTUAL
               </p>
               <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
                 Book the agent workshop
@@ -180,12 +180,12 @@ const Training = () => {
           <div className="max-w-[1100px] mx-auto">
             <span className="section-eyebrow mb-6">Pricing</span>
             <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-foreground" style={{ fontFamily: serif }}>
-              Transparent. Fixed.
+              Fixed price, quoted for your team.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {tiers.map((tier, i) => (
                 <div key={tier.name} className="workshop-card p-8">
-                  <span className={`mb-5 inline-flex rounded-full px-4 py-2.5 font-mono text-[clamp(24px,3vw,36px)] font-semibold text-ardent-studio ${accentPills[i]}`}>{tier.price}</span>
+                  <span className={`mb-5 inline-flex rounded-full px-4 py-2.5 font-mono text-[12px] font-semibold uppercase tracking-[0.12em] text-ardent-studio ${accentPills[i]}`}>Quoted for your team on a free call</span>
                   <h3 className="text-[22px] mb-2 text-foreground" style={{ fontFamily: serif }}>{tier.name}</h3>
                   <p className="text-[14px] text-body-text mb-6">{tier.body}</p>
                   <ul className="space-y-2 mb-8">
@@ -195,8 +195,8 @@ const Training = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={`/contact?interest=${tier.interest}`} className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A": "transparent", color: "#0D0D0D", border: tier.featured ? "none": "1px solid #0D0D0D" }}>
-                    Start here
+                  <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A": "transparent", color: "#0D0D0D", border: tier.featured ? "none": "1px solid #0D0D0D" }}>
+                    Get a quote in 15 minutes
                   </a>
                 </div>
               ))}
