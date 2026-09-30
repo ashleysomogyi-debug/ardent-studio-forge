@@ -53,7 +53,7 @@ const TypingHeadline = () => {
         className="text-[clamp(3rem,8vw,6rem)] leading-[1.05] font-normal text-foreground"
         style={{ fontFamily: serif }}
       >
-        Build what <span className="text-primary">connects</span>.
+        Build what <span className="text-primary">connects.</span>
       </h1>
     );
   }
