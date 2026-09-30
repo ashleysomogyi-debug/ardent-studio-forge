@@ -113,7 +113,7 @@ const ServicePageLayout = ({
                   {industries.map((industry) => (
                     <span
                       key={industry}
-                      className="font-sans text-[14px] text-label-text border border-border-subtle rounded-full px-4 py-2"
+                      className="font-sans text-[13px] text-label-text border border-border-subtle rounded-full px-4 py-2"
                     >
                       {industry}
                     </span>

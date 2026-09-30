@@ -91,7 +91,7 @@ const Training = () => {
         <section className="bg-blush px-5 py-12 md:px-10 md:py-[72px]">
           <div className="max-w-[1100px] mx-auto">
             <span className="section-eyebrow mb-6">Format</span>
-            <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-7 md:mb-10 text-ardent-studio" style={{ fontFamily: serif }}>
+            <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-10 text-ardent-studio" style={{ fontFamily: serif }}>
               Three steps, no fluff.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -130,7 +130,7 @@ const Training = () => {
         <section className="px-5 py-12 md:px-10 md:py-[72px]" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="section-eyebrow mb-6">What we cover</span>
-            <h2 className="text-[clamp(28px,4vw,44px)] mb-12" style={{ fontFamily: serif, color: "#F5F5F0" }}>
+            <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-10" style={{ fontFamily: serif, color: "#F5F5F0" }}>
               Six tracks. Pick the ones that fit your team.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
@@ -160,7 +160,7 @@ const Training = () => {
               <p className="text-[16px] leading-[1.75] text-ardent-studio/80">
                 Your team leaves a workshop able to actually use what they learned, not a survey of options. We include a 30-minute landscape lesson covering when you'd reach for ChatGPT or Gemini instead, but the rest of every workshop is Claude-first, hands-on.
               </p>
-              <p className="text-[14px] leading-[1.7] text-ardent-studio/65" style={{ fontFamily: serif }}>
+              <p className="text-[16px] leading-[1.7] text-ardent-studio/65" style={{ fontFamily: serif }}>
                 Depth over breadth. That's the choice.
               </p>
             </div>
@@ -183,7 +183,7 @@ const Training = () => {
         <section className="px-5 py-12 md:px-10 md:py-[72px]" style={{ background: "#F5F5F0" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="section-eyebrow mb-6">Pricing</span>
-            <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-7 md:mb-10 text-foreground" style={{ fontFamily: serif }}>
+            <h2 className="text-[clamp(28px,4vw,44px)] mb-7 md:mb-10 text-foreground" style={{ fontFamily: serif }}>
               Fixed price, quoted for your team.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

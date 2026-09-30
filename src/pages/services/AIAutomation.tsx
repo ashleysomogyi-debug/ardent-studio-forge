@@ -265,7 +265,7 @@ const AIAutomation = () => {
                     <TabsTrigger
                       key={tab.value}
                       value={tab.value}
-                      className="rounded-full border border-foreground/15 bg-card px-5 py-3 text-[15px] font-semibold text-foreground shadow-none data-[state=active]:border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-none"
+                      className="min-h-11 rounded-full border border-foreground/15 bg-card px-5 py-3 text-[16px] font-semibold text-foreground shadow-none data-[state=active]:border-primary data-[state=active]:bg-primary data-[state=active]:text-primary-foreground data-[state=active]:shadow-none"
                     >
                       {tab.label}
                     </TabsTrigger>
@@ -301,7 +301,7 @@ const AIAutomation = () => {
                     <p className="max-w-[50ch] text-[16px] font-semibold leading-relaxed text-foreground">
                       Recognize this? Book a free call and tell us what is eating your week.
                     </p>
-                    <Button asChild className="h-auto shrink-0 rounded-full bg-ardent-lime px-7 py-3.5 font-semibold text-ardent-studio hover:bg-ardent-lime/90">
+                    <Button asChild className="h-auto min-h-11 shrink-0 rounded-full bg-ardent-lime px-7 py-3.5 text-[16px] font-semibold text-ardent-studio hover:bg-ardent-lime/90">
                       <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer">
                         Book a free 15-min call
                       </a>
@@ -445,12 +445,12 @@ const AIAutomation = () => {
             <div className="workshop-card border-t-8 border-t-teal-bright p-7 md:p-10">
               <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Find the answer</h2>
               <p className="text-[16px] text-muted-foreground leading-relaxed mb-7">Bring us your data and a question. We clean it, analyze it, and give you a plain-English report with charts. Fixed price, quoted after a free 15 minute call.</p>
-              <Link to="/contact?interest=analyze-my-data" className="inline-flex px-7 py-3 bg-secondary text-secondary-foreground font-semibold rounded-full">Ask about your data</Link>
+              <Link to="/contact?interest=analyze-my-data" className="inline-flex min-h-11 items-center px-7 py-3 text-[16px] bg-secondary text-secondary-foreground font-semibold rounded-full">Ask about your data</Link>
             </div>
             <div className="rounded-3xl border-2 border-dashed border-coral bg-card p-7 md:p-10">
               <h2 className="text-[clamp(28px,4vw,44px)] text-foreground mb-5">Larger builds</h2>
               <p className="text-[16px] italic text-brick leading-relaxed mb-7">Bigger apps that need more than 2 to 4 weeks are quoted by phase after a scoping call.</p>
-              <Link to="/contact?interest=bigger-project" className="inline-flex px-7 py-3 border border-foreground text-foreground font-semibold rounded-full">Talk about a bigger build</Link>
+              <Link to="/contact?interest=bigger-project" className="inline-flex min-h-11 items-center px-7 py-3 text-[16px] border border-foreground text-foreground font-semibold rounded-full">Talk about a bigger build</Link>
             </div>
           </div>
         </section>

@@ -126,7 +126,7 @@ const Index = () => (
            <p className="mt-9 rounded-3xl border-2 border-dashed border-coral bg-card p-6 text-[16px] italic leading-relaxed text-brick">Bigger project? Larger apps are quoted by phase after a scoping call. <Link to="/contact" className="font-semibold text-brick underline underline-offset-4">Talk about a bigger build</Link></p>
           <div className="mt-10 flex flex-col gap-2 border-t border-border pt-6 sm:flex-row sm:gap-6">
             <span className="shrink-0 font-mono text-[13px] uppercase tracking-[0.15em] text-primary">Included in every build</span>
-            <p className="text-[14px] text-body-text">A live walkthrough, a short how-to guide, and 30 days of email support. You own the code and the accounts.</p>
+            <p className="text-[16px] text-body-text">A live walkthrough, a short how-to guide, and 30 days of email support. You own the code and the accounts.</p>
           </div>
         </div>
       </section>
@@ -183,7 +183,7 @@ const Index = () => (
             <span className="inline-flex items-center justify-center text-center rounded-full bg-ardent-lime px-3 py-2 font-mono text-[13px] uppercase tracking-[0.2em] text-ardent-studio">In build</span>
             <h3 className="mt-4 max-w-[24ch] text-[clamp(26px,3.5vw,40px)] font-semibold leading-tight text-dark-band-text">A spending plan in a CPA's own voice.</h3>
             <p className="mt-6 max-w-[78ch] text-[16px] leading-[1.75] text-dark-band-muted">Sherron Permashwar, CPA, teaches a spending method in her Get Wealthy With Me course and wanted students to apply it to their own real spending. We are building an app that reads a student's recent transactions and sorts them the way she teaches, with her personality quiz and a coaching voice written from her own answers. She owns the ownership rights and the code.</p>
-            <p className="mt-7 border-t border-coral pt-5 text-[13px] italic text-dark-band-muted">The first release is in build. Results will be added after launch.</p>
+            <p className="mt-7 border-t border-coral pt-5 text-[14px] italic text-dark-band-muted">The first release is in build. Results will be added after launch.</p>
             </div>
           </article>
             <p className="mt-8 text-[16px] leading-relaxed text-body-text">Sartori AI was built by Ardent and is now its own company. <a href="https://www.sartoriai.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline underline-offset-4">Visit Sartori AI</a></p>
@@ -232,8 +232,8 @@ const Index = () => (
               <div key={person.name} className="text-center">
                 <img src={person.src} alt={person.name} loading="lazy" className="mx-auto mb-5 aspect-square w-[190px] rounded-full border border-border object-cover md:w-[220px]" />
                 <h3 className="text-xl font-semibold text-foreground">{person.name}</h3>
-                <p className="mt-2 font-mono text-[12px] uppercase tracking-[0.1em] text-primary">{person.role}</p>
-                {person.detail && <p className="mt-3 text-[14px] text-body-text">{person.detail}</p>}
+                <p className="mt-2 font-mono text-[13px] uppercase tracking-[0.1em] text-primary">{person.role}</p>
+                {person.detail && <p className="mt-3 text-[16px] text-body-text">{person.detail}</p>}
               </div>
             ))}
           </div>
