@@ -3,18 +3,18 @@ import BlogPostLayout from "./BlogPostLayout";
 const Post4MakeComWorkflows = () => (
   <BlogPostLayout
     metaTitle="5 Make.com Workflows Palm Beach County Businesses Use Right Now | Ardent Studio"
-    metaDescription="Five proven Make.com workflows for Palm Beach County small businesses — lead capture, appointment reminders, invoice follow-ups, review alerts, and social scheduling."
+    metaDescription="Five proven Make.com workflows for Palm Beach County small businesses: lead capture, appointment reminders, invoice follow-ups, review alerts, and social scheduling."
     title="5 Make.com Workflows That Palm Beach County Businesses Are Using Right Now"
     date="May 2026"
     readTime="8 min read"
   >
-    <p>Make.com is the automation platform we build on at Ardent Studio, and it's become the backbone of how a lot of small businesses in Palm Beach County handle their lead flow, scheduling, invoicing, and communication. These five workflows are practical, proven, and worth knowing about — whether you're thinking about building them yourself or want to understand what's possible.</p>
+    <p>Make.com is the automation platform we build on at Ardent Studio, and it's become the backbone of how a lot of small businesses in Palm Beach County handle their lead flow, scheduling, invoicing, and communication. These five workflows are practical, proven, and worth knowing about: whether you're thinking about building them yourself or want to understand what's possible.</p>
 
     <h2>Why Make.com?</h2>
-    <p>Make.com connects your existing tools — your CRM, your inbox, your booking software, your invoicing app — and builds logic between them. It's more flexible than Zapier, cheaper for higher-volume builds, and the visual interface makes it genuinely readable once it's built. Most of what we build at Ardent Studio lives in Make.com.</p>
+    <p>Make.com connects your existing tools: your CRM, your inbox, your booking software, your invoicing app: and builds logic between them. It's more flexible than Zapier, cheaper for higher-volume builds, and the visual interface makes it genuinely readable once it's built. Most of what we build at Ardent Studio lives in Make.com.</p>
 
     <h2>Workflow 1: Lead Form → CRM + Automated Email Sequence</h2>
-    <p><strong>What it does:</strong> Someone fills out the contact form on your website. Make.com catches that submission and immediately creates a new contact record in your CRM, tags them with where they came from, and kicks off an email sequence — a welcome email right away, a follow-up with more info on day two, and a check-in on day five.</p>
+    <p><strong>What it does:</strong> Someone fills out the contact form on your website. Make.com catches that submission and immediately creates a new contact record in your CRM, tags them with where they came from, and kicks off an email sequence: a welcome email right away, a follow-up with more info on day two, and a check-in on day five.</p>
     <p><strong>Before:</strong> New lead comes in. It sits in your email inbox until you get around to it. Maybe you follow up that day, maybe it's two days later. The sequence is inconsistent.</p>
     <p><strong>After:</strong> Lead is in the CRM within seconds, tagged and ready. First email goes out in under two minutes. You get notified with the lead's info. No manual data entry.</p>
     <p><strong>Build time:</strong> 3–5 hours including testing and CRM setup.</p>
@@ -41,21 +41,21 @@ const Post4MakeComWorkflows = () => (
     <p><strong>ROI:</strong> A 2023 BrightLocal study found that 88% of consumers are more likely to use a business that responds to all reviews. Consistent review response directly impacts how Google surfaces your business in local search.</p>
 
     <h2>Workflow 5: Social Post Scheduled from Google Sheets → Posts to Multiple Platforms</h2>
-    <p><strong>What it does:</strong> You maintain a simple Google Sheet with your social content calendar — post text, image link, publish date, and which platforms. Make.com watches the sheet and, when the scheduled date arrives, automatically posts the content to the platforms you've specified — Instagram, Facebook, LinkedIn.</p>
+    <p><strong>What it does:</strong> You maintain a simple Google Sheet with your social content calendar: post text, image link, publish date, and which platforms. Make.com watches the sheet and, when the scheduled date arrives, automatically posts the content to the platforms you've specified: Instagram, Facebook, LinkedIn.</p>
     <p><strong>Before:</strong> You have a content calendar that you built and then stopped using. Posting is inconsistent because you have to remember to actually do it.</p>
     <p><strong>After:</strong> You batch your content once a week (or once a month). Make.com handles the actual publishing on schedule. Consistent presence without the daily friction.</p>
     <p><strong>Build time:</strong> 3–5 hours depending on how many platforms.</p>
 
     <h2>What These Five Have in Common</h2>
-    <p>Each of these workflows takes a task you're currently doing manually — or forgetting to do — and makes it happen automatically, every time, on schedule. They're also all built in a day or two. None require a six-month roadmap or a big-agency engagement. They're small, specific, and they work.</p>
+    <p>Each of these workflows takes a task you're currently doing manually: or forgetting to do: and makes it happen automatically, every time, on schedule. They're also all built in a day or two. None require a six-month roadmap or a big-agency engagement. They're small, specific, and they work.</p>
 
     <h2>Frequently Asked Questions</h2>
     <h3>Do I need a Make.com account to use these workflows?</h3>
     <p>Yes, but Make.com has a free plan that covers simple automations. Most of these workflows fit within the free or $9/month plan. We set up and manage the account as part of the build.</p>
     <h3>Can these workflows work with tools I already use?</h3>
-    <p>Make.com connects to 1,500+ apps — Gmail, Google Sheets, Calendly, QuickBooks, HubSpot, Slack, and most tools small businesses already use. If you're not sure about a specific tool, book a call and we'll check.</p>
+    <p>Make.com connects to 1,500+ apps: Gmail, Google Sheets, Calendly, QuickBooks, HubSpot, Slack, and most tools small businesses already use. If you're not sure about a specific tool, book a call and we'll check.</p>
     <h3>What if a workflow breaks?</h3>
-    <p>Make.com sends alerts when a workflow fails. We document everything we build, so if something needs fixing, you know exactly where to look — or you call us and we fix it quickly.</p>
+    <p>Make.com sends alerts when a workflow fails. We document everything we build, so if something needs fixing, you know exactly where to look: or you call us and we fix it quickly.</p>
   </BlogPostLayout>
 );
 

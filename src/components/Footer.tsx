@@ -84,7 +84,7 @@ const Footer = () => (
                   <a href={c.href} target="_blank" rel="noopener noreferrer" className="font-sans text-[14px] text-footer-muted hover:text-footer-text transition-colors">
                     {c.label}
                   </a>
-                ) : (
+                ): (
                   <a href={c.href} className="font-sans text-[14px] text-footer-muted hover:text-footer-text transition-colors">
                     {c.label}
                   </a>
@@ -110,7 +110,7 @@ const Footer = () => (
     {/* SEO city list strip -->*/}
     <div className="max-w-[1200px] mx-auto mt-10 pt-6 border-t border-border-subtle">
       <p className="font-sans text-[12px] text-footer-muted leading-[1.8] text-center">
-        Serving small businesses across Palm Beach County, FL — West Palm Beach · Boca Raton · Delray Beach · Boynton Beach · Jupiter · Palm Beach Gardens · Wellington · Lake Worth Beach · North Palm Beach · Riviera Beach · Royal Palm Beach · Greenacres · Lantana · Tequesta · Juno Beach · Palm Beach · and all of South Florida
+        Serving businesses across Palm Beach County, FL: West Palm Beach · Boca Raton · Delray Beach · Boynton Beach · Jupiter · Palm Beach Gardens · Wellington · Lake Worth Beach · North Palm Beach · Riviera Beach · Royal Palm Beach · Greenacres · Lantana · Tequesta · Juno Beach · Palm Beach · and all of South Florida
       </p>
     </div>
   </footer>

@@ -83,7 +83,7 @@ export default function BlogPostLayout({
               Ready to implement this for your Palm Beach County business?
             </p>
             <p className="text-sm mb-6" style={{ color: "rgba(13,13,13,0.62)" }}>
-              We'll map out what's automatable in your business in 15 minutes —
+              We'll map out what's automatable in your business in 15 minutes:
               no pitch, just a practical conversation.
             </p>
             <a
@@ -104,7 +104,7 @@ export default function BlogPostLayout({
                   "#C3F73A")
               }
             >
-              Book a free 15-minute call &rarr;
+               Book a free 15-min call &rarr;
             </a>
           </aside>
         </article>

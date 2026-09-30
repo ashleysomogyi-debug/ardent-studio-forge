@@ -11,12 +11,12 @@ const features = [
   {
     title: "Lead Follow-up Automation",
     description:
-      "Automatically send personalized follow-up emails to every new lead within minutes — no more lost opportunities from slow response times.",
+      "Automatically send personalized follow-up emails to every new lead within minutes: no more lost opportunities from slow response times.",
   },
   {
     title: "AI Customer Service Chatbot",
     description:
-      "A 24/7 chatbot on your website that answers FAQs, captures lead information, and routes inquiries to you — even when you're not available.",
+      "A 24/7 chatbot on your website that answers FAQs, captures lead information, and routes inquiries to you: even when you're not available.",
   },
   {
     title: "Email & Invoice Reminders",
@@ -26,7 +26,7 @@ const features = [
   {
     title: "Appointment Booking Automation",
     description:
-      "Connect your booking form to your calendar and email — new bookings get confirmation, prep info, and reminders automatically.",
+      "Connect your booking form to your calendar and email: new bookings get confirmation, prep info, and reminders automatically.",
   },
   {
     title: "Make.com Workflow Builds",
@@ -36,14 +36,14 @@ const features = [
   {
     title: "AI Tools Setup & Training",
     description:
-      "Get your team using ChatGPT, Claude, and other AI tools effectively — with prompts and workflows built specifically for your business.",
+      "Get your team using ChatGPT, Claude, and other AI tools effectively: with prompts and workflows built specifically for your business.",
   },
 ];
 
 const whyArdent = [
-  `We're based in Boynton Beach — right next door to West Palm Beach. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
-  "Most automation builds ship in 1–2 weeks. We scope, build, and hand off — you own everything we build.",
-  "We build with Make.com and Anthropic Claude — proven tools with transparent pricing and no vendor lock-in.",
+  `We're based in Boynton Beach: right next door to West Palm Beach. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
+  "Most automation builds ship in 1–2 weeks. We scope, build, and hand off: you own everything we build.",
+  "We build with Make.com and Anthropic Claude: proven tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,
 ];
 
@@ -68,7 +68,7 @@ const WestPalmBeach = () => {
             name: `How much does AI automation cost for a ${CITY} business?`,
             acceptedAnswer: {
               "@type": "Answer",
-              text: `AI automation projects at Ardent Studio typically run $500–$3,000 depending on complexity. Simple email automations or chatbots start around $500–$1,500. More complex multi-system builds run $1,500–$3,000. Every project starts with a free 15-minute discovery call — no commitment required.`,
+              text: `AI automation projects at Ardent Studio typically run $500–$3,000 depending on complexity. Simple email automations or chatbots start around $500–$1,500. More complex multi-system builds run $1,500–$3,000. Every project starts with a free 15-minute discovery call: no commitment required.`,
             },
           },
           {
@@ -102,7 +102,7 @@ const WestPalmBeach = () => {
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for West Palm Beach Small Businesses"
-      subheadline="Ardent Studio provides AI automation in West Palm Beach, FL — helping local businesses save 5–15 hours per week with custom workflows, chatbots, and AI tools."
+      subheadline="Ardent Studio provides AI automation in West Palm Beach, FL: helping local businesses save 5–15 hours per week with custom workflows, chatbots, and AI tools."
       introText="From financial services firms along Okeechobee Boulevard to healthcare practices, hospitality businesses downtown, and family-run services throughout the city, West Palm Beach small businesses are finding that the right AI automation pays for itself within weeks. Most clients see measurable time savings within 30 days."
       features={features}
       whyArdent={whyArdent}

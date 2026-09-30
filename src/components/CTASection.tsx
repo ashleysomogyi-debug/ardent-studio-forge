@@ -16,7 +16,7 @@ const CTASection = () => (
         Tell us<br />what you're<br /><em className="text-teal not-italic">building.</em>
       </h2>
       <p className="font-sans text-[16px] text-body-text max-w-[400px] md:max-w-[460px] mx-auto mb-8 md:mb-12 leading-[1.75]">
-        Scope call is free, takes 15 minutes, and you'll leave with a clear plan — whether you work with us or not.
+        Scope call is free, takes 15 minutes, and you'll leave with a clear plan: whether you work with us or not.
       </p>
       <div className="flex flex-col md:flex-row items-center justify-center gap-3 md:gap-5">
         <a
@@ -26,7 +26,7 @@ const CTASection = () => (
           data-hover
           className="font-sans text-[13px] bg-ardent-lime text-ardent-studio px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity w-full md:w-auto text-center"
         >
-          Book a free call
+          Book a free 15-min call
         </a>
         <a
           href="#work"

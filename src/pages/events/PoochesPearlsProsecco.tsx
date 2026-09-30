@@ -311,7 +311,7 @@ const PoochesPearlsProsecco = () => {
           <h2>How It Works</h2>
           <p>
             Win this auction item and choose any two of the four automations below. We'll build them
-            for your business from scratch — no tech skills needed on your end.
+            for your business from scratch: no tech skills needed on your end.
           </p>
         </div>
 
@@ -320,8 +320,8 @@ const PoochesPearlsProsecco = () => {
             <div className="num">01</div>
             <h3>Workflow Automation</h3>
             <p className="desc">
-              Those repetitive tasks you do every day — scheduling, invoicing, data entry, sending
-              reminders — we set up systems that handle them automatically so you don't have to.
+              Those repetitive tasks you do every day: scheduling, invoicing, data entry, sending
+              reminders: we set up systems that handle them automatically so you don't have to.
             </p>
             <p className="benefit">→ Get hours back every week without hiring anyone.</p>
           </div>
@@ -331,7 +331,7 @@ const PoochesPearlsProsecco = () => {
             <h3>Lead Generation Engine</h3>
             <p className="desc">
               We build a system that captures potential customers from your website, social media, or
-              ads. It collects their info and sends them straight to you — automatically.
+              ads. It collects their info and sends them straight to you: automatically.
             </p>
             <p className="benefit">→ New leads come to you on autopilot, 24/7.</p>
           </div>
@@ -340,7 +340,7 @@ const PoochesPearlsProsecco = () => {
             <div className="num">03</div>
             <h3>Marketing Automation</h3>
             <p className="desc">
-              Email campaigns, social media posts, and targeted messages that go out on their own —
+              Email campaigns, social media posts, and targeted messages that go out on their own:
               based on what your customers actually do. No more spending hours on manual marketing.
             </p>
             <p className="benefit">→ Consistent marketing that runs while you sleep.</p>
@@ -351,7 +351,7 @@ const PoochesPearlsProsecco = () => {
             <h3>24/7 Automated Follow-Ups</h3>
             <p className="desc">
               After someone reaches out or books with you, your system automatically sends a series
-              of emails or texts — reminders, check-ins, and thank-yous — without you lifting a
+              of emails or texts: reminders, check-ins, and thank-yous: without you lifting a
               finger.
             </p>
             <p className="benefit">→ Never lose a lead because you forgot to follow up.</p>

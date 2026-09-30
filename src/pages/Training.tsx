@@ -13,7 +13,7 @@ const format = [
 
 const tracks = [
   { t: "Build your first agent", d: "Pick a workflow that's leaking hours. Leave with a working tool that handles it for you.", featured: true },
-  { t: "Writing with AI", d: "Replies, proposals, and posts in your voice — not the default voice." },
+  { t: "Writing with AI", d: "Replies, proposals, and posts in your voice: not the default voice." },
   { t: "Research and analysis", d: "Use AI to read documents and pull out what matters." },
   { t: "Customer conversations", d: "Inbound triage, FAQ answers, and respectful follow-up." },
   { t: "Operations and admin", d: "Cleanups, summaries, and the small jobs nobody wants." },
@@ -52,7 +52,7 @@ const Training = () => {
               Skip the AI 101. Build something today.
             </h1>
             <p className="text-[18px] leading-[1.65] max-w-[640px] text-ardent-paper/75 mb-10">
-              In-person and virtual workshops for teams at agencies, consulting firms, and fractional practices. We build something real together — your team leaves with a tool, not a slide deck.
+              In-person and virtual workshops for teams at agencies, consulting firms, and fractional practices. We build something real together: your team leaves with a tool, not a slide deck.
             </p>
             <a href="https://calendly.com/asomogyi-ardentstudio/30min" target="_blank" rel="noopener noreferrer" className="inline-block px-8 py-4 text-[14px] rounded-full" style={{ background: "#C3F73A", color: "#0D0D0D" }}>
               Book a free 15-min call
@@ -109,7 +109,7 @@ const Training = () => {
                 Build your first agent.
               </h2>
               <p className="text-[17px] leading-[1.65] text-ardent-paper/80 max-w-[68ch] mb-8">
-                A 4-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem — we build the tool together, in the room, and you leave with it running.
+                A 4-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem: we build the tool together, in the room, and you leave with it running.
               </p>
               <p className="font-mono text-[11px] tracking-[0.2em] uppercase text-ardent-paper/70 mb-8">
                 4 Hours · Up to 15 People · In Person or Virtual · $3,750
@@ -129,7 +129,7 @@ const Training = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {tracks.map((t) => (
-                <div key={t.t} className={`p-7 border bg-card ${t.featured ? "border-primary/40" : "border-border"}`}>
+                <div key={t.t} className={`p-7 border bg-card ${t.featured ? "border-primary/40": "border-border"}`}>
                   {t.featured && (
                     <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-primary block mb-3">Differentiator</span>
                   )}
@@ -149,10 +149,10 @@ const Training = () => {
             </h2>
             <div className="max-w-3xl space-y-5">
               <p className="text-[16px] leading-[1.75] text-ardent-studio/80">
-                Most AI training tries to cover every model. We don't. We teach Claude — Anthropic's model — because it's what we use to build production tools for our clients.
+                Most AI training tries to cover every model. We don't. We teach Claude: Anthropic's model: because it's what we use to build production tools for our clients.
               </p>
               <p className="text-[16px] leading-[1.75] text-ardent-studio/80">
-                Your team leaves a workshop able to actually use what they learned, not a survey of options. We include a 30-minute landscape lesson covering when you'd reach for ChatGPT or Gemini instead — but the rest of every workshop is Claude-first, hands-on.
+                Your team leaves a workshop able to actually use what they learned, not a survey of options. We include a 30-minute landscape lesson covering when you'd reach for ChatGPT or Gemini instead: but the rest of every workshop is Claude-first, hands-on.
               </p>
               <p className="text-[14px] leading-[1.7] text-ardent-studio/65" style={{ fontFamily: serif }}>
                 Depth over breadth. That's the choice.
@@ -182,7 +182,7 @@ const Training = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {tiers.map((tier) => (
-                <div key={tier.name} className={`p-8 border bg-card ${tier.featured ? "border-primary" : "border-border"}`}>
+                <div key={tier.name} className={`p-8 border bg-card ${tier.featured ? "border-primary": "border-border"}`}>
                   <h3 className="text-[22px] mb-2 text-ardent-paper" style={{ fontFamily: serif }}>{tier.name}</h3>
                   <p className="text-[36px] mb-4" style={{ fontFamily: serif, color: "#0A7D7B" }}>{tier.price}</p>
                   <p className="text-[14px] text-ardent-paper/70 mb-6">{tier.body}</p>
@@ -193,7 +193,7 @@ const Training = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={`/contact?interest=${tier.interest}`} className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A" : "transparent", color: "#0D0D0D", border: tier.featured ? "none" : "1px solid #0D0D0D" }}>
+                  <a href={`/contact?interest=${tier.interest}`} className="inline-block px-6 py-3 text-[13px] rounded-full" style={{ background: tier.featured ? "#C3F73A": "transparent", color: "#0D0D0D", border: tier.featured ? "none": "1px solid #0D0D0D" }}>
                     Start here
                   </a>
                 </div>

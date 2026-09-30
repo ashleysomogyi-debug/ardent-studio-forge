@@ -9,29 +9,29 @@ interface Message {
 
 const WELCOME_MESSAGE: Message = {
   role: "bot",
-  text: "Hey there! I'm the Ardent Studio assistant. I can help you learn about our AI automation builds, team training workshops, pricing, timelines, and how to book a free call.\n\nWhat would you like to know?",
+  text: "Hey there! We can help you learn about our AI builds, team training, pricing, timelines, and how to book a free 15-min call.\n\nWhat would you like to know?",
   quickReplies: ["Services & Pricing", "How It Works", "Book a Call", "Contact Info"],
 };
 
 const RESPONSES: { keywords: string[]; text: string; quickReplies?: string[] }[] = [
   {
     keywords: ["service", "pricing", "price", "cost"],
-    text: "Two ways to work with us:\n\n**AI AUTOMATION BUILDS** — $2,000–$10,000, fixed price, 2–6 weeks depending on scope. One specific tool, scoped tightly so it ships. You own the code and accounts.\n\n**TEAM TRAINING** — Single workshop $2,250, half-day deep dive $3,750, four-session team curriculum $9,000.\n\nEvery engagement starts with a free 15-minute call to figure out which one (if either) actually fits.",
+    text: "We offer a free call, scoped data analysis at $150 an hour, fixed-price AI builds from $2,000, and hands-on team training from $2,250. We agree on scope before work starts.\n\nA free 15-minute call helps us find what fits.",
     quickReplies: ["How It Works", "Book a Call", "Timeline"],
   },
   {
     keywords: ["timeline", "how long", "days", "weeks"],
-    text: "**Automation builds:** 2–6 weeks depending on scope, fixed timeline, agreed upfront in the proposal.\n**Training workshops:** single live sessions, 3–5 hours each.\n\nNo padding — the timeline in your proposal is the timeline you get.",
+    text: "**AI builds:** Usually 2 to 4 weeks, with a fixed scope and timeline agreed before work starts.\n**Training:** We scope each workshop with your team.\n\nWe agree on the timeline before you commit.",
     quickReplies: ["Services & Pricing", "How It Works", "Book a Call"],
   },
   {
     keywords: ["process", "how it works", "steps", "workflow"],
-    text: "1. **SCOPE CALL** (15 mins, free) — We learn your business and needs.\n2. **PROPOSAL** (24 hours) — Fixed pricing, clear deliverables.\n3. **BUILD** (short sprints) — Updates every 2–3 days, constant feedback.\n4. **HANDOFF** — Deployed, documented, 30 days of email support included.",
+    text: "1. **SCOPE CALL:** We learn where your week leaks hours.\n2. **PROPOSAL:** We agree on scope, price, and timing.\n3. **BUILD:** We work in short loops with your feedback.\n4. **HANDOFF:** We walk through the tool and hand over the code, accounts, and a guide.",
     quickReplies: ["Services & Pricing", "Book a Call", "Timeline"],
   },
   {
     keywords: ["book", "consultation", "call", "schedule"],
-    text: "We offer a **FREE 15-minute scope call**. We'll understand your goals, discuss needs, recommend a service, and give you pricing.\n\nBook on our website or email hello@ardentstudio.io. Usually available within 24–48 hours.",
+    text: "We offer a **free 15-minute call** to understand your goals and see whether AI fits. We follow up in writing.\n\nBook through the site or email hello@ardentstudio.io.",
     quickReplies: ["Services & Pricing", "Contact Info"],
   },
   {
@@ -41,24 +41,24 @@ const RESPONSES: { keywords: string[]; text: string; quickReplies?: string[] }[]
   },
   {
     keywords: ["payment", "deposit", "upfront"],
-    text: "50% upfront to start, 50% on delivery. All pricing is fixed — no surprises.",
+    text: "We agree on the price before work starts. Payment terms are set out in the proposal.",
     quickReplies: ["Services & Pricing", "Book a Call"],
   },
   {
     keywords: ["support", "maintain", "update"],
-    text: "Every build includes 30 days of email support after handoff. Beyond that, we scope ongoing support case by case — no mandatory retainer.",
+    text: "Every build includes 30 days of email support after handoff. Beyond that, we scope ongoing support case by case. There is no mandatory retainer.",
     quickReplies: ["Services & Pricing", "Book a Call"],
   },
   {
     keywords: ["team", "who", "founder", "experience"],
-    text: "**Ashley Somogyi** — Cofounder, Build.\n**Wesley Price** — Cofounder, Strategy & Ops.\n\nLean team, direct communication, no account managers.",
+    text: "We are **Ashley Somogyi**, cofounder focused on building, and **Wesley Price**, cofounder focused on strategy and operations. We work directly with you.",
     quickReplies: ["Services & Pricing", "Book a Call"],
   },
 ];
 
 const DEFAULT_RESPONSE: Message = {
   role: "bot",
-  text: "I can help with: services & pricing, timelines, process, booking a consultation, contact info, and team details.\n\nWhat would you like to know?",
+  text: "We can help with services and pricing, timelines, process, booking a free 15-min call, contact info, and team details.\n\nWhat would you like to know?",
   quickReplies: ["Services & Pricing", "How It Works", "Book a Call", "Contact Info"],
 };
 
@@ -175,12 +175,7 @@ const ChatbotWidget = () => {
 
   const handleBookCall = () => {
     setIsOpen(false);
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
-    } else {
-      window.location.href = "/contact";
-    }
+    window.open("https://calendly.com/asomogyi-ardentstudio/30min", "_blank", "noopener,noreferrer");
   };
 
   const handleQuickReply = (text: string) => {
@@ -205,9 +200,9 @@ const ChatbotWidget = () => {
           flexDirection: "column",
           background: "#FFFFFF",
           boxShadow: "0 20px 60px rgba(13,13,13,0.16)",
-          opacity: isOpen ? 1 : 0,
-          transform: isOpen ? "translateY(0)" : "translateY(20px)",
-          pointerEvents: isOpen ? "auto" : "none",
+          opacity: isOpen ? 1: 0,
+          transform: isOpen ? "translateY(0)": "translateY(20px)",
+          pointerEvents: isOpen ? "auto": "none",
           transition: "opacity 0.3s ease, transform 0.3s ease",
           fontFamily: "Inter, sans-serif",
         }}
@@ -261,7 +256,7 @@ const ChatbotWidget = () => {
               <div
                 style={{
                   display: "flex",
-                  justifyContent: msg.role === "user" ? "flex-end" : "flex-start",
+                  justifyContent: msg.role === "user" ? "flex-end": "flex-start",
                   gap: 8,
                   alignItems: "flex-start",
                 }}
@@ -297,7 +292,7 @@ const ChatbotWidget = () => {
                           background: "#F5F5F0",
                           borderLeft: "3px solid #0A7D7B",
                         }
-                      : {
+                     : {
                           background: "#0A7D7B",
                           color: "#FFFFFF",
                         }),
@@ -402,7 +397,7 @@ const ChatbotWidget = () => {
               onMouseEnter={(e) => { (e.target as HTMLButtonElement).style.opacity = "0.9"; }}
               onMouseLeave={(e) => { (e.target as HTMLButtonElement).style.opacity = "1"; }}
             >
-              Book a Free 15-Min Call
+              Book a free 15-min call
             </button>
           )}
 
@@ -442,9 +437,9 @@ const ChatbotWidget = () => {
                 width: 40,
                 height: 40,
                 borderRadius: 10,
-                background: input.trim() ? "#0A7D7B" : "#D7D7D1",
+                background: input.trim() ? "#0A7D7B": "#D7D7D1",
                 border: "none",
-                cursor: input.trim() ? "pointer" : "default",
+                cursor: input.trim() ? "pointer": "default",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -464,7 +459,7 @@ const ChatbotWidget = () => {
 
       {/* Floating Bubble */}
       <button
-        onClick={() => (isOpen ? setIsOpen(false) : handleOpen())}
+        onClick={() => (isOpen ? setIsOpen(false): handleOpen())}
         aria-label="Open chat"
         style={{
           position: "fixed",
@@ -491,7 +486,7 @@ const ChatbotWidget = () => {
             <line x1="18" y1="6" x2="6" y2="18" />
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
-        ) : (
+        ): (
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
           </svg>

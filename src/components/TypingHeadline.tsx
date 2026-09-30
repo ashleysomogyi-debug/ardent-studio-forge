@@ -36,9 +36,9 @@ const TypingHeadline = () => {
     } else {
       timeoutRef.current = setTimeout(
         () => {
-          setText((t) => (deleting ? t.slice(0, -1) : current.slice(0, t.length + 1)));
+          setText((t) => (deleting ? t.slice(0, -1): current.slice(0, t.length + 1)));
         },
-        deleting ? DELETE_MS : TYPE_MS,
+        deleting ? DELETE_MS: TYPE_MS,
       );
     }
 

@@ -46,7 +46,7 @@ const WhatWeBuildSection = () => (
             key={card.num}
             to={card.to}
             className={`group relative overflow-hidden bg-surface p-8 md:p-10 border border-border transition-colors hover:bg-surface-2 ${
-              i > 0 ? "border-t-0 md:border-t md:border-l-0" : ""
+              i > 0 ? "border-t-0 md:border-t md:border-l-0": ""
             }`}
           >
             {/* Teal left border – scaleY from bottom */}

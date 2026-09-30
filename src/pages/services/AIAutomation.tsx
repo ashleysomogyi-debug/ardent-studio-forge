@@ -7,25 +7,20 @@ import heroSpeakingPhoto from "@/assets/photos/automation-workshop.png.asset.jso
 
 const serif = "'Inter', system-ui, sans-serif";
 
-const META_TITLE = "AI Automation for Small Business — Ardent Studio (Palm Beach County, FL)";
+const META_TITLE = "AI Automation for Small Business: Ardent Studio (Palm Beach County, FL)";
 const META_DESC =
-  "Custom AI automation that fits how your small business already works. Built with Make.com and Anthropic Claude. Most clients save 5+ hours per week within 30 days. Palm Beach County, FL — and remote.";
+  "Custom AI automation that fits how your team already works. Fixed-scope builds, based in Palm Beach County and available remotely.";
 
 const featuredBuilds = [
   {
     name: "Cold outreach engine",
     desc: "A drafting and sending system that finds the right contacts and writes openers in your voice.",
-    stack: "Python · Make · Claude · Gmail",
+    stack: "Python · Claude · Gmail",
   },
   {
     name: "Inbound reply drafter",
     desc: "Reads new emails as they hit the inbox and drafts a thoughtful reply for the owner to approve.",
-    stack: "Gmail · Claude · Make · Slack",
-  },
-  {
-    name: "Sartori operations stack",
-    desc: "The internal tooling that runs Sartori day to day — billing, ops alerts, and analytics.",
-    stack: "Stripe · Supabase · Slack · Make",
+    stack: "Gmail · Claude · Slack",
   },
 ];
 
@@ -39,16 +34,16 @@ const method = [
 ];
 
 const workflows: { title: string; desc: string; wide?: boolean }[] = [
-  { title: "Lead follow-up in minutes", desc: "Every inquiry gets a reply day or night — before the prospect calls the next name on the list." },
+  { title: "Lead follow-up in minutes", desc: "Every inquiry gets a reply day or night: before the prospect calls the next name on the list." },
   { title: "Inbound email triage", desc: "Drafts replies as new emails arrive, routes the rest to the right person." },
   { title: "Invoice chasing", desc: "Reminders matched to each customer's payment history, so you get paid without the awkward email." },
   { title: "Quote and proposal generation", desc: "Pulls from past quotes and your pricing logic to draft the next one." },
   { title: "Review requests", desc: "Happy customers get asked for a Google review at the right moment, automatically." },
   { title: "No-show reduction", desc: "Confirmations and reminders before every appointment, so the calendar holds." },
-  { title: "New-client onboarding", desc: "Welcome email, intake form, kickoff doc — sent the moment they say yes." },
+  { title: "New-client onboarding", desc: "Welcome email, intake form, kickoff doc: sent the moment they say yes." },
   { title: "Reporting and alerts", desc: "Weekly summary emails of what's running, what broke, what to do next." },
   { title: "Job-status updates", desc: "Customers told where their order or project stands without calling you." },
-  { title: "CRM data entry", desc: "Emails and calls logged automatically — no one types into the CRM again." },
+  { title: "CRM data entry", desc: "Emails and calls logged automatically: no one types into the CRM again." },
   { title: "Hiring intake", desc: "Applications screened against your criteria, interviews scheduled." },
   { title: "Morning brief", desc: "One email: today's schedule, money in, money out, what needs you." },
 ];
@@ -76,7 +71,7 @@ const AIAutomation = () => {
         mainEntity: [
           { "@type": "Question", name: "What does an AI automation project cost?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds run $2,000 to $10,000 over 2 to 4 weeks, fixed price and fixed timeline. Larger custom builds are scoped separately. Every project starts with a free 15-minute scope call." } },
           { "@type": "Question", name: "How long does a typical project take?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds ship in 2 to 4 weeks. We don't take on projects we can't deliver in 4 weeks; if it's bigger, we scope it as multiple phases." } },
-          { "@type": "Question", name: "What AI tools do you use?", acceptedAnswer: { "@type": "Answer", text: "We build with Anthropic Claude and Make.com as our primary stack. We chose Claude for its long context handling, reliable structured output, and voice-matching for client-facing writing." } },
+          { "@type": "Question", name: "What AI tools do you use?", acceptedAnswer: { "@type": "Answer", text: "We choose tools to fit the workflow. The build is documented and handed over with the accounts." } },
           { "@type": "Question", name: "Who do you work with?", acceptedAnswer: { "@type": "Answer", text: "Local service businesses, professional services (attorneys, accountants, consultants), trades and home services, and founder-stage AI products. We focus on small businesses and small teams, not enterprise." } },
         ],
       });
@@ -110,9 +105,7 @@ const AIAutomation = () => {
             </div>
             <TypingHeadline />
             <p className="mt-10 max-w-2xl font-sans text-lg lg:text-xl text-ardent-paper/80 leading-relaxed">
-              We build custom AI automation that fits how your team already works — using Make.com, Anthropic
-              Claude, and the tools you're already in. Most clients save 5+ hours per week within the first 30
-              days.
+              We build custom AI automation that fits how your team already works, using the tools you already have. We agree on a fixed scope before work starts.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <a
@@ -166,7 +159,7 @@ const AIAutomation = () => {
           <div className="max-w-[1200px] mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10">
               {workflows.map((w) => (
-                <div key={w.title} className={`p-7 min-h-[180px]${w.wide ? " md:col-span-2 lg:col-span-2" : ""}`} style={{ background: "#FFFFFF" }}>
+                <div key={w.title} className={`p-7 min-h-[180px]${w.wide ? " md:col-span-2 lg:col-span-2": ""}`} style={{ background: "#FFFFFF" }}>
                   <h3 className="text-[20px] mb-3 text-ardent-paper" style={{ fontFamily: serif }}>
                     {w.title}
                   </h3>
@@ -234,7 +227,7 @@ const AIAutomation = () => {
                   Democratising access to elite coaching intelligence.
                 </p>
                 <p className="text-[16px] leading-[1.7] text-ardent-studio/80 mb-8">
-                  AI-powered coaching platform for rugby, delivering personalised training analysis and performance insights to players and coaches at every level — from grassroots clubs to elite academies.
+                  AI-powered coaching platform for rugby, delivering personalised training analysis and performance insights to players and coaches at every level: from grassroots clubs to elite academies.
                 </p>
                 <div className="mt-auto">
                   <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-ardent-studio/60 block mb-4">
@@ -248,7 +241,7 @@ const AIAutomation = () => {
               {[
                 { t: "Web apps", d: "Customer portals, dashboards, and internal tools your team actually uses." },
                 { t: "Mobile apps", d: "iOS and Android apps for field teams, customers, and operations." },
-                { t: "AI products", d: "Full products with AI at the core — like Sartori." },
+                { t: "AI products", d: "Full products with AI at the core: like Sartori." },
               ].map((c) => (
                 <div key={c.t} className="p-7 border border-ardent-ink/15 bg-white/40">
                   <h4 className="text-[22px] mb-3 text-ardent-studio" style={{ fontFamily: serif }}>{c.t}</h4>

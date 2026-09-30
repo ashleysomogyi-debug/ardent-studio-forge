@@ -55,11 +55,11 @@ const Nav = () => {
       <nav
         className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-4 md:px-10 h-[80px] transition-all duration-200 border-b"
         style={{
-          background: scrolled ? "rgba(245,245,240,0.92)" : "rgba(245,245,240,0.72)",
-          borderColor: scrolled ? "rgba(13,13,13,0.08)" : "transparent",
+          background: scrolled ? "rgba(245,245,240,0.92)": "rgba(245,245,240,0.72)",
+          borderColor: scrolled ? "rgba(13,13,13,0.08)": "transparent",
           backdropFilter: "blur(24px)",
           WebkitBackdropFilter: "blur(24px)",
-          transform: hidden ? "translateY(-100%)" : "translateY(0)",
+          transform: hidden ? "translateY(-100%)": "translateY(0)",
         }}
       >
         <a href="/" className="flex items-center gap-3 shrink-0">
@@ -88,7 +88,7 @@ const Nav = () => {
           data-hover
           className="hidden md:inline-flex font-sans font-semibold text-[12px] md:text-[13px] bg-ardent-lime text-ardent-studio px-3 md:px-5 py-2 rounded-full hover:opacity-85 transition-opacity shrink-0"
         >
-          Book a free call
+          Book a free 15-min call
         </a>
 
         <button
@@ -160,7 +160,7 @@ const Nav = () => {
               onClick={() => setMenuOpen(false)}
               className="block w-full text-center font-sans text-[15px] font-semibold bg-ardent-lime text-ardent-studio px-6 py-4 rounded-full hover:opacity-85 transition-opacity"
             >
-              Book a free call
+              Book a free 15-min call
             </a>
           </div>
         </div>

@@ -104,7 +104,7 @@ const DotSphere = () => {
         ctx.stroke();
       }
 
-      // dots — sort back-to-front
+      // dots: sort back-to-front
       const projected = points.map((p) => {
         const t = transform(p.x, p.y, p.z);
         return { ...t, color: p.color };

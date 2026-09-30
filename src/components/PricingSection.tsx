@@ -67,7 +67,7 @@ const PricingSection = () => (
             className={`relative flex flex-col rounded-xl p-8 md:p-10 border ${
               tier.featured
                 ? "border-primary/40 bg-gradient-to-b from-primary/[0.07] to-surface-2"
-                : "border-border bg-surface-2"
+               : "border-border bg-surface-2"
             }`}
           >
             {tier.featured && (
@@ -96,12 +96,12 @@ const PricingSection = () => (
 
             <a
               href={tier.href}
-              {...(tier.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              {...(tier.external ? { target: "_blank", rel: "noopener noreferrer" }: {})}
               data-hover
               className={`font-sans text-[13px] px-6 py-3.5 rounded-full text-center transition-all ${
                 tier.featured
                   ? "bg-primary text-primary-foreground hover:opacity-90"
-                  : "border border-foreground/30 text-foreground hover:border-foreground/60"
+                 : "border border-foreground/30 text-foreground hover:border-foreground/60"
               }`}
             >
               {tier.cta}
@@ -113,7 +113,7 @@ const PricingSection = () => (
       {/* Retainer strip */}
       <div className="reveal-section flex flex-col md:flex-row items-start md:items-center justify-between border border-border rounded-xl p-5 md:p-7 gap-3 md:gap-4">
         <p className="font-sans text-[15px] text-muted-foreground leading-[1.75]">
-          Ongoing support available — hosting oversight, minor feature updates, and priority support.
+          Ongoing support available: hosting oversight, minor feature updates, and priority support.
         </p>
         <span className="font-sans text-[14px] text-primary whitespace-nowrap">From $300 / month</span>
       </div>

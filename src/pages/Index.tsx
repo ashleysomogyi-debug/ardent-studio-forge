@@ -1,486 +1,160 @@
-import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import CaseStudySection from "@/components/CaseStudySection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import { Link } from "react-router-dom";
-import lookAroundPhoto from "@/assets/photos/look-around-corner.png.asset.json";
 
-import heroSpeakingPhoto from "@/assets/photos/hero-speaking.png.asset.json";
+const calendly = "https://calendly.com/asomogyi-ardentstudio/30min";
 
-const ProcessStep = ({ s, i, children }: { s: any; i: number; children: React.ReactNode }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
-  const [reduced, setReduced] = useState(false);
-  useEffect(() => {
-    const m = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setReduced(m.matches);
-    if (m.matches) { setVisible(true); return; }
-    const el = ref.current;
-    if (!el) return;
-    const obs = new IntersectionObserver(([e]) => {
-      if (e.isIntersecting) { setVisible(true); obs.disconnect(); }
-    }, { threshold: 0.2 });
-    obs.observe(el);
-    return () => obs.disconnect();
-  }, []);
-  return (
-    <div
-      ref={ref}
-      className="grid grid-cols-1 md:grid-cols-[120px_1fr_1fr_1fr] gap-6 md:gap-10 py-8 md:py-10 px-2 md:px-4"
-      style={{
-        background: "#F5F5F0",
-        opacity: visible ? 1 : 0,
-        transform: visible ? "translateY(0)" : "translateY(24px)",
-        transition: reduced ? "none" : `opacity 600ms ease-out ${i * 120}ms, transform 600ms ease-out ${i * 120}ms`,
-      }}
-    >
-      {children}
-    </div>
-  );
-};
-
-const serif = "'Inter', system-ui, sans-serif";
-
-const offerings = [
+const offers = [
   {
-    title: "Look around the corner with me",
-    body: "A free 15-minute AI fit call. We talk through where your week is leaking hours, and I tell you honestly where AI fits and where it doesn't.",
-    included: ["A focused 15-minute call", "A short written follow-up", "Honest yes or no on whether to build"],
-    notIncluded: ["A sales pitch", "A 40-page deck"],
-    cta: { label: "Book the fit call", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
-    accent: "#0A7D7B",
-    price: "Free",
+    title: "Talk it through",
+    price: "FREE",
+    body: "A free 15-minute call to find where your week leaks hours. You get an honest yes or no on whether AI fits, and a short written follow-up.",
+    action: "Book the free call",
+    href: calendly,
   },
   {
-    title: "Build the small thing",
-    body: "We pick one specific AI tool that saves you real hours and I build it in 2–4 weeks at a fixed price. Scoped tightly so it actually ships.",
-    included: ["Fixed scope and fixed price", "Built in 2–4 weeks", "You own the code and the accounts"],
-    notIncluded: ["A 6 month roadmap", "Retainers you don't need"],
-    cta: { label: "Start a build", href: "https://calendly.com/asomogyi-ardentstudio/30min" },
-    accent: "#0A7D7B",
-    price: "From $2,000",
+    title: "Find the answer",
+    price: "$150 AN HOUR, SCOPED FIRST",
+    body: "Bring us your data and a question. We clean it, analyze it, and give you a plain-English report with charts. You get a scoped estimate before any work starts.",
+    action: "Ask about your data",
+    href: "/contact",
   },
   {
-    title: "Train your team",
-    body: "In-person and virtual workshops for small teams who want to actually use AI in their day, not just hear about it.",
-    included: ["Hands-on practice with real tools", "Materials your team keeps", "Follow-up Q&A window"],
-    notIncluded: ["Generic ChatGPT 101", "Death by PowerPoint"],
-    cta: { label: "See training", href: "/training", isLink: true },
-    accent: "#0A7D7B",
-    price: "Priced per workshop",
+    title: "Build it",
+    price: "FROM $2,000",
+    body: "One specific AI tool that saves real hours, built in 2 to 4 weeks at a fixed price. You own the code and the accounts.",
+    action: "Start a build",
+    href: "/contact",
   },
   {
-    title: "Teach you to keep going",
-    body: "Every build ends with a handoff session. I walk you through how it works, how to tweak it, and how to know when something breaks.",
-    included: ["Live walkthrough recording", "A short ops guide", "30 days of email support"],
-    notIncluded: ["Mandatory monthly retainer", "Handoff to a junior"],
-    cta: { label: "How handoff works", href: "#process" },
-    accent: "#0A7D7B",
-    price: "Included in every build",
+    title: "Teach your team",
+    price: "FROM $2,250",
+    body: "Hands-on workshops where your team builds something real with AI, with materials to keep and a follow-up Q and A window.",
+    action: "See training",
+    href: "/training",
   },
 ];
 
-const processSteps = [
-  {
-    num: "01",
-    title: "Scope call",
-    you: "Tell me where the week is leaking hours.",
-    me: "Ask the boring questions and write down what success looks like.",
-  },
-  {
-    num: "02",
-    title: "Proposal in 24 hours",
-    you: "Read it, ask anything, say yes or no.",
-    me: "Send a fixed scope, fixed price, and a real timeline within a day.",
-  },
-  {
-    num: "03",
-    title: "Build from as little as 2 weeks",
-    you: "Look at progress every few days and tell me what feels off.",
-    me: "Build in short loops and share what I'm working on as I go.",
-  },
-  {
-    num: "04",
-    title: "Handoff",
-    you: "Sit through the walkthrough and start using it.",
-    me: "Hand over the code, the accounts, and a guide you can actually follow.",
-  },
+const steps = [
+  { number: "01", title: "Scope call", you: "Tell us where the week leaks hours.", we: "We ask the practical questions and define what success looks like." },
+  { number: "02", title: "Proposal", you: "Review the scope, price, and timeline.", we: "We send a fixed scope and a clear price before work starts." },
+  { number: "03", title: "Build", you: "Review progress and tell us what needs adjusting.", we: "We build in short loops and keep you close to the work." },
+  { number: "04", title: "Handoff", you: "Join the walkthrough and start using your tool.", we: "We hand over the code, accounts, and a guide you can use." },
 ];
 
-const spaces = [
-  { name: "Marketing & creative agencies", note: "Advertising, PR, content, design, and social media firms." },
-  { name: "Consulting & advisory firms", note: "Management, sales, HR, and strategy consultancies." },
-  { name: "Fractional executives", note: "Fractional CMOs, CFOs, COOs, and operational advisors." },
-  { name: "Founder stage AI products", note: "Early stage tools shipping fast." },
+const studioTools = [
+  { title: "Cold outreach engine", detail: "Finds contacts and drafts openers in our own voice." },
+  { title: "Inbound reply drafter", detail: "Drafts replies for us to approve." },
+  { title: "LinkedIn content drafter", detail: "Drafts five post options every Monday." },
 ];
 
-const builds = [
-  {
-    name: "Cold outreach engine",
-    desc: "A drafting and sending system that finds the right contacts and writes openers in your voice.",
-    stack: "Python · Make · Claude · Gmail",
-  },
-  {
-    name: "Inbound reply drafter",
-    desc: "Reads new emails as they hit the inbox and drafts a thoughtful reply for the owner to approve.",
-    stack: "Gmail · Claude · Make · Slack",
-  },
-  {
-    name: "LinkedIn content drafter",
-    desc: "Pulls from your week and drafts five post options every Monday in your tone.",
-    stack: "Claude · Make · Google Docs · scheduled jobs",
-  },
-  {
-    name: "Sartori AI",
-    desc: "Featured. Custom-built AI role-play avatars and bite-sized lessons that ramp new sales reps faster and lift close rates for the whole team.",
-    stack: "Next.js · Claude · Supabase · custom infra",
-    featured: true,
-  },
-  {
-    name: "Sartori operations stack",
-    desc: "The internal tooling that runs Sartori day to day — billing, ops alerts, and analytics.",
-    stack: "Stripe · Supabase · Slack · Make",
-  },
-];
+const taught = ["EF keynote in Shanghai", "SHRM in Las Vegas", "Training in Denmark"];
 
-const Section = ({ bg, children, id }: { bg: string; children: React.ReactNode; id?: string }) => (
-  <section id={id} className="px-5 md:px-10 py-[88px] md:py-[140px]" style={{ background: bg }}>
-    <div className="max-w-[1200px] mx-auto">{children}</div>
-  </section>
-);
+const Index = () => (
+  <>
+    <Nav />
+    <main>
+      <HeroSection />
 
-const OfferingCard = ({ o }: { o: typeof offerings[number] }) => (
-  <div
-    className="border flex flex-col overflow-hidden"
-    style={{ background: "#FFFFFF", borderColor: `${o.accent}40` }}
-  >
-    <div className="p-7 md:p-9 flex flex-col flex-1">
-      <div className="flex items-center justify-between gap-4 mb-6">
-        <span className="block w-10 h-px" style={{ background: o.accent }} />
-        <span
-          className="font-mono text-[10px] tracking-[0.2em] uppercase px-3 py-1 rounded-full whitespace-nowrap"
-          style={{ background: `${o.accent}33`, color: o.accent }}
-        >
-          {o.price}
-        </span>
-      </div>
-      <h3 className="font-semibold text-[26px] md:text-[30px] leading-[1.15] mb-4 text-ardent-paper" style={{ fontFamily: serif }}>
-        {o.title}
-      </h3>
-      <p className="text-[15px] leading-[1.7] text-ardent-paper/75 mb-6">{o.body}</p>
-      <div className="space-y-4 mb-8">
-        <div>
-          <span className="font-mono text-[10px] tracking-[0.2em] uppercase" style={{ color: o.accent }}>Included</span>
-          <ul className="mt-2 space-y-1.5">
-            {o.included.map((i) => (
-              <li key={i} className="text-[14px] text-ardent-paper/85 flex gap-2">
-                <span style={{ color: o.accent }}>+</span>
-                <span>{i}</span>
-              </li>
+      <section className="bg-background px-5 py-20 md:px-10 md:py-28" aria-labelledby="offers-heading">
+        <div className="mx-auto max-w-[1200px]">
+          <span className="mb-5 block font-mono text-[11px] uppercase tracking-[0.2em] text-primary">How we work together</span>
+          <h2 id="offers-heading" className="mb-12 max-w-[18ch] text-[clamp(32px,5vw,56px)] font-semibold leading-[1.12] text-foreground">Four ways to make progress.</h2>
+          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+            {offers.map((offer, i) => (
+              <article key={offer.title} className="flex min-h-[350px] flex-col border border-border bg-card p-7">
+                <span className="mb-8 font-mono text-[11px] uppercase tracking-[0.1em] text-primary">{offer.price}</span>
+                <h3 className="mb-4 text-[25px] font-semibold leading-tight text-foreground">{offer.title}</h3>
+                <p className="mb-8 text-[15px] leading-[1.7] text-body-text">{offer.body}</p>
+                {offer.href.startsWith("http") ? (
+                  <a href={offer.href} target="_blank" rel="noopener noreferrer" className={`mt-auto inline-flex min-h-11 items-center justify-center self-start px-5 py-3 text-sm font-semibold transition-opacity hover:opacity-75 ${i === 0 ? "bg-ardent-lime text-ardent-studio": "border border-foreground text-foreground"}`}>{offer.action} →</a>
+                ): (
+                  <Link to={offer.href} className="mt-auto inline-flex min-h-11 items-center justify-center self-start border border-foreground px-5 py-3 text-sm font-semibold text-foreground transition-opacity hover:opacity-75">{offer.action} →</Link>
+                )}
+              </article>
             ))}
-          </ul>
+          </div>
+          <p className="mt-9 text-[15px] leading-relaxed text-body-text">Bigger project? Larger apps are quoted by phase after a scoping call. <Link to="/contact" className="font-semibold text-primary underline underline-offset-4">Talk about a bigger build</Link></p>
+          <div className="mt-10 flex flex-col gap-2 border-t border-border pt-6 sm:flex-row sm:gap-6">
+            <span className="shrink-0 font-mono text-[11px] uppercase tracking-[0.15em] text-primary">Included in every build</span>
+            <p className="text-[14px] text-body-text">A live walkthrough, a short ops guide, and 30 days of email support. You own the code and the accounts.</p>
+          </div>
         </div>
-        <div>
-          <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-ardent-paper/45">Not included</span>
-          <ul className="mt-2 space-y-1.5">
-            {o.notIncluded.map((i) => (
-              <li key={i} className="text-[14px] text-ardent-paper/50 flex gap-2">
-                <span>—</span>
-                <span>{i}</span>
-              </li>
-            ))}
-          </ul>
+      </section>
+
+      <section id="process" className="bg-background" aria-labelledby="process-heading">
+        <div className="relative flex min-h-[360px] items-end overflow-hidden md:min-h-[440px]">
+          <img src="https://ardentstudio.io/__l5e/assets-v1/03e28834-d7a2-4479-ab8b-b392e2055c87/look-around-corner.png" alt="Ashley and a client reviewing a workflow at a laptop" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-background/80 md:bg-background/65" />
+          <div className="relative mx-auto w-full max-w-[1200px] px-5 pb-12 pt-24 md:px-10">
+            <span className="mb-6 block font-mono text-[11px] uppercase tracking-[0.2em] text-primary">What working with us looks like</span>
+            <h2 id="process-heading" className="max-w-[20ch] text-[clamp(32px,5vw,56px)] font-semibold leading-[1.1] text-foreground">From first call to handoff in four steps.</h2>
+          </div>
         </div>
-      </div>
-      <div className="mt-auto pt-2">
-        {o.cta.isLink ? (
-          <Link
-            to={o.cta.href}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-sans font-semibold text-[14px] hover:opacity-90 transition-opacity"
-            style={{ background: o.title === "Look around the corner with me" ? "#C3F73A" : "transparent", color: "#0D0D0D", border: o.title === "Look around the corner with me" ? "none" : "1px solid #0D0D0D" }}
-          >
-            {o.cta.label} →
-          </Link>
-        ) : (
-          <a
-            href={o.cta.href}
-            target={o.cta.href.startsWith("#") ? undefined : "_blank"}
-            rel={o.cta.href.startsWith("#") ? undefined : "noopener noreferrer"}
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-sans font-semibold text-[14px] hover:opacity-90 transition-opacity"
-            style={{ background: o.title === "Look around the corner with me" ? "#C3F73A" : "transparent", color: "#0D0D0D", border: o.title === "Look around the corner with me" ? "none" : "1px solid #0D0D0D" }}
-          >
-            {o.cta.label} →
-          </a>
-        )}
-      </div>
-    </div>
-  </div>
-);
-
-const Index = () => {
-  return (
-    <>
-      <Nav />
-      <main>
-        {/* 1. HERO */}
-        <HeroSection />
-
-        {/* 2. OFFERINGS — dark, matching hero */}
-        <Section bg="#F5F5F0">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
-            How we serve businesses
-          </span>
-          <h2
-            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-semibold mb-14 max-w-[20ch] text-ardent-paper"
-            style={{ fontFamily: serif }}
-          >
-            Four ways we work together.
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {offerings.map((o) => (
-              <OfferingCard key={o.title} o={o} />
-            ))}
-          </div>
-        </Section>
-
-        {/* 3. PROCESS — full-bleed look-around band behind heading */}
-        <section id="process" className="relative w-full overflow-hidden bg-bg-base">
-          <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
-            <img
-              src={lookAroundPhoto.url}
-              alt="Ashley reviewing a workflow diagram at a laptop with a client during a scope call"
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  "linear-gradient(90deg, rgba(245,245,240,0.94) 0%, rgba(245,245,240,0.70) 48%, rgba(245,245,240,0.18) 100%), linear-gradient(180deg, rgba(245,245,240,0.08) 0%, rgba(245,245,240,0.94) 100%)",
-              }}
-            />
-            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
-              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
-                What working with us looks like
-              </span>
-              <h2
-                className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-semibold max-w-[20ch] text-ardent-paper"
-                style={{ fontFamily: serif }}
-              >
-                From first call to handoff in four steps.
-              </h2>
-              <p className="mt-6 max-w-[52ch] text-[15px] leading-[1.7] text-ardent-paper/70">
-                Steps 2 and 3 run on the ARDENT method — the six-part discipline we use to scope,
-                build, and hand off every project.{" "}
-                <Link
-                  to="/services/ai-automation#ardent-method"
-                  className="text-primary underline underline-offset-4 hover:text-primary/80 transition-colors"
-                >
-                  See the ARDENT method in detail →
-                </Link>
-              </p>
+        <div className="mx-auto max-w-[1200px] px-5 py-14 md:px-10 md:py-20">
+          {steps.map((step) => (
+            <div key={step.number} className="grid gap-3 border-b border-border py-7 md:grid-cols-[80px_1fr_1fr_1fr] md:gap-7">
+              <span className="font-mono text-2xl text-primary">{step.number}</span>
+              <h3 className="text-xl font-semibold text-foreground">{step.title}</h3>
+              <p className="text-[15px] leading-relaxed text-body-text"><span className="mb-1 block font-mono text-[10px] uppercase tracking-[0.15em] text-primary">You do</span>{step.you}</p>
+              <p className="text-[15px] leading-relaxed text-body-text"><span className="mb-1 block font-mono text-[10px] uppercase tracking-[0.15em] text-primary">We do</span>{step.we}</p>
             </div>
-          </div>
-        </section>
+          ))}
+        </div>
+      </section>
 
-        <Section bg="#F5F5F0">
-          <div className="space-y-px bg-ardent-paper/10">
-            {processSteps.map((s, i) => (
-              <ProcessStep key={s.num} s={s} i={i}>
-                <div className="text-[40px] md:text-[48px] font-light leading-none" style={{ fontFamily: serif, color: "#0A7D7B" }}>
-                  {s.num}
-                </div>
-                <div>
-                  <h3 className="text-[22px] md:text-[26px] font-normal text-ardent-paper" style={{ fontFamily: serif }}>
-                    {s.title}
-                  </h3>
-                </div>
-                <div>
-                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-primary block mb-2">You do</span>
-                  <p className="text-[15px] leading-[1.6] text-ardent-paper/75">{s.you}</p>
-                </div>
-                <div>
-                  <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-primary block mb-2">I do</span>
-                  <p className="text-[15px] leading-[1.6] text-ardent-paper/75">{s.me}</p>
-                </div>
-              </ProcessStep>
-            ))}
-          </div>
-        </Section>
-
-        {/* 4. SPACES — full-bleed podium band behind heading */}
-        <section id="work" className="relative w-full overflow-hidden bg-bg-base">
-          <div className="relative min-h-[56vh] md:min-h-[64vh] w-full flex items-end">
-            <img
-              src={heroSpeakingPhoto.url}
-              alt="Ashley speaking at a podium during an AI workshop"
-              loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover"
-            />
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  "linear-gradient(90deg, rgba(245,245,240,0.94) 0%, rgba(245,245,240,0.68) 48%, rgba(245,245,240,0.16) 100%), linear-gradient(180deg, rgba(245,245,240,0.08) 0%, rgba(245,245,240,0.94) 100%)",
-              }}
-            />
-            <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
-              <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
-                Building in spaces that matter
-              </span>
-              <h2
-                className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-semibold max-w-[22ch] text-ardent-paper"
-                style={{ fontFamily: serif }}
-              >
-                Where we focus.
-              </h2>
+      <section id="work" className="bg-background px-5 py-20 md:px-10 md:py-28" aria-labelledby="work-heading">
+        <div className="mx-auto max-w-[1200px]">
+          <h2 id="work-heading" className="mb-10 text-[clamp(32px,5vw,56px)] font-semibold text-foreground">Our work</h2>
+          <article className="border border-border bg-card p-7 md:p-11">
+            <span className="font-mono text-[11px] uppercase tracking-[0.2em] text-primary">In build</span>
+            <h3 className="mt-4 max-w-[24ch] text-[clamp(26px,3.5vw,40px)] font-semibold leading-tight text-foreground">A spending plan in a CPA's own voice.</h3>
+            <p className="mt-6 max-w-[78ch] text-[16px] leading-[1.75] text-body-text">Sherron Permashwar, CPA, teaches a spending method in her Get Wealthy With Me course and wanted students to apply it to their own real spending. We are building an app that reads a student's recent transactions and sorts them the way she teaches, with her personality quiz and a coaching voice written from her own answers. She owns the IP and the code.</p>
+            <p className="mt-7 border-t border-border pt-5 font-mono text-[11px] uppercase tracking-[0.08em] text-primary">Phase 1 is in build. Results will be added after launch.</p>
+          </article>
+          <div className="mt-14">
+            <h3 className="mb-5 text-xl font-semibold text-foreground">Tools we run our own studio on</h3>
+            <div className="grid gap-4 md:grid-cols-3">
+              {studioTools.map((tool) => <div key={tool.title} className="border-t border-border pt-4"><h4 className="font-semibold text-foreground">{tool.title}</h4><p className="mt-2 text-[14px] leading-relaxed text-body-text">{tool.detail}</p></div>)}
             </div>
+            <p className="mt-9 text-[14px] leading-relaxed text-body-text">Sartori AI was built by Ardent and is now its own company. <a href="https://www.sartoriai.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-primary underline underline-offset-4">Visit Sartori AI</a></p>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <Section bg="#F5F5F0">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-ardent-paper/10 mb-24">
-            {spaces.map((s) => (
-              <div key={s.name} className="p-8 min-h-[200px] flex flex-col justify-between" style={{ background: "#FFFFFF" }}>
-                <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-primary">Focus</span>
-                <div>
-                  <h3 className="text-[22px] leading-[1.2] mb-2 text-ardent-paper" style={{ fontFamily: serif }}>
-                    {s.name}
-                  </h3>
-                  <p className="text-[13px] text-ardent-paper/60">{s.note}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+      <section className="border-y border-border bg-card px-5 py-9 md:px-10" aria-label="Where we have taught">
+        <div className="mx-auto flex max-w-[1200px] flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+          <h2 className="font-mono text-[11px] uppercase tracking-[0.2em] text-primary">Where we have taught</h2>
+          <div className="flex flex-wrap gap-x-9 gap-y-3 text-sm font-medium text-foreground">{taught.map((item) => <span key={item}>{item}</span>)}</div>
+        </div>
+      </section>
 
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
-            Recent builds
-          </span>
-          <h3
-            className="text-[clamp(26px,4vw,40px)] leading-[1.15] font-semibold mb-10 text-ardent-paper"
-            style={{ fontFamily: serif }}
-          >
-            Real systems, shipped.
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {builds.map((b) => (
-              <div
-                key={b.name}
-                className={`p-7 border ${b.featured ? "border-primary/50" : "border-ardent-paper/10"} flex flex-col`}
-                style={{ background: "#FFFFFF" }}
-              >
-                <div className="flex items-center justify-between mb-4">
-                  <span className={`font-mono text-[10px] tracking-[0.2em] uppercase ${b.featured ? "text-primary" : "text-primary"}`}>
-                    {b.featured ? "Featured" : "Build"}
-                  </span>
-                  <span className={`font-mono text-[10px] tracking-[0.2em] uppercase px-2 py-1 border ${b.featured ? "border-border text-primary" : "border-border text-primary"}`}>
-                    Status Live
-                  </span>
-                </div>
-                <h4 className="text-[22px] mb-3 text-ardent-paper" style={{ fontFamily: serif }}>{b.name}</h4>
-                <p className="text-[14px] leading-[1.6] text-ardent-paper/70 mb-4">{b.desc}</p>
-                <p className="font-mono text-[12px] mt-auto" style={{ fontFamily: serif, color: "#0A7D7B" }}>
-                  {b.stack}
-                </p>
-              </div>
-            ))}
-          </div>
-        </Section>
-
-        {/* OUR STACK callout */}
-        <section className="px-5 md:px-10 py-12" style={{ background: "#F5F5F0" }}>
-          <div className="max-w-[1100px] mx-auto text-center">
-            <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-4">Our stack</span>
-            <p className="text-[clamp(22px,3vw,30px)] leading-[1.25] text-ardent-paper mb-3" style={{ fontFamily: serif }}>
-              We ship and teach what we actually use.
-            </p>
-            <p className="text-[15px] text-ardent-paper/70">
-              Every tool above runs on Anthropic Claude and Make.com. That's what we build with, and what your team will work in.
-            </p>
-            <div className="mt-5">
-              <Link
-                to="/services/ai-automation"
-                className="font-mono text-[11px] tracking-[0.2em] uppercase text-primary hover:opacity-70"
-              >
-                More about AI automation →
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        <CaseStudySection />
-        <TestimonialsSection />
-
-        {/* 5. ABOUT US — dark */}
-        <Section bg="#F5F5F0" id="about">
-          <span className="font-mono text-[11px] tracking-[0.25em] uppercase text-primary block mb-6">
-            About us
-          </span>
-          <h2
-            className="text-[clamp(32px,5vw,56px)] leading-[1.1] font-semibold mb-14 text-ardent-paper"
-            style={{ fontFamily: serif }}
-          >
-            About Us
-          </h2>
-
-          {/* Founder quote */}
-          <div className="mb-16 max-w-[60ch]">
-            <p style={{ fontFamily: serif }} className="font-semibold text-[22px] md:text-[26px] leading-[1.35] text-ardent-paper mb-5">
-              "If you work with Ardent, you're working with us. That's the whole pitch."
-            </p>
-            <p className="text-[16px] leading-[1.75] text-ardent-paper/80">
-              No account managers, no offshore handoffs, no slide decks with someone else's logo
-              swapped out. Just the two people who'll actually build the thing — sitting at the
-              same table you're sitting at.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 mb-16">
+      <section id="about" className="bg-background px-5 py-20 md:px-10 md:py-28" aria-labelledby="about-heading">
+        <div className="mx-auto max-w-[1200px]">
+          <span className="mb-5 block font-mono text-[11px] uppercase tracking-[0.2em] text-primary">About us</span>
+          <h2 id="about-heading" className="mb-8 text-[clamp(32px,5vw,56px)] font-semibold text-foreground">The people doing the work.</h2>
+          <p className="mb-12 max-w-[70ch] text-[18px] leading-relaxed text-body-text">We are Ashley and Wesley. We run Ardent Studio in Palm Beach County. We work directly with you to find where AI helps, build what fits, and make sure your team can use it. No account-manager handoff, just the people doing the work.</p>
+          <div className="grid gap-9 sm:grid-cols-3">
             {[
-              { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build" },
+              { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build", detail: "PhD, 15 plus years in sales, learning and product" },
               { src: "/wesley-profile.jpg", name: "Wesley Price", role: "Cofounder · Strategy & Ops" },
               { src: "/loki-willow-chairs.jpg", name: "Loki & Willow", role: "Chief Officers of Snuggles and Snacks" },
-            ].map((m) => (
-              <div key={m.name} className="flex flex-col items-center text-center">
-                <img
-                  src={m.src}
-                  alt={m.name}
-                  width={480}
-                  height={480}
-                  loading="lazy"
-                  className="w-[200px] h-[200px] md:w-[220px] md:h-[220px] rounded-full object-cover mb-5 border-2 border-border"
-                />
-                <h3 className="text-[24px] text-ardent-paper" style={{ fontFamily: serif }}>{m.name}</h3>
-                <span className="font-mono text-[11px] tracking-[0.15em] uppercase text-primary mt-2">
-                  {m.role}
-                </span>
+            ].map((person) => (
+              <div key={person.name} className="text-center">
+                <img src={person.src} alt={person.name} loading="lazy" className="mx-auto mb-5 aspect-square w-[190px] rounded-full border border-border object-cover md:w-[220px]" />
+                <h3 className="text-xl font-semibold text-foreground">{person.name}</h3>
+                <p className="mt-2 font-mono text-[10px] uppercase tracking-[0.1em] text-primary">{person.role}</p>
+                {person.detail && <p className="mt-3 text-[14px] text-body-text">{person.detail}</p>}
               </div>
             ))}
           </div>
-
-          <div className="space-y-5 text-[16px] leading-[1.75] text-ardent-paper/80 max-w-[68ch]">
-            <p>
-              We're Ashley and Wesley. We run Ardent Studio out of Palm Beach County. We figure out where small AI tools fit in your day, and we build them.
-            </p>
-            <p>
-              We started Ardent because we watched too many business owners get stuck between agencies that overpromise and tools that don't quite fit. They didn't need a transformation. They needed someone to sit at the table and figure out what would actually save them a few hours a week.
-            </p>
-            <p>
-              We're builders. We work in person when we can, on Zoom when we can't, and we build the tool while we talk. No account managers, no slide decks, no surprise invoices.
-            </p>
-            <p>
-              If you work with Ardent, you're working with us. That's the whole pitch.
-            </p>
-          </div>
-        </Section>
-      </main>
-
-      <div id="book-a-call" />
-      <Footer />
-    </>
-  );
-};
+          <p className="mt-12 max-w-[70ch] text-[16px] leading-relaxed text-body-text">We started Ardent to make practical tools with people, not hand them a deck and disappear. We work in person when we can and on Zoom when we cannot. From the first question to the final handoff, we stay close to the work and accountable for it.</p>
+        </div>
+      </section>
+    </main>
+    <Footer />
+  </>
+);
 
 export default Index;

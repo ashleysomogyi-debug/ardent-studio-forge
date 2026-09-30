@@ -28,8 +28,8 @@ const CustomCursor = () => {
 
     const setVisible = (v: boolean) => {
       visible = v;
-      dot.style.opacity = v ? "1" : "0";
-      ring.style.opacity = v ? "1" : "0";
+      dot.style.opacity = v ? "1": "0";
+      ring.style.opacity = v ? "1": "0";
     };
 
     const onMove = (e: MouseEvent) => {
@@ -45,7 +45,7 @@ const CustomCursor = () => {
       targetScale = 0.55; // ~20px from 36px
     };
     const onUp = () => {
-      targetScale = isHovering ? 1.78 : 1;
+      targetScale = isHovering ? 1.78: 1;
     };
 
     let isHovering = false;

@@ -24,7 +24,7 @@ const Contact = () => {
     const raw = params.get("interest");
     if (!raw) return "";
     const match = INTEREST_OPTIONS.find((o) => o.value === raw);
-    return match ? match.value : "";
+    return match ? match.value: "";
   })();
 
   const [form, setForm] = useState({
@@ -120,7 +120,7 @@ const Contact = () => {
                   Back to home
                 </Link>
               </div>
-            ) : (
+            ): (
               <form
                 onSubmit={handleSubmit}
                 className="space-y-5 p-8 md:p-10 border border-border rounded-xl"
@@ -219,7 +219,7 @@ const Contact = () => {
                   className="w-full px-8 py-4 text-[15px] rounded-full font-semibold disabled:opacity-50 disabled:cursor-not-allowed transition-opacity hover:opacity-90"
                   style={{ background: "#C3F73A", color: "#0D0D0D" }}
                 >
-                  {submitting ? "Sending…" : "Send message"}
+                  {submitting ? "Sending…": "Send message"}
                 </button>
               </form>
             )}

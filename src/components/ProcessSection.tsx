@@ -10,7 +10,7 @@ const steps = [
   {
     num: "02",
     title: "Proposal",
-    desc: "A fixed-price proposal with deliverables, milestones, and timeline — within 24 hours. No hourly billing. No surprise invoices. 50% upfront, 50% on delivery.",
+    desc: "A fixed-price proposal with deliverables, milestones, and timeline: within 24 hours. No hourly billing. No surprise invoices. 50% upfront, 50% on delivery.",
     meta: "24 hr turnaround",
   },
   {
@@ -22,7 +22,7 @@ const steps = [
   {
     num: "04",
     title: "Handoff",
-    desc: "Deployed app, full source code, and a walkthrough recording. Everything you need to own and run it independently — plus optional ongoing support.",
+    desc: "Deployed app, full source code, and a walkthrough recording. Everything you need to own and run it independently: plus optional ongoing support.",
     meta: "Day one ownership",
   },
 ];
@@ -45,7 +45,7 @@ const SpeedBars = () => {
   return (
     <div ref={ref} className="reveal-section max-w-[720px] mb-16 md:mb-24">
       <span className="block font-mono text-[10px] text-muted-foreground tracking-[0.2em] uppercase mb-5">
-        Website Build — Time to Launch
+        Website Build: Time to Launch
       </span>
 
       {/* Agency bar */}
@@ -54,7 +54,7 @@ const SpeedBars = () => {
         <div className="relative h-10 rounded bg-surface-3 overflow-hidden">
           <div
             className="absolute inset-y-0 left-0 bg-foreground/10 rounded transition-all duration-1000 ease-out flex items-center px-4"
-            style={{ width: visible ? "100%" : "0%" }}
+            style={{ width: visible ? "100%": "0%" }}
           >
             <span className="font-mono text-[11px] text-muted-foreground whitespace-nowrap">6 – 8 weeks</span>
           </div>
@@ -67,7 +67,7 @@ const SpeedBars = () => {
         <div className="relative h-10 rounded bg-surface-3 overflow-hidden">
           <div
             className="absolute inset-y-0 left-0 bg-primary rounded transition-all duration-1000 ease-out delay-300 flex items-center px-4"
-            style={{ width: visible ? "18%" : "0%", minWidth: visible ? "120px" : "0px" }}
+            style={{ width: visible ? "18%": "0%", minWidth: visible ? "120px": "0px" }}
           >
             <span className="font-mono text-[11px] text-primary-foreground whitespace-nowrap">5 – 7 days</span>
           </div>
@@ -75,7 +75,7 @@ const SpeedBars = () => {
       </div>
 
       <p className="font-mono text-[10px] text-muted-foreground/60 leading-[1.6]">
-        AI automation &amp; custom builds are scoped per project — always a fixed timeline, zero padding.
+        AI automation &amp; custom builds are scoped per project: always a fixed timeline, zero padding.
       </p>
     </div>
   );
@@ -100,7 +100,7 @@ const ProcessSection = () => (
         {steps.map((step, i) => (
           <div
             key={step.num}
-            className={`border border-border p-8 md:p-[56px_40px] ${i > 0 ? "border-t-0 md:border-t lg:border-l-0" : ""} ${i > 1 ? "md:border-t-0 lg:border-t" : ""} ${i === 1 ? "md:border-l-0" : ""} ${i === 3 ? "md:border-l-0" : ""}`}
+            className={`border border-border p-8 md:p-[56px_40px] ${i > 0 ? "border-t-0 md:border-t lg:border-l-0": ""} ${i > 1 ? "md:border-t-0 lg:border-t": ""} ${i === 1 ? "md:border-l-0": ""} ${i === 3 ? "md:border-l-0": ""}`}
           >
             <span className="font-mono text-[11px] text-muted-foreground">{step.num}</span>
             <h3 className="font-sans text-[22px] font-semibold text-foreground mt-3 md:mt-4 mb-4 md:mb-5">{step.title}</h3>
