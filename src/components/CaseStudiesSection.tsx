@@ -22,7 +22,7 @@ const heroStory = {
   headline: "78% of companies use AI. Only 6% are seeing transformative results.",
   body:
     "McKinsey's 2025 global study of nearly 2,000 executives found that AI adoption is now near-universal, but meaningful impact belongs to a small group. High performers who built AI into their business with a clear, structured strategy are 3.6× more likely to report significant bottom-line results. The gap between companies using AI and companies truly benefiting from it has never been wider.",
-  quote: "High performers are 3.6× more likely to report meaningful impact from AI, with strategic implementation as the differentiator is strategic implementation.",
+  quote: "High performers are 3.6× more likely to report meaningful impact from AI; the differentiator is strategic implementation.",
   result: "1,993 executives surveyed · 105 countries · Only 6% qualify as high performers",
   source: "McKinsey & Company, State of AI in 2025",
   sourceUrl:
