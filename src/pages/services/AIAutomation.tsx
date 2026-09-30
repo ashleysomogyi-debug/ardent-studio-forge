@@ -331,7 +331,7 @@ const AIAutomation = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="workshop-card flex flex-col p-10 md:p-14">
-                <span className="mb-4 block w-fit rounded-full bg-teal-bright px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ardent-studio">
+                <span className="mb-4 inline-flex w-fit items-center justify-center text-center rounded-full bg-teal-bright px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ardent-studio">
                   Sales Enablement · AI Role-Play
                 </span>
                 <h3 className="text-[clamp(28px,3.5vw,42px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
@@ -360,7 +360,7 @@ const AIAutomation = () => {
               </div>
 
               <div className="workshop-card flex flex-col p-10 md:p-14">
-                <span className="mb-4 block w-fit rounded-full bg-ardent-lime px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ardent-studio">
+                <span className="mb-4 inline-flex w-fit items-center justify-center text-center rounded-full bg-ardent-lime px-3 py-2 font-mono text-[11px] uppercase tracking-[0.18em] text-ardent-studio">
                   Sports Tech · AI Coaching
                 </span>
                 <h3 className="text-[clamp(28px,3.5vw,42px)] mb-4 text-ardent-studio" style={{ fontFamily: serif }}>
