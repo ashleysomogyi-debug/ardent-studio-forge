@@ -128,8 +128,8 @@ const Index = () => (
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {examples.map((example, i) => (
               <article key={example.title} className="workshop-card flex min-h-[280px] flex-col p-7 md:p-8">
-                <span className={`w-fit rounded-full px-3 py-2 font-mono text-[10px] font-semibold uppercase tracking-[0.16em] text-ardent-studio ${accentPills[i]}`}>Example</span>
-                <h3 className="mt-8 text-[24px] font-semibold leading-tight text-foreground">{example.title}</h3>
+                <span className={`mb-7 block h-2.5 w-2.5 rounded-full ${accentPills[i]}`} aria-hidden="true" />
+                <h3 className="text-[24px] font-semibold leading-tight text-foreground">{example.title}</h3>
                 <p className="mt-4 text-[15px] leading-[1.7] text-body-text">{example.detail}</p>
               </article>
             ))}
