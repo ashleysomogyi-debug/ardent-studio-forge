@@ -7,7 +7,6 @@ import { lazy, Suspense } from "react";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import ChatbotWidget from "./components/ChatbotWidget";
-import CustomCursor from "./components/CustomCursor";
 import { ScrollToAnchor } from "./components/ScrollToAnchor";
 
 // Eagerly loaded core pages
@@ -112,7 +111,6 @@ const App = () => (
           </Routes>
         </Suspense>
         <ChatbotWidget />
-        <CustomCursor />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

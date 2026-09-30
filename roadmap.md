@@ -54,3 +54,8 @@
 - [x] Replace six Training track cards with supplied titles and descriptions
 - [x] Audit other pages and metadata for old track names
 - [x] Verify mobile layout, contrast, protected files, and build
+
+## Proof, navigation, and offer updates
+- [x] Add homepage proof strip and simplify offer cards
+- [x] Update hero, footer, and Automation and Apps services list
+- [ ] Remove custom cursor, audit image text, and verify affected pages

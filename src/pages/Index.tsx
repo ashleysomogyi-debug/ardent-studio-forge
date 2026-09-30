@@ -16,13 +16,6 @@ const offers = [
     href: calendly,
   },
   {
-    title: "Find the answer",
-    price: "SCOPED FIRST",
-    body: "Bring us your data and a question. We clean it, analyze it, and give you a plain-English report with charts. You get a scoped estimate before any work starts.",
-    action: "Ask about your data",
-    href: "/contact",
-  },
-  {
     title: "Build it",
     price: "FIXED PRICE",
     body: "One specific AI tool that saves real hours, built in 2 to 4 weeks at a fixed price. You own the code and the accounts.",
@@ -87,17 +80,35 @@ const ownerQuestions = [
 const taught = ["EF keynote in Shanghai", "SHRM in Las Vegas", "Training in Denmark"];
 const accentPills = ["bg-teal-bright", "bg-ardent-lime", "bg-coral", "bg-peach"];
 
+const proof = [
+  { lead: "15 plus", caption: "years in sales, learning and product" },
+  { lead: "Keynotes", caption: "on three continents" },
+  { lead: "SartoriAI", caption: "built by us, live today" },
+  { lead: "You own", caption: "the code and the accounts" },
+];
+
 const Index = () => (
   <>
     <Nav />
     <main>
       <HeroSection />
 
+      <section className="border-y border-border bg-card px-5 py-7 md:px-10 md:py-9" aria-label="Ardent Studio at a glance">
+        <div className="mx-auto grid max-w-[1200px] grid-cols-2 gap-x-6 gap-y-7 lg:grid-cols-4 lg:gap-8">
+          {proof.map((item) => (
+            <div key={item.lead} className="border-l border-border pl-4 md:pl-6">
+              <strong className="block text-[clamp(22px,2.5vw,32px)] font-semibold leading-tight text-foreground">{item.lead}</strong>
+              <span className="mt-2 block font-mono text-[11px] uppercase leading-relaxed text-label-text">{item.caption}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="bg-background px-5 py-20 md:px-10 md:py-28" aria-labelledby="offers-heading">
         <div className="mx-auto max-w-[1200px]">
           <span className="section-eyebrow mb-5">How we work together</span>
-          <h2 id="offers-heading" className="mb-12 max-w-[18ch] text-[clamp(32px,5vw,56px)] font-semibold leading-[1.12] text-foreground">Four ways to make progress.</h2>
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+          <h2 id="offers-heading" className="mb-12 max-w-[18ch] text-[clamp(32px,5vw,56px)] font-semibold leading-[1.12] text-foreground">Three ways to make progress.</h2>
+          <div className="grid gap-4 md:grid-cols-3">
             {offers.map((offer, i) => (
               <article key={offer.title} className="workshop-card flex min-h-[350px] flex-col p-7">
                 <span className={`mb-8 inline-flex w-fit max-w-full items-center justify-center whitespace-nowrap rounded-full px-4 py-2 text-center font-mono text-[clamp(12px,1.15vw,16px)] font-semibold uppercase leading-none text-ardent-studio ${accentPills[i]}`}>{offer.price}</span>

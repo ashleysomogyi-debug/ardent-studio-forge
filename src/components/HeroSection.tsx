@@ -9,7 +9,7 @@ const HeroSection = () => (
         every week. We find what to automate, build it, and teach your team to run it.
       </h1>
       <p className="mt-10 max-w-2xl font-sans text-lg lg:text-xl text-body-text leading-relaxed">
-        Practical AI for the way you already work, at a fixed price. You own everything we build.
+         Practical AI for the way you already work. You own everything we build.
       </p>
       <p className="mt-6 font-mono text-sm tracking-[0.15em] uppercase text-label-text">
         FIXED PRICE, 2-4 WEEKS, YOU OWN IT
@@ -33,7 +33,7 @@ const HeroSection = () => (
         </a>
       </div>
       <ul className="mt-6 flex flex-wrap gap-x-6 gap-y-2 font-mono text-[11px] uppercase tracking-[0.12em] text-label-text" aria-label="What to expect">
-        {["No pitch", "Fixed price, no surprises", "You own what we build"].map((t) => (
+         {["No pitch", "Plain English", "You own what we build"].map((t) => (
           <li key={t} className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-coral" aria-hidden="true" />{t}</li>
         ))}
       </ul>
