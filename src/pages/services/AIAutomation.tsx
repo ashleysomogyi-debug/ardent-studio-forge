@@ -240,7 +240,7 @@ const AIAutomation = () => {
               }}
             />
             <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-24 md:pt-32 pb-10 md:pb-14">
-              <span className="section-eyebrow mb-6">
+              <span className="section-eyebrow section-eyebrow--on-photo mb-6">
                 Workflows we automate
               </span>
               <h2

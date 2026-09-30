@@ -100,7 +100,7 @@ const Index = () => (
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {offers.map((offer, i) => (
               <article key={offer.title} className="workshop-card flex min-h-[350px] flex-col p-7">
-                <span className={`mb-8 w-fit max-w-full rounded-full px-4 py-2.5 font-mono text-[clamp(15px,1.5vw,21px)] font-semibold uppercase leading-tight text-ardent-studio ${accentPills[i]}`}>{offer.price}</span>
+                <span className={`mb-8 inline-flex w-fit max-w-full items-center justify-center whitespace-nowrap rounded-full px-4 py-2 text-center font-mono text-[clamp(12px,1.15vw,16px)] font-semibold uppercase leading-none text-ardent-studio ${accentPills[i]}`}>{offer.price}</span>
                 <h3 className="mb-4 text-[25px] font-semibold leading-tight text-foreground">{offer.title}</h3>
                 <p className="mb-8 text-[15px] leading-[1.7] text-body-text">{offer.body}</p>
                 {offer.href.startsWith("http") ? (
@@ -146,7 +146,7 @@ const Index = () => (
           <img src="https://ardentstudio.io/__l5e/assets-v1/03e28834-d7a2-4479-ab8b-b392e2055c87/look-around-corner.png" alt="Ashley and a client reviewing a workflow at a laptop" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
           <div className="absolute inset-0 bg-background/80 md:bg-background/65" />
           <div className="relative mx-auto w-full max-w-[1200px] px-5 pb-12 pt-24 md:px-10">
-            <span className="section-eyebrow mb-6">What working with us looks like</span>
+            <span className="section-eyebrow section-eyebrow--on-photo mb-6">What working with us looks like</span>
             <h2 id="process-heading" className="max-w-[20ch] text-[clamp(32px,5vw,56px)] font-semibold leading-[1.1] text-foreground">From first call to handoff in four steps.</h2>
           </div>
         </div>
