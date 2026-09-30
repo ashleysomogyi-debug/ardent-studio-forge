@@ -9,7 +9,7 @@ const posts = [
     title: "What Can AI Actually Automate for Your Small Business?",
     date: "May 2026",
     excerpt:
-      "AI can handle far more than you think: here's a practical breakdown of what's automatable right now and what still needs a human.",
+      "AI can handle far more than you think. Here's a practical breakdown of what's automatable right now and what still needs a human.",
   },
   {
     slug: "ai-automation-cost-palm-beach-county",
@@ -40,7 +40,7 @@ const posts = [
       "The Real Reason Most Small Business AI Projects Fail (And How to Avoid It)",
     date: "May 2026",
     excerpt:
-      "Honest take on why automation projects stall: and what to do instead.",
+      "Honest take on why automation projects stall, and what to do instead.",
   },
 ];
 

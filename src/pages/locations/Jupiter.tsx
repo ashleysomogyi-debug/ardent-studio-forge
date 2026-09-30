@@ -11,12 +11,12 @@ const features = [
   {
     title: "Lead Follow-up Automation",
     description:
-      "Automatically send personalized follow-up emails to every new lead within minutes: no more lost opportunities from slow response times.",
+      "Automatically send personalized follow-up emails to every new lead within minutes, with no more lost opportunities from slow response times.",
   },
   {
     title: "AI Customer Service Chatbot",
     description:
-      "A 24/7 chatbot on your website that answers FAQs, captures lead information, and routes inquiries to you: even when you're not available.",
+      "A 24/7 chatbot on your website that answers FAQs, captures lead information, and routes inquiries to you, even when you're not available.",
   },
   {
     title: "Email & Invoice Reminders",
@@ -26,7 +26,7 @@ const features = [
   {
     title: "Appointment Booking Automation",
     description:
-      "Connect your booking form to your calendar and email: new bookings get confirmation, prep info, and reminders automatically.",
+      "Connect your booking form to your calendar and email, so new bookings get confirmation, prep info, and reminders automatically.",
   },
   {
     title: "Custom Workflow Builds",
@@ -36,14 +36,14 @@ const features = [
   {
     title: "AI Tools Setup & Training",
     description:
-      "Get your team using ChatGPT, Claude, and other AI tools effectively: with prompts and workflows built specifically for your business.",
+      "Get your team using ChatGPT, Claude, and other AI tools effectively, with prompts and workflows built specifically for your business.",
   },
 ];
 
 const whyArdent = [
   `We're based in Boynton Beach: right here in Palm Beach County, close to Jupiter. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
-  "Most automation builds ship in 1–2 weeks. We scope, build, and hand off: you own everything we build.",
-  "We build with automation tools and Anthropic Claude: tools with transparent pricing and no vendor lock-in.",
+  "Most automation builds ship in 1–2 weeks. We scope, build, and hand off, and you own everything we build.",
+  "We build with automation tools and Anthropic Claude, tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,
 ];
 
@@ -102,8 +102,8 @@ const Jupiter = () => {
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for Jupiter Small Businesses"
-      subheadline="Ardent Studio serves Jupiter businesses: from marine and charter operations to fitness studios, family-owned shops, and professional services: with practical AI automation that saves real hours."
-      introText="Jupiter's economy is built on seasonal businesses, marine industry, fitness, and family operations: all of which have significant repetitive administrative work. AI automation is especially powerful for businesses with seasonal surges, because you can handle 10x the volume without hiring 10x the staff."
+      subheadline="Ardent Studio serves Jupiter businesses, from marine and charter operations to fitness studios, family-owned shops, and professional services, with practical AI automation that saves real hours."
+      introText="Jupiter's economy is built on seasonal businesses, marine industry, fitness, and family operations, all of which have significant repetitive administrative work. AI automation is especially powerful for businesses with seasonal surges, because you can handle 10x the volume without hiring 10x the staff."
       features={features}
       whyArdent={whyArdent}
       ctaText={`Ready to save 5–15 hours per week? Let's find the right automation for your ${CITY} business.`}

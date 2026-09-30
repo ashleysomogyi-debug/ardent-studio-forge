@@ -36,7 +36,7 @@ const Post2AICost = () => (
     <p>A few things reliably push a quote higher: <strong>number of tools involved</strong> (connecting five tools is exponentially more complex than two), <strong>custom conditional logic</strong> (if-then rules with multiple conditions take longer to build and test), <strong>AI-generated content</strong> (adding a layer where the automation writes personalized text adds build time), <strong>messy existing processes</strong> (documenting the workflow before automating it is part of the work), and <strong>unusual tool integrations</strong> (older or niche tools sometimes require workarounds).</p>
 
     <h2>What Should Be in a Good Quote?</h2>
-    <p>Before you hire anyone: us or anyone else: make sure the quote includes: a defined scope (what exactly will be built), the tools involved, the number of revision rounds, testing, a handoff walkthrough, and documentation. Vague quotes produce vague results.</p>
+    <p>Before you hire anyone (us or anyone else), make sure the quote includes: a defined scope (what exactly will be built), the tools involved, the number of revision rounds, testing, a handoff walkthrough, and documentation. Vague quotes produce vague results.</p>
 
     <h2>Frequently Asked Questions</h2>
     <h3>Can a project start small and expand later?</h3>
