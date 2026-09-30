@@ -36,7 +36,7 @@ export default function BlogPostLayout({
       <Nav />
 
       <main className="flex-1">
-        <article className="px-6 py-16 md:py-24 max-w-2xl mx-auto">
+        <article className="px-6 py-12 md:py-[72px] max-w-2xl mx-auto">
           {/* Header */}
           <header className="mb-10">
             <h1
@@ -71,7 +71,7 @@ export default function BlogPostLayout({
             }}
           >
             <p
-              className="text-xs font-semibold tracking-widest uppercase mb-3"
+              className="text-[13px] font-semibold tracking-widest uppercase mb-3"
               style={{ color: "#0A7D7B" }}
             >
               Ardent Studio &middot; Boynton Beach, FL
@@ -82,7 +82,7 @@ export default function BlogPostLayout({
             >
               Ready to implement this for your Palm Beach County business?
             </p>
-            <p className="text-sm mb-6" style={{ color: "rgba(13,13,13,0.62)" }}>
+            <p className="text-[16px] mb-6" style={{ color: "rgba(13,13,13,0.62)" }}>
               We'll map out what's automatable in your business in 15 minutes:
               no pitch, just a practical conversation.
             </p>
@@ -90,7 +90,7 @@ export default function BlogPostLayout({
               href="https://calendly.com/asomogyi-ardentstudio/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 text-sm font-semibold px-5 py-3 rounded-lg transition-colors duration-150"
+              className="inline-flex items-center gap-1 text-[16px] font-semibold px-5 py-3 rounded-lg transition-colors duration-150"
               style={{
                 backgroundColor: "#C3F73A",
                 color: "#0D0D0D",

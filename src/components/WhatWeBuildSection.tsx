@@ -34,11 +34,11 @@ const cards = [
 ];
 
 const WhatWeBuildSection = () => (
-  <section id="services" className="relative py-[72px] md:py-[112px] px-5 md:px-10 bg-surface">
+  <section id="services" className="relative py-[72px] md:py-12 md:py-[72px] px-5 md:px-10 bg-surface">
     <div className="absolute top-8 left-1/2 -translate-x-1/2 text-primary/40 text-[24px]">◈</div>
     <div className="max-w-[1200px] mx-auto">
       <div className="reveal-section mb-8 md:mb-12">
-        <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase">What We Do For You</span>
+        <span className="font-mono text-[13px] text-primary tracking-[0.2em] uppercase">What We Do For You</span>
       </div>
       <div className="reveal-section grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {cards.map((card, i) => (
@@ -52,17 +52,17 @@ const WhatWeBuildSection = () => (
             {/* Teal left border – scaleY from bottom */}
             <div className="absolute top-0 left-0 bottom-0 w-[3px] bg-primary origin-bottom scale-y-0 group-hover:scale-y-100 transition-transform duration-500" />
 
-            <span className="font-mono text-[11px] text-muted-foreground">{card.num}</span>
+            <span className="font-mono text-[13px] text-muted-foreground">{card.num}</span>
             <h3 className="font-sans text-[20px] font-semibold text-foreground mt-3 mb-5">{card.title}</h3>
             <ul className="space-y-3">
               {card.bullets.map((b) => (
                 <li key={b} className="flex items-start gap-2.5">
                   <span className="mt-[7px] shrink-0 w-[6px] h-[6px] rounded-full bg-primary" />
-                  <span className="font-sans text-[14px] text-muted-foreground leading-[1.6]">{b}</span>
+                  <span className="font-sans text-[16px] text-muted-foreground leading-[1.6]">{b}</span>
                 </li>
               ))}
             </ul>
-            <span className="mt-5 inline-block font-mono text-[12px] text-primary opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+            <span className="mt-5 inline-block font-mono text-[13px] text-primary opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
               Learn more →
             </span>
           </Link>

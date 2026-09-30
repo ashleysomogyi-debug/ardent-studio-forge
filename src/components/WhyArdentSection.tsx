@@ -14,12 +14,12 @@ const cards = [
 ];
 
 const WhyArdentSection = () => (
-  <section className="relative py-[112px] px-5 md:px-10 overflow-hidden" style={{ background: "#FFFFFF" }}>
+  <section className="relative py-12 md:py-[72px] px-5 md:px-10 overflow-hidden" style={{ background: "#FFFFFF" }}>
     <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(145deg, rgba(10,125,123,0.04) 0%, transparent 40%, rgba(10,125,123,0.03) 100%)" }} />
 
     <div className="max-w-[1200px] mx-auto relative z-10">
       <div className="reveal-section mb-6 md:mb-10">
-        <span className="font-mono text-[11px] text-ardent-cyan tracking-[0.2em] uppercase">Why Ardent</span>
+        <span className="font-mono text-[13px] text-ardent-cyan tracking-[0.2em] uppercase">Why Ardent</span>
       </div>
 
       {/* 2-column layout: pull quote left, differentiators right */}
@@ -40,7 +40,7 @@ const WhyArdentSection = () => (
               <span className="text-ardent-cyan text-[16px] mt-1 shrink-0">◈</span>
               <div>
                 <h3 className="font-sans text-[22px] font-semibold text-foreground mb-3">{card.title}</h3>
-                <p className="font-sans text-[14px] text-body-text leading-[1.75]">{card.desc}</p>
+                <p className="font-sans text-[16px] text-body-text leading-[1.75]">{card.desc}</p>
               </div>
             </div>
           ))}

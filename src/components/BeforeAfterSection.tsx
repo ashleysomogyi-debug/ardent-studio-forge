@@ -23,7 +23,7 @@ const BeforeAfterSection = () => (
         {/* Left column */}
         <div className="bg-card">
           <div className="px-6 py-5 border-b border-border">
-            <span className="font-mono text-[11px] text-foreground tracking-[0.2em] uppercase">
+            <span className="font-mono text-[13px] text-foreground tracking-[0.2em] uppercase">
               Without Ardent
             </span>
           </div>
@@ -33,7 +33,7 @@ const BeforeAfterSection = () => (
               className={`flex items-start gap-3 px-6 py-4 ${i < leftItems.length - 1 ? "border-b border-border": ""}`}
             >
               <X size={16} className="text-destructive mt-0.5 shrink-0" />
-              <span className="font-sans text-[14px] text-muted-foreground leading-[1.6]">{item}</span>
+              <span className="font-sans text-[16px] text-muted-foreground leading-[1.6]">{item}</span>
             </div>
           ))}
         </div>
@@ -44,7 +44,7 @@ const BeforeAfterSection = () => (
         {/* Right column */}
         <div className="bg-surface-2 md:border-l-2 border-border border-t md:border-t-0">
           <div className="px-6 py-5 border-b border-border">
-            <span className="font-mono text-[11px] text-primary tracking-[0.2em] uppercase">
+            <span className="font-mono text-[13px] text-primary tracking-[0.2em] uppercase">
               With Ardent
             </span>
           </div>
@@ -54,7 +54,7 @@ const BeforeAfterSection = () => (
               className={`flex items-start gap-3 px-6 py-4 ${i < rightItems.length - 1 ? "border-b border-border": ""}`}
             >
               <Check size={16} className="text-primary mt-0.5 shrink-0" />
-              <span className="font-sans text-[14px] text-foreground leading-[1.6]">{item}</span>
+              <span className="font-sans text-[16px] text-foreground leading-[1.6]">{item}</span>
             </div>
           ))}
         </div>
