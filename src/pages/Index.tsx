@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-import lookAroundPhoto from "@/assets/photos/look-around-corner.png.asset.json";
 
 const calendly = "https://calendly.com/asomogyi-ardentstudio/30min";
 
@@ -86,7 +85,7 @@ const Index = () => (
 
       <section id="process" className="bg-background" aria-labelledby="process-heading">
         <div className="relative flex min-h-[360px] items-end overflow-hidden md:min-h-[440px]">
-          <img src={lookAroundPhoto.url} alt="Ashley and a client reviewing a workflow at a laptop" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+          <img src="https://ardentstudio.io/__l5e/assets-v1/03e28834-d7a2-4479-ab8b-b392e2055c87/look-around-corner.png" alt="Ashley and a client reviewing a workflow at a laptop" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
           <div className="absolute inset-0 bg-background/80 md:bg-background/65" />
           <div className="relative mx-auto w-full max-w-[1200px] px-5 pb-12 pt-24 md:px-10">
             <span className="mb-6 block font-mono text-[11px] uppercase tracking-[0.2em] text-primary">What working with us looks like</span>
