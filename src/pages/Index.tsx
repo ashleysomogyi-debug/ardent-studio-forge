@@ -166,7 +166,7 @@ const Index = () => (
             <div key={step.number} className="border-b border-border py-3.5 md:grid md:grid-cols-[80px_1fr_1fr_1fr] md:gap-7 md:py-7">
               <div className="flex items-center gap-3 md:contents">
                 <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full font-mono text-[13px] text-ardent-studio md:h-12 md:w-12 md:text-base ${accentPills[i]}`}>{step.number}</span>
-                <h3 className="text-lg font-semibold leading-snug text-foreground md:text-xl">{step.title}</h3>
+                <h3 className="text-lg font-semibold max-md:leading-snug text-foreground md:text-xl">{step.title}</h3>
               </div>
               <p className="mt-1.5 pl-11 text-[16px] leading-snug text-body-text md:hidden"><span className="font-mono text-[12px] uppercase tracking-[0.15em] text-primary">You do</span> {step.you} <span className="font-mono text-[12px] uppercase tracking-[0.15em] text-primary">We do</span> {step.we}</p>
               <p className="hidden text-[16px] leading-relaxed text-body-text md:block"><span className="mb-1 block font-mono text-[12px] uppercase tracking-[0.15em] text-primary">You do</span>{step.you}</p>

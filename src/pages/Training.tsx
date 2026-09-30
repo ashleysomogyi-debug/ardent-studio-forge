@@ -98,7 +98,7 @@ const Training = () => {
               {format.map((f, i) => (
                 <div key={f.num} className="workshop-card grid grid-cols-[32px_1fr] gap-x-3 p-4 md:block md:p-7">
                   <span className={`row-span-3 flex h-8 w-8 md:h-12 md:w-12 items-center justify-center rounded-full font-mono text-base text-ardent-studio ${accentPills[i]}`}>{f.num}</span>
-                  <h3 className="text-[20px] md:text-[22px] md:mt-4 leading-tight text-ardent-studio" style={{ fontFamily: serif }}>{f.title}</h3>
+                  <h3 className="text-[20px] md:text-[22px] md:mt-4 max-md:leading-tight text-ardent-studio" style={{ fontFamily: serif }}>{f.title}</h3>
                   <span className="font-mono text-[13px] block mb-1 md:mb-3" style={{ fontFamily: serif, color: "#0A7D7B" }}>{f.price}</span>
                   <p className="text-[16px] leading-[1.5] md:leading-[1.6] text-ardent-studio/70">{f.body}</p>
                 </div>
@@ -139,7 +139,7 @@ const Training = () => {
                   {t.featured && (
                     <span className="mb-2 md:mb-3 inline-flex items-center justify-center text-center rounded-full bg-ardent-lime px-3 py-1.5 md:py-2 font-mono text-[13px] uppercase tracking-[0.2em] text-ardent-studio">Differentiator</span>
                   )}
-                  <h3 className="text-[20px] md:text-[22px] mb-1 md:mb-3 leading-tight text-foreground" style={{ fontFamily: serif }}>{t.t}</h3>
+                  <h3 className="text-[20px] md:text-[22px] mb-1 md:mb-3 max-md:leading-tight text-foreground" style={{ fontFamily: serif }}>{t.t}</h3>
                   <p className="text-[16px] leading-[1.5] md:leading-[1.6] text-body-text">{t.d}</p>
                 </div>
               ))}
