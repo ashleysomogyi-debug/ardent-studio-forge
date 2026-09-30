@@ -63,7 +63,7 @@ const Nav = () => {
         }}
       >
         <a href="/" className="flex items-center gap-3 shrink-0">
-          <img src="/ardent-logo-circle.png" alt="" className="w-10 h-10 rounded-full object-cover" />
+          <img src="/ardent-logo-circle.png" alt="Ardent Studio circular logo" className="w-10 h-10 rounded-full object-cover" />
           <span className="flex flex-col"><span className="font-sans text-[16px] md:text-[18px] text-foreground tracking-wide font-semibold">Ardent Studio</span>
           <span className="font-mono text-[10px] md:text-[11px] text-ardent-cyan tracking-[0.1em] md:tracking-[0.15em] uppercase">Practical AI for Business</span>
           </span>
@@ -122,7 +122,7 @@ const Nav = () => {
           >
             <div className="flex items-center justify-between h-[68px]">
               <div className="flex items-center gap-3">
-                <img src="/ardent-logo-circle.png" alt="" className="w-10 h-10 rounded-full object-cover" />
+                <img src="/ardent-logo-circle.png" alt="Ardent Studio circular logo" className="w-10 h-10 rounded-full object-cover" />
                 <span className="flex flex-col">
                 <span className="font-sans text-[16px] text-foreground tracking-wide font-semibold">Ardent Studio</span>
                  <span className="font-mono text-[10px] text-ardent-cyan tracking-[0.1em] uppercase">Practical AI for Business</span>

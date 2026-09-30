@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 
 const services = [
-  { label: "AI Automation", to: "/services/ai-automation" },
-  { label: "AI Chatbots", to: "/services/ai-chatbot" },
-  { label: "Workflow Automation", to: "/services/workflow-automation" },
-  { label: "AI Tools Setup & Training", to: "/services/ai-tools-setup" },
+  { label: "AI Automation and Apps", to: "/services/ai-automation" },
   { label: "Training Workshops", to: "/training" },
+  { label: "Contact", to: "/contact" },
 ];
 
 const company = [
@@ -43,7 +41,7 @@ const Footer = () => (
           </span>
         </Link>
         <p className="font-sans text-[13px] text-footer-muted mt-4 leading-[1.6]">
-          AI automation for businesses in Palm Beach County and South Florida. Based in Boynton Beach, FL.
+           Practical AI for businesses in Palm Beach County and beyond. Based in Boynton Beach, FL.
         </p>
         <span className="mt-4 flex items-center gap-2 font-mono text-[11px] text-footer-muted"><span className="h-2 w-2 rounded-full bg-coral" aria-hidden="true" />© 2026 Ardent Studio</span>
       </div>

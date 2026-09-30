@@ -7,7 +7,6 @@ import { lazy, Suspense } from "react";
 import { useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import ChatbotWidget from "./components/ChatbotWidget";
-import CustomCursor from "./components/CustomCursor";
 import { ScrollToAnchor } from "./components/ScrollToAnchor";
 
 // Eagerly loaded core pages
@@ -107,12 +106,11 @@ const App = () => (
             <Route path="/blog/make-com-workflows-palm-beach-small-business" element={<Post4 />} />
             <Route path="/blog/why-ai-automation-fails-small-business" element={<Post5 />} />
 
-            {/* Catch-all — redirect to home */}
+            {/* Catch-all redirect to home */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Suspense>
         <ChatbotWidget />
-        <CustomCursor />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

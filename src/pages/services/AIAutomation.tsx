@@ -380,10 +380,11 @@ const AIAutomation = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
               {[
                 { t: "Web apps", d: "Customer portals, dashboards, and internal tools your team actually uses." },
                 { t: "Mobile apps", d: "iOS and Android apps for field teams, customers, and operations." },
+                { t: "Data analysis", d: "Bring us your data and a question. We clean it, analyze it and give you a plain-English report with charts." },
                 { t: "AI products", d: "Full products with AI at the core, like Sartori." },
               ].map((c, i) => (
                 <div key={c.t} className={`workshop-card border-t-8 p-7 ${i === 0 ? "border-t-teal-bright" : i === 1 ? "border-t-ardent-lime" : "border-t-coral"}`}>
