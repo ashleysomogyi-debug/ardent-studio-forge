@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
 
 const serif = "'Inter', system-ui, sans-serif";
@@ -219,14 +220,14 @@ const Contact = () => {
                   <p className="text-[14px] text-error-red">{error}</p>
                 )}
 
-                <button
+                <Button
                   type="submit"
                   disabled={submitting}
-                  className="w-full px-8 py-4 text-[15px] rounded-full font-semibold disabled:opacity-50 disabled:cursor-not-allowed transition-opacity hover:opacity-90"
-                  style={{ background: "#C3F73A", color: "#0D0D0D" }}
+                  variant="secondary"
+                  className="w-full h-auto px-8 py-4 text-[15px] rounded-full font-semibold"
                 >
                   {submitting ? "Sending…": "Send message"}
-                </button>
+                </Button>
               </form>
             )}
           </div>

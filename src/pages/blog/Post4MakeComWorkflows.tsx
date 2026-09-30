@@ -50,7 +50,7 @@ const Post4MakeComWorkflows = () => (
     <p>Each of these workflows takes a task you're currently doing manually: or forgetting to do: and makes it happen automatically, every time, on schedule. They're also all built in a day or two. None require a six-month roadmap or a big-agency engagement. They're small, specific, and they work.</p>
 
     <h2>Frequently Asked Questions</h2>
-    <h3>Do we need an automation tool account for these workflows?</h3>
+    <h3>Do you need an automation tool account for these workflows?</h3>
     <p>Yes, but Some automation tools have free plans for simple workflows. Pricing depends on the tools and volume. We set up and manage the account as part of the build.</p>
     <h3>Can these workflows work with tools I already use?</h3>
     <p>Automation tools connect to apps: Gmail, Google Sheets, Calendly, QuickBooks, HubSpot, Slack, and most tools small businesses already use. If you're not sure about a specific tool, book a call and we'll check.</p>

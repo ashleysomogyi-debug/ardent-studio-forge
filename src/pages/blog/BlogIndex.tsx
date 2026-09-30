@@ -29,7 +29,7 @@ const posts = [
   {
     slug: "make-com-workflows-palm-beach-small-business",
     title:
-      "5 workflow automation Workflows That Palm Beach County Businesses Are Using Right Now",
+      "5 Automation Workflows That Palm Beach County Businesses Are Using Right Now",
     date: "May 2026",
     excerpt:
       "Five real workflows: lead capture to CRM, invoice reminders, appointment confirmations, review alerts, and social scheduling.",
