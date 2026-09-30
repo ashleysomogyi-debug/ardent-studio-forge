@@ -11,12 +11,12 @@ const features = [
   {
     title: "Lead Follow-up Automation",
     description:
-      "Automatically send personalized follow-up emails to every new lead within minutes : no more lost opportunities from slow response times.",
+      "Automatically send personalized follow-up emails to every new lead within minutes: no more lost opportunities from slow response times.",
   },
   {
     title: "AI Customer Service Chatbot",
     description:
-      "A 24/7 chatbot on your website that answers FAQs, captures lead information, and routes inquiries to you : even when you're not available.",
+      "A 24/7 chatbot on your website that answers FAQs, captures lead information, and routes inquiries to you: even when you're not available.",
   },
   {
     title: "Email & Invoice Reminders",
@@ -26,7 +26,7 @@ const features = [
   {
     title: "Appointment Booking Automation",
     description:
-      "Connect your booking form to your calendar and email : new bookings get confirmation, prep info, and reminders automatically.",
+      "Connect your booking form to your calendar and email: new bookings get confirmation, prep info, and reminders automatically.",
   },
   {
     title: "Make.com Workflow Builds",
@@ -36,14 +36,14 @@ const features = [
   {
     title: "AI Tools Setup & Training",
     description:
-      "Get your team using ChatGPT, Claude, and other AI tools effectively : with prompts and workflows built specifically for your business.",
+      "Get your team using ChatGPT, Claude, and other AI tools effectively: with prompts and workflows built specifically for your business.",
   },
 ];
 
 const whyArdent = [
-  `We're based in Boynton Beach : minutes from Delray Beach. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
-  "Most automation builds ship in 1–2 weeks. We scope, build, and hand off : you own everything we build.",
-  "We build with Make.com and Anthropic Claude : proven tools with transparent pricing and no vendor lock-in.",
+  `We're based in Boynton Beach: minutes from Delray Beach. When you book a call with Ardent Studio, you talk to Ashley directly. Not a salesperson, not an account manager.`,
+  "Most automation builds ship in 1–2 weeks. We scope, build, and hand off: you own everything we build.",
+  "We build with Make.com and Anthropic Claude: proven tools with transparent pricing and no vendor lock-in.",
   `According to McKinsey (2023), businesses using automation effectively recover 6–8 hours per week. Our ${CITY} clients typically see results within 30 days.`,
 ];
 
@@ -68,7 +68,7 @@ const DelrayBeach = () => {
             name: `How much does AI automation cost for a ${CITY} business?`,
             acceptedAnswer: {
               "@type": "Answer",
-              text: `AI automation projects at Ardent Studio typically run $500–$3,000 depending on complexity. Simple email automations or chatbots start around $500–$1,500. More complex multi-system builds run $1,500–$3,000. Every project starts with a free 15-minute discovery call : no commitment required.`,
+              text: `AI automation projects at Ardent Studio typically run $500–$3,000 depending on complexity. Simple email automations or chatbots start around $500–$1,500. More complex multi-system builds run $1,500–$3,000. Every project starts with a free 15-minute discovery call: no commitment required.`,
             },
           },
           {
@@ -102,8 +102,8 @@ const DelrayBeach = () => {
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for Delray Beach Small Businesses"
-      subheadline="Ardent Studio helps Delray Beach restaurants, boutiques, creative businesses, and service companies save 5–15 hours per week with custom AI automation : no technical expertise required."
-      introText="Delray Beach has one of the most vibrant small business communities in Palm Beach County : Atlantic Avenue restaurants, boutique shops, wellness studios, and creative agencies all face the same challenge: not enough hours in the day. AI automation handles the repetitive work so you can focus on what makes your business special."
+      subheadline="Ardent Studio helps Delray Beach restaurants, boutiques, creative businesses, and service companies save 5–15 hours per week with custom AI automation: no technical expertise required."
+      introText="Delray Beach has one of the most vibrant small business communities in Palm Beach County: Atlantic Avenue restaurants, boutique shops, wellness studios, and creative agencies all face the same challenge: not enough hours in the day. AI automation handles the repetitive work so you can focus on what makes your business special."
       features={features}
       whyArdent={whyArdent}
       ctaText={`Ready to save 5–15 hours per week? Let's find the right automation for your ${CITY} business.`}
@@ -119,7 +119,7 @@ const DelrayBeach = () => {
       caseStudy={{
         title: "Delray Beach Restaurant Group",
         description:
-          "A multi-location Delray Beach restaurant was losing leads from their events inquiry form : emails sat unanswered for days. We built an automated response and qualification system.",
+          "A multi-location Delray Beach restaurant was losing leads from their events inquiry form: emails sat unanswered for days. We built an automated response and qualification system.",
         result: "Response time went from 2+ days to under 1 hour. Events bookings increased 30%.",
       }}
     />

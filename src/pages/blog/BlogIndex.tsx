@@ -9,7 +9,7 @@ const posts = [
     title: "What Can AI Actually Automate for Your Small Business?",
     date: "May 2026",
     excerpt:
-      "AI can handle far more than you think : here's a practical breakdown of what's automatable right now and what still needs a human.",
+      "AI can handle far more than you think: here's a practical breakdown of what's automatable right now and what still needs a human.",
   },
   {
     slug: "ai-automation-cost-palm-beach-county",
@@ -24,7 +24,7 @@ const posts = [
     title: "AI Automation vs. Hiring an Admin: Which Makes More Sense?",
     date: "May 2026",
     excerpt:
-      "A balanced comparison : what AI does better, what humans do better, and how most small businesses end up using both.",
+      "A balanced comparison: what AI does better, what humans do better, and how most small businesses end up using both.",
   },
   {
     slug: "make-com-workflows-palm-beach-small-business",
@@ -32,7 +32,7 @@ const posts = [
       "5 Make.com Workflows That Palm Beach County Businesses Are Using Right Now",
     date: "May 2026",
     excerpt:
-      "Five real workflows : lead capture to CRM, invoice reminders, appointment confirmations, review alerts, and social scheduling.",
+      "Five real workflows: lead capture to CRM, invoice reminders, appointment confirmations, review alerts, and social scheduling.",
   },
   {
     slug: "why-ai-automation-fails-small-business",
@@ -40,14 +40,14 @@ const posts = [
       "The Real Reason Most Small Business AI Projects Fail (And How to Avoid It)",
     date: "May 2026",
     excerpt:
-      "Honest take on why automation projects stall : and what to do instead.",
+      "Honest take on why automation projects stall: and what to do instead.",
   },
 ];
 
 export default function BlogIndex() {
   useEffect(() => {
     document.title =
-      "AI Automation Blog | Ardent Studio : Palm Beach County, FL";
+      "AI Automation Blog | Ardent Studio: Palm Beach County, FL";
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {

@@ -200,9 +200,9 @@ const ChatbotWidget = () => {
           flexDirection: "column",
           background: "#FFFFFF",
           boxShadow: "0 20px 60px rgba(13,13,13,0.16)",
-          opacity: isOpen ? 1 : 0,
-          transform: isOpen ? "translateY(0)" : "translateY(20px)",
-          pointerEvents: isOpen ? "auto" : "none",
+          opacity: isOpen ? 1: 0,
+          transform: isOpen ? "translateY(0)": "translateY(20px)",
+          pointerEvents: isOpen ? "auto": "none",
           transition: "opacity 0.3s ease, transform 0.3s ease",
           fontFamily: "Inter, sans-serif",
         }}
@@ -256,7 +256,7 @@ const ChatbotWidget = () => {
               <div
                 style={{
                   display: "flex",
-                  justifyContent: msg.role === "user" ? "flex-end" : "flex-start",
+                  justifyContent: msg.role === "user" ? "flex-end": "flex-start",
                   gap: 8,
                   alignItems: "flex-start",
                 }}
@@ -292,7 +292,7 @@ const ChatbotWidget = () => {
                           background: "#F5F5F0",
                           borderLeft: "3px solid #0A7D7B",
                         }
-                      : {
+                     : {
                           background: "#0A7D7B",
                           color: "#FFFFFF",
                         }),
@@ -437,9 +437,9 @@ const ChatbotWidget = () => {
                 width: 40,
                 height: 40,
                 borderRadius: 10,
-                background: input.trim() ? "#0A7D7B" : "#D7D7D1",
+                background: input.trim() ? "#0A7D7B": "#D7D7D1",
                 border: "none",
-                cursor: input.trim() ? "pointer" : "default",
+                cursor: input.trim() ? "pointer": "default",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -459,7 +459,7 @@ const ChatbotWidget = () => {
 
       {/* Floating Bubble */}
       <button
-        onClick={() => (isOpen ? setIsOpen(false) : handleOpen())}
+        onClick={() => (isOpen ? setIsOpen(false): handleOpen())}
         aria-label="Open chat"
         style={{
           position: "fixed",
@@ -486,7 +486,7 @@ const ChatbotWidget = () => {
             <line x1="18" y1="6" x2="6" y2="18" />
             <line x1="6" y1="6" x2="18" y2="18" />
           </svg>
-        ) : (
+        ): (
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
           </svg>

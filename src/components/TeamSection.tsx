@@ -38,7 +38,7 @@ const TeamSection = () => {
 
         <div className="grid grid-cols-1 gap-8">
           {/* Top row: Ashley + Wesley side by side on lg */}
-          {/* CARD 1 : Ashley */}
+          {/* CARD 1: Ashley */}
           <div
             className="rounded-xl p-8 transition-colors duration-300"
             style={{
@@ -166,7 +166,7 @@ const TeamSection = () => {
             </div>
           </div>
 
-          {/* CARD 2 : Wesley */}
+          {/* CARD 2: Wesley */}
           <div
             className="rounded-xl p-8 transition-colors duration-300"
             style={{
@@ -224,7 +224,7 @@ const TeamSection = () => {
                   <span className="font-medium" style={{ color: "#0A7D7B" }}>
                     Wesley makes sure the right things get built
                   </span>
-                  :in the right order, for the right reasons. He handles the strategy, client
+                 :in the right order, for the right reasons. He handles the strategy, client
                   operations, and the business side so that every project stays on track and every
                   client knows exactly where things stand. No black boxes, no radio silence.
                 </p>
@@ -283,7 +283,7 @@ const TeamSection = () => {
             </div>
           </div>
 
-          {/* CARD 3 : Loki & Willow */}
+          {/* CARD 3: Loki & Willow */}
           <div
             className="rounded-xl p-8 transition-colors duration-300"
             style={{
@@ -316,7 +316,7 @@ const TeamSection = () => {
 
             {/* Photo collage */}
             <div className="grid grid-cols-2 gap-1.5 rounded-xl overflow-hidden mb-8">
-              {/* Top row : full width */}
+              {/* Top row: full width */}
               <div className="col-span-2 relative overflow-hidden h-[280px]" style={{ background: "#FFFFFF" }}>
                 <img
                   src="/loki-willow-chairs.jpg"

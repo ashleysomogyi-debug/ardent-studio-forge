@@ -30,7 +30,7 @@ const BeforeAfterSection = () => (
           {leftItems.map((item, i) => (
             <div
               key={i}
-              className={`flex items-start gap-3 px-6 py-4 ${i < leftItems.length - 1 ? "border-b border-border" : ""}`}
+              className={`flex items-start gap-3 px-6 py-4 ${i < leftItems.length - 1 ? "border-b border-border": ""}`}
             >
               <X size={16} className="text-destructive mt-0.5 shrink-0" />
               <span className="font-sans text-[14px] text-muted-foreground leading-[1.6]">{item}</span>
@@ -51,7 +51,7 @@ const BeforeAfterSection = () => (
           {rightItems.map((item, i) => (
             <div
               key={i}
-              className={`flex items-start gap-3 px-6 py-4 ${i < rightItems.length - 1 ? "border-b border-border" : ""}`}
+              className={`flex items-start gap-3 px-6 py-4 ${i < rightItems.length - 1 ? "border-b border-border": ""}`}
             >
               <Check size={16} className="text-primary mt-0.5 shrink-0" />
               <span className="font-sans text-[14px] text-foreground leading-[1.6]">{item}</span>

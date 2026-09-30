@@ -48,7 +48,7 @@ const ContactFormSection = () => {
           <p className="text-primary font-sans text-center text-lg">
             Thanks! We will be in touch within 24 hours.
           </p>
-        ) : (
+        ): (
           <form onSubmit={handleSubmit} className="space-y-5">
             <div>
               <label htmlFor="name" className="block font-mono text-[11px] text-muted-foreground tracking-[0.1em] uppercase mb-2">
@@ -98,7 +98,7 @@ const ContactFormSection = () => {
               disabled={submitting}
               className="w-full font-sans text-[13px] bg-primary text-primary-foreground px-8 py-3.5 rounded-full hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {submitting ? 'Sending...' : 'Send message'}
+              {submitting ? 'Sending...': 'Send message'}
             </button>
           </form>
         )}

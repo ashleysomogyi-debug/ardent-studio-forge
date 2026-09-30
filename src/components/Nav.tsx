@@ -55,11 +55,11 @@ const Nav = () => {
       <nav
         className="fixed top-0 left-0 right-0 z-[100] flex items-center justify-between px-4 md:px-10 h-[80px] transition-all duration-200 border-b"
         style={{
-          background: scrolled ? "rgba(245,245,240,0.92)" : "rgba(245,245,240,0.72)",
-          borderColor: scrolled ? "rgba(13,13,13,0.08)" : "transparent",
+          background: scrolled ? "rgba(245,245,240,0.92)": "rgba(245,245,240,0.72)",
+          borderColor: scrolled ? "rgba(13,13,13,0.08)": "transparent",
           backdropFilter: "blur(24px)",
           WebkitBackdropFilter: "blur(24px)",
-          transform: hidden ? "translateY(-100%)" : "translateY(0)",
+          transform: hidden ? "translateY(-100%)": "translateY(0)",
         }}
       >
         <a href="/" className="flex items-center gap-3 shrink-0">

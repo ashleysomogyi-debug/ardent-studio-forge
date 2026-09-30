@@ -84,7 +84,7 @@ const Footer = () => (
                   <a href={c.href} target="_blank" rel="noopener noreferrer" className="font-sans text-[14px] text-footer-muted hover:text-footer-text transition-colors">
                     {c.label}
                   </a>
-                ) : (
+                ): (
                   <a href={c.href} className="font-sans text-[14px] text-footer-muted hover:text-footer-text transition-colors">
                     {c.label}
                   </a>

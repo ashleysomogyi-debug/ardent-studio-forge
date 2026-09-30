@@ -68,8 +68,8 @@ const Index = () => (
                 <h3 className="mb-4 text-[25px] font-semibold leading-tight text-foreground">{offer.title}</h3>
                 <p className="mb-8 text-[15px] leading-[1.7] text-body-text">{offer.body}</p>
                 {offer.href.startsWith("http") ? (
-                  <a href={offer.href} target="_blank" rel="noopener noreferrer" className={`mt-auto inline-flex min-h-11 items-center justify-center self-start px-5 py-3 text-sm font-semibold transition-opacity hover:opacity-75 ${i === 0 ? "bg-ardent-lime text-ardent-studio" : "border border-foreground text-foreground"}`}>{offer.action} →</a>
-                ) : (
+                  <a href={offer.href} target="_blank" rel="noopener noreferrer" className={`mt-auto inline-flex min-h-11 items-center justify-center self-start px-5 py-3 text-sm font-semibold transition-opacity hover:opacity-75 ${i === 0 ? "bg-ardent-lime text-ardent-studio": "border border-foreground text-foreground"}`}>{offer.action} →</a>
+                ): (
                   <Link to={offer.href} className="mt-auto inline-flex min-h-11 items-center justify-center self-start border border-foreground px-5 py-3 text-sm font-semibold text-foreground transition-opacity hover:opacity-75">{offer.action} →</Link>
                 )}
               </article>
