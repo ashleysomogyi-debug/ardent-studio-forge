@@ -127,10 +127,10 @@ const Training = () => {
           </div>
         </section>
 
-        <section className="bg-blush px-5 py-[120px] md:px-10">
+        <section className="px-5 py-[120px] md:px-10" style={{ background: "#0D0D0D" }}>
           <div className="max-w-[1100px] mx-auto">
             <span className="section-eyebrow mb-6">What we cover</span>
-            <h2 className="text-[clamp(28px,4vw,44px)] mb-12 text-foreground" style={{ fontFamily: serif }}>
+            <h2 className="text-[clamp(28px,4vw,44px)] mb-12" style={{ fontFamily: serif, color: "#F5F5F0" }}>
               Six tracks. Pick the ones that fit your team.
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
