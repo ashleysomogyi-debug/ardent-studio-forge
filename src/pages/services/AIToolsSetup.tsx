@@ -81,7 +81,7 @@ export default function AIToolsSetup() {
         {
           title: "AI Workflows",
           description:
-            "Combine AI (Claude or ChatGPT) with workflow automation automation to create powerful workflows: auto-draft emails, classify leads, extract data from documents.",
+            "Combine AI (Claude or ChatGPT) with automation to create powerful workflows: auto-draft emails, classify leads, extract data from documents.",
         },
         {
           title: "Team Training Sessions",
@@ -110,7 +110,7 @@ export default function AIToolsSetup() {
       ]}
       whyArdent={[
         "This isn't a generic AI course: it's a personalized setup session for your specific business. We review your workflows first, then build the tools and prompts you'll actually use.",
-        "We work with ChatGPT, Claude, Perplexity, workflow automation, and other leading AI tools. We recommend what's right for your use case, not what we're paid to sell.",
+        "We work with ChatGPT, Claude, Perplexity, automation tools, and other leading AI tools. We recommend what's right for your use case, not what we're paid to sell.",
         "Sessions are held over Zoom or in person across Palm Beach County. Most clients need 1–3 sessions to get fully set up and confident.",
         "We're based in Boynton Beach, FL. You work directly with Ashley: not a trainer who's never run a business.",
       ]}

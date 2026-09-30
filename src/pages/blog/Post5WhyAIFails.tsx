@@ -15,7 +15,7 @@ const Post5WhyAIFails = () => (
     <p><strong>What to do instead:</strong> Pick one problem. The most painful thing, the one that costs you the most time every week. Build for that. Get it live. Then decide what's next. One well-built automation that actually runs beats a detailed roadmap that never launches.</p>
 
     <h2>Mistake 2: Buying Tools Without a Plan</h2>
-    <p>workflow automation, Zapier, ChatGPT, Notion AI, HubSpot, ClickUp: the tools are everywhere, and they all promise to fix your workflow. So people buy five of them, connect them poorly, and end up with a more complicated mess than they started with.</p>
+    <p>Automation tools, Zapier, ChatGPT, Notion AI, HubSpot, ClickUp: the tools are everywhere, and they all promise to fix your workflow. So people buy five of them, connect them poorly, and end up with a more complicated mess than they started with.</p>
     <p><strong>What to do instead:</strong> Start with the process, not the tool. Map out what you're actually trying to automate: what triggers it, what happens next, what the output looks like. Then pick the minimum number of tools required to make that happen. Usually it's two, maybe three.</p>
 
     <h2>Mistake 3: Automating a Broken Process</h2>
@@ -43,7 +43,7 @@ const Post5WhyAIFails = () => (
     <h3>What's the fastest way to get a working automation?</h3>
     <p>Start with one problem. Don't design the perfect system: build the minimum viable automation that solves the one problem. You can always expand it later. Done beats perfect, especially for the first build.</p>
     <h3>How do I avoid getting locked into a vendor or consultant?</h3>
-    <p>Demand documentation, demand a handoff walkthrough, and make sure you have access to all the accounts and tools involved. Everything Ardent Studio builds is fully yours: including the workflow automation scenarios, the connected accounts, and the documentation. We don't hold anything hostage.</p>
+    <p>Demand documentation, demand a handoff walkthrough, and make sure you have access to all the accounts and tools involved. Everything Ardent Studio builds is fully yours: including the automation workflows, the connected accounts, and the documentation. We don't hold anything hostage.</p>
   </BlogPostLayout>
 );
 
