@@ -4,6 +4,7 @@ import { useLocation } from "react-router-dom";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
+  { label: "AI Setup", href: "/services/ai-setup" },
   { label: "Automation & Apps", href: "/services/ai-automation" },
   { label: "Training", href: "/training" },
   { label: "Contact", href: "/contact" },
@@ -56,7 +57,7 @@ const Nav = () => {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-[100] flex h-14 items-center justify-between border-b px-4 transition-transform duration-200 md:h-16 md:px-10"
+        className="fixed top-0 left-0 right-0 z-[100] flex h-14 items-center justify-between border-b px-4 transition-transform duration-200 md:h-16 md:px-6 lg:px-5 xl:px-10"
         style={{
           background: "var(--site-header-bg)",
           borderColor: "rgba(255,255,255,0.08)",
@@ -66,17 +67,17 @@ const Nav = () => {
         <a href="/" className="flex items-center gap-3 shrink-0">
           <img src="/ardent-logo-circle.png" alt="Ardent Studio circular logo" className="w-10 h-10 rounded-full object-cover" />
           <span className="flex flex-col"><span className="font-sans text-[16px] md:text-[18px] text-footer-text tracking-wide font-semibold">Ardent Studio</span>
-          <span className="font-mono text-[13px] text-teal-bright tracking-[0.1em] md:tracking-[0.15em] uppercase">Practical AI for Business</span>
+          <span className="hidden font-mono text-[13px] text-teal-bright tracking-[0.1em] xl:block xl:tracking-[0.15em] uppercase">Practical AI for Business</span>
           </span>
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-4 xl:gap-8">
           {NAV_LINKS.map((item) => (
             <a
               key={item.label}
               href={item.href}
               aria-current={isActive(item.href) ? "page" : undefined}
-              className={`flex h-16 items-center border-b-2 pt-0.5 font-sans text-[16px] text-footer-text transition-colors hover:text-ardent-lime ${isActive(item.href) ? "border-teal-bright" : "border-transparent"}`}
+              className={`flex h-16 items-center whitespace-nowrap border-b-2 pt-0.5 font-sans text-[16px] text-footer-text transition-colors hover:text-ardent-lime ${isActive(item.href) ? "border-teal-bright" : "border-transparent"}`}
             >
               {item.label}
             </a>
@@ -88,7 +89,7 @@ const Nav = () => {
           target="_blank"
           rel="noopener noreferrer"
           data-hover
-          className="hidden md:inline-flex font-sans font-semibold text-[16px] bg-ardent-lime text-ardent-studio px-4 md:px-5 py-3 rounded-full hover:opacity-85 transition-opacity shrink-0"
+          className="hidden lg:inline-flex font-sans font-semibold text-[16px] bg-ardent-lime text-ardent-studio px-4 md:px-5 py-3 rounded-full hover:opacity-85 transition-opacity shrink-0"
         >
           Book a free 15-min call
         </a>
@@ -98,7 +99,7 @@ const Nav = () => {
           aria-label="Open menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(true)}
-          className="md:hidden inline-flex items-center justify-center w-11 h-11 text-footer-text"
+          className="lg:hidden inline-flex items-center justify-center w-11 h-11 text-footer-text"
         >
           <Menu size={26} strokeWidth={1.5} />
         </button>
@@ -106,7 +107,7 @@ const Nav = () => {
 
       {menuOpen && (
         <div
-          className="fixed inset-0 z-[200] md:hidden animate-fade-in"
+          className="fixed inset-0 z-[200] lg:hidden animate-fade-in"
           style={{ animationDuration: "200ms" }}
           onClick={() => setMenuOpen(false)}
         >
