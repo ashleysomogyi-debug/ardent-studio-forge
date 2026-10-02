@@ -57,7 +57,7 @@ const Nav = () => {
   return (
     <>
       <nav
-        className="fixed top-0 left-0 right-0 z-[100] flex h-14 items-center justify-between border-b px-4 transition-transform duration-200 md:h-16 md:px-10"
+        className="fixed top-0 left-0 right-0 z-[100] flex h-14 items-center justify-between border-b px-4 transition-transform duration-200 md:h-16 md:px-6 lg:px-5 xl:px-10"
         style={{
           background: "var(--site-header-bg)",
           borderColor: "rgba(255,255,255,0.08)",
@@ -71,13 +71,13 @@ const Nav = () => {
           </span>
         </a>
 
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-4 xl:gap-8">
           {NAV_LINKS.map((item) => (
             <a
               key={item.label}
               href={item.href}
               aria-current={isActive(item.href) ? "page" : undefined}
-              className={`flex h-16 items-center border-b-2 pt-0.5 font-sans text-[16px] text-footer-text transition-colors hover:text-ardent-lime ${isActive(item.href) ? "border-teal-bright" : "border-transparent"}`}
+              className={`flex h-16 items-center whitespace-nowrap border-b-2 pt-0.5 font-sans text-[16px] text-footer-text transition-colors hover:text-ardent-lime ${isActive(item.href) ? "border-teal-bright" : "border-transparent"}`}
             >
               {item.label}
             </a>
