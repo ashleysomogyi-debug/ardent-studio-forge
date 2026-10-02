@@ -41,16 +41,20 @@ const steps = [
 
 const examples = [
   {
-    title: "Replies drafted while you are on the job",
-    detail: "Customer emails and enquiries get a draft reply waiting for you to approve, so nothing sits for a day.",
+    title: "After-hours inquiry assistant",
+    detail: "Answers questions on your website or by text at 9pm, qualifies the lead, and books the appointment, so you stop losing customers to whoever replied first.",
   },
   {
-    title: "Follow-ups that actually go out",
-    detail: "Quotes and leads get a friendly nudge on schedule, in your voice, without you tracking them in your head.",
+    title: "Proposal and contract drafting",
+    detail: "Notes from a discovery call become a polished, branded proposal in about ten minutes.",
   },
   {
-    title: "Reports you do not build by hand",
-    detail: "The weekly numbers you copy between spreadsheets get pulled together and summarized in plain English.",
+    title: "\"Ask your data\" dashboard",
+    detail: "Your sales, bookings, or inventory data sits behind a simple question box. Ask \"which service made the most money last quarter?\" and get the answer without opening a spreadsheet.",
+  },
+  {
+    title: "Custom team assistant",
+    detail: "A private AI trained on your processes, pricing, and policies, so a new hire can get answers without interrupting you.",
   },
 ];
 
@@ -141,7 +145,7 @@ const Index = () => (
           <span className="section-eyebrow mb-5">Practical examples</span>
           <h2 id="examples-heading" className="max-w-[20ch] text-[clamp(32px,5vw,56px)] font-semibold leading-[1.12] text-foreground">What we could build for you</h2>
           <p className="mt-5 max-w-[62ch] text-[17px] leading-relaxed text-body-text">Examples of the chores we take off your plate. Yours will be scoped to fit.</p>
-          <div className="mobile-rail mt-6 md:mt-10 grid gap-3 md:gap-5 md:grid-cols-3">
+          <div className="mobile-rail mt-6 md:mt-10 grid gap-3 md:gap-5 md:grid-cols-2 lg:grid-cols-4">
             {examples.map((example, i) => (
               <article key={example.title} className="workshop-card flex min-h-0 md:min-h-[280px] flex-col p-5 md:p-8">
                 <span className={`mb-3 md:mb-7 block h-2.5 w-2.5 rounded-full ${accentPills[i]}`} aria-hidden="true" />
