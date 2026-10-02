@@ -67,7 +67,7 @@ const Nav = () => {
         <a href="/" className="flex items-center gap-3 shrink-0">
           <img src="/ardent-logo-circle.png" alt="Ardent Studio circular logo" className="w-10 h-10 rounded-full object-cover" />
           <span className="flex flex-col"><span className="font-sans text-[16px] md:text-[18px] text-footer-text tracking-wide font-semibold">Ardent Studio</span>
-          <span className="font-mono text-[13px] text-teal-bright tracking-[0.1em] md:tracking-[0.15em] uppercase">Practical AI for Business</span>
+          <span className="hidden font-mono text-[13px] text-teal-bright tracking-[0.1em] xl:block xl:tracking-[0.15em] uppercase">Practical AI for Business</span>
           </span>
         </a>
 
