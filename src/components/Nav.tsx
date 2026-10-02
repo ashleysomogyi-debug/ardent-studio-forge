@@ -71,7 +71,7 @@ const Nav = () => {
           </span>
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {NAV_LINKS.map((item) => (
             <a
               key={item.label}
@@ -89,7 +89,7 @@ const Nav = () => {
           target="_blank"
           rel="noopener noreferrer"
           data-hover
-          className="hidden md:inline-flex font-sans font-semibold text-[16px] bg-ardent-lime text-ardent-studio px-4 md:px-5 py-3 rounded-full hover:opacity-85 transition-opacity shrink-0"
+          className="hidden lg:inline-flex font-sans font-semibold text-[16px] bg-ardent-lime text-ardent-studio px-4 md:px-5 py-3 rounded-full hover:opacity-85 transition-opacity shrink-0"
         >
           Book a free 15-min call
         </a>
@@ -99,7 +99,7 @@ const Nav = () => {
           aria-label="Open menu"
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen(true)}
-          className="md:hidden inline-flex items-center justify-center w-11 h-11 text-footer-text"
+          className="lg:hidden inline-flex items-center justify-center w-11 h-11 text-footer-text"
         >
           <Menu size={26} strokeWidth={1.5} />
         </button>
@@ -107,7 +107,7 @@ const Nav = () => {
 
       {menuOpen && (
         <div
-          className="fixed inset-0 z-[200] md:hidden animate-fade-in"
+          className="fixed inset-0 z-[200] lg:hidden animate-fade-in"
           style={{ animationDuration: "200ms" }}
           onClick={() => setMenuOpen(false)}
         >
