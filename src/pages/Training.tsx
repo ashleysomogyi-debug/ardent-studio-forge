@@ -117,6 +117,9 @@ const Training = () => {
               <p className="text-[17px] leading-[1.6] md:leading-[1.65] text-body-text max-w-[68ch] mb-5 md:mb-8">
                 A 5-hour hands-on session where your team leaves with a working AI agent that handles a real workflow. Pick the inbox triage problem, the outreach problem, or the proposal-drafting problem. We build the tool together, in the room, and you leave with it running.
               </p>
+              <p className="text-[16px] leading-[1.6] md:leading-[1.65] text-body-text max-w-[68ch] mb-5 md:mb-8">
+                Taught on the tools your team already has, whether that's ChatGPT, Claude or Microsoft Copilot.
+              </p>
               <p className="font-mono text-[13px] tracking-[0.2em] uppercase text-primary mb-5 md:mb-8">
                 5 HOURS, UP TO 15 PEOPLE, IN PERSON OR VIRTUAL
               </p>
