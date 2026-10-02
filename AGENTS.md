@@ -5,3 +5,4 @@
 - Use the shared Radix tabs component for categorized content because it provides consistent keyboard and screen-reader behavior.
 - Scope page color experiments beneath page-level theme classes so shared site styling remains unchanged and rollback stays simple.
 - Keep the shared header color in `--site-header-bg` so its site-wide treatment can be reverted from one token.
+- Build focused service pages as route-level components that reuse shared navigation, footer, controls, and page-scoped themes to prevent cross-page visual changes.
