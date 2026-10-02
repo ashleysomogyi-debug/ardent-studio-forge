@@ -70,3 +70,4 @@
 - [x] Add Automation hero copy and tools band
 - [x] Add the Training workshop tools line
 - [x] Verify desktop and mobile layouts, overflow, and build
+- [ ] Add AI Setup service page at /services/ai-setup with supplied content and matching Automation styling
