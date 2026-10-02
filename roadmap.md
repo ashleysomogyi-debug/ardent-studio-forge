@@ -64,3 +64,9 @@
 - [x] Increase small type and button targets without changing copy or colors
 - [x] Tighten content sections and mobile hero/cards on Home, Training, Automation, Contact
 - [x] Check desktop/mobile overflow, first screen, and preview errors
+
+## Tool-neutral messaging
+- [x] Add homepage proof, FAQ, and About messaging
+- [x] Add Automation hero copy and tools band
+- [x] Add the Training workshop tools line
+- [x] Verify desktop and mobile layouts, overflow, and build

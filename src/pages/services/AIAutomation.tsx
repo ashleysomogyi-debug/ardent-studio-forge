@@ -203,7 +203,7 @@ const AIAutomation = () => {
             </div>
             <TypingHeadline />
             <p className="mt-6 md:mt-10 max-w-2xl font-sans text-lg lg:text-xl text-body-text leading-relaxed">
-              We build custom AI automation that fits how your team already works, using the tools you already have. We agree on a fixed scope before work starts.
+              We build custom AI automation that fits how your team already works, using the tools you already have. We work across ChatGPT, Claude and Copilot, so we use what fits your business, not what suits us. We agree on a fixed scope before work starts.
             </p>
             <div className="mt-6 md:mt-10 flex flex-wrap gap-3 md:gap-4">
               <a
@@ -397,6 +397,39 @@ const AIAutomation = () => {
                 See all our work →
               </Link>
             </div>
+          </div>
+        </section>
+
+        <section className="bg-background px-5 py-12 md:px-10 md:py-[72px]" aria-labelledby="tools-heading">
+          <div className="mx-auto max-w-[1200px]">
+            <span className="section-eyebrow mb-6">The tools we work with</span>
+            <h2 id="tools-heading" className="mb-4 text-[clamp(32px,5vw,56px)] font-normal leading-[1.1] text-foreground" style={{ fontFamily: serif }}>
+              Whatever fits your stack.
+            </h2>
+            <p className="mb-7 max-w-[62ch] text-[16px] leading-[1.7] text-body-text md:mb-10 md:text-[18px]">
+              We're not tied to one platform. We pick the right tool for the job and hand you the accounts when we're done.
+            </p>
+            <div className="space-y-6">
+              <div>
+                <h3 className="mb-3 font-mono text-[13px] uppercase tracking-[0.15em] text-primary">AI models</h3>
+                <div className="flex flex-wrap gap-2 md:gap-3">
+                  {["ChatGPT", "Claude", "Copilot"].map((tool) => (
+                    <span key={tool} className="inline-flex min-h-11 items-center justify-center rounded-full border border-foreground/15 bg-card px-4 py-2 text-center text-[16px] font-semibold text-foreground">{tool}</span>
+                  ))}
+                </div>
+              </div>
+              <div>
+                <h3 className="mb-3 font-mono text-[13px] uppercase tracking-[0.15em] text-primary">Tools we build with</h3>
+                <div className="flex flex-wrap gap-2 md:gap-3">
+                  {["ElevenLabs", "Power Automate", "Lovable", "Replit", "Synthesia", "Apollo", "Make.com", "and more"].map((tool) => (
+                    <span key={tool} className="inline-flex min-h-11 items-center justify-center rounded-full border border-foreground/15 bg-card px-4 py-2 text-center text-[16px] font-semibold text-foreground">{tool}</span>
+                  ))}
+                </div>
+              </div>
+            </div>
+            <p className="mt-7 border-t border-border pt-5 text-[16px] leading-[1.7] text-body-text md:mt-10 md:pt-7">
+              Not on the list? Ask us. If it has an API, there's a good chance we can work with it.
+            </p>
           </div>
         </section>
 

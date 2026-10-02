@@ -64,6 +64,10 @@ const ownerQuestions = [
     answer: "We only ask for access to what a build needs, and we tell you where your data goes before we start. You own the accounts.",
   },
   {
+    question: "Which AI tools do you use?",
+    answer: "We work across the main AI models, including ChatGPT, Claude and Copilot, plus automation and build tools like Power Automate, Make.com, Lovable and Replit. We choose based on what you already use, what your team is comfortable with, and your budget. Whatever we build lives in accounts you own, so you're never locked in to us.",
+  },
+  {
     question: "What if something breaks?",
     answer: "Every build includes a live walkthrough, a short how-to guide, and 30 days of email support. After that, reach out and we will scope any fix before doing any work.",
   },
@@ -85,6 +89,7 @@ const proof = [
   { lead: "Keynotes", caption: "on three continents" },
   { lead: "SartoriAI", caption: "built by us, live today" },
   { lead: "You own", caption: "the code and the accounts" },
+  { lead: "Any LLM", caption: "ChatGPT, Claude, Copilot and more" },
 ];
 
 const Index = () => (
@@ -94,7 +99,7 @@ const Index = () => (
       <HeroSection />
 
       <section className="border-y border-border bg-card px-5 py-5 md:px-10 md:py-9" aria-label="Ardent Studio at a glance">
-        <div className="mx-auto grid max-w-[1200px] grid-cols-2 gap-x-4 gap-y-5 md:gap-x-6 md:gap-y-7 lg:grid-cols-4 lg:gap-8">
+        <div className="mx-auto grid max-w-[1200px] grid-cols-2 gap-x-4 gap-y-5 md:gap-x-6 md:gap-y-7 lg:grid-cols-5 lg:gap-8">
           {proof.map((item) => (
             <div key={item.lead} className="border-l border-border pl-4 md:pl-6">
               <strong className="block text-[clamp(22px,2.5vw,32px)] font-semibold leading-tight text-foreground">{item.lead}</strong>
@@ -225,7 +230,7 @@ const Index = () => (
         <div className="relative mx-auto max-w-[1200px]">
           <span className="section-eyebrow mb-5">About us</span>
           <h2 id="about-heading" className="mb-4 md:mb-8 text-[clamp(32px,5vw,56px)] font-semibold text-foreground">The people doing the work.</h2>
-          <p className="mb-6 md:mb-10 max-w-[70ch] text-[17px] md:text-[18px] leading-relaxed text-body-text">We are Ashley and Wesley. We run Ardent Studio in Palm Beach County. We work directly with you to find where AI helps, build what fits, and make sure your team can use it. No account-manager handoff, just the people doing the work.</p>
+          <p className="mb-6 md:mb-10 max-w-[70ch] text-[17px] md:text-[18px] leading-relaxed text-body-text">We are Ashley and Wesley. We run Ardent Studio in Palm Beach County. We work directly with you to find where AI helps, build what fits across the major AI tools, and make sure your team can use it. No account-manager handoff, just the people doing the work.</p>
           <div className="mx-auto grid max-w-[900px] grid-cols-2 items-start justify-items-center gap-x-4 gap-y-6 sm:grid-cols-3 md:gap-9">
             {[
               { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build", detail: "PhD, 15 plus years in tech, learning and business ops" },
