@@ -246,19 +246,20 @@ const AISetup = () => {
         </section>
 
         <section className="bg-background px-5 py-12 md:px-10 md:py-[72px]">
-          <div className="mx-auto grid max-w-[1200px] gap-8 md:grid-cols-2 md:gap-12">
-            <div>
-              <span className="section-eyebrow mb-5">Included in every setup</span>
-              <p className="max-w-[54ch] text-[18px] leading-[1.75] text-body-text">
-                A live walkthrough for your team, short how-to guides, and 30 days of email support. You own the accounts and the configuration. We don't hold anything back.
-              </p>
-            </div>
-            <div>
-              <h2 className="text-[clamp(30px,4vw,44px)] font-semibold leading-[1.15] text-foreground">Microsoft Copilot, ChatGPT, Claude and more.</h2>
-              <p className="mt-5 text-[16px] leading-[1.75] text-body-text">
-                Most of our clients start with Microsoft Copilot because they already run Microsoft 365. We also set up ChatGPT, Claude and other tools, and we'll tell you honestly which one fits your business best.
-              </p>
-            </div>
+          <div className="mx-auto max-w-[1200px]">
+            <span className="section-eyebrow mb-5">Included in every setup</span>
+            <p className="max-w-[66ch] text-[18px] leading-[1.75] text-body-text">
+              A live walkthrough for your team, short how-to guides, and 30 days of email support. You own the accounts and the configuration. We don't hold anything back.
+            </p>
+          </div>
+        </section>
+
+        <section className="bg-blush px-5 py-12 md:px-10 md:py-[72px]">
+          <div className="mx-auto max-w-[1200px]">
+            <h2 className="max-w-[24ch] text-[clamp(30px,4vw,44px)] font-semibold leading-[1.15] text-foreground">Microsoft Copilot, ChatGPT, Claude and more.</h2>
+            <p className="mt-5 max-w-[66ch] text-[16px] leading-[1.75] text-body-text md:text-[18px]">
+              Most of our clients start with Microsoft Copilot because they already run Microsoft 365. We also set up ChatGPT, Claude and other tools, and we'll tell you honestly which one fits your business best.
+            </p>
           </div>
         </section>
 
