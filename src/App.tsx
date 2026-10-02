@@ -22,6 +22,7 @@ import WowAttendeeOffer from "./pages/events/WowAttendeeOffer.tsx";
 // Lazily loaded service pages
 const WorkflowAutomation = lazy(() => import("./pages/services/WorkflowAutomation.tsx"));
 const AIToolsSetup = lazy(() => import("./pages/services/AIToolsSetup.tsx"));
+const AISetup = lazy(() => import("./pages/services/AISetup.tsx"));
 
 // Lazily loaded location pages
 const WestPalmBeach = lazy(() => import("./pages/locations/WestPalmBeach.tsx"));
@@ -75,6 +76,7 @@ const App = () => (
             <Route path="/services/ai-chatbot" element={<AIChatbot />} />
             <Route path="/services/workflow-automation" element={<WorkflowAutomation />} />
             <Route path="/services/ai-tools-setup" element={<AIToolsSetup />} />
+            <Route path="/services/ai-setup" element={<AISetup />} />
             <Route path="/services/custom-software" element={<Navigate to="/services/ai-automation" replace />} />
             <Route path="/services/mobile-apps" element={<Navigate to="/services/ai-automation" replace />} />
             <Route path="/services/web-design" element={<Navigate to="/" replace />} />
