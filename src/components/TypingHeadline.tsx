@@ -13,7 +13,9 @@ const serif = "'Inter', system-ui, sans-serif";
 const TypingHeadline = () => {
   const [reduced, setReduced] = useState(false);
   const [idx, setIdx] = useState(0);
-  const [text, setText] = useState("");
+  // Start on the full word so the headline reads "Build what connects." before
+  // any typing begins. That is what crawlers and screen readers capture.
+  const [text, setText] = useState(words[0]);
   const [deleting, setDeleting] = useState(false);
   const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
@@ -67,7 +69,7 @@ const TypingHeadline = () => {
     >
       Build what{" "}
       <span className="relative inline-block">
-        <span className="invisible" aria-hidden="true">{longest}</span>
+        <span className="invisible after:content-[attr(data-w)]" data-w={longest} aria-hidden="true" />
         <span className={`absolute left-0 top-0 whitespace-nowrap ${colors[idx]}`}>
           {text}
           <span className="typing-cursor text-foreground/80" aria-hidden="true">|</span>

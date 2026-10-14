@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { usePageMeta } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
@@ -104,17 +105,9 @@ const questions = [
 const accents = ["bg-teal-bright", "bg-ardent-lime", "bg-coral", "bg-peach"];
 
 const AISetup = () => {
+  usePageMeta({ title: META_TITLE, description: META_DESCRIPTION });
+
   useEffect(() => {
-    document.title = META_TITLE;
-
-    let description = document.querySelector('meta[name="description"]');
-    if (!description) {
-      description = document.createElement("meta");
-      description.setAttribute("name", "description");
-      document.head.appendChild(description);
-    }
-    description.setAttribute("content", META_DESCRIPTION);
-
     const faqId = "faq-jsonld-ai-setup";
     if (!document.getElementById(faqId)) {
       const script = document.createElement("script");
@@ -123,7 +116,7 @@ const AISetup = () => {
       script.text = JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "@id": "https://ardentstudio.io/services/ai-setup#faq",
+        "@id": "https://www.ardentstudio.io/services/ai-setup#faq",
         mainEntity: questions.map(({ question, answer }) => ({
           "@type": "Question",
           name: question,

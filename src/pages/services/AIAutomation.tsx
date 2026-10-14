@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import TypingHeadline from "@/components/TypingHeadline";
+import { usePageMeta } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import heroSpeakingPhoto from "@/assets/photos/automation-workshop.png.asset.json";
@@ -148,16 +149,9 @@ const workflowTabs: { value: string; label: string; examples: WorkflowExample[] 
 ];
 
 const AIAutomation = () => {
-  useEffect(() => {
-    document.title = META_TITLE;
-    let meta = document.querySelector('meta[name="description"]');
-    if (!meta) {
-      meta = document.createElement("meta");
-      meta.setAttribute("name", "description");
-      document.head.appendChild(meta);
-    }
-    meta.setAttribute("content", META_DESC);
+  usePageMeta({ title: META_TITLE, description: META_DESC });
 
+  useEffect(() => {
     const faqId = "faq-jsonld-aiautomation";
     if (!document.getElementById(faqId)) {
       const s = document.createElement("script");
@@ -166,7 +160,7 @@ const AIAutomation = () => {
       s.text = JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "@id": "https://ardentstudio.io/services/ai-automation#faq",
+        "@id": "https://www.ardentstudio.io/services/ai-automation#faq",
         mainEntity: [
           { "@type": "Question", name: "What does an AI automation project cost?", acceptedAnswer: { "@type": "Answer", text: "Every build is a fixed price, quoted after a free 15 minute call. Larger custom builds are scoped separately. Every project starts with a free 15-minute scope call." } },
           { "@type": "Question", name: "How long does a typical project take?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds ship in 2 to 4 weeks. We don't take on projects we can't deliver in 4 weeks; if it's bigger, we scope it as multiple phases." } },

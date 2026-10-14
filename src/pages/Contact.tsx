@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { usePageMeta } from "@/lib/seo";
 import { Link, useSearchParams } from "react-router-dom";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -47,11 +48,10 @@ const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    document.title = "Contact | Ardent Studio";
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) meta.setAttribute("content", "Tell us what you're trying to build. We reply within one business day.");
-  }, []);
+  usePageMeta({
+    title: "Contact | Ardent Studio",
+    description: "Tell us what you're trying to build. We reply within one business day.",
+  });
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

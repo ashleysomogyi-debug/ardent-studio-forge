@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { usePageMeta } from "@/lib/seo";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import DotSphere from "@/components/DotSphere";
@@ -36,12 +36,10 @@ const accentPills = ["bg-teal-bright", "bg-ardent-lime", "bg-coral", "bg-peach"]
 const workshopPills = ["bg-ardent-lime", "bg-coral", "bg-peach"];
 
 const Training = () => {
-  useEffect(() => {
-    document.title = "AI Training for Your Team | Ardent Studio";
-    const meta = document.querySelector('meta[name="description"]');
-    const desc = "In-person and virtual AI workshops for teams of any kind. Build a real tool together.";
-    if (meta) meta.setAttribute("content", desc);
-  }, []);
+  usePageMeta({
+    title: "AI Training for Your Team | Ardent Studio",
+    description: "In-person and virtual AI workshops for teams of any kind. Build a real tool together.",
+  });
 
   return (
     <>

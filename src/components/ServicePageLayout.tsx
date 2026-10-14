@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { useScrollReveal } from "@/hooks/useScrollReveal";
+import { usePageMeta } from "@/lib/seo";
 import Nav from "./Nav";
 import Footer from "./Footer";
 import ParticleCanvas from "./ParticleCanvas";
@@ -42,18 +42,7 @@ const ServicePageLayout = ({
 }: ServicePageLayoutProps) => {
   useScrollReveal();
 
-  useEffect(() => {
-    document.title = metaTitle;
-    const meta = document.querySelector('meta[name="description"]');
-    if (meta) {
-      meta.setAttribute("content", metaDescription);
-    } else {
-      const newMeta = document.createElement("meta");
-      newMeta.name = "description";
-      newMeta.content = metaDescription;
-      document.head.appendChild(newMeta);
-    }
-  }, [metaTitle, metaDescription]);
+  usePageMeta({ title: metaTitle, description: metaDescription });
 
   return (
     <>
