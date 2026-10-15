@@ -24,6 +24,10 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
+// Where finished pages are written. Default is dist/. The GitHub Action sets this to
+// "prerendered" so the pages can be committed and applied during the Vercel build.
+const outRoot = process.env.PRERENDER_OUT ? path.resolve(root, process.env.PRERENDER_OUT) : dist;
+const writesToDist = outRoot === dist;
 const SITE = "https://www.ardentstudio.io";
 const strict = process.env.PRERENDER_STRICT === "1";
 
@@ -140,7 +144,7 @@ try {
     return host === "127.0.0.1" ? route.continue() : route.abort();
   });
 
-  for (const route of SHELL_ONLY_ROUTES) {
+  for (const route of writesToDist ? SHELL_ONLY_ROUTES : []) {
     const out = path.join(dist, route, "index.html");
     await fs.mkdir(path.dirname(out), { recursive: true });
     await fs.writeFile(out, shell);
@@ -173,7 +177,7 @@ try {
       if (text.length < 300) throw new Error(`only ${text.length} characters of text`);
 
       const html = "<!doctype html>\n" + (await page.evaluate(() => document.documentElement.outerHTML));
-      const out = route === "/" ? path.join(dist, "index.html") : path.join(dist, route, "index.html");
+      const out = route === "/" ? path.join(outRoot, "index.html") : path.join(outRoot, route, "index.html");
       await fs.mkdir(path.dirname(out), { recursive: true });
       await fs.writeFile(out, html);
       done.push(route);

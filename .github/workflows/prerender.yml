@@ -1,0 +1,42 @@
+name: Save finished pages
+
+# Builds the site, opens each page in a headless browser, and commits the finished HTML
+# to prerendered/. The Vercel build then applies those pages (npm run build:static).
+# Chromium cannot start on Vercel's build machines, so this step runs here instead.
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - "prerendered/**"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: prerender
+  cancel-in-progress: true
+
+jobs:
+  prerender:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npx vite build
+      - name: Save finished pages
+        run: PRERENDER_OUT=prerendered PRERENDER_STRICT=1 node scripts/prerender.mjs
+      - name: Commit if anything changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add prerendered
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Update saved pages"
+          git push
