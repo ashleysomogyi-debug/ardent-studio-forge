@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { usePageMeta } from "@/lib/seo";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
@@ -45,18 +45,11 @@ const posts = [
 ];
 
 export default function BlogIndex() {
-  useEffect(() => {
-    document.title =
-      "AI Automation Blog | Ardent Studio: Palm Beach County, FL";
-
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute(
-        "content",
-        "Practical AI automation guides for Palm Beach County small businesses. Tips, tools, and real-world workflows from Ardent Studio."
-      );
-    }
-  }, []);
+  usePageMeta({
+    title: "AI Automation Blog | Ardent Studio: Palm Beach County, FL",
+    description:
+      "Practical AI automation guides for Palm Beach County small businesses. Tips, tools, and real-world workflows from Ardent Studio.",
+  });
 
   return (
     <div className="min-h-screen flex flex-col" style={{ backgroundColor: "#0D0D0D", color: "#0D0D0D" }}>

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import Nav from "@/components/Nav";
+import { PageMeta } from "@/lib/seo";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import CTASection from "@/components/CTASection";
@@ -98,6 +99,11 @@ const proof = [
 
 const Index = () => (
   <>
+    <PageMeta
+      title="Ardent Studio | Practical AI for your business"
+      description="Find where AI actually helps, build the tool, and train your team. Fixed prices, based in Palm Beach County, Florida."
+      path="/"
+    />
     <Nav />
     <main>
       <HeroSection />

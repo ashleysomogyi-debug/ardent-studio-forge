@@ -1,4 +1,5 @@
-import { useEffect, ReactNode } from "react";
+import { ReactNode } from "react";
+import { usePageMeta } from "@/lib/seo";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
@@ -19,14 +20,7 @@ export default function BlogPostLayout({
   readTime,
   children,
 }: BlogPostLayoutProps) {
-  useEffect(() => {
-    document.title = metaTitle;
-
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", metaDescription);
-    }
-  }, [metaTitle, metaDescription]);
+  usePageMeta({ title: metaTitle, description: metaDescription });
 
   return (
     <div
