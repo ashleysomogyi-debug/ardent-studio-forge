@@ -27,7 +27,9 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      # package-lock.json is out of sync with package.json (the project also has bun.lock),
+      # so npm ci would refuse. Vercel installs with npm install, so do the same here.
+      - run: npm install --no-audit --no-fund
       - run: npx playwright install --with-deps chromium
       - run: npx vite build
       - name: Save finished pages
