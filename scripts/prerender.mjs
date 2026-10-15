@@ -101,7 +101,11 @@ const isRoot = typeof process.getuid === "function" && process.getuid() === 0;
 const launch = () =>
   chromium.launch({
     executablePath: process.env.PRERENDER_CHROMIUM || undefined,
-    args: isRoot ? ["--no-sandbox"] : [],
+    args: [
+      ...(isRoot ? ["--no-sandbox"] : []),
+      // Build containers (e.g. Vercel) have no GPU, a tiny /dev/shm and limited process setup.
+      ...(process.env.VERCEL ? ["--no-sandbox", "--disable-gpu", "--disable-dev-shm-usage", "--no-zygote", "--single-process"] : []),
+    ],
   });
 let browser;
 let launchError;
