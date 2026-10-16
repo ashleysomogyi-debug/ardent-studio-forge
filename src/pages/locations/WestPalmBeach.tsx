@@ -51,7 +51,7 @@ const WestPalmBeach = () => {
   useEffect(() => {
     let canonical = document.querySelector('link[rel="canonical"]');
     if (canonical) {
-      canonical.setAttribute("href", `https://www.ardentstudio.io/locations/${SLUG}`);
+      canonical.setAttribute("href", `https://ardentstudio.io/locations/${SLUG}`);
     }
 
     const schemaId = `faq-jsonld-${SLUG}`;

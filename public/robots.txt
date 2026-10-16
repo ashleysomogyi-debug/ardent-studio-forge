@@ -19,4 +19,4 @@ User-agent: Bingbot
 Allow: /
 Disallow: /wow
 
-Sitemap: https://www.ardentstudio.io/sitemap.xml
+Sitemap: https://ardentstudio.io/sitemap.xml

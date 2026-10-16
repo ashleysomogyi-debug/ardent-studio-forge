@@ -160,7 +160,7 @@ const AIAutomation = () => {
       s.text = JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "@id": "https://www.ardentstudio.io/services/ai-automation#faq",
+        "@id": "https://ardentstudio.io/services/ai-automation#faq",
         mainEntity: [
           { "@type": "Question", name: "What does an AI automation project cost?", acceptedAnswer: { "@type": "Answer", text: "Every build is a fixed price, quoted after a free 15 minute call. Larger custom builds are scoped separately. Every project starts with a free 15-minute scope call." } },
           { "@type": "Question", name: "How long does a typical project take?", acceptedAnswer: { "@type": "Answer", text: "Most automation builds ship in 2 to 4 weeks. We don't take on projects we can't deliver in 4 weeks; if it's bigger, we scope it as multiple phases." } },

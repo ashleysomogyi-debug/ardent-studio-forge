@@ -11,30 +11,30 @@ Free 15-minute call: https://calendly.com/asomogyi-ardentstudio/30min
 Prices are fixed and quoted after the free call, before any work starts.
 
 ## Services
-- [AI setup](https://www.ardentstudio.io/services/ai-setup): Connect AI tools such as Microsoft Copilot and ChatGPT to the systems a business already uses, and show the team what to use them for.
-- [AI automation and apps](https://www.ardentstudio.io/services/ai-automation): Custom AI automation built around how the team already works. Fixed-scope builds.
-- [AI chatbot](https://www.ardentstudio.io/services/ai-chatbot): A website chatbot for 24/7 lead capture and customer questions.
-- [Workflow automation](https://www.ardentstudio.io/services/workflow-automation): Email and workflow automation for small businesses.
-- [AI tools setup and training](https://www.ardentstudio.io/services/ai-tools-setup): Hands-on setup and training on tools such as ChatGPT and Claude.
-- [Team training](https://www.ardentstudio.io/training): Hands-on workshops where the team builds something real. Formats include a 3-hour workshop, a 5-hour half day, and a four-session program.
+- [AI setup](https://ardentstudio.io/services/ai-setup): Connect AI tools such as Microsoft Copilot and ChatGPT to the systems a business already uses, and show the team what to use them for.
+- [AI automation and apps](https://ardentstudio.io/services/ai-automation): Custom AI automation built around how the team already works. Fixed-scope builds.
+- [AI chatbot](https://ardentstudio.io/services/ai-chatbot): A website chatbot for 24/7 lead capture and customer questions.
+- [Workflow automation](https://ardentstudio.io/services/workflow-automation): Email and workflow automation for small businesses.
+- [AI tools setup and training](https://ardentstudio.io/services/ai-tools-setup): Hands-on setup and training on tools such as ChatGPT and Claude.
+- [Team training](https://ardentstudio.io/training): Hands-on workshops where the team builds something real. Formats include a 3-hour workshop, a 5-hour half day, and a four-session program.
 
 ## Areas served
-- [West Palm Beach](https://www.ardentstudio.io/locations/west-palm-beach)
-- [Boca Raton](https://www.ardentstudio.io/locations/boca-raton)
-- [Delray Beach](https://www.ardentstudio.io/locations/delray-beach)
-- [Boynton Beach](https://www.ardentstudio.io/locations/boynton-beach)
-- [Jupiter](https://www.ardentstudio.io/locations/jupiter)
-- [Palm Beach Gardens](https://www.ardentstudio.io/locations/palm-beach-gardens)
-- [Wellington](https://www.ardentstudio.io/locations/wellington)
-- [Lake Worth Beach](https://www.ardentstudio.io/locations/lake-worth-beach)
+- [West Palm Beach](https://ardentstudio.io/locations/west-palm-beach)
+- [Boca Raton](https://ardentstudio.io/locations/boca-raton)
+- [Delray Beach](https://ardentstudio.io/locations/delray-beach)
+- [Boynton Beach](https://ardentstudio.io/locations/boynton-beach)
+- [Jupiter](https://ardentstudio.io/locations/jupiter)
+- [Palm Beach Gardens](https://ardentstudio.io/locations/palm-beach-gardens)
+- [Wellington](https://ardentstudio.io/locations/wellington)
+- [Lake Worth Beach](https://ardentstudio.io/locations/lake-worth-beach)
 
 ## Guides
-- [What can AI actually automate for your small business](https://www.ardentstudio.io/blog/what-can-ai-automate-small-business)
-- [How much does AI automation cost in Palm Beach County](https://www.ardentstudio.io/blog/ai-automation-cost-palm-beach-county)
-- [AI automation vs. hiring an admin](https://www.ardentstudio.io/blog/ai-automation-vs-hiring-admin)
-- [5 automation workflows Palm Beach County businesses use](https://www.ardentstudio.io/blog/make-com-workflows-palm-beach-small-business)
-- [Why most small business AI projects fail](https://www.ardentstudio.io/blog/why-ai-automation-fails-small-business)
+- [What can AI actually automate for your small business](https://ardentstudio.io/blog/what-can-ai-automate-small-business)
+- [How much does AI automation cost in Palm Beach County](https://ardentstudio.io/blog/ai-automation-cost-palm-beach-county)
+- [AI automation vs. hiring an admin](https://ardentstudio.io/blog/ai-automation-vs-hiring-admin)
+- [5 automation workflows Palm Beach County businesses use](https://ardentstudio.io/blog/make-com-workflows-palm-beach-small-business)
+- [Why most small business AI projects fail](https://ardentstudio.io/blog/why-ai-automation-fails-small-business)
 
 ## Optional
-- [Contact](https://www.ardentstudio.io/contact)
-- [Blog index](https://www.ardentstudio.io/blog)
+- [Contact](https://ardentstudio.io/contact)
+- [Blog index](https://ardentstudio.io/blog)

@@ -116,7 +116,7 @@ const AISetup = () => {
       script.text = JSON.stringify({
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        "@id": "https://www.ardentstudio.io/services/ai-setup#faq",
+        "@id": "https://ardentstudio.io/services/ai-setup#faq",
         mainEntity: questions.map(({ question, answer }) => ({
           "@type": "Question",
           name: question,
