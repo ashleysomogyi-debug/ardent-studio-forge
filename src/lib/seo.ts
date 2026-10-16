@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 /** The one host used in canonicals, og:url, the sitemap, robots.txt and schema. */
-export const SITE_URL = "https://www.ardentstudio.io";
+export const SITE_URL = "https://ardentstudio.io";
 
 /** Full canonical URL for a route: no trailing slash, except the home page. */
 export const canonicalUrlFor = (pathname: string) => {

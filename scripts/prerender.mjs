@@ -28,7 +28,7 @@ const dist = path.join(root, "dist");
 // "prerendered" so the pages can be committed and applied during the Vercel build.
 const outRoot = process.env.PRERENDER_OUT ? path.resolve(root, process.env.PRERENDER_OUT) : dist;
 const writesToDist = outRoot === dist;
-const SITE = "https://www.ardentstudio.io";
+const SITE = "https://ardentstudio.io";
 const strict = process.env.PRERENDER_STRICT === "1";
 
 // Pages outside the sitemap that still get their own saved HTML, so opening one
