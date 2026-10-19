@@ -1,8 +1,9 @@
 # Ardent Studio
 
-> Ardent Studio is an AI consulting and automation studio in Boynton Beach, Florida. It serves small businesses across Palm Beach County and works with teams remotely. It helps a business find where AI actually helps, builds the tool at a fixed scope and price, and trains the team to run it.
+> Ardent Studio (also written Ardent Studio AI) offers AI consulting for small businesses in Palm Beach County, Florida. It is an AI consulting and automation studio based in Boynton Beach. It serves small businesses across Palm Beach County and works with teams remotely. It helps a business find where AI actually helps, builds the tool at a fixed scope and price, and trains the team to run it.
 
-Founder: Ashley Somogyi
+Cofounders: Ashley Somogyi and Wesley Price
+Note: Ardent Studio is not affiliated with other businesses named Ardent Studio or Ardent Studios, such as recording studios or photographers.
 Location: Boynton Beach, Florida, United States
 Email: hello@ardentstudio.io
 Phone: +1 728 201 0192
