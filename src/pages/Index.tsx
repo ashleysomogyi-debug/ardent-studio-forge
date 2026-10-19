@@ -100,8 +100,8 @@ const proof = [
 const Index = () => (
   <>
     <PageMeta
-      title="Ardent Studio | Practical AI for your business"
-      description="Find where AI actually helps, build the tool, and train your team. Fixed prices, based in Palm Beach County, Florida."
+      title="Ardent Studio | AI consulting for small businesses in Palm Beach County"
+      description="AI consulting for small businesses in Palm Beach County, Florida. We find where AI helps, build the tool, and train your team. Fixed prices."
       path="/"
     />
     <Nav />
@@ -241,6 +241,7 @@ const Index = () => (
           <span className="section-eyebrow mb-5">About us</span>
           <h2 id="about-heading" className="mb-4 md:mb-8 text-[clamp(32px,5vw,56px)] font-semibold text-foreground">The people doing the work.</h2>
           <p className="mb-6 md:mb-10 max-w-[70ch] text-[17px] md:text-[18px] leading-relaxed text-body-text">We are Ashley and Wesley. We run Ardent Studio in Palm Beach County. We work directly with you to find where AI helps, build what fits across the major AI tools, and make sure your team can use it. No account-manager handoff, just the people doing the work.</p>
+          <p className="mb-6 md:mb-10 max-w-[70ch] text-[15px] leading-relaxed text-body-text">Ardent Studio is an AI consulting firm in Boynton Beach, Florida, serving small businesses in Palm Beach County. We are not affiliated with other businesses named Ardent Studio or Ardent Studios.</p>
           <div className="mx-auto grid max-w-[900px] grid-cols-2 items-start justify-items-center gap-x-4 gap-y-6 sm:grid-cols-3 md:gap-9">
             {[
               { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build", detail: "PhD, 15 plus years in tech, learning and business ops" },
