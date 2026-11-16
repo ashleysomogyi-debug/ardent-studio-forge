@@ -3,6 +3,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import DotSphere from "@/components/DotSphere";
 import CTASection from "@/components/CTASection";
+import wellingtonPhoto from "@/assets/photos/wellington-chamber-ai-event.jpg.asset.json";
 
 const serif = "'Inter', system-ui, sans-serif";
 
@@ -69,13 +70,13 @@ const Training = () => {
             </div>
             <div className="mobile-rail grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
               {[
-                { src: "/images/ef-shanghai-2024.jpg", caption: "EF Keynote · Shanghai" },
-                { src: "/images/shrm23-audience.jpg", caption: "SHRM · Las Vegas" },
-                { src: "/images/ashley-lederne-speaking.jpg", caption: "Training · Denmark" },
+                { src: wellingtonPhoto.url, caption: "Wellington Chamber of Commerce AI Event (Women of Wellington)", alt: "Dr. Ashley Somogyi leading a table discussion at the Wellington Chamber of Commerce AI event for Women of Wellington" },
+                { src: "/images/shrm23-audience.jpg", caption: "SHRM · Las Vegas", alt: "SHRM · Las Vegas" },
+                { src: "/images/ashley-lederne-speaking.jpg", caption: "Training · Denmark", alt: "Training · Denmark" },
               ].map((p, i) => (
                 <figure key={p.src}>
                   <div className="aspect-[16/10] overflow-hidden rounded-xl bg-ardent-ink">
-                    <img src={p.src} alt={p.caption} className="w-full h-full object-cover" loading="lazy" />
+                    <img src={p.src} alt={p.alt} className="w-full h-full object-cover" loading="lazy" />
                   </div>
                   <figcaption className={`mt-3 md:mt-4 inline-flex w-fit items-center justify-center text-center rounded-full px-4 py-2.5 font-mono text-[13px] font-semibold uppercase tracking-[0.18em] text-ardent-studio ${workshopPills[i]}`}>
                     {p.caption}
