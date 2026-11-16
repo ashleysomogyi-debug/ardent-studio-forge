@@ -72,7 +72,7 @@ const Training = () => {
               {[
                 { src: wellingtonPhoto, caption: "Wellington Chamber of Commerce AI Event (Women of Wellington)", alt: "Dr. Ashley Somogyi leading a table discussion at the Wellington Chamber of Commerce AI event for Women of Wellington" },
                 { src: "/images/shrm23-audience.jpg", caption: "SHRM · Las Vegas", alt: "SHRM · Las Vegas" },
-                { src: "/images/ashley-lederne-speaking.jpg", caption: "Training · Denmark", alt: "Training · Denmark" },
+                { src: "/images/ashley-lederne-speaking.jpg", caption: "Corporate Training · Denmark", alt: "Corporate Training · Denmark" },
               ].map((p, i) => (
                 <figure key={p.src}>
                   <div className="aspect-[16/10] overflow-hidden rounded-xl bg-ardent-ink">
