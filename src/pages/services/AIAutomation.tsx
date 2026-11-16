@@ -6,7 +6,7 @@ import TypingHeadline from "@/components/TypingHeadline";
 import { usePageMeta } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import heroSpeakingPhoto from "@/assets/photos/automation-workshop.png.asset.json";
+import heroSpeakingPhoto from "@/assets/photos/wellington-group-photo.jpg.asset.json";
 
 const serif = "'Inter', system-ui, sans-serif";
 
@@ -221,10 +221,10 @@ const AIAutomation = () => {
         <section className="automation-cyan-band relative w-full overflow-hidden">
           <div className="relative min-h-[260px] md:min-h-[64vh] w-full flex items-end">
             <img
-              src={`https://ardentstudio.io${heroSpeakingPhoto.url}`}
-              alt="Ashley leading an AI automation workshop with a small business team around a table of laptops"
+              src={heroSpeakingPhoto.url}
+              alt="Dr. Ashley Somogyi with attendees at the Wellington Chamber of Commerce AI event for Women of Wellington"
               loading="lazy"
-              className="absolute inset-0 w-full h-full object-cover"
+              className="absolute inset-0 w-full h-full object-cover object-[50%_30%]"
             />
             <div className="automation-photo-overlay absolute inset-0" />
             <div className="relative max-w-[1200px] mx-auto w-full px-5 md:px-10 pt-12 md:pt-32 pb-6 md:pb-14">
