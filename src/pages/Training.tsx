@@ -3,7 +3,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import DotSphere from "@/components/DotSphere";
 import CTASection from "@/components/CTASection";
-import wellingtonPhoto from "@/assets/photos/wellington-chamber-ai-event.jpg.asset.json";
+import wellingtonPhoto from "@/assets/photos/wellington-chamber-ai-event.jpg";
 
 const serif = "'Inter', system-ui, sans-serif";
 
@@ -70,7 +70,7 @@ const Training = () => {
             </div>
             <div className="mobile-rail grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
               {[
-                { src: wellingtonPhoto.url, caption: "Wellington Chamber of Commerce AI Event (Women of Wellington)", alt: "Dr. Ashley Somogyi leading a table discussion at the Wellington Chamber of Commerce AI event for Women of Wellington" },
+                { src: wellingtonPhoto, caption: "Wellington Chamber of Commerce AI Event (Women of Wellington)", alt: "Dr. Ashley Somogyi leading a table discussion at the Wellington Chamber of Commerce AI event for Women of Wellington" },
                 { src: "/images/shrm23-audience.jpg", caption: "SHRM · Las Vegas", alt: "SHRM · Las Vegas" },
                 { src: "/images/ashley-lederne-speaking.jpg", caption: "Training · Denmark", alt: "Training · Denmark" },
               ].map((p, i) => (

@@ -1,4 +1,4 @@
-import heroPhoto from "@/assets/photos/hero-ashley-speaking.jpg.asset.json";
+import heroPhoto from "@/assets/photos/hero-ashley-speaking.jpg";
 
 const HeroSection = () => (
   <section className="relative overflow-hidden bg-blush pt-14 md:pt-16">
@@ -45,7 +45,7 @@ const HeroSection = () => (
          <div className="absolute -left-2 top-[28%] z-20 h-8 w-8 rounded-full bg-ardent-lime md:h-11 md:w-11" aria-hidden="true" />
          <div className="absolute bottom-[18%] right-0 z-20 h-6 w-6 rounded-full bg-coral md:h-8 md:w-8" aria-hidden="true" />
          <div className="relative aspect-[4/5] max-h-[320px] md:max-h-[650px] w-full overflow-hidden rounded-t-[999px] border border-border bg-card">
-           <img src={heroPhoto.url} alt="Dr. Ashley Somogyi presenting AI Made Practical to a room of business owners" className="h-full w-full object-cover object-[55%_center]" loading="eager" fetchPriority="high" />
+           <img src={heroPhoto} alt="Dr. Ashley Somogyi presenting AI Made Practical to a room of business owners" className="h-full w-full object-cover object-[55%_center]" loading="eager" fetchPriority="high" />
          </div>
       </div>
     </div>

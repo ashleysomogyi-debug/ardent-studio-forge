@@ -1,3 +1,4 @@
+import lookAroundCornerPhoto from "@/assets/photos/look-around-corner.png";
 import { Link } from "react-router-dom";
 import Nav from "@/components/Nav";
 import { PageMeta } from "@/lib/seo";
@@ -169,7 +170,7 @@ const Index = () => (
 
       <section id="process" className="bg-blush" aria-labelledby="process-heading">
         <div className="relative flex min-h-[220px] items-end overflow-hidden md:min-h-[440px]">
-          <img src="https://ardentstudio.io/__l5e/assets-v1/03e28834-d7a2-4479-ab8b-b392e2055c87/look-around-corner.png" alt="Ashley and a client reviewing a workflow at a laptop" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+          <img src={lookAroundCornerPhoto} alt="Ashley and a client reviewing a workflow at a laptop" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
           <div className="absolute inset-0 bg-background/80 md:bg-background/65" />
           <div className="relative mx-auto w-full max-w-[1200px] px-5 pb-6 pt-12 md:px-10 md:pb-12 md:pt-24">
             <span className="section-eyebrow section-eyebrow--on-photo mb-4 md:mb-6">What working with us looks like</span>
