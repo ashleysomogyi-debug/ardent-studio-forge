@@ -1,3 +1,5 @@
+import heroPhoto from "@/assets/photos/hero-ashley-speaking.jpg.asset.json";
+
 const HeroSection = () => (
   <section className="relative overflow-hidden bg-blush pt-14 md:pt-16">
     <div className="coral-dot-grid pointer-events-none absolute right-5 top-28 hidden h-32 w-32 opacity-100 md:block" aria-hidden="true" />
@@ -43,7 +45,7 @@ const HeroSection = () => (
          <div className="absolute -left-2 top-[28%] z-20 h-8 w-8 rounded-full bg-ardent-lime md:h-11 md:w-11" aria-hidden="true" />
          <div className="absolute bottom-[18%] right-0 z-20 h-6 w-6 rounded-full bg-coral md:h-8 md:w-8" aria-hidden="true" />
          <div className="relative aspect-[4/5] max-h-[320px] md:max-h-[650px] w-full overflow-hidden rounded-t-[999px] border border-border bg-card">
-           <img src="https://ardentstudio.io/__l5e/assets-v1/772bd1d1-7aa2-46be-8fe6-952726991289/hero-speaking.png" alt="Ashley Somogyi speaking to a packed room of business owners" className="h-full w-full object-cover object-center" loading="eager" fetchPriority="high" />
+           <img src={heroPhoto.url} alt="Dr. Ashley Somogyi presenting AI Made Practical to a room of business owners" className="h-full w-full object-cover object-[60%_center]" loading="eager" fetchPriority="high" />
          </div>
       </div>
     </div>
