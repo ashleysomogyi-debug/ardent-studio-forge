@@ -1,10 +1,10 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { FileText, LayoutGrid, PenLine, Search, Send, Target, type LucideIcon } from "lucide-react";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import PlaybookDownloadForm from "@/components/PlaybookDownloadForm";
-import { usePageMeta } from "@/lib/seo";
+import { usePageMeta, SITE_URL } from "@/lib/seo";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const BOOKING_URL = "https://calendly.com/asomogyi-ardentstudio/30min";
@@ -99,6 +99,26 @@ const PlaybooksIndex = () => {
     title: "AI Playbooks for Small Business | Ardent Studio",
     description: "Free, plain-English playbooks for small business owners who use ChatGPT or Claude. One job each, step by step, with prompts to copy and free skills to download.",
   });
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "playbooks-schema";
+    script.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": `${SITE_URL}/playbooks#collection`,
+      name: "AI Playbooks for Small Business",
+      url: `${SITE_URL}/playbooks`,
+      isPartOf: { "@id": `${SITE_URL}/#organization` },
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: playbooks.map((p, i) => ({ "@type": "ListItem", position: i + 1, name: p.title, url: `${SITE_URL}${p.href}` })),
+      },
+    });
+    document.getElementById("playbooks-schema")?.remove();
+    document.head.appendChild(script);
+    return () => script.remove();
+  }, []);
   const [filter, setFilter] = useState<"all" | Category>("all");
   const [pick, setPick] = useState(0);
   const [openCards, setOpenCards] = useState<Category[]>([]);
@@ -195,11 +215,10 @@ const PlaybooksIndex = () => {
                     <button type="button" aria-expanded={isOpen} onClick={() => setOpenCards((c) => (isOpen ? c.filter((x) => x !== p.id) : [...c, p.id]))} className="min-h-11 self-start rounded-full bg-bg-hover px-4 py-2 text-[14px] font-semibold text-foreground">
                       {isOpen ? "Hide the steps" : p.stepsLabel}
                     </button>
-                    {isOpen && (
-                      <ol className="list-decimal pl-5 text-[14px] leading-[1.6] text-body-text">
-                        {p.steps.map((s) => <li key={s}>{s}</li>)}
-                      </ol>
-                    )}
+                    {/* Kept in the HTML when closed so search engines and AI tools can read the steps. */}
+                    <ol hidden={!isOpen} className="list-decimal pl-5 text-[14px] leading-[1.6] text-body-text">
+                      {p.steps.map((s) => <li key={s}>{s}</li>)}
+                    </ol>
                     <Link to={p.href} className={`mt-auto self-start rounded-full px-6 py-3 font-semibold transition-opacity hover:opacity-85 ${p.id === "setup" ? "bg-ardent-lime text-ardent-studio" : "border border-foreground text-foreground"}`}>
                       Open the playbook
                     </Link>

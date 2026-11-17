@@ -2,7 +2,7 @@ import PlaybookLayout, { Boxes, DemoLabel, Note, P, Prompt, ScoreRow } from "@/c
 
 const PlaybookOneTask = () => (
   <PlaybookLayout
-    metaTitle="Find the one task worth handing to AI | Ardent Studio Playbooks"
+    metaTitle="Find the one task worth handing to AI | Ardent Studio"
     metaDescription="Skip the AI strategy for now. This is the exercise behind our One Task Audit: list your week, score it, and pick the single chore to start with."
     crumb="Planning"
     title={<>Find the <span className="text-primary">one task</span> worth handing to AI.</>}

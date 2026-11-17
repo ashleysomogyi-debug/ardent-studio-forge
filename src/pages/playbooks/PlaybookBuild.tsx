@@ -2,8 +2,8 @@ import PlaybookLayout, { Boxes, DemoLabel, Note, P, Prompt } from "@/components/
 
 const PlaybookBuild = () => (
   <PlaybookLayout
-    metaTitle="Build your first small tool without code | Ardent Studio Playbooks"
-    metaDescription="A quote calculator, an intake checklist, a job sheet your team can open on a phone. You describe it in plain English and the AI builds it. This playbook also tells you where the do-it-yourself route stops being a good idea."
+    metaTitle="Build your first small tool without code | Ardent Studio"
+    metaDescription="Describe a small tool in plain English and have AI build it: a one-page plan, a first version, five real tests, and when to stop and get help."
     crumb="Building"
     title={<>Build your first small tool <span className="text-primary">without code.</span></>}
     intro="A quote calculator, an intake checklist, a job sheet your team can open on a phone. You describe it in plain English and the AI builds it. This playbook also tells you where the do-it-yourself route stops being a good idea."
