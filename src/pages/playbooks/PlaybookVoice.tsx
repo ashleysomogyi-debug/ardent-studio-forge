@@ -2,8 +2,8 @@ import PlaybookLayout, { Boxes, DemoLabel, Note, P, Prompt } from "@/components/
 
 const PlaybookVoice = () => (
   <PlaybookLayout
-    metaTitle="Make AI drafts sound like you wrote them | Ardent Studio Playbooks"
-    metaDescription="Customers can often tell when a message came straight out of a chatbot. These six questions take about five minutes a draft and keep the personal touch that makes people buy from a small business."
+    metaTitle="Make AI drafts sound like you wrote them | Ardent Studio"
+    metaDescription="Six questions to ask before you send anything an AI drafted, so customer emails still sound like you. About five minutes a draft."
     crumb="Writing"
     title={<>Make AI drafts sound like <span className="text-primary">you wrote them.</span></>}
     intro="Customers can often tell when a message came straight out of a chatbot. These six questions take about five minutes a draft and keep the personal touch that makes people buy from a small business."

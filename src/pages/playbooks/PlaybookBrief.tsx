@@ -2,7 +2,7 @@ import PlaybookLayout, { Boxes, DemoLabel, Note, P, Prompt, ToolTabs } from "@/c
 
 const PlaybookBrief = () => (
   <PlaybookLayout
-    metaTitle="Stop re-explaining your business to AI | Ardent Studio Playbooks"
+    metaTitle="Stop re-explaining your business to AI | Ardent Studio"
     metaDescription="A new chat knows very little about what you sell, who buys it or how you talk, so it guesses. This playbook fixes that with one page and about half an hour."
     crumb="Start here"
     title={<>Stop re-explaining your business to <span className="text-primary">AI.</span></>}

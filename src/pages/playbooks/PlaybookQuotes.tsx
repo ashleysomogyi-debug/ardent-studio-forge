@@ -2,8 +2,8 @@ import PlaybookLayout, { Boxes, DemoLabel, Note, P, Prompt } from "@/components/
 
 const PlaybookQuotes = () => (
   <PlaybookLayout
-    metaTitle="Follow up on every quote without chasing | Ardent Studio Playbooks"
-    metaDescription="Quotes go quiet because following up is nobody's favorite job. This sets up a ten-minute Monday routine where AI tells you who needs a nudge and drafts it in your voice. You send it."
+    metaTitle="Follow up on every quote without chasing | Ardent Studio"
+    metaDescription="Set up a ten-minute Monday routine where AI shows which quotes need a follow-up and drafts each one in your voice. You send them."
     crumb="Sales"
     title={<>Follow up on <span className="text-primary">every quote</span> without chasing.</>}
     intro="Quotes go quiet because following up is nobody's favorite job. This sets up a ten-minute Monday routine where AI tells you who needs a nudge and drafts it in your voice. You send it."
