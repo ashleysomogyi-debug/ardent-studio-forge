@@ -2,7 +2,7 @@ import PlaybookLayout, { DemoLabel, Note, P, Prompt } from "@/components/playboo
 
 const PlaybookFound = () => (
   <PlaybookLayout
-    metaTitle="Show up when customers ask AI instead of Google | Ardent Studio Playbooks"
+    metaTitle="Show up when customers ask AI instead of Google | Ardent Studio"
     metaDescription="More people now ask ChatGPT who to hire the way they used to search. Find out what it says about your business today, then give it clearer answers to work with."
     crumb="Getting found"
     title={<>Show up when customers <span className="text-primary">ask AI</span> instead of Google.</>}

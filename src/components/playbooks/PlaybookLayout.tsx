@@ -1,8 +1,9 @@
-import { useState, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
+import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { usePageMeta } from "@/lib/seo";
+import { canonicalUrlFor, usePageMeta, SITE_URL } from "@/lib/seo";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const BOOKING_URL = "https://calendly.com/asomogyi-ardentstudio/30min";
@@ -81,7 +82,7 @@ export const ToolTabs = ({ options }: { options: { label: string; body: ReactNod
       ))}
     </TabsList>
     {options.map((o) => (
-      <TabsContent key={o.label} value={o.label} className="mt-4 rounded-2xl bg-background px-[18px] py-4">{o.body}</TabsContent>
+      <TabsContent key={o.label} value={o.label} forceMount className="mt-4 rounded-2xl data-[state=inactive]:hidden bg-background px-[18px] py-4">{o.body}</TabsContent>
     ))}
   </Tabs>
 );
@@ -123,6 +124,45 @@ export interface PlaybookProps {
 
 const PlaybookLayout = ({ metaTitle, metaDescription, crumb, title, intro, chips, demo, steps, doneMessage, next }: PlaybookProps) => {
   usePageMeta({ title: metaTitle, description: metaDescription });
+  const { pathname } = useLocation();
+
+  // Structured data: tells search engines and AI tools what this page is and where it sits.
+  useEffect(() => {
+    const url = canonicalUrlFor(pathname);
+    const headline = metaTitle.replace(/ \| Ardent Studio$/, "");
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "playbook-schema";
+    script.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": `${url}#article`,
+          headline,
+          description: metaDescription,
+          articleSection: "Playbooks",
+          inLanguage: "en-US",
+          isAccessibleForFree: true,
+          mainEntityOfPage: url,
+          author: { "@id": `${SITE_URL}/#ashley-somogyi` },
+          publisher: { "@id": `${SITE_URL}/#organization` },
+          hasPart: steps.map((s, i) => ({ "@type": "WebPageElement", position: i + 1, name: s.title })),
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+            { "@type": "ListItem", position: 2, name: "Playbooks", item: `${SITE_URL}/playbooks` },
+            { "@type": "ListItem", position: 3, name: headline, item: url },
+          ],
+        },
+      ],
+    });
+    document.getElementById("playbook-schema")?.remove();
+    document.head.appendChild(script);
+    return () => script.remove();
+  }, [pathname, metaTitle, metaDescription, steps]);
   const [open, setOpen] = useState(0);
   const [done, setDone] = useState<boolean[]>(() => steps.map(() => false));
   const count = done.filter(Boolean).length;
@@ -168,8 +208,8 @@ const PlaybookLayout = ({ metaTitle, metaDescription, crumb, title, intro, chips
                   <p className="mt-2">{demo.left}</p>
                 </div>
               )}
-              <TabsContent value="a" className="mt-0 min-w-0 flex-[2_1_420px] rounded-[18px] border-2 border-bg-hover bg-bg-hover p-5">{demo.a}</TabsContent>
-              <TabsContent value="b" className="mt-0 min-w-0 flex-[2_1_420px] rounded-[18px] border-2 border-primary bg-white p-5">{demo.b}</TabsContent>
+              <TabsContent value="a" forceMount className="mt-0 min-w-0 data-[state=inactive]:hidden flex-[2_1_420px] rounded-[18px] border-2 border-bg-hover bg-bg-hover p-5">{demo.a}</TabsContent>
+              <TabsContent value="b" forceMount className="mt-0 min-w-0 data-[state=inactive]:hidden flex-[2_1_420px] rounded-[18px] border-2 border-primary bg-white p-5">{demo.b}</TabsContent>
             </div>
             <p className="mt-4 text-[13px] text-label-text">Illustrative example, not a client result.</p>
           </Tabs>
@@ -212,8 +252,9 @@ const PlaybookLayout = ({ metaTitle, metaDescription, crumb, title, intro, chips
                   </span>
                   <span aria-hidden="true" className="font-mono text-[22px]">{open === i ? "−" : "+"}</span>
                 </button>
-                {open === i && (
-                  <div className="mt-3.5 flex flex-col gap-4 text-body-text">
+                {/* Closed steps stay in the HTML (hidden) so search engines and AI tools can read them. */}
+                {(
+                  <div hidden={open !== i} className={open === i ? "mt-3.5 flex flex-col gap-4 text-body-text" : undefined}>
                     {s.body}
                     <label className="flex min-h-11 cursor-pointer items-center gap-3 font-semibold text-foreground">
                       <input type="checkbox" checked={done[i]} onChange={(e) => toggleDone(i, e.target.checked)} className="h-[22px] w-[22px] accent-teal" />
