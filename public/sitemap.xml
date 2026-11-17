@@ -16,6 +16,13 @@
   <url><loc>https://ardentstudio.io/locations/palm-beach-gardens</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ardentstudio.io/locations/wellington</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ardentstudio.io/locations/lake-worth-beach</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ardentstudio.io/playbooks</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ardentstudio.io/playbooks/business-brief</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ardentstudio.io/playbooks/sound-like-you</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ardentstudio.io/playbooks/one-task</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ardentstudio.io/playbooks/quote-follow-up</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ardentstudio.io/playbooks/get-found-by-ai</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ardentstudio.io/playbooks/first-tool</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ardentstudio.io/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ardentstudio.io/blog/what-can-ai-automate-small-business</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ardentstudio.io/blog/ai-automation-cost-palm-beach-county</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>

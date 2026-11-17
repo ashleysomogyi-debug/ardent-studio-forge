@@ -7,6 +7,7 @@ const NAV_LINKS = [
   { label: "AI Setup", href: "/services/ai-setup" },
   { label: "Automation & Apps", href: "/services/ai-automation" },
   { label: "Training", href: "/training" },
+  { label: "Playbooks", href: "/playbooks" },
   { label: "Contact", href: "/contact" },
 ];
 

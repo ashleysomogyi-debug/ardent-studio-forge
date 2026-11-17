@@ -10,6 +10,7 @@ const services = [
 const company = [
   { label: "Home", href: "/" },
   { label: "Blog", href: "/blog" },
+  { label: "Playbooks", href: "/playbooks" },
   { label: "Contact", href: "/contact" },
   { label: "Book a call", href: "https://calendly.com/asomogyi-ardentstudio/30min", external: true },
   { label: "SartoriAI", href: "https://www.sartoriai.com/", external: true },

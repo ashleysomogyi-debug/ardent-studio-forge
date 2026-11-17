@@ -42,6 +42,15 @@ const Post3 = lazy(() => import("./pages/blog/Post3AIvsHiring.tsx"));
 const Post4 = lazy(() => import("./pages/blog/Post4MakeComWorkflows.tsx"));
 const Post5 = lazy(() => import("./pages/blog/Post5WhyAIFails.tsx"));
 
+// Lazily loaded playbook pages
+const PlaybooksIndex = lazy(() => import("./pages/playbooks/PlaybooksIndex.tsx"));
+const PlaybookBrief = lazy(() => import("./pages/playbooks/PlaybookBrief.tsx"));
+const PlaybookVoice = lazy(() => import("./pages/playbooks/PlaybookVoice.tsx"));
+const PlaybookOneTask = lazy(() => import("./pages/playbooks/PlaybookOneTask.tsx"));
+const PlaybookQuotes = lazy(() => import("./pages/playbooks/PlaybookQuotes.tsx"));
+const PlaybookFound = lazy(() => import("./pages/playbooks/PlaybookFound.tsx"));
+const PlaybookBuild = lazy(() => import("./pages/playbooks/PlaybookBuild.tsx"));
+
 const TrailingSlashRedirect = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -107,6 +116,15 @@ const App = () => (
             <Route path="/blog/ai-automation-vs-hiring-admin" element={<Post3 />} />
             <Route path="/blog/make-com-workflows-palm-beach-small-business" element={<Post4 />} />
             <Route path="/blog/why-ai-automation-fails-small-business" element={<Post5 />} />
+
+            {/* Playbooks */}
+            <Route path="/playbooks" element={<PlaybooksIndex />} />
+            <Route path="/playbooks/business-brief" element={<PlaybookBrief />} />
+            <Route path="/playbooks/sound-like-you" element={<PlaybookVoice />} />
+            <Route path="/playbooks/one-task" element={<PlaybookOneTask />} />
+            <Route path="/playbooks/quote-follow-up" element={<PlaybookQuotes />} />
+            <Route path="/playbooks/get-found-by-ai" element={<PlaybookFound />} />
+            <Route path="/playbooks/first-tool" element={<PlaybookBuild />} />
 
             {/* Catch-all redirect to home */}
             <Route path="*" element={<Navigate to="/" replace />} />

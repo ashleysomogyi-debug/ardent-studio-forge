@@ -28,6 +28,15 @@ Prices are fixed and quoted after the free call, before any work starts.
 - [Wellington](https://ardentstudio.io/locations/wellington)
 - [Lake Worth Beach](https://ardentstudio.io/locations/lake-worth-beach)
 
+## Playbooks
+- [AI playbooks for small business](https://ardentstudio.io/playbooks)
+- [Stop re-explaining your business to AI](https://ardentstudio.io/playbooks/business-brief)
+- [Make AI drafts sound like you wrote them](https://ardentstudio.io/playbooks/sound-like-you)
+- [Find the one task worth handing to AI](https://ardentstudio.io/playbooks/one-task)
+- [Follow up on every quote without chasing](https://ardentstudio.io/playbooks/quote-follow-up)
+- [Show up when customers ask AI instead of Google](https://ardentstudio.io/playbooks/get-found-by-ai)
+- [Build your first small tool without code](https://ardentstudio.io/playbooks/first-tool)
+
 ## Guides
 - [What can AI actually automate for your small business](https://ardentstudio.io/blog/what-can-ai-automate-small-business)
 - [How much does AI automation cost in Palm Beach County](https://ardentstudio.io/blog/ai-automation-cost-palm-beach-county)
