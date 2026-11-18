@@ -5,7 +5,7 @@ const CITY = "Jupiter";
 const SLUG = "jupiter";
 const META_TITLE = "AI Automation for Jupiter, FL Businesses | Ardent Studio";
 const META_DESC =
-  "AI automation for Jupiter, FL small businesses. Custom workflows, chatbots, and email automation for marine, fitness, family businesses, and more. Palm Beach County local. Book a free 15-min call.";
+  "AI automation for Jupiter, FL small businesses. Custom workflows, chatbots and email automation for marine, fitness and family businesses.";
 
 const features = [
   {

@@ -2,7 +2,7 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 const AIChatbot = () => (
   <ServicePageLayout
-    metaTitle="AI Chatbot for Small Business | 24/7 Lead Capture: Ardent Studio"
+    metaTitle="AI Chatbot for Small Business | Ardent Studio"
     metaDescription="Custom AI chatbots that answer customer questions, book appointments, and capture leads 24/7. Built for small businesses in South Florida."
     headline="AI Chatbot Development"
     subheadline="Never miss a lead, even at 2 AM."

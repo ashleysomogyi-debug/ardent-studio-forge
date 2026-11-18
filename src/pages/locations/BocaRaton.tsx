@@ -5,7 +5,7 @@ const CITY = "Boca Raton";
 const SLUG = "boca-raton";
 const META_TITLE = "AI Automation for Boca Raton Businesses | Ardent Studio";
 const META_DESC =
-  "AI automation services in Boca Raton, FL. Custom AI workflows, chatbots, and email automation for Boca Raton small businesses. Palm Beach County local. Book a free 15-min call.";
+  "AI automation in Boca Raton, FL. Custom AI workflows, chatbots and email automation for Boca Raton small businesses. Book a free 15-minute call.";
 
 const features = [
   {

@@ -2,8 +2,8 @@ import BlogPostLayout from "./BlogPostLayout";
 
 const Post3AIvsHiring = () => (
   <BlogPostLayout
-    metaTitle="AI Automation vs. Hiring an Admin: Which Makes More Sense? | Ardent Studio"
-    metaDescription="A balanced look at AI automation vs. hiring for Palm Beach County small businesses: what AI handles well, what humans do better, and how most businesses use both."
+    metaTitle="AI Automation vs. Hiring an Admin | Ardent Studio"
+    metaDescription="AI automation vs. hiring for Palm Beach County small businesses: what AI handles well, what people do better, and how most businesses use both."
     title="AI Automation vs. Hiring an Admin: Which Makes More Sense for Your Business?"
     date="May 2026"
     readTime="6 min read"

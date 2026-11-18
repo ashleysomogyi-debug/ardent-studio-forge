@@ -4,6 +4,9 @@ const services = [
   { label: "AI Setup", to: "/services/ai-setup" },
   { label: "AI Automation and Apps", to: "/services/ai-automation" },
   { label: "Training Workshops", to: "/training" },
+  { label: "AI Chatbot", to: "/services/ai-chatbot" },
+  { label: "Workflow Automation", to: "/services/workflow-automation" },
+  { label: "AI Tools Setup", to: "/services/ai-tools-setup" },
   { label: "Contact", to: "/contact" },
 ];
 

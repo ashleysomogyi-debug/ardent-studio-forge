@@ -2,8 +2,8 @@ import BlogPostLayout from "./BlogPostLayout";
 
 const Post5WhyAIFails = () => (
   <BlogPostLayout
-    metaTitle="The Real Reason Most Small Business AI Projects Fail | Ardent Studio"
-    metaDescription="Honest take on why AI automation fails for small businesses, and five specific mistakes to avoid. From Ardent Studio, Palm Beach County AI automation experts."
+    metaTitle="Why Small Business AI Projects Fail | Ardent Studio"
+    metaDescription="Why AI automation fails for small businesses, and five specific mistakes to avoid. From Ardent Studio in Palm Beach County, Florida."
     title="The Real Reason Most Small Business AI Projects Fail (And How to Avoid It)"
     date="May 2026"
     readTime="6 min read"

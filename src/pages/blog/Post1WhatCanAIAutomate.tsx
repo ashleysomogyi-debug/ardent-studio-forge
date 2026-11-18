@@ -2,7 +2,7 @@ import BlogPostLayout from "./BlogPostLayout";
 
 const Post1WhatCanAIAutomate = () => (
   <BlogPostLayout
-    metaTitle="What Can AI Actually Automate for Your Small Business? | Ardent Studio"
+    metaTitle="What Can AI Automate for a Small Business? | Ardent Studio"
     metaDescription="A practical breakdown of what AI automation can handle for small businesses right now, from lead follow-up to invoice reminders, and where to start."
     title="What Can AI Actually Automate for Your Small Business?"
     date="May 2026"

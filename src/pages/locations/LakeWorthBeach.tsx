@@ -5,7 +5,7 @@ const CITY = "Lake Worth Beach";
 const SLUG = "lake-worth-beach";
 const META_TITLE = "AI Automation for Lake Worth Beach Businesses | Ardent Studio";
 const META_DESC =
-  "AI automation for Lake Worth Beach, FL businesses. Custom AI workflows and chatbots for restaurants, creative businesses, retail, and more. Palm Beach County local. Book a free 15-min call.";
+  "AI automation for Lake Worth Beach, FL businesses. Custom AI workflows and chatbots for restaurants, creative businesses, retail and more.";
 
 const features = [
   {

@@ -1,5 +1,15 @@
-import { ReactNode } from "react";
-import { usePageMeta } from "@/lib/seo";
+import { ReactNode, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { canonicalUrlFor, usePageMeta, SITE_URL } from "@/lib/seo";
+
+const MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+
+/** "May 2026" -> "2026-05". Returns undefined when the label is not in that form. */
+const isoMonth = (label: string) => {
+  const [month, year] = label.trim().split(/\s+/);
+  const index = MONTHS.indexOf((month ?? "").toLowerCase());
+  return index >= 0 && /^\d{4}$/.test(year ?? "") ? `${year}-${String(index + 1).padStart(2, "0")}` : undefined;
+};
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 
@@ -21,6 +31,43 @@ export default function BlogPostLayout({
   children,
 }: BlogPostLayoutProps) {
   usePageMeta({ title: metaTitle, description: metaDescription });
+  const { pathname } = useLocation();
+
+  // Structured data: tells search engines and AI tools this is an article, who wrote it and when.
+  useEffect(() => {
+    const url = canonicalUrlFor(pathname);
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.id = "blog-post-schema";
+    script.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BlogPosting",
+          "@id": `${url}#article`,
+          headline: title,
+          description: metaDescription,
+          datePublished: isoMonth(date),
+          inLanguage: "en-US",
+          mainEntityOfPage: url,
+          image: `${SITE_URL}/og-image.png`,
+          author: { "@id": `${SITE_URL}/#ashley-somogyi` },
+          publisher: { "@id": `${SITE_URL}/#organization` },
+        },
+        {
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+            { "@type": "ListItem", position: 2, name: "Blog", item: `${SITE_URL}/blog` },
+            { "@type": "ListItem", position: 3, name: title, item: url },
+          ],
+        },
+      ],
+    });
+    document.getElementById("blog-post-schema")?.remove();
+    document.head.appendChild(script);
+    return () => script.remove();
+  }, [pathname, title, metaDescription, date]);
 
   return (
     <div
