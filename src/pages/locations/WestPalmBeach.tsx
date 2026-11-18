@@ -99,6 +99,12 @@ const WestPalmBeach = () => {
 
   return (
     <ServicePageLayout
+      heroImage={{
+        src: "https://images.unsplash.com/photo-1584677488802-c080664c7c45?auto=format&fit=crop&w=2000&q=70",
+        alt: "West Palm Beach skyline across the water with red flowers in the foreground",
+        credit: "Richard Sagredo / Unsplash",
+        creditUrl: "https://unsplash.com/photos/red-roses-near-body-of-water-and-city-buildings-during-daytime-ZwM0FtQ3zeY",
+      }}
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for West Palm Beach Small Businesses"

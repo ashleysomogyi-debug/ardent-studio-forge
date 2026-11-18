@@ -15,6 +15,14 @@ interface CaseStudy {
   result: string;
 }
 
+export interface HeroImage {
+  src: string;
+  alt: string;
+  credit?: string;
+  creditUrl?: string;
+  position?: string;
+}
+
 interface ServicePageLayoutProps {
   metaTitle: string;
   metaDescription: string;
@@ -26,6 +34,8 @@ interface ServicePageLayoutProps {
   ctaText: string;
   industries?: string[];
   caseStudy?: CaseStudy;
+  /** Optional location photo shown behind the hero text. Pages without one keep the plain hero. */
+  heroImage?: HeroImage;
 }
 
 const ServicePageLayout = ({
@@ -39,6 +49,7 @@ const ServicePageLayout = ({
   ctaText,
   industries,
   caseStudy,
+  heroImage,
 }: ServicePageLayoutProps) => {
   useScrollReveal();
 
@@ -49,22 +60,57 @@ const ServicePageLayout = ({
       <Nav />
       <main>
         {/* Hero */}
-        <section className="relative overflow-hidden bg-blush px-5 pb-12 pt-20 md:px-10 md:pb-[72px] md:pt-24">
-          <ParticleCanvas />
-          <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(135deg, rgba(10,125,123,0.06) 0%, transparent 50%)" }} />
-          <div className="relative z-10 max-w-[800px] mx-auto text-center reveal-section">
-            <span className="section-eyebrow mb-6">Ardent Studio</span>
-            <h1 className="font-sans text-[clamp(32px,8vw,56px)] md:text-[clamp(36px,4.5vw,64px)] font-light leading-[1.1] mb-6">
-              {headline}
-            </h1>
-            <h2 className="font-sans text-[18px] md:text-[20px] text-body-text font-light leading-[1.6] mb-8">
-              {subheadline}
-            </h2>
-            <p className="font-sans text-[16px] text-label-text leading-[1.75] max-w-[600px] mx-auto">
-              {introText}
-            </p>
-          </div>
-        </section>
+        {heroImage ? (
+          <section className="relative isolate overflow-hidden bg-ardent-studio px-5 pb-14 pt-24 md:px-10 md:pb-20 md:pt-32">
+            <img
+              src={heroImage.src}
+              alt={heroImage.alt}
+              className="absolute inset-0 -z-20 h-full w-full object-cover"
+              style={{ objectPosition: heroImage.position ?? "center" }}
+              fetchPriority="high"
+              decoding="async"
+            />
+            {/* Dark wash so white text stays readable over any photo */}
+            <div className="absolute inset-0 -z-10" style={{ background: "linear-gradient(180deg, rgba(13,13,13,0.62) 0%, rgba(13,13,13,0.74) 100%)" }} />
+            <div className="relative z-10 max-w-[800px] mx-auto text-center reveal-section">
+              <span className="section-eyebrow section-eyebrow--on-photo mb-6">Ardent Studio</span>
+              <h1 className="font-sans text-[clamp(32px,8vw,56px)] md:text-[clamp(36px,4.5vw,64px)] font-light leading-[1.1] mb-6 text-white">
+                {headline}
+              </h1>
+              <h2 className="font-sans text-[18px] md:text-[20px] text-white/90 font-light leading-[1.6] mb-8">
+                {subheadline}
+              </h2>
+              <p className="font-sans text-[16px] text-white/80 leading-[1.75] max-w-[600px] mx-auto">
+                {introText}
+              </p>
+            </div>
+            {heroImage.credit &&
+              (heroImage.creditUrl ? (
+                <a href={heroImage.creditUrl} target="_blank" rel="noopener noreferrer" className="absolute bottom-3 right-4 font-sans text-[12px] text-white/60 hover:text-white">
+                  Photo: {heroImage.credit}
+                </a>
+              ) : (
+                <span className="absolute bottom-3 right-4 font-sans text-[12px] text-white/60">Photo: {heroImage.credit}</span>
+              ))}
+          </section>
+        ) : (
+          <section className="relative overflow-hidden bg-blush px-5 pb-12 pt-20 md:px-10 md:pb-[72px] md:pt-24">
+            <ParticleCanvas />
+            <div className="absolute inset-0 pointer-events-none" style={{ background: "linear-gradient(135deg, rgba(10,125,123,0.06) 0%, transparent 50%)" }} />
+            <div className="relative z-10 max-w-[800px] mx-auto text-center reveal-section">
+              <span className="section-eyebrow mb-6">Ardent Studio</span>
+              <h1 className="font-sans text-[clamp(32px,8vw,56px)] md:text-[clamp(36px,4.5vw,64px)] font-light leading-[1.1] mb-6">
+                {headline}
+              </h1>
+              <h2 className="font-sans text-[18px] md:text-[20px] text-body-text font-light leading-[1.6] mb-8">
+                {subheadline}
+              </h2>
+              <p className="font-sans text-[16px] text-label-text leading-[1.75] max-w-[600px] mx-auto">
+                {introText}
+              </p>
+            </div>
+          </section>
+        )}
 
         <div className="h-px bg-border" />
 
