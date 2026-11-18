@@ -99,6 +99,12 @@ const BoyntonBeach = () => {
 
   return (
     <ServicePageLayout
+      heroImage={{
+        src: "https://images.unsplash.com/photo-1576124566721-6496f8c53365?auto=format&fit=crop&w=2000&q=70",
+        alt: "Sunset on the water by the inlet in Boynton Beach, Florida",
+        credit: "Richard Sagredo / Unsplash",
+        creditUrl: "https://unsplash.com/photos/people-sailing-on-river-near-parking-lot-ZpZxpOaZWec",
+      }}
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation in Boynton Beach, FL"

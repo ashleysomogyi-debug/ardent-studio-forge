@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import ServicePageLayout from "@/components/ServicePageLayout";
+import delrayBeachPath from "@/assets/photos/delray-beach-path.jpg";
 
 const CITY = "Delray Beach";
 const SLUG = "delray-beach";
@@ -99,6 +100,10 @@ const DelrayBeach = () => {
 
   return (
     <ServicePageLayout
+      heroImage={{
+        src: delrayBeachPath,
+        alt: "Sandy rope-lined path through sea grape leading to the ocean at sunrise",
+      }}
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for Delray Beach Small Businesses"

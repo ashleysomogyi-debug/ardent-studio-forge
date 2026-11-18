@@ -99,6 +99,12 @@ const Jupiter = () => {
 
   return (
     <ServicePageLayout
+      heroImage={{
+        src: "https://images.pexels.com/photos/39293558/pexels-photo-39293558.jpeg?auto=compress&cs=tinysrgb&w=2000",
+        alt: "The Jupiter Inlet Lighthouse against a blue sky",
+        credit: "Pexels",
+        creditUrl: "https://www.pexels.com/photo/scenic-view-of-iconic-red-lighthouse-in-florida-39293558/",
+      }}
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for Jupiter Small Businesses"
