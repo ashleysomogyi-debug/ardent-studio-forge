@@ -35,6 +35,13 @@ const PalmBeachGardens = lazy(() => import("./pages/locations/PalmBeachGardens.t
 const Wellington = lazy(() => import("./pages/locations/Wellington.tsx"));
 const LakeWorthBeach = lazy(() => import("./pages/locations/LakeWorthBeach.tsx"));
 
+// Lazily loaded Raleigh-Durham (Triangle) location pages
+const RaleighDurham = lazy(() => import("./pages/locations/triangle/RaleighDurham.tsx"));
+const Raleigh = lazy(() => import("./pages/locations/triangle/Raleigh.tsx"));
+const Durham = lazy(() => import("./pages/locations/triangle/Durham.tsx"));
+const Cary = lazy(() => import("./pages/locations/triangle/Cary.tsx"));
+const ChapelHill = lazy(() => import("./pages/locations/triangle/ChapelHill.tsx"));
+
 // Lazily loaded blog pages
 const BlogIndex = lazy(() => import("./pages/blog/BlogIndex.tsx"));
 const Post1 = lazy(() => import("./pages/blog/Post1WhatCanAIAutomate.tsx"));
@@ -110,6 +117,11 @@ const App = () => (
             <Route path="/locations/palm-beach-gardens" element={<PalmBeachGardens />} />
             <Route path="/locations/wellington" element={<Wellington />} />
             <Route path="/locations/lake-worth-beach" element={<LakeWorthBeach />} />
+            <Route path="/locations/raleigh-durham" element={<RaleighDurham />} />
+            <Route path="/locations/raleigh" element={<Raleigh />} />
+            <Route path="/locations/durham" element={<Durham />} />
+            <Route path="/locations/cary" element={<Cary />} />
+            <Route path="/locations/chapel-hill" element={<ChapelHill />} />
 
             {/* Blog */}
             <Route path="/blog" element={<BlogIndex />} />
