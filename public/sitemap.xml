@@ -17,6 +17,11 @@
   <url><loc>https://ardentstudio.io/locations/palm-beach-gardens</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ardentstudio.io/locations/wellington</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ardentstudio.io/locations/lake-worth-beach</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ardentstudio.io/locations/raleigh-durham</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ardentstudio.io/locations/raleigh</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ardentstudio.io/locations/durham</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ardentstudio.io/locations/cary</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ardentstudio.io/locations/chapel-hill</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ardentstudio.io/playbooks</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://ardentstudio.io/playbooks/business-brief</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://ardentstudio.io/playbooks/sound-like-you</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>

@@ -27,6 +27,11 @@ Prices are fixed and quoted after the free call, before any work starts.
 - [Palm Beach Gardens](https://ardentstudio.io/locations/palm-beach-gardens)
 - [Wellington](https://ardentstudio.io/locations/wellington)
 - [Lake Worth Beach](https://ardentstudio.io/locations/lake-worth-beach)
+- [Raleigh-Durham, NC (served remotely)](https://ardentstudio.io/locations/raleigh-durham)
+- [Raleigh, NC](https://ardentstudio.io/locations/raleigh)
+- [Durham, NC](https://ardentstudio.io/locations/durham)
+- [Cary, NC](https://ardentstudio.io/locations/cary)
+- [Chapel Hill, NC](https://ardentstudio.io/locations/chapel-hill)
 
 ## Playbooks
 - [AI playbooks for small business](https://ardentstudio.io/playbooks)

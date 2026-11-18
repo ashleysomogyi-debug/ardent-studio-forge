@@ -16,6 +16,14 @@ const cities = [
   { label: "Lake Worth Beach", to: "/locations/lake-worth-beach" },
 ];
 
+const triangle = [
+  { label: "Raleigh-Durham", to: "/locations/raleigh-durham", note: "The Triangle overview." },
+  { label: "Raleigh", to: "/locations/raleigh" },
+  { label: "Durham", to: "/locations/durham" },
+  { label: "Cary", to: "/locations/cary", note: "With Apex and Morrisville." },
+  { label: "Chapel Hill", to: "/locations/chapel-hill", note: "With Carrboro." },
+];
+
 const LocationsIndex = () => {
   usePageMeta({
     title: "Service Areas in Palm Beach County | Ardent Studio",
@@ -53,6 +61,23 @@ const LocationsIndex = () => {
               Not on the list? We cover all of Palm Beach County, and most of our work can be done remotely.{" "}
               <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="font-medium text-primary underline hover:text-foreground">Book a free 15-minute call</a> and tell us where you are.
             </p>
+          </div>
+        </section>
+
+        <section className="px-5 pb-14 md:px-10 md:pb-[72px]" aria-labelledby="triangle-heading">
+          <div className="mx-auto max-w-[1200px]">
+            <h2 id="triangle-heading" className="text-[clamp(28px,3.6vw,40px)] font-semibold leading-[1.12]">Raleigh-Durham, North Carolina</h2>
+            <p className="mt-4 max-w-[62ch] text-body-text">We serve Triangle businesses remotely today.</p>
+            <ul className="mt-8 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-4">
+              {triangle.map((c) => (
+                <li key={c.to}>
+                  <Link to={c.to} className="workshop-card flex h-full min-h-[112px] flex-col justify-between gap-3 p-6 transition-colors hover:border-foreground">
+                    <span className="text-[20px] font-semibold leading-[1.25]">{c.label}</span>
+                    <span className="text-[14px] text-body-text">{c.note ?? `AI help for ${c.label} businesses`}</span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </section>
       </main>
