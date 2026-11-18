@@ -99,6 +99,12 @@ const DelrayBeach = () => {
 
   return (
     <ServicePageLayout
+      heroImage={{
+        src: "https://images.pexels.com/photos/29861870/pexels-photo-29861870.jpeg?auto=compress&cs=tinysrgb&w=2000",
+        alt: "Lake and boardwalk in Delray Beach, Florida",
+        credit: "Jeffrey Eisen / Pexels",
+        creditUrl: "https://www.pexels.com/photo/scenic-lake-and-boardwalk-in-delray-beach-29861870/",
+      }}
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for Delray Beach Small Businesses"

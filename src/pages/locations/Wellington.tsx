@@ -99,6 +99,12 @@ const Wellington = () => {
 
   return (
     <ServicePageLayout
+      heroImage={{
+        src: "https://images.pexels.com/photos/31182769/pexels-photo-31182769.jpeg?auto=compress&cs=tinysrgb&w=2000",
+        alt: "Polo players on horseback on a green field",
+        credit: "Pexels",
+        creditUrl: "https://www.pexels.com/photo/polo-match-players-on-horses-in-action-outdoors-31182769/",
+      }}
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for Wellington Small Businesses"

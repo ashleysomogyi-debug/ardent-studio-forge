@@ -99,6 +99,12 @@ const BocaRaton = () => {
 
   return (
     <ServicePageLayout
+      heroImage={{
+        src: "https://images.pexels.com/photos/37820385/pexels-photo-37820385.jpeg?auto=compress&cs=tinysrgb&w=2000",
+        alt: "Palm trees beside a lake in Boca Raton, Florida",
+        credit: "Pexels",
+        creditUrl: "https://www.pexels.com/photo/scenic-view-of-palm-trees-by-a-lakeside-in-boca-raton-37820385/",
+      }}
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for Boca Raton Small Businesses"

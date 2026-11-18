@@ -99,6 +99,12 @@ const LakeWorthBeach = () => {
 
   return (
     <ServicePageLayout
+      heroImage={{
+        src: "https://images.unsplash.com/photo-1712026258314-02d026b96b96?auto=format&fit=crop&w=2000&q=70",
+        alt: "Aerial view of the Lake Worth pier and beach",
+        credit: "Gene Gallin / Unsplash",
+        creditUrl: "https://unsplash.com/photos/a-pier-on-a-beach-near-the-ocean-under-a-cloudy-sky-8iE9KOkNsjU",
+      }}
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for Lake Worth Beach Small Businesses"

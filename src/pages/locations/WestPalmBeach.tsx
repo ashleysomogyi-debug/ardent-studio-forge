@@ -99,6 +99,12 @@ const WestPalmBeach = () => {
 
   return (
     <ServicePageLayout
+      heroImage={{
+        src: "https://images.pexels.com/photos/9867776/pexels-photo-9867776.jpeg?auto=compress&cs=tinysrgb&w=2000",
+        alt: "Waterfront city skyline at sunset with boats",
+        credit: "Pexels",
+        creditUrl: "https://www.pexels.com/photo/city-skyline-by-the-river-9867776/",
+      }}
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for West Palm Beach Small Businesses"
