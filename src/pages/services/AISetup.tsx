@@ -8,7 +8,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 const CALENDLY = "https://calendly.com/asomogyi-ardentstudio/30min";
 const META_TITLE = "AI Setup for Your Business | Ardent Studio";
 const META_DESCRIPTION =
-  "We connect AI tools like Microsoft Copilot and ChatGPT to the systems you already use and show your team what to use them for. Based in Palm Beach County.";
+  "We connect AI tools like Microsoft Copilot and ChatGPT to the systems you already use and show your team what to use them for. Based in Palm Beach County, FL, and remote for Raleigh-Durham, NC.";
 
 const outcomes = [
   {

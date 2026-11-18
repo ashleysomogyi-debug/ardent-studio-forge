@@ -41,7 +41,7 @@ export default function AIToolsSetup() {
     if (metaDesc) {
       metaDesc.setAttribute(
         "content",
-        "Hands-on AI tools setup and training for Palm Beach County small businesses on ChatGPT, Claude and more. Book a free 15-minute call."
+        "Hands-on AI tools setup and training for small businesses in Palm Beach County, FL and Raleigh-Durham, NC, on ChatGPT, Claude and more. Book a free 15-minute call."
       );
     }
 
@@ -63,7 +63,7 @@ export default function AIToolsSetup() {
   return (
     <ServicePageLayout
       metaTitle="AI Tools Setup and Training | Ardent Studio"
-      metaDescription="Hands-on AI tools setup and training for Palm Beach County small businesses on ChatGPT, Claude and more. Book a free 15-minute call."
+      metaDescription="Hands-on AI tools setup and training for small businesses in Palm Beach County, FL and Raleigh-Durham, NC, on ChatGPT, Claude and more. Book a free 15-minute call."
       headline="AI Tools Setup & Training"
       subheadline="Most small business owners have a ChatGPT account they use 10% of its potential. Ardent Studio sets up the right AI tools for your specific business, builds the prompts, and trains you to use them effectively."
       introText="A Salesforce survey found that 76% of small business owners who implemented AI tools reported significant time savings, but most of them needed hands-on help to get there. Generic AI courses teach you theory. This service teaches you how to use AI for your actual business, with your voice, your workflows, and your clients."

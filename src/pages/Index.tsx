@@ -83,7 +83,7 @@ const ownerQuestions = [
   },
   {
     question: "Do you only work with certain kinds of businesses?",
-    answer: "No. If a chore eats your week, we can probably help. We work in person around Palm Beach County and over Zoom everywhere else.",
+    answer: "No. If a chore eats your week, we can probably help. We work in person around Palm Beach County, remotely with Raleigh-Durham businesses, and over Zoom everywhere else.",
   },
 ];
 
@@ -101,8 +101,8 @@ const proof = [
 const Index = () => (
   <>
     <PageMeta
-      title="Ardent Studio | Practical AI for Palm Beach County"
-      description="Find where AI actually helps, build the tool, and train your team. Fixed prices, based in Palm Beach County, Florida."
+      title="Ardent Studio | Practical AI in Palm Beach County & Raleigh-Durham"
+      description="Find where AI actually helps, build the tool, and train your team. Fixed prices. Based in Palm Beach County, FL, serving South Florida and Raleigh-Durham, NC."
       path="/"
     />
     <Nav />
@@ -266,7 +266,7 @@ const Index = () => (
         <div className="relative mx-auto max-w-[1200px]">
           <span className="section-eyebrow mb-5">About us</span>
           <h2 id="about-heading" className="mb-4 md:mb-8 text-[clamp(32px,5vw,56px)] font-semibold text-foreground">The people doing the work.</h2>
-          <p className="mb-6 md:mb-10 max-w-[70ch] text-[17px] md:text-[18px] leading-relaxed text-body-text">We are Ashley and Wesley. We run Ardent Studio in Palm Beach County. We work directly with you to find where AI helps, build what fits across the major AI tools, and make sure your team can use it. No account-manager handoff, just the people doing the work.</p>
+          <p className="mb-6 md:mb-10 max-w-[70ch] text-[17px] md:text-[18px] leading-relaxed text-body-text">We are Ashley and Wesley. We run Ardent Studio from Palm Beach County, Florida, and work with small businesses there, in Raleigh-Durham, and remotely anywhere. We work directly with you to find where AI helps, build what fits across the major AI tools, and make sure your team can use it. No account-manager handoff, just the people doing the work.</p>
           <div className="mx-auto grid max-w-[900px] grid-cols-2 items-start justify-items-center gap-x-4 gap-y-6 sm:grid-cols-3 md:gap-9">
             {[
               { src: "/ashley-profile.jpg", name: "Ashley Somogyi", role: "Cofounder · Build", detail: "PhD, 15 plus years in tech, learning and business ops" },

@@ -31,11 +31,11 @@ const Footer = () => (
           <img src="/ardent-logo-circle.png" alt="Ardent Studio" className="h-12 w-12 shrink-0 rounded-full" />
           <span>
             <span className="block font-sans text-[16px] font-semibold text-dark-band-text md:text-[18px]">Ardent Studio</span>
-            <span className="mt-1 block font-mono text-[13px] uppercase tracking-[0.18em] text-footer-muted">PRACTICAL AI FOR BUSINESS · PALM BEACH COUNTY</span>
+            <span className="mt-1 block font-mono text-[13px] uppercase tracking-[0.18em] text-footer-muted">PRACTICAL AI FOR BUSINESS</span>
           </span>
         </Link>
         <p className="font-sans text-[16px] text-footer-muted mt-4 leading-[1.6]">
-           Practical AI for businesses in Palm Beach County and beyond. Based in Boynton Beach, FL.
+           Practical AI for small businesses in Palm Beach County, FL and Raleigh-Durham, NC. Based in Boynton Beach, FL.
         </p>
         <span className="mt-4 flex items-center gap-2 font-mono text-[13px] text-footer-muted"><span className="h-2 w-2 rounded-full bg-coral" aria-hidden="true" />© 2026 Ardent Studio</span>
       </div>
@@ -58,7 +58,7 @@ const Footer = () => (
       <div className="col-span-2 max-md:order-last md:col-span-1">
         <span className="font-mono text-[13px] text-dark-band-text tracking-[0.2em] uppercase mb-4 block">Service Area</span>
         <p className="font-sans text-[15px] leading-[1.6] text-footer-muted">
-          Based in Boynton Beach. In person across Palm Beach County, FL, and remote for teams anywhere.
+          Based in Boynton Beach. In person across Palm Beach County, FL. Remote for Raleigh-Durham, NC and teams anywhere.
         </p>
         <Link to="/locations" className="mt-2.5 max-md:inline-flex max-md:min-h-11 max-md:items-center inline-block font-sans text-[15px] text-footer-muted underline underline-offset-4 hover:text-footer-text transition-colors">
           See all service areas
@@ -103,6 +103,9 @@ const Footer = () => (
     <div className="max-w-[1200px] mx-auto mt-7 md:mt-10 pt-5 md:pt-6 border-t border-border-subtle">
       <p className="font-sans text-[13px] text-footer-muted leading-[1.8] text-center">
         Serving businesses across Palm Beach County, FL: West Palm Beach · Boca Raton · Delray Beach · Boynton Beach · Jupiter · Palm Beach Gardens · Wellington · Lake Worth Beach · North Palm Beach · Riviera Beach · Royal Palm Beach · Greenacres · Lantana · Tequesta · Juno Beach · Palm Beach · and all of South Florida
+      </p>
+      <p className="mt-2 font-sans text-[13px] text-footer-muted leading-[1.8] text-center">
+        Serving the Triangle, NC remotely: Raleigh · Durham · Cary · Apex · Morrisville · Chapel Hill · Carrboro · Wake Forest · Holly Springs · Hillsborough
       </p>
     </div>
   </footer>
