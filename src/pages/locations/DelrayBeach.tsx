@@ -5,7 +5,7 @@ const CITY = "Delray Beach";
 const SLUG = "delray-beach";
 const META_TITLE = "AI Automation for Delray Beach Businesses | Ardent Studio";
 const META_DESC =
-  "AI automation for Delray Beach, FL small businesses. Ardent Studio builds custom AI workflows and chatbots for restaurants, retail, boutiques, and service businesses. Book a free 15-min call.";
+  "AI automation for Delray Beach, FL small businesses. Custom AI workflows and chatbots for restaurants, retail, boutiques and service businesses.";
 
 const features = [
   {

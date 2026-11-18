@@ -101,7 +101,7 @@ const proof = [
 const Index = () => (
   <>
     <PageMeta
-      title="Ardent Studio | Practical AI for your business"
+      title="Ardent Studio | Practical AI for Palm Beach County"
       description="Find where AI actually helps, build the tool, and train your team. Fixed prices, based in Palm Beach County, Florida."
       path="/"
     />
@@ -215,6 +215,31 @@ const Index = () => (
           <div className="flex flex-col gap-4 md:gap-6 lg:flex-row lg:items-center lg:justify-between">
             <h2 className="section-eyebrow">Where we have taught</h2>
             <div className="flex flex-wrap gap-2 md:gap-3 text-sm font-medium text-ardent-studio">{taught.map((item, i) => <span key={item} className={`rounded-full px-4 py-2 ${accentPills[i]}`}>{item}</span>)}</div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background px-5 py-12 md:px-10 md:py-[72px]" aria-labelledby="playbooks-heading">
+        <div className="mx-auto max-w-[1200px]">
+          <span className="section-eyebrow mb-5">Free playbooks</span>
+          <h2 id="playbooks-heading" className="max-w-[22ch] text-[clamp(32px,5vw,56px)] font-semibold leading-[1.12] text-foreground">Want to try it yourself first?</h2>
+          <p className="mt-5 max-w-[62ch] text-[17px] leading-relaxed text-body-text">Six plain-English playbooks for getting more out of the AI you already pay for. One job each, step by step, with prompts you can copy.</p>
+          <div className="mt-6 md:mt-10 grid gap-3 md:gap-5 md:grid-cols-3">
+            {[
+              { to: "/playbooks/business-brief", time: "30 minutes", title: "Stop re-explaining your business to AI", detail: "Write one page about your business so every answer sounds like it knows you." },
+              { to: "/playbooks/one-task", time: "45 minutes", title: "Find the one task worth handing to AI", detail: "List your week, score it, and pick the single chore to start with." },
+              { to: "/playbooks/quote-follow-up", time: "1 hour to set up", title: "Follow up on every quote without chasing", detail: "A ten-minute Monday routine that drafts each follow-up in your voice." },
+            ].map((p) => (
+              <Link key={p.to} to={p.to} className="workshop-card flex flex-col gap-3 p-5 md:p-8 transition-colors hover:border-foreground">
+                <span className="font-mono text-[13px] uppercase tracking-[0.12em] text-primary">{p.time}</span>
+                <span className="text-[22px] font-semibold leading-tight text-foreground">{p.title}</span>
+                <span className="text-[16px] leading-[1.6] text-body-text">{p.detail}</span>
+              </Link>
+            ))}
+          </div>
+          <div className="mt-6 md:mt-9 flex flex-wrap items-center gap-x-8 gap-y-4">
+            <Link to="/playbooks" className="inline-flex min-h-11 items-center justify-center rounded-full bg-ardent-lime px-6 py-3 text-[16px] font-semibold text-ardent-studio transition-opacity hover:opacity-85">See all six playbooks</Link>
+            <Link to="/blog" className="text-[16px] font-medium text-primary underline underline-offset-4 hover:text-foreground">Read the blog</Link>
           </div>
         </div>
       </section>

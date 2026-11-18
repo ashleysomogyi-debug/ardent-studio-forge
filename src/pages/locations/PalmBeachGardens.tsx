@@ -5,7 +5,7 @@ const CITY = "Palm Beach Gardens";
 const SLUG = "palm-beach-gardens";
 const META_TITLE = "AI Automation for Palm Beach Gardens Businesses | Ardent Studio";
 const META_DESC =
-  "AI automation services in Palm Beach Gardens, FL. Custom workflows and chatbots for medical practices, corporate offices, retail, and professional services. Book a free 15-min call.";
+  "AI automation in Palm Beach Gardens, FL. Custom workflows and chatbots for medical practices, offices, retail and professional services. Free 15-minute call.";
 
 const features = [
   {

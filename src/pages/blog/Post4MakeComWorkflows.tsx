@@ -2,8 +2,8 @@ import BlogPostLayout from "./BlogPostLayout";
 
 const Post4MakeComWorkflows = () => (
   <BlogPostLayout
-    metaTitle="5 Automation Workflows Palm Beach County Businesses Use Right Now | Ardent Studio"
-    metaDescription="Five practical automation workflows for Palm Beach County small businesses: lead capture, appointment reminders, invoice follow-ups, review alerts, and social scheduling."
+    metaTitle="5 Automations Palm Beach Businesses Use | Ardent Studio"
+    metaDescription="Five practical automations for Palm Beach County small businesses: lead capture, appointment reminders, invoice follow-ups, review alerts and scheduling."
     title="5 Automation Workflows That Palm Beach County Businesses Are Using Right Now"
     date="May 2026"
     readTime="8 min read"

@@ -3,9 +3,9 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 const CITY = "Boynton Beach";
 const SLUG = "boynton-beach";
-const META_TITLE = "AI Automation in Boynton Beach, FL | Ardent Studio: Local Expert";
+const META_TITLE = "AI Automation in Boynton Beach, FL | Ardent Studio";
 const META_DESC =
-  "Ardent Studio is based in Boynton Beach, FL. AI automation for local contractors, service businesses, medical offices, and more. Book a free 15-min call with Ashley.";
+  "Ardent Studio is based in Boynton Beach, FL. AI automation for local contractors, service businesses, medical offices and more. Book a free 15-minute call.";
 
 const features = [
   {

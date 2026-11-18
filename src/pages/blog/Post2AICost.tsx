@@ -2,8 +2,8 @@ import BlogPostLayout from "./BlogPostLayout";
 
 const Post2AICost = () => (
   <BlogPostLayout
-    metaTitle="How Much Does AI Automation Cost? A Realistic Guide for Palm Beach County | Ardent Studio"
-    metaDescription="What actually drives the cost of AI automation for a Palm Beach County business, what a good quote includes, and how to get a clear fixed price before any work starts."
+    metaTitle="AI Automation Cost in Palm Beach County | Ardent Studio"
+    metaDescription="What drives the cost of AI automation for a Palm Beach County business, what a good quote includes, and how to get a fixed price before work starts."
     title="How Much Does AI Automation Cost? A Realistic Guide for Palm Beach County Businesses"
     date="May 2026"
     readTime="6 min read"

@@ -3,9 +3,9 @@ import ServicePageLayout from "@/components/ServicePageLayout";
 
 const CITY = "West Palm Beach";
 const SLUG = "west-palm-beach";
-const META_TITLE = "AI Automation for West Palm Beach Small Businesses | Ardent Studio";
+const META_TITLE = "AI Automation for West Palm Beach Businesses | Ardent Studio";
 const META_DESC =
-  "AI automation services in West Palm Beach, FL. Ardent Studio builds custom workflows, chatbots, and email automation that save small businesses 5–15 hrs/week. Book a free 15-min call.";
+  "AI automation in West Palm Beach, FL. Custom workflows, chatbots and email automation for small businesses. Book a free 15-minute call.";
 
 const features = [
   {

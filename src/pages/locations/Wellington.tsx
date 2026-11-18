@@ -5,7 +5,7 @@ const CITY = "Wellington";
 const SLUG = "wellington";
 const META_TITLE = "AI Automation for Wellington, FL Businesses | Ardent Studio";
 const META_DESC =
-  "AI automation for Wellington, FL businesses: equestrian industry, family businesses, fitness, and more. Custom AI workflows by Ardent Studio, Palm Beach County. Book a free 15-min call.";
+  "AI automation for Wellington, FL businesses, including equestrian, family-run and fitness businesses. Custom AI workflows from Ardent Studio.";
 
 const features = [
   {

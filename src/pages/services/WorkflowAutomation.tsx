@@ -35,13 +35,13 @@ const faqSchema = {
 export default function WorkflowAutomation() {
   useEffect(() => {
     document.title =
-      "Email & Workflow Automation for Small Businesses | Ardent Studio: Palm Beach County";
+      "Email and Workflow Automation | Ardent Studio";
 
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) {
       metaDesc.setAttribute(
         "content",
-        "Custom email and workflow automation for Palm Beach County small businesses. Ardent Studio builds automations that save 5–15 hours per week. Free 15-min call."
+        "Custom email and workflow automation for Palm Beach County small businesses, built around the tools you already use. Book a free 15-minute call."
       );
     }
 
@@ -62,8 +62,8 @@ export default function WorkflowAutomation() {
 
   return (
     <ServicePageLayout
-      metaTitle="Email & Workflow Automation for Small Businesses | Ardent Studio: Palm Beach County"
-      metaDescription="Custom email and workflow automation for Palm Beach County small businesses. Ardent Studio builds automations that save 5–15 hours per week. Free 15-min call."
+      metaTitle="Email and Workflow Automation | Ardent Studio"
+      metaDescription="Custom email and workflow automation for Palm Beach County small businesses, built around the tools you already use. Book a free 15-minute call."
       headline="Email & Workflow Automation"
       subheadline="Stop doing the same thing twice. Ardent Studio builds automations that connect your tools, handle your follow-ups, and process your data, so you can focus on the work that actually moves the needle."
       introText="According to McKinsey (2023), small businesses using automation effectively recover 6–8 hours per week. Most of that time comes from email follow-ups, data entry between tools, invoice reminders, and intake processing, exactly the kind of repetitive work Ardent Studio specializes in automating. Most clients are live within 2 weeks."
