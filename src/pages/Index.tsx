@@ -152,7 +152,7 @@ const Index = () => (
           <span className="section-eyebrow mb-5">Practical examples</span>
           <h2 id="examples-heading" className="max-w-[20ch] text-[clamp(32px,5vw,56px)] font-semibold leading-[1.12] text-foreground">What we could build for you</h2>
           <p className="mt-5 max-w-[62ch] text-[17px] leading-relaxed text-body-text">Examples of the chores we take off your plate. Yours will be scoped to fit.</p>
-          <div className="mobile-rail mt-6 md:mt-10 grid gap-3 md:gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div data-nosnippet className="mobile-rail mt-6 md:mt-10 grid gap-3 md:gap-5 md:grid-cols-2 lg:grid-cols-4">
             {examples.map((example, i) => (
               <article key={example.title} className="workshop-card flex min-h-0 md:min-h-[280px] flex-col p-5 md:p-8">
                 <span className={`mb-3 md:mb-7 block h-2.5 w-2.5 rounded-full ${accentPills[i]}`} aria-hidden="true" />
@@ -162,7 +162,7 @@ const Index = () => (
             ))}
           </div>
           <div className="mt-6 md:mt-9 flex flex-col items-start gap-4 md:gap-5 border-t border-border pt-5 md:pt-7 sm:flex-row sm:items-center sm:justify-between">
-            <p className="text-[16px] leading-relaxed text-body-text">Have a different chore in mind? Book a free call and tell us.</p>
+            <p data-nosnippet className="text-[16px] leading-relaxed text-body-text">Have a different chore in mind? Book a free call and tell us.</p>
             <a href={calendly} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 shrink-0 items-center justify-center rounded-full bg-ardent-lime px-6 py-3 text-[16px] font-semibold text-ardent-studio transition-opacity hover:opacity-80">Book a free 15-min call →</a>
           </div>
         </div>

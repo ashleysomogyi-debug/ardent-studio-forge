@@ -16,17 +16,6 @@ const company = [
   { label: "SartoriAI", href: "https://www.sartoriai.com/", external: true },
 ];
 
-const locations = [
-  { label: "West Palm Beach", to: "/locations/west-palm-beach" },
-  { label: "Boca Raton", to: "/locations/boca-raton" },
-  { label: "Delray Beach", to: "/locations/delray-beach" },
-  { label: "Boynton Beach", to: "/locations/boynton-beach" },
-  { label: "Jupiter", to: "/locations/jupiter" },
-  { label: "Palm Beach Gardens", to: "/locations/palm-beach-gardens" },
-  { label: "Wellington", to: "/locations/wellington" },
-  { label: "Lake Worth Beach", to: "/locations/lake-worth-beach" },
-];
-
 const Footer = () => (
   <footer id="book-a-call" className="bg-footer-bg text-footer-text py-10 md:py-16 px-5 md:px-10">
     <div className="mx-auto mb-6 md:mb-9 flex max-w-[1200px] gap-2" aria-hidden="true">
@@ -62,21 +51,15 @@ const Footer = () => (
         </ul>
       </div>
 
-      {/* Locations */}
+      {/* Service area: one link to the full list, so city pages are not linked from every page. */}
       <div className="col-span-2 max-md:order-last md:col-span-1">
         <span className="font-mono text-[13px] text-dark-band-text tracking-[0.2em] uppercase mb-4 block">Service Area</span>
-        <ul className="grid grid-cols-2 gap-x-4 md:block md:space-y-2.5">
-          {locations.map((loc) => (
-            <li key={loc.to}>
-              <Link to={loc.to} className="max-md:inline-flex max-md:min-h-11 max-md:items-center font-sans text-[15px] text-footer-muted hover:text-footer-text transition-colors">
-                {loc.label}
-              </Link>
-            </li>
-          ))}
-          <li className="col-span-2 max-md:py-2">
-            <span className="font-sans text-[14px] text-footer-muted">+ all of Palm Beach County, FL</span>
-          </li>
-        </ul>
+        <p className="font-sans text-[15px] leading-[1.6] text-footer-muted">
+          Based in Boynton Beach. In person across Palm Beach County, FL, and remote for teams anywhere.
+        </p>
+        <Link to="/locations" className="mt-2.5 max-md:inline-flex max-md:min-h-11 max-md:items-center inline-block font-sans text-[15px] text-footer-muted underline underline-offset-4 hover:text-footer-text transition-colors">
+          See all service areas
+        </Link>
       </div>
 
       {/* Contact */}

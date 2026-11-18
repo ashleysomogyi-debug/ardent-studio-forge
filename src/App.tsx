@@ -25,6 +25,7 @@ const AIToolsSetup = lazy(() => import("./pages/services/AIToolsSetup.tsx"));
 const AISetup = lazy(() => import("./pages/services/AISetup.tsx"));
 
 // Lazily loaded location pages
+const LocationsIndex = lazy(() => import("./pages/locations/LocationsIndex.tsx"));
 const WestPalmBeach = lazy(() => import("./pages/locations/WestPalmBeach.tsx"));
 const BocaRaton = lazy(() => import("./pages/locations/BocaRaton.tsx"));
 const DelrayBeach = lazy(() => import("./pages/locations/DelrayBeach.tsx"));
@@ -100,6 +101,7 @@ const App = () => (
             <Route path="/wow" element={<WowAttendeeOffer />} />
 
             {/* Location pages */}
+            <Route path="/locations" element={<LocationsIndex />} />
             <Route path="/locations/west-palm-beach" element={<WestPalmBeach />} />
             <Route path="/locations/boca-raton" element={<BocaRaton />} />
             <Route path="/locations/delray-beach" element={<DelrayBeach />} />
