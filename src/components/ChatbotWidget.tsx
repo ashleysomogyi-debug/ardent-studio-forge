@@ -36,7 +36,7 @@ const RESPONSES: { keywords: string[]; text: string; quickReplies?: string[] }[]
   },
   {
     keywords: ["contact", "email", "phone", "address"],
-    text: "**Email:** hello@ardentstudio.io\n**Phone:** (728) 201-0192\n**Address:** 3118 Waterside Circle, Boynton Beach, FL 33435\n**Founders:** Dr. Ashley Somogyi (Builder) & Wesley Price (Strategy & Ops)",
+    text: "**Email:** hello@ardentstudio.io\n**Phone:** (728) 201-0192\n**Based in:** Boynton Beach, FL\n**Founders:** Dr. Ashley Somogyi (Builder) & Wesley Price (Strategy & Ops)",
     quickReplies: ["Services & Pricing", "Book a Call"],
   },
   {

@@ -671,7 +671,7 @@ export default function CaseStudiesSection() {
                 <em style={{ color: brand.teal, fontStyle: "normal" }}>your</em> business?
               </div>
               <div style={{ fontSize: "13px", color: brand.creamDim }}>
-                Free discovery call · No obligation · Palm Beach County, FL
+                Free discovery call · No obligation · Palm Beach County, FL · Raleigh-Durham, NC
               </div>
             </div>
             <a

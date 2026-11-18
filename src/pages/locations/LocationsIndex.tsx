@@ -6,6 +6,7 @@ import { usePageMeta } from "@/lib/seo";
 const BOOKING_URL = "https://calendly.com/asomogyi-ardentstudio/30min";
 
 const cities = [
+  { label: "Palm Beach County", to: "/locations/palm-beach-county", note: "The county overview." },
   { label: "Boynton Beach", to: "/locations/boynton-beach", note: "Where we are based." },
   { label: "West Palm Beach", to: "/locations/west-palm-beach" },
   { label: "Boca Raton", to: "/locations/boca-raton" },
@@ -26,8 +27,8 @@ const triangle = [
 
 const LocationsIndex = () => {
   usePageMeta({
-    title: "Service Areas in Palm Beach County | Ardent Studio",
-    description: "Ardent Studio is based in Boynton Beach and works in person across Palm Beach County, Florida, and remotely with teams anywhere.",
+    title: "Service Areas: Palm Beach County & Raleigh-Durham | Ardent Studio",
+    description: "Ardent Studio is based in Boynton Beach, FL. We work in person across Palm Beach County, and remotely with Raleigh-Durham, NC businesses and teams anywhere.",
   });
 
   return (
@@ -39,7 +40,7 @@ const LocationsIndex = () => {
             <span className="section-eyebrow">Service areas</span>
             <h1 className="mt-[22px] max-w-[18ch] text-[clamp(36px,5.4vw,64px)] font-semibold leading-[1.05] tracking-[-0.02em]">Where we work.</h1>
             <p className="mt-6 max-w-[640px] text-[19px] leading-[1.6] text-body-text">
-              We are based in Boynton Beach and work in person with businesses across Palm Beach County, Florida. Teams anywhere else work with us remotely.
+              We are based in Boynton Beach and work in person with businesses across Palm Beach County, Florida. We work remotely with businesses in Raleigh-Durham, North Carolina, and with teams anywhere else.
             </p>
           </div>
         </section>

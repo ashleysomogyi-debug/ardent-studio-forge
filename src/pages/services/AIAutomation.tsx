@@ -12,7 +12,7 @@ const serif = "'Inter', system-ui, sans-serif";
 
 const META_TITLE = "AI Automation and Apps for Your Team | Ardent Studio";
 const META_DESC =
-  "Custom AI automation that fits how your team already works. Fixed-scope builds, based in Palm Beach County and available remotely.";
+  "Custom AI automation that fits how your team already works. Fixed-scope builds, based in Palm Beach County, FL, and remote for Raleigh-Durham, NC and beyond.";
 
 const featuredBuilds = [
   {
