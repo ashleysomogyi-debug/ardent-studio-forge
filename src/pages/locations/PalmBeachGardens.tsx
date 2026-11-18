@@ -99,6 +99,12 @@ const PalmBeachGardens = () => {
 
   return (
     <ServicePageLayout
+      heroImage={{
+        src: "https://commons.wikimedia.org/wiki/Special:FilePath/Palm_Beach_Gardens,_FL,_USA_-_panoramio_(10).jpg?width=2000",
+        alt: "Panorama of Palm Beach Gardens, Florida",
+        credit: "Panoramio via Wikimedia Commons, CC BY-SA 3.0",
+        creditUrl: "https://commons.wikimedia.org/wiki/File:Palm_Beach_Gardens,_FL,_USA_-_panoramio_(10).jpg",
+      }}
       metaTitle={META_TITLE}
       metaDescription={META_DESC}
       headline="AI Automation for Palm Beach Gardens Businesses"
